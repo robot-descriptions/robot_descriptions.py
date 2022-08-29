@@ -25,7 +25,7 @@ from typing import Union
 from git import RemoteProgress, Repo
 from tqdm import tqdm
 
-from .repositories import REPOSITORY_VERSIONS
+from .repositories import REPOSITORIES
 
 
 class CloneProgressBar(RemoteProgress):
@@ -91,8 +91,8 @@ def git_clone(repo_url: str, target_dir: str) -> Repo:
     )
 
 
-def git_clone_description(
-    repo_url: str,
+def clone_description(
+    description_name: str,
     descriptions_dir: str = "~/.cache/robot_descriptions",
 ) -> str:
     """
@@ -107,17 +107,18 @@ def git_clone_description(
         Path to the resulting local working directory.
     """
     try:
-        version = REPOSITORY_VERSIONS[repo_url]
+        repository = REPOSITORIES[description_name]
     except KeyError:
-        raise ImportError(f"Unregistered git repository: {repo_url}")
+        raise ImportError(f"Unknown description: {description_name}")
 
     descriptions_dir = os.path.expanduser(descriptions_dir)
-    if not os.path.exists(descriptions_dir):
-        os.makedirs(descriptions_dir)
+    target_dir = os.path.join(descriptions_dir, repository.local_path)
+    if not os.path.exists(target_dir):
+        os.makedirs(target_dir)
 
-    repo = git_clone(repo_url, descriptions_dir)
-    repo.git.checkout(version)
-    if repo.working_dir is None:
+    clone = git_clone(repository.url, target_dir)
+    clone.git.checkout(repository.commit)
+    if clone.working_dir is None:
         raise ImportError("Git repository for the robot description is empty")
 
-    return str(repo.working_dir)
+    return str(clone.working_dir)

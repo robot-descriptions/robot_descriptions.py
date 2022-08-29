@@ -33,9 +33,6 @@ __working_dir__ = _git_clone_description(
     "https://github.com/Comau/eDO_description.git",
 )
 
-if __working_dir__ is not None:
-    MESHES_PATH = _path.join(__working_dir__, "meshes")
-    PATH = str(__working_dir__)
-    URDF_PATH = _path.join(__working_dir__, "robots", "edo_sim.urdf")
-else:  # __working_dir__ is None
-    raise ImportError("Git repository for the robot description is empty")
+MESHES_PATH = _path.join(__working_dir__, "meshes")
+PATH = str(__working_dir__)
+URDF_PATH = _path.join(__working_dir__, "robots", "edo_sim.urdf")

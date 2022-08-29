@@ -16,15 +16,23 @@
 # limitations under the License.
 
 """
-Upkie description.
+Git utility functions to clone model repositories.
 """
 
-from os import path as _path
+from dataclasses import dataclass
 
-from .git import git_clone_description as _git_clone_description
 
-__working_dir__ = _clone_description("upkie_description")
+@dataclass
+class Repository:
+    commit: str
+    local_path: str
+    url: str
 
-MESHES_PATH: str = _path.join(__working_dir__, "meshes")
-PATH: str = str(__working_dir__)
-URDF_PATH: str = _path.join(__working_dir__, "urdf", "upkie.urdf")
+
+REPOSITORIES = {
+    "upkie_description": Repository(
+        commit="v1.1.0",
+        local_path="tasts-robots/upkie_description",
+        url="https://github.com/tasts-robots/upkie_description.git",
+    )
+}
