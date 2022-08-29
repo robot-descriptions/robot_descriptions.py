@@ -22,7 +22,7 @@ import unittest
 
 import git
 
-from robot_descriptions.git import git_clone_description
+from robot_descriptions.git import clone_to_directory
 
 
 class TestGit(unittest.TestCase):

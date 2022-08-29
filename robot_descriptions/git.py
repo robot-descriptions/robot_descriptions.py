@@ -63,7 +63,7 @@ class CloneProgressBar(RemoteProgress):
         self.progress.refresh()
 
 
-def git_clone(repo_url: str, target_dir: str) -> Repo:
+def clone_to_directory(repo_url: str, target_dir: str) -> Repo:
     """
     Clone a repository to the descriptions directory.
 
@@ -91,16 +91,16 @@ def git_clone(repo_url: str, target_dir: str) -> Repo:
     )
 
 
-def clone_description(
+def clone_to_cache(
     description_name: str,
-    descriptions_dir: str = "~/.cache/robot_descriptions",
+    cache_dir: str = "~/.cache/robot_descriptions",
 ) -> str:
     """
     Get a local working directory cloned from a remote git repository.
 
     Args:
         repo_url: URL to the remote git repository.
-        descriptions_dir: Path to a directory where robot descriptions will be
+        cache_dir: Path to a directory where robot descriptions will be
             downloaded (default: ``~/.cache/robot_descriptions``). If the
             directory does not exist it will be created.
     Returns:
@@ -111,12 +111,12 @@ def clone_description(
     except KeyError:
         raise ImportError(f"Unknown description: {description_name}")
 
-    descriptions_dir = os.path.expanduser(descriptions_dir)
-    target_dir = os.path.join(descriptions_dir, repository.local_path)
+    cache_dir = os.path.expanduser(cache_dir)
+    target_dir = os.path.join(cache_dir, repository.cache_path)
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
 
-    clone = git_clone(repository.url, target_dir)
+    clone = clone_to_directory(repository.url, target_dir)
     clone.git.checkout(repository.commit)
     if clone.working_dir is None:
         raise ImportError("Git repository for the robot description is empty")

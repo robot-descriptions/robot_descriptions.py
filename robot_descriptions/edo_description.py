@@ -23,15 +23,13 @@ __version__ = "17b3f92f834746106d6a4befaab8eeab3ac248e6"
 
 from os import path as _path
 
-from .git import git_clone_description as _git_clone_description
+from .git import clone_to_cache as _clone_to_cache
 
 MESHES_PATH: str = ""
 PATH: str = ""
 URDF_PATH: str = ""
 
-__working_dir__ = _git_clone_description(
-    "https://github.com/Comau/eDO_description.git",
-)
+__working_dir__ = _clone_to_cache("eDO_description")
 
 MESHES_PATH = _path.join(__working_dir__, "meshes")
 PATH = str(__working_dir__)

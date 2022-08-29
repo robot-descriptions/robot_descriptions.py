@@ -18,7 +18,7 @@ Checkout the specific tag of the latest release
 
 ```python
 __version__ = "1.1.0"
-__repo__ = _git_clone_description(...)
+__repo__ = _clone_to_cache(REPOSITORY_NAME)
 __repo__.git.checkout(f"v{__version__}")
 ```
 
