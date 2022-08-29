@@ -35,19 +35,17 @@ def _get_repository():
     )
 
 
-__repo__ = _get_repository()
-
 MESHES_PATH: str = ""
+PATH: str = ""
+URDF_PATH: str = ""
+
+__repo__ = _get_repository()
 if __repo__.working_dir is not None:
     MESHES_PATH = _os.path.join(__repo__.working_dir, "meshes")
-
-PATH: str = ""
-if __repo__.working_dir is not None:
     PATH = __repo__.working_dir
-
-URDF_PATH: str = ""
-if __repo__.working_dir is not None:
     URDF_PATH = _os.path.join(__repo__.working_dir, "urdf", "upkie.urdf")
+else:  # __repo__.working_dir is None
+    raise ImportError("Git repository for the robot description is empty")
 
 
 __all__ = [
