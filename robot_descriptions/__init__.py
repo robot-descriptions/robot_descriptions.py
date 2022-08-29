@@ -16,13 +16,7 @@
 # limitations under the License.
 
 """
-Robot descriptions as Python modules.
+Import open-source robot models like Python modules.
 """
 
 __version__ = "0.1.0"
-
-from .robot_description import RobotDescription
-
-__all__ = [
-    "RobotDescription",
-]
