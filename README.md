@@ -1,8 +1,8 @@
 # Robot descriptions as Python modules
 
-[![PyPI version](https://img.shields.io/pypi/v/upkie_description)](https://pypi.org/project/upkie_description/)
+[![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 
-Import open source [robot models](https://github.com/stephane-caron/awesome-robot-models) like Python modules.
+Import open source [robot descriptions](https://github.com/stephane-caron/awesome-robot-descriptions) as Python modules.
 
 ## Installation
 
