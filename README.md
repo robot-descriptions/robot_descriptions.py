@@ -2,7 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 
-Import open source [robot models](https://github.com/stephane-caron/awesome-robot-models) as Python modules.
+Import open source robot models as Python modules. The wrapper automatically downloads and cache model files at first import. URDF descriptions from [Awesome Robot Models](https://github.com/stephane-caron/awesome-robot-models) are available.
 
 ## Installation
 
@@ -18,8 +18,7 @@ Import the robot description you are interested in directly as a submodule of ``
 from robot_descriptions import my_robot_description
 ```
 
-The import will automatically download and cache the robot model, if you don't
-have it already. The submodule then exports the following paths:
+The import will automatically download and cache the robot model, if you don't have it already. The submodule then exports the following paths:
 
 <dl>
     <dt>
