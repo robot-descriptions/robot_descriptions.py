@@ -31,54 +31,33 @@ class TestGit(unittest.TestCase):
     Test fixture for git-related functions.
     """
 
-    def setUp(self):
-        """
-        Initialize a dummy git repository.
-        """
-        tmp_dir = tempfile.TemporaryDirectory()
-        repo_name = "test_repo"
-        repo_path = os.path.join(tmp_dir.name, f"{repo_name}.git")
-        descriptions_dir = os.path.join(tmp_dir.name, "descriptions")
-        empty_file = os.path.join(repo_path, "foo.bar")
-        repo = git.Repo.init(repo_path)
-        open(empty_file, "wb").close()
-        repo.index.add([empty_file])
-        repo.index.commit("Test initial commit")
-
-        self.descriptions_dir = descriptions_dir
-        self.repo_name = repo_name
-        self.repo_path = repo_path
-        self.tmp_dir = tmp_dir
-
-    def tearDown(self):
-        """
-        Clean up temporary directory.
-        """
-        self.tmp_dir.cleanup()
-
-    def test_git_clone_description(self):
+    def test_clone_to_directory(self):
         """
         Check cloning on a dummy repository.
         """
-        # Clone the repository for the first time
-        clone_1 = git_clone_description(
-            self.repo_path,
-            descriptions_dir=self.descriptions_dir,
-        )
-        self.assertTrue(str(clone_1.active_branch) in ["main", "master"])
-        self.assertTrue(clone_1.common_dir.startswith(self.tmp_dir.name))
-        self.assertTrue(clone_1.working_dir.endswith(self.repo_name))
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            repo_name = "test_repo"
+            repo_path = os.path.join(tmp_dir, f"{repo_name}.git")
+            target_dir = os.path.join(tmp_dir, "descriptions")
+            empty_file = os.path.join(repo_path, "foo.bar")
+            repo = git.Repo.init(repo_path)
+            open(empty_file, "wb").close()
+            repo.index.add([empty_file])
+            repo.index.commit("Test initial commit")
 
-        # Cloning again should recover the existing repo
-        clone_2 = git_clone_description(
-            self.repo_path,
-            descriptions_dir=self.descriptions_dir,
-        )
-        self.assertEqual(
-            str(clone_1.active_branch), str(clone_2.active_branch)
-        )
-        self.assertTrue(clone_1.common_dir, clone_2.common_dir)
-        self.assertTrue(clone_1.working_dir, clone_2.working_dir)
+            # Clone the repository for the first time
+            clone_1 = clone_to_directory(repo_path, target_dir)
+            self.assertTrue(str(clone_1.active_branch) in ["main", "master"])
+            self.assertTrue(clone_1.common_dir.startswith(tmp_dir))
+            self.assertTrue(clone_1.working_dir.endswith(repo_name))
+
+            # Cloning again, should recover the existing repo
+            clone_2 = clone_to_directory(repo_path, target_dir)
+            self.assertEqual(
+                str(clone_1.active_branch), str(clone_2.active_branch)
+            )
+            self.assertTrue(clone_1.common_dir, clone_2.common_dir)
+            self.assertTrue(clone_1.working_dir, clone_2.working_dir)
 
 
 if __name__ == "__main__":
