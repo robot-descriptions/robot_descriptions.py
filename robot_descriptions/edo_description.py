@@ -23,8 +23,8 @@ from os import path as _path
 
 from .git import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("eDO_description")
+PATH: str = _clone_to_cache("eDO_description")
 
-MESHES_PATH: str = _path.join(__working_dir__, "meshes")
-PATH: str = str(__working_dir__)
-URDF_PATH: str = _path.join(__working_dir__, "robots", "edo_sim.urdf")
+MESHES_PATH: str = _path.join(PATH, "meshes")
+
+URDF_PATH: str = _path.join(PATH, "robots", "edo_sim.urdf")

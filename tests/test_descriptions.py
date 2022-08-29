@@ -18,7 +18,11 @@
 
 import unittest
 
-from robot_descriptions import edo_description, upkie_description
+from robot_descriptions import (
+    edo_description,
+    kinova_description,
+    upkie_description,
+)
 
 
 class TestDescriptions(unittest.TestCase):
@@ -29,10 +33,11 @@ class TestDescriptions(unittest.TestCase):
 
     def test_upkie_description(self):
         """
-        Check the imported submodule.
+        Check all imported submodules.
         """
         descriptions = [
             edo_description,
+            kinova_description,
             upkie_description,
         ]
         for description in descriptions:

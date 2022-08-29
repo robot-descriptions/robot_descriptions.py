@@ -45,6 +45,11 @@ REPOSITORIES = {
         commit="17b3f92f834746106d6a4befaab8eeab3ac248e6",
         cache_path="Comau/eDO_description",
     ),
+    "example-robot-data": Repository(
+        url="https://github.com/Gepetto/example-robot-data.git",
+        commit="v4.0.1",
+        cache_path="Gepetto/example-robot-data",
+    ),
     "upkie_description": Repository(
         url="https://github.com/tasts-robots/upkie_description.git",
         commit="v1.1.0",
