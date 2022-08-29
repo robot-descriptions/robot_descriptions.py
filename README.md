@@ -2,39 +2,40 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/upkie_description)](https://pypi.org/project/upkie_description/)
 
-URDF description for the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped. See also:
+Import open source [robot models]() like Python modules.
 
-- [3D printed parts](https://www.printables.com/model/127831-upkie-wheeled-biped-robot)
-- [Locomotion code](https://github.com/tasts-robots/upkie_locomotion)
-- [Project log](https://hackaday.io/project/185729/logs)
+## Installation
 
-Upkie's head derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
-
-## Python module
-
-This module helps retrieve Upkie's model from a Python program. Import it by:
-
-```python
-import upkie_description
+```console
+pip install robot_descriptions
 ```
 
-It then provides the following paths:
+## Usage
+
+Import the robot description you are interested in directly as a submodule of ``robot_descriptions``:
+
+```python
+from robot_descriptions import my_robot_description
+```
+
+The import will automatically download and cache the robot model, if you don't
+have it already. The submodule then provides the following paths:
 
 <dl>
     <dt>
-        <code>upkie_description.path</code>
+        <code>my_robot_description.MESHES_PATH</code>
     </dt>
     <dd>
-        Path to the "upkie_description" folder itself.
+        Path to a "meshes" folder in the robot description.
     </dd>
     <dt>
-        <code>upkie_description.meshes_path</code>
+        <code>my_robot.PATH</code>
     </dt>
     <dd>
-        Path to the "meshes" folder.
+        Path to the robot description directory.
     </dd>
     <dt>
-        <code>upkie_description.urdf_path</code>
+        <code>my_robot_description.URDF_PATH</code>
     </dt>
     <dd>
         Path to the URDF file of the model.
