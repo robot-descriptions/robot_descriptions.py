@@ -45,7 +45,7 @@ Some robot descriptions include additional fields. For instance, the ``ur3_descr
 
 ## Models
 
-Available robot models currently include:
+Available robot models ([gallery](https://github.com/stephane-caron/awesome-robot-models#gallery)) currently include:
 
 | Robot name            | Submodule            |
 | --------------------- | -------------------- |
@@ -57,4 +57,4 @@ Available robot models currently include:
 | Universal Robots UR10 | `ur10_description`   |
 | Upkie                 | `upkie_description`  |
 
-Check out [Awesome Robot Models](https://github.com/stephane-caron/awesome-robot-models)
+New models are welcome! Check out the [guidelines](CONTRIBUTING.md) before opening a PR.
