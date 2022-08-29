@@ -58,7 +58,7 @@ class CloneProgressBar(RemoteProgress):
         self.progress.refresh()
 
 
-def git_clone_to_descriptions_dir(
+def git_clone_description(
     repo_url: str,
     descriptions_dir: str = "~/.cache/robot_descriptions",
     **kwargs,

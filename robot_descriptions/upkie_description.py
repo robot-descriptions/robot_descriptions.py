@@ -21,27 +21,37 @@ Upkie description.
 
 import os as _os
 
-from .git import git_clone_to_descriptions_dir as _git_clone_to_descriptions_dir
+from .git import git_clone_description as _git_clone_description
 
 __version__ = "0.1.0"
 
 
-__repo = git_clone_to_descriptions_dir(
-    "https://github.com/tasts-robots/upkie_description.git"
-)
-
-MESHES_PATH = None
-if __repo.working_dir is not None:
-    MESHES_PATH = os.path.join(__repo.working_dir, "meshes")
-
-URDF_PATH = None
-if __repo.working_dir is not None:
-    URDF_PATH = os.path.join(__repo.working_dir, "urdf", "upkie.urdf")
+def _get_repository():
+    """
+    Get git repository for the robot description.
+    """
+    return _git_clone_description(
+        "https://github.com/tasts-robots/upkie_description.git"
+    )
 
 
-def get_repository():
+__repo__ = _get_repository()
+
+MESHES_PATH: str = ""
+if __repo__.working_dir is not None:
+    MESHES_PATH = _os.path.join(__repo__.working_dir, "meshes")
+
+PATH: str = ""
+if __repo__.working_dir is not None:
+    PATH = __repo__.working_dir
+
+URDF_PATH: str = ""
+if __repo__.working_dir is not None:
+    URDF_PATH = _os.path.join(__repo__.working_dir, "urdf", "upkie.urdf")
+
 
 __all__ = [
     "MESHES_PATH",
+    "PATH",
     "URDF_PATH",
 ]
