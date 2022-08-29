@@ -22,7 +22,12 @@ import unittest
 
 import git
 
-from robot_descriptions.git import clone_to_directory
+from robot_descriptions.git import (
+    CloneProgressBar,
+    clone_to_cache,
+    clone_to_directory,
+)
+from robot_descriptions.repositories import REPOSITORIES
 
 
 class TestGit(unittest.TestCase):
@@ -37,7 +42,7 @@ class TestGit(unittest.TestCase):
         """
         with tempfile.TemporaryDirectory() as tmp_dir:
             repo_name = "test_repo"
-            repo_path = os.path.join(tmp_dir, f"{repo_name}.git")
+            repo_path = os.path.join(tmp_dir, repo_name)
             target_dir = os.path.join(tmp_dir, "descriptions")
             empty_file = os.path.join(repo_path, "foo.bar")
             repo = git.Repo.init(repo_path)
@@ -47,7 +52,6 @@ class TestGit(unittest.TestCase):
 
             # Clone the repository for the first time
             clone_1 = clone_to_directory(repo_path, target_dir)
-            self.assertTrue(str(clone_1.active_branch) in ["main", "master"])
             self.assertTrue(clone_1.common_dir.startswith(tmp_dir))
             self.assertTrue(clone_1.working_dir.endswith(repo_name))
 
@@ -58,6 +62,44 @@ class TestGit(unittest.TestCase):
             )
             self.assertTrue(clone_1.common_dir, clone_2.common_dir)
             self.assertTrue(clone_1.working_dir, clone_2.working_dir)
+
+    def test_clone_to_cache_found(self):
+        """
+        Test clone_to_cache on a valid repository.
+        """
+        working_dir_1 = clone_to_cache("upkie_description")
+        working_dir_2 = clone_to_cache("upkie_description")
+        self.assertEqual(working_dir_1, working_dir_2)
+
+    def test_clone_to_cache_not_found(self):
+        """
+        Test clone_to_cache on an invalid repository.
+        """
+        with self.assertRaises(ImportError):
+            clone_to_cache("foo")
+
+    def test_cache_creation(self):
+        """
+        Check that clone_to_cache creates directory if needed.
+        """
+        description = "upkie_description"
+        repo = REPOSITORIES[description]
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            os.environ["ROBOT_DESCRIPTIONS_CACHE"] = tmp_dir
+            clone_to_cache(description)
+            self.assertTrue(
+                os.path.exists(os.path.join(tmp_dir, repo.cache_path))
+            )
+            del os.environ["ROBOT_DESCRIPTIONS_CACHE"]
+
+    def test_progress_bar(self):
+        """
+        Check progress bar.
+        """
+        bar = CloneProgressBar()
+        bar.update(0, 42, 42)
+        self.assertEqual(bar.progress.n, 42)
+        self.assertEqual(bar.progress.total, 42)
 
 
 if __name__ == "__main__":
