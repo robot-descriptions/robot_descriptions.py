@@ -19,37 +19,24 @@
 Upkie description.
 """
 
-import os as _os
+__version__ = "1.1.0"
+
+from os import path as _path
 
 from .git import git_clone_description as _git_clone_description
-
-__version__ = "0.1.0"
-
-
-def _get_repository():
-    """
-    Get git repository for the robot description.
-    """
-    return _git_clone_description(
-        "https://github.com/tasts-robots/upkie_description.git"
-    )
-
 
 MESHES_PATH: str = ""
 PATH: str = ""
 URDF_PATH: str = ""
 
-__repo__ = _get_repository()
+__repo__ = _git_clone_description(
+    "https://github.com/tasts-robots/upkie_description.git",
+)
+__repo__.git.checkout(f"v{__version__}")
+
 if __repo__.working_dir is not None:
-    MESHES_PATH = _os.path.join(__repo__.working_dir, "meshes")
-    PATH = __repo__.working_dir
-    URDF_PATH = _os.path.join(__repo__.working_dir, "urdf", "upkie.urdf")
+    MESHES_PATH = _path.join(__repo__.working_dir, "meshes")
+    PATH = str(__repo__.working_dir)
+    URDF_PATH = _path.join(__repo__.working_dir, "urdf", "upkie.urdf")
 else:  # __repo__.working_dir is None
     raise ImportError("Git repository for the robot description is empty")
-
-
-__all__ = [
-    "MESHES_PATH",
-    "PATH",
-    "URDF_PATH",
-]
