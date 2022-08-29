@@ -24,7 +24,7 @@ import unittest
 
 import git
 
-from robot_descriptions.git import git_clone_to_descriptions_dir
+from robot_descriptions.git import git_clone_description
 
 
 class TestGit(unittest.TestCase):
@@ -58,12 +58,12 @@ class TestGit(unittest.TestCase):
         """
         self.tmp_dir.cleanup()
 
-    def test_git_clone_to_descriptions_dir(self):
+    def test_git_clone_description(self):
         """
         Check cloning on a dummy repository.
         """
         # Clone the repository for the first time
-        clone_1 = git_clone_to_descriptions_dir(
+        clone_1 = git_clone_description(
             self.repo_path,
             descriptions_dir=self.descriptions_dir,
         )
@@ -72,7 +72,7 @@ class TestGit(unittest.TestCase):
         self.assertTrue(clone_1.working_dir.endswith(self.repo_name))
 
         # Cloning again should recover the existing repo
-        clone_2 = git_clone_to_descriptions_dir(
+        clone_2 = git_clone_description(
             self.repo_path,
             descriptions_dir=self.descriptions_dir,
         )
