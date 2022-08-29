@@ -21,6 +21,7 @@ import unittest
 from robot_descriptions import (
     edo_description,
     kinova_description,
+    panda_description,
     upkie_description,
 )
 
@@ -38,11 +39,11 @@ class TestDescriptions(unittest.TestCase):
         descriptions = [
             edo_description,
             kinova_description,
+            panda_description,
             upkie_description,
         ]
         for description in descriptions:
             self.assertNotEqual(description.PATH, "")
-            self.assertNotEqual(description.MESHES_PATH, "")
             self.assertNotEqual(description.URDF_PATH, "")
 
 
