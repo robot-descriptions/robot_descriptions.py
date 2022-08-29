@@ -93,25 +93,34 @@ def clone_to_directory(repo_url: str, target_dir: str) -> Repo:
 
 def clone_to_cache(
     description_name: str,
-    cache_dir: str = "~/.cache/robot_descriptions",
 ) -> str:
     """
     Get a local working directory cloned from a remote git repository.
 
     Args:
         repo_url: URL to the remote git repository.
-        cache_dir: Path to a directory where robot descriptions will be
-            downloaded (default: ``~/.cache/robot_descriptions``). If the
-            directory does not exist it will be created.
+
     Returns:
         Path to the resulting local working directory.
+
+    Notes:
+        By default, robot descriptions are cached to
+        ``~/.cache/robot_descriptions``. This behavior can be overriden by
+        setting the ``ROBOT_DESCRIPTIONS_CACHE`` environment variable to an
+        alternative path.
     """
     try:
         repository = REPOSITORIES[description_name]
-    except KeyError:
-        raise ImportError(f"Unknown description: {description_name}")
+    except KeyError as e:
+        raise ImportError(f"Unknown description: {description_name}") from e
 
-    cache_dir = os.path.expanduser(cache_dir)
+    cache_dir = os.path.expanduser(
+        os.environ.get(
+            "ROBOT_DESCRIPTIONS_CACHE",
+            "~/.cache/robot_descriptions",
+        )
+    )
+
     target_dir = os.path.join(cache_dir, repository.cache_path)
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
