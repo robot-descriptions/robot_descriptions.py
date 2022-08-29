@@ -17,8 +17,45 @@
 
 
 import os
+from typing import Union
 
-from git import Repo
+from git import RemoteProgress, Repo
+from tqdm import tqdm
+
+
+class CloneProgressBar(RemoteProgress):
+
+    """
+    Progress bar when cloning.
+    """
+
+    def __init__(self):
+        """
+        Initialize progress bar.
+        """
+        super().__init__()
+        self.progress = tqdm()
+
+    def update(
+        self,
+        op_code: int,
+        cur_count: Union[str, float],
+        max_count: Union[str, float, None] = None,
+        message: str = "",
+    ) -> None:
+        """
+        Update progress bar.
+
+        Args:
+            op_code: Integer that can be compared against Operation IDs and
+                stage IDs.
+            cur_count: Current item count.
+            max_count: Maximum item count, or ``None`` if there is none.
+            message: Unused here.
+        """
+        self.progress.total = max_count
+        self.progress.n = cur_count
+        self.progress.refresh()
 
 
 def git_clone_to_descriptions_dir(
@@ -52,4 +89,7 @@ def git_clone_to_descriptions_dir(
     if os.path.exists(repo_path):
         return Repo(repo_path, **kwargs)
     print(f"Downloading {repo_name}...")
-    return Repo.clone_from(repo_url, repo_path, **kwargs)
+    progress_bar = CloneProgressBar()
+    return Repo.clone_from(
+        repo_url, repo_path, progress=progress_bar.update, **kwargs
+    )

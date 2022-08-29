@@ -28,6 +28,8 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Physics",
 ]
 dependencies = [
+    "GitPython >=3.1.18",
+    "tqdm >=4.64.0",
 ]
 
 [project.urls]
