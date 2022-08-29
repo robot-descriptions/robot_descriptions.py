@@ -76,7 +76,7 @@ class TestGit(unittest.TestCase):
             self.repo_path,
             descriptions_dir=self.descriptions_dir,
         )
-        self.assertEquals(
+        self.assertEqual(
             str(clone_1.active_branch), str(clone_2.active_branch)
         )
         self.assertTrue(clone_1.common_dir, clone_2.common_dir)
