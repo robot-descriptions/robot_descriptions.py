@@ -6,8 +6,13 @@ All notable changes to this project will be documented in this file.
 
 ### New models
 
-- e.DO arm (license: BSD-3-Clause)
-- Upkie wheeled biped (license: Apache-2.0)
+- Kinova Gen2
+- Panda
+- Universal Robots UR10
+- Universal Robots UR3
+- Universal Robots UR5
+- Upkie
+- e.DO
 
 ### Added
 
