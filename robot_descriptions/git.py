@@ -15,6 +15,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+"""
+Git utility functions to clone model repositories.
+"""
 
 import os
 from typing import Union
