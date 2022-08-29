@@ -24,6 +24,7 @@ from robot_descriptions import (
     panda_description,
     upkie_description,
     ur3_description,
+    ur5_description,
 )
 
 
@@ -43,6 +44,7 @@ class TestDescriptions(unittest.TestCase):
             panda_description,
             upkie_description,
             ur3_description,
+            ur5_description,
         ]
         for description in descriptions:
             self.assertNotEqual(description.PATH, "")
