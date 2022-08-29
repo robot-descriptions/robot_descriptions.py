@@ -2,7 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/upkie_description)](https://pypi.org/project/upkie_description/)
 
-Import open source [robot models]() like Python modules.
+Import open source [robot models](https://github.com/stephane-caron/awesome-robot-models) like Python modules.
 
 ## Installation
 
