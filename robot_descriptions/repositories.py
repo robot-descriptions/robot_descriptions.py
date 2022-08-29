@@ -24,15 +24,25 @@ from dataclasses import dataclass
 
 @dataclass
 class Repository:
+
+    """
+    Remote git repository.
+
+    Attributes:
+        cache_path: Path to clone the repository to in the local cache.
+        commit: Commit ID or tag to checkout after cloning.
+        url: URL to the remote git repository.
+    """
+
+    cache_path: str
     commit: str
-    local_path: str
     url: str
 
 
 REPOSITORIES = {
     "upkie_description": Repository(
-        commit="v1.1.0",
-        local_path="tasts-robots/upkie_description",
         url="https://github.com/tasts-robots/upkie_description.git",
+        commit="v1.1.0",
+        cache_path="tasts-robots/upkie_description",
     )
 }
