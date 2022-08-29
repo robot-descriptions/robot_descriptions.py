@@ -18,22 +18,27 @@
 
 import unittest
 
-from robot_descriptions import upkie_description
+from robot_descriptions import edo_description, upkie_description
 
 
-class TestGit(unittest.TestCase):
+class TestDescriptions(unittest.TestCase):
 
     """
-    Test fixture for upkie_description.
+    Test fixture for all robot descriptions.
     """
 
     def test_upkie_description(self):
         """
         Check the imported submodule.
         """
-        self.assertNotEqual(upkie_description.PATH, "")
-        self.assertNotEqual(upkie_description.MESHES_PATH, "")
-        self.assertNotEqual(upkie_description.URDF_PATH, "")
+        descriptions = [
+            edo_description,
+            upkie_description,
+        ]
+        for description in descriptions:
+            self.assertNotEqual(description.PATH, "")
+            self.assertNotEqual(description.MESHES_PATH, "")
+            self.assertNotEqual(description.URDF_PATH, "")
 
 
 if __name__ == "__main__":
