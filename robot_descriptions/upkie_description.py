@@ -29,14 +29,13 @@ MESHES_PATH: str = ""
 PATH: str = ""
 URDF_PATH: str = ""
 
-__repo__ = _git_clone_description(
-    "https://github.com/tasts-robots/upkie_description.git",
+__working_dir__ = _git_clone_description(
+    "https://github.com/tasts-robots/upkie_description.git"
 )
-__repo__.git.checkout(f"v{__version__}")
 
-if __repo__.working_dir is not None:
-    MESHES_PATH = _path.join(__repo__.working_dir, "meshes")
-    PATH = str(__repo__.working_dir)
-    URDF_PATH = _path.join(__repo__.working_dir, "urdf", "upkie.urdf")
-else:  # __repo__.working_dir is None
+if __working_dir__ is not None:
+    MESHES_PATH = _path.join(__working_dir__, "meshes")
+    PATH = str(__working_dir__)
+    URDF_PATH = _path.join(__working_dir__, "urdf", "upkie.urdf")
+else:  # __working_dir__ is None
     raise ImportError("Git repository for the robot description is empty")

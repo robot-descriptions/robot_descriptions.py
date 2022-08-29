@@ -25,6 +25,8 @@ from typing import Union
 from git import RemoteProgress, Repo
 from tqdm import tqdm
 
+from .repositories import REPOSITORY_VERSIONS
+
 
 class CloneProgressBar(RemoteProgress):
 
@@ -61,38 +63,61 @@ class CloneProgressBar(RemoteProgress):
         self.progress.refresh()
 
 
-def git_clone_description(
-    repo_url: str,
-    descriptions_dir: str = "~/.cache/robot_descriptions",
-    **kwargs,
-) -> Repo:
+def git_clone(repo_url: str, target_dir: str) -> Repo:
     """
     Clone a repository to the descriptions directory.
 
     Args:
         repo_url: URL to the git repository to clone.
-        descriptions_dir: Path to a directory where robot descriptions will be
-            downloaded (default: ``~/.cache/robot_descriptions``). If the
-            directory does not exist it will be created.
-        kwargs: Remaining keyword arguments are forwarded to the git-clone
-            command.
+        target_dir: Directory to clone the repository to.
 
     Returns:
         Cloned git repository.
     """
+    repo_name = os.path.basename(repo_url)
+    if repo_name.endswith(".git"):
+        repo_name = repo_name[:-4]
+
+    repo_path = os.path.join(target_dir, repo_name)
+    if os.path.exists(repo_path):
+        return Repo(repo_path)
+
+    print(f"Downloading {repo_name}...")
+    progress_bar = CloneProgressBar()
+    return Repo.clone_from(
+        repo_url,
+        repo_path,
+        progress=progress_bar.update,
+    )
+
+
+def git_clone_description(
+    repo_url: str,
+    descriptions_dir: str = "~/.cache/robot_descriptions",
+) -> str:
+    """
+    Get a local working directory cloned from a remote git repository.
+
+    Args:
+        repo_url: URL to the remote git repository.
+        descriptions_dir: Path to a directory where robot descriptions will be
+            downloaded (default: ``~/.cache/robot_descriptions``). If the
+            directory does not exist it will be created.
+    Returns:
+        Path to the resulting local working directory.
+    """
+    try:
+        version = REPOSITORY_VERSIONS[repo_url]
+    except KeyError:
+        raise ImportError(f"Unregistered git repository: {repo_url}")
+
     descriptions_dir = os.path.expanduser(descriptions_dir)
     if not os.path.exists(descriptions_dir):
         os.makedirs(descriptions_dir)
 
-    repo_name = os.path.basename(repo_url)
-    if repo_name.endswith(".git"):
-        repo_name = repo_name[:-4]
-    repo_path = f"{descriptions_dir}/{repo_name}"
+    repo = git_clone(repo_url, descriptions_dir)
+    repo.git.checkout(version)
+    if repo.working_dir is None:
+        raise ImportError("Git repository for the robot description is empty")
 
-    if os.path.exists(repo_path):
-        return Repo(repo_path, **kwargs)
-    print(f"Downloading {repo_name}...")
-    progress_bar = CloneProgressBar()
-    return Repo.clone_from(
-        repo_url, repo_path, progress=progress_bar.update, **kwargs
-    )
+    return str(repo.working_dir)
