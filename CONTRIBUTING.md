@@ -7,11 +7,12 @@ There are many ways you can contribute to `robot_descriptions`. Here are some id
 
 ## Adding a new robot description
 
-Make sure of the following:
+Make sure that your pull request satisfies the following:
 
-- The file name for the new submodule is ``<robot_name>_description.py`` in snake-case
-- The description is distributed legally and under an open source license (permissive or copyleft)
-- Format can be URDF, MJCF, XML, ...
+- The file name for the new submodule is ``<robot_name>_description.py`` in snake-case. For example, ``R2D2_description`` becomes ``r2d2_description.py``.
+- The robot description is distributed legally and under an open source license (permissive or copyleft)
+- All three ``MESHES_PATH``, ``PATH`` and ``URDF_PATH`` fields are set
+- Add an entry to the [changelog](CHANGELOG.md) under "New models": ``- ROBOT_NAME robot_type (license: LICENSE)``
 
 Checkout the specific tag of the latest release
 
