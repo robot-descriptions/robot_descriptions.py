@@ -111,8 +111,8 @@ def clone_to_cache(
     """
     try:
         repository = REPOSITORIES[description_name]
-    except KeyError as e:
-        raise ImportError(f"Unknown description: {description_name}") from e
+    except KeyError as exn:
+        raise ImportError(f"Unknown description: {description_name}") from exn
 
     cache_dir = os.path.expanduser(
         os.environ.get(
