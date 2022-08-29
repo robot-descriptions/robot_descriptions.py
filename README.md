@@ -40,3 +40,16 @@ The import will automatically download and cache the robot model, if you don't h
         Path to the URDF file of the robot model.
     </dd>
 </dl>
+
+## Models
+
+Available robot models currently include:
+
+| Name   | Submodule |
+| ------ | --------- |
+| [e.DO](https://github.com/Comau/eDO_description) | `edo_description` |
+| [Kinova Gen2](https://github.com/Gepetto/example-robot-data/tree/master/robots/kinova_description) | `kinova_description` |
+| [Panda](https://github.com/Gepetto/example-robot-data/tree/master/robots/panda_description) | `panda_description` |
+| [Upkie](https://github.com/tasts-robots/upkie_description) | `upkie_description` |
+
+Check out [Awesome Robot Models](https://github.com/stephane-caron/awesome-robot-models)
