@@ -40,9 +40,14 @@ class Repository:
 
 
 REPOSITORIES = {
+    "eDO_description": Repository(
+        url="https://github.com/Comau/eDO_description.git",
+        commit="17b3f92f834746106d6a4befaab8eeab3ac248e6",
+        cache_path="Comau/eDO_description",
+    ),
     "upkie_description": Repository(
         url="https://github.com/tasts-robots/upkie_description.git",
         commit="v1.1.0",
         cache_path="tasts-robots/upkie_description",
-    )
+    ),
 }
