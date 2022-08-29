@@ -65,7 +65,7 @@ class CloneProgressBar(RemoteProgress):
 
 def clone_to_directory(repo_url: str, target_dir: str) -> Repo:
     """
-    Clone a repository to the descriptions directory.
+    Clone a git repository to a designated directory.
 
     Args:
         repo_url: URL to the git repository to clone.
