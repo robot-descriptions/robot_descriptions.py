@@ -41,15 +41,20 @@ The import will automatically download and cache the robot model, if you don't h
     </dd>
 </dl>
 
+Some robot descriptions include additional fields. For instance, the ``ur3_description`` exports ``GRIPPER_URDF_PATH`` for the optional end effector.
+
 ## Models
 
 Available robot models currently include:
 
-| Name   | Submodule |
-| ------ | --------- |
-| [e.DO](https://github.com/Comau/eDO_description) | `edo_description` |
-| [Kinova Gen2](https://github.com/Gepetto/example-robot-data/tree/master/robots/kinova_description) | `kinova_description` |
-| [Panda](https://github.com/Gepetto/example-robot-data/tree/master/robots/panda_description) | `panda_description` |
-| [Upkie](https://github.com/tasts-robots/upkie_description) | `upkie_description` |
+| Robot name            | Submodule            |
+| --------------------- | -------------------- |
+| e.DO                  | `edo_description`    |
+| Kinova Gen2           | `kinova_description` |
+| Panda                 | `panda_description`  |
+| Universal Robots UR3  | `ur3_description`    |
+| Universal Robots UR5  | `ur5_description`    |
+| Universal Robots UR10 | `ur10_description`   |
+| Upkie                 | `upkie_description`  |
 
 Check out [Awesome Robot Models](https://github.com/stephane-caron/awesome-robot-models)
