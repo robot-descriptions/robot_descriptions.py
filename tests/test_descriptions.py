@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
+import os
 import unittest
 
 from robot_descriptions import (
@@ -51,8 +51,27 @@ class TestDescriptions(unittest.TestCase):
             ur5_description,
         ]
         for description in descriptions:
-            self.assertNotEqual(description.PATH, "")
-            self.assertNotEqual(description.URDF_PATH, "")
+            self.assertNotEqual(
+                description.PATH, "", f"Empty PATH in {description}"
+            )
+            self.assertTrue(
+                os.path.exists(description.PATH),
+                f"Path {description.PATH} does not exist in {description}",
+            )
+            self.assertNotEqual(
+                description.URDF_PATH, "", f"Empty URDF_PATH in {description}"
+            )
+            self.assertTrue(
+                os.path.exists(description.URDF_PATH),
+                f"URDF path {description.URDF_PATH} does not exist "
+                f"in {description}",
+            )
+            if description.MESHES_PATH != "":
+                self.assertTrue(
+                    os.path.exists(description.MESHES_PATH),
+                    f"Meshes path {description.MESHES_PATH} does not exist "
+                    f"in {description}",
+                )
 
 
 if __name__ == "__main__":
