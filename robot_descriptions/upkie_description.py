@@ -25,6 +25,8 @@ from .git import clone_to_cache as _clone_to_cache
 
 __working_dir__ = _clone_to_cache("upkie_description")
 
-MESHES_PATH: str = _path.join(__working_dir__, "meshes")
-PATH: str = str(__working_dir__)
-URDF_PATH: str = _path.join(__working_dir__, "urdf", "upkie.urdf")
+PATH: str = __working_dir__
+
+MESHES_PATH: str = _path.join(PATH, "meshes")
+
+URDF_PATH: str = _path.join(PATH, "urdf", "upkie.urdf")
