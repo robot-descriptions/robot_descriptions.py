@@ -22,12 +22,12 @@ import unittest
 
 import git
 
-from robot_descriptions.cache import (
+from robot_descriptions._cache import (
     CloneProgressBar,
     clone_to_cache,
     clone_to_directory,
 )
-from robot_descriptions.repositories import REPOSITORIES
+from robot_descriptions._repositories import REPOSITORIES
 
 
 class TestGit(unittest.TestCase):
