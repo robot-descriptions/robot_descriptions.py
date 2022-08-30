@@ -21,6 +21,7 @@ import unittest
 from robot_descriptions import (
     cf2_description,
     double_pendulum_description,
+    finger_edu_description,
     edo_description,
     kinova_description,
     panda_description,
@@ -45,6 +46,7 @@ class TestDescriptions(unittest.TestCase):
             cf2_description,
             double_pendulum_description,
             edo_description,
+            finger_edu_description,
             kinova_description,
             panda_description,
             upkie_description,

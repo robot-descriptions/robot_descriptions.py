@@ -8,13 +8,14 @@ All notable changes to this project will be documented in this file.
 
 - Crazyflie 2.0
 - Double Pendulum
+- e.DO
+- FingerEdu v1
 - Kinova Gen2
 - Panda
 - Universal Robots UR10
 - Universal Robots UR3
 - Universal Robots UR5
 - Upkie
-- e.DO
 
 ### Added
 

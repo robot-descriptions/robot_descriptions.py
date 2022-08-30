@@ -52,6 +52,7 @@ Available robot models ([gallery](https://github.com/stephane-caron/awesome-robo
 | Crazyflie 2.0         | `cf2_description`             |
 | Double Pendulum       | `double_pendulum_description` |
 | e.DO                  | `edo_description`             |
+| FingerEdu v1          | `finger_edu_description`      |
 | Kinova Gen2           | `kinova_description`          |
 | Panda                 | `panda_description`           |
 | Universal Robots UR3  | `ur3_description`             |
