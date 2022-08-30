@@ -21,7 +21,7 @@ Crazyflie 2.0 description.
 
 from os import path as _path
 
-from .git import clone_to_cache as _clone_to_cache
+from .cache import clone_to_cache as _clone_to_cache
 
 __working_dir__ = _clone_to_cache("gym-pybullet-drones")
 

@@ -21,7 +21,7 @@ Universal Robots UR5 description.
 
 from os import path as _path
 
-from .git import clone_to_cache as _clone_to_cache
+from .cache import clone_to_cache as _clone_to_cache
 
 __working_dir__ = _clone_to_cache("example-robot-data")
 

@@ -21,7 +21,7 @@ e.DO description.
 
 from os import path as _path
 
-from .git import clone_to_cache as _clone_to_cache
+from .cache import clone_to_cache as _clone_to_cache
 
 PATH: str = _clone_to_cache("eDO_description")
 

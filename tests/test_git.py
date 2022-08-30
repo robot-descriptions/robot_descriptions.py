@@ -22,7 +22,7 @@ import unittest
 
 import git
 
-from robot_descriptions.git import (
+from robot_descriptions.cache import (
     CloneProgressBar,
     clone_to_cache,
     clone_to_directory,
