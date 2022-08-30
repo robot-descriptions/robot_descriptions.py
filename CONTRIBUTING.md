@@ -23,3 +23,7 @@ __repo__.git.checkout(f"v{__version__}")
 ```
 
 If release tags are not available in the target robot description, use a specific git commit ID. This way the imported submodule will still work in the interval between a change in the file structure of the target repository and the corresponding update in `robot_descriptions`.
+
+- Import the new submodule and add it to the ``descriptions`` list in the [descriptions unit test](tests/test_descriptions.py)
+- Document the model's submodule name in the Models section of the [README](README.md)
+- Report the new model to the [changelog](CHANGELOG.md)
