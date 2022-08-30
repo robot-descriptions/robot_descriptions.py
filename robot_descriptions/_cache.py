@@ -25,7 +25,7 @@ from typing import Union
 from git import RemoteProgress, Repo
 from tqdm import tqdm
 
-from .repositories import REPOSITORIES
+from ._repositories import REPOSITORIES
 
 
 class CloneProgressBar(RemoteProgress):
