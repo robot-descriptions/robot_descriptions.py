@@ -43,7 +43,7 @@ class TestGit(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp_dir:
             repo_name = "test_repo"
             repo_path = os.path.join(tmp_dir, repo_name)
-            target_dir = os.path.join(tmp_dir, "descriptions")
+            target_dir = os.path.join(tmp_dir, "clone")
             empty_file = os.path.join(repo_path, "foo.bar")
             repo = git.Repo.init(repo_path)
             open(empty_file, "wb").close()
