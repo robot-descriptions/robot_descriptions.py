@@ -49,6 +49,7 @@ Available robot models ([gallery](https://github.com/stephane-caron/awesome-robo
 
 | Robot name            | Submodule            |
 | --------------------- | -------------------- |
+| Crazyflie 2.0         | `cf2_description`    |
 | e.DO                  | `edo_description`    |
 | Kinova Gen2           | `kinova_description` |
 | Panda                 | `panda_description`  |

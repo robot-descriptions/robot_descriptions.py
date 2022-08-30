@@ -19,6 +19,7 @@
 import unittest
 
 from robot_descriptions import (
+    cf2_description,
     edo_description,
     kinova_description,
     panda_description,
@@ -40,13 +41,14 @@ class TestDescriptions(unittest.TestCase):
         Check all imported submodules.
         """
         descriptions = [
+            cf2_description,
             edo_description,
             kinova_description,
             panda_description,
             upkie_description,
+            ur10_description,
             ur3_description,
             ur5_description,
-            ur10_description,
         ]
         for description in descriptions:
             self.assertNotEqual(description.PATH, "")

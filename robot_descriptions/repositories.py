@@ -50,6 +50,11 @@ REPOSITORIES = {
         commit="v4.0.1",
         cache_path="Gepetto/example-robot-data",
     ),
+    "gym-pybullet-drones": Repository(
+        url="https://github.com/utiasDSL/gym-pybullet-drones.git",
+        commit="v1.0.0",
+        cache_path="utiasDSL/gym-pybullet-drones",
+    ),
     "upkie_description": Repository(
         url="https://github.com/tasts-robots/upkie_description.git",
         commit="v1.1.0",
