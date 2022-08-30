@@ -36,9 +36,9 @@ class TestDescriptions(unittest.TestCase):
     Test fixture for all robot descriptions.
     """
 
-    def test_upkie_description(self):
+    def test_all_descriptions(self):
         """
-        Check all imported submodules.
+        Check all robot-description submodules.
         """
         descriptions = [
             cf2_description,

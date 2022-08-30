@@ -43,7 +43,7 @@ class TestGit(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp_dir:
             repo_name = "test_repo"
             repo_path = os.path.join(tmp_dir, repo_name)
-            target_dir = os.path.join(tmp_dir, "clone")
+            clone_dir = os.path.join(tmp_dir, "clone")
             empty_file = os.path.join(repo_path, "foo.bar")
             repo = git.Repo.init(repo_path)
             open(empty_file, "wb").close()
@@ -51,12 +51,12 @@ class TestGit(unittest.TestCase):
             repo.index.commit("Test initial commit")
 
             # Clone the repository for the first time
-            clone_1 = clone_to_directory(repo_path, target_dir)
+            clone_1 = clone_to_directory(repo_path, clone_dir)
             self.assertTrue(clone_1.common_dir.startswith(tmp_dir))
-            self.assertTrue(clone_1.working_dir.endswith(repo_name))
+            self.assertTrue(clone_1.working_dir.endswith("clone"))
 
             # Cloning again, should recover the existing repo
-            clone_2 = clone_to_directory(repo_path, target_dir)
+            clone_2 = clone_to_directory(repo_path, clone_dir)
             self.assertEqual(
                 str(clone_1.active_branch), str(clone_2.active_branch)
             )
