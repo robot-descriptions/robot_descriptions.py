@@ -47,15 +47,16 @@ Some robot descriptions include additional fields. For instance, the ``ur3_descr
 
 Available robot models ([gallery](https://github.com/stephane-caron/awesome-robot-models#gallery)) currently include:
 
-| Robot name            | Submodule            |
-| --------------------- | -------------------- |
-| Crazyflie 2.0         | `cf2_description`    |
-| e.DO                  | `edo_description`    |
-| Kinova Gen2           | `kinova_description` |
-| Panda                 | `panda_description`  |
-| Universal Robots UR3  | `ur3_description`    |
-| Universal Robots UR5  | `ur5_description`    |
-| Universal Robots UR10 | `ur10_description`   |
-| Upkie                 | `upkie_description`  |
+| Robot name            | Submodule                     |
+| --------------------- | ----------------------------- |
+| Crazyflie 2.0         | `cf2_description`             |
+| Double Pendulum       | `double_pendulum_description` |
+| e.DO                  | `edo_description`             |
+| Kinova Gen2           | `kinova_description`          |
+| Panda                 | `panda_description`           |
+| Universal Robots UR3  | `ur3_description`             |
+| Universal Robots UR5  | `ur5_description`             |
+| Universal Robots UR10 | `ur10_description`            |
+| Upkie                 | `upkie_description`           |
 
 New models are welcome! Check out the [guidelines](CONTRIBUTING.md) before opening a PR.

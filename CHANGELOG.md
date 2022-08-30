@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### New models
 
 - Crazyflie 2.0
+- Double Pendulum
 - Kinova Gen2
 - Panda
 - Universal Robots UR10
