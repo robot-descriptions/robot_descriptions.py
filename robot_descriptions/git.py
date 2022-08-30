@@ -74,19 +74,15 @@ def clone_to_directory(repo_url: str, target_dir: str) -> Repo:
     Returns:
         Cloned git repository.
     """
-    repo_name = os.path.basename(repo_url)
-    if repo_name.endswith(".git"):
-        repo_name = repo_name[:-4]
+    if os.path.exists(target_dir):
+        return Repo(target_dir)
 
-    repo_path = os.path.join(target_dir, repo_name)
-    if os.path.exists(repo_path):
-        return Repo(repo_path)
-
-    print(f"Downloading {repo_name}...")
+    print(f"Cloning {repo_url}...")
+    os.makedirs(target_dir)
     progress_bar = CloneProgressBar()
     return Repo.clone_from(
         repo_url,
-        repo_path,
+        target_dir,
         progress=progress_bar.update,
     )
 
@@ -122,9 +118,6 @@ def clone_to_cache(
     )
 
     target_dir = os.path.join(cache_dir, repository.cache_path)
-    if not os.path.exists(target_dir):
-        os.makedirs(target_dir)
-
     clone = clone_to_directory(repository.url, target_dir)
     clone.git.checkout(repository.commit)
     if clone.working_dir is None:

@@ -17,5 +17,6 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- This changelog.
+- Caching of git repositories.
 - Contributing instructions.
+- This changelog.
