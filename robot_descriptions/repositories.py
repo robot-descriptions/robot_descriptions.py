@@ -40,6 +40,11 @@ class Repository:
 
 
 REPOSITORIES = {
+    "drake": Repository(
+        url="https://github.com/RobotLocomotion/drake.git",
+        commit="v1.7.0",
+        cache_path="RobotLocomotion/drake",
+    ),
     "eDO_description": Repository(
         url="https://github.com/Comau/eDO_description.git",
         commit="17b3f92f834746106d6a4befaab8eeab3ac248e6",

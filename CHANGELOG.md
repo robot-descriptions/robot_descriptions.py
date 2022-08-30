@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Crazyflie 2.0
 - Double Pendulum
 - e.DO
+- KUKA iiwa 14
 - FingerEdu v1
 - Kinova Gen2
 - Panda

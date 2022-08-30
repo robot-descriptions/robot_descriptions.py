@@ -54,6 +54,7 @@ Available robot models ([gallery](https://github.com/stephane-caron/awesome-robo
 | e.DO                  | `edo_description`             |
 | FingerEdu v1          | `finger_edu_description`      |
 | Kinova Gen2           | `kinova_description`          |
+| KUKA iiwa 14          | `iiwa_description`            |
 | Panda                 | `panda_description`           |
 | Universal Robots UR3  | `ur3_description`             |
 | Universal Robots UR5  | `ur5_description`             |
