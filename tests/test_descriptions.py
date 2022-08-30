@@ -19,6 +19,7 @@ import os
 import unittest
 
 from robot_descriptions import (
+    allegro_hand_description,
     cf2_description,
     double_pendulum_description,
     finger_edu_description,
@@ -44,6 +45,7 @@ class TestDescriptions(unittest.TestCase):
         Check all robot-description submodules.
         """
         descriptions = [
+            allegro_hand_description,
             cf2_description,
             double_pendulum_description,
             edo_description,

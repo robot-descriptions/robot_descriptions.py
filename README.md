@@ -49,6 +49,7 @@ Available robot models ([gallery](https://github.com/stephane-caron/awesome-robo
 
 | Robot name            | Submodule                     |
 | --------------------- | ----------------------------- |
+| Allegro Hand          | `allegro_hand_description`    |
 | Crazyflie 2.0         | `cf2_description`             |
 | Double Pendulum       | `double_pendulum_description` |
 | e.DO                  | `edo_description`             |
