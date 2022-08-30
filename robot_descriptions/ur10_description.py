@@ -29,8 +29,8 @@ PATH: str = _path.join(__working_dir__, "robots", "ur_description")
 
 MESHES_PATH: str = _path.join(PATH, "meshes", "ur10")
 
-URDF_PATH: str = _path.join(PATH, "robots", "ur10_robot.urdf")
+URDF_PATH: str = _path.join(PATH, "urdf", "ur10_robot.urdf")
 
 JOINT_LIMITED_URDF_PATH: str = _path.join(
-    PATH, "robots", "ur10_joint_limited_robot.urdf"
+    PATH, "urdf", "ur10_joint_limited_robot.urdf"
 )

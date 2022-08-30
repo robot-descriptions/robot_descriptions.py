@@ -29,10 +29,10 @@ PATH: str = _path.join(__working_dir__, "robots", "ur_description")
 
 MESHES_PATH: str = _path.join(PATH, "meshes", "ur3")
 
-URDF_PATH: str = _path.join(PATH, "robots", "ur3_robot.urdf")
+URDF_PATH: str = _path.join(PATH, "urdf", "ur3_robot.urdf")
 
-GRIPPER_URDF_PATH: str = _path.join(PATH, "robots", "ur3_gripper.urdf")
+GRIPPER_URDF_PATH: str = _path.join(PATH, "urdf", "ur3_gripper.urdf")
 
 JOINT_LIMITED_URDF_PATH: str = _path.join(
-    PATH, "robots", "ur3_joint_limited_robot.urdf"
+    PATH, "urdf", "ur3_joint_limited_robot.urdf"
 )
