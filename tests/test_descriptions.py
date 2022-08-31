@@ -37,6 +37,24 @@ from robot_descriptions import (
     ur10_description,
 )
 
+ALL_DESCRIPTIONS = [
+    allegro_hand_description,
+    atlas_description,
+    baxter_description,
+    bolt_description,
+    cf2_description,
+    double_pendulum_description,
+    edo_description,
+    finger_edu_description,
+    gen2_description,
+    iiwa_description,
+    panda_description,
+    pr2_description,
+    upkie_description,
+    ur10_description,
+    ur3_description,
+    ur5_description,
+]
 
 class TestDescriptions(unittest.TestCase):
 
@@ -48,24 +66,7 @@ class TestDescriptions(unittest.TestCase):
         """
         Check all robot-description submodules.
         """
-        descriptions = [
-            allegro_hand_description,
-            atlas_description,
-            baxter_description,
-            cf2_description,
-            double_pendulum_description,
-            edo_description,
-            finger_edu_description,
-            gen2_description,
-            iiwa_description,
-            panda_description,
-            pr2_description,
-            upkie_description,
-            ur10_description,
-            ur3_description,
-            ur5_description,
-        ]
-        for description in descriptions:
+        for description in ALL_DESCRIPTIONS:
             self.assertNotEqual(
                 description.PATH, "", f"Empty PATH in {description}"
             )
