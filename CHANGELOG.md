@@ -14,15 +14,15 @@ All notable changes to this project will be documented in this file.
 - Crazyflie 2.0
 - Double Pendulum
 - e.DO
-- FingerEdu v1
+- FingerEdu
+- Gen2
 - iCub
-- KUKA iiwa 14
-- Kinova Gen2
+- iiwa 14
 - PR2
 - Panda
-- Universal Robots UR10
-- Universal Robots UR3
-- Universal Robots UR5
+- UR10
+- UR3
+- UR5
 - Upkie
 
 ### Added

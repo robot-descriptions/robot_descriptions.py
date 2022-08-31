@@ -57,10 +57,10 @@ Available robot models ([gallery](https://github.com/stephane-caron/awesome-robo
 | Crazyflie 2.0         | Bitcraze         | `cf2_description`             |
 | Double Pendulum       | N/A              | `double_pendulum_description` |
 | e.DO                  | Comau            | `edo_description`             |
-| FingerEdu v1          | N/A              | `finger_edu_description`      |
+| FingerEdu             | N/A              | `finger_edu_description`      |
 | Gen2                  | Kinova           | `gen2_description`            |
 | iCub                  | IIT              | `icub_description`            |
-| iiwa 14               | KUKA             | `iiwa_description`            |
+| iiwa                  | KUKA             | `iiwa_description`            |
 | Panda                 | Franka Emika     | `panda_description`           |
 | PR2                   | Willow Garage    | `pr2_description`             |
 | Upkie                 | Tast's Robots    | `upkie_description`           |
