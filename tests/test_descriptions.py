@@ -20,10 +20,11 @@ import unittest
 
 from robot_descriptions import (
     allegro_hand_description,
+    atlas_description,
     cf2_description,
     double_pendulum_description,
-    finger_edu_description,
     edo_description,
+    finger_edu_description,
     iiwa_description,
     kinova_description,
     panda_description,
@@ -46,6 +47,7 @@ class TestDescriptions(unittest.TestCase):
         """
         descriptions = [
             allegro_hand_description,
+            atlas_description,
             cf2_description,
             double_pendulum_description,
             edo_description,

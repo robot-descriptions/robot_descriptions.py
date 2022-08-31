@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### New models
 
 - Allegro Hand
+- Atlas
 - Crazyflie 2.0
 - Double Pendulum
 - e.DO
