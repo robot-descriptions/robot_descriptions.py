@@ -22,6 +22,7 @@ from robot_descriptions import (
     allegro_hand_description,
     atlas_description,
     baxter_description,
+    bolt_description,
     cf2_description,
     double_pendulum_description,
     edo_description,
