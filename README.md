@@ -2,7 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 
-Import open source robot models as Python modules. The wrapper automatically downloads and cache model files at first import. URDF descriptions from [Awesome Robot Models](https://github.com/stephane-caron/awesome-robot-models) are available.
+Import open source robot descriptions as Python modules. The wrapper automatically downloads and cache files at first import. [Awesome Robot Descriptions](https://github.com/stephane-caron/awesome-robot-descriptions) are available.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Import the robot description you are interested in directly as a submodule of ``
 from robot_descriptions import my_robot_description
 ```
 
-The import will automatically download and cache the robot model, if you don't have it already. The submodule then exports the following paths:
+The import will automatically download and cache the robot description, if you don't have it already. The submodule then exports the following paths:
 
 <dl>
     <dt>
@@ -37,15 +37,15 @@ The import will automatically download and cache the robot model, if you don't h
         <code>URDF_PATH</code>
     </dt>
     <dd>
-        Path to the URDF file of the robot model.
+        Path to the URDF file of the robot description.
     </dd>
 </dl>
 
 Some robot descriptions include additional fields. For instance, the ``ur3_description`` exports ``GRIPPER_URDF_PATH`` for the optional end effector.
 
-## Models
+## Descriptions
 
-Available robot models ([gallery](https://github.com/stephane-caron/awesome-robot-models#gallery)) currently include:
+Available robot descriptions ([gallery](https://github.com/stephane-caron/awesome-robot-descriptions#gallery)) currently include:
 
 | Name                  | Maker            | Submodule                     |
 |-----------------------|------------------| ------------------------------|
@@ -69,4 +69,4 @@ Available robot models ([gallery](https://github.com/stephane-caron/awesome-robo
 | UR5                   | Universal Robots | `ur5_description`             |
 | UR10                  | Universal Robots | `ur10_description`            |
 
-New models are welcome! Check out the [guidelines](CONTRIBUTING.md) before opening a PR.
+New robot descriptions are welcome! Check out the [guidelines](CONTRIBUTING.md) then open a PR.
