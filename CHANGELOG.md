@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 - FingerEdu v1
 - Kinova Gen2
 - Panda
+- PR2
 - Universal Robots UR10
 - Universal Robots UR3
 - Universal Robots UR5
