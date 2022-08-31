@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Boston Dynamics Atlas description.
+Atlas description.
 """
 
 from os import path as _path

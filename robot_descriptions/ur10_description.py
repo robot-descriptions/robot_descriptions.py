@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Universal Robots UR10 description.
+UR10 description.
 """
 
 from os import path as _path

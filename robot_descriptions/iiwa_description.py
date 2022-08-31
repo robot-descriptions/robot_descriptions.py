@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-KUKA iiwa 14 description.
+iiwa 14 description.
 """
 
 from os import path as _path

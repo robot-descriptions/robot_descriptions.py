@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Kinova Gen2 description.
+Gen2 description.
 """
 
 from os import path as _path

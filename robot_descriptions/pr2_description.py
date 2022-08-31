@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Boston Dynamics Atlas description.
+PR2 description.
 """
 
 from os import path as _path
