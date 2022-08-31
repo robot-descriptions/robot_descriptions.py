@@ -53,6 +53,7 @@ Available robot models ([gallery](https://github.com/stephane-caron/awesome-robo
 | Atlas                 | Boston Dynamics  | `atlas_description`           |
 | Baxter                | Rethink Robotics | `baxter_description`          |
 | Bolt                  | ODRI             | `bolt_description`            |
+| Cassie                | Agility Robotics | `cassie_description`          |
 | Crazyflie 2.0         | Bitcraze         | `cf2_description`             |
 | Double Pendulum       | N/A              | `double_pendulum_description` |
 | e.DO                  | Comau            | `edo_description`             |

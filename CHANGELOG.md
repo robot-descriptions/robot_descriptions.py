@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Atlas
 - Baxter
 - Bolt
+- Cassie
 - Crazyflie 2.0
 - Double Pendulum
 - e.DO

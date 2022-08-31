@@ -45,6 +45,11 @@ REPOSITORIES = {
         commit="v1.2.0",
         cache_path="RethinkRobotics/baxter_common",
     ),
+    "cassie_description": Repository(
+        url="https://github.com/UMich-BipedLab/cassie_description.git",
+        commit="96323f3d0cc2cb7101cb92d7fcf4650abdcb2e81",
+        cache_path="UMich-BipedLab/cassie_description",
+    ),
     "drake": Repository(
         url="https://github.com/RobotLocomotion/drake.git",
         commit="v1.7.0",
