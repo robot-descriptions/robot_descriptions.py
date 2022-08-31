@@ -70,6 +70,11 @@ REPOSITORIES = {
         commit="v1.0.0",
         cache_path="utiasDSL/gym-pybullet-drones",
     ),
+    "jvrc_description": Repository(
+        url="https://github.com/stephane-caron/jvrc_description.git",
+        commit="v1.1.0",
+        cache_path="stephane-caron/jvrc_description",
+    ),
     "upkie_description": Repository(
         url="https://github.com/tasts-robots/upkie_description.git",
         commit="v1.1.0",

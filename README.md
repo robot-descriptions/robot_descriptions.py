@@ -61,6 +61,7 @@ Available robot models ([gallery](https://github.com/stephane-caron/awesome-robo
 | Gen2                  | Kinova           | `gen2_description`            |
 | iCub                  | IIT              | `icub_description`            |
 | iiwa                  | KUKA             | `iiwa_description`            |
+| JVRC-1                | AIST             | `jvrc_description`            |
 | Panda                 | Franka Emika     | `panda_description`           |
 | PR2                   | Willow Garage    | `pr2_description`             |
 | Upkie                 | Tast's Robots    | `upkie_description`           |

@@ -18,6 +18,7 @@ All notable changes to this project will be documented in this file.
 - Gen2
 - iCub
 - iiwa 14
+- JVRC-1
 - PR2
 - Panda
 - UR10
