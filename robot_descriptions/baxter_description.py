@@ -16,19 +16,17 @@
 # limitations under the License.
 
 """
-PR2 description.
+Baxter description.
 """
 
 from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("drake")
+__working_dir__ = _clone_to_cache("baxter_common")
 
-PATH: str = _path.join(
-    __working_dir__, "examples", "pr2", "models", "pr2_description"
-)
+PATH: str = _path.join(__working_dir__, "baxter_description")
 
 MESHES_PATH: str = _path.join(PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "urdf", "pr2_simplified.urdf")
+URDF_PATH: str = _path.join(PATH, "urdf", "baxter.urdf")

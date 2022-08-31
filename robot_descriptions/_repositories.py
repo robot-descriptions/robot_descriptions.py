@@ -40,6 +40,11 @@ class Repository:
 
 
 REPOSITORIES = {
+    "baxter_common": Repository(
+        url="https://github.com/RethinkRobotics/baxter_common.git",
+        commit="v1.2.0",
+        cache_path="RethinkRobotics/baxter_common",
+    ),
     "drake": Repository(
         url="https://github.com/RobotLocomotion/drake.git",
         commit="v1.7.0",

@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 
 - Allegro Hand
 - Atlas
+- Baxter
 - Crazyflie 2.0
 - Double Pendulum
 - e.DO
