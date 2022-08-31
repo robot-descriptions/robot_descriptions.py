@@ -75,6 +75,11 @@ REPOSITORIES = {
         commit="v1.1.0",
         cache_path="stephane-caron/jvrc_description",
     ),
+    "reachy_description": Repository(
+        url="https://github.com/aubrune/reachy_description.git",
+        commit="release-1.0.0",
+        cache_path="aubrune/reachy_description",
+    ),
     "upkie_description": Repository(
         url="https://github.com/tasts-robots/upkie_description.git",
         commit="v1.1.0",
