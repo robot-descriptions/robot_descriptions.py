@@ -33,10 +33,12 @@ MESHES_PATH: str = _path.join(PATH, "meshes")
 
 URDF_PATH: str = _path.join(PATH, "urdf", "allegro_hand_description_left.urdf")
 
-LEFT_HAND_URDF_PATH: str = _path.join(
+# Description-specific paths
+
+URDF_PATH_LEFT: str = _path.join(
     PATH, "urdf", "allegro_hand_description_left.urdf"
 )
 
-RIGHT_HAND_URDF_PATH: str = _path.join(
+URDF_PATH_RIGHT: str = _path.join(
     PATH, "urdf", "allegro_hand_description_right.urdf"
 )

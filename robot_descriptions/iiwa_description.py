@@ -33,14 +33,16 @@ MESHES_PATH: str = _path.join(PATH, "meshes")
 
 URDF_PATH: str = _path.join(PATH, "urdf", "iiwa14_primitive_collision.urdf")
 
-NO_COLLISION_URDF_PATH: str = _path.join(
+# Description-specific paths
+
+URDF_PATH_NO_COLLISION: str = _path.join(
     PATH, "urdf", "iiwa14_no_collision.urdf"
 )
 
-POLYTOPE_COLLISION_URDF_PATH: str = _path.join(
+URDF_PATH_POLYTOPE_COLLISION: str = _path.join(
     PATH, "urdf", "iiwa14_polytope_collision.urdf"
 )
 
-PRIMITIVE_COLLISION_URDF_PATH: str = _path.join(
+URDF_PATH_PRIMITIVE_COLLISION: str = _path.join(
     PATH, "urdf", "iiwa14_primitive_collision.urdf"
 )

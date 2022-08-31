@@ -33,8 +33,10 @@ MESHES_PATH: str = _path.join(PATH, "meshes")
 
 URDF_PATH: str = _path.join(PATH, "urdf", "double_pendulum.urdf")
 
-CONTINUOUS_URDF_PATH: str = _path.join(
+# Description-specific paths
+
+URDF_PATH_CONTINUOUS: str = _path.join(
     PATH, "urdf", "double_pendulum_continuous.urdf"
 )
 
-SIMPLE_URDF_PATH: str = _path.join(PATH, "urdf", "double_pendulum_simple.urdf")
+URDF_PATH_SIMPLE: str = _path.join(PATH, "urdf", "double_pendulum_simple.urdf")

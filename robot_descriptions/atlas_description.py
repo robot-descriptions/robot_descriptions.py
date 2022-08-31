@@ -31,6 +31,8 @@ MESHES_PATH: str = _path.join(PATH, "urdf", "meshes")
 
 URDF_PATH: str = _path.join(PATH, "urdf", "atlas_convex_hull.urdf")
 
-MINIMAL_CONTACT_URDF_PATH: str = _path.join(
+# Description-specific paths
+
+URDF_PATH_MINIMUM_CONTACT: str = _path.join(
     PATH, "urdf", "atlas_minimum_contact.urdf"
 )
