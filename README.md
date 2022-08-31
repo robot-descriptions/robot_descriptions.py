@@ -47,21 +47,21 @@ Some robot descriptions include additional fields. For instance, the ``ur3_descr
 
 Available robot models ([gallery](https://github.com/stephane-caron/awesome-robot-models#gallery)) currently include:
 
-| Robot name            | Submodule                     |
-| --------------------- | ----------------------------- |
-| Atlas                 | `atlas_description`           |
-| Allegro Hand          | `allegro_hand_description`    |
-| Crazyflie 2.0         | `cf2_description`             |
-| Double Pendulum       | `double_pendulum_description` |
-| e.DO                  | `edo_description`             |
-| FingerEdu v1          | `finger_edu_description`      |
-| Kinova Gen2           | `kinova_description`          |
-| KUKA iiwa 14          | `iiwa_description`            |
-| Panda                 | `panda_description`           |
-| PR2                   | `pr2_description`             |
-| Universal Robots UR3  | `ur3_description`             |
-| Universal Robots UR5  | `ur5_description`             |
-| Universal Robots UR10 | `ur10_description`            |
-| Upkie                 | `upkie_description`           |
+| Name                  | Maker            | Submodule                     |
+|-----------------------|------------------| ------------------------------|
+| Allegro Hand          | Wonik Robotics   | `allegro_hand_description`    |
+| Atlas                 | Boston Dynamics  | `atlas_description`           |
+| Crazyflie 2.0         | Bitcraze         | `cf2_description`             |
+| Double Pendulum       | N/A              | `double_pendulum_description` |
+| e.DO                  | Comau            | `edo_description`             |
+| FingerEdu v1          | N/A              | `finger_edu_description`      |
+| Gen2                  | Kinova           | `gen2_description`            |
+| iiwa 14               | KUKA             | `iiwa_description`            |
+| Panda                 | Franka Emika     | `panda_description`           |
+| PR2                   | Willow Garage    | `pr2_description`             |
+| Upkie                 | Tast's Robots    | `upkie_description`           |
+| UR3                   | Universal Robots | `ur3_description`             |
+| UR5                   | Universal Robots | `ur5_description`             |
+| UR10                  | Universal Robots | `ur10_description`            |
 
 New models are welcome! Check out the [guidelines](CONTRIBUTING.md) before opening a PR.
