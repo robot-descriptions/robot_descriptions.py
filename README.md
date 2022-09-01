@@ -64,6 +64,8 @@ Available robot descriptions ([gallery](https://github.com/stephane-caron/awesom
 | JVRC-1                | AIST             | `jvrc_description`            |
 | Panda                 | Franka Emika     | `panda_description`           |
 | PR2                   | Willow Garage    | `pr2_description`             |
+| Reachy                | Pollen Robotics  | `reachy_description`          |
+| Simple Humanoid       | N/A              | `simple_humanoid_description` |
 | Upkie                 | Tast's Robots    | `upkie_description`           |
 | UR3                   | Universal Robots | `ur3_description`             |
 | UR5                   | Universal Robots | `ur5_description`             |

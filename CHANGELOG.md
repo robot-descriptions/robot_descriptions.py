@@ -21,6 +21,8 @@ All notable changes to this project will be documented in this file.
 - JVRC-1
 - PR2
 - Panda
+- Reachy
+- Simple Humanoid
 - UR10
 - UR3
 - UR5
