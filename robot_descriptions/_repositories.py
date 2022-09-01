@@ -80,6 +80,11 @@ REPOSITORIES = {
         commit="release-1.0.0",
         cache_path="aubrune/reachy_description",
     ),
+    "romeo_robot": Repository(
+        url="https://github.com/ros-aldebaran/romeo_robot.git",
+        commit="0.1.5",
+        cache_path="ros-aldebaran/romeo_robot",
+    ),
     "simple_humanoid_description": Repository(
         url="https://github.com/laas/simple_humanoid_description.git",
         commit="v1.1.0",

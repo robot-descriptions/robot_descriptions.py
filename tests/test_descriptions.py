@@ -29,12 +29,13 @@ from robot_descriptions import (
     edo_description,
     finger_edu_description,
     gen2_description,
+    icub_description,
     iiwa_description,
     jvrc_description,
-    icub_description,
     panda_description,
     pr2_description,
     reachy_description,
+    romeo_description,
     simple_humanoid_description,
     upkie_description,
     ur3_description,
@@ -59,12 +60,14 @@ ALL_DESCRIPTIONS = [
     panda_description,
     pr2_description,
     reachy_description,
+    romeo_description,
     simple_humanoid_description,
     upkie_description,
     ur10_description,
     ur3_description,
     ur5_description,
 ]
+
 
 class TestDescriptions(unittest.TestCase):
 

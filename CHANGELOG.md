@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file.
 - PR2
 - Panda
 - Reachy
+- Romeo
 - Simple Humanoid
 - UR10
 - UR3
