@@ -22,10 +22,16 @@ The import will automatically download and cache the robot description, if you d
 
 <dl>
     <dt>
+        <code>URDF_PATH</code>
+    </dt>
+    <dd>
+        Path to the main URDF file of the robot description.
+    </dd>
+    <dt>
         <code>MESHES_PATH</code>
     </dt>
     <dd>
-        Path to the "meshes" folder in the robot description.
+        Path to the "meshes" folder of the robot description, if applicable.
     </dd>
     <dt>
         <code>PATH</code>
@@ -33,15 +39,9 @@ The import will automatically download and cache the robot description, if you d
     <dd>
         Path to the root directory of the robot description.
     </dd>
-    <dt>
-        <code>URDF_PATH</code>
-    </dt>
-    <dd>
-        Path to the URDF file of the robot description.
-    </dd>
 </dl>
 
-Some robot descriptions include additional fields. For instance, the ``ur3_description`` exports ``GRIPPER_URDF_PATH`` for the optional end effector.
+Some robot descriptions include additional fields. For instance, the ``iiwa_description`` exports ``URDF_PATH_POLYTOPE_COLLISION`` with more detailed collision meshes.
 
 ## Descriptions
 
