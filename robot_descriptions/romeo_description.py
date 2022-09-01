@@ -23,7 +23,7 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__: str = _clone_to_cache("simple_humanoid_description")
+__working_dir__: str = _clone_to_cache("romeo_robot")
 
 PATH: str = _path.join(__working_dir__, "romeo_description")
 
