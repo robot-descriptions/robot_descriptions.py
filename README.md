@@ -1,4 +1,4 @@
-# Robot descriptions as Python modules
+# Robot descriptions in Python
 
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 
