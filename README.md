@@ -47,29 +47,29 @@ Some robot descriptions include additional fields. For instance, the ``ur3_descr
 
 Available robot descriptions ([gallery](https://github.com/stephane-caron/awesome-robot-descriptions#gallery)) currently include:
 
-| Name                  | Maker            | Submodule                     |
-|-----------------------|------------------| ------------------------------|
-| Allegro Hand          | Wonik Robotics   | `allegro_hand_description`    |
-| Atlas                 | Boston Dynamics  | `atlas_description`           |
-| Baxter                | Rethink Robotics | `baxter_description`          |
-| Bolt                  | ODRI             | `bolt_description`            |
-| Cassie                | Agility Robotics | `cassie_description`          |
-| Crazyflie 2.0         | Bitcraze         | `cf2_description`             |
-| Double Pendulum       | N/A              | `double_pendulum_description` |
-| e.DO                  | Comau            | `edo_description`             |
-| FingerEdu             | N/A              | `finger_edu_description`      |
-| Gen2                  | Kinova           | `gen2_description`            |
-| iCub                  | IIT              | `icub_description`            |
-| iiwa                  | KUKA             | `iiwa_description`            |
-| JVRC-1                | AIST             | `jvrc_description`            |
-| Panda                 | Franka Emika     | `panda_description`           |
-| PR2                   | Willow Garage    | `pr2_description`             |
-| Reachy                | Pollen Robotics  | `reachy_description`          |
-| Romeo                 | Aldebaran Robotics | `romeo_description`         |
-| Simple Humanoid       | N/A              | `simple_humanoid_description` |
-| Upkie                 | Tast's Robots    | `upkie_description`           |
-| UR3                   | Universal Robots | `ur3_description`             |
-| UR5                   | Universal Robots | `ur5_description`             |
-| UR10                  | Universal Robots | `ur10_description`            |
+| Name                  | Maker              | Submodule                     |
+|-----------------------|--------------------| ------------------------------|
+| Allegro Hand          | Wonik Robotics     | `allegro_hand_description`    |
+| Atlas                 | Boston Dynamics    | `atlas_description`           |
+| Baxter                | Rethink Robotics   | `baxter_description`          |
+| Bolt                  | ODRI               | `bolt_description`            |
+| Cassie                | Agility Robotics   | `cassie_description`          |
+| Crazyflie 2.0         | Bitcraze           | `cf2_description`             |
+| Double Pendulum       | N/A                | `double_pendulum_description` |
+| e.DO                  | Comau              | `edo_description`             |
+| FingerEdu             | N/A                | `finger_edu_description`      |
+| Gen2                  | Kinova             | `gen2_description`            |
+| iCub                  | IIT                | `icub_description`            |
+| iiwa                  | KUKA               | `iiwa_description`            |
+| JVRC-1                | AIST               | `jvrc_description`            |
+| Panda                 | Franka Emika       | `panda_description`           |
+| PR2                   | Willow Garage      | `pr2_description`             |
+| Reachy                | Pollen Robotics    | `reachy_description`          |
+| Romeo                 | Aldebaran Robotics | `romeo_description`           |
+| Simple Humanoid       | N/A                | `simple_humanoid_description` |
+| Upkie                 | Tast's Robots      | `upkie_description`           |
+| UR3                   | Universal Robots   | `ur3_description`             |
+| UR5                   | Universal Robots   | `ur5_description`             |
+| UR10                  | Universal Robots   | `ur10_description`            |
 
 New robot descriptions are welcome! Check out the [guidelines](CONTRIBUTING.md) then open a PR.
