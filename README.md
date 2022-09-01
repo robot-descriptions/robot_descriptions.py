@@ -18,7 +18,7 @@ Import the robot description you are interested in directly as a submodule of ``
 from robot_descriptions import my_robot_description
 ```
 
-The import will automatically download and cache the robot description, if you don't have it already. The submodule then exports the following paths:
+The import will automatically download the robot description if you don't have it already, and cache it to a local directory. The submodule then provides the following paths:
 
 <dl>
     <dt>
@@ -37,7 +37,7 @@ The import will automatically download and cache the robot description, if you d
         <code>PATH</code>
     </dt>
     <dd>
-        Path to the root directory of the robot description.
+        Path to the local robot description directory.
     </dd>
 </dl>
 
