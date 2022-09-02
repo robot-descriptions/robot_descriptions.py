@@ -24,6 +24,7 @@ All notable changes to this project will be documented in this file.
 - Reachy
 - Romeo
 - Simple Humanoid
+- TIAGo
 - UR10
 - UR3
 - UR5

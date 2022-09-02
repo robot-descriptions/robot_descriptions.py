@@ -67,6 +67,7 @@ Available robot descriptions ([gallery](https://github.com/stephane-caron/awesom
 | Reachy                | Pollen Robotics    | `reachy_description`          |
 | Romeo                 | Aldebaran Robotics | `romeo_description`           |
 | Simple Humanoid       | N/A                | `simple_humanoid_description` |
+| TIAGo                 | PAL Robotics       | `tiago_description`           |
 | Upkie                 | Tast's Robots      | `upkie_description`           |
 | UR3                   | Universal Robots   | `ur3_description`             |
 | UR5                   | Universal Robots   | `ur5_description`             |
