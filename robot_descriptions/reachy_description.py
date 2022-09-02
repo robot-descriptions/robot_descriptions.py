@@ -25,7 +25,7 @@ from ._cache import clone_to_cache as _clone_to_cache
 
 __working_dir__ = _clone_to_cache("reachy_description")
 
-PATH: str = __working_dir__
+PATH: str = _path.join(__working_dir__)
 
 MESHES_PATH: str = _path.join(PATH, "meshes")
 
