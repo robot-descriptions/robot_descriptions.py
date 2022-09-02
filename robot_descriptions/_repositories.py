@@ -90,6 +90,11 @@ REPOSITORIES = {
         commit="v1.1.0",
         cache_path="laas/simple_humanoid_description",
     ),
+    "talos-data": Repository(
+        url="https://github.com/stack-of-tasks/talos-data.git",
+        commit="v2.0.0",
+        cache_path="stack-of-tasks/talos-data",
+    ),
     "upkie_description": Repository(
         url="https://github.com/tasts-robots/upkie_description.git",
         commit="v1.1.0",

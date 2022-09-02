@@ -16,23 +16,23 @@
 # limitations under the License.
 
 """
-TIAGo description.
+TALOS description.
 """
 
 from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("example-robot-data")
-
-PATH: str = _path.join(__working_dir__, "robots", "tiago_description")
+PATH: str = _clone_to_cache("talos-data")
 
 MESHES_PATH: str = _path.join(PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "robots", "tiago.urdf")
+URDF_PATH: str = _path.join(PATH, "urdf", "talos_full.urdf")
 
 # Description-specific paths
 
-URDF_PATH_DUAL: str = _path.join(PATH, "robots", "tiago_dual.urdf")
+URDF_PATH_V2: str = _path.join(PATH, "urdf", "talos_full_v2.urdf")
 
-URDF_PATH_NO_HAND: str = _path.join(PATH, "robots", "tiago_no_hand.urdf")
+URDF_PATH_REDUCED: str = _path.join(PATH, "urdf", "talos_reduced.urdf")
+
+URDF_PATH_REDUCED_V2: str = _path.join(PATH, "urdf", "talos_reduced_v2.urdf")
