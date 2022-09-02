@@ -19,6 +19,7 @@ import os
 import unittest
 
 from robot_descriptions import (
+    a1_description,
     allegro_hand_description,
     atlas_description,
     baxter_description,
@@ -46,6 +47,7 @@ from robot_descriptions import (
 )
 
 ALL_DESCRIPTIONS = [
+    a1_description,
     allegro_hand_description,
     atlas_description,
     baxter_description,

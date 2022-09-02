@@ -95,6 +95,11 @@ REPOSITORIES = {
         commit="v2.0.0",
         cache_path="stack-of-tasks/talos-data",
     ),
+    "unitree_ros": Repository(
+        url="https://github.com/unitreerobotics/unitree_ros.git",
+        commit="92a36c7cf2fe7781adedce30cd6a6ab1456ef56c",
+        cache_path="unitreerobotics/unitree_ros",
+    ),
     "upkie_description": Repository(
         url="https://github.com/tasts-robots/upkie_description.git",
         commit="v1.1.0",

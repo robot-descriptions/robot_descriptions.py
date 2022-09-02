@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### New models
 
+- A1
 - Allegro Hand
 - Atlas
 - Baxter
