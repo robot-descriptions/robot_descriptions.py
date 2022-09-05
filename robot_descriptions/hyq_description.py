@@ -29,4 +29,4 @@ PATH: str = _path.join(__working_dir__, "robots", "hyq_description")
 
 MESHES_PATH: str = _path.join(PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "robots", "hyq_no_sensor.urdf")
+URDF_PATH: str = _path.join(PATH, "robots", "hyq_no_sensors.urdf")
