@@ -25,7 +25,6 @@ Note:
 """
 
 import argparse
-import sys
 from functools import partial
 from importlib import import_module  # type: ignore
 from typing import List
@@ -103,7 +102,7 @@ def get_argument_parser() -> argparse.ArgumentParser:
         "animate",
         help=(
             "animate a robot description by interpolating "
-            "each joint between its limits",
+            "each joint between its limits"
         ),
     )
     parser_animate.add_argument(
@@ -205,13 +204,11 @@ def main(argv=None):
     """
     parser = get_argument_parser()
     args = parser.parse_args(argv)
-    if args.subcmd is None:
-        parser.print_help()
-        sys.exit(-1)
-
     if args.subcmd == "list":
         print("\n".join(DESCRIPTION_NAMES))
     elif args.subcmd == "show":
         show(args.name, args.configuration, args.collision)
     elif args.subcmd == "animate":
         animate(args.name, args.collision, args.loop_time)
+    else:  # no subcommand
+        parser.print_help()
