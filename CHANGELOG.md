@@ -25,6 +25,7 @@ All notable changes to this project will be documented in this file.
 - iiwa 14
 - JVRC-1
 - Laikago
+- Mini Cheetah
 - Minitaur
 - Panda
 - PR2

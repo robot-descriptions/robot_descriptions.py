@@ -90,6 +90,11 @@ REPOSITORIES = {
         commit="v1.1.0",
         cache_path="stephane-caron/jvrc_description",
     ),
+    "mini_cheetah_urdf": Repository(
+        url="https://github.com/Derek-TH-Wang/mini_cheetah_urdf.git",
+        commit="1988bceb26e81f28594a16e7d5e6abe5cbb27ace",
+        cache_path="Derek-TH-Wang/mini_cheetah_urdf",
+    ),
     "reachy_description": Repository(
         url="https://github.com/aubrune/reachy_description.git",
         commit="release-1.0.0",

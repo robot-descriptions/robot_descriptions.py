@@ -41,6 +41,7 @@ DESCRIPTION_NAMES: List[str] = [
     "iiwa_description",
     "jvrc_description",
     "laikago_description",
+    "mini_cheetah_description",
     "minitaur_description",
     "panda_description",
     "pr2_description",
