@@ -6,7 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SOURCEDIR     = src
 BUILDDIR      = build
-ONLINEDIR     = scaron.info:public_html/doc/robot_descriptions
+ONLINEDIR     = scaron.info:public_html/doc/robot_descriptions.py
 
 .PHONY: help Makefile upload
 

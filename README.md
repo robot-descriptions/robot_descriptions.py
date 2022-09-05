@@ -1,8 +1,8 @@
 # Robot descriptions in Python
 
-[![Build](https://img.shields.io/github/workflow/status/stephane-caron/robot_descriptions/CI)](https://github.com/stephane-caron/robot_descriptions/actions)
-[![Coverage](https://coveralls.io/repos/github/stephane-caron/robot_descriptions/badge.svg?branch=master)](https://coveralls.io/github/stephane-caron/robot_descriptions?branch=master)
-[![Documentation](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://scaron.info/doc/robot_descriptions/)
+[![Build](https://img.shields.io/github/workflow/status/stephane-caron/robot_descriptions.py/CI)](https://github.com/stephane-caron/robot_descriptions.py/actions)
+[![Coverage](https://coveralls.io/repos/github/stephane-caron/robot_descriptions.py/badge.svg?branch=master)](https://coveralls.io/github/stephane-caron/robot_descriptions.py?branch=master)
+[![Documentation](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://scaron.info/doc/robot_descriptions.py/)
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 ![Status](https://img.shields.io/pypi/status/robot_descriptions)
 
