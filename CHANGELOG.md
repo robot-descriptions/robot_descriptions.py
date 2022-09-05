@@ -20,6 +20,7 @@ All notable changes to this project will be documented in this file.
 - e.DO
 - FingerEdu
 - Gen2
+- HyQ
 - iCub
 - iiwa 14
 - JVRC-1

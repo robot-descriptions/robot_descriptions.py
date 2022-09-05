@@ -63,6 +63,7 @@ Available robot descriptions ([gallery](https://github.com/stephane-caron/awesom
 | e.DO                  | Comau              | `edo_description`             |
 | FingerEdu             | N/A                | `finger_edu_description`      |
 | Gen2                  | Kinova             | `gen2_description`            |
+| HyQ                   | IIT                | `hyq_description`             |
 | iCub                  | IIT                | `icub_description`            |
 | iiwa                  | KUKA               | `iiwa_description`            |
 | JVRC-1                | AIST               | `jvrc_description`            |
