@@ -49,8 +49,8 @@ Available robot descriptions ([gallery](https://github.com/stephane-caron/awesom
 
 | Name                  | Maker              | Submodule                     |
 |-----------------------|--------------------| ------------------------------|
-| A1                    | Unitree Robotics   | `a1_description`              |
-| Aliengo               | Unitree Robotics   | `aliengo_description`         |
+| A1                    | UNITREE Robotics   | `a1_description`              |
+| Aliengo               | UNITREE Robotics   | `aliengo_description`         |
 | Allegro Hand          | Wonik Robotics     | `allegro_hand_description`    |
 | ANYmal B              | ANYbotics          | `anymal_b_description`        |
 | ANYmal C              | ANYbotics          | `anymal_c_description`        |
@@ -67,6 +67,7 @@ Available robot descriptions ([gallery](https://github.com/stephane-caron/awesom
 | iCub                  | IIT                | `icub_description`            |
 | iiwa                  | KUKA               | `iiwa_description`            |
 | JVRC-1                | AIST               | `jvrc_description`            |
+| Laikago               | UNITREE Robotics   | `laikago_descriptoin`         |
 | Minitaur              | Ghost Robotics     | `minitaur_description`        |
 | Panda                 | Franka Emika       | `panda_description`           |
 | PR2                   | Willow Garage      | `pr2_description`             |

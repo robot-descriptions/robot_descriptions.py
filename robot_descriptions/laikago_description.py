@@ -16,17 +16,17 @@
 # limitations under the License.
 
 """
-HyQ description.
+Aliengo description.
 """
 
 from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("example-robot-data")
+__working_dir__ = _clone_to_cache("unitree_ros")
 
-PATH: str = _path.join(__working_dir__, "robots", "hyq_description")
+PATH: str = _path.join(__working_dir__, "robots", "laikago_description")
 
 MESHES_PATH: str = _path.join(PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "robots", "hyq_no_sensor.urdf")
+URDF_PATH: str = _path.join(PATH, "urdf", "laikago.urdf")

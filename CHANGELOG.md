@@ -24,6 +24,7 @@ All notable changes to this project will be documented in this file.
 - iCub
 - iiwa 14
 - JVRC-1
+- Laikago
 - Minitaur
 - Panda
 - PR2
