@@ -2,7 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 
-Import open source robot descriptions as Python modules. The wrapper automatically downloads and cache files at first import. [Awesome Robot Descriptions](https://github.com/stephane-caron/awesome-robot-descriptions) are available.
+Import open source robot descriptions as Python modules. The wrapper automatically downloads and cache files at first import. Most [Awesome Robot Descriptions](https://github.com/stephane-caron/awesome-robot-descriptions) are available.
 
 ## Installation
 
@@ -42,6 +42,14 @@ The import will automatically download the robot description if you don't have i
 </dl>
 
 Some robot descriptions include additional fields. For instance, the ``iiwa_description`` exports ``URDF_PATH_POLYTOPE_COLLISION`` with more detailed collision meshes.
+
+## Command line tool
+
+The command line tool can be used to display any of the robot descriptions below. For example:
+
+```console
+robot_descriptions show solo_description
+```
 
 ## Descriptions
 

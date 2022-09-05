@@ -1,4 +1,5 @@
 .coverage
 .tox
 __pycache__
+dist/
 htmlcov/

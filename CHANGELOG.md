@@ -2,9 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## [0.1.0] - 2022/09/05
 
 ### New robot descriptions
+
+This release adds 33 robot descriptions:
 
 - A1
 - Aliengo

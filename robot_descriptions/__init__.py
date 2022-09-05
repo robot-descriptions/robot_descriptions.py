@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Import open-source robot models like Python modules.
+Import open source robot description as Python modules.
 """
 
-__version__ = "0.4.0"
+__version__ = "0.1.0"
