@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### New robot descriptions
 
 - A1
+- Aliengo
 - Allegro Hand
 - Atlas
 - Baxter

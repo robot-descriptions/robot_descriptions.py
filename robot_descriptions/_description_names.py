@@ -23,6 +23,7 @@ from typing import List
 
 DESCRIPTION_NAMES: List[str] = [
     "a1_description",
+    "aliengo_description",
     "allegro_hand_description",
     "atlas_description",
     "baxter_description",
