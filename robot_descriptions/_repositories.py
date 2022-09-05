@@ -45,6 +45,11 @@ REPOSITORIES = {
         commit="988b5df22b84761bdf08111b1c2ccc883793f456",
         cache_path="ANYbotics/anymal_b_simple_description",
     ),
+    "anymal_c_simple_description": Repository(
+        url="https://github.com/ANYbotics/anymal_c_simple_description.git",
+        commit="f160b8f7fed840c47a6febe8e2bc78b32bf43a68",
+        cache_path="ANYbotics/anymal_c_simple_description",
+    ),
     "baxter_common": Repository(
         url="https://github.com/RethinkRobotics/baxter_common.git",
         commit="v1.2.0",

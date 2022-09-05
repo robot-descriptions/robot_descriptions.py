@@ -53,6 +53,7 @@ Available robot descriptions ([gallery](https://github.com/stephane-caron/awesom
 | Aliengo               | Unitree Robotics   | `aliengo_description`         |
 | Allegro Hand          | Wonik Robotics     | `allegro_hand_description`    |
 | ANYmal B              | ANYbotics          | `anymal_b_description`        |
+| ANYmal C              | ANYbotics          | `anymal_c_description`        |
 | Atlas                 | Boston Dynamics    | `atlas_description`           |
 | Baxter                | Rethink Robotics   | `baxter_description`          |
 | Bolt                  | ODRI               | `bolt_description`            |

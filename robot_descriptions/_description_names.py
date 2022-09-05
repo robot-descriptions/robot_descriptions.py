@@ -26,6 +26,7 @@ DESCRIPTION_NAMES: List[str] = [
     "aliengo_description",
     "allegro_hand_description",
     "anymal_b_description",
+    "anymal_c_description",
     "atlas_description",
     "baxter_description",
     "bolt_description",
