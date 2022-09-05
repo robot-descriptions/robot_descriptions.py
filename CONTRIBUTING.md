@@ -2,7 +2,7 @@
 
 There are many ways you can contribute to `robot_descriptions`. Here are some ideas:
 
-- Check out [help-wanted issues](https://github.com/stephane-caron/robot_descriptions/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+- Check out [open issues](https://github.com/stephane-caron/robot_descriptions.py/issues?q=is%3Aissue+is%3Aopen)
 - Add a new robot description
 
 ## Adding a new robot description
