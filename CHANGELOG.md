@@ -22,17 +22,17 @@ All notable changes to this project will be documented in this file.
 - iCub
 - iiwa 14
 - JVRC-1
-- PR2
 - Panda
+- PR2
 - Reachy
 - Romeo
 - Simple Humanoid
 - TALOS
 - TIAGo
+- Upkie
 - UR10
 - UR3
 - UR5
-- Upkie
 
 ### Added
 

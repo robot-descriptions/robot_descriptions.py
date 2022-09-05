@@ -73,8 +73,8 @@ Available robot descriptions ([gallery](https://github.com/stephane-caron/awesom
 | TALOS                 | PAL Robotics       | `talos_description`           |
 | TIAGo                 | PAL Robotics       | `tiago_description`           |
 | Upkie                 | Tast's Robots      | `upkie_description`           |
+| UR10                  | Universal Robots   | `ur10_description`            |
 | UR3                   | Universal Robots   | `ur3_description`             |
 | UR5                   | Universal Robots   | `ur5_description`             |
-| UR10                  | Universal Robots   | `ur10_description`            |
 
 New robot descriptions are welcome! Check out the [guidelines](CONTRIBUTING.md) then open a PR.
