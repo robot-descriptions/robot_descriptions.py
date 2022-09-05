@@ -17,62 +17,9 @@
 
 import os
 import unittest
+from importlib import import_module  # type: ignore
 
-from robot_descriptions import (
-    a1_description,
-    allegro_hand_description,
-    atlas_description,
-    baxter_description,
-    bolt_description,
-    cassie_description,
-    cf2_description,
-    double_pendulum_description,
-    edo_description,
-    finger_edu_description,
-    gen2_description,
-    icub_description,
-    iiwa_description,
-    jvrc_description,
-    panda_description,
-    pr2_description,
-    reachy_description,
-    romeo_description,
-    simple_humanoid_description,
-    talos_description,
-    tiago_description,
-    upkie_description,
-    ur3_description,
-    ur5_description,
-    ur10_description,
-)
-
-ALL_DESCRIPTIONS = [
-    a1_description,
-    allegro_hand_description,
-    atlas_description,
-    baxter_description,
-    bolt_description,
-    cassie_description,
-    cf2_description,
-    double_pendulum_description,
-    edo_description,
-    finger_edu_description,
-    gen2_description,
-    icub_description,
-    iiwa_description,
-    jvrc_description,
-    panda_description,
-    pr2_description,
-    reachy_description,
-    romeo_description,
-    simple_humanoid_description,
-    talos_description,
-    tiago_description,
-    upkie_description,
-    ur10_description,
-    ur3_description,
-    ur5_description,
-]
+from robot_descriptions._description_names import DESCRIPTION_NAMES
 
 
 class TestDescriptions(unittest.TestCase):
@@ -85,7 +32,8 @@ class TestDescriptions(unittest.TestCase):
         """
         Check all robot-description submodules.
         """
-        for description in ALL_DESCRIPTIONS:
+        for name in DESCRIPTION_NAMES:
+            description = import_module(f"robot_descriptions.{name}")
             self.assertNotEqual(
                 description.PATH, "", f"Empty PATH in {description}"
             )
