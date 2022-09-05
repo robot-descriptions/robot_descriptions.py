@@ -120,7 +120,4 @@ def clone_to_cache(
     target_dir = os.path.join(cache_dir, repository.cache_path)
     clone = clone_to_directory(repository.url, target_dir)
     clone.git.checkout(repository.commit)
-    if clone.working_dir is None:
-        raise ImportError("Git repository for the robot description is empty")
-
     return str(clone.working_dir)
