@@ -1,6 +1,10 @@
 # Robot descriptions in Python
 
+[![Build](https://img.shields.io/github/workflow/status/stephane-caron/robot_descriptions/CI)](https://github.com/stephane-caron/robot_descriptions/actions)
+[![Coverage](https://coveralls.io/repos/github/stephane-caron/robot_descriptions/badge.svg?branch=master)](https://coveralls.io/github/stephane-caron/robot_descriptions?branch=master)
+[![Documentation](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://scaron.info/doc/robot_descriptions/)
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
+![Status](https://img.shields.io/pypi/status/robot_descriptions)
 
 Import open source robot descriptions as Python modules. The wrapper automatically downloads and cache files at first import. Most [Awesome Robot Descriptions](https://github.com/stephane-caron/awesome-robot-descriptions) are available.
 

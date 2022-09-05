@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### New robot descriptions
 
-This release adds 33 robot descriptions:
+This release includes 33 robot descriptions:
 
 - A1
 - Aliengo
