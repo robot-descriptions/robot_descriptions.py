@@ -2,11 +2,10 @@
 
 [![Build](https://img.shields.io/github/workflow/status/stephane-caron/robot_descriptions.py/CI)](https://github.com/stephane-caron/robot_descriptions.py/actions)
 [![Coverage](https://coveralls.io/repos/github/stephane-caron/robot_descriptions.py/badge.svg?branch=master)](https://coveralls.io/github/stephane-caron/robot_descriptions.py?branch=master)
-[![Documentation](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://scaron.info/doc/robot_descriptions.py/)
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 ![Status](https://img.shields.io/pypi/status/robot_descriptions)
 
-Import open source robot descriptions as Python modules. The wrapper automatically downloads and cache files at first import. Most [Awesome Robot Descriptions](https://github.com/stephane-caron/awesome-robot-descriptions) are available.
+Import open source robot descriptions as Python modules. The wrapper automatically downloads and cache files at first import. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available.
 
 ## Installation
 
@@ -57,7 +56,7 @@ robot_descriptions show solo_description
 
 ## Descriptions
 
-Available robot descriptions ([gallery](https://github.com/stephane-caron/awesome-robot-descriptions#gallery)) currently include:
+Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) currently include:
 
 | Name                  | Maker              | Submodule                     |
 |-----------------------|--------------------| ------------------------------|
