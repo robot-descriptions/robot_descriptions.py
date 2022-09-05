@@ -55,7 +55,3 @@ class TestDescriptions(unittest.TestCase):
                     f"Meshes path {description.MESHES_PATH} does not exist "
                     f"in {description}",
                 )
-
-
-if __name__ == "__main__":
-    unittest.main()

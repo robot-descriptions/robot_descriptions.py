@@ -100,7 +100,3 @@ class TestGit(unittest.TestCase):
         bar.update(0, 42, 42)
         self.assertEqual(bar.progress.n, 42)
         self.assertEqual(bar.progress.total, 42)
-
-
-if __name__ == "__main__":
-    unittest.main()
