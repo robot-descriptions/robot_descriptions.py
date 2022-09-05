@@ -55,6 +55,11 @@ REPOSITORIES = {
         commit="v1.2.0",
         cache_path="RethinkRobotics/baxter_common",
     ),
+    "bullet3": Repository(
+        url="https://github.com/bulletphysics/bullet3.git",
+        commit="3.24",
+        cache_path="bulletphysics/bullet3",
+    ),
     "cassie_description": Repository(
         url="https://github.com/UMich-BipedLab/cassie_description.git",
         commit="96323f3d0cc2cb7101cb92d7fcf4650abdcb2e81",

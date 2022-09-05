@@ -66,6 +66,7 @@ Available robot descriptions ([gallery](https://github.com/stephane-caron/awesom
 | iCub                  | IIT                | `icub_description`            |
 | iiwa                  | KUKA               | `iiwa_description`            |
 | JVRC-1                | AIST               | `jvrc_description`            |
+| Minitaur              | Ghost Robotics     | `minitaur_description`        |
 | Panda                 | Franka Emika       | `panda_description`           |
 | PR2                   | Willow Garage      | `pr2_description`             |
 | Reachy                | Pollen Robotics    | `reachy_description`          |
