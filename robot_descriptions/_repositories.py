@@ -40,6 +40,11 @@ class Repository:
 
 
 REPOSITORIES = {
+    "anymal_b_simple_description": Repository(
+        url="https://github.com/ANYbotics/anymal_b_simple_description.git",
+        commit="988b5df22b84761bdf08111b1c2ccc883793f456",
+        cache_path="ANYbotics/anymal_b_simple_description",
+    ),
     "baxter_common": Repository(
         url="https://github.com/RethinkRobotics/baxter_common.git",
         commit="v1.2.0",

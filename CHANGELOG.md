@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - A1
 - Aliengo
 - Allegro Hand
+- ANYmal B
 - Atlas
 - Baxter
 - Bolt
