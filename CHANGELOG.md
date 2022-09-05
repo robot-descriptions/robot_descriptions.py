@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
-### New models
+### New robot descriptions
 
 - A1
 - Allegro Hand
@@ -34,6 +34,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Caching of git repositories.
-- Contributing instructions.
-- This changelog.
+- Caching of git repositories
+- Command line to show or animate robot descriptions
+- Contributing instructions
+- This changelog
