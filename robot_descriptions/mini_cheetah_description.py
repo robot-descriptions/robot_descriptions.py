@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Aliengo description.
+Mini Cheetah description.
 """
 
 from os import path as _path

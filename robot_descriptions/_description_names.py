@@ -48,6 +48,7 @@ DESCRIPTION_NAMES: List[str] = [
     "reachy_description",
     "romeo_description",
     "simple_humanoid_description",
+    "solo_description",
     "talos_description",
     "tiago_description",
     "upkie_description",
