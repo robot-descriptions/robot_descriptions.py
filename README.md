@@ -95,3 +95,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | UR5                   | Universal Robots   | `ur5_description`             |
 
 New robot descriptions are welcome! Check out the [guidelines](CONTRIBUTING.md) then open a PR.
+
+## Thanks
+
+Thanks to the maintainers of all the git repositories that made these robot descriptions available.
