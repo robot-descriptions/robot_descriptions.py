@@ -23,8 +23,10 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-PATH: str = _clone_to_cache("eDO_description")
+REPOSITORY_PATH: str = _clone_to_cache("eDO_description")
 
-MESHES_PATH: str = _path.join(PATH, "meshes")
+PACKAGE_PATH: str = REPOSITORY_PATH
 
-URDF_PATH: str = _path.join(PATH, "robots", "edo_sim.urdf")
+MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
+
+URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "edo_sim.urdf")

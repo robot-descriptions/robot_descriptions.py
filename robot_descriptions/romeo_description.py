@@ -23,10 +23,12 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__: str = _clone_to_cache("romeo_robot")
+REPOSITORY_PATH: str = _clone_to_cache("romeo_robot")
 
-PATH: str = _path.join(__working_dir__, "romeo_description")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "romeo_description")
 
-MESHES_PATH: str = _path.join(PATH, "meshes")
+MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "urdf", "romeo_generated_urdf", "romeo.urdf")
+URDF_PATH: str = _path.join(
+    PACKAGE_PATH, "urdf", "romeo_generated_urdf", "romeo.urdf"
+)

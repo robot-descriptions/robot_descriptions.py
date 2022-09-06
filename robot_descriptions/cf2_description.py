@@ -23,10 +23,12 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("gym-pybullet-drones")
+REPOSITORY_PATH: str = _clone_to_cache("gym-pybullet-drones")
 
-PATH: str = _path.join(__working_dir__, "gym_pybullet_drones", "assets")
+PACKAGE_PATH: str = _path.join(
+    REPOSITORY_PATH, "gym_pybullet_drones", "assets"
+)
 
-MESHES_PATH: str = PATH
+MESHES_PATH: str = PACKAGE_PATH
 
-URDF_PATH: str = _path.join(PATH, "cf2p.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "cf2p.urdf")

@@ -35,11 +35,19 @@ class TestDescriptions(unittest.TestCase):
         for name in DESCRIPTION_NAMES:
             description = import_module(f"robot_descriptions.{name}")
             self.assertNotEqual(
-                description.PATH, "", f"Empty PATH in {description}"
+                description.REPOSITORY_PATH,
+                "",
+                f"Empty REPOSITORY_PATH in {description}",
+            )
+            self.assertNotEqual(
+                description.PACKAGE_PATH,
+                "",
+                f"Empty PACKAGE_PATH in {description}",
             )
             self.assertTrue(
-                os.path.exists(description.PATH),
-                f"Path {description.PATH} does not exist in {description}",
+                os.path.exists(description.PACKAGE_PATH),
+                f"Path {description.PACKAGE_PATH} "
+                f"does not exist in {description}",
             )
             self.assertNotEqual(
                 description.URDF_PATH, "", f"Empty URDF_PATH in {description}"

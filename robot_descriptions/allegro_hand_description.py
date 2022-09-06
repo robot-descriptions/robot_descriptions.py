@@ -23,22 +23,24 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("drake")
+REPOSITORY_PATH: str = _clone_to_cache("drake")
 
-PATH: str = _path.join(
-    __working_dir__, "manipulation", "models", "allegro_hand_description"
+PACKAGE_PATH: str = _path.join(
+    REPOSITORY_PATH, "manipulation", "models", "allegro_hand_description"
 )
 
-MESHES_PATH: str = _path.join(PATH, "meshes")
+MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "urdf", "allegro_hand_description_left.urdf")
+URDF_PATH: str = _path.join(
+    PACKAGE_PATH, "urdf", "allegro_hand_description_left.urdf"
+)
 
 # Description-specific paths
 
 URDF_PATH_LEFT: str = _path.join(
-    PATH, "urdf", "allegro_hand_description_left.urdf"
+    PACKAGE_PATH, "urdf", "allegro_hand_description_left.urdf"
 )
 
 URDF_PATH_RIGHT: str = _path.join(
-    PATH, "urdf", "allegro_hand_description_right.urdf"
+    PACKAGE_PATH, "urdf", "allegro_hand_description_right.urdf"
 )

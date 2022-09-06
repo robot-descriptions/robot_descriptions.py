@@ -23,10 +23,10 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("example-robot-data")
+REPOSITORY_PATH = _clone_to_cache("example-robot-data")
 
-PATH: str = _path.join(__working_dir__, "robots", "solo_description")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "solo_description")
 
-MESHES_PATH: str = _path.join(PATH, "meshes")
+MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "robots", "solo12.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "solo12.urdf")

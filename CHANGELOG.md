@@ -9,6 +9,11 @@ All notable changes to this project will be documented in this file.
 - Example: load in Pinocchio
 - Example: show in MeshCat
 - Example: show in yourdfpy
+- New ``REPOSITORY_PATH`` member for each description
+
+### Changed
+
+- ``PATH`` becomes ``PACKAGE_PATH``
 
 ## [0.1.1] - 2022/09/06
 

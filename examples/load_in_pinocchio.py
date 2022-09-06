@@ -40,7 +40,12 @@ if __name__ == "__main__":
 
     robot = pin.RobotWrapper.BuildFromURDF(
         filename=module.URDF_PATH,
-        package_dirs=[os.path.dirname(module.PATH)],
+        package_dirs=[
+            module.PACKAGE_PATH,
+            module.REPOSITORY_PATH,
+            os.path.dirname(module.PACKAGE_PATH),
+            os.path.dirname(module.REPOSITORY_PATH),
+        ],
         root_joint=pin.JointModelFreeFlyer(),
     )
 
