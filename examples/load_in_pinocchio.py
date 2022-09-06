@@ -33,6 +33,11 @@ if __name__ == "__main__":
     parser.add_argument("name", help="name of the robot description")
     args = parser.parse_args()
 
+    if args.name == "cf2_description":
+        raise ValueError(
+            "See https://github.com/stack-of-tasks/pinocchio/issues/1741"
+        )
+
     try:
         module = import_module(f"robot_descriptions.{args.name}")
     except ModuleNotFoundError:
@@ -41,6 +46,7 @@ if __name__ == "__main__":
     robot = pin.RobotWrapper.BuildFromURDF(
         filename=module.URDF_PATH,
         package_dirs=[
+            module.MESHES_PATH,
             module.PACKAGE_PATH,
             module.REPOSITORY_PATH,
             os.path.dirname(module.PACKAGE_PATH),
