@@ -23,10 +23,10 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("drake")
+REPOSITORY_PATH = _clone_to_cache("drake")
 
 PATH: str = _path.join(
-    __working_dir__, "manipulation", "models", "iiwa_description"
+    REPOSITORY_PATH, "manipulation", "models", "iiwa_description"
 )
 
 MESHES_PATH: str = _path.join(PATH, "meshes")

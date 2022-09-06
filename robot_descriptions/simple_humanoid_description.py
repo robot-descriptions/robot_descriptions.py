@@ -23,12 +23,14 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-PATH: str = _clone_to_cache("simple_humanoid_description")
+REPOSITORY_PATH: str = _clone_to_cache("simple_humanoid_description")
+
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
 
 MESHES_PATH: str = ""
 
-URDF_PATH: str = _path.join(PATH, "urdf", "simple_humanoid.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "simple_humanoid.urdf")
 
 URDF_PATH_CLASSICAL: str = _path.join(
-    PATH, "urdf", "simple_humanoid_classical.urdf"
+    PACKAGE_PATH, "urdf", "simple_humanoid_classical.urdf"
 )

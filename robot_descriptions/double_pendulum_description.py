@@ -23,20 +23,22 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("example-robot-data")
+REPOSITORY_PATH: str = _clone_to_cache("example-robot-data")
 
-PATH: str = _path.join(
-    __working_dir__, "robots", "double_pendulum_description"
+PACKAGE_PATH: str = _path.join(
+    REPOSITORY_PATH, "robots", "double_pendulum_description"
 )
 
-MESHES_PATH: str = _path.join(PATH, "meshes")
+MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "urdf", "double_pendulum.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "double_pendulum.urdf")
 
 # Description-specific paths
 
 URDF_PATH_CONTINUOUS: str = _path.join(
-    PATH, "urdf", "double_pendulum_continuous.urdf"
+    PACKAGE_PATH, "urdf", "double_pendulum_continuous.urdf"
 )
 
-URDF_PATH_SIMPLE: str = _path.join(PATH, "urdf", "double_pendulum_simple.urdf")
+URDF_PATH_SIMPLE: str = _path.join(
+    PACKAGE_PATH, "urdf", "double_pendulum_simple.urdf"
+)

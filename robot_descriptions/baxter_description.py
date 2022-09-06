@@ -23,10 +23,10 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("baxter_common")
+REPOSITORY_PATH: str = _clone_to_cache("baxter_common")
 
-PATH: str = _path.join(__working_dir__, "baxter_description")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "baxter_description")
 
-MESHES_PATH: str = _path.join(PATH, "meshes")
+MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "urdf", "baxter.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "baxter.urdf")

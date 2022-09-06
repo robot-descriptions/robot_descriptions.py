@@ -23,10 +23,10 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("bullet3")
+REPOSITORY_PATH = _clone_to_cache("bullet3")
 
-PATH: str = _path.join(__working_dir__, "data", "quadruped")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "data", "quadruped")
 
-MESHES_PATH: str = _path.join(PATH)
+MESHES_PATH: str = _path.join(PACKAGE_PATH)
 
-URDF_PATH: str = _path.join(PATH, "minitaur.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "minitaur.urdf")

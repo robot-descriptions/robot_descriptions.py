@@ -23,16 +23,16 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-__working_dir__ = _clone_to_cache("drake")
+REPOSITORY_PATH: str = _clone_to_cache("drake")
 
-PATH: str = _path.join(__working_dir__, "examples", "atlas")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "examples", "atlas")
 
-MESHES_PATH: str = _path.join(PATH, "urdf", "meshes")
+MESHES_PATH: str = _path.join(PACKAGE_PATH, "urdf", "meshes")
 
-URDF_PATH: str = _path.join(PATH, "urdf", "atlas_convex_hull.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "atlas_convex_hull.urdf")
 
 # Description-specific paths
 
 URDF_PATH_MINIMUM_CONTACT: str = _path.join(
-    PATH, "urdf", "atlas_minimum_contact.urdf"
+    PACKAGE_PATH, "urdf", "atlas_minimum_contact.urdf"
 )

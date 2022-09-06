@@ -31,16 +31,22 @@ The import will automatically download the robot description if you don't have i
         Path to the main URDF file of the robot description.
     </dd>
     <dt>
+        <code>PACKAGE_PATH</code>
+    </dt>
+    <dd>
+        Path to the root of the robot description directory.
+    </dd>
+    <dt>
         <code>MESHES_PATH</code>
     </dt>
     <dd>
         Path to the "meshes" folder of the robot description, if applicable.
     </dd>
     <dt>
-        <code>PATH</code>
+        <code>REPOSITORY_PATH</code>
     </dt>
     <dd>
-        Path to the local robot description directory.
+        Path to the working directory of the git repository hosting the robot description.
     </dd>
 </dl>
 
