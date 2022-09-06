@@ -4,6 +4,7 @@ There are many ways you can contribute to `robot_descriptions`. Here are some id
 
 - Check out [open issues](https://github.com/stephane-caron/robot_descriptions.py/issues?q=is%3Aissue+is%3Aopen)
 - Add a new robot description
+- Make a standalone ``<robot_name>_description`` repository for a description embedded in one of the big framework repositories in ``_repositories.py`` (Bullet, Drake, ...)
 
 ## Adding a new robot description
 
