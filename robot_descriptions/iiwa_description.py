@@ -25,24 +25,24 @@ from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH = _clone_to_cache("drake")
 
-PATH: str = _path.join(
+PACKAGE_PATH: str = _path.join(
     REPOSITORY_PATH, "manipulation", "models", "iiwa_description"
 )
 
-MESHES_PATH: str = _path.join(PATH, "meshes")
+MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
-URDF_PATH: str = _path.join(PATH, "urdf", "iiwa14_primitive_collision.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "iiwa14_primitive_collision.urdf")
 
 # Description-specific paths
 
 URDF_PATH_NO_COLLISION: str = _path.join(
-    PATH, "urdf", "iiwa14_no_collision.urdf"
+    PACKAGE_PATH, "urdf", "iiwa14_no_collision.urdf"
 )
 
 URDF_PATH_POLYTOPE_COLLISION: str = _path.join(
-    PATH, "urdf", "iiwa14_polytope_collision.urdf"
+    PACKAGE_PATH, "urdf", "iiwa14_polytope_collision.urdf"
 )
 
 URDF_PATH_PRIMITIVE_COLLISION: str = _path.join(
-    PATH, "urdf", "iiwa14_primitive_collision.urdf"
+    PACKAGE_PATH, "urdf", "iiwa14_primitive_collision.urdf"
 )
