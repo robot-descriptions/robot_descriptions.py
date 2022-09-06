@@ -23,7 +23,10 @@ import argparse
 import os
 from importlib import import_module  # type: ignore
 
-import pinocchio as pin
+try:
+    import pinocchio as pin
+except ImportError as e:
+    raise ImportError("Pinocchio not found, try ``pip install pin``") from e
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
