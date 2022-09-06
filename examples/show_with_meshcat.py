@@ -16,28 +16,14 @@
 # limitations under the License.
 
 """
-Show a robot descriptions specified from the command line, using yourdfpy.
-
-Note:
-    See ``robot_descriptions/_command_line.py`` for a more advanced
-    implementation, including the ability to set the robot configuration or
-    show collision meshes.
-
-This tool requires `yourdfpy` which is an optional dependency. It can be
-installed separately (``pip install yourdfpy``), or when robot descriptions are
-installed via ``pip install robot_descriptions[cli]``.
+Show a robot descriptions specified from the command line, using MeshCat.
 """
 
 import argparse
+import os
 from importlib import import_module  # type: ignore
 
-try:
-    import yourdfpy  # pylint: disable=import-error
-except ImportError as e:
-    raise ImportError(
-        "yourdfpy not found, try ``pip install yourdfpy``"
-    ) from e
-
+import pinocchio as pin
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
@@ -49,5 +35,18 @@ if __name__ == "__main__":
     except ModuleNotFoundError:
         module = import_module(f"robot_descriptions.{args.name}_description")
 
-    robot = yourdfpy.URDF.load(module.URDF_PATH)
-    robot.show()
+    robot = pin.RobotWrapper.BuildFromURDF(
+        filename=module.URDF_PATH,
+        package_dirs=[os.path.dirname(module.PATH)],
+        root_joint=pin.JointModelFreeFlyer(),
+    )
+    configuration = pin.neutral(robot.model)
+    viz = pin.visualize.MeshcatVisualizer(
+        robot.model, robot.collision_model, robot.visual_model
+    )
+    robot.setVisualizer(viz, init=False)
+    viz.initViewer(open=True)
+    viz.loadViewerModel()
+    viz.display(configuration)
+
+    input("Press Enter to close MeshCat and terminate... ")

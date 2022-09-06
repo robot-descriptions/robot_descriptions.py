@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Example: load in Pinocchio
+- Example: show in MeshCat
+- Example: show in yourdfpy
+
 ## [0.1.1] - 2022/09/06
 
 ### Fixed
