@@ -17,20 +17,18 @@
 
 """
 iCub description.
-
-Note:
-    There is some uncertainty around the validity of this model. See
-    https://github.com/clemense/yourdfpy/issues/39
 """
 
 from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-REPOSITORY_PATH: str = _clone_to_cache("example-robot-data")
+REPOSITORY_PATH: str = _clone_to_cache("icub-models")
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "icub_description")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "iCub")
 
 MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "icub.urdf")
+URDF_PATH: str = _path.join(
+    PACKAGE_PATH, "robots", "iCubGazeboV2_5", "model.urdf"
+)
