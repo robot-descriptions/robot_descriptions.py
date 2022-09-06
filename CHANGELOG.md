@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.1] - 2022/09/06
+
+### Fixed
+
+- Command line usage instructions
+- Upload coverage results based on ``USING_COVERAGE`` setting
+
 ## [0.1.0] - 2022/09/05
 
 ### New robot descriptions
