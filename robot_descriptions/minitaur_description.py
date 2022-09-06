@@ -23,7 +23,7 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-REPOSITORY_PATH = _clone_to_cache("bullet3")
+REPOSITORY_PATH: str = _clone_to_cache("bullet3")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "data", "quadruped")
 
