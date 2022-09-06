@@ -15,6 +15,10 @@ All notable changes to this project will be documented in this file.
 
 - ``PATH`` becomes ``PACKAGE_PATH``
 
+### Fixed
+
+- iCub description
+
 ## [0.1.1] - 2022/09/06
 
 ### Fixed

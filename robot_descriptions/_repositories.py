@@ -85,6 +85,11 @@ REPOSITORIES = {
         commit="v1.0.0",
         cache_path="utiasDSL/gym-pybullet-drones",
     ),
+    "icub-models": Repository(
+        url="https://github.com/robotology/icub-models.git",
+        commit="v1.25.0",
+        cache_path="robotology/icub-models",
+    ),
     "jvrc_description": Repository(
         url="https://github.com/stephane-caron/jvrc_description.git",
         commit="v1.1.0",
