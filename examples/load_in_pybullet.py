@@ -18,8 +18,7 @@
 """
 Show a robot descriptions specified from the command line, using yourdfpy.
 
-This tool requires PyBullet. It can be installed separately (``pip install
-pybullet``).
+This example requires PyBullet, which is installed by ``pip install pybullet``.
 """
 
 import argparse
