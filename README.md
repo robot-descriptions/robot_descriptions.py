@@ -93,6 +93,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | ANYmal B              | ANYbotics          | `anymal_b_description`        | URDF       |
 | ANYmal B              | ANYbotics          | `anymal_b_mj_description`     | MJCF       |
 | ANYmal C              | ANYbotics          | `anymal_c_description`        | URDF       |
+| ANYmal C              | ANYbotics          | `anymal_c_mj_description`     | MJCF       |
 | Atlas                 | Boston Dynamics    | `atlas_description`           | URDF       |
 | Baxter                | Rethink Robotics   | `baxter_description`          | URDF       |
 | Bolt                  | ODRI               | `bolt_description`            | URDF       |
