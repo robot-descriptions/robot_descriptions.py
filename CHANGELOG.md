@@ -17,6 +17,7 @@ This release adds 2 robot descriptions:
 - Example: load in Pinocchio
 - Example: load in PyBullet
 - Example: show in MeshCat
+- Example: show in MuJoCo
 - Example: show in PyBullet
 - Example: show in yourdfpy
 - New ``REPOSITORY_PATH`` member for each description
