@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-UR5e description.
+UR5e MJCF description.
 """
 
 from os import path as _path
@@ -25,7 +25,7 @@ from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache("mujoco_menagerie")
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "univeral_robots_ur5e")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "universal_robots_ur5e")
 
 MESHES_PATH: str = _path.join(PACKAGE_PATH, "assets")
 
