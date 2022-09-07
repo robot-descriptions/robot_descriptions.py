@@ -115,6 +115,7 @@ Load a robot description in:
 Visualize a robot description usingf:
 
 - [MeshCat](examples/show_in_meshcat.py)
+- [MuJoCo](examples/show_in_mujoco.py)
 - [PyBullet](examples/show_in_pybullet.py)
 - [yourdfpy](examples/show_in_yourdfpy.py)
 
