@@ -102,6 +102,13 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 
 New robot descriptions are welcome! Check out the [guidelines](CONTRIBUTING.md) then open a PR.
 
+## Examples
+
+- [MeshCat](examples/show_in_meshcat.py)
+- [Pinocchio](examples/load_in_pinocchio.py)
+- [PyBullet](examples/show_in_bullet.py)
+- [yourdfpy](examples/show_in_yourdfpy.py)
+
 ## Thanks
 
 Thanks to the maintainers of all the git repositories that made these robot descriptions available.
