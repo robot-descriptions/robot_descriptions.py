@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### New robot descriptions
+
+This release adds 1 robot description:
+
+- Aliengo MJCF
+
 ### Added
 
 - Example: load in Pinocchio
