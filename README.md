@@ -114,6 +114,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Mini Cheetah          | MIT                | `mini_cheetah_description`    | URDF       |
 | Minitaur              | Ghost Robotics     | `minitaur_description`        | URDF       |
 | Panda                 | Franka Emika       | `panda_description`           | URDF       |
+| Panda                 | Franka Emika       | `panda_mj_description`        | MJCF       |
 | PR2                   | Willow Garage      | `pr2_description`             | URDF       |
 | Reachy                | Pollen Robotics    | `reachy_description`          | URDF       |
 | Romeo                 | Aldebaran Robotics | `romeo_description`           | URDF       |

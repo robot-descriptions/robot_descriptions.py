@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Description: ANYmal C MJCF
 - Description: Go1
 - Description: Laikago MJCF
+- Description: Panda MJCF
 
 ### Changed
 
