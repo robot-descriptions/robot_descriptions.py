@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Description: Go1
 - Description: Laikago MJCF
 - Description: Panda MJCF
+- Description: UR5e MJCF
 
 ### Changed
 

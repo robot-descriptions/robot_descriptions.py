@@ -126,6 +126,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | UR10                  | Universal Robots   | `ur10_description`            | URDF       |
 | UR3                   | Universal Robots   | `ur3_description`             | URDF       |
 | UR5                   | Universal Robots   | `ur5_description`             | URDF       |
+| UR5e                  | Universal Robots   | `ur5e_mj_description`         | MJCF       |
 
 New robot descriptions are welcome! Check out the [guidelines](https://github.com/stephane-caron/robot_descriptions.py/tree/master/CONTRIBUTING.md) then open a PR.
 
