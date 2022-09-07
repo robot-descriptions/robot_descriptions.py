@@ -106,9 +106,16 @@ New robot descriptions are welcome! Check out the [guidelines](CONTRIBUTING.md) 
 
 ## Examples
 
-- [MeshCat](examples/show_in_meshcat.py)
+Load a robot description in:
+
+- [MuJoCo](examples/load_in_mujoco.py)
 - [Pinocchio](examples/load_in_pinocchio.py)
-- [PyBullet](examples/show_in_bullet.py)
+- [PyBullet](examples/load_in_pybullet.py)
+
+Visualize a robot description usingf:
+
+- [MeshCat](examples/show_in_meshcat.py)
+- [PyBullet](examples/show_in_pybullet.py)
 - [yourdfpy](examples/show_in_yourdfpy.py)
 
 ## Thanks

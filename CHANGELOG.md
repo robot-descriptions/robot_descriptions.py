@@ -13,6 +13,7 @@ This release adds 2 robot descriptions:
 
 ### Added
 
+- Example: load in MuJoCo
 - Example: load in Pinocchio
 - Example: load in PyBullet
 - Example: show in MeshCat
