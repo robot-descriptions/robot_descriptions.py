@@ -52,9 +52,24 @@ The import will automatically download the robot description if you don't have i
 
 Some robot descriptions include additional fields. For instance, the ``iiwa_description`` exports ``URDF_PATH_POLYTOPE_COLLISION`` with more detailed collision meshes.
 
+## Examples
+
+Load a robot description:
+
+- [MuJoCo](examples/load_in_mujoco.py)
+- [Pinocchio](examples/load_in_pinocchio.py)
+- [PyBullet](examples/load_in_pybullet.py)
+
+Visualize a robot description:
+
+- [MeshCat](examples/show_in_meshcat.py)
+- [MuJoCo](examples/show_in_mujoco.py)
+- [PyBullet](examples/show_in_pybullet.py)
+- [yourdfpy](examples/show_in_yourdfpy.py)
+
 ## Command line tool
 
-The command line tool can be used to display any of the robot descriptions below. For example:
+The command line tool can be used to visualize any of the robot descriptions below. For example:
 
 ```console
 robot_descriptions show solo_description
@@ -103,21 +118,6 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | UR5                   | Universal Robots   | `ur5_description`             |
 
 New robot descriptions are welcome! Check out the [guidelines](CONTRIBUTING.md) then open a PR.
-
-## Examples
-
-Load a robot description in:
-
-- [MuJoCo](examples/load_in_mujoco.py)
-- [Pinocchio](examples/load_in_pinocchio.py)
-- [PyBullet](examples/load_in_pybullet.py)
-
-Visualize a robot description usingf:
-
-- [MeshCat](examples/show_in_meshcat.py)
-- [MuJoCo](examples/show_in_mujoco.py)
-- [PyBullet](examples/show_in_pybullet.py)
-- [yourdfpy](examples/show_in_yourdfpy.py)
 
 ## Thanks
 
