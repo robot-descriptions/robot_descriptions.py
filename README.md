@@ -62,16 +62,16 @@ Some robot descriptions include additional fields. For instance, the ``iiwa_desc
 
 Load a robot description:
 
-- [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/examples/load_in_mujoco.py)
-- [Pinocchio](https://github.com/stephane-caron/robot_descriptions.py/examples/load_in_pinocchio.py)
-- [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/examples/load_in_pybullet.py)
+- [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_mujoco.py)
+- [Pinocchio](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_pinocchio.py)
+- [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_pybullet.py)
 
 Visualize a robot description:
 
-- [MeshCat](https://github.com/stephane-caron/robot_descriptions.py/examples/show_in_meshcat.py)
-- [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/examples/show_in_mujoco.py)
-- [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/examples/show_in_pybullet.py)
-- [yourdfpy](https://github.com/stephane-caron/robot_descriptions.py/examples/show_in_yourdfpy.py)
+- [MeshCat](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/show_in_meshcat.py)
+- [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/show_in_mujoco.py)
+- [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/show_in_pybullet.py)
+- [yourdfpy](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/show_in_yourdfpy.py)
 
 ## Command line tool
 
@@ -124,7 +124,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | UR3                   | Universal Robots   | `ur3_description`             | URDF       |
 | UR5                   | Universal Robots   | `ur5_description`             | URDF       |
 
-New robot descriptions are welcome! Check out the [guidelines](https://github.com/stephane-caron/robot_descriptions.py/CONTRIBUTING.md) then open a PR.
+New robot descriptions are welcome! Check out the [guidelines](https://github.com/stephane-caron/robot_descriptions.py/tree/master/CONTRIBUTING.md) then open a PR.
 
 ## Thanks
 
