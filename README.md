@@ -85,43 +85,44 @@ robot_descriptions show solo_description
 
 Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) currently include:
 
-| Name                  | Maker              | Submodule                     |
-|-----------------------|--------------------| ------------------------------|
-| A1                    | UNITREE Robotics   | `a1_description`              |
-| Aliengo (MJCF)        | UNITREE Robotics   | `aliengo_mj_description`      |
-| Aliengo (URDF)        | UNITREE Robotics   | `aliengo_description`         |
-| Allegro Hand          | Wonik Robotics     | `allegro_hand_description`    |
-| ANYmal B              | ANYbotics          | `anymal_b_description`        |
-| ANYmal C              | ANYbotics          | `anymal_c_description`        |
-| Atlas                 | Boston Dynamics    | `atlas_description`           |
-| Baxter                | Rethink Robotics   | `baxter_description`          |
-| Bolt                  | ODRI               | `bolt_description`            |
-| Cassie                | Agility Robotics   | `cassie_description`          |
-| Crazyflie 2.0         | Bitcraze           | `cf2_description`             |
-| Double Pendulum       | N/A                | `double_pendulum_description` |
-| e.DO                  | Comau              | `edo_description`             |
-| FingerEdu             | N/A                | `finger_edu_description`      |
-| Gen2                  | Kinova             | `gen2_description`            |
-| HyQ                   | IIT                | `hyq_description`             |
-| iCub                  | IIT                | `icub_description`            |
-| iiwa                  | KUKA               | `iiwa_description`            |
-| JVRC-1 (MJCF)         | AIST               | `jvrc_mj_description`         |
-| JVRC-1 (URDF)         | AIST               | `jvrc_description`            |
-| Laikago               | UNITREE Robotics   | `laikago_description`         |
-| Mini Cheetah          | MIT                | `mini_cheetah_description`    |
-| Minitaur              | Ghost Robotics     | `minitaur_description`        |
-| Panda                 | Franka Emika       | `panda_description`           |
-| PR2                   | Willow Garage      | `pr2_description`             |
-| Reachy                | Pollen Robotics    | `reachy_description`          |
-| Romeo                 | Aldebaran Robotics | `romeo_description`           |
-| Simple Humanoid       | N/A                | `simple_humanoid_description` |
-| Solo                  | ODRI               | `solo_description`            |
-| TALOS                 | PAL Robotics       | `talos_description`           |
-| TIAGo                 | PAL Robotics       | `tiago_description`           |
-| Upkie                 | Tast's Robots      | `upkie_description`           |
-| UR10                  | Universal Robots   | `ur10_description`            |
-| UR3                   | Universal Robots   | `ur3_description`             |
-| UR5                   | Universal Robots   | `ur5_description`             |
+| Name                  | Format | Maker              | Submodule                     |
+|-----------------------|--------|--------------------| ------------------------------|
+| A1                    | URDF   | UNITREE Robotics   | `a1_description`              |
+| Aliengo               | MJCF   | UNITREE Robotics   | `aliengo_mj_description`      |
+| Aliengo               | URDF   | UNITREE Robotics   | `aliengo_description`         |
+| Allegro Hand          | URDF   | Wonik Robotics     | `allegro_hand_description`    |
+| ANYmal B              | URDF   | ANYbotics          | `anymal_b_description`        |
+| ANYmal C              | URDF   | ANYbotics          | `anymal_c_description`        |
+| Atlas                 | URDF   | Boston Dynamics    | `atlas_description`           |
+| Baxter                | URDF   | Rethink Robotics   | `baxter_description`          |
+| Bolt                  | URDF   | ODRI               | `bolt_description`            |
+| Cassie                | MJCF   | Agility Robotics   | `cassie_mj_description`       |
+| Cassie                | URDF   | Agility Robotics   | `cassie_description`          |
+| Crazyflie 2.0         | URDF   | Bitcraze           | `cf2_description`             |
+| Double Pendulum       | URDF   | N/A                | `double_pendulum_description` |
+| e.DO                  | URDF   | Comau              | `edo_description`             |
+| FingerEdu             | URDF   | N/A                | `finger_edu_description`      |
+| Gen2                  | URDF   | Kinova             | `gen2_description`            |
+| HyQ                   | URDF   | IIT                | `hyq_description`             |
+| iCub                  | URDF   | IIT                | `icub_description`            |
+| iiwa                  | URDF   | KUKA               | `iiwa_description`            |
+| JVRC-1                | MJCF   | AIST               | `jvrc_mj_description`         |
+| JVRC-1                | URDF   | AIST               | `jvrc_description`            |
+| Laikago               | URDF   | UNITREE Robotics   | `laikago_description`         |
+| Mini Cheetah          | URDF   | MIT                | `mini_cheetah_description`    |
+| Minitaur              | URDF   | Ghost Robotics     | `minitaur_description`        |
+| Panda                 | URDF   | Franka Emika       | `panda_description`           |
+| PR2                   | URDF   | Willow Garage      | `pr2_description`             |
+| Reachy                | URDF   | Pollen Robotics    | `reachy_description`          |
+| Romeo                 | URDF   | Aldebaran Robotics | `romeo_description`           |
+| Simple Humanoid       | URDF   | N/A                | `simple_humanoid_description` |
+| Solo                  | URDF   | ODRI               | `solo_description`            |
+| TALOS                 | URDF   | PAL Robotics       | `talos_description`           |
+| TIAGo                 | URDF   | PAL Robotics       | `tiago_description`           |
+| Upkie                 | URDF   | Tast's Robots      | `upkie_description`           |
+| UR10                  | URDF   | Universal Robots   | `ur10_description`            |
+| UR3                   | URDF   | Universal Robots   | `ur3_description`             |
+| UR5                   | URDF   | Universal Robots   | `ur5_description`             |
 
 New robot descriptions are welcome! Check out the [guidelines](CONTRIBUTING.md) then open a PR.
 
