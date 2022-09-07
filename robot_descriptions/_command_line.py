@@ -141,6 +141,11 @@ def show(
         module = import_module(f"robot_descriptions.{name}")
     except ModuleNotFoundError:
         module = import_module(f"robot_descriptions.{name}_description")
+    if not hasattr(module, "URDF_PATH"):
+        raise ValueError(
+            "show command only applies to URDF, check out the "
+            "``show_in_mujoco.py`` example for MJCF descriptions"
+        )
 
     if collision:
         robot = yourdfpy.URDF.load(
@@ -175,6 +180,11 @@ def animate(
         module = import_module(f"robot_descriptions.{name}")
     except ModuleNotFoundError:
         module = import_module(f"robot_descriptions.{name}_description")
+    if not hasattr(module, "URDF_PATH"):
+        raise ValueError(
+            "show command only applies to URDF, check out the "
+            "``show_in_mujoco.py`` example for MJCF descriptions"
+        )
 
     if collision:
         robot = yourdfpy.URDF.load(
