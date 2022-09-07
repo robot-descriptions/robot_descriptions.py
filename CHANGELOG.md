@@ -6,9 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ### New robot descriptions
 
-This release adds 1 robot description:
+This release adds 2 robot descriptions:
 
 - Aliengo MJCF
+- JVRC-1 MJCF
 
 ### Added
 

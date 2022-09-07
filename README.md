@@ -67,8 +67,8 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Name                  | Maker              | Submodule                     |
 |-----------------------|--------------------| ------------------------------|
 | A1                    | UNITREE Robotics   | `a1_description`              |
-| Aliengo               | UNITREE Robotics   | `aliengo_description`         |
 | Aliengo (MJCF)        | UNITREE Robotics   | `aliengo_mj_description`      |
+| Aliengo (URDF)        | UNITREE Robotics   | `aliengo_description`         |
 | Allegro Hand          | Wonik Robotics     | `allegro_hand_description`    |
 | ANYmal B              | ANYbotics          | `anymal_b_description`        |
 | ANYmal C              | ANYbotics          | `anymal_c_description`        |
@@ -84,7 +84,8 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | HyQ                   | IIT                | `hyq_description`             |
 | iCub                  | IIT                | `icub_description`            |
 | iiwa                  | KUKA               | `iiwa_description`            |
-| JVRC-1                | AIST               | `jvrc_description`            |
+| JVRC-1 (MJCF)         | AIST               | `jvrc_mj_description`         |
+| JVRC-1 (URDF)         | AIST               | `jvrc_description`            |
 | Laikago               | UNITREE Robotics   | `laikago_description`         |
 | Mini Cheetah          | MIT                | `mini_cheetah_description`    |
 | Minitaur              | Ghost Robotics     | `minitaur_description`        |
