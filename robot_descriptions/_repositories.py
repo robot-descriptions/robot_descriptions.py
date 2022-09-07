@@ -70,6 +70,11 @@ REPOSITORIES = {
         commit="96323f3d0cc2cb7101cb92d7fcf4650abdcb2e81",
         cache_path="UMich-BipedLab/cassie_description",
     ),
+    "cassie_mj_description": Repository(
+        url="https://github.com/rohanpsingh/cassie_mj_description.git",
+        commit="fcc3775453e4da6797cd4eacd3d8321d9906755a",
+        cache_path="rohanpsingh/cassie_mj_description",
+    ),
     "drake": Repository(
         url="https://github.com/RobotLocomotion/drake.git",
         commit="v1.7.0",
