@@ -23,7 +23,7 @@ Note:
     implementation, including the ability to set the robot configuration or
     show collision meshes.
 
-This tool requires `yourdfpy` which is an optional dependency. It can be
+This example requires `yourdfpy` which is an optional dependency. It can be
 installed separately (``pip install yourdfpy``), or when robot descriptions are
 installed via ``pip install robot_descriptions[cli]``.
 """
