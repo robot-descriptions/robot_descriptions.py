@@ -34,30 +34,29 @@ class TestDescriptions(unittest.TestCase):
         """
         for name in DESCRIPTION_NAMES:
             description = import_module(f"robot_descriptions.{name}")
-            self.assertNotEqual(
-                description.REPOSITORY_PATH,
-                "",
-                f"Empty REPOSITORY_PATH in {description}",
-            )
-            self.assertNotEqual(
-                description.PACKAGE_PATH,
-                "",
-                f"Empty PACKAGE_PATH in {description}",
+            self.assertTrue(
+                os.path.exists(description.REPOSITORY_PATH),
+                f"Path {description.REPOSITORY_PATH} "
+                f"does not exist in {description}",
             )
             self.assertTrue(
                 os.path.exists(description.PACKAGE_PATH),
                 f"Path {description.PACKAGE_PATH} "
                 f"does not exist in {description}",
             )
-            self.assertNotEqual(
-                description.URDF_PATH, "", f"Empty URDF_PATH in {description}"
-            )
-            self.assertTrue(
-                os.path.exists(description.URDF_PATH),
-                f"URDF path {description.URDF_PATH} does not exist "
-                f"in {description}",
-            )
-            if description.MESHES_PATH != "":
+            if hasattr(description, "MJCF_PATH"):
+                self.assertTrue(
+                    os.path.exists(description.MJCF_PATH),
+                    f"MJCF path {description.MJCF_PATH} does not exist "
+                    f"in {description}",
+                )
+            if hasattr(description, "URDF_PATH"):
+                self.assertTrue(
+                    os.path.exists(description.URDF_PATH),
+                    f"URDF path {description.URDF_PATH} does not exist "
+                    f"in {description}",
+                )
+            if hasattr(description, "MESHES_PATH"):
                 self.assertTrue(
                     os.path.exists(description.MESHES_PATH),
                     f"Meshes path {description.MESHES_PATH} does not exist "

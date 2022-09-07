@@ -31,7 +31,9 @@ PACKAGE_PATH: str = _path.join(
 
 MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "iiwa14_primitive_collision.urdf")
+URDF_PATH: str = _path.join(
+    PACKAGE_PATH, "urdf", "iiwa14_primitive_collision.urdf"
+)
 
 # Description-specific paths
 
