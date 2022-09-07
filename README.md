@@ -28,19 +28,25 @@ The import will automatically download the robot description if you don't have i
         <code>URDF_PATH</code>
     </dt>
     <dd>
-        Path to the main URDF file of the robot description.
+        Path to the main URDF file of the robot description, if applicable.
     </dd>
     <dt>
-        <code>PACKAGE_PATH</code>
+        <code>MJCF_PATH</code>
     </dt>
     <dd>
-        Path to the root of the robot description directory.
+        Path to the main MJCF file of the robot description, if applicable.
     </dd>
     <dt>
         <code>MESHES_PATH</code>
     </dt>
     <dd>
         Path to the "meshes" folder of the robot description, if applicable.
+    </dd>
+    <dt>
+        <code>PACKAGE_PATH</code>
+    </dt>
+    <dd>
+        Path to the root of the robot description.
     </dd>
     <dt>
         <code>REPOSITORY_PATH</code>
