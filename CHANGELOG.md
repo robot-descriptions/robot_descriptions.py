@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Description: Go1
+- Description: Laikago MJCF
 
 ### Changed
 

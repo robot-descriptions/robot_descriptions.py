@@ -102,13 +102,13 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | e.DO                  | Comau              | `edo_description`             | URDF       |
 | FingerEdu             | N/A                | `finger_edu_description`      | URDF       |
 | Gen2                  | Kinova             | `gen2_description`            | URDF       |
+| Go1                   | UNITREE Robotics   | `go1_description`             | MJCF, URDF |
 | HyQ                   | IIT                | `hyq_description`             | URDF       |
 | iCub                  | IIT                | `icub_description`            | URDF       |
 | iiwa                  | KUKA               | `iiwa_description`            | URDF       |
 | JVRC-1                | AIST               | `jvrc_description`            | URDF       |
-| Go1                   | UNITREE Robotics   | `go1_description`             | MJCF, URDF |
 | JVRC-1                | AIST               | `jvrc_mj_description`         | MJCF       |
-| Laikago               | UNITREE Robotics   | `laikago_description`         | URDF       |
+| Laikago               | UNITREE Robotics   | `laikago_description`         | MJCF, URDF |
 | Mini Cheetah          | MIT                | `mini_cheetah_description`    | URDF       |
 | Minitaur              | Ghost Robotics     | `minitaur_description`        | URDF       |
 | Panda                 | Franka Emika       | `panda_description`           | URDF       |
