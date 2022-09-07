@@ -4,15 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
-### New robot descriptions
-
-This release adds 2 robot descriptions:
-
-- Aliengo MJCF
-- JVRC-1 MJCF
-
 ### Added
 
+- Description: Aliengo MJCF
+- Description: Cassie MJCF
+- Description: JVRC-1 MJCF
 - Example: load in MuJoCo
 - Example: load in Pinocchio
 - Example: load in PyBullet
@@ -21,6 +17,7 @@ This release adds 2 robot descriptions:
 - Example: show in PyBullet
 - Example: show in yourdfpy
 - New ``REPOSITORY_PATH`` member for each description
+- Support MJCF descriptions
 
 ### Changed
 
@@ -39,9 +36,7 @@ This release adds 2 robot descriptions:
 
 ## [0.1.0] - 2022/09/05
 
-### New robot descriptions
-
-This release includes 33 robot descriptions:
+This initial release includes 33 robot descriptions:
 
 - A1
 - Aliengo
