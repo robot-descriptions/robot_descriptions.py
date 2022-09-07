@@ -62,16 +62,16 @@ Some robot descriptions include additional fields. For instance, the ``iiwa_desc
 
 Load a robot description:
 
-- [MuJoCo](examples/load_in_mujoco.py)
-- [Pinocchio](examples/load_in_pinocchio.py)
-- [PyBullet](examples/load_in_pybullet.py)
+- [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/examples/load_in_mujoco.py)
+- [Pinocchio](https://github.com/stephane-caron/robot_descriptions.py/examples/load_in_pinocchio.py)
+- [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/examples/load_in_pybullet.py)
 
 Visualize a robot description:
 
-- [MeshCat](examples/show_in_meshcat.py)
-- [MuJoCo](examples/show_in_mujoco.py)
-- [PyBullet](examples/show_in_pybullet.py)
-- [yourdfpy](examples/show_in_yourdfpy.py)
+- [MeshCat](https://github.com/stephane-caron/robot_descriptions.py/examples/show_in_meshcat.py)
+- [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/examples/show_in_mujoco.py)
+- [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/examples/show_in_pybullet.py)
+- [yourdfpy](https://github.com/stephane-caron/robot_descriptions.py/examples/show_in_yourdfpy.py)
 
 ## Command line tool
 
@@ -124,7 +124,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | UR3                   | URDF   | Universal Robots   | `ur3_description`             |
 | UR5                   | URDF   | Universal Robots   | `ur5_description`             |
 
-New robot descriptions are welcome! Check out the [guidelines](CONTRIBUTING.md) then open a PR.
+New robot descriptions are welcome! Check out the [guidelines](https://github.com/stephane-caron/robot_descriptions.py/CONTRIBUTING.md) then open a PR.
 
 ## Thanks
 
