@@ -100,6 +100,11 @@ REPOSITORIES = {
         commit="v1.1.0",
         cache_path="stephane-caron/jvrc_description",
     ),
+    "jvrc_mj_description": Repository(
+        url="https://github.com/isri-aist/jvrc_mj_description.git",
+        commit="0f0ce7daefdd66c54e0909a6bf2c22154844f5f3",
+        cache_path="isri-aist/jvrc_mj_description",
+    ),
     "mini_cheetah_urdf": Repository(
         url="https://github.com/Derek-TH-Wang/mini_cheetah_urdf.git",
         commit="1988bceb26e81f28594a16e7d5e6abe5cbb27ace",
