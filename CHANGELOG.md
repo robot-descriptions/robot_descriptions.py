@@ -7,7 +7,9 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Example: load in Pinocchio
+- Example: load in PyBullet
 - Example: show in MeshCat
+- Example: show in PyBullet
 - Example: show in yourdfpy
 - New ``REPOSITORY_PATH`` member for each description
 
