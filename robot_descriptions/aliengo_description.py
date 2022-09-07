@@ -23,12 +23,12 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-REPOSITORY_PATH: str = _clone_to_cache("unitree_ros")
+REPOSITORY_PATH: str = _clone_to_cache("unitree_mujoco")
 
-PACKAGE_PATH: str = _path.join(
-    REPOSITORY_PATH, "robots", "aliengo_description"
-)
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "data", "aliengo")
 
 MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
+
+MJCF_PATH: str = _path.join(PACKAGE_PATH, "xml", "aliengo.xml")
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "aliengo.urdf")

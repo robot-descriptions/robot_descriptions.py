@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Description: Go1
+
+### Changed
+
+- Merge MJCF and URDF descriptions for Aliengo
+- Switch to a dual MJCF/URDF descriptions for A1
+
 ## [0.2.0] - 2022/09/07
 
 ### Added

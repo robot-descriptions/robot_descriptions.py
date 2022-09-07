@@ -24,7 +24,6 @@ from typing import List
 DESCRIPTION_NAMES: List[str] = [
     "a1_description",
     "aliengo_description",
-    "aliengo_mj_description",
     "allegro_hand_description",
     "anymal_b_description",
     "anymal_c_description",
@@ -38,6 +37,7 @@ DESCRIPTION_NAMES: List[str] = [
     "edo_description",
     "finger_edu_description",
     "gen2_description",
+    "go1_description",
     "hyq_description",
     "icub_description",
     "iiwa_description",

@@ -88,8 +88,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Name                  | Maker              | Submodule                     | Format     |
 |-----------------------|--------------------| ------------------------------|------------|
 | A1                    | UNITREE Robotics   | `a1_description`              | MJCF, URDF |
-| Aliengo               | UNITREE Robotics   | `aliengo_description`         | URDF       |
-| Aliengo               | UNITREE Robotics   | `aliengo_mj_description`      | MJCF       |
+| Aliengo               | UNITREE Robotics   | `aliengo_description`         | MJCF, URDF |
 | Allegro Hand          | Wonik Robotics     | `allegro_hand_description`    | URDF       |
 | ANYmal B              | ANYbotics          | `anymal_b_description`        | URDF       |
 | ANYmal C              | ANYbotics          | `anymal_c_description`        | URDF       |
