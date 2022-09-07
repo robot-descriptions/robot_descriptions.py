@@ -91,6 +91,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Aliengo               | UNITREE Robotics   | `aliengo_description`         | MJCF, URDF |
 | Allegro Hand          | Wonik Robotics     | `allegro_hand_description`    | URDF       |
 | ANYmal B              | ANYbotics          | `anymal_b_description`        | URDF       |
+| ANYmal B              | ANYbotics          | `anymal_b_mj_description`     | MJCF       |
 | ANYmal C              | ANYbotics          | `anymal_c_description`        | URDF       |
 | Atlas                 | Boston Dynamics    | `atlas_description`           | URDF       |
 | Baxter                | Rethink Robotics   | `baxter_description`          | URDF       |

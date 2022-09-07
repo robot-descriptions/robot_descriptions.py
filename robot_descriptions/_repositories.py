@@ -110,6 +110,11 @@ REPOSITORIES = {
         commit="1988bceb26e81f28594a16e7d5e6abe5cbb27ace",
         cache_path="Derek-TH-Wang/mini_cheetah_urdf",
     ),
+    "mujoco_menagerie": Repository(
+        url="https://github.com/deepmind/mujoco_menagerie.git",
+        commit="2665e9bc0f476e5f505ff929d758ed36f8618fa8",
+        cache_path="deepmind/mujoco_menagerie",
+    ),
     "reachy_description": Repository(
         url="https://github.com/aubrune/reachy_description.git",
         commit="release-1.0.0",
