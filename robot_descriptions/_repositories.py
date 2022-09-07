@@ -40,11 +40,6 @@ class Repository:
 
 
 REPOSITORIES = {
-    "aliengo_mj_description": Repository(
-        url="https://github.com/rohanpsingh/aliengo_mj_description.git",
-        commit="15051f23ebec30f8b72ed224d435934f6cbc679f",
-        cache_path="rohanpsingh/aliengo_mj_description",
-    ),
     "anymal_b_simple_description": Repository(
         url="https://github.com/ANYbotics/anymal_b_simple_description.git",
         commit="988b5df22b84761bdf08111b1c2ccc883793f456",
@@ -134,6 +129,11 @@ REPOSITORIES = {
         url="https://github.com/stack-of-tasks/talos-data.git",
         commit="v2.0.0",
         cache_path="stack-of-tasks/talos-data",
+    ),
+    "unitree_mujoco": Repository(
+        url="https://github.com/unitreerobotics/unitree_mujoco.git",
+        commit="f3300ff1bf0ab9efbea0162717353480d9b05d73",
+        cache_path="unitreerobotics/unitree_mujoco",
     ),
     "unitree_ros": Repository(
         url="https://github.com/unitreerobotics/unitree_ros.git",

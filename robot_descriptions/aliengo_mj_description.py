@@ -23,9 +23,9 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-REPOSITORY_PATH: str = _clone_to_cache("aliengo_mj_description")
+REPOSITORY_PATH: str = _clone_to_cache("unitree_mujoco")
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "data", "aliengo")
 
 MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
