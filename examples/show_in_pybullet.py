@@ -48,5 +48,5 @@ if __name__ == "__main__":
     pybullet.setAdditionalSearchPath(os.path.dirname(module.URDF_PATH))
     robot = pybullet.loadURDF(os.path.basename(module.URDF_PATH))
 
-    input("Press Enter to close MeshCat and terminate... ")
+    input("Press Enter to close PyBullet and terminate... ")
     pybullet.disconnect()
