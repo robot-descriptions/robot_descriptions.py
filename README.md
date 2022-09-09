@@ -107,6 +107,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Fetch                 | Fetch Robotics           | URDF       | `fetch_description`           |
 | FingerEdu             | N/A                      | URDF       | `finger_edu_description`      |
 | Gen2                  | Kinova                   | URDF       | `gen2_description`            |
+| Ginger                | Paaila Technology        | URDF       | `ginger_description`          |
 | Go1                   | UNITREE Robotics         | MJCF, URDF | `go1_description`             |
 | HyQ                   | IIT                      | URDF       | `hyq_description`             |
 | iCub                  | IIT                      | URDF       | `icub_description`            |

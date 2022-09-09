@@ -85,6 +85,11 @@ REPOSITORIES = {
         commit="v4.0.1",
         cache_path="Gepetto/example-robot-data",
     ),
+    "GingerURDF": Repository(
+        url="https://github.com/Rayckey/GingerURDF.git",
+        commit="6a1307cd0ee2b77c82f8839cdce3a2e2eed2bd8f",
+        cache_path="Rayckey/GingerURDF",
+    ),
     "gym-pybullet-drones": Repository(
         url="https://github.com/utiasDSL/gym-pybullet-drones.git",
         commit="v1.0.0",

@@ -6,10 +6,11 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: Atlas v4
 - Description: ANYmal B MJCF
 - Description: ANYmal C MJCF
+- Description: Atlas v4
 - Description: Fetch
+- Description: Ginger
 - Description: Go1
 - Description: Laikago MJCF
 - Description: Panda MJCF
