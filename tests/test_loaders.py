@@ -17,7 +17,7 @@
 
 import unittest
 
-import robot_descriptions.loaders.pinocchio_
+import robot_descriptions.loaders.pinocchio
 
 
 class TestLoaders(unittest.TestCase):
@@ -30,6 +30,6 @@ class TestLoaders(unittest.TestCase):
         """
         Test Pinocchio loader.
         """
-        robot_descriptions.loaders.pinocchio_.load_robot_description(
+        robot_descriptions.loaders.pinocchio.load_robot_description(
             "upkie_description"
         )
