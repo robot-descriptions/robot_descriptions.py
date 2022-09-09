@@ -23,12 +23,10 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-REPOSITORY_PATH: str = _clone_to_cache("drake")
+REPOSITORY_PATH: str = _clone_to_cache("robot-assets")
 
-PACKAGE_PATH: str = _path.join(
-    REPOSITORY_PATH, "examples", "pr2", "models", "pr2_description"
-)
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "urdfs", "robots", "pr2")
 
 MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "pr2_simplified.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "pr2.urdf")

@@ -120,6 +120,11 @@ REPOSITORIES = {
         commit="release-1.0.0",
         cache_path="aubrune/reachy_description",
     ),
+    "robot-assets": Repository(
+        url="https://github.com/ankurhanda/robot-assets.git",
+        commit="12f1a3c89c9975194551afaed0dfae1e09fdb27c",
+        cache_path="ankurhanda/robot-assets",
+    ),
     "robotiq_arg85_description": Repository(
         url="https://github.com/a-price/robotiq_arg85_description.git",
         commit="a65190bdbb0666609fe7e8c3bb17341e09e81625",
