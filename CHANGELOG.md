@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 - Description: Robotiq 2F-85 MJCF
 - Description: Shadow Hand MJCF
 - Description: UR5e MJCF
+- Description: YuMi
 - Loader: Pinocchio
 - Unit test fixture for loaders
 

@@ -67,4 +67,5 @@ DESCRIPTION_NAMES: List[str] = [
     "ur3_description",
     "ur5_description",
     "ur5e_mj_description",
+    "yumi_description",
 ]
