@@ -23,10 +23,7 @@ import os.path
 from importlib import import_module  # type: ignore
 from typing import Union
 
-try:
-    import pinocchio as pin
-except ImportError as e:
-    raise ImportError("Pinocchio not found, try ``pip install pin``") from e
+import pinocchio as pin
 
 
 PinocchioJoint = Union[
