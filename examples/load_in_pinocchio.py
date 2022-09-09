@@ -22,13 +22,9 @@ This example requires Pinocchio, which is installed by ``pip install pin``.
 """
 
 import argparse
-import os
-from importlib import import_module  # type: ignore
 
-try:
-    import pinocchio as pin
-except ImportError as e:
-    raise ImportError("Pinocchio not found, try ``pip install pin``") from e
+from robot_descriptions.loaders.pinocchio import load_robot_description
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
@@ -41,20 +37,8 @@ if __name__ == "__main__":
         )
 
     try:
-        module = import_module(f"robot_descriptions.{args.name}")
+        robot = load_robot_description(args.name)
     except ModuleNotFoundError:
-        module = import_module(f"robot_descriptions.{args.name}_description")
-
-    robot = pin.RobotWrapper.BuildFromURDF(
-        filename=module.URDF_PATH,
-        package_dirs=[
-            module.MESHES_PATH,
-            module.PACKAGE_PATH,
-            module.REPOSITORY_PATH,
-            os.path.dirname(module.PACKAGE_PATH),
-            os.path.dirname(module.REPOSITORY_PATH),
-        ],
-        root_joint=pin.JointModelFreeFlyer(),
-    )
+        robot = load_robot_description(f"{args.name}_description")
 
     print(f"Robot successfully loaded as {robot}")
