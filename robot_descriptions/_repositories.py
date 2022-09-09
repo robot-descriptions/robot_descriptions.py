@@ -120,6 +120,11 @@ REPOSITORIES = {
         commit="2665e9bc0f476e5f505ff929d758ed36f8618fa8",
         cache_path="deepmind/mujoco_menagerie",
     ),
+    "pepper_description": Repository(
+        url="https://github.com/jrl-umi3218/pepper_description.git",
+        commit="cd9715bb5df7ad57445d953db7b1924255305944",
+        cache_path="jrl-umi3218/pepper_description",
+    ),
     "reachy_description": Repository(
         url="https://github.com/aubrune/reachy_description.git",
         commit="release-1.0.0",
