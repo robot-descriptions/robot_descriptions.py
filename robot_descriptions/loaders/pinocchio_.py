@@ -28,6 +28,7 @@ try:
 except ImportError as e:
     raise ImportError("Pinocchio not found, try ``pip install pin``") from e
 
+
 PinocchioJoint = Union[
     pin.JointModelRX,
     pin.JointModelRY,

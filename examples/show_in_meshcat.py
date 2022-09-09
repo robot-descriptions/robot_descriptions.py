@@ -29,7 +29,7 @@ try:
 except ImportError as e:
     raise ImportError("Pinocchio not found, try ``pip install pin``") from e
 
-from robot_descriptions.loaders.pinocchio import load_robot_description
+from robot_descriptions.loaders.pinocchio_ import load_robot_description
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)

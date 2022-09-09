@@ -23,7 +23,7 @@ This example requires Pinocchio, which is installed by ``pip install pin``.
 
 import argparse
 
-from robot_descriptions.loaders.pinocchio import load_robot_description
+from robot_descriptions.loaders.pinocchio_ import load_robot_description
 
 
 if __name__ == "__main__":
