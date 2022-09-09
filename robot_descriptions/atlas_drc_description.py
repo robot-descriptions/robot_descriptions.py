@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Atlas description.
+Atlas DRC (v3) description.
 """
 
 from os import path as _path

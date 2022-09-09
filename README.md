@@ -91,15 +91,16 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | A1                    | UNITREE Robotics         | MJCF, URDF | `a1_description`              |
 | Aliengo               | UNITREE Robotics         | MJCF, URDF | `aliengo_description`         |
 | Allegro Hand          | Wonik Robotics           | URDF       | `allegro_hand_description`    |
-| ANYmal B              | ANYbotics                | URDF       | `anymal_b_description`        |
 | ANYmal B              | ANYbotics                | MJCF       | `anymal_b_mj_description`     |
-| ANYmal C              | ANYbotics                | URDF       | `anymal_c_description`        |
+| ANYmal B              | ANYbotics                | URDF       | `anymal_b_description`        |
 | ANYmal C              | ANYbotics                | MJCF       | `anymal_c_mj_description`     |
-| Atlas                 | Boston Dynamics          | URDF       | `atlas_description`           |
+| ANYmal C              | ANYbotics                | URDF       | `anymal_c_description`        |
+| Atlas DRC (v3)        | Boston Dynamics          | URDF       | `atlas_drc_description`       |
+| Atlas v4              | Boston Dynamics          | URDF       | `atlas_v4_description`        |
 | Baxter                | Rethink Robotics         | URDF       | `baxter_description`          |
 | Bolt                  | ODRI                     | URDF       | `bolt_description`            |
-| Cassie                | Agility Robotics         | URDF       | `cassie_description`          |
 | Cassie                | Agility Robotics         | MJCF       | `cassie_mj_description`       |
+| Cassie                | Agility Robotics         | URDF       | `cassie_description`          |
 | Crazyflie 2.0         | Bitcraze                 | URDF       | `cf2_description`             |
 | Double Pendulum       | N/A                      | URDF       | `double_pendulum_description` |
 | e.DO                  | Comau                    | URDF       | `edo_description`             |

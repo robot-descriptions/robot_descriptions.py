@@ -125,6 +125,11 @@ REPOSITORIES = {
         commit="12f1a3c89c9975194551afaed0dfae1e09fdb27c",
         cache_path="ankurhanda/robot-assets",
     ),
+    "roboschool": Repository(
+        url="https://github.com/openai/roboschool.git",
+        commit="1.0.49",
+        cache_path="openai/roboschool",
+    ),
     "robotiq_arg85_description": Repository(
         url="https://github.com/a-price/robotiq_arg85_description.git",
         commit="a65190bdbb0666609fe7e8c3bb17341e09e81625",

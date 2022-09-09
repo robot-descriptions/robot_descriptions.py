@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Atlas v4
 - Description: ANYmal B MJCF
 - Description: ANYmal C MJCF
 - Description: Fetch
@@ -22,6 +23,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Merge MJCF and URDF descriptions for Aliengo
+- Renamed former "Atlas" description to "Atlas DRC"
 - Switch to a dual MJCF/URDF descriptions for A1
 
 ## [0.2.0] - 2022/09/07
