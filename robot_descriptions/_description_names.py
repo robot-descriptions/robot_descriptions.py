@@ -53,6 +53,7 @@ DESCRIPTION_NAMES: List[str] = [
     "pr2_description",
     "reachy_description",
     "romeo_description",
+    "shadow_hand_mj_description",
     "simple_humanoid_description",
     "solo_description",
     "talos_description",
