@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 - Description: Panda MJCF
 - Description: UR5e MJCF
 - Loader: Pinocchio
+- Unit test fixture for loaders
 
 ### Changed
 
