@@ -37,6 +37,7 @@ DESCRIPTION_NAMES: List[str] = [
     "cf2_description",
     "double_pendulum_description",
     "edo_description",
+    "fetch_description",
     "finger_edu_description",
     "gen2_description",
     "go1_description",

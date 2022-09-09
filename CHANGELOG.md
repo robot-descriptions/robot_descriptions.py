@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 
 - Description: ANYmal B MJCF
 - Description: ANYmal C MJCF
+- Description: Fetch
 - Description: Go1
 - Description: Laikago MJCF
 - Description: Panda MJCF
