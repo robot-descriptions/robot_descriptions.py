@@ -57,15 +57,19 @@ def load_robot_description(
     """
     module = import_module(f"robot_descriptions.{description_name}")
 
-    robot = pin.RobotWrapper.BuildFromURDF(
-        filename=module.URDF_PATH,
-        package_dirs=[
-            module.MESHES_PATH,
+    package_dirs = [
             module.PACKAGE_PATH,
             module.REPOSITORY_PATH,
             os.path.dirname(module.PACKAGE_PATH),
             os.path.dirname(module.REPOSITORY_PATH),
-        ],
+        ]
+
+    if hasattr(module, "MESHES_PATH"):
+        package_dirs.append(module.MESHES_PATH)
+
+    robot = pin.RobotWrapper.BuildFromURDF(
+        filename=module.URDF_PATH,
+        package_dirs=package_dirs,
         root_joint=root_joint_type(),
     )
 
