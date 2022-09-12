@@ -11,8 +11,9 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- A1: Split description again into URDF and MJCF again
 - Command-line: refer to yourdfpy for animation
-- Split A1 description again into URDF and MJCF again
+- Go1: Split description again into URDF and MJCF again
 
 ## [0.3.0] - 2022/09/12
 
