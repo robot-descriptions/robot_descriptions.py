@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Added
+
+- Loader: PyBullet
+- Show description formats in ``robot_descriptions list``
+
 ### Changed
 
 - Command-line: refer to yourdfpy for animation

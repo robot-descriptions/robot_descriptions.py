@@ -30,7 +30,7 @@ from typing import List
 
 import yourdfpy  # pylint: disable=import-error
 
-from robot_descriptions._description_names import DESCRIPTION_NAMES
+from robot_descriptions._descriptions import DESCRIPTIONS
 
 
 def positive_float(value) -> float:
@@ -108,6 +108,16 @@ def get_argument_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def list_descriptions():
+    names = sorted([name for name in DESCRIPTIONS])
+    for name in names:
+        desc = DESCRIPTIONS[name]
+        formats = ("URDF" if desc.has_urdf else "") + (
+            "MJCF" if desc.has_mjcf else ""
+        )
+        print(f"- {name} [{formats}]")
+
+
 def show(
     name: str,
     configuration: List[float],
@@ -179,7 +189,7 @@ def main(argv=None):
     parser = get_argument_parser()
     args = parser.parse_args(argv)
     if args.subcmd == "list":
-        print("\n".join(DESCRIPTION_NAMES))
+        list_descriptions()
     elif args.subcmd == "show":
         show(args.name, args.configuration, args.collision)
     elif args.subcmd == "animate":
