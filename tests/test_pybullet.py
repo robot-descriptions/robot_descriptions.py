@@ -22,6 +22,9 @@ import pybullet
 from robot_descriptions._descriptions import DESCRIPTIONS
 from robot_descriptions.loaders.pybullet import load_robot_description
 
+# from functools import partial
+
+
 
 class TestPyBullet(unittest.TestCase):
 
@@ -41,14 +44,32 @@ class TestPyBullet(unittest.TestCase):
         """
         pybullet.disconnect()
 
-    def test_urdf_descriptions(self):
+    @staticmethod
+    def get_test_for_description(description: str):
         """
-        Check all URDF descriptions.
+
+        Args:
+            description: Name of the description.
+
+        Returns:
+            Test function for that description.
         """
-        for name, desc in DESCRIPTIONS.items():
-            if desc.has_urdf:
-                print(name)
-                load_robot_description(name)
+
+        def test(self):
+            print(f"\n\n==============\n{description}\n\n")
+            load_robot_description(description)
+
+        # return partial(load_robot_description, name)
+        return test
+
+
+for name, desc in DESCRIPTIONS.items():
+    if desc.has_urdf:
+        setattr(
+            TestPyBullet,
+            f"test_{name}",
+            TestPyBullet.get_test_for_description(name),
+        )
 
 
 if __name__ == "__main__":
