@@ -25,15 +25,10 @@ Note:
 """
 
 import argparse
-from functools import partial
 from importlib import import_module  # type: ignore
 from typing import List
 
 import yourdfpy  # pylint: disable=import-error
-from yourdfpy.viz import (  # pylint: disable=import-error
-    generate_joint_limit_trajectory,
-    viewer_callback,
-)
 
 from robot_descriptions._description_names import DESCRIPTION_NAMES
 
@@ -109,17 +104,6 @@ def get_argument_parser() -> argparse.ArgumentParser:
         "name",
         help="name of the robot description",
     )
-    parser_animate.add_argument(
-        "--collision",
-        action="store_true",
-        help="use collision geometry for the visualized robot description",
-    )
-    parser_animate.add_argument(
-        "--loop-time",
-        type=positive_float,
-        default=6.0,
-        help="duration of animation loop in seconds",
-    )
 
     return parser
 
@@ -163,48 +147,28 @@ def show(
     )
 
 
-def animate(
-    name: str,
-    collision: bool,
-    loop_time: float,
-) -> None:
+def animate(name: str) -> None:
     """
-    Load and animate a given robot description.
+    Show how to use yourdfpy to animate a given robot description.
 
     Args:
         name: Name of the robot description.
-        collision: Use collision rather than visualization geometry.
-        loop_time: Animation duration in seconds.
     """
     try:
         module = import_module(f"robot_descriptions.{name}")
     except ModuleNotFoundError:
         module = import_module(f"robot_descriptions.{name}_description")
+
     if not hasattr(module, "URDF_PATH"):
         raise ValueError(
-            "show command only applies to URDF, check out the "
-            "``show_in_mujoco.py`` example for MJCF descriptions"
+            "animation is only available for URDF descriptions, "
+            "check out the ``show_in_mujoco.py`` example for MJCF"
         )
 
-    if collision:
-        robot = yourdfpy.URDF.load(
-            module.URDF_PATH,
-            build_collision_scene_graph=True,
-            load_collision_meshes=True,
-        )
-    else:
-        robot = yourdfpy.URDF.load(module.URDF_PATH)
-
-    robot.show(
-        collision_geometry=collision,
-        callback=partial(
-            viewer_callback,
-            urdf_model=robot,
-            loop_time=loop_time,
-            trajectory=generate_joint_limit_trajectory(
-                urdf_model=robot, loop_time=loop_time
-            ),
-        ),
+    print(
+        "Check out yourdfpy more URDF features like animation or checking "
+        "collision meshes. In this instance, the yourdfpy command is:\n\n"
+        f"\tyourdfpy {module.URDF_PATH} --animate\n"
     )
 
 
@@ -219,6 +183,6 @@ def main(argv=None):
     elif args.subcmd == "show":
         show(args.name, args.configuration, args.collision)
     elif args.subcmd == "animate":
-        animate(args.name, args.collision, args.loop_time)
+        animate(args.name)
     else:  # no subcommand
         parser.print_help()

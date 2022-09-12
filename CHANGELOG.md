@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Changed
+
+- Command-line: refer to yourdfpy for animation
+
 ## [0.3.0] - 2022/09/12
 
 ### Added
