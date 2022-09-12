@@ -27,8 +27,6 @@ REPOSITORY_PATH: str = _clone_to_cache("example-robot-data")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "ur_description")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes", "ur10")
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "ur10_robot.urdf")
 
 # Description-specific paths

@@ -27,8 +27,6 @@ REPOSITORY_PATH: str = _clone_to_cache("robotiq_arg85_description")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(
     PACKAGE_PATH, "robots", "robotiq_arg85_description.URDF"
 )

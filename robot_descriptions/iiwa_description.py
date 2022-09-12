@@ -29,8 +29,6 @@ PACKAGE_PATH: str = _path.join(
     REPOSITORY_PATH, "manipulation", "models", "iiwa_description"
 )
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(
     PACKAGE_PATH, "urdf", "iiwa14_primitive_collision.urdf"
 )

@@ -27,6 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("baxter_common")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "baxter_description")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "baxter.urdf")

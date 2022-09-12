@@ -27,8 +27,6 @@ REPOSITORY_PATH: str = _clone_to_cache("unitree_mujoco")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "data", "go1")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 MJCF_PATH: str = _path.join(PACKAGE_PATH, "xml", "go1.xml")
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "go1.urdf")

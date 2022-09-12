@@ -27,8 +27,6 @@ REPOSITORY_PATH: str = _clone_to_cache("drake")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "examples", "atlas")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "urdf", "meshes")
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "atlas_convex_hull.urdf")
 
 # Description-specific paths

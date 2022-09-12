@@ -27,6 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("bullet3")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "data", "quadruped")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH)
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "minitaur.urdf")

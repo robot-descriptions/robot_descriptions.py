@@ -27,6 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("unitree_ros")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "go1_description")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "go1.urdf")

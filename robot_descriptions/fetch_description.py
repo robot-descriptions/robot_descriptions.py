@@ -29,6 +29,4 @@ PACKAGE_PATH: str = _path.join(
     REPOSITORY_PATH, "roboschool", "models_robot", "fetch_description"
 )
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "fetch.urdf")
