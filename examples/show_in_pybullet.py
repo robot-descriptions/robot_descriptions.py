@@ -22,31 +22,24 @@ This example requires PyBullet, which is installed by ``pip install pybullet``.
 """
 
 import argparse
-import os
-from importlib import import_module  # type: ignore
 
-try:
-    import pybullet
-except ImportError as e:
-    raise ImportError(
-        "pybullet not found, try ``pip install pybullet``"
-    ) from e
+import pybullet
+
+from robot_descriptions.loaders.pybullet import load_robot_description
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("name", help="name of the robot description")
     args = parser.parse_args()
 
-    try:
-        module = import_module(f"robot_descriptions.{args.name}")
-    except ModuleNotFoundError:
-        module = import_module(f"robot_descriptions.{args.name}_description")
-
-    client = pybullet.connect(pybullet.GUI)
+    pybullet.connect(pybullet.GUI)
     pybullet.configureDebugVisualizer(pybullet.COV_ENABLE_SHADOWS, 0)
     pybullet.configureDebugVisualizer(pybullet.COV_ENABLE_GUI, 0)
-    pybullet.setAdditionalSearchPath(os.path.dirname(module.URDF_PATH))
-    robot = pybullet.loadURDF(os.path.basename(module.URDF_PATH))
+
+    try:
+        robot = load_robot_description(args.name)
+    except ModuleNotFoundError:
+        robot = load_robot_description(f"{args.name}_description")
 
     input("Press Enter to close PyBullet and terminate... ")
     pybullet.disconnect()
