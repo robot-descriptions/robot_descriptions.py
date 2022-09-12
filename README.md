@@ -122,6 +122,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Panda                 | Franka Emika             | MJCF       | `panda_mj_description`        |
 | Panda                 | Franka Emika             | URDF       | `panda_description`           |
 | Pepper                | SoftBank Robotics        | URDF       | `pepper_description`          |
+| Poppy Torso           | Pollen Robotics          | URDF       | `poppy_torso_description`     |
 | PR2                   | Willow Garage            | URDF       | `pr2_description`             |
 | Reachy                | Pollen Robotics          | URDF       | `reachy_description`          |
 | Robotiq 2F-85         | Robotiq                  | MJCF       | `robotiq_2f85_mj_description` |
