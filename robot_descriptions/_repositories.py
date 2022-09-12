@@ -89,7 +89,7 @@ REPOSITORIES: Dict[str, Repository] = {
     "GingerURDF": Repository(
         url="https://github.com/Rayckey/GingerURDF.git",
         commit="6a1307cd0ee2b77c82f8839cdce3a2e2eed2bd8f",
-        cache_path="Rayckey/GingerURDF",
+        cache_path="Rayckey/gingerurdf",
     ),
     "gym-pybullet-drones": Repository(
         url="https://github.com/utiasDSL/gym-pybullet-drones.git",
