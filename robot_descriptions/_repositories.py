@@ -126,6 +126,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="cd9715bb5df7ad57445d953db7b1924255305944",
         cache_path="pepper_description",
     ),
+    "poppy_ergo_jr_description": Repository(
+        url="https://github.com/poppy-project/poppy_ergo_jr_description.git",
+        commit="7eb32bd385afa11dea5e6a6b6a4a86a0243aaa2b",
+        cache_path="poppy_ergo_jr_description",
+    ),
     "poppy_torso_description": Repository(
         url="https://github.com/poppy-project/poppy_torso_description.git",
         commit="6beeec3d76fb72b7548cce7c73aad722f8884522",
