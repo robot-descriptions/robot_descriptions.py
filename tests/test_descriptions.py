@@ -19,7 +19,7 @@ import os
 import unittest
 from importlib import import_module  # type: ignore
 
-from robot_descriptions._description_names import DESCRIPTION_NAMES
+from robot_descriptions._descriptions import DESCRIPTIONS
 
 
 class TestDescriptions(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDescriptions(unittest.TestCase):
         """
         Check all robot-description submodules.
         """
-        for name in DESCRIPTION_NAMES:
+        for name, desc in DESCRIPTIONS.items():
             description = import_module(f"robot_descriptions.{name}")
             self.assertTrue(
                 os.path.exists(description.REPOSITORY_PATH),
@@ -44,13 +44,15 @@ class TestDescriptions(unittest.TestCase):
                 f"Path {description.PACKAGE_PATH} "
                 f"does not exist in {description}",
             )
-            if hasattr(description, "MJCF_PATH"):
+            if desc.has_mjcf:
+                self.assertTrue(hasattr(description, "MJCF_PATH"))
                 self.assertTrue(
                     os.path.exists(description.MJCF_PATH),
                     f"MJCF path {description.MJCF_PATH} does not exist "
                     f"in {description}",
                 )
-            if hasattr(description, "URDF_PATH"):
+            if desc.has_urdf:
+                self.assertTrue(hasattr(description, "URDF_PATH"))
                 self.assertTrue(
                     os.path.exists(description.URDF_PATH),
                     f"URDF path {description.URDF_PATH} does not exist "
