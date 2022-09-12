@@ -59,6 +59,23 @@ The import will automatically download the robot description if you don't have i
 
 Some robot descriptions include additional fields. For instance, the ``iiwa_description`` exports ``URDF_PATH_POLYTOPE_COLLISION`` with more detailed collision meshes.
 
+### Loaders
+
+This wrapper also provides one-stop shop `load_robot_description` functions for the following robotics software:
+
+| Software  | Loader                                 |
+|-----------|----------------------------------------|
+| Pinocchio | `robot_descriptions.loaders.pinocchio` |
+| PyBullet  | `robot_descriptions.loaders.pybullet`  |
+
+The function loads the robot description and returns an instance directly usable in the target software. For example:
+
+```python
+from robot_descriptions.loaders.pinocchio import load_robot_description
+
+robot = load_robot_description("upkie_description")
+```
+
 ## Examples
 
 Load a robot description:
