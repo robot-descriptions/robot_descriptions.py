@@ -109,8 +109,10 @@ def get_argument_parser() -> argparse.ArgumentParser:
 
 
 def list_descriptions():
-    names = sorted([name for name in DESCRIPTIONS])
-    for name in names:
+    """
+    List descriptions to the standard output.
+    """
+    for name in sorted(list(DESCRIPTIONS)):
         desc = DESCRIPTIONS[name]
         formats = ("URDF" if desc.has_urdf else "") + (
             "MJCF" if desc.has_mjcf else ""

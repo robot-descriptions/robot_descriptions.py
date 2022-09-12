@@ -46,15 +46,27 @@ class Description:
 
     formats: Set[Format]
 
-    def __init__(self, format):
-        self.formats = {format}
+    def __init__(self, single_format):
+        """
+        Initialize a description that provides a single format.
+
+        Args:
+            single_format: Format provided by the description.
+        """
+        self.formats = {single_format}
 
     @property
     def has_mjcf(self) -> bool:
+        """
+        Check if description provides MJCF.
+        """
         return Format.MJCF in self.formats
 
     @property
     def has_urdf(self) -> bool:
+        """
+        Check if description provides URDF.
+        """
         return Format.URDF in self.formats
 
 
