@@ -19,7 +19,6 @@
 Load a robot description in PyBullet.
 """
 
-import os.path
 from importlib import import_module  # type: ignore
 
 import pybullet
@@ -39,6 +38,6 @@ def load_robot_description(description_name: str) -> int:
     if not hasattr(module, "URDF_PATH"):
         raise ValueError(f"{description_name} is not a URDF description")
 
-    pybullet.setAdditionalSearchPath(os.path.dirname(module.URDF_PATH))
-    robot = pybullet.loadURDF(os.path.basename(module.URDF_PATH))
+    pybullet.setAdditionalSearchPath(module.PACKAGE_PATH)
+    robot = pybullet.loadURDF(module.URDF_PATH)
     return robot
