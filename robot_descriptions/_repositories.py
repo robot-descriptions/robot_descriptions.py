@@ -79,7 +79,7 @@ REPOSITORIES: Dict[str, Repository] = {
     "eDO_description": Repository(
         url="https://github.com/Comau/eDO_description.git",
         commit="17b3f92f834746106d6a4befaab8eeab3ac248e6",
-        cache_path="Comau/eDO_description",
+        cache_path="Comau/edo_sim",
     ),
     "example-robot-data": Repository(
         url="https://github.com/Gepetto/example-robot-data.git",
