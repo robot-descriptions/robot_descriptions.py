@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Poppy Torso
 - Loader: PyBullet
 - Show description formats in ``robot_descriptions list``
 
