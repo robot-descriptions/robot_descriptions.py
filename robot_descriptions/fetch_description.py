@@ -23,9 +23,11 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-REPOSITORY_PATH: str = _clone_to_cache("robot-assets")
+REPOSITORY_PATH: str = _clone_to_cache("roboschool")
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "urdfs", "robots", "fetch")
+PACKAGE_PATH: str = _path.join(
+    REPOSITORY_PATH, "roboschool", "models_robot", "fetch_description"
+)
 
 MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
 
