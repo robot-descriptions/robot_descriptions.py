@@ -58,11 +58,12 @@ def load_robot_description(
     module = import_module(f"robot_descriptions.{description_name}")
 
     package_dirs = [
-            module.PACKAGE_PATH,
-            module.REPOSITORY_PATH,
-            os.path.dirname(module.PACKAGE_PATH),
-            os.path.dirname(module.REPOSITORY_PATH),
-        ]
+        module.PACKAGE_PATH,
+        module.REPOSITORY_PATH,
+        os.path.dirname(module.PACKAGE_PATH),
+        os.path.dirname(module.REPOSITORY_PATH),
+        os.path.dirname(module.URDF_PATH),  # e.g. laikago_description
+    ]
 
     if hasattr(module, "MESHES_PATH"):
         package_dirs.append(module.MESHES_PATH)
