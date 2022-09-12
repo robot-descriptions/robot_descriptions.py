@@ -65,9 +65,6 @@ def load_robot_description(
         os.path.dirname(module.URDF_PATH),  # e.g. laikago_description
     ]
 
-    if hasattr(module, "MESHES_PATH"):
-        package_dirs.append(module.MESHES_PATH)
-
     robot = pin.RobotWrapper.BuildFromURDF(
         filename=module.URDF_PATH,
         package_dirs=package_dirs,

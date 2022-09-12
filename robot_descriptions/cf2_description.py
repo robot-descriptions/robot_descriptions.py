@@ -29,6 +29,4 @@ PACKAGE_PATH: str = _path.join(
     REPOSITORY_PATH, "gym_pybullet_drones", "assets"
 )
 
-MESHES_PATH: str = PACKAGE_PATH
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "cf2p.urdf")

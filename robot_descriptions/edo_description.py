@@ -27,6 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("eDO_description")
 
 PACKAGE_PATH: str = REPOSITORY_PATH
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "edo_sim.urdf")

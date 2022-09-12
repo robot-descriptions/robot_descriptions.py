@@ -27,6 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("robot-assets")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "urdfs", "robots", "yumi")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "yumi.urdf")

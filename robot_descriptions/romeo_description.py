@@ -27,8 +27,6 @@ REPOSITORY_PATH: str = _clone_to_cache("romeo_robot")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "romeo_description")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(
     PACKAGE_PATH, "urdf", "romeo_generated_urdf", "romeo.urdf"
 )

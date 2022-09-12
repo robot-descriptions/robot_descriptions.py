@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Ginger: update cache path to match package name
 - Go1: Split description again into URDF and MJCF again
 - Match cache path with package name when it helps PyBullet
+- Remove ``MESHES_PATH`` attribute
 - eDO: update cache path to match package name
 
 ## [0.3.0] - 2022/09/12

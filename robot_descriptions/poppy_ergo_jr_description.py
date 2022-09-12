@@ -27,6 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("poppy_ergo_jr_description")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "poppy_ergo_jr.urdf")

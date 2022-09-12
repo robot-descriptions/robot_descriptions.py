@@ -58,9 +58,3 @@ class TestDescriptions(unittest.TestCase):
                     f"URDF path {description.URDF_PATH} does not exist "
                     f"in {description}",
                 )
-            if hasattr(description, "MESHES_PATH"):
-                self.assertTrue(
-                    os.path.exists(description.MESHES_PATH),
-                    f"Meshes path {description.MESHES_PATH} does not exist "
-                    f"in {description}",
-                )

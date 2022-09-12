@@ -29,8 +29,6 @@ PACKAGE_PATH: str = _path.join(
     REPOSITORY_PATH, "robots", "double_pendulum_description"
 )
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "double_pendulum.urdf")
 
 # Description-specific paths

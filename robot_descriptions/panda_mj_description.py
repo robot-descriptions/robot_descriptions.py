@@ -27,6 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("mujoco_menagerie")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "franka_emika_panda")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "assets")
-
 MJCF_PATH: str = _path.join(PACKAGE_PATH, "panda.xml")

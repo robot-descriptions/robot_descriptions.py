@@ -27,8 +27,6 @@ REPOSITORY_PATH: str = _clone_to_cache("unitree_mujoco")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "data", "aliengo")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 MJCF_PATH: str = _path.join(PACKAGE_PATH, "xml", "aliengo.xml")
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "aliengo.urdf")

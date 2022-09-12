@@ -32,12 +32,6 @@ The import will automatically download the robot description if you don't have i
         Path to the main URDF/MJCF file of the robot description.
     </dd>
     <dt>
-        <code>MESHES_PATH</code>
-    </dt>
-    <dd>
-        Path to the "meshes" folder of the robot description, if applicable.
-    </dd>
-    <dt>
         <code>PACKAGE_PATH</code>
     </dt>
     <dd>
@@ -55,7 +49,7 @@ Some robot descriptions include additional fields. For instance, the ``iiwa_desc
 
 ### Loaders
 
-This wrapper also provides one-stop shop `load_robot_description` functions for the following robotics software:
+One-stop shop `load_robot_description` functions are also available for the following robotics software:
 
 | Software  | Loader                                 |
 |-----------|----------------------------------------|

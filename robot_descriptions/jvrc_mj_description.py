@@ -27,6 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("jvrc_mj_description")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 MJCF_PATH: str = _path.join(PACKAGE_PATH, "xml", "jvrc1.xml")

@@ -27,8 +27,6 @@ REPOSITORY_PATH: str = _clone_to_cache("icub-models")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "iCub")
 
-MESHES_PATH: str = _path.join(PACKAGE_PATH, "meshes")
-
 URDF_PATH: str = _path.join(
     PACKAGE_PATH, "robots", "iCubGazeboV2_5", "model.urdf"
 )
