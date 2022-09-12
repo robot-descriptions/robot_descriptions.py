@@ -15,15 +15,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import logging
 import unittest
 
 import pybullet
 
 from robot_descriptions._descriptions import DESCRIPTIONS
 from robot_descriptions.loaders.pybullet import load_robot_description
-
-# from functools import partial
-
 
 
 class TestPyBullet(unittest.TestCase):
@@ -56,15 +54,14 @@ class TestPyBullet(unittest.TestCase):
         """
 
         def test(self):
-            print(f"\n\n==============\n{description}\n\n")
+            logging.debug(f"Loading {description} in PyBullet...")
             load_robot_description(description)
 
-        # return partial(load_robot_description, name)
         return test
 
 
-for name, desc in DESCRIPTIONS.items():
-    if desc.has_urdf:
+for name, description in DESCRIPTIONS.items():
+    if description.has_urdf:
         setattr(
             TestPyBullet,
             f"test_{name}",

@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Description: Poppy Torso
 - Loader: PyBullet
 - Show description formats in ``robot_descriptions list``
+- Unit tests to check that PyBullet loads all descriptions successfully
 
 ### Changed
 
