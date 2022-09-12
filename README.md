@@ -26,16 +26,10 @@ The import will automatically download the robot description if you don't have i
 
 <dl>
     <dt>
-        <code>URDF_PATH</code>
+        <code>URDF_PATH</code> / <code>MJCF_PATH</code>
     </dt>
     <dd>
-        Path to the main URDF file of the robot description, if applicable.
-    </dd>
-    <dt>
-        <code>MJCF_PATH</code>
-    </dt>
-    <dd>
-        Path to the main MJCF file of the robot description, if applicable.
+        Path to the main URDF/MJCF file of the robot description.
     </dd>
     <dt>
         <code>MESHES_PATH</code>
