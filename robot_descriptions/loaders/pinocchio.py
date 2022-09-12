@@ -25,7 +25,6 @@ from typing import Union
 
 import pinocchio as pin
 
-
 PinocchioJoint = Union[
     pin.JointModelRX,
     pin.JointModelRY,

@@ -20,6 +20,7 @@ Git utility functions to clone model repositories.
 """
 
 from dataclasses import dataclass
+from typing import Dict
 
 
 @dataclass
@@ -39,7 +40,7 @@ class Repository:
     url: str
 
 
-REPOSITORIES = {
+REPOSITORIES: Dict[str, Repository] = {
     "anymal_b_simple_description": Repository(
         url="https://github.com/ANYbotics/anymal_b_simple_description.git",
         commit="988b5df22b84761bdf08111b1c2ccc883793f456",
