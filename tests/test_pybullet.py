@@ -45,6 +45,7 @@ class TestPyBullet(unittest.TestCase):
     @staticmethod
     def get_test_for_description(description: str):
         """
+        Get test function for a given description.
 
         Args:
             description: Name of the description.
