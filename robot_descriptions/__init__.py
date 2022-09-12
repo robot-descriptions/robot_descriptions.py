@@ -19,4 +19,4 @@
 Import open source robot description as Python modules.
 """
 
-__version__ = "0.3.0-pre"
+__version__ = "0.3.0"
