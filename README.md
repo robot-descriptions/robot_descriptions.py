@@ -88,7 +88,8 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 
 | Name                  | Maker                    | Format     | Submodule                     |
 |-----------------------|--------------------------|------------|-------------------------------|
-| A1                    | UNITREE Robotics         | MJCF, URDF | `a1_description`              |
+| A1                    | UNITREE Robotics         | MJCF       | `a1_mj_description`           |
+| A1                    | UNITREE Robotics         | URDF       | `a1_description`              |
 | Aliengo               | UNITREE Robotics         | MJCF, URDF | `aliengo_description`         |
 | Allegro Hand          | Wonik Robotics           | URDF       | `allegro_hand_description`    |
 | ANYmal B              | ANYbotics                | MJCF       | `anymal_b_mj_description`     |
@@ -112,21 +113,21 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | HyQ                   | IIT                      | URDF       | `hyq_description`             |
 | iCub                  | IIT                      | URDF       | `icub_description`            |
 | iiwa                  | KUKA                     | URDF       | `iiwa_description`            |
-| JVRC-1                | AIST                     | URDF       | `jvrc_description`            |
 | JVRC-1                | AIST                     | MJCF       | `jvrc_mj_description`         |
+| JVRC-1                | AIST                     | URDF       | `jvrc_description`            |
 | Laikago               | UNITREE Robotics         | MJCF, URDF | `laikago_description`         |
 | Mini Cheetah          | MIT                      | URDF       | `mini_cheetah_description`    |
 | Minitaur              | Ghost Robotics           | URDF       | `minitaur_description`        |
-| Panda                 | Franka Emika             | URDF       | `panda_description`           |
 | Panda                 | Franka Emika             | MJCF       | `panda_mj_description`        |
+| Panda                 | Franka Emika             | URDF       | `panda_description`           |
 | Pepper                | SoftBank Robotics        | URDF       | `pepper_description`          |
 | PR2                   | Willow Garage            | URDF       | `pr2_description`             |
 | Reachy                | Pollen Robotics          | URDF       | `reachy_description`          |
-| Romeo                 | Aldebaran Robotics       | URDF       | `romeo_description`           |
-| Simple Humanoid       | N/A                      | URDF       | `simple_humanoid_description` |
-| Robotiq 2F-85         | Robotiq                  | URDF       | `robotiq_2f85_description`    |
 | Robotiq 2F-85         | Robotiq                  | MJCF       | `robotiq_2f85_mj_description` |
+| Robotiq 2F-85         | Robotiq                  | URDF       | `robotiq_2f85_description`    |
+| Romeo                 | Aldebaran Robotics       | URDF       | `romeo_description`           |
 | Shadow Hand           | The Shadow Robot Company | MJCF       | `shadow_hand_mj_description`  |
+| Simple Humanoid       | N/A                      | URDF       | `simple_humanoid_description` |
 | Solo                  | ODRI                     | URDF       | `solo_description`            |
 | TALOS                 | PAL Robotics             | URDF       | `talos_description`           |
 | TIAGo                 | PAL Robotics             | URDF       | `tiago_description`           |

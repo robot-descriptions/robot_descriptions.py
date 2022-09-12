@@ -58,7 +58,6 @@ class Description:
         return Format.URDF in self.formats
 
 
-
 DESCRIPTIONS: Dict[str, Description] = {
     "a1_description": Description(Format.URDF),
     "aliengo_description": Description(Format.MJCF),
