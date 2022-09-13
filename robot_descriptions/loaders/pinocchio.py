@@ -21,6 +21,7 @@ Load a robot description in Pinocchio.
 
 import os.path
 from importlib import import_module  # type: ignore
+import logging
 from typing import Union
 
 import pinocchio as pin
@@ -64,6 +65,9 @@ def load_robot_description(
         os.path.dirname(module.REPOSITORY_PATH),
         os.path.dirname(module.URDF_PATH),  # e.g. laikago_description
     ]
+
+    logging.debug(f"{module=}")
+    logging.debug(f"{package_dirs=}")
 
     robot = pin.RobotWrapper.BuildFromURDF(
         filename=module.URDF_PATH,
