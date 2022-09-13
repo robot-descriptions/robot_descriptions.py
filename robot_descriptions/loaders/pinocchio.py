@@ -66,7 +66,8 @@ def load_robot_description(
         os.path.dirname(module.URDF_PATH),  # e.g. laikago_description
     ]
 
-    logging.debug("module %s" % str(module))
+    logging.debug("\nCI CHECK")
+    logging.debug("module=%s" % str(module))
     logging.debug("package_dirs=%s" % str(package_dirs))
 
     robot = pin.RobotWrapper.BuildFromURDF(
