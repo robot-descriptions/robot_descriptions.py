@@ -63,11 +63,18 @@ USE_RELATIVE_PATHS = {
     "pr2_description",
 }
 
+VALUE_ERROR_ISSUE = {
+    "anymal_b_description",
+}
+
 for name, description in DESCRIPTIONS.items():
     if name in USE_RELATIVE_PATHS:
         # Those descriptions won't pass until the following fix hits release:
         # Issue: https://github.com/stack-of-tasks/pinocchio/issues/1741
         # PR: https://github.com/stack-of-tasks/pinocchio/pull/1742
+        continue
+    if name in VALUE_ERROR_ISSUE:
+        # ValueError: Argument geometry_model should be a GeometryModel
         continue
     if description.has_urdf:
         setattr(
