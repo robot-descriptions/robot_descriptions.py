@@ -71,7 +71,7 @@ VALUE_ERROR_ISSUE = {
 }
 
 MALLOC_ISSUE = {
-    # "talos_description",
+    "talos_description",
 }
 
 for name, description in DESCRIPTIONS.items():
