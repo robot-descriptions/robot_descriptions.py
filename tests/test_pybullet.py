@@ -42,6 +42,13 @@ class TestPyBullet(unittest.TestCase):
         """
         pybullet.disconnect()
 
+    def test_value_error_when_no_urdf(self):
+        """
+        Test exception raised when a description has no URDF_PATH.
+        """
+        with self.assertRaises(ValueError):
+            load_robot_description("_empty_description")
+
     @staticmethod
     def get_test_for_description(description: str):
         """

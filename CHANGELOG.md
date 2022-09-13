@@ -17,12 +17,12 @@ All notable changes to this project will be documented in this file.
 
 - A1: Split description again into URDF and MJCF again
 - Command-line: refer to yourdfpy for animation
+- eDO: update cache path to match package name
 - Flatten cache directory structure
 - Ginger: update cache path to match package name
 - Go1: Split description again into URDF and MJCF again
 - Match cache path with package name when it helps PyBullet
 - Remove ``MESHES_PATH`` attribute
-- eDO: update cache path to match package name
 
 ### Fixed
 
