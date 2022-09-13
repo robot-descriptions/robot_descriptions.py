@@ -66,6 +66,12 @@ USE_RELATIVE_PATHS = {
 VALUE_ERROR_ISSUE = {
     "anymal_b_description",
     "bolt_description",
+    "finger_edu_description",
+    "solo_description",
+}
+
+MALLOC_ISSUE = {
+    "talos_description",
 }
 
 for name, description in DESCRIPTIONS.items():
@@ -76,6 +82,12 @@ for name, description in DESCRIPTIONS.items():
         continue
     if name in VALUE_ERROR_ISSUE:
         # ValueError: Argument geometry_model should be a GeometryModel
+        # This issue seems to be fixed in shortcuts.py of pin-2.6.9
+        # TODO(scaron): I'm not sure why these descriptions fail to load in the
+        # CI while they load fine on my machine locally (py38, pin-2.6.4)
+        continue
+    if name in MALLOC_ISSUE:
+        # malloc(): invalid size (unsorted)
         # TODO(scaron): I'm not sure why these descriptions fail to load in the
         # CI while they load fine on my machine locally (py38, pin-2.6.4)
         continue
