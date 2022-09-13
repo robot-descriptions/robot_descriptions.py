@@ -19,7 +19,6 @@
 Git utility functions to clone model repositories.
 """
 
-import logging
 import os
 from typing import Union
 
@@ -78,7 +77,7 @@ def clone_to_directory(repo_url: str, target_dir: str) -> Repo:
     if os.path.exists(target_dir):
         return Repo(target_dir)
 
-    logging.info(f"Cloning {repo_url}...")
+    print(f"Cloning {repo_url}...")
     os.makedirs(target_dir)
     progress_bar = CloneProgressBar()
     return Repo.clone_from(
