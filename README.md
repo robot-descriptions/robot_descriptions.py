@@ -8,6 +8,8 @@
 
 Import open source robot descriptions as Python modules. The wrapper automatically downloads and cache files at first import. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available.
 
+All descriptions [load successfully](https://github.com/stephane-caron/robot_descriptions.py#loaders) in PyBullet.
+
 ## Installation
 
 ```console
