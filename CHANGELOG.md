@@ -24,6 +24,10 @@ All notable changes to this project will be documented in this file.
 - Remove ``MESHES_PATH`` attribute
 - eDO: update cache path to match package name
 
+### Fixed
+
+- CI: Populate cache before running unit tests
+
 ## [0.3.0] - 2022/09/12
 
 ### Added

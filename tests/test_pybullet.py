@@ -68,7 +68,3 @@ for name, description in DESCRIPTIONS.items():
             f"test_{name}",
             TestPyBullet.get_test_for_description(name),
         )
-
-
-if __name__ == "__main__":
-    unittest.main()

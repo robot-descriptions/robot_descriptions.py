@@ -19,6 +19,7 @@
 Git utility functions to clone model repositories.
 """
 
+import logging
 import os
 from typing import Union
 
@@ -77,7 +78,7 @@ def clone_to_directory(repo_url: str, target_dir: str) -> Repo:
     if os.path.exists(target_dir):
         return Repo(target_dir)
 
-    print(f"Cloning {repo_url}...")
+    logging.info(f"Cloning {repo_url}...")
     os.makedirs(target_dir)
     progress_bar = CloneProgressBar()
     return Repo.clone_from(
@@ -87,9 +88,7 @@ def clone_to_directory(repo_url: str, target_dir: str) -> Repo:
     )
 
 
-def clone_to_cache(
-    description_name: str,
-) -> str:
+def clone_to_cache(description_name: str) -> str:
     """
     Get a local working directory cloned from a remote git repository.
 
@@ -121,3 +120,15 @@ def clone_to_cache(
     clone = clone_to_directory(repository.url, target_dir)
     clone.git.checkout(repository.commit)
     return str(clone.working_dir)
+
+
+def populate_cache() -> None:
+    """
+    Clone all repositories to cache.
+
+    Notes:
+        This function can be used for unit testing, or before another program
+        that wants to make sure robot descriptions are imported right away.
+    """
+    for description_name in REPOSITORIES:
+        clone_to_cache(description_name)

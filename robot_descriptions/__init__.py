@@ -20,3 +20,7 @@ Import open source robot description as Python modules.
 """
 
 __version__ = "0.4.0rc1"
+
+from ._cache import populate_cache
+
+__all__ = ["populate_cache"]
