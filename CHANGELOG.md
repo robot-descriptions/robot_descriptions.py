@@ -24,10 +24,6 @@ All notable changes to this project will be documented in this file.
 - Match cache path with package name when it helps PyBullet
 - Remove ``MESHES_PATH`` attribute
 
-### Fixed
-
-- CI: Populate cache before running unit tests
-
 ## [0.3.0] - 2022/09/12
 
 ### Added

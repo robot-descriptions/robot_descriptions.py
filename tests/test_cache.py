@@ -30,7 +30,7 @@ from robot_descriptions._cache import (
 from robot_descriptions._repositories import REPOSITORIES
 
 
-class TestGit(unittest.TestCase):
+class TestCache(unittest.TestCase):
 
     """
     Test fixture for git-related functions.
