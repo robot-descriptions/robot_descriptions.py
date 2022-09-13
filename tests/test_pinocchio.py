@@ -32,6 +32,10 @@ class TestPinocchio(unittest.TestCase):
         https://github.com/stack-of-tasks/pinocchio/pull/1742 hits release.
     """
 
+    def setUp(self):
+        logging.basicConfig()
+        logging.getLogger().setLevel(logging.DEBUG)
+
     @staticmethod
     def get_test_for_description(description: str):
         """
