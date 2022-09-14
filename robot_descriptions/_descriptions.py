@@ -102,7 +102,6 @@ DESCRIPTIONS: Dict[str, Description] = {
     "laikago_description": Description(Format.URDF),
     "mini_cheetah_description": Description(Format.URDF),
     "minitaur_description": Description(Format.URDF),
-    "nao_description": Description(Format.URDF),
     "panda_description": Description(Format.URDF),
     "panda_mj_description": Description(Format.MJCF),
     "pepper_description": Description(Format.URDF),

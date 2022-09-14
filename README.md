@@ -126,7 +126,6 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Laikago               | UNITREE Robotics         | MJCF, URDF | `laikago_description`         |
 | Mini Cheetah          | MIT                      | URDF       | `mini_cheetah_description`    |
 | Minitaur              | Ghost Robotics           | URDF       | `minitaur_description`        |
-| NAO                   | SoftBank Robotics        | URDF       | `nao_description`             |
 | Panda                 | Franka Emika             | MJCF       | `panda_mj_description`        |
 | Panda                 | Franka Emika             | URDF       | `panda_description`           |
 | Pepper                | SoftBank Robotics        | URDF       | `pepper_description`          |
