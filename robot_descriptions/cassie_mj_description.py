@@ -23,8 +23,8 @@ from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-REPOSITORY_PATH: str = _clone_to_cache("cassie_mj_description")
+REPOSITORY_PATH: str = _clone_to_cache("mujoco_menagerie")
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "agility_cassie")
 
-MJCF_PATH: str = _path.join(PACKAGE_PATH, "xml", "cassie.xml")
+MJCF_PATH: str = _path.join(PACKAGE_PATH, "cassie.xml")
