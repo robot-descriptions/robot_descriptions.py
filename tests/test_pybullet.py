@@ -34,6 +34,8 @@ class TestPyBullet(unittest.TestCase):
         """
         Start PyBullet simulation.
         """
+        logging.basicConfig()
+        logging.getLogger().setLevel(logging.INFO)
         pybullet.connect(pybullet.DIRECT)
 
     def tearDown(self):
@@ -62,7 +64,7 @@ class TestPyBullet(unittest.TestCase):
         """
 
         def test(self):
-            logging.debug(f"Loading {description} in PyBullet...")
+            logging.info(f"Loading {description} in PyBullet...")
             load_robot_description(description)
 
         return test
