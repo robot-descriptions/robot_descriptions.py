@@ -34,7 +34,7 @@ class TestPinocchio(unittest.TestCase):
 
     def setUp(self):
         logging.basicConfig()
-        logging.getLogger().setLevel(logging.DEBUG)
+        logging.getLogger().setLevel(logging.INFO)
 
     @staticmethod
     def get_test_for_description(description: str):
@@ -49,7 +49,7 @@ class TestPinocchio(unittest.TestCase):
         """
 
         def test(self):
-            logging.debug(f"Loading {description} in Pinocchio...")
+            logging.info(f"Loading {description} in Pinocchio...")
             load_robot_description(description)
 
         return test
