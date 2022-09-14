@@ -133,6 +133,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Poppy Torso           | Poppy Project            | URDF       | `poppy_torso_description`     |
 | PR2                   | Willow Garage            | URDF       | `pr2_description`             |
 | Reachy                | Pollen Robotics          | URDF       | `reachy_description`          |
+| Robonaut 2            | NASA JSC Robotics        | URDF       | `r2_description`              |
 | Robotiq 2F-85         | Robotiq                  | MJCF       | `robotiq_2f85_mj_description` |
 | Robotiq 2F-85         | Robotiq                  | URDF       | `robotiq_2f85_description`    |
 | Romeo                 | Aldebaran Robotics       | URDF       | `romeo_description`           |
