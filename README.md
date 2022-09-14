@@ -51,14 +51,14 @@ Some robot descriptions include additional fields. For instance, the ``iiwa_desc
 
 ### Loaders
 
-One-stop shop `load_robot_description` functions are also available for the following robotics software:
+The library also provides a one-stop shop `load_robot_description` function for each of the following robotics software:
 
 | Software  | Loader                                 |
 |-----------|----------------------------------------|
 | Pinocchio | `robot_descriptions.loaders.pinocchio` |
 | PyBullet  | `robot_descriptions.loaders.pybullet`  |
 
-The function loads the robot description and returns an instance directly usable in the target software. For example:
+The function loads a robot description from its name, and returns an instance directly usable in the target software. For example:
 
 ```python
 from robot_descriptions.loaders.pinocchio import load_robot_description
