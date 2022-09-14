@@ -51,10 +51,11 @@ Some robot descriptions include additional fields. For instance, the ``iiwa_desc
 
 ### Loaders
 
-The library also provides a one-stop shop `load_robot_description` function for each of the following robotics software:
+The library also provides a `load_robot_description` function for each of the following robotics software:
 
 | Software  | Loader                                 |
 |-----------|----------------------------------------|
+| MuJoCo    | `robot_descriptions.loaders.mujoco`    |
 | Pinocchio | `robot_descriptions.loaders.pinocchio` |
 | PyBullet  | `robot_descriptions.loaders.pybullet`  |
 
