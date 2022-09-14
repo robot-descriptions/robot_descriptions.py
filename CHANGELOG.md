@@ -6,7 +6,6 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: NAO
 - Description: Robonaut 2
 - Description: Valkyrie
 - Loader: MuJoCo
