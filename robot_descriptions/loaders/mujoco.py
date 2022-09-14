@@ -16,7 +16,26 @@
 # limitations under the License.
 
 """
-Import open source robot description as Python modules.
+Load a robot description in MuJoCo.
 """
 
-__version__ = "0.5.0rc0"
+from importlib import import_module  # type: ignore
+
+import mujoco
+
+
+def load_robot_description(description_name: str) -> mujoco.MjModel:
+    """
+    Load a robot description in Pinocchio.
+
+    Args:
+        description_name: Name of the robot description.
+
+    Returns:
+        Robot model for MuJoCo.
+    """
+    module = import_module(f"robot_descriptions.{description_name}")
+    if not hasattr(module, "MJCF_PATH"):
+        raise ValueError(f"{description_name} is not an MJCF description")
+
+    return mujoco.MjModel.from_xml_path(module.MJCF_PATH)

@@ -37,7 +37,7 @@ The import will automatically download the robot description if you don't have i
         <code>PACKAGE_PATH</code>
     </dt>
     <dd>
-        Path to the root of the robot description.
+        Path to the root of the robot description package.
     </dd>
     <dt>
         <code>REPOSITORY_PATH</code>

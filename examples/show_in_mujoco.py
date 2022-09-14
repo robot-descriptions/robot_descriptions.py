@@ -23,12 +23,8 @@ the MuJoCo viewer installed by ``pip install mujoco-python-viewer``.
 """
 
 import argparse
-from importlib import import_module  # type: ignore
 
-try:
-    import mujoco
-except ImportError as e:
-    raise ImportError("MuJoCo not found, try ``pip install mujoco``") from e
+import mujoco
 
 try:
     import mujoco_viewer
@@ -37,22 +33,19 @@ except ImportError as e:
         "MuJoCo viewer not found, " "try ``pip install mujoco-python-viewer``"
     ) from e
 
+from robot_descriptions.loaders.mujoco import load_robot_description
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("name", help="name of the robot description")
     args = parser.parse_args()
 
     try:
-        module = import_module(f"robot_descriptions.{args.name}")
+        model = load_robot_description(args.name)
     except ModuleNotFoundError:
-        module = import_module(f"robot_descriptions.{args.name}_description")
+        model = load_robot_description(f"{args.name}_description")
 
-    if not hasattr(module, "MJCF_PATH"):
-        raise ValueError(f"{args.name} is not an MJCF description")
-
-    model = mujoco.MjModel.from_xml_path(module.MJCF_PATH)
     data = mujoco.MjData(model)
-
     viewer = mujoco_viewer.MujocoViewer(model, data)
     mujoco.mj_step(model, data)  # step at least once to load model in viewer
     while viewer.is_alive:
