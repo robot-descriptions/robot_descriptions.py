@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file.
 - Loader: MuJoCo
 - Unit tests to check that MuJoCo loads all MJCF descriptions successfully
 
+### Changed
+
+- Cassie: update to description from MuJoCo Menagerie
+
 ## [0.4.0] - 2022/09/14
 
 ### Added
