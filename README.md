@@ -146,6 +146,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | UR3                   | Universal Robots         | URDF       | `ur3_description`             |
 | UR5                   | Universal Robots         | URDF       | `ur5_description`             |
 | UR5e                  | Universal Robots         | MJCF       | `ur5e_mj_description`         |
+| Valkyrie              | NASA JSC Robotics        | URDF       | `valkyrie_description`        |
 | YuMi                  | ABB                      | URDF       | `yumi_description`            |
 
 New robot descriptions are welcome! Check out the [guidelines](https://github.com/stephane-caron/robot_descriptions.py/tree/master/CONTRIBUTING.md) then open a PR.

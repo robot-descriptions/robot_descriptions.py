@@ -121,6 +121,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="2665e9bc0f476e5f505ff929d758ed36f8618fa8",
         cache_path="mujoco_menagerie",
     ),
+    "nasa-urdf-robots": Repository(
+        url="https://github.com/gkjohnson/nasa-urdf-robots.git",
+        commit="54cdeb1dbfb529b79ae3185a53e24fce26e1b74b",
+        cache_path="nasa-urdf-robots",
+    ),
     "pepper_description": Repository(
         url="https://github.com/jrl-umi3218/pepper_description.git",
         commit="cd9715bb5df7ad57445d953db7b1924255305944",
