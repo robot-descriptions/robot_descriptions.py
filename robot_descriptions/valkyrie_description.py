@@ -27,12 +27,18 @@ REPOSITORY_PATH: str = _clone_to_cache("nasa-urdf-robots")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "val_description")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "valkyrie_sim.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "model", "robots", "valkyrie_sim.urdf")
 
 # Description-specific paths
 
-URDF_PATH_A: str = _path.join(PACKAGE_PATH, "robots", "valkyrie_A.urdf")
+URDF_PATH_A: str = _path.join(
+    PACKAGE_PATH, "model", "robots", "valkyrie_A.urdf"
+)
 
-URDF_PATH_B: str = _path.join(PACKAGE_PATH, "robots", "valkyrie_B.urdf")
+URDF_PATH_B: str = _path.join(
+    PACKAGE_PATH, "model", "robots", "valkyrie_B.urdf"
+)
 
-URDF_PATH_C: str = _path.join(PACKAGE_PATH, "robots", "valkyrie_C.urdf")
+URDF_PATH_C: str = _path.join(
+    PACKAGE_PATH, "model", "robots", "valkyrie_C.urdf"
+)
