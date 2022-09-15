@@ -113,6 +113,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Crazyflie 2.0         | Bitcraze                 | URDF       | `cf2_description`             |
 | Double Pendulum       | N/A                      | URDF       | `double_pendulum_description` |
 | e.DO                  | Comau                    | URDF       | `edo_description`             |
+| Eve R3                | Halodi                   | URDF       | `eve_r3_description`          |
 | Fetch                 | Fetch Robotics           | URDF       | `fetch_description`           |
 | FingerEdu             | N/A                      | URDF       | `finger_edu_description`      |
 | Gen2                  | Kinova                   | URDF       | `gen2_description`            |

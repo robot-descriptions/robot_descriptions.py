@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Eve R3
 - Description: Robonaut 2
 - Description: Valkyrie
 - Loader: MuJoCo

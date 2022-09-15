@@ -13,8 +13,8 @@ Make sure that your pull request satisfies the following:
 
 - The robot description is distributed legally and under an open source license (permissive or copyleft)
 - The file name for the new submodule is ``<robot_name>_description.py`` in snake-case. For example, ``R2D2_description`` becomes ``r2d2_description.py``
-- If applicable, add the repository containing the new description to ``_repositories.py``
-    - If release tags are not available, use a specific git commit ID. This way the imported submodule will still work in the interval between a change in the file structure of the target repository and the corresponding update in `robot_descriptions`.
+- If needed, add the repository containing the new description to ``_repositories.py``.
+    - Use a specific git commit ID. This way the robot description will still work in the interval between a change in the file structure of the target repository and the corresponding update in `robot_descriptions`.
 - Add the description metadata to the ``DESCRIPTIONS`` dictionary in ``_descriptions.py``
 - Check that all unit tests are successful by ``tox -e py3X`` where ``3.X`` is the version of your Python interpreter
 - Document the description's submodule name in the Descriptions section of the [README](README.md)
