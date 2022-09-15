@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 
 - Cassie: update to description from MuJoCo Menagerie
 - Pinocchio loader: no root joint by default
+- Update MuJoCo Menagerie repository to propagate fix
 
 ## [0.4.0] - 2022/09/14
 
