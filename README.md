@@ -106,6 +106,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | ANYmal C              | ANYbotics                | URDF       | `anymal_c_description`        |
 | Atlas DRC (v3)        | Boston Dynamics          | URDF       | `atlas_drc_description`       |
 | Atlas v4              | Boston Dynamics          | URDF       | `atlas_v4_description`        |
+| BarrettHand           | Barrett Technology       | URDF       | `barrett_hand_description`    |
 | Baxter                | Rethink Robotics         | URDF       | `baxter_description`          |
 | Bolt                  | ODRI                     | URDF       | `bolt_description`            |
 | Cassie                | Agility Robotics         | MJCF       | `cassie_mj_description`       |

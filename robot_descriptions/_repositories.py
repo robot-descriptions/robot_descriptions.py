@@ -56,6 +56,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="v1.2.0",
         cache_path="baxter_common",
     ),
+    "bhand_model": Repository(
+        url="https://github.com/jhu-lcsr-attic/bhand_model.git",
+        commit="937f4186d6458bd682a7dae825fb6f4efe56ec69",
+        cache_path="bhand_model",
+    ),
     "bullet3": Repository(
         url="https://github.com/bulletphysics/bullet3.git",
         commit="3.24",
