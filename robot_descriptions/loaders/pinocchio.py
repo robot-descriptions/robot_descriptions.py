@@ -21,7 +21,7 @@ Load a robot description in Pinocchio.
 
 import os.path
 from importlib import import_module  # type: ignore
-from typing import Union
+from typing import Optional, Union
 
 import pinocchio as pin
 
@@ -42,15 +42,16 @@ PinocchioJoint = Union[
 
 def load_robot_description(
     description_name: str,
-    root_joint_type: PinocchioJoint = pin.JointModelFreeFlyer,
+    root_joint: Optional[PinocchioJoint] = None,
 ) -> pin.RobotWrapper:
     """
     Load a robot description in Pinocchio.
 
     Args:
         description_name: Name of the robot description.
-        root_joint_type: Type of the first joint of the kinematic chain,
-            typically a free flyer (a.k.a. floating base) for mobile robots.
+        root_joint (optional): First joint of the kinematic chain, for example
+            a free flyer between the floating base of a mobile robot and an
+            inertial frame. Defaults to no joint, i.e., a fixed base.
 
     Returns:
         Robot models for Pinocchio.
@@ -68,7 +69,7 @@ def load_robot_description(
     robot = pin.RobotWrapper.BuildFromURDF(
         filename=module.URDF_PATH,
         package_dirs=package_dirs,
-        root_joint=root_joint_type(),
+        root_joint=root_joint,
     )
 
     return robot
