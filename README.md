@@ -16,6 +16,11 @@ Importing a description for the first time automatically downloads and caches fi
 pip install robot_descriptions
 ```
 
+## Other languages
+
+| ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=c%2B%2B&logoColor=white) | [robot\_descriptions.cpp](https://github.com/mayataka/robot_descriptions.cpp) |
+|--|--|
+
 ## Usage
 
 Import the robot description you are interested in directly as a submodule of ``robot_descriptions``:
