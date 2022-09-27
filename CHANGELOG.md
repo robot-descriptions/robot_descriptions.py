@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- CI: check that all URDF descriptions load in yourdfpy
 - Example: load in yourdfpy
 - Loader: yourdfpy
 
@@ -13,6 +14,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- CI: check that all MJCF descriptions load in MuJoCo
 - Description: BarrettHand
 - Description: Eve R3
 - Description: Robonaut 2
@@ -30,6 +32,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- CI: check that all URDF descriptions load in PyBullet
 - Description: Poppy Ergo Jr
 - Description: Poppy Torso
 - Loader: PyBullet
@@ -52,6 +55,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- CI: check that URDF descriptions load in Pinocchio
 - Description: ANYmal B MJCF
 - Description: ANYmal C MJCF
 - Description: Atlas v4
