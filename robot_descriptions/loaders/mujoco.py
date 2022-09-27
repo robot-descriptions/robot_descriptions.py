@@ -26,7 +26,7 @@ import mujoco
 
 def load_robot_description(description_name: str) -> mujoco.MjModel:
     """
-    Load a robot description in Pinocchio.
+    Load a robot description in MuJoCo.
 
     Args:
         description_name: Name of the robot description.

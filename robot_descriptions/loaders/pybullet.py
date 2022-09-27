@@ -26,7 +26,7 @@ import pybullet
 
 def load_robot_description(description_name: str) -> int:
     """
-    Load a robot description in Pinocchio.
+    Load a robot description in PyBullet.
 
     Args:
         description_name: Name of the robot description.
