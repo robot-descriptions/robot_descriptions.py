@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Show a robot descriptions specified from the command line, using yourdfpy.
+Show a robot description, specified from the command line, in MuJoCo.
 
 This example requires MuJoCo, which is installed by ``pip install mujoco``.
 """
