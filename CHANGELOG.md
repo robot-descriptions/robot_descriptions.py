@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Example: load in yourdfpy
 - Loader: yourdfpy
 
 ## [0.5.0] - 2022/09/19
