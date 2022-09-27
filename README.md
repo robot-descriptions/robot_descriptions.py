@@ -63,6 +63,7 @@ The library also provides a `load_robot_description` function for each of the fo
 | MuJoCo    | `robot_descriptions.loaders.mujoco`    |
 | Pinocchio | `robot_descriptions.loaders.pinocchio` |
 | PyBullet  | `robot_descriptions.loaders.pybullet`  |
+| yourdfpy  | `robot_descriptions.loaders.yourdfpy`  |
 
 The function loads a robot description from its name, and returns an instance directly usable in the target software. For example:
 
@@ -79,6 +80,7 @@ Load a robot description:
 - [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_mujoco.py)
 - [Pinocchio](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_pinocchio.py)
 - [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_pybullet.py)
+- [yourdfpy](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_yourdfpy.py)
 
 Visualize a robot description:
 
