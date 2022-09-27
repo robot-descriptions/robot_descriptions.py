@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Show a robot descriptions specified from the command line, using yourdfpy.
+Load a robot description, specified from the command line, in PyBullet.
 
 This example requires PyBullet, which is installed by ``pip install pybullet``.
 """

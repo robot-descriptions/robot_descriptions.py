@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Show a robot descriptions specified from the command line, using yourdfpy.
+Show a robot description, specified from the command line, using yourdfpy.
 
 Note:
     See ``robot_descriptions/_command_line.py`` for a more advanced
