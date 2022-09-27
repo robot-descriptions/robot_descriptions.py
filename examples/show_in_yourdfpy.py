@@ -29,15 +29,8 @@ installed via ``pip install robot_descriptions[cli]``.
 """
 
 import argparse
-from importlib import import_module  # type: ignore
 
-try:
-    import yourdfpy  # pylint: disable=import-error
-except ImportError as e:
-    raise ImportError(
-        "yourdfpy not found, try ``pip install yourdfpy``"
-    ) from e
-
+from robot_descriptions.loaders.yourdfpy import load_robot_description
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
@@ -45,9 +38,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     try:
-        module = import_module(f"robot_descriptions.{args.name}")
+        robot = load_robot_description(args.name)
     except ModuleNotFoundError:
-        module = import_module(f"robot_descriptions.{args.name}_description")
+        robot = load_robot_description(f"{args.name}_description")
 
-    robot = yourdfpy.URDF.load(module.URDF_PATH)
     robot.show()
