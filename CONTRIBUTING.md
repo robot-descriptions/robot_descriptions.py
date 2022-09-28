@@ -4,12 +4,9 @@ This project's goal is to facilitate loading and sharing of robot descriptions f
 
 - Add a new robot description
 - Raise any issue you find in a description, preferably directly in the description's repository (check out [`_repositories.py`](https://github.com/stephane-caron/robot_descriptions.py/blob/master/robot_descriptions/_repositories.py))
-- Help with any [open issue](https://github.com/stephane-caron/robot_descriptions.py/issues?q=is%3Aissue+is%3Aopen)
 - Make a standalone ``<robot_name>_description`` repository for a description embedded in one of the big framework repositories (Bullet, Drake, ...)
 
 ## Adding a new robot description
-
-Make sure that your pull request satisfies the following:
 
 1. **License:** The robot description is distributed legally and under an open source license (permissive or copyleft).
 2. **Repository:** If needed, add the repository containing the new description to ``_repositories.py``.
