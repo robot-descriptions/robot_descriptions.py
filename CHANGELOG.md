@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Description: Kinova Gen3
+
 ## [0.6.0] - 2022/09/28
 
 ### Added

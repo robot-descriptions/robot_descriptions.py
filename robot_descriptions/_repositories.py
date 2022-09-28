@@ -121,6 +121,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="0f0ce7daefdd66c54e0909a6bf2c22154844f5f3",
         cache_path="jvrc_mj_description",
     ),
+    "kinova_mj_description": Repository(
+        url="https://github.com/mathieu-celerier/kinova_mj_description.git",
+        commit="cee556b0a438e6904634a90826d4e8d2e005cd1f",
+        cache_path="kinova_mj_description",
+    ),
     "mini_cheetah_urdf": Repository(
         url="https://github.com/Derek-TH-Wang/mini_cheetah_urdf.git",
         commit="1988bceb26e81f28594a16e7d5e6abe5cbb27ace",
