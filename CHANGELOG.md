@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Description: Kinova Gen3
 
+### Changed
+
+- MuJoCo examples: try ``mj_description`` suffix rather than ``description``
+
 ## [0.6.0] - 2022/09/28
 
 ### Added

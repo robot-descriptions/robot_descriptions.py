@@ -33,6 +33,6 @@ if __name__ == "__main__":
     try:
         model = load_robot_description(args.name)
     except ModuleNotFoundError:
-        model = load_robot_description(f"{args.name}_description")
+        model = load_robot_description(f"{args.name}_mj_description")
 
     print(f"Robot successfully loaded with model={model}")
