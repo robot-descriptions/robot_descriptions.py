@@ -113,7 +113,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "jaxon_description": Repository(
         url="https://github.com/robot-descriptions/jaxon_description.git",
-        commit="24f040bcf8c4450005aa6adb4875ed28e54d94ba",
+        commit="47310da0291545ba1752b2db859a42ed191558cb",
         cache_path="jaxon_description",
     ),
     "jvrc_description": Repository(
