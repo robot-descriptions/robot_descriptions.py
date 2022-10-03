@@ -198,7 +198,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "simple_humanoid_description": Repository(
         url="https://github.com/laas/simple_humanoid_description.git",
-        commit="v1.1.0",
+        commit="0e488ee4708155a71b2a92d05305a9186b543593",
         cache_path="simple_humanoid_description",
     ),
     "talos-data": Repository(
