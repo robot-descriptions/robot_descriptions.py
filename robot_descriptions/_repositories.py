@@ -117,8 +117,8 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="jaxon_description",
     ),
     "jvrc_description": Repository(
-        url="https://github.com/stephane-caron/jvrc_description.git",
-        commit="v1.1.0",
+        url="https://github.com/robot-descriptions/jvrc_description.git",
+        commit="b788e1a7c874b3447fc027e175f216c6192e9e96",
         cache_path="jvrc_description",
     ),
     "jvrc_mj_description": Repository(
