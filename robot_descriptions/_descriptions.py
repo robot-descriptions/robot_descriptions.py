@@ -100,6 +100,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "hyq_description": Description(Format.URDF),
     "icub_description": Description(Format.URDF),
     "iiwa_description": Description(Format.URDF),
+    "jaxon_description": Description(Format.URDF),
     "jvrc_description": Description(Format.URDF),
     "jvrc_mj_description": Description(Format.MJCF),
     "laikago_description": Description(Format.URDF),

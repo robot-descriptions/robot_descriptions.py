@@ -132,6 +132,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | HyQ                   | IIT                      | URDF       | `hyq_description`             |
 | iCub                  | IIT                      | URDF       | `icub_description`            |
 | iiwa                  | KUKA                     | URDF       | `iiwa_description`            |
+| JAXON                 | JSK                      | URDF       | `jaxon_description`           |
 | JVRC-1                | AIST                     | MJCF       | `jvrc_mj_description`         |
 | JVRC-1                | AIST                     | URDF       | `jvrc_description`            |
 | Laikago               | UNITREE Robotics         | MJCF, URDF | `laikago_description`         |

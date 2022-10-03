@@ -111,6 +111,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="v1.25.0",
         cache_path="icub-models",
     ),
+    "jaxon_description": Repository(
+        url="https://github.com/robot-descriptions/jaxon_description.git",
+        commit="24f040bcf8c4450005aa6adb4875ed28e54d94ba",
+        cache_path="jaxon_description",
+    ),
     "jvrc_description": Repository(
         url="https://github.com/stephane-caron/jvrc_description.git",
         commit="v1.1.0",
