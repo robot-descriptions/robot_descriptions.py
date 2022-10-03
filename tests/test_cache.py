@@ -78,6 +78,15 @@ class TestCache(unittest.TestCase):
         with self.assertRaises(ImportError):
             clone_to_cache("foo")
 
+    def test_clone_to_cache_right_commit(self):
+        """
+        Check that clone_to_cache clones the repository at the right commit.
+        """
+        description_name = "simple_humanoid_description"
+        repo = git.Repo(clone_to_cache(description_name))
+        commit = str(list(repo.iter_commits(max_count=1))[0])
+        self.assertEqual(commit, REPOSITORIES[description_name].commit)
+
     def test_cache_creation(self):
         """
         Check that clone_to_cache creates directory if needed.
