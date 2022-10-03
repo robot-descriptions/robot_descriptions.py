@@ -16,7 +16,15 @@
 # limitations under the License.
 
 """
-Import open source robot description as Python modules.
+NEXTAGE description.
 """
 
-__version__ = "0.7.0rc0"
+from os import path as _path
+
+from ._cache import clone_to_cache as _clone_to_cache
+
+REPOSITORY_PATH: str = _clone_to_cache("rtmros_nextage")
+
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "nextage_description")
+
+URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "NextageOpen.urdf")

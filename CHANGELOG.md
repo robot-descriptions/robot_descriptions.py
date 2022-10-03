@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Description: Kinova Gen3
+- Description: NEXTAGE
 
 ### Changed
 

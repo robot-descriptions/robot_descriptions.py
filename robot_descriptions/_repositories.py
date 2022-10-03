@@ -186,6 +186,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="0.1.5",
         cache_path="romeo_robot",
     ),
+    "rtmros_nextage": Repository(
+        url="https://github.com/tork-a/rtmros_nextage.git",
+        commit="ac270fb969fa54abeb6863f9b388a9e20c1f14e0",
+        cache_path="rtmros_nextage",
+    ),
     "simple_humanoid_description": Repository(
         url="https://github.com/laas/simple_humanoid_description.git",
         commit="v1.1.0",
