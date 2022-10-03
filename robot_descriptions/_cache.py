@@ -20,9 +20,9 @@ Git utility functions to clone model repositories.
 """
 
 import os
-from typing import Union
+from typing import Optional, Union
 
-from git import RemoteProgress, Repo
+from git import GitCommandError, RemoteProgress, Repo
 from tqdm import tqdm
 
 from ._repositories import REPOSITORIES
@@ -63,28 +63,42 @@ class CloneProgressBar(RemoteProgress):
         self.progress.refresh()
 
 
-def clone_to_directory(repo_url: str, target_dir: str) -> Repo:
+def clone_to_directory(
+    repo_url: str, target_dir: str, commit: Optional[str] = None
+) -> Repo:
     """
     Clone a git repository to a designated directory.
 
     Args:
         repo_url: URL to the git repository to clone.
         target_dir: Directory to clone the repository to.
+        commit: Optional commit to check out after cloning.
 
     Returns:
         Cloned git repository.
     """
     if os.path.exists(target_dir):
-        return Repo(target_dir)
-
-    print(f"Cloning {repo_url}...")
-    os.makedirs(target_dir)
-    progress_bar = CloneProgressBar()
-    return Repo.clone_from(
-        repo_url,
-        target_dir,
-        progress=progress_bar.update,
-    )
+        clone = Repo(target_dir)
+    else:
+        print(f"Cloning {repo_url}...")
+        os.makedirs(target_dir)
+        progress_bar = CloneProgressBar()
+        clone = Repo.clone_from(
+            repo_url,
+            target_dir,
+            progress=progress_bar.update,
+        )
+    if commit is not None:
+        try:
+            clone.git.checkout(commit)
+        except GitCommandError:
+            print(
+                f"Commit {commit} not found, "
+                "let's fetch origin and try again..."
+            )
+            clone.git.fetch("origin")
+            clone.git.checkout(commit)
+    return clone
 
 
 def clone_to_cache(description_name: str) -> str:
@@ -116,6 +130,7 @@ def clone_to_cache(description_name: str) -> str:
     )
 
     target_dir = os.path.join(cache_dir, repository.cache_path)
-    clone = clone_to_directory(repository.url, target_dir)
-    clone.git.checkout(repository.commit)
+    clone = clone_to_directory(
+        repository.url, target_dir, commit=repository.commit
+    )
     return str(clone.working_dir)

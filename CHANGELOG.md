@@ -14,6 +14,10 @@ All notable changes to this project will be documented in this file.
 
 - MuJoCo examples: try ``mj_description`` suffix rather than ``description``
 
+### Fixed
+
+- Update cached repository after a description was updated
+
 ## [0.6.0] - 2022/09/28
 
 ### Added
