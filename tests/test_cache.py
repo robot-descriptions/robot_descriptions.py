@@ -63,6 +63,32 @@ class TestCache(unittest.TestCase):
             self.assertTrue(clone_1.common_dir, clone_2.common_dir)
             self.assertTrue(clone_1.working_dir, clone_2.working_dir)
 
+    def test_clone_to_directory_newer_commit(self):
+        """
+        Check that the repository is pulled when a newer commit is configured.
+        """
+        description_name = "simple_humanoid_description"
+        repo_params = REPOSITORIES[description_name]
+
+        def get_commit(repo):
+            # return str(list(repo.iter_commits(max_count=1))[0])
+            return repo.git.rev_parse("HEAD")
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            repo_dir = os.path.join(tmp_dir, "test")
+            repo = clone_to_directory(
+                repo_params.url, repo_dir, commit=repo_params.commit
+            )
+            self.assertFalse(repo.bare)
+            self.assertEqual(get_commit(repo), repo_params.commit)
+            repo.git.reset("HEAD~1", "--hard")
+            self.assertNotEqual(get_commit(repo), repo_params.commit)
+            repo_bis = clone_to_directory(
+                repo_params.url, repo_dir, commit=repo_params.commit
+            )
+            self.assertEqual(get_commit(repo), repo_params.commit)
+            self.assertEqual(get_commit(repo_bis), repo_params.commit)
+
     def test_clone_to_cache_found(self):
         """
         Test clone_to_cache on a valid repository.
