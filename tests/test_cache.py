@@ -91,11 +91,12 @@ class TestCache(unittest.TestCase):
         """
         Check that clone_to_cache creates directory if needed.
         """
-        description = "upkie_description"
-        repo = REPOSITORIES[description]
+        description_name = "simple_humanoid_description"
+        repo = REPOSITORIES[description_name]
+
         with tempfile.TemporaryDirectory() as tmp_dir:
             os.environ["ROBOT_DESCRIPTIONS_CACHE"] = tmp_dir
-            clone_to_cache(description)
+            clone_to_cache(description_name)
             self.assertTrue(
                 os.path.exists(os.path.join(tmp_dir, repo.cache_path))
             )
