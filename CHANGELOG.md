@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
+- Shadow Hand MJCF: upstream fix to joint axes
 - Update cached repository after a description was updated
 
 ## [0.6.0] - 2022/09/28
