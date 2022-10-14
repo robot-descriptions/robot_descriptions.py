@@ -196,6 +196,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="ac270fb969fa54abeb6863f9b388a9e20c1f14e0",
         cache_path="rtmros_nextage",
     ),
+    "sigmaban_urdf": Repository(
+        url="https://github.com/Rhoban/sigmaban_urdf.git",
+        commit="3098082f6f4934425ea2cb60c3b8f7a392650594",
+        cache_path="sigmaban_urdf",
+    ),
     "simple_humanoid_description": Repository(
         url="https://github.com/laas/simple_humanoid_description.git",
         commit="0e488ee4708155a71b2a92d05305a9186b543593",

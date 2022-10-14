@@ -151,6 +151,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Robotiq 2F-85         | Robotiq                  | URDF       | `robotiq_2f85_description`    |
 | Romeo                 | Aldebaran Robotics       | URDF       | `romeo_description`           |
 | Shadow Hand           | The Shadow Robot Company | MJCF       | `shadow_hand_mj_description`  |
+| SigmaBan              | Rhoban                   | URDF       | `sigmaban_description`        |
 | Simple Humanoid       | N/A                      | URDF       | `simple_humanoid_description` |
 | Solo                  | ODRI                     | URDF       | `solo_description`            |
 | TALOS                 | PAL Robotics             | URDF       | `talos_description`           |

@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Description: JAXON
 - Description: Kinova Gen3
 - Description: NEXTAGE
+- Description: SigmaBan
 - Unit tests for repository cloning
 
 ### Changed
