@@ -198,7 +198,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "sigmaban_urdf": Repository(
         url="https://github.com/Rhoban/sigmaban_urdf.git",
-        commit="3098082f6f4934425ea2cb60c3b8f7a392650594",
+        commit="d5d023fd35800d00d7647000bce8602617a4960d",
         cache_path="sigmaban_urdf",
     ),
     "simple_humanoid_description": Repository(
