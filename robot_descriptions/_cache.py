@@ -98,6 +98,7 @@ def clone_to_directory(
             )
             clone.git.fetch("origin")
             clone.git.checkout(commit)
+            print(f"Found commit {commit} successfully!")
     return clone
 
 
