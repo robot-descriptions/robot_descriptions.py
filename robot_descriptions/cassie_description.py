@@ -27,4 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("cassie_description")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "cassie.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "cassie_v4.urdf")

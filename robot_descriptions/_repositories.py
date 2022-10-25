@@ -67,9 +67,9 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="bullet3",
     ),
     "cassie_description": Repository(
-        url="https://github.com/UMich-BipedLab/cassie_description.git",
-        commit="96323f3d0cc2cb7101cb92d7fcf4650abdcb2e81",
-        cache_path="BipedLab/cassie_description",
+        url="https://github.com/robot-descriptions/cassie_description",
+        commit="81a2d8bbd77201cc974afb127adda4e2857a6dbf",
+        cache_path="cassie_description",
     ),
     "cassie_mj_description": Repository(
         url="https://github.com/rohanpsingh/cassie_mj_description.git",

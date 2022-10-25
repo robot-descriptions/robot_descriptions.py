@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - MuJoCo examples: try ``mj_description`` suffix rather than ``description``
+- Update Cassie URDF description to an MIT-licensed repository
 
 ### Fixed
 
