@@ -63,7 +63,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "bullet3": Repository(
         url="https://github.com/bulletphysics/bullet3.git",
-        commit="3.24",
+        commit="7dee3436e747958e7088dfdcea0e4ae031ce619e",
         cache_path="bullet3",
     ),
     "cassie_description": Repository(
