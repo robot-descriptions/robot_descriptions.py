@@ -21,7 +21,13 @@ Load a robot description in yourdfpy.
 
 from importlib import import_module  # type: ignore
 
-import yourdfpy
+try:
+    import yourdfpy
+except ModuleNotFoundError as e:
+    raise ModuleNotFoundError(
+        "This loader requires 'yourdfpy', "
+        "which can be installed by ``pip install yourdfpy``"
+    ) from e
 
 
 def load_robot_description(description_name: str) -> yourdfpy.URDF:
