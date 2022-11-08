@@ -25,7 +25,7 @@ try:
     import yourdfpy
 except ModuleNotFoundError as e:
     raise ModuleNotFoundError(
-        "This loader requires 'yourdfpy', "
+        "This feature requires 'yourdfpy', "
         "which can be installed by ``pip install yourdfpy``"
     ) from e
 
