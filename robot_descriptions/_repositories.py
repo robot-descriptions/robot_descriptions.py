@@ -206,6 +206,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="0e488ee4708155a71b2a92d05305a9186b543593",
         cache_path="simple_humanoid_description",
     ),
+    "spryped": Repository(
+        url="https://github.com/bbokser/spryped.git",
+        commit="f360a6b78667a4d97c86cad465ef8f4c9512462b",
+        cache_path="spryped",
+    ),
     "talos-data": Repository(
         url="https://github.com/stack-of-tasks/talos-data.git",
         commit="v2.0.0",

@@ -154,6 +154,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | SigmaBan              | Rhoban                   | URDF       | `sigmaban_description`        |
 | Simple Humanoid       | N/A                      | URDF       | `simple_humanoid_description` |
 | Solo                  | ODRI                     | URDF       | `solo_description`            |
+| Spryped               | Benjamin Bokser          | URDF       | `spryped_description`         |
 | TALOS                 | PAL Robotics             | URDF       | `talos_description`           |
 | TIAGo                 | PAL Robotics             | URDF       | `tiago_description`           |
 | Upkie                 | Tast's Robots            | URDF       | `upkie_description`           |
