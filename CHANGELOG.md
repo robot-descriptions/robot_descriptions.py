@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Description: Spryped
 
+### Fixed
+
+- Examples: Remove exception on Crazyflie 2.0 description as it has been fixed
+
 ## [1.0.0] - 2022/10/31
 
 ### Added

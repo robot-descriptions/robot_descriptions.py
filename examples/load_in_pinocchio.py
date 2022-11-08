@@ -31,11 +31,6 @@ if __name__ == "__main__":
     parser.add_argument("name", help="name of the robot description")
     args = parser.parse_args()
 
-    if args.name == "cf2_description":
-        raise ValueError(
-            "See https://github.com/stack-of-tasks/pinocchio/issues/1741"
-        )
-
     try:
         robot = load_robot_description(args.name)
     except ModuleNotFoundError:
