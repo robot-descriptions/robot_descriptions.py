@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Description: Spryped
 
+### Changed
+
+- Pinocchio: bump minimum supported version to 2.6.10
+
 ### Fixed
 
 - Examples: Remove exception on Crazyflie 2.0 description as it has been fixed
