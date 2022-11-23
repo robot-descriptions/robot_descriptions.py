@@ -65,7 +65,7 @@ try:
             # TODO(scaron): I'm not sure why these descriptions fail to load in
             # the CI while they load fine on my machine locally (py38,
             # pin-2.6.4)
-            continue
+            pass
         if description.has_urdf:
             setattr(
                 TestPinocchio,
