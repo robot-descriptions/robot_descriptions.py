@@ -28,13 +28,6 @@ USE_RELATIVE_PATHS = {
     "pr2_description",
 }
 
-VALUE_ERROR_ISSUE = {
-    "anymal_b_description",
-    "bolt_description",
-    "finger_edu_description",
-    "solo_description",
-}
-
 MALLOC_ISSUE = {
     "talos_description",
 }
@@ -79,13 +72,6 @@ try:
             # Those won't pass until the following fix hits release:
             # Issue: https://github.com/stack-of-tasks/pinocchio/issues/1741
             # PR: https://github.com/stack-of-tasks/pinocchio/pull/1742
-            continue
-        if name in VALUE_ERROR_ISSUE:
-            # ValueError: Argument geometry_model should be a GeometryModel
-            # This issue seems to be fixed in shortcuts.py of pin-2.6.9
-            # TODO(scaron): I'm not sure why these descriptions fail to load in
-            # the CI while they load fine on my machine locally (py38,
-            # pin-2.6.4)
             continue
         if name in MALLOC_ISSUE:
             # malloc(): invalid size (unsorted)
