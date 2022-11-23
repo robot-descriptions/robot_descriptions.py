@@ -36,6 +36,9 @@ keywords = ["robot", "description", "urdf", "mjcf"]
 cli = [
     "yourdfpy >=0.0.52",
 ]
+frameworks = [
+    "pin >=2.6.10",
+]
 
 [project.scripts]
 robot_descriptions = "robot_descriptions._command_line:main"
