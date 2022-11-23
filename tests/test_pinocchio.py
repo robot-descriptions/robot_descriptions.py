@@ -20,10 +20,6 @@ import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
 
-MALLOC_ISSUE = {
-    "talos_description",
-}
-
 try:
     from robot_descriptions.loaders.pinocchio import load_robot_description
 
@@ -59,13 +55,8 @@ try:
 
             return test
 
+    # Add a test function for each URDF description
     for name, description in DESCRIPTIONS.items():
-        if name in MALLOC_ISSUE:
-            # malloc(): invalid size (unsorted)
-            # TODO(scaron): I'm not sure why these descriptions fail to load in
-            # the CI while they load fine on my machine locally (py38,
-            # pin-2.6.4)
-            pass
         if description.has_urdf:
             setattr(
                 TestPinocchio,
