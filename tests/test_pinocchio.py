@@ -20,14 +20,6 @@ import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
 
-USE_RELATIVE_PATHS = {
-    "cf2_description",
-    "laikago_description",
-    "mini_cheetah_description",
-    "minitaur_description",
-    "pr2_description",
-}
-
 MALLOC_ISSUE = {
     "talos_description",
 }
@@ -68,11 +60,6 @@ try:
             return test
 
     for name, description in DESCRIPTIONS.items():
-        if name in USE_RELATIVE_PATHS:
-            # Those won't pass until the following fix hits release:
-            # Issue: https://github.com/stack-of-tasks/pinocchio/issues/1741
-            # PR: https://github.com/stack-of-tasks/pinocchio/pull/1742
-            continue
         if name in MALLOC_ISSUE:
             # malloc(): invalid size (unsorted)
             # TODO(scaron): I'm not sure why these descriptions fail to load in
