@@ -8,21 +8,23 @@ on:
     workflow_dispatch:
 
 jobs:
-    build:
+    test:
+        name: "${{ matrix.os }}, python-${{ matrix.python-version }}"
         runs-on: ubuntu-latest
+
         env:
             USING_COVERAGE: "3.8"
 
         strategy:
             matrix:
-                python-version: ["3.7", "3.8", "3.9"]
+                python-version: ["3.7", "3.8", "3.9", "3.10"]
 
         steps:
             - name: "Checkout sources"
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
 
             - name: "Set up Python"
-              uses: actions/setup-python@v2
+              uses: actions/setup-python@v4
               with:
                   python-version: "${{ matrix.python-version }}"
 
@@ -34,10 +36,12 @@ jobs:
             - name: "Run tox targets for ${{ matrix.python-version }}"
               run: |
                   tox
+              env:
+                  PLATFORM: ${{ matrix.os }}
 
             - name: "Coveralls"
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
                   coveralls --service=github
-              if: contains(env.USING_COVERAGE, matrix.python-version)
+              if: ${{ runner.os == 'Linux' && contains(env.USING_COVERAGE, matrix.python-version) }}
