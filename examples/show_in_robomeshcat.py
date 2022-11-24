@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
     with scene.animation(fps=1):
         scene.render()
-        robot[3] = -0.5 * np.pi
+        robot[0] = -0.5 * np.pi
         scene.render()
 
         for t in np.linspace(0, 2 * np.pi, 10):
