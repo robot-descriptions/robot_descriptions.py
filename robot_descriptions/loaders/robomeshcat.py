@@ -46,19 +46,9 @@ def load_robot_description(description_name: str) -> robomeshcat.Robot:
         os.path.dirname(module.URDF_PATH),  # e.g. laikago_description
     ]
 
-    # Workaround to emulate Pinocchio's package_dirs
-    # See https://github.com/petrikvladimir/RoboMeshCat/issues/1
-    robot = None
-    for package_dir in package_dirs:
-        if robot is not None:
-            break
-        try:
-            robot = robomeshcat.Robot(
-                urdf_path=module.URDF_PATH,
-                mesh_folder_path=package_dir,
-            )
-        except ValueError as e:
-            if "could not be found" in str(e):
-                continue
+    robot = robomeshcat.Robot(
+        urdf_path=module.URDF_PATH,
+        mesh_folder_path=package_dirs,
+    )
 
     return robot
