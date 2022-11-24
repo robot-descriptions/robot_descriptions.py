@@ -103,14 +103,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 
 | Name                  | Maker                    | Format     | Submodule                     |
 |-----------------------|--------------------------|------------|-------------------------------|
-| A1                    | UNITREE Robotics         | MJCF       | `a1_mj_description`           |
-| A1                    | UNITREE Robotics         | URDF       | `a1_description`              |
-| Aliengo               | UNITREE Robotics         | MJCF, URDF | `aliengo_description`         |
 | Allegro Hand          | Wonik Robotics           | URDF       | `allegro_hand_description`    |
-| ANYmal B              | ANYbotics                | MJCF       | `anymal_b_mj_description`     |
-| ANYmal B              | ANYbotics                | URDF       | `anymal_b_description`        |
-| ANYmal C              | ANYbotics                | MJCF       | `anymal_c_mj_description`     |
-| ANYmal C              | ANYbotics                | URDF       | `anymal_c_description`        |
 | Atlas DRC (v3)        | Boston Dynamics          | URDF       | `atlas_drc_description`       |
 | Atlas v4              | Boston Dynamics          | URDF       | `atlas_v4_description`        |
 | BarrettHand           | Barrett Technology       | URDF       | `barrett_hand_description`    |
@@ -123,17 +116,10 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Eve R3                | Halodi                   | URDF       | `eve_r3_description`          |
 | Fetch                 | Fetch Robotics           | URDF       | `fetch_description`           |
 | FingerEdu             | N/A                      | URDF       | `finger_edu_description`      |
-| Gen2                  | Kinova                   | URDF       | `gen2_description`            |
 | Gen3                  | Kinova                   | MJCF       | `gen3_mj_description`         |
 | Ginger                | Paaila Technology        | URDF       | `ginger_description`          |
-| Go1                   | UNITREE Robotics         | MJCF       | `go1_mj_description`          |
-| Go1                   | UNITREE Robotics         | URDF       | `go1_description`             |
-| HyQ                   | IIT                      | URDF       | `hyq_description`             |
-| iCub                  | IIT                      | URDF       | `icub_description`            |
 | JVRC-1                | AIST                     | MJCF       | `jvrc_mj_description`         |
 | JVRC-1                | AIST                     | URDF       | `jvrc_description`            |
-| Mini Cheetah          | MIT                      | URDF       | `mini_cheetah_description`    |
-| Minitaur              | Ghost Robotics           | URDF       | `minitaur_description`        |
 | NEXTAGE               | Kawada Robotics          | URDF       | `nextage_description`         |
 | Pepper                | SoftBank Robotics        | URDF       | `pepper_description`          |
 | Poppy Ergo Jr         | Poppy Project            | URDF       | `poppy_ergo_jr_description`   |
@@ -146,7 +132,6 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Romeo                 | Aldebaran Robotics       | URDF       | `romeo_description`           |
 | Shadow Hand           | The Shadow Robot Company | MJCF       | `shadow_hand_mj_description`  |
 | Simple Humanoid       | N/A                      | URDF       | `simple_humanoid_description` |
-| Spryped               | Benjamin Bokser          | URDF       | `spryped_description`         |
 | TALOS                 | PAL Robotics             | URDF       | `talos_description`           |
 | TIAGo                 | PAL Robotics             | URDF       | `tiago_description`           |
 | Valkyrie              | NASA JSC Robotics        | URDF       | `valkyrie_description`        |
@@ -157,9 +142,10 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Name                  | Maker                    | DOF | Format     | Submodule                     |
 |-----------------------|--------------------------|-----|------------|-------------------------------|
 | e.DO                  | Comau                    | 6   | URDF       | `edo_description`             |
+| Gen2                  | Kinova                   | 6   | URDF       | `gen2_description`            |
+| iiwa                  | KUKA                     | 7   | URDF       | `iiwa_description`            |
 | Panda                 | Franka Emika             | 8   | MJCF       | `panda_mj_description`        |
 | Panda                 | Franka Emika             | 8   | URDF       | `panda_description`           |
-| iiwa                  | KUKA                     | 7   | URDF       | `iiwa_description`            |
 | UR10                  | Universal Robots         | 6   | URDF       | `ur10_description`            |
 | UR3                   | Universal Robots         | 6   | URDF       | `ur3_description`             |
 | UR5                   | Universal Robots         | 6   | URDF       | `ur5_description`             |
@@ -169,12 +155,14 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 
 | Name                  | Maker                    | DOF | Format     | Submodule                     |
 |-----------------------|--------------------------|-----|------------|-------------------------------|
+| Spryped               | Benjamin Bokser          | 8   | URDF       | `spryped_description`         |
 | Upkie                 | Tast's Robots            | 6   | URDF       | `upkie_description`           |
 
 ### Humanoids
 
 | Name                  | Maker                    | DOF | Format     | Submodule                     |
 |-----------------------|--------------------------|-----|------------|-------------------------------|
+| iCub                  | IIT                      | 32  | URDF       | `icub_description`            |
 | JAXON                 | JSK                      | 38  | URDF       | `jaxon_description`           |
 | SigmaBan              | Rhoban                   | 20  | URDF       | `sigmaban_description`        |
 
@@ -182,7 +170,19 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 
 | Name                  | Maker                    | DOF | Format     | Submodule                     |
 |-----------------------|--------------------------|-----|------------|-------------------------------|
+| A1                    | UNITREE Robotics         | 12  | MJCF       | `a1_mj_description`           |
+| A1                    | UNITREE Robotics         | 12  | URDF       | `a1_description`              |
+| Aliengo               | UNITREE Robotics         | 12  | MJCF, URDF | `aliengo_description`         |
+| ANYmal B              | ANYbotics                | 12  | MJCF       | `anymal_b_mj_description`     |
+| ANYmal B              | ANYbotics                | 12  | URDF       | `anymal_b_description`        |
+| ANYmal C              | ANYbotics                | 12  | MJCF       | `anymal_c_mj_description`     |
+| ANYmal C              | ANYbotics                | 12  | URDF       | `anymal_c_description`        |
+| Go1                   | UNITREE Robotics         | 12  | MJCF       | `go1_mj_description`          |
+| Go1                   | UNITREE Robotics         | 12  | URDF       | `go1_description`             |
+| HyQ                   | IIT                      | 12  | URDF       | `hyq_description`             |
 | Laikago               | UNITREE Robotics         | 12  | MJCF, URDF | `laikago_description`         |
+| Mini Cheetah          | MIT                      | 12  | URDF       | `mini_cheetah_description`    |
+| Minitaur              | Ghost Robotics           | 16  | URDF       | `minitaur_description`        |
 | Solo                  | ODRI                     | 12  | URDF       | `solo_description`            |
 
 New robot descriptions are welcome! Check out the [guidelines](https://github.com/stephane-caron/robot_descriptions.py/tree/master/CONTRIBUTING.md) then open a PR.
