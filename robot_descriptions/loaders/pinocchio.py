@@ -54,7 +54,7 @@ def load_robot_description(
             inertial frame. Defaults to no joint, i.e., a fixed base.
 
     Returns:
-        Robot models for Pinocchio.
+        Robot model for Pinocchio.
     """
     module = import_module(f"robot_descriptions.{description_name}")
 
