@@ -1,6 +1,6 @@
 # 👷 Contributing
 
-This project's goal is to facilitate loading and sharing of robot descriptions for the whole robotics communities. All contributions are welcome, for example here are some ways to help:
+The goal of this project is to facilitate loading and sharing of robot descriptions for the robotics community. All contributions are welcome. For example, here are some ways to help:
 
 - Add a new robot description
 - Raise any issue you find in a description, preferably directly in the description's repository (check out [`_repositories.py`](https://github.com/stephane-caron/robot_descriptions.py/blob/master/robot_descriptions/_repositories.py))
