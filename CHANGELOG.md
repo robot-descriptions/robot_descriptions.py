@@ -14,7 +14,8 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
-- Examples: Remove exception on Crazyflie 2.0 description as it has been fixed
+- CI: remove exceptions for bugs that have been fixed upstream
+- Examples: remove exception on Crazyflie 2.0 description as it has been fixed
 
 ## [1.0.0] - 2022/10/31
 
