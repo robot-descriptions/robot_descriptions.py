@@ -8,7 +8,7 @@
 
 Import open source robot descriptions as Python modules.
 
-Importing a description for the first time automatically downloads and caches files for future imports. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available. All of them [load successfully](https://github.com/stephane-caron/robot_descriptions.py#loaders) in MuJoCo (MJCF), PyBullet (URDF) and yourdfpy (URDF).
+Importing a description for the first time automatically downloads and caches files for future imports. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available. All of them [load successfully](https://github.com/stephane-caron/robot_descriptions.py#loaders) in respectively MuJoCo (MJCF) or Pinocchio, PyBullet and yourdfpy (URDF).
 
 ## Installation
 
