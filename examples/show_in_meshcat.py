@@ -25,7 +25,7 @@ MeshCat, which is installed by ``pip install meshcat``.
 import argparse
 
 try:
-    import pinocchio as pin
+    from pinocchio.visualize import MeshcatVisualizer
 except ImportError as e:
     raise ImportError("Pinocchio not found, try ``pip install pin``") from e
 
@@ -41,13 +41,9 @@ if __name__ == "__main__":
     except ModuleNotFoundError:
         robot = load_robot_description(f"{args.name}_description")
 
-    configuration = pin.neutral(robot.model)
-    viz = pin.visualize.MeshcatVisualizer(
-        robot.model, robot.collision_model, robot.visual_model
-    )
-    robot.setVisualizer(viz, init=False)
-    viz.initViewer(open=True)
-    viz.loadViewerModel()
-    viz.display(configuration)
+    robot.setVisualizer(MeshcatVisualizer())
+    robot.initViewer(open=True)
+    robot.loadViewerModel()
+    robot.display(robot.q0)
 
     input("Press Enter to close MeshCat and terminate... ")
