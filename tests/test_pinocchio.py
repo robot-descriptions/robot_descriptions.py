@@ -27,10 +27,6 @@ try:
 
         """
         Check that all descriptions are loaded properly in Pinocchio.
-
-        Note:
-            Some descriptions won't pass until
-            https://github.com/stack-of-tasks/pinocchio/pull/1742 hits release.
         """
 
         def setUp(self):
