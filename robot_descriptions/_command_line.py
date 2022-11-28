@@ -138,11 +138,11 @@ def show(
 
     try:
         yourdfpy = import_module("yourdfpy")
-    except ModuleNotFoundError:
+    except ModuleNotFoundError as exc:
         raise ValueError(
             "This command requires yourdfpy. You can installed it by: "
             "``pip install yourdfpy``"
-        )
+        ) from exc
 
     if collision:
         robot = yourdfpy.URDF.load(
