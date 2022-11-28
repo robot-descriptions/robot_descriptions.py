@@ -44,12 +44,12 @@ try:
         #     upkie = load_robot_description("upkie_description")
         #     self.assertIsNotNone(upkie)
 
-        # def test_collada_description(self):
-        #     """
-        #     Test a robot description with Collada meshes.
-        #     """
-        #     r2 = load_robot_description("r2_description")
-        #     self.assertIsNotNone(r2)
+        def test_collada_description(self):
+            """
+            Test a robot description with Collada meshes.
+            """
+            r2 = load_robot_description("r2_description")
+            self.assertIsNotNone(r2)
 
 
 except ImportError:
