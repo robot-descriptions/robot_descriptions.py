@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Command-line: only require yourdfpy for show command
 - Pinocchio: bump minimum supported version to 2.6.10
 
 ### Fixed

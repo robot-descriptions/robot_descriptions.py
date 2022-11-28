@@ -33,11 +33,9 @@ dependencies = [
 keywords = ["robot", "description", "urdf", "mjcf"]
 
 [project.optional-dependencies]
-cli = [
-    "yourdfpy >=0.0.52",
-]
-frameworks = [
+opts = [
     "pin >=2.6.10",
+    "yourdfpy >=0.0.52",
 ]
 
 [project.scripts]

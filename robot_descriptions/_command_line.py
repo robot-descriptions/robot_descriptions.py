@@ -23,8 +23,6 @@ import argparse
 from importlib import import_module  # type: ignore
 from typing import List
 
-import yourdfpy  # pylint: disable=import-error
-
 from robot_descriptions._descriptions import DESCRIPTIONS
 
 
@@ -136,6 +134,14 @@ def show(
         raise ValueError(
             "show command only applies to URDF, check out the "
             "``show_in_mujoco.py`` example for MJCF descriptions"
+        )
+
+    try:
+        yourdfpy = import_module("yourdfpy")
+    except ModuleNotFoundError:
+        raise ValueError(
+            "This command requires yourdfpy. You can installed it by: "
+            "``pip install yourdfpy``"
         )
 
     if collision:
