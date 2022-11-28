@@ -106,15 +106,6 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 
 | Name                          | Robot                 | Maker                    | Format     |
 |-------------------------------|-----------------------|--------------------------|------------|
-| `allegro_hand_description`    | Allegro Hand          | Wonik Robotics           | URDF       |
-| `barrett_hand_description`    | BarrettHand           | Barrett Technology       | URDF       |
-| `baxter_description`          | Baxter                | Rethink Robotics         | URDF       |
-| `cf2_description`             | Crazyflie 2.0         | Bitcraze                 | URDF       |
-| `double_pendulum_description` | Double Pendulum       | N/A                      | URDF       |
-| `eve_r3_description`          | Eve R3                | Halodi                   | URDF       |
-| `fetch_description`           | Fetch                 | Fetch Robotics           | URDF       |
-| `finger_edu_description`      | FingerEdu             | N/A                      | URDF       |
-| `gen3_mj_description`         | Gen3                  | Kinova                   | MJCF       |
 | `ginger_description`          | Ginger                | Paaila Technology        | URDF       |
 | `nextage_description`         | NEXTAGE               | Kawada Robotics          | URDF       |
 | `pepper_description`          | Pepper                | SoftBank Robotics        | URDF       |
@@ -135,6 +126,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `edo_description`             | e.DO                  | Comau                    | 6   | URDF       |
 | `gen2_description`            | Gen2                  | Kinova                   | 6   | URDF       |
+| `gen3_mj_description`         | Gen3                  | Kinova                   | 7   | MJCF       |
 | `iiwa_description`            | iiwa                  | KUKA                     | 7   | URDF       |
 | `panda_mj_description`        | Panda                 | Franka Emika             | 8   | MJCF       |
 | `panda_description`           | Panda                 | Franka Emika             | 8   | URDF       |
@@ -153,6 +145,33 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | `spryped_description`         | Spryped               | Benjamin Bokser          | 8   | URDF       |
 | `upkie_description`           | Upkie                 | Tast's Robots            | 6   | URDF       |
 
+### Dual arms
+
+| Name                          | Robot                 | Maker                    | DOF | Format     |
+|-------------------------------|-----------------------|--------------------------|-----|------------|
+| `baxter_description`          | Baxter                | Rethink Robotics         | 15  | URDF       |
+
+### Drones
+
+| Name                          | Robot                 | Maker                    | DOF | Format     |
+|-------------------------------|-----------------------|--------------------------|-----|------------|
+| `cf2_description`             | Crazyflie 2.0         | Bitcraze                 | 0   | URDF       |
+
+### Educational
+
+| Name                          | Robot                 | DOF | Format     |
+|-------------------------------|-----------------------|-----|------------|
+| `double_pendulum_description` | Double Pendulum       | 2   | URDF       |
+| `finger_edu_description`      | FingerEdu             | 3   | URDF       |
+| `simple_humanoid_description` | Simple Humanoid       | 29  | URDF       |
+
+### End effectors
+
+| Name                          | Robot                 | Maker                    | DOF | Format     |
+|-------------------------------|-----------------------|--------------------------|-----|------------|
+| `allegro_hand_description`    | Allegro Hand          | Wonik Robotics           | 16  | URDF       |
+| `barrett_hand_description`    | BarrettHand           | Barrett Technology       | 8   | URDF       |
+
 ### Humanoids
 
 | Name                          | Robot                 | Maker                    | DOF | Format     |
@@ -165,9 +184,15 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | `jvrc_mj_description`         | JVRC-1                | AIST                     | 34  | MJCF       |
 | `romeo_description`           | Romeo                 | Aldebaran Robotics       | 37  | URDF       |
 | `sigmaban_description`        | SigmaBan              | Rhoban                   | 20  | URDF       |
-| `simple_humanoid_description` | Simple Humanoid       | N/A                      | 29  | URDF       |
 | `talos_description`           | TALOS                 | PAL Robotics             | 32  | URDF       |
 | `valkyrie_description`        | Valkyrie              | NASA JSC Robotics        | 59  | URDF       |
+
+### Mobile manipulators
+
+| Name                          | Robot                 | Maker                    | DOF | Format     |
+|-------------------------------|-----------------------|--------------------------|-----|------------|
+| `eve_r3_description`          | Eve R3                | Halodi                   | 23  | URDF       |
+| `fetch_description`           | Fetch                 | Fetch Robotics           | 14  | URDF       |
 
 ### Quadrupeds
 
