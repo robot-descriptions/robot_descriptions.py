@@ -25,7 +25,7 @@ Note:
 
 This example requires `yourdfpy` which is an optional dependency. It can be
 installed separately (``pip install yourdfpy``), or when robot descriptions are
-installed via ``pip install robot_descriptions[cli]``.
+installed with optional dependencies ``pip install robot_descriptions[opts]``.
 """
 
 import argparse

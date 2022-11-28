@@ -17,11 +17,6 @@
 
 """
 List or show robot descriptions from the command line.
-
-Note:
-    This tool requires `yourdfpy` which is an optional dependency. It can be
-    installed separately (``pip install yourdfpy``), or when robot descriptions
-    are installed via ``pip install robot_descriptions[cli]``.
 """
 
 import argparse
@@ -161,7 +156,7 @@ def show(
 
 def animate(name: str) -> None:
     """
-    Show how to use yourdfpy to animate a given robot description.
+    Show how to call yourdfpy to animate a given robot description.
 
     Args:
         name: Name of the robot description.
