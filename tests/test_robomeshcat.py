@@ -15,10 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import logging
 import unittest
-
-from robot_descriptions._descriptions import DESCRIPTIONS
 
 try:
     from robot_descriptions.loaders.robomeshcat import load_robot_description
@@ -29,36 +26,18 @@ try:
         Check that all descriptions are loaded properly in RoboMeshCat.
         """
 
-        def setUp(self):
-            logging.basicConfig()
-            logging.getLogger().setLevel(logging.INFO)
-
-        @staticmethod
-        def get_test_for_description(description: str):
+        def test_load_robot_description(self):
             """
-            Get test function for a given description.
+            Load a robot description with RoboMeshCat.
 
-            Args:
-                description: Name of the description.
-
-            Returns:
-                Test function for that description.
+            Since RoboMeshCat relies on Pinocchio, we only test it on a couple
+            of robot descriptions.
             """
+            mini_cheetah = load_robot_description("mini_cheetah_description")
+            upkie = load_robot_description("upkie_description")
+            self.assertIsNotNone(mini_cheetah)
+            self.assertIsNotNone(upkie)
 
-            def test(self):
-                logging.info(f"Loading {description} in RoboMeshCat...")
-                load_robot_description(description)
-
-            return test
-
-    # Add a test function for each URDF description
-    for name, description in DESCRIPTIONS.items():
-        if description.has_urdf:
-            setattr(
-                TestRoboMeshCat,
-                f"test_{name}",
-                TestRoboMeshCat.get_test_for_description(name),
-            )
 
 except ImportError:
 
