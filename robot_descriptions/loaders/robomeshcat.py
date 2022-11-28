@@ -20,10 +20,11 @@ Load a robot description in `RoboMeshCat
 <https://github.com/petrikvladimir/RoboMeshCat>`_.
 """
 
-import os.path
 from importlib import import_module  # type: ignore
 
 import robomeshcat
+
+from .pinocchio import get_package_dirs
 
 
 def load_robot_description(description_name: str) -> robomeshcat.Robot:
@@ -37,18 +38,8 @@ def load_robot_description(description_name: str) -> robomeshcat.Robot:
         Robot model for RoboMeshCat.
     """
     module = import_module(f"robot_descriptions.{description_name}")
-
-    package_dirs = [
-        module.PACKAGE_PATH,
-        module.REPOSITORY_PATH,
-        os.path.dirname(module.PACKAGE_PATH),
-        os.path.dirname(module.REPOSITORY_PATH),
-        os.path.dirname(module.URDF_PATH),  # e.g. laikago_description
-    ]
-
     robot = robomeshcat.Robot(
         urdf_path=module.URDF_PATH,
-        mesh_folder_path=package_dirs,
+        mesh_folder_path=get_package_dirs(module),
     )
-
     return robot

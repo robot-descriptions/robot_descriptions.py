@@ -21,7 +21,7 @@ Load a robot description in Pinocchio.
 
 import os.path
 from importlib import import_module  # type: ignore
-from typing import Optional, Union
+from typing import List, Optional, Union
 
 import pinocchio as pin
 
@@ -38,6 +38,25 @@ PinocchioJoint = Union[
     pin.JointModelPlanar,
     pin.JointModelTranslation,
 ]
+
+
+def get_package_dirs(module) -> List[str]:
+    """
+    Get package directories for a given module.
+
+    Args:
+        module: Robot description module.
+
+    Returns:
+        Package directories.
+    """
+    return [
+        module.PACKAGE_PATH,
+        module.REPOSITORY_PATH,
+        os.path.dirname(module.PACKAGE_PATH),
+        os.path.dirname(module.REPOSITORY_PATH),
+        os.path.dirname(module.URDF_PATH),  # e.g. laikago_description
+    ]
 
 
 def load_robot_description(
@@ -57,19 +76,9 @@ def load_robot_description(
         Robot model for Pinocchio.
     """
     module = import_module(f"robot_descriptions.{description_name}")
-
-    package_dirs = [
-        module.PACKAGE_PATH,
-        module.REPOSITORY_PATH,
-        os.path.dirname(module.PACKAGE_PATH),
-        os.path.dirname(module.REPOSITORY_PATH),
-        os.path.dirname(module.URDF_PATH),  # e.g. laikago_description
-    ]
-
     robot = pin.RobotWrapper.BuildFromURDF(
         filename=module.URDF_PATH,
-        package_dirs=package_dirs,
+        package_dirs=get_package_dirs(module),
         root_joint=root_joint,
     )
-
     return robot
