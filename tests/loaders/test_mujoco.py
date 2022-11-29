@@ -19,8 +19,8 @@ import logging
 import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
-from robot_descriptions.loaders.mujoco import load_robot_description
 
+from robot_descriptions.loaders.mujoco import load_robot_description
 
 class TestMuJoCo(unittest.TestCase):
 
@@ -49,7 +49,6 @@ class TestMuJoCo(unittest.TestCase):
             load_robot_description(description)
 
         return test
-
 
 for name, description in DESCRIPTIONS.items():
     if description.has_mjcf:
