@@ -21,6 +21,7 @@ import unittest
 import pybullet
 
 from robot_descriptions._descriptions import DESCRIPTIONS
+
 from robot_descriptions.loaders.pybullet import load_robot_description
 
 
