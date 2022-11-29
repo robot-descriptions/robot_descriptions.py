@@ -49,10 +49,10 @@ class TestRoboMeshCat(unittest.TestCase):
 for name, description in DESCRIPTIONS.items():
     if name == "ur10_description":
         # Reported: https://github.com/petrikvladimir/RoboMeshCat/issues/9
-        pass
+        continue
     elif name in ["fetch_description", "ur3_description", "ur5_description"]:
         # Same issue as above
-        pass
+        continue
     if description.has_urdf:
         setattr(
             TestRoboMeshCat,
