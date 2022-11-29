@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## [1.1.0] - 2022/11/29
 
 ### Added
 
@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- CI: run loader tests in separate jobs (avoids a memory limit)
 - Command-line: only require yourdfpy for show command
 - Pinocchio: bump minimum supported version to 2.6.10
 
