@@ -15,7 +15,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import logging
 import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
@@ -41,7 +40,6 @@ class TestRoboMeshCat(unittest.TestCase):
         """
 
         def test(self):
-            logging.info(f"Loading {description} in RoboMeshCat...")
             load_robot_description(description)
 
         return test

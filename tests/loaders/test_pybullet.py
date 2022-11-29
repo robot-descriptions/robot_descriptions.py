@@ -15,7 +15,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import logging
 import unittest
 
 import pybullet
@@ -35,8 +34,6 @@ class TestPyBullet(unittest.TestCase):
         """
         Start PyBullet simulation.
         """
-        logging.basicConfig()
-        logging.getLogger().setLevel(logging.INFO)
         pybullet.connect(pybullet.DIRECT)
 
     def tearDown(self):
@@ -65,7 +62,6 @@ class TestPyBullet(unittest.TestCase):
         """
 
         def test(self):
-            logging.info(f"Loading {description} in PyBullet...")
             load_robot_description(description)
 
         return test
