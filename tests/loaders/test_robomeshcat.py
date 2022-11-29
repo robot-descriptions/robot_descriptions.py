@@ -17,41 +17,36 @@
 
 import unittest
 
-try:
-    from robot_descriptions.loaders.robomeshcat import load_robot_description
+from robot_descriptions.loaders.robomeshcat import load_robot_description
 
-    class TestRoboMeshCat(unittest.TestCase):
+
+class TestRoboMeshCat(unittest.TestCase):
+
+    """
+    Check that all descriptions are loaded properly in RoboMeshCat.
+
+    Since RoboMeshCat relies on Pinocchio, we only test it on a couple of
+    robot descriptions.
+    """
+
+    def test_load_robot_description(self):
+        """
+        Load a robot description with RoboMeshCat.
 
         """
-        Check that all descriptions are loaded properly in RoboMeshCat.
+        mini_cheetah = load_robot_description("mini_cheetah_description")
+        self.assertIsNotNone(mini_cheetah)
 
-        Since RoboMeshCat relies on Pinocchio, we only test it on a couple of
-        robot descriptions.
+    def test_description_with_cylinders(self):
         """
+        Load a robot description with cylinder shapes.
+        """
+        upkie = load_robot_description("upkie_description")
+        self.assertIsNotNone(upkie)
 
-        def test_load_robot_description(self):
-            """
-            Load a robot description with RoboMeshCat.
-
-            """
-            mini_cheetah = load_robot_description("mini_cheetah_description")
-            self.assertIsNotNone(mini_cheetah)
-
-        # def test_description_with_cylinders(self):
-        #     """
-        #     Load a robot description with cylinder shapes.
-        #     """
-        #     upkie = load_robot_description("upkie_description")
-        #     self.assertIsNotNone(upkie)
-
-        def test_collada_description(self):
-            """
-            Test a robot description with Collada meshes.
-            """
-            r2 = load_robot_description("r2_description")
-            self.assertIsNotNone(r2)
-
-
-except ImportError:
-
-    pass
+    def test_collada_description(self):
+        """
+        Test a robot description with Collada meshes.
+        """
+        r2 = load_robot_description("r2_description")
+        self.assertIsNotNone(r2)
