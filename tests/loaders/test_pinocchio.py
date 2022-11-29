@@ -15,7 +15,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import logging
 import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
@@ -27,10 +26,6 @@ class TestPinocchio(unittest.TestCase):
     """
     Check that all descriptions are loaded properly in Pinocchio.
     """
-
-    def setUp(self):
-        logging.basicConfig()
-        logging.getLogger().setLevel(logging.INFO)
 
     @staticmethod
     def get_test_for_description(description: str):
@@ -45,7 +40,6 @@ class TestPinocchio(unittest.TestCase):
         """
 
         def test(self):
-            logging.info(f"Loading {description} in Pinocchio...")
             load_robot_description(description)
 
         return test

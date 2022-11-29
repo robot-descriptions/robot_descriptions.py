@@ -15,7 +15,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import logging
 import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
@@ -27,10 +26,6 @@ class TestMuJoCo(unittest.TestCase):
     """
     Check that all MJCF descriptions are loaded properly in MuJoCo.
     """
-
-    def setUp(self):
-        logging.basicConfig()
-        logging.getLogger().setLevel(logging.INFO)
 
     @staticmethod
     def get_test_for_description(description: str):
@@ -45,7 +40,6 @@ class TestMuJoCo(unittest.TestCase):
         """
 
         def test(self):
-            logging.info(f"Loading {description} in MuJoCo...")
             load_robot_description(description)
 
         return test
