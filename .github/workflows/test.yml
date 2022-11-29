@@ -58,7 +58,7 @@ jobs:
               run: |
                   tox -e lint
 
-    loaders:
+    loader:
         name: "Loader: ${{ matrix.loader }}"
         runs-on: ubuntu-latest
 
@@ -83,6 +83,6 @@ jobs:
 
             - name: "Run loader tests"
               run: |
-                  tox -e loaders
+                  tox -e loader
               env:
                   LOADER: ${{ matrix.loader }}
