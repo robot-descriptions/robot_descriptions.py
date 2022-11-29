@@ -83,6 +83,4 @@ jobs:
 
             - name: "Run loader tests"
               run: |
-                  tox -e loader
-              env:
-                  LOADER: ${{ matrix.loader }}
+                  tox -e loader-${{ matrix.loader }}
