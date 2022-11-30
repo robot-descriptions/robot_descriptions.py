@@ -223,6 +223,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `minitaur_description`        | Minitaur              | Ghost Robotics           | 16  | URDF       |
 | `solo_description`            | Solo                  | ODRI                     | 12  | URDF       |
 
+## Contributing
+
 New robot descriptions are welcome! Check out the [guidelines](https://github.com/stephane-caron/robot_descriptions.py/tree/master/CONTRIBUTING.md) then open a PR.
 
 ## Thanks
