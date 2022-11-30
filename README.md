@@ -102,23 +102,20 @@ robot_descriptions show solo_description
 
 ## Descriptions
 
-Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) currently include:
+Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) are listed in the following categories:
 
-| Name                          | Robot                 | Maker                    | Format     |
-|-------------------------------|-----------------------|--------------------------|------------|
-| `ginger_description`          | Ginger                | Paaila Technology        | URDF       |
-| `nextage_description`         | NEXTAGE               | Kawada Robotics          | URDF       |
-| `pepper_description`          | Pepper                | SoftBank Robotics        | URDF       |
-| `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | URDF       |
-| `poppy_torso_description`     | Poppy Torso           | Poppy Project            | URDF       |
-| `pr2_description`             | PR2                   | Willow Garage            | URDF       |
-| `reachy_description`          | Reachy                | Pollen Robotics          | URDF       |
-| `r2_description`              | Robonaut 2            | NASA JSC Robotics        | URDF       |
-| `robotiq_2f85_mj_description` | Robotiq 2F-85         | Robotiq                  | MJCF       |
-| `robotiq_2f85_description`    | Robotiq 2F-85         | Robotiq                  | URDF       |
-| `shadow_hand_mj_description`  | Shadow Hand           | The Shadow Robot Company | MJCF       |
-| `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       |
-| `yumi_description`            | YuMi                  | ABB                      | URDF       |
+* [Arms](#arms)
+* [Bipeds](#bipeds)
+* [Dual Arms](#dual-arms)
+* [Drones](#drones)
+* [Educational](#educational)
+* [End Effectors](#end-effectors)
+* [Mobile Manipulators](#mobile-manipulators)
+* [Humanoids](#humanoids)
+* [Quadrupeds](#quadrupeds)
+* [Wheeled](#wheeled)
+
+The DOF column denotes the number of actuated degrees of freedom.
 
 ### Arms
 
@@ -128,8 +125,9 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | `gen2_description`            | Gen2                  | Kinova                   | 6   | URDF       |
 | `gen3_mj_description`         | Gen3                  | Kinova                   | 7   | MJCF       |
 | `iiwa_description`            | iiwa                  | KUKA                     | 7   | URDF       |
-| `panda_mj_description`        | Panda                 | Franka Emika             | 8   | MJCF       |
 | `panda_description`           | Panda                 | Franka Emika             | 8   | URDF       |
+| `panda_mj_description`        | Panda                 | Franka Emika             | 8   | MJCF       |
+| `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | 6   | URDF       |
 | `ur10_description`            | UR10                  | Universal Robots         | 6   | URDF       |
 | `ur3_description`             | UR3                   | Universal Robots         | 6   | URDF       |
 | `ur5_description`             | UR5                   | Universal Robots         | 6   | URDF       |
@@ -150,6 +148,9 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | Name                          | Robot                 | Maker                    | DOF | Format     |
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `baxter_description`          | Baxter                | Rethink Robotics         | 15  | URDF       |
+| `nextage_description`         | NEXTAGE               | Kawada Robotics          | 15  | URDF       |
+| `poppy_torso_description`     | Poppy Torso           | Poppy Project            | 13  | URDF       |
+| `yumi_description`            | YuMi                  | ABB                      | 16  | URDF       |
 
 ### Drones
 
@@ -171,6 +172,9 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `allegro_hand_description`    | Allegro Hand          | Wonik Robotics           | 16  | URDF       |
 | `barrett_hand_description`    | BarrettHand           | Barrett Technology       | 8   | URDF       |
+| `robotiq_2f85_description`    | Robotiq 2F-85         | Robotiq                  | 1   | URDF       |
+| `robotiq_2f85_mj_description` | Robotiq 2F-85         | Robotiq                  | 1   | MJCF       |
+| `shadow_hand_mj_description`  | Shadow Hand           | The Shadow Robot Company | 24  | MJCF       |
 
 ### Humanoids
 
@@ -182,6 +186,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 | `jaxon_description`           | JAXON                 | JSK                      | 38  | URDF       |
 | `jvrc_description`            | JVRC-1                | AIST                     | 34  | URDF       |
 | `jvrc_mj_description`         | JVRC-1                | AIST                     | 34  | MJCF       |
+| `r2_description`              | Robonaut 2            | NASA JSC Robotics        | 56  | URDF       |
 | `romeo_description`           | Romeo                 | Aldebaran Robotics       | 37  | URDF       |
 | `sigmaban_description`        | SigmaBan              | Rhoban                   | 20  | URDF       |
 | `talos_description`           | TALOS                 | PAL Robotics             | 32  | URDF       |
@@ -193,6 +198,11 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `eve_r3_description`          | Eve R3                | Halodi                   | 23  | URDF       |
 | `fetch_description`           | Fetch                 | Fetch Robotics           | 14  | URDF       |
+| `ginger_description`          | Ginger                | Paaila Technology        | 49  | URDF       |
+| `pepper_description`          | Pepper                | SoftBank Robotics        | 17  | URDF       |
+| `pr2_description`             | PR2                   | Willow Garage            | 32  | URDF       |
+| `reachy_description`          | Reachy                | Pollen Robotics          | 21  | URDF       |
+| `tiago_description`           | TIAGo                 | PAL Robotics             | 48  | URDF       |
 
 ### Quadrupeds
 
