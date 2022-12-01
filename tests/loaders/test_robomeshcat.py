@@ -47,12 +47,6 @@ class TestRoboMeshCat(unittest.TestCase):
 
 # Add a test function for each URDF description
 for name, description in DESCRIPTIONS.items():
-    if name == "ur10_description":
-        # Reported: https://github.com/petrikvladimir/RoboMeshCat/issues/9
-        continue
-    elif name in ["fetch_description", "ur3_description", "ur5_description"]:
-        # Same issue as above
-        continue
     if description.has_urdf:
         setattr(
             TestRoboMeshCat,
