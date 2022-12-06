@@ -60,12 +60,12 @@ The library also provides a `load_robot_description` function for each of the fo
 
 | Software    | Loader                                   |
 |-------------|------------------------------------------|
+| iDynTree    | `robot_descriptions.loaders.idyntree`    |
 | MuJoCo      | `robot_descriptions.loaders.mujoco`      |
 | Pinocchio   | `robot_descriptions.loaders.pinocchio`   |
 | PyBullet    | `robot_descriptions.loaders.pybullet`    |
 | RoboMeshCat | `robot_descriptions.loaders.robomeshcat` |
 | yourdfpy    | `robot_descriptions.loaders.yourdfpy`    |
-| iDynTree    | `robot_descriptions.loaders.idyntree`    |
 
 The function loads a robot description from its name, and returns an instance directly usable in the target software. For example:
 
@@ -78,13 +78,12 @@ robot = load_robot_description("upkie_description")
 ## Examples
 
 Load a robot description:
-
+- [iDynTree](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_idyntree.py)
 - [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_mujoco.py)
 - [Pinocchio](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_pinocchio.py)
 - [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_pybullet.py)
 - [RoboMeshCat](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_robomeshcat.py)
 - [yourdfpy](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_yourdfpy.py)
-- [iDynTree](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_idyntree.py)
 
 Visualize a robot description:
 
