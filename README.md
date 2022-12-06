@@ -58,14 +58,14 @@ Some robot descriptions include additional fields. For instance, the ``iiwa_desc
 
 The library also provides a `load_robot_description` function for each of the following robotics software:
 
-| Software    | Loader                                 |
-|-------------|----------------------------------------|
-| MuJoCo      | `robot_descriptions.loaders.mujoco`    |
-| Pinocchio   | `robot_descriptions.loaders.pinocchio` |
-| PyBullet    | `robot_descriptions.loaders.pybullet`  |
-| RoboMeshCat | `robot_descriptions.loaders.pinocchio` |
-| yourdfpy    | `robot_descriptions.loaders.yourdfpy`  |
-| iDynTree    | `robot_descriptions.loaders.idyntree`  |
+| Software    | Loader                                   |
+|-------------|------------------------------------------|
+| MuJoCo      | `robot_descriptions.loaders.mujoco`      |
+| Pinocchio   | `robot_descriptions.loaders.pinocchio`   |
+| PyBullet    | `robot_descriptions.loaders.pybullet`    |
+| RoboMeshCat | `robot_descriptions.loaders.robomeshcat` |
+| yourdfpy    | `robot_descriptions.loaders.yourdfpy`    |
+| iDynTree    | `robot_descriptions.loaders.idyntree`    |
 
 The function loads a robot description from its name, and returns an instance directly usable in the target software. For example:
 
