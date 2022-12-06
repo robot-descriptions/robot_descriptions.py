@@ -35,6 +35,7 @@ keywords = ["robot", "description", "urdf", "mjcf"]
 [project.optional-dependencies]
 opts = [
     "pin >=2.6.10",
+    "idyntree >= 5.0.1",
     "robomeshcat >=1.0.4",
     "yourdfpy >=0.0.52",
 ]
