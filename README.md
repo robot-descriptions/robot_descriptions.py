@@ -8,7 +8,7 @@
 
 Import open source robot descriptions as Python modules.
 
-Importing a description for the first time automatically downloads and caches files for future imports. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available. All of them [load successfully](https://github.com/stephane-caron/robot_descriptions.py#loaders) in respectively MuJoCo (MJCF) or Pinocchio, PyBullet and yourdfpy (URDF).
+Importing a description for the first time automatically downloads and caches files for future imports. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available. All of them [load successfully](https://github.com/stephane-caron/robot_descriptions.py#loaders) in respectively MuJoCo (MJCF) or Pinocchio, iDynTree, PyBullet and yourdfpy (URDF).
 
 ## Installation
 
@@ -65,6 +65,7 @@ The library also provides a `load_robot_description` function for each of the fo
 | PyBullet    | `robot_descriptions.loaders.pybullet`  |
 | RoboMeshCat | `robot_descriptions.loaders.pinocchio` |
 | yourdfpy    | `robot_descriptions.loaders.yourdfpy`  |
+| iDynTree    | `robot_descriptions.loaders.idyntree`  |
 
 The function loads a robot description from its name, and returns an instance directly usable in the target software. For example:
 
@@ -83,6 +84,7 @@ Load a robot description:
 - [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_pybullet.py)
 - [RoboMeshCat](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_robomeshcat.py)
 - [yourdfpy](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_yourdfpy.py)
+- [iDynTree](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_idyntree.py)
 
 Visualize a robot description:
 
