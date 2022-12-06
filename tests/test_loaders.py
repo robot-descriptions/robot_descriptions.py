@@ -34,7 +34,9 @@ from robot_descriptions.loaders.robomeshcat import (
 from robot_descriptions.loaders.yourdfpy import (
     load_robot_description as load_yourdfpy,
 )
-
+from robot_descriptions.loaders.idyntree import (
+    load_robot_description as load_idyntree,
+)
 
 class TestLoaders(unittest.TestCase):
 
@@ -58,3 +60,6 @@ class TestLoaders(unittest.TestCase):
 
     def test_yourdfpy(self):
         self.assertIsNotNone(load_yourdfpy("upkie_description"))
+
+    def test_idyntree(self):
+        self.assertIsNotNone(load_idyntree("upkie_description"))
