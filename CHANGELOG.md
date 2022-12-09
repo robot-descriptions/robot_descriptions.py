@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Changed
+
+- Update example-robot-data repository to v4.0.3
+
 ## [1.2.0] - 2022/12/07
 
 ### Added

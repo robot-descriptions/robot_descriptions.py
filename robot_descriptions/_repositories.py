@@ -88,7 +88,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "example-robot-data": Repository(
         url="https://github.com/Gepetto/example-robot-data.git",
-        commit="v4.0.1",
+        commit="9ba565ca1491efa92ebac38cdd499e5b1c256bf1",  # v4.0.3
         cache_path="example-robot-data",
     ),
     "GingerURDF": Repository(
