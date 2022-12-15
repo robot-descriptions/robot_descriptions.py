@@ -21,7 +21,7 @@ Load a robot description in iDynTree.
 
 from importlib import import_module  # type: ignore
 from typing import List, Optional
-from .pinocchio import get_package_dirs
+from .._package_dirs import get_package_dirs
 
 import idyntree.swig as idyn
 
