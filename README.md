@@ -3,7 +3,7 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/robot-descriptions/robot_descriptions.py/test.yml?branch=master)](https://github.com/robot-descriptions/robot_descriptions.py/actions)
 [![Coverage](https://coveralls.io/repos/github/robot-descriptions/robot_descriptions.py/badge.svg?branch=master)](https://coveralls.io/github/robot-descriptions/robot_descriptions.py?branch=master)
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
-![Status](https://img.shields.io/pypi/status/robot_descriptions)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Contributing](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/CONTRIBUTING.md)
 
 Import open source robot descriptions as Python modules.
