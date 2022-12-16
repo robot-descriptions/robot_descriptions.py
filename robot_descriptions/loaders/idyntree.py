@@ -21,27 +21,29 @@ Load a robot description in iDynTree.
 
 from importlib import import_module  # type: ignore
 from typing import List, Optional
-from .._package_dirs import get_package_dirs
 
 import idyntree.swig as idyn
 
+from .._package_dirs import get_package_dirs
 
-def load_robot_description(description_name: str,
-                           joints_list: Optional[List[str]] = None,
+
+def load_robot_description(
+    description_name: str,
+    joints_list: Optional[List[str]] = None,
 ) -> idyn.Model:
     """
     Load a robot description in iDynTree.
 
     Args:
         description_name: Name of the robot description.
-        joints_list: Optional parameter containing the list of the joints considered
-                     in the model. If empty, the model will contain all the joints
-                     specified in the urdf, otherwise a reduced model containing
-                     only the specified joints is created.
+        joints_list: Optional parameter containing the list of joints
+            considered in the model. If empty, the model will contain all the
+            joints specified in the URDF, otherwise a reduced model containing
+            only the specified joints is created.
 
     Returns:
         Identifier of the robot in iDynTree.
-        
+
     Raises:
         ValueError:
             If the description is not URDF, or iDynTree is unable to load it.
@@ -52,17 +54,20 @@ def load_robot_description(description_name: str,
 
     model_loader = idyn.ModelLoader()
 
-    if (joints_list is None):
-        if not model_loader.loadModelFromFile(module.URDF_PATH, \
-                                              'urdf', \
-                                              get_package_dirs(module)):
-            raise ValueError(f"Unable to load {description_name} with iDynTree")
+    if joints_list is None:
+        if not model_loader.loadModelFromFile(
+            module.URDF_PATH, "urdf", get_package_dirs(module)
+        ):
+            raise ValueError(
+                f"Unable to load {description_name} with iDynTree"
+            )
     else:
-        if not model_loader.loadReducedModelFromFile(module.URDF_PATH, \
-                                                     joints_list, \
-                                                     'urdf', \
-                                                     get_package_dirs(module)):
-            raise ValueError(f"Unable to load {description_name} with iDynTree")
+        if not model_loader.loadReducedModelFromFile(
+            module.URDF_PATH, joints_list, "urdf", get_package_dirs(module)
+        ):
+            raise ValueError(
+                f"Unable to load {description_name} with iDynTree"
+            )
 
     robot = model_loader.model().copy()
     return robot

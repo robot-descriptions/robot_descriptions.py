@@ -18,6 +18,7 @@
 import os.path
 from typing import List
 
+
 def get_package_dirs(module) -> List[str]:
     """
     Get package directories for a given module.
