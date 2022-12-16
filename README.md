@@ -4,11 +4,11 @@
 [![Coverage](https://coveralls.io/repos/github/robot-descriptions/robot_descriptions.py/badge.svg?branch=master)](https://coveralls.io/github/robot-descriptions/robot_descriptions.py?branch=master)
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 ![Status](https://img.shields.io/pypi/status/robot_descriptions)
-[![Contributing](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/stephane-caron/robot_descriptions.py/tree/master/CONTRIBUTING.md)
+[![Contributing](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/CONTRIBUTING.md)
 
 Import open source robot descriptions as Python modules.
 
-Importing a description for the first time automatically downloads and caches files for future imports. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available. All of them [load successfully](https://github.com/stephane-caron/robot_descriptions.py#loaders) in respectively MuJoCo (MJCF) or Pinocchio, iDynTree, PyBullet and yourdfpy (URDF).
+Importing a description for the first time automatically downloads and caches files for future imports. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available. All of them [load successfully](https://github.com/robot-descriptions/robot_descriptions.py#loaders) in respectively MuJoCo (MJCF) or Pinocchio, iDynTree, PyBullet and yourdfpy (URDF).
 
 ## Installation
 
@@ -78,20 +78,20 @@ robot = load_robot_description("upkie_description")
 ## Examples
 
 Load a robot description:
-- [iDynTree](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_idyntree.py)
-- [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_mujoco.py)
-- [Pinocchio](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_pinocchio.py)
-- [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_pybullet.py)
-- [RoboMeshCat](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_robomeshcat.py)
-- [yourdfpy](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/load_in_yourdfpy.py)
+- [iDynTree](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_idyntree.py)
+- [MuJoCo](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_mujoco.py)
+- [Pinocchio](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_pinocchio.py)
+- [PyBullet](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_pybullet.py)
+- [RoboMeshCat](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_robomeshcat.py)
+- [yourdfpy](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_yourdfpy.py)
 
 Visualize a robot description:
 
-- [MeshCat](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/show_in_meshcat.py)
-- [MuJoCo](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/show_in_mujoco.py)
-- [PyBullet](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/show_in_pybullet.py)
-- [RoboMeshCat](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/show_in_robomeshcat.py)
-- [yourdfpy](https://github.com/stephane-caron/robot_descriptions.py/tree/master/examples/show_in_yourdfpy.py)
+- [MeshCat](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/show_in_meshcat.py)
+- [MuJoCo](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/show_in_mujoco.py)
+- [PyBullet](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/show_in_pybullet.py)
+- [RoboMeshCat](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/show_in_robomeshcat.py)
+- [yourdfpy](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/show_in_yourdfpy.py)
 
 ## Command line tool
 
@@ -226,7 +226,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ## Contributing
 
-New robot descriptions are welcome! Check out the [guidelines](https://github.com/stephane-caron/robot_descriptions.py/tree/master/CONTRIBUTING.md) then open a PR.
+New robot descriptions are welcome! Check out the [guidelines](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/CONTRIBUTING.md) then open a PR.
 
 ## Thanks
 
