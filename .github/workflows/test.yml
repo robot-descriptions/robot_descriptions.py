@@ -65,7 +65,7 @@ jobs:
         strategy:
             matrix:
                 python-version: ["3.8"]
-                loader: ["mujoco", "pinocchio", "pybullet", "robomeshcat", "yourdfpy", "idyntree"]
+                loader: ["idyntree", "mujoco", "pinocchio", "pybullet", "robomeshcat", "yourdfpy"]
 
         steps:
             - name: "Checkout sources"
