@@ -35,12 +35,16 @@ def load_robot_description(description_name: str,
     Args:
         description_name: Name of the robot description.
         joints_list: Optional parameter containing the list of the joints considered
-                     in the model. If empty the model will contain all the joints
+                     in the model. If empty, the model will contain all the joints
                      specified in the urdf, otherwise a reduced model containing
                      only the specified joints is created.
 
     Returns:
         Identifier of the robot in iDynTree.
+        
+    Raises:
+        ValueError:
+            If the description is not URDF, or iDynTree is unable to load it.
     """
     module = import_module(f"robot_descriptions.{description_name}")
     if not hasattr(module, "URDF_PATH"):
