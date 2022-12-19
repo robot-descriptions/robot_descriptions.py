@@ -50,3 +50,7 @@ Changelog = "https://github.com/stephane-caron/robot_descriptions.py/blob/master
 
 [tool.black]
 line-length = 79
+
+[tool.isort]
+profile = "black"
+line_length = 79
