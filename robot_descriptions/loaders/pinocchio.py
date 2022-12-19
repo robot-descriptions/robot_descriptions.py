@@ -21,10 +21,10 @@ Load a robot description in Pinocchio.
 
 from importlib import import_module  # type: ignore
 from typing import Optional, Union
-from .._package_dirs import get_package_dirs
-
 
 import pinocchio as pin
+
+from .._package_dirs import get_package_dirs
 
 PinocchioJoint = Union[
     pin.JointModelRX,
