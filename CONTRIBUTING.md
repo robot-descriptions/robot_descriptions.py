@@ -1,5 +1,8 @@
 # 👷 Contributing
 
+![PRs welcome](https://img.shields.io/badge/PRs-welcome-green.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 The goal of this project is to facilitate loading and sharing of robot descriptions for the robotics community. All contributions are welcome. For example, here are some ways to help:
 
 - Add a new robot description
