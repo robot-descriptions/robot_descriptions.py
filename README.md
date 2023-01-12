@@ -133,6 +133,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `ur3_description`             | UR3                   | Universal Robots         | 6   | URDF       |
 | `ur5_description`             | UR5                   | Universal Robots         | 6   | URDF       |
 | `ur5e_mj_description`         | UR5e                  | Universal Robots         | 6   | MJCF       |
+| `z1_description`              | Z1                    | UNITREE Robotics         | 6  | URDF       |
 
 ### Bipeds
 
@@ -211,6 +212,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `a1_mj_description`           | A1                    | UNITREE Robotics         | 12  | MJCF       |
 | `a1_description`              | A1                    | UNITREE Robotics         | 12  | URDF       |
+| `b1_description`              | B1                    | UNITREE Robotics         | 12  | URDF       |
 | `aliengo_description`         | Aliengo               | UNITREE Robotics         | 12  | MJCF, URDF |
 | `anymal_b_mj_description`     | ANYmal B              | ANYbotics                | 12  | MJCF       |
 | `anymal_b_description`        | ANYmal B              | ANYbotics                | 12  | URDF       |

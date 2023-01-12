@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Description: B1
+- Description: Z1
+
+### Changed
+
+- A1: use original URDF from Unitree
+- Updated ``unitree_ros`` repository
+
 ## [1.3.0] - 2022/12/16
 
 ### Changed

@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-A1 description.
+Z1 description.
 """
 
 from os import path as _path
@@ -25,6 +25,6 @@ from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache("unitree_ros")
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "a1_description")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "z1_description")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "a1.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "xacro", "z1.urdf")
