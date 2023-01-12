@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Added
+
+- Description: B1
+
 ### Changed
 
 - A1: use original URDF from Unitree
