@@ -27,4 +27,4 @@ REPOSITORY_PATH: str = _clone_to_cache("unitree_ros")
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "b1_description")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "b1.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "xacro", "b1.urdf")
