@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Changed
+
+- A1: use original URDF from Unitree
+
 ## [1.3.0] - 2022/12/16
 
 ### Changed
