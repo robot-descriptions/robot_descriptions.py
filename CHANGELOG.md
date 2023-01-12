@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - A1: use original URDF from Unitree
+- Updated ``unitree_ros`` repository
 
 ## [1.3.0] - 2022/12/16
 
