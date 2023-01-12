@@ -211,6 +211,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `a1_mj_description`           | A1                    | UNITREE Robotics         | 12  | MJCF       |
 | `a1_description`              | A1                    | UNITREE Robotics         | 12  | URDF       |
+| `b1_description`              | B1                    | UNITREE Robotics         | 12  | URDF       |
 | `aliengo_description`         | Aliengo               | UNITREE Robotics         | 12  | MJCF, URDF |
 | `anymal_b_mj_description`     | ANYmal B              | ANYbotics                | 12  | MJCF       |
 | `anymal_b_description`        | ANYmal B              | ANYbotics                | 12  | URDF       |
