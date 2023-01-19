@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Example: display all frames of a URDF description
+
 ## [1.3.1] - 2023/1/13
 
 ### Added
