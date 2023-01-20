@@ -37,7 +37,7 @@ opts = [
     "pin >=2.6.10",
     "idyntree >= 8.0.0",
     "robomeshcat >=1.0.4",
-    "yourdfpy >=0.0.52",
+    "yourdfpy >=0.0.53",
 ]
 
 [project.scripts]
