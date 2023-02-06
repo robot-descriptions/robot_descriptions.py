@@ -65,3 +65,8 @@ class TestCloneToCache(unittest.TestCase):
                 os.path.exists(os.path.join(tmp_dir, repo.cache_path))
             )
             del os.environ["ROBOT_DESCRIPTIONS_CACHE"]
+
+    def test_clone_invalid_commit(self):
+        """Invalid commit raises an exception."""
+        with self.assertRaises(git.exc.GitCommandError):
+            clone_to_cache("simple_humanoid_description", commit="foobar")
