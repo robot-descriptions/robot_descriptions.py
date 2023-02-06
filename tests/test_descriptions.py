@@ -19,19 +19,16 @@ import os
 import unittest
 from importlib import import_module  # type: ignore
 
+import git
+
 from robot_descriptions._descriptions import DESCRIPTIONS
 
 
 class TestDescriptions(unittest.TestCase):
-
-    """
-    Test fixture for all robot descriptions.
-    """
+    """Test fixture for all robot descriptions."""
 
     def test_all_descriptions(self):
-        """
-        Check all robot-description submodules.
-        """
+        """Check all robot-description submodules."""
         for name, desc in DESCRIPTIONS.items():
             description = import_module(f"robot_descriptions.{name}")
             self.assertTrue(
@@ -58,3 +55,8 @@ class TestDescriptions(unittest.TestCase):
                     f"URDF path {description.URDF_PATH} does not exist "
                     f"in {description}",
                 )
+
+    def test_invalid_description_commit(self):
+        os.environ["ROBOT_DESCRIPTION_COMMIT"] = "foobar"
+        with self.assertRaises(git.exc.GitCommandError):
+            import_module("robot_descriptions.sigmaban_description")
