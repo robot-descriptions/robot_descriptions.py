@@ -102,12 +102,13 @@ def clone_to_directory(
     return clone
 
 
-def clone_to_cache(description_name: str) -> str:
+def clone_to_cache(description_name: str, commit: Optional[str]) -> str:
     """
     Get a local working directory cloned from a remote git repository.
 
     Args:
-        repo_url: URL to the remote git repository.
+        description_name: Name of the robot description to clone.
+        commit: If provided, checkout that specific commit of the description.
 
     Returns:
         Path to the resulting local working directory.
@@ -132,6 +133,8 @@ def clone_to_cache(description_name: str) -> str:
 
     target_dir = os.path.join(cache_dir, repository.cache_path)
     clone = clone_to_directory(
-        repository.url, target_dir, commit=repository.commit
+        repository.url,
+        target_dir,
+        commit=repository.commit if commit is None else commit,
     )
     return str(clone.working_dir)
