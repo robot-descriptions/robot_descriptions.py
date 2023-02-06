@@ -22,24 +22,13 @@ import unittest
 
 import git
 
-from robot_descriptions._cache import (
-    CloneProgressBar,
-    clone_to_cache,
-    clone_to_directory,
-)
+from robot_descriptions._cache import clone_to_directory
 from robot_descriptions._repositories import REPOSITORIES
 
 
-class TestCache(unittest.TestCase):
-
-    """
-    Test fixture for git-related functions.
-    """
-
+class TestCloneToDirectory(unittest.TestCase):
     def test_clone_to_directory(self):
-        """
-        Check cloning on a dummy repository.
-        """
+        """Check cloning on a dummy repository."""
         with tempfile.TemporaryDirectory() as tmp_dir:
             repo_name = "test_repo"
             repo_path = os.path.join(tmp_dir, repo_name)
@@ -64,14 +53,11 @@ class TestCache(unittest.TestCase):
             self.assertTrue(clone_1.working_dir, clone_2.working_dir)
 
     def test_clone_to_directory_newer_commit(self):
-        """
-        Check that the repository is pulled when a newer commit is configured.
-        """
+        """Repository is pulled when a newer commit is configured."""
         description_name = "simple_humanoid_description"
         repo_params = REPOSITORIES[description_name]
 
         def get_commit(repo):
-            # return str(list(repo.iter_commits(max_count=1))[0])
             return repo.git.rev_parse("HEAD")
 
         with tempfile.TemporaryDirectory() as tmp_dir:
@@ -88,51 +74,3 @@ class TestCache(unittest.TestCase):
             )
             self.assertEqual(get_commit(repo), repo_params.commit)
             self.assertEqual(get_commit(repo_bis), repo_params.commit)
-
-    def test_clone_to_cache_found(self):
-        """
-        Test clone_to_cache on a valid repository.
-        """
-        working_dir_1 = clone_to_cache("upkie_description")
-        working_dir_2 = clone_to_cache("upkie_description")
-        self.assertEqual(working_dir_1, working_dir_2)
-
-    def test_clone_to_cache_not_found(self):
-        """
-        Test clone_to_cache on an invalid repository.
-        """
-        with self.assertRaises(ImportError):
-            clone_to_cache("foo")
-
-    def test_clone_to_cache_right_commit(self):
-        """
-        Check that clone_to_cache clones the repository at the right commit.
-        """
-        description_name = "simple_humanoid_description"
-        repo = git.Repo(clone_to_cache(description_name))
-        commit = str(list(repo.iter_commits(max_count=1))[0])
-        self.assertEqual(commit, REPOSITORIES[description_name].commit)
-
-    def test_cache_creation(self):
-        """
-        Check that clone_to_cache creates directory if needed.
-        """
-        description_name = "simple_humanoid_description"
-        repo = REPOSITORIES[description_name]
-
-        with tempfile.TemporaryDirectory() as tmp_dir:
-            os.environ["ROBOT_DESCRIPTIONS_CACHE"] = tmp_dir
-            clone_to_cache(description_name)
-            self.assertTrue(
-                os.path.exists(os.path.join(tmp_dir, repo.cache_path))
-            )
-            del os.environ["ROBOT_DESCRIPTIONS_CACHE"]
-
-    def test_progress_bar(self):
-        """
-        Check progress bar.
-        """
-        bar = CloneProgressBar()
-        bar.update(0, 42, 42)
-        self.assertEqual(bar.progress.n, 42)
-        self.assertEqual(bar.progress.total, 42)
