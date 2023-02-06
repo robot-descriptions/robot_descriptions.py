@@ -102,7 +102,7 @@ def clone_to_directory(
     return clone
 
 
-def clone_to_cache(description_name: str, commit: Optional[str]) -> str:
+def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
     """
     Get a local working directory cloned from a remote git repository.
 
