@@ -19,14 +19,16 @@
 SigmaBan description.
 """
 
-import os
+from os import getenv as _getenv
+from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
 
-commit = os.getenv("ROBOT_DESCRIPTION_COMMIT", None)
+REPOSITORY_PATH: str = _clone_to_cache(
+    "sigmaban_urdf",
+    commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
+)
 
-REPOSITORY_PATH: str = _clone_to_cache("sigmaban_urdf", commit=commit)
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
 
-PACKAGE_PATH: str = os.path.join(REPOSITORY_PATH)
-
-URDF_PATH: str = os.path.join(PACKAGE_PATH, "robot.urdf")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "robot.urdf")
