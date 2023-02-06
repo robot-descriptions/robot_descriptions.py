@@ -131,7 +131,10 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
         )
     )
 
-    target_dir = os.path.join(cache_dir, repository.cache_path)
+    cache_path = repository.cache_path
+    if commit is not None:
+        cache_path += f"-{commit}"
+    target_dir = os.path.join(cache_dir, cache_path)
     clone = clone_to_directory(
         repository.url,
         target_dir,
