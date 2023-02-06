@@ -70,3 +70,9 @@ class TestCloneToCache(unittest.TestCase):
         """Invalid commit raises an exception."""
         with self.assertRaises(git.exc.GitCommandError):
             clone_to_cache("simple_humanoid_description", commit="foobar")
+
+    def test_clone_valid_commit(self):
+        description_name = "simple_humanoid_description"
+        commit = "0e488ee4708155a71b2a92d05305a9186b543593"
+        repository_path = clone_to_cache(description_name, commit)
+        self.assertTrue(repository_path.endswith(f"-{commit}"))
