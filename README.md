@@ -15,14 +15,32 @@ Importing a description for the first time automatically downloads and caches fi
 pip install robot_descriptions
 ```
 
-## Other languages
-
-| ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=c%2B%2B&logoColor=white) | [robot\_descriptions.cpp](https://github.com/mayataka/robot_descriptions.cpp) |
-|--|--|
-
 ## Usage
 
-Import the robot description you are interested in directly as a submodule of ``robot_descriptions``:
+The library provides a `load_robot_description` function for each of the following robotics software:
+
+| Software    | Loader                                   |
+|-------------|------------------------------------------|
+| iDynTree    | `robot_descriptions.loaders.idyntree`    |
+| MuJoCo      | `robot_descriptions.loaders.mujoco`      |
+| Pinocchio   | `robot_descriptions.loaders.pinocchio`   |
+| PyBullet    | `robot_descriptions.loaders.pybullet`    |
+| RoboMeshCat | `robot_descriptions.loaders.robomeshcat` |
+| yourdfpy    | `robot_descriptions.loaders.yourdfpy`    |
+
+The function loads a robot description from its name, and returns an instance directly usable in the target software. For example:
+
+```python
+from robot_descriptions.loaders.pinocchio import load_robot_description
+
+robot = load_robot_description("upkie_description")
+```
+
+Loading will automatically download the robot description if you don't have it already, and cache it to a local directory.
+
+### Import as submodule
+
+You can also import a robot description directly as a submodule of ``robot_descriptions``:
 
 ```python
 from robot_descriptions import my_robot_description
@@ -53,30 +71,9 @@ The import will automatically download the robot description if you don't have i
 
 Some robot descriptions include additional fields. For instance, the ``iiwa_description`` exports ``URDF_PATH_POLYTOPE_COLLISION`` with more detailed collision meshes.
 
-### Loaders
-
-The library also provides a `load_robot_description` function for each of the following robotics software:
-
-| Software    | Loader                                   |
-|-------------|------------------------------------------|
-| iDynTree    | `robot_descriptions.loaders.idyntree`    |
-| MuJoCo      | `robot_descriptions.loaders.mujoco`      |
-| Pinocchio   | `robot_descriptions.loaders.pinocchio`   |
-| PyBullet    | `robot_descriptions.loaders.pybullet`    |
-| RoboMeshCat | `robot_descriptions.loaders.robomeshcat` |
-| yourdfpy    | `robot_descriptions.loaders.yourdfpy`    |
-
-The function loads a robot description from its name, and returns an instance directly usable in the target software. For example:
-
-```python
-from robot_descriptions.loaders.pinocchio import load_robot_description
-
-robot = load_robot_description("upkie_description")
-```
-
 ## Examples
 
-Load a robot description:
+Loading a robot description:
 
 - [iDynTree](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_idyntree.py)
 - [MuJoCo](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_mujoco.py)
@@ -85,7 +82,7 @@ Load a robot description:
 - [RoboMeshCat](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_robomeshcat.py)
 - [yourdfpy](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/load_in_yourdfpy.py)
 
-Visualize a robot description:
+Visualizing a robot description:
 
 - [MeshCat](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/show_in_meshcat.py)
 - [MuJoCo](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/examples/show_in_mujoco.py)
@@ -233,3 +230,10 @@ New robot descriptions are welcome! Check out the [guidelines](https://github.co
 ## Thanks
 
 Thanks to the maintainers of all the git repositories that made these robot descriptions available.
+
+## See also
+
+### Robot descriptions in other languages
+
+| ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=c%2B%2B&logoColor=white) | [robot\_descriptions.cpp](https://github.com/mayataka/robot_descriptions.cpp) |
+|--|--|
