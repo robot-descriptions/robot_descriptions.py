@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Example: display all frames of a URDF description
 
+### Fixed
+
+- Recover from empty or invalid cache git repositories
+
 ## [1.3.1] - 2023/1/13
 
 ### Added
