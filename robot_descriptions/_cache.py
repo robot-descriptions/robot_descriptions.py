@@ -20,10 +20,16 @@ Git utility functions to clone model repositories.
 """
 
 import os
+import shutil
 from typing import Optional, Union
 
-from git import GitCommandError, RemoteProgress, Repo
-from tqdm import tqdm
+import tqdm
+from git import (
+    GitCommandError,
+    InvalidGitRepositoryError,
+    RemoteProgress,
+    Repo,
+)
 
 from ._repositories import REPOSITORIES
 
@@ -39,7 +45,7 @@ class CloneProgressBar(RemoteProgress):
         Initialize progress bar.
         """
         super().__init__()
-        self.progress = tqdm()
+        self.progress = tqdm.tqdm()
 
     def update(
         self,
@@ -64,7 +70,9 @@ class CloneProgressBar(RemoteProgress):
 
 
 def clone_to_directory(
-    repo_url: str, target_dir: str, commit: Optional[str] = None
+    repo_url: str,
+    target_dir: str,
+    commit: Optional[str] = None,
 ) -> Repo:
     """
     Clone a git repository to a designated directory.
@@ -77,9 +85,16 @@ def clone_to_directory(
     Returns:
         Cloned git repository.
     """
+    clone = None
     if os.path.exists(target_dir):
-        clone = Repo(target_dir)
-    else:
+        try:
+            clone = Repo(target_dir)
+        except InvalidGitRepositoryError:
+            print(f"Repository at {target_dir} is invalid, recreating it...")
+            shutil.rmtree(target_dir)
+            clone = None
+
+    if clone is None:
         print(f"Cloning {repo_url}...")
         os.makedirs(target_dir)
         progress_bar = CloneProgressBar()
@@ -88,6 +103,7 @@ def clone_to_directory(
             target_dir,
             progress=progress_bar.update,
         )
+
     if commit is not None:
         try:
             clone.git.checkout(commit)
@@ -99,6 +115,7 @@ def clone_to_directory(
             clone.git.fetch("origin")
             clone.git.checkout(commit)
             print(f"Found commit {commit} successfully!")
+
     return clone
 
 
