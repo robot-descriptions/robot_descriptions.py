@@ -74,3 +74,14 @@ class TestCloneToDirectory(unittest.TestCase):
             )
             self.assertEqual(get_commit(repo), repo_params.commit)
             self.assertEqual(get_commit(repo_bis), repo_params.commit)
+
+    def test_clone_to_invalid_directory(self):
+        """Cloning to an empty (invalid) git repo recreates it."""
+        description_name = "simple_humanoid_description"
+        repo_params = REPOSITORIES[description_name]
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            repo_dir = os.path.join(tmp_dir, "test")
+            os.mkdir(repo_dir)
+            self.assertEqual(len(os.listdir(repo_dir)), 0)
+            clone_to_directory(repo_params.url, repo_dir)
+            self.assertGreater(len(os.listdir(repo_dir)), 0)
