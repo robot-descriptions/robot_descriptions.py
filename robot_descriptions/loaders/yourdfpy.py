@@ -19,7 +19,9 @@
 Load a robot description in yourdfpy.
 """
 
+import os
 from importlib import import_module  # type: ignore
+from typing import Optional
 
 try:
     import yourdfpy
@@ -30,7 +32,9 @@ except ModuleNotFoundError as e:
     ) from e
 
 
-def load_robot_description(description_name: str) -> yourdfpy.URDF:
+def load_robot_description(
+    description_name: str, commit: Optional[str] = None
+) -> yourdfpy.URDF:
     """
     Load a robot description in yourdfpy.
 
@@ -40,6 +44,8 @@ def load_robot_description(description_name: str) -> yourdfpy.URDF:
     Returns:
         Robot model for yourdfpy.
     """
+    if commit is not None:
+        os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
     module = import_module(f"robot_descriptions.{description_name}")
     if not hasattr(module, "URDF_PATH"):
         raise ValueError(f"{description_name} is not a URDF description")
