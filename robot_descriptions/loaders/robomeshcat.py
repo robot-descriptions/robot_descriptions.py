@@ -20,14 +20,18 @@ Load a robot description in `RoboMeshCat
 <https://github.com/petrikvladimir/RoboMeshCat>`_.
 """
 
+import os
 from importlib import import_module  # type: ignore
+from typing import Optional
 
 import robomeshcat
 
 from .pinocchio import get_package_dirs
 
 
-def load_robot_description(description_name: str) -> robomeshcat.Robot:
+def load_robot_description(
+    description_name: str, commit: Optional[str] = None
+) -> robomeshcat.Robot:
     """
     Load a robot description in RoboMeshCat.
 
@@ -37,6 +41,8 @@ def load_robot_description(description_name: str) -> robomeshcat.Robot:
     Returns:
         Robot model for RoboMeshCat.
     """
+    if commit is not None:
+        os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
     module = import_module(f"robot_descriptions.{description_name}")
     robot = robomeshcat.Robot(
         urdf_path=module.URDF_PATH,

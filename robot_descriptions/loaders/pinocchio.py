@@ -19,6 +19,7 @@
 Load a robot description in Pinocchio.
 """
 
+import os
 from importlib import import_module  # type: ignore
 from typing import Optional, Union
 
@@ -44,6 +45,7 @@ PinocchioJoint = Union[
 def load_robot_description(
     description_name: str,
     root_joint: Optional[PinocchioJoint] = None,
+    commit: Optional[str] = None,
 ) -> pin.RobotWrapper:
     """
     Load a robot description in Pinocchio.
@@ -57,6 +59,8 @@ def load_robot_description(
     Returns:
         Robot model for Pinocchio.
     """
+    if commit is not None:
+        os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
     module = import_module(f"robot_descriptions.{description_name}")
     robot = pin.RobotWrapper.BuildFromURDF(
         filename=module.URDF_PATH,

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright 2022 Stéphane Caron
+# Copyright 2023 Inria
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,12 +20,16 @@
 Load a robot description in MuJoCo.
 """
 
+import os
 from importlib import import_module  # type: ignore
+from typing import Optional
 
 import mujoco
 
 
-def load_robot_description(description_name: str) -> mujoco.MjModel:
+def load_robot_description(
+    description_name: str, commit: Optional[str] = None
+) -> mujoco.MjModel:
     """
     Load a robot description in MuJoCo.
 
@@ -34,6 +39,8 @@ def load_robot_description(description_name: str) -> mujoco.MjModel:
     Returns:
         Robot model for MuJoCo.
     """
+    if commit is not None:
+        os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
     module = import_module(f"robot_descriptions.{description_name}")
     if not hasattr(module, "MJCF_PATH"):
         raise ValueError(f"{description_name} is not an MJCF description")

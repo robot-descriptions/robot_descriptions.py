@@ -19,12 +19,16 @@
 Load a robot description in PyBullet.
 """
 
+import os
 from importlib import import_module  # type: ignore
+from typing import Optional
 
 import pybullet
 
 
-def load_robot_description(description_name: str) -> int:
+def load_robot_description(
+    description_name: str, commit: Optional[str] = None
+) -> int:
     """
     Load a robot description in PyBullet.
 
@@ -34,6 +38,8 @@ def load_robot_description(description_name: str) -> int:
     Returns:
         Identifier of the robot in PyBullet.
     """
+    if commit is not None:
+        os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
     module = import_module(f"robot_descriptions.{description_name}")
     if not hasattr(module, "URDF_PATH"):
         raise ValueError(f"{description_name} is not a URDF description")
