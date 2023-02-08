@@ -17,7 +17,15 @@ pip install robot_descriptions
 
 ## Usage
 
-The library provides a `load_robot_description` function for each of the following robotics software:
+The library provides `load_robot_description` functions that, given a description name, return an instance directly usable in the corresponding robotics software. For example:
+
+```python
+from robot_descriptions.loaders.pinocchio import load_robot_description
+
+robot = load_robot_description("upkie_description")
+```
+
+Loaders are implemented for each of the following robotics software:
 
 | Software    | Loader                                   |
 |-------------|------------------------------------------|
@@ -28,15 +36,7 @@ The library provides a `load_robot_description` function for each of the followi
 | RoboMeshCat | `robot_descriptions.loaders.robomeshcat` |
 | yourdfpy    | `robot_descriptions.loaders.yourdfpy`    |
 
-The function loads a robot description from its name, and returns an instance directly usable in the target software. For example:
-
-```python
-from robot_descriptions.loaders.pinocchio import load_robot_description
-
-robot = load_robot_description("upkie_description")
-```
-
-Loading will automatically download the robot description if you don't have it already, and cache it to a local directory.
+Loading will automatically download the robot description if needed, and cache it to a local directory.
 
 ### Import as submodule
 

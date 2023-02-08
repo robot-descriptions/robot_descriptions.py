@@ -2,10 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## [1.4.0] - 2023/2/8
 
 ### Added
 
+- Ability to load a robot description at a specific commit
 - Example: display all frames of a URDF description
 
 ### Fixed
