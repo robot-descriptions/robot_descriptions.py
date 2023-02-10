@@ -31,8 +31,7 @@ class Format(IntEnum):
 
 @dataclass
 class Description:
-    """
-    Metadata for a robot description.
+    """Metadata for a robot description.
 
     Attributes:
         formats: List of formats (URDF, MJCF) provided by the description.
@@ -41,8 +40,7 @@ class Description:
     formats: Set[Format]
 
     def __init__(self, single_format):
-        """
-        Initialize a description that provides a single format.
+        """Initialize a description that provides a single format.
 
         Args:
             single_format: Format provided by the description.
