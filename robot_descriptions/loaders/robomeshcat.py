@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Load a robot description in `RoboMeshCat`_
+"""Load a robot description in `RoboMeshCat`_.
 
 .. _RoboMeshCat: https://github.com/petrikvladimir/RoboMeshCat
 """
@@ -31,7 +31,8 @@ from .pinocchio import get_package_dirs
 
 
 def load_robot_description(
-    description_name: str, commit: Optional[str] = None,
+    description_name: str,
+    commit: Optional[str] = None,
 ) -> robomeshcat.Robot:
     """Load a robot description in RoboMeshCat.
 
