@@ -32,12 +32,14 @@ except ModuleNotFoundError as e:
 
 
 def load_robot_description(
-    description_name: str, commit: Optional[str] = None
+    description_name: str, commit: Optional[str] = None,
 ) -> yourdfpy.URDF:
     """Load a robot description in yourdfpy.
 
     Args:
         description_name: Name of the robot description.
+        commit: If specified, check out that commit from the cloned robot
+            description repository.
 
     Returns:
         Robot model for yourdfpy.

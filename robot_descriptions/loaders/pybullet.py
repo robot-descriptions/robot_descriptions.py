@@ -26,12 +26,14 @@ import pybullet
 
 
 def load_robot_description(
-    description_name: str, commit: Optional[str] = None
+    description_name: str, commit: Optional[str] = None,
 ) -> int:
     """Load a robot description in PyBullet.
 
     Args:
         description_name: Name of the robot description.
+        commit: If specified, check out that commit from the cloned robot
+            description repository.
 
     Returns:
         Identifier of the robot in PyBullet.

@@ -53,6 +53,8 @@ def load_robot_description(
         root_joint (optional): First joint of the kinematic chain, for example
             a free flyer between the floating base of a mobile robot and an
             inertial frame. Defaults to no joint, i.e., a fixed base.
+        commit: If specified, check out that commit from the cloned robot
+            description repository.
 
     Returns:
         Robot model for Pinocchio.

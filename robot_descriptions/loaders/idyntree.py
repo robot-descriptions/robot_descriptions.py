@@ -40,6 +40,8 @@ def load_robot_description(
             considered in the model. If empty, the model will contain all the
             joints specified in the URDF, otherwise a reduced model containing
             only the specified joints is created.
+        commit: If specified, check out that commit from the cloned robot
+            description repository.
 
     Returns:
         Identifier of the robot in iDynTree.
