@@ -16,9 +16,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Load a robot description in `RoboMeshCat
-<https://github.com/petrikvladimir/RoboMeshCat>`_.
+"""Load a robot description in `RoboMeshCat`_
+
+.. _RoboMeshCat: https://github.com/petrikvladimir/RoboMeshCat
 """
 
 import os
