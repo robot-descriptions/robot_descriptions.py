@@ -15,9 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-List of all robot descriptions.
-"""
+"""List of all robot descriptions."""
 
 from dataclasses import dataclass
 from enum import IntEnum
@@ -25,10 +23,7 @@ from typing import Dict, Set
 
 
 class Format(IntEnum):
-
-    """
-    Format of a robot description.
-    """
+    """Format of a robot description."""
 
     URDF = 0
     MJCF = 1
@@ -36,7 +31,6 @@ class Format(IntEnum):
 
 @dataclass
 class Description:
-
     """
     Metadata for a robot description.
 
@@ -57,16 +51,12 @@ class Description:
 
     @property
     def has_mjcf(self) -> bool:
-        """
-        Check if description provides MJCF.
-        """
+        """Check if description provides MJCF."""
         return Format.MJCF in self.formats
 
     @property
     def has_urdf(self) -> bool:
-        """
-        Check if description provides URDF.
-        """
+        """Check if description provides URDF."""
         return Format.URDF in self.formats
 
 

@@ -16,9 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Load a robot description in iDynTree.
-"""
+"""Load a robot description in iDynTree."""
 
 import os
 from importlib import import_module  # type: ignore

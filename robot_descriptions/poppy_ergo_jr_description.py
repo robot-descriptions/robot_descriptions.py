@@ -15,9 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Poppy Ergo Jr description.
-"""
+"""Poppy Ergo Jr description."""
 
 from os import getenv as _getenv
 from os import path as _path

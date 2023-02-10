@@ -15,9 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-List or show robot descriptions from the command line.
-"""
+"""List or show robot descriptions from the command line."""
 
 import argparse
 from importlib import import_module  # type: ignore
@@ -102,9 +100,7 @@ def get_argument_parser() -> argparse.ArgumentParser:
 
 
 def list_descriptions():
-    """
-    List descriptions to the standard output.
-    """
+    """List descriptions to the standard output."""
     for name in sorted(list(DESCRIPTIONS)):
         desc = DESCRIPTIONS[name]
         formats = ("URDF" if desc.has_urdf else "") + (
@@ -186,9 +182,7 @@ def animate(name: str) -> None:
 
 
 def main(argv=None):
-    """
-    Command line entry point.
-    """
+    """Command line entry point."""
     parser = get_argument_parser()
     args = parser.parse_args(argv)
     if args.subcmd == "list":

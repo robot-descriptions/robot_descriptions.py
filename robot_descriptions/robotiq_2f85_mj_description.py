@@ -15,9 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Robotiq 2F-85 MJCF description.
-"""
+"""Robotiq 2F-85 MJCF description."""
 
 from os import getenv as _getenv
 from os import path as _path
