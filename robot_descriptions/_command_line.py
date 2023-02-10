@@ -25,8 +25,7 @@ from robot_descriptions._descriptions import DESCRIPTIONS
 
 
 def positive_float(value) -> float:
-    """
-    Convert a value to float and check that it is positive.
+    """Convert a value to float and check that it is positive.
 
     Args:
         value: Value to convert.
@@ -46,8 +45,7 @@ def positive_float(value) -> float:
 
 
 def get_argument_parser() -> argparse.ArgumentParser:
-    """
-    Parse command-line arguments.
+    """Parse command-line arguments.
 
     Returns:
         Argument parser.
@@ -114,8 +112,7 @@ def show(
     configuration: List[float],
     collision: bool,
 ) -> None:
-    """
-    Load and display a given robot description.
+    """Load and display a given robot description.
 
     Args:
         name: Name of the robot description.
@@ -157,8 +154,7 @@ def show(
 
 
 def animate(name: str) -> None:
-    """
-    Show how to call yourdfpy to animate a given robot description.
+    """Show how to call yourdfpy to animate a given robot description.
 
     Args:
         name: Name of the robot description.
