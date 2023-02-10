@@ -15,6 +15,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Empty description, used in unit tests.
-"""
+"""Empty description, used in unit tests."""

@@ -16,9 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Git utility functions to clone model repositories.
-"""
+"""Git utility functions to clone model repositories."""
 
 import os
 import shutil
@@ -36,15 +34,10 @@ from ._repositories import REPOSITORIES
 
 
 class CloneProgressBar(RemoteProgress):
-
-    """
-    Progress bar when cloning.
-    """
+    """Progress bar when cloning."""
 
     def __init__(self):
-        """
-        Initialize progress bar.
-        """
+        """Initialize progress bar."""
         super().__init__()
         self.progress = tqdm.tqdm()
 

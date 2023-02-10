@@ -15,9 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Git utility functions to clone model repositories.
-"""
+"""Git utility functions to clone model repositories."""
 
 from dataclasses import dataclass
 from typing import Dict
@@ -25,7 +23,6 @@ from typing import Dict
 
 @dataclass
 class Repository:
-
     """
     Remote git repository.
 

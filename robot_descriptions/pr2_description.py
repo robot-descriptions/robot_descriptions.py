@@ -15,9 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-PR2 description.
-"""
+"""PR2 description."""
 
 from os import getenv as _getenv
 from os import path as _path

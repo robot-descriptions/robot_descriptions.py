@@ -15,8 +15,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Import open source robot description as Python modules.
-"""
+"""Import open source robot description as Python modules."""
 
 __version__ = "1.4.0"
