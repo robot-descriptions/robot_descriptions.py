@@ -20,8 +20,7 @@ from typing import List
 
 
 def get_package_dirs(module) -> List[str]:
-    """
-    Get package directories for a given module.
+    """Get package directories for a given module.
 
     Args:
         module: Robot description module.
