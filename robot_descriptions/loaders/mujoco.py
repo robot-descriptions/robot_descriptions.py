@@ -28,8 +28,7 @@ import mujoco
 def load_robot_description(
     description_name: str, commit: Optional[str] = None
 ) -> mujoco.MjModel:
-    """
-    Load a robot description in MuJoCo.
+    """Load a robot description in MuJoCo.
 
     Args:
         description_name: Name of the robot description.

@@ -32,8 +32,7 @@ def load_robot_description(
     joints_list: Optional[List[str]] = None,
     commit: Optional[str] = None,
 ) -> idyn.Model:
-    """
-    Load a robot description in iDynTree.
+    """Load a robot description in iDynTree.
 
     Args:
         description_name: Name of the robot description.
