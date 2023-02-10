@@ -48,8 +48,7 @@ class CloneProgressBar(RemoteProgress):
         max_count: Union[str, float, None] = None,
         message: str = "",
     ) -> None:
-        """
-        Update progress bar.
+        """Update progress bar.
 
         Args:
             op_code: Integer that can be compared against Operation IDs and
@@ -68,8 +67,7 @@ def clone_to_directory(
     target_dir: str,
     commit: Optional[str] = None,
 ) -> Repo:
-    """
-    Clone a git repository to a designated directory.
+    """Clone a git repository to a designated directory.
 
     Args:
         repo_url: URL to the git repository to clone.
@@ -114,8 +112,7 @@ def clone_to_directory(
 
 
 def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
-    """
-    Get a local working directory cloned from a remote git repository.
+    """Get a local working directory cloned from a remote git repository.
 
     Args:
         description_name: Name of the robot description to clone.
