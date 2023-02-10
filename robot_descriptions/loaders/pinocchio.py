@@ -46,8 +46,7 @@ def load_robot_description(
     root_joint: Optional[PinocchioJoint] = None,
     commit: Optional[str] = None,
 ) -> pin.RobotWrapper:
-    """
-    Load a robot description in Pinocchio.
+    """Load a robot description in Pinocchio.
 
     Args:
         description_name: Name of the robot description.

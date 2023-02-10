@@ -28,8 +28,7 @@ import pybullet
 def load_robot_description(
     description_name: str, commit: Optional[str] = None
 ) -> int:
-    """
-    Load a robot description in PyBullet.
+    """Load a robot description in PyBullet.
 
     Args:
         description_name: Name of the robot description.

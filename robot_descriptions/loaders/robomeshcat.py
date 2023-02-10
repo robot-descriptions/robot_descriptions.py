@@ -33,8 +33,7 @@ from .pinocchio import get_package_dirs
 def load_robot_description(
     description_name: str, commit: Optional[str] = None
 ) -> robomeshcat.Robot:
-    """
-    Load a robot description in RoboMeshCat.
+    """Load a robot description in RoboMeshCat.
 
     Args:
         description_name: Name of the robot description.

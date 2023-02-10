@@ -23,8 +23,7 @@ from typing import Dict
 
 @dataclass
 class Repository:
-    """
-    Remote git repository.
+    """Remote git repository.
 
     Attributes:
         cache_path: Path to clone the repository to in the local cache.
