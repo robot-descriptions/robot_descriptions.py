@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Changed
+
+- CI: switch to ruff
+
 ## [1.4.0] - 2023/2/8
 
 ### Added
