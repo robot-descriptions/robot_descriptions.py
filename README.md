@@ -17,7 +17,7 @@ pip install robot_descriptions
 
 ## Usage
 
-The library provides `load_robot_description` functions that, given a description name, return an instance directly usable in the corresponding robotics software. For example:
+The library provides `load_robot_description` functions that return an instance of a robot description directly usable in the corresponding software. For example:
 
 ```python
 from robot_descriptions.loaders.pinocchio import load_robot_description
@@ -25,16 +25,16 @@ from robot_descriptions.loaders.pinocchio import load_robot_description
 robot = load_robot_description("upkie_description")
 ```
 
-Loaders are implemented for each of the following robotics software:
+Loaders are implemented for the following robotics software:
 
-| Software    | Loader                                   |
-|-------------|------------------------------------------|
-| iDynTree    | `robot_descriptions.loaders.idyntree`    |
-| MuJoCo      | `robot_descriptions.loaders.mujoco`      |
-| Pinocchio   | `robot_descriptions.loaders.pinocchio`   |
-| PyBullet    | `robot_descriptions.loaders.pybullet`    |
-| RoboMeshCat | `robot_descriptions.loaders.robomeshcat` |
-| yourdfpy    | `robot_descriptions.loaders.yourdfpy`    |
+| Software                                                     | Loader                                   |
+|--------------------------------------------------------------|------------------------------------------|
+| [iDynTree](https://github.com/robotology/idyntree)           | `robot_descriptions.loaders.idyntree`    |
+| [MuJoCo](https://github.com/deepmind/mujoco)                 | `robot_descriptions.loaders.mujoco`      |
+| [Pinocchio](https://github.com/stack-of-tasks/pinocchio)     | `robot_descriptions.loaders.pinocchio`   |
+| [PyBullet](https://pybullet.org/)                            | `robot_descriptions.loaders.pybullet`    |
+| [RoboMeshCat](https://github.com/petrikvladimir/RoboMeshCat) | `robot_descriptions.loaders.robomeshcat` |
+| [yourdfpy](https://github.com/clemense/yourdfpy/)            | `robot_descriptions.loaders.yourdfpy`    |
 
 Loading will automatically download the robot description if needed, and cache it to a local directory.
 
@@ -233,7 +233,7 @@ Thanks to the maintainers of all the git repositories that made these robot desc
 
 ## See also
 
-### Robot descriptions in other languages
+Robot descriptions in other languages:
 
 | ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=c%2B%2B&logoColor=white) | [robot\_descriptions.cpp](https://github.com/mayataka/robot_descriptions.cpp) |
 |--|--|
