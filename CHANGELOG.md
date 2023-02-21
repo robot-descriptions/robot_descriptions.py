@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: Draco3 URDF
+- Description: Draco3 URDF (thanks to @shbang91)
 
 ### Changed
 
