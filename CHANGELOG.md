@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Added
+
+- Description: Draco3 URDF
+
 ### Changed
 
 - CI: switch to ruff
@@ -239,9 +243,3 @@ This initial release includes 33 robot descriptions:
 - Command line to show or animate robot descriptions
 - Contributing instructions
 - This changelog
-
-## 2023/02/21
-
-### Added
-
-- Description: Draco3 URDF
