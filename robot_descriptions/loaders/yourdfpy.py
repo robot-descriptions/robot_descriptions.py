@@ -51,4 +51,4 @@ def load_robot_description(
     if not hasattr(module, "URDF_PATH"):
         raise ValueError(f"{description_name} is not a URDF description")
 
-    return yourdfpy.URDF.load(module.URDF_PATH)
+    return yourdfpy.URDF.load(module.URDF_PATH, mesh_dir=module.PACKAGE_PATH)
