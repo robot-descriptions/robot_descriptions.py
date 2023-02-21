@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Added
+
+- Description: Draco3 URDF
+
 ### Changed
 
 - CI: switch to ruff

@@ -72,6 +72,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="fcc3775453e4da6797cd4eacd3d8321d9906755a",
         cache_path="cassie_mj_description",
     ),
+    "draco3_description": Repository(
+        url="https://github.com/shbang91/draco3_description.git",
+        commit="7ac3d5e7967208cc895974e69a43ba3bbd6a7133",
+        cache_path="draco3_description",
+    ),
     "drake": Repository(
         url="https://github.com/RobotLocomotion/drake.git",
         commit="v1.7.0",
