@@ -29,6 +29,4 @@ REPOSITORY_PATH: str = _clone_to_cache(
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
 
-URDF_PATH: str = _path.join(
-    PACKAGE_PATH, "urdf", "draco3.urdf"
-)
+URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "draco3.urdf")
