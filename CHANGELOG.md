@@ -239,3 +239,9 @@ This initial release includes 33 robot descriptions:
 - Command line to show or animate robot descriptions
 - Contributing instructions
 - This changelog
+
+## 2023/02/21
+
+### Added
+
+- Description: Draco3 URDF
