@@ -77,6 +77,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "cassie_mj_description": Description(Format.MJCF),
     "cf2_description": Description(Format.URDF),
     "double_pendulum_description": Description(Format.URDF),
+    "draco3_description": Description(Format.URDF),
     "edo_description": Description(Format.URDF),
     "eve_r3_description": Description(Format.URDF),
     "fetch_description": Description(Format.URDF),
@@ -121,5 +122,4 @@ DESCRIPTIONS: Dict[str, Description] = {
     "valkyrie_description": Description(Format.URDF),
     "yumi_description": Description(Format.URDF),
     "z1_description": Description(Format.URDF),
-    "draco3_description": Description(Format.URDF),
 }

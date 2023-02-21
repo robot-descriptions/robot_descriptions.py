@@ -181,6 +181,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `atlas_drc_description`       | Atlas DRC (v3)        | Boston Dynamics          | 30  | URDF       |
 | `atlas_v4_description`        | Atlas v4              | Boston Dynamics          | 30  | URDF       |
+| `draco3_description`          | Draco3                | Apptronik                | 25  | URDF       |
 | `icub_description`            | iCub                  | IIT                      | 32  | URDF       |
 | `jaxon_description`           | JAXON                 | JSK                      | 38  | URDF       |
 | `jvrc_description`            | JVRC-1                | AIST                     | 34  | URDF       |
@@ -190,7 +191,6 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sigmaban_description`        | SigmaBan              | Rhoban                   | 20  | URDF       |
 | `talos_description`           | TALOS                 | PAL Robotics             | 32  | URDF       |
 | `valkyrie_description`        | Valkyrie              | NASA JSC Robotics        | 59  | URDF       |
-| `draco3_description`          | Draco3                | Apptronik                | 25  | URDF       |
 
 ### Mobile manipulators
 
