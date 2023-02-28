@@ -182,6 +182,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `atlas_drc_description`       | Atlas DRC (v3)        | Boston Dynamics          | 30  | URDF       |
 | `atlas_v4_description`        | Atlas v4              | Boston Dynamics          | 30  | URDF       |
 | `draco3_description`          | Draco3                | Apptronik                | 25  | URDF       |
+| `ergocub_description`         | ergoCub               | IIT                      | 57  | URDF       |
 | `icub_description`            | iCub                  | IIT                      | 32  | URDF       |
 | `jaxon_description`           | JAXON                 | JSK                      | 38  | URDF       |
 | `jvrc_description`            | JVRC-1                | AIST                     | 34  | URDF       |

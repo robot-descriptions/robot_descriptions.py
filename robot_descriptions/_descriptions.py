@@ -79,6 +79,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "double_pendulum_description": Description(Format.URDF),
     "draco3_description": Description(Format.URDF),
     "edo_description": Description(Format.URDF),
+    "ergocub_description": Description(Format.URDF),
     "eve_r3_description": Description(Format.URDF),
     "fetch_description": Description(Format.URDF),
     "finger_edu_description": Description(Format.URDF),

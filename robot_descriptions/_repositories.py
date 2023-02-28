@@ -87,6 +87,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="17b3f92f834746106d6a4befaab8eeab3ac248e6",
         cache_path="edo_sim",  # match package name
     ),
+    "ergocub-software": Repository(
+        url="https://github.com/icub-tech-iit/ergocub-software.git",
+        commit="ac3f223dc2f183dea3f819369da0d58b59f1b2d3",
+        cache_path="ergocub-software",
+    ),
     "example-robot-data": Repository(
         url="https://github.com/Gepetto/example-robot-data.git",
         commit="9ba565ca1491efa92ebac38cdd499e5b1c256bf1",  # v4.0.3
