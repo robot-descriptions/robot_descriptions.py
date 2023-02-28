@@ -2,11 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## [1.4.1] - 2023/2/28
 
 ### Added
 
-- Description: Draco3 URDF (thanks to @shbang91)
+- Description: Draco3 (thanks to @shbang91)
 
 ### Changed
 
