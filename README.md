@@ -3,6 +3,7 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/robot-descriptions/robot_descriptions.py/test.yml?branch=master)](https://github.com/robot-descriptions/robot_descriptions.py/actions)
 [![Coverage](https://coveralls.io/repos/github/robot-descriptions/robot_descriptions.py/badge.svg?branch=master)](https://coveralls.io/github/robot-descriptions/robot_descriptions.py?branch=master)
 [![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions)
 [![Contributing](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/robot-descriptions/robot_descriptions.py/tree/master/CONTRIBUTING.md)
 
 Import open source robot descriptions as Python modules.
@@ -11,8 +12,14 @@ Importing a description for the first time automatically downloads and caches fi
 
 ## Installation
 
+### Install from pip
 ```console
 pip install robot_descriptions
+```
+
+### Install from conda
+```console
+conda install -c conda-forge robot_descriptions
 ```
 
 ## Usage
