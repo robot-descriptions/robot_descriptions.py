@@ -26,16 +26,22 @@ This example relies on the following dependencies:
 """
 
 import argparse
+import time
 
 import meshcat_shapes
 import numpy as np
 from meshcat import transformations
 from pinocchio.visualize import MeshcatVisualizer
+
 from robot_descriptions.loaders.pinocchio import load_robot_description
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("name", help="name of the robot description")
+    parser.add_argument(
+        "--only",
+        help="only display the frame with this name",
+    )
     parser.add_argument(
         "--frame-scale",
         type=float,
@@ -56,7 +62,7 @@ if __name__ == "__main__":
     viewer = robot.viz.viewer
 
     for frame in robot.model.frames:
-        if frame.name == "universe":
+        if frame.name == "universe" or (args.only and frame.name != args.only):
             continue
         handle = viewer["pinocchio"]["visuals"][f"{frame.name}_0"]
         meshcat_shapes.frame(
