@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 - Frame selector in URDF frame display example
 - README: Conda installation instructions
 
+### Changed
+
+- Update Upkie description to v1.2.0
+
 ## [1.4.1] - 2023/2/28
 
 ### Added

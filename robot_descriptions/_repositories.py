@@ -234,7 +234,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "upkie_description": Repository(
         url="https://github.com/tasts-robots/upkie_description.git",
-        commit="v1.1.0",
+        commit="3bc5251b7255641d275de8c6b949e13bf1a608ea",
         cache_path="upkie_description",
     ),
 }
