@@ -86,4 +86,4 @@ if __name__ == "__main__":
         )
         handle["text"].set_transform(trans @ Rz @ Rx)
 
-    time.sleep(0.1)  # avoid terminating too fast
+    time.sleep(1.0)  # avoid terminating too fast
