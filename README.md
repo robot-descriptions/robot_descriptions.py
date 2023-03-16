@@ -146,6 +146,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `bolt_description`            | Bolt                  | ODRI                     | 6   | URDF       |
 | `cassie_description`          | Cassie                | Agility Robotics         | 16  | URDF       |
 | `cassie_mj_description`       | Cassie                | Agility Robotics         | 16  | MJCF       |
+| `rhea_description`            | Rhea                  | Gabrael Levine           | 7   | URDF       |
 | `spryped_description`         | Spryped               | Benjamin Bokser          | 8   | URDF       |
 | `upkie_description`           | Upkie                 | Tast's Robots            | 6   | URDF       |
 

@@ -177,6 +177,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="release-1.0.0",
         cache_path="reachy_description",
     ),
+    "rhea_description": Repository(
+        url="https://github.com/tasts-robots/rhea_description.git",
+        commit="1dc0f1abcf51b5d8a8f7ff8a548399ff0df1414f",
+        cache_path="rhea_description",
+    ),
     "robot-assets": Repository(
         url="https://github.com/ankurhanda/robot-assets.git",
         commit="12f1a3c89c9975194551afaed0dfae1e09fdb27c",
