@@ -178,7 +178,7 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="reachy_description",
     ),
     "rhea_description": Repository(
-        url="https://github.com/tasts-robots/rhea_description.git",
+        url="https://github.com/G-Levine/rhea_description.git",
         commit="1dc0f1abcf51b5d8a8f7ff8a548399ff0df1414f",
         cache_path="rhea_description",
     ),
