@@ -26,14 +26,17 @@ import pybullet
 
 
 def load_robot_description(
-    description_name: str, commit=None, **kwargs
+    description_name: str,
+    commit: Optional[str] = None,
+    **kwargs,
 ) -> int:
     """
     Load a robot description in PyBullet.
 
     Args:
         description_name: Name of the robot description.
-        commit: If specified, check out that commit from the cloned robot description repository.
+        commit: If specified, check out that commit from the cloned robot
+            description repository.
         kwargs: arguments passed to pybullet.loadURDF function, including:
             basePosition: 3D position of the base of the robot in world coordinates.
             baseOrientation: orientation in quaternion (xyzw) of the base of the robot in world coordinates.
