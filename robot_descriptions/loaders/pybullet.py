@@ -30,8 +30,7 @@ def load_robot_description(
     commit: Optional[str] = None,
     **kwargs,
 ) -> int:
-    """
-    Load a robot description in PyBullet.
+    """Load a robot description in PyBullet.
 
     Args:
         description_name: Name of the robot description.
