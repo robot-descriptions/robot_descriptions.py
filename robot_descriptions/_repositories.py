@@ -222,6 +222,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="f360a6b78667a4d97c86cad465ef8f4c9512462b",
         cache_path="spryped",
     ),
+    "stretch_description": Repository(
+        url="https://github.com/robot-descriptions/stretch_description.git",
+        commit="d9a614f8572d5a73f78a7f358107233c40a78b13",
+        cache_path="stretch_description",
+    ),
     "talos-data": Repository(
         url="https://github.com/stack-of-tasks/talos-data.git",
         commit="v2.0.0",

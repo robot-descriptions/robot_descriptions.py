@@ -211,6 +211,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `pepper_description`          | Pepper                | SoftBank Robotics        | 17  | URDF       |
 | `pr2_description`             | PR2                   | Willow Garage            | 32  | URDF       |
 | `reachy_description`          | Reachy                | Pollen Robotics          | 21  | URDF       |
+| `stretch_description`         | Stretch RE1           | Hello Robot              | 14  | URDF       |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | 48  | URDF       |
 
 ### Quadrupeds
