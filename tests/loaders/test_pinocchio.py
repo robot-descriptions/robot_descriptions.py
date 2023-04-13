@@ -18,8 +18,8 @@
 import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
-
 from robot_descriptions.loaders.pinocchio import load_robot_description
+
 
 class TestPinocchio(unittest.TestCase):
 
@@ -43,6 +43,7 @@ class TestPinocchio(unittest.TestCase):
             load_robot_description(description)
 
         return test
+
 
 # Add a test function for each URDF description
 for name, description in DESCRIPTIONS.items():
