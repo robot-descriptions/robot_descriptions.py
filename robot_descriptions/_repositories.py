@@ -224,7 +224,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "stretch_description": Repository(
         url="https://github.com/robot-descriptions/stretch_description.git",
-        commit="d9a614f8572d5a73f78a7f358107233c40a78b13",
+        commit="4b838429fe4c5d9f2937efe698444bd68968f376",
         cache_path="stretch_description",
     ),
     "talos-data": Repository(

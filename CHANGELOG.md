@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Changed
+
+- Update Stretch description to v1.0.0
+
 ## [1.5.0] - 2023/4/13
 
 ### Added
