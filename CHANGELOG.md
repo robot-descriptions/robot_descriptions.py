@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Added
+
+- Description: TriFingerEdu
+
 ### Changed
 
 - Update Stretch description to v1.0.0
