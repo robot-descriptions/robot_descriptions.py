@@ -172,6 +172,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `double_pendulum_description` | Double Pendulum       | 2   | URDF       |
 | `finger_edu_description`      | FingerEdu             | 3   | URDF       |
 | `simple_humanoid_description` | Simple Humanoid       | 29  | URDF       |
+| `trifinger_edu_description`   | TriFingerEdu          | 9   | URDF       |
 
 ### End effectors
 
