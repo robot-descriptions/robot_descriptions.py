@@ -84,6 +84,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "fetch_description": Description(Format.URDF),
     "finger_edu_description": Description(Format.URDF),
     "gen2_description": Description(Format.URDF),
+    "gen3_description": Description(Format.URDF),
     "gen3_mj_description": Description(Format.MJCF),
     "ginger_description": Description(Format.URDF),
     "go1_description": Description(Format.URDF),

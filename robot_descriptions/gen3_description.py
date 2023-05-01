@@ -23,10 +23,12 @@ from os import path as _path
 from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache(
-    "kinova_mj_description",
+    "differentiable-robot-model",
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
+PACKAGE_PATH: str = _path.join(
+    REPOSITORY_PATH, "diff_robot_data", "kinova_description"
+)
 
-MJCF_PATH: str = _path.join(PACKAGE_PATH, "xml", "gen3_7dof_mujoco.xml")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "jaco.urdf")
