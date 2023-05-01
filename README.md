@@ -127,8 +127,9 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | Maker                    | DOF | Format     |
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `edo_description`             | e.DO                  | Comau                    | 6   | URDF       |
-| `gen2_description`            | Gen2                  | Kinova                   | 6   | URDF       |
-| `gen3_mj_description`         | Gen3                  | Kinova                   | 7   | MJCF       |
+| `gen2_description`            | Gen2 (Jaco)           | Kinova                   | 6   | URDF       |
+| `gen3_description`            | Gen3 (Jaco)           | Kinova                   | 6   | URDF       |
+| `gen3_mj_description`         | Gen3 (Jaco)           | Kinova                   | 7   | MJCF       |
 | `iiwa_description`            | iiwa                  | KUKA                     | 7   | URDF       |
 | `panda_description`           | Panda                 | Franka Emika             | 8   | URDF       |
 | `panda_mj_description`        | Panda                 | Franka Emika             | 8   | MJCF       |
