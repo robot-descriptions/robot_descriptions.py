@@ -127,6 +127,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | Maker                    | DOF | Format     |
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `edo_description`             | e.DO                  | Comau                    | 6   | URDF       |
+| `fanuc_m710ic_description`    | M-710iC               | Fanuc                    | 6   | URDF       |
 | `gen2_description`            | Gen2 (Jaco)           | Kinova                   | 6   | URDF       |
 | `gen3_description`            | Gen3 (Jaco)           | Kinova                   | 6   | URDF       |
 | `gen3_mj_description`         | Gen3 (Jaco)           | Kinova                   | 7   | MJCF       |
@@ -138,7 +139,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `ur3_description`             | UR3                   | Universal Robots         | 6   | URDF       |
 | `ur5_description`             | UR5                   | Universal Robots         | 6   | URDF       |
 | `ur5e_mj_description`         | UR5e                  | Universal Robots         | 6   | MJCF       |
-| `z1_description`              | Z1                    | UNITREE Robotics         | 6  | URDF       |
+| `z1_description`              | Z1                    | UNITREE Robotics         | 6   | URDF       |
 
 ### Bipeds
 
