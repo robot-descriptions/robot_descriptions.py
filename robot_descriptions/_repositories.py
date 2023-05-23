@@ -103,8 +103,9 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="example-robot-data",
     ),
     "fanuc_m710ic_description": Repository(
-        url="https://github.com/" "robot-descriptions/fanuc_m710ic_description.git",
-        commit="c3bb97cdffec25cf00463880d35c627af85b5b23",
+        url="https://github.com/"
+        "robot-descriptions/fanuc_m710ic_description.git",
+        commit="d12af44559cd7e46f7afd513237f159f82f8402e",
         cache_path="fanuc_m710ic_description",
     ),
     "GingerURDF": Repository(
