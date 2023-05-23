@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: FANUC M-710iC
 - Description: Gen3
 - Description: TriFingerEdu
 
