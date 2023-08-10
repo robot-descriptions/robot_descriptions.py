@@ -118,7 +118,6 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 * [Mobile manipulators](#mobile-manipulators)
 * [Humanoids](#humanoids)
 * [Quadrupeds](#quadrupeds)
-* [Wheeled](#wheeled)
 
 The DOF column denotes the number of actuated degrees of freedom.
 
