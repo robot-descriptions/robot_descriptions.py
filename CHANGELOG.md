@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Description: UR10e (MJCF)
+
 ## [1.6.0] - 2023/5/23
 
 ### Added

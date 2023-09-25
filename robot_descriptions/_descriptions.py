@@ -122,6 +122,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "trifinger_edu_description": Description(Format.URDF),
     "upkie_description": Description(Format.URDF),
     "ur10_description": Description(Format.URDF),
+    "ur10e_mj_description": Description(Format.MJCF),
     "ur3_description": Description(Format.URDF),
     "ur5_description": Description(Format.URDF),
     "ur5e_mj_description": Description(Format.MJCF),
