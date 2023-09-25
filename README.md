@@ -135,6 +135,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `panda_mj_description`        | Panda                 | Franka Emika             | 8   | MJCF       |
 | `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | 6   | URDF       |
 | `ur10_description`            | UR10                  | Universal Robots         | 6   | URDF       |
+| `ur10e_mj_description`        | UR10e                 | Universal Robots         | 6   | MJCF       |
 | `ur3_description`             | UR3                   | Universal Robots         | 6   | URDF       |
 | `ur5_description`             | UR5                   | Universal Robots         | 6   | URDF       |
 | `ur5e_mj_description`         | UR5e                  | Universal Robots         | 6   | MJCF       |
