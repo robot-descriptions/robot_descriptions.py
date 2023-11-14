@@ -254,7 +254,7 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="unitree_ros",
     ),
     "upkie_description": Repository(
-        url="https://github.com/tasts-robots/upkie_description.git",
+        url="https://github.com/upkie/upkie_description.git",
         commit="3bc5251b7255641d275de8c6b949e13bf1a608ea",
         cache_path="upkie_description",
     ),
