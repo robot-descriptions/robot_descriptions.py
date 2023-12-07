@@ -155,7 +155,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "mujoco_menagerie": Repository(
         url="https://github.com/deepmind/mujoco_menagerie.git",
-        commit="5f4c663b21e92336eac88aaec007dc3cde0d1379",
+        commit="c067f5b1d427af4a476b41864c184a3af6983d77",
         cache_path="mujoco_menagerie",
     ),
     "nao_robot": Repository(
@@ -250,7 +250,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "unitree_ros": Repository(
         url="https://github.com/unitreerobotics/unitree_ros.git",
-        commit="059bd619c14c5d06346bcdec57b4191dccee2b86",
+        commit="e197ae10d301c41f17f61fe3a741925a033db1e8",
         cache_path="unitree_ros",
     ),
     "upkie_description": Repository(
