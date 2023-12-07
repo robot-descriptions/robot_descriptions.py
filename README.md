@@ -203,6 +203,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sigmaban_description`        | SigmaBan              | Rhoban                   | 20  | URDF       |
 | `talos_description`           | TALOS                 | PAL Robotics             | 32  | URDF       |
 | `valkyrie_description`        | Valkyrie              | NASA JSC Robotics        | 59  | URDF       |
+| `h1_description`              | H1                    | UNITREE Robotics         | 25  | URDF       |
+| `h1_mj_description`           | H1                    | UNITREE Robotics         | 25  | MJCF       |
 
 ### Mobile manipulators
 
@@ -231,6 +233,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `anymal_c_description`        | ANYmal C              | ANYbotics                | 12  | URDF       |
 | `go1_mj_description`          | Go1                   | UNITREE Robotics         | 12  | MJCF       |
 | `go1_description`             | Go1                   | UNITREE Robotics         | 12  | URDF       |
+| `go2_description`             | Go2                   | UNITREE Robotics         | 12  | URDF       |
+| `go2_mj_description`          | Go2                   | UNITREE Robotics         | 12  | MJCF       |
 | `hyq_description`             | HyQ                   | IIT                      | 12  | URDF       |
 | `laikago_description`         | Laikago               | UNITREE Robotics         | 12  | MJCF, URDF |
 | `mini_cheetah_description`    | Mini Cheetah          | MIT                      | 12  | URDF       |
