@@ -8,16 +8,18 @@
 
 Import open source robot descriptions as Python modules.
 
-Importing a description for the first time automatically downloads and caches files for future imports. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available. All of them [load successfully](https://github.com/robot-descriptions/robot_descriptions.py#loaders) in respectively MuJoCo (MJCF) or Pinocchio, iDynTree, PyBullet and yourdfpy (URDF).
+Importing a description for the first time automatically downloads and caches files for future imports. Most [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) are available. All of them load successfully in respectively MuJoCo (MJCF) or Pinocchio, iDynTree, PyBullet and yourdfpy (URDF).
 
 ## Installation
 
 ### Install from pip
+
 ```console
 pip install robot_descriptions
 ```
 
 ### Install from conda
+
 ```console
 conda install -c conda-forge robot_descriptions
 ```
