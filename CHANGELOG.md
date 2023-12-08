@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: UNITREE Go2 (MJCF) (thanks to @lvjonok)
+- Description: UNITREE Go2 (thanks to @lvjonok)
+- Description: UNITREE H1 (MJCF) (thanks to @lvjonok)
+- Description: UNITREE H1 (thanks to @lvjonok)
 - Description: UR10e (MJCF)
 
 ## [1.6.0] - 2023/5/23
