@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## [Unreleased]
 
 ### Added
 
@@ -12,7 +12,7 @@ All notable changes to this project will be documented in this file.
 - Description: UNITREE H1 (thanks to @lvjonok)
 - Description: UR10e (MJCF)
 
-## [1.6.0] - 2023/5/23
+## [1.6.0] - 2023-05-23
 
 ### Added
 
@@ -24,7 +24,7 @@ All notable changes to this project will be documented in this file.
 
 - Update Stretch description to v1.0.0
 
-## [1.5.0] - 2023/4/13
+## [1.5.0] - 2023-04-13
 
 ### Added
 
@@ -37,7 +37,7 @@ All notable changes to this project will be documented in this file.
 
 - Update Upkie description to v1.2.0
 
-## [1.4.1] - 2023/2/28
+## [1.4.1] - 2023-02-28
 
 ### Added
 
@@ -48,7 +48,7 @@ All notable changes to this project will be documented in this file.
 
 - CI: switch to ruff
 
-## [1.4.0] - 2023/2/8
+## [1.4.0] - 2023-02-08
 
 ### Added
 
@@ -59,7 +59,7 @@ All notable changes to this project will be documented in this file.
 
 - Recover from empty or invalid cache git repositories
 
-## [1.3.1] - 2023/1/13
+## [1.3.1] - 2023-01-13
 
 ### Added
 
@@ -71,7 +71,7 @@ All notable changes to this project will be documented in this file.
 - A1: use original URDF from Unitree
 - Updated ``unitree_ros`` repository
 
-## [1.3.0] - 2022/12/16
+## [1.3.0] - 2022-12-16
 
 ### Changed
 
@@ -82,13 +82,13 @@ All notable changes to this project will be documented in this file.
 
 - CI: check code style
 
-## [1.2.0] - 2022/12/07
+## [1.2.0] - 2022-12-07
 
 ### Added
 
 - Loader: iDynTree
 
-## [1.1.0] - 2022/11/29
+## [1.1.0] - 2022-11-29
 
 ### Added
 
@@ -106,7 +106,7 @@ All notable changes to this project will be documented in this file.
 - CI: remove exceptions for bugs that have been fixed upstream
 - Examples: remove exception on Crazyflie 2.0 description as it has been fixed
 
-## [1.0.0] - 2022/10/31
+## [1.0.0] - 2022-10-31
 
 ### Added
 
@@ -126,7 +126,7 @@ All notable changes to this project will be documented in this file.
 - Shadow Hand MJCF: upstream fix to joint axes
 - Update cached repository after a description was updated
 
-## [0.6.0] - 2022/09/28
+## [0.6.0] - 2022-09-28
 
 ### Added
 
@@ -134,7 +134,7 @@ All notable changes to this project will be documented in this file.
 - Example: load in yourdfpy
 - Loader: yourdfpy
 
-## [0.5.0] - 2022/09/19
+## [0.5.0] - 2022-09-19
 
 ### Added
 
@@ -152,7 +152,7 @@ All notable changes to this project will be documented in this file.
 - Pinocchio loader: no root joint by default
 - Update MuJoCo Menagerie repository to propagate fix
 
-## [0.4.0] - 2022/09/14
+## [0.4.0] - 2022-09-14
 
 ### Added
 
@@ -175,7 +175,7 @@ All notable changes to this project will be documented in this file.
 - Match cache path with package name when it helps PyBullet
 - Remove ``MESHES_PATH`` attribute
 
-## [0.3.0] - 2022/09/12
+## [0.3.0] - 2022-09-12
 
 ### Added
 
@@ -203,7 +203,7 @@ All notable changes to this project will be documented in this file.
 - Renamed former "Atlas" description to "Atlas DRC"
 - Switch to a dual MJCF/URDF descriptions for A1
 
-## [0.2.0] - 2022/09/07
+## [0.2.0] - 2022-09-07
 
 ### Added
 
@@ -228,14 +228,14 @@ All notable changes to this project will be documented in this file.
 
 - iCub description
 
-## [0.1.1] - 2022/09/06
+## [0.1.1] - 2022-09-06
 
 ### Fixed
 
 - Command line usage instructions
 - Upload coverage results based on ``USING_COVERAGE`` setting
 
-## [0.1.0] - 2022/09/05
+## [0.1.0] - 2022-09-05
 
 This initial release includes 33 robot descriptions:
 
@@ -279,3 +279,22 @@ This initial release includes 33 robot descriptions:
 - Command line to show or animate robot descriptions
 - Contributing instructions
 - This changelog
+
+[unreleased]: https://github.com/qpsolvers/qpsolvers/compare/v1.7.0...HEAD
+[1.7.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.6.0...v1.7.0
+[1.6.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.5.0...v1.6.0
+[1.5.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.4.1...v1.5.0
+[1.4.1]: https://github.com/qpsolvers/qpsolvers/compare/v1.4.0...v1.4.1
+[1.4.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.3.1...v1.4.0
+[1.3.1]: https://github.com/qpsolvers/qpsolvers/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.6.0...v1.0.0
+[0.6.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.5.0...v0.6.0
+[0.5.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.4.0...v0.5.0
+[0.4.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.3.0...v0.4.0
+[0.3.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.1.1...v0.2.0
+[0.1.1]: https://github.com/qpsolvers/qpsolvers/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/qpsolvers/qpsolvers/releases/tag/v0.1.0
