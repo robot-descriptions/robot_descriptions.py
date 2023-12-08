@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.7.0] - 2023-12-08
+
 ### Added
 
 - Description: UNITREE Go2 (MJCF) (thanks to @lvjonok)
