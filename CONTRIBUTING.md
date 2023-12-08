@@ -6,7 +6,7 @@
 The goal of this project is to facilitate loading and sharing of robot descriptions for the robotics community. All contributions are welcome. For example, here are some ways to help:
 
 - [Add a new robot description](#adding-a-new-robot-description)
-- Raise any issue you find in a description, preferably directly in the description's repository (check out [`_repositories.py`](https://github.com/stephane-caron/robot_descriptions.py/blob/master/robot_descriptions/_repositories.py))
+- Raise any issue you find in a description, preferably directly in the description's repository (check out [`_repositories.py`](https://github.com/stephane-caron/robot_descriptions.py/blob/main/robot_descriptions/_repositories.py))
 - Make a standalone ``<robot_name>_description`` repository for a description embedded in one of the big framework repositories (Bullet, Drake, ...)
 
 ## Adding a new robot description
