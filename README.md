@@ -194,6 +194,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `atlas_v4_description`        | Atlas v4              | Boston Dynamics          | 30  | URDF       |
 | `draco3_description`          | Draco3                | Apptronik                | 25  | URDF       |
 | `ergocub_description`         | ergoCub               | IIT                      | 57  | URDF       |
+| `h1_description`              | H1                    | UNITREE Robotics         | 25  | URDF       |
+| `h1_mj_description`           | H1                    | UNITREE Robotics         | 25  | MJCF       |
 | `icub_description`            | iCub                  | IIT                      | 32  | URDF       |
 | `jaxon_description`           | JAXON                 | JSK                      | 38  | URDF       |
 | `jvrc_description`            | JVRC-1                | AIST                     | 34  | URDF       |
@@ -203,8 +205,6 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sigmaban_description`        | SigmaBan              | Rhoban                   | 20  | URDF       |
 | `talos_description`           | TALOS                 | PAL Robotics             | 32  | URDF       |
 | `valkyrie_description`        | Valkyrie              | NASA JSC Robotics        | 59  | URDF       |
-| `h1_description`              | H1                    | UNITREE Robotics         | 25  | URDF       |
-| `h1_mj_description`           | H1                    | UNITREE Robotics         | 25  | MJCF       |
 
 ### Mobile manipulators
 
@@ -229,10 +229,10 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `aliengo_description`         | Aliengo               | UNITREE Robotics         | 12  | MJCF, URDF |
 | `anymal_b_mj_description`     | ANYmal B              | ANYbotics                | 12  | MJCF       |
 | `anymal_b_description`        | ANYmal B              | ANYbotics                | 12  | URDF       |
-| `anymal_c_mj_description`     | ANYmal C              | ANYbotics                | 12  | MJCF       |
 | `anymal_c_description`        | ANYmal C              | ANYbotics                | 12  | URDF       |
-| `go1_mj_description`          | Go1                   | UNITREE Robotics         | 12  | MJCF       |
+| `anymal_c_mj_description`     | ANYmal C              | ANYbotics                | 12  | MJCF       |
 | `go1_description`             | Go1                   | UNITREE Robotics         | 12  | URDF       |
+| `go1_mj_description`          | Go1                   | UNITREE Robotics         | 12  | MJCF       |
 | `go2_description`             | Go2                   | UNITREE Robotics         | 12  | URDF       |
 | `go2_mj_description`          | Go2                   | UNITREE Robotics         | 12  | MJCF       |
 | `hyq_description`             | HyQ                   | IIT                      | 12  | URDF       |
