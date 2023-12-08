@@ -65,7 +65,9 @@ jobs:
         strategy:
             matrix:
                 python-version: ["3.8"]
-                loader: ["idyntree", "mujoco", "pinocchio", "pybullet", "robomeshcat", "yourdfpy"]
+                # Disabled "yourdfpy" loader because of https://github.com/clemense/yourdfpy/issues/49
+                # Tracked in https://github.com/robot-descriptions/robot_descriptions.py/issues/43
+                loader: ["idyntree", "mujoco", "pinocchio", "pybullet", "robomeshcat"]
 
         steps:
             - name: "Checkout sources"
