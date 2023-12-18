@@ -104,7 +104,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "gym-pybullet-drones": Repository(
         url="https://github.com/utiasDSL/gym-pybullet-drones.git",
-        commit="v1.0.0",
+        commit="2c2470c2043eb4cf474d9af2681c9fa10f2d0e2f",
         cache_path="gym-pybullet-drones",
     ),
     "halodi-robot-models": Repository(
