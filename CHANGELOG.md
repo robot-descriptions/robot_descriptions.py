@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: UNITREE Z1 (thanks to @lvjonok)
+
+### Fixed
+
+- Path to UNITREE H1 (thanks to @lvjonok)
+- Unit testing on UNITREE H1
+
 ## [1.7.0] - 2023-12-08
 
 ### Added
