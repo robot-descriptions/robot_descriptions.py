@@ -23,12 +23,9 @@ from robot_descriptions.loaders.pybullet import (
 from robot_descriptions.loaders.robomeshcat import (
     load_robot_description as load_robomeshcat,
 )
-
-# Disabled because of https://github.com/clemense/yourdfpy/issues/49
-# See https://github.com/robot-descriptions/robot_descriptions.py/issues/43
-# from robot_descriptions.loaders.yourdfpy import (
-#     load_robot_description as load_yourdfpy,
-# )
+from robot_descriptions.loaders.yourdfpy import (
+    load_robot_description as load_yourdfpy,
+)
 
 
 class TestLoaders(unittest.TestCase):
@@ -68,15 +65,13 @@ class TestLoaders(unittest.TestCase):
             )
         )
 
-    # Disabled because of https://github.com/clemense/yourdfpy/issues/49
-    # See https://github.com/robot-descriptions/robot_descriptions.py/issues/43
-    # def test_yourdfpy(self):
-    #     self.assertIsNotNone(
-    #         load_yourdfpy(
-    #             "upkie_description",
-    #             commit=self.upkie_description_commit,
-    #         )
-    #     )
+    def test_yourdfpy(self):
+        self.assertIsNotNone(
+            load_yourdfpy(
+                "upkie_description",
+                commit=self.upkie_description_commit,
+            )
+        )
 
     def test_idyntree(self):
         self.assertIsNotNone(
