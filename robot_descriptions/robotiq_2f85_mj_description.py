@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Copyright 2022 Stéphane Caron
 # SPDX-License-Identifier: Apache-2.0
+# Copyright 2022 Stéphane Caron
 
 """Robotiq 2F-85 MJCF description."""
 

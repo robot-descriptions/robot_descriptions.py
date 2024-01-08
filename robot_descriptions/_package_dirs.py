@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Copyright 2022 Giulio Romualdi
 # SPDX-License-Identifier: Apache-2.0
+# Copyright 2022 Giulio Romualdi
 
 import os.path
 from typing import List
