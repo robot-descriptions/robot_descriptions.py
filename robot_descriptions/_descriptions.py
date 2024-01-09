@@ -105,6 +105,8 @@ DESCRIPTIONS: Dict[str, Description] = {
     "romeo_description": Description(Format.URDF),
     "shadow_hand_mj_description": Description(Format.MJCF),
     "simple_humanoid_description": Description(Format.URDF),
+    "skydio_x2_description": Description(Format.URDF),
+    "skydio_x2_mj_description": Description(Format.MJCF),
     "solo_description": Description(Format.URDF),
     "spryped_description": Description(Format.URDF),
     "stretch_description": Description(Format.URDF),
