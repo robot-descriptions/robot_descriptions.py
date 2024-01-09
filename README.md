@@ -168,6 +168,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | Maker                    | DOF | Format     |
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `cf2_description`             | Crazyflie 2.0         | Bitcraze                 | 0   | URDF       |
+| `skydio_x2_description`       | Skydio X2             | Skydio                   | 7   | URDF       |
+| `skydio_x2_mj_description`    | Skydio X2             | Skydio                   | 7   | MJCF       |
 
 ### Educational
 
