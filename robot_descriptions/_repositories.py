@@ -251,5 +251,5 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/lvjonok/skydio_x2_description.git",
         commit="9a6a057a055babaf47119fac42c361fffc189128",
         cache_path="skydio_x2_description",
-    )
+    ),
 }
