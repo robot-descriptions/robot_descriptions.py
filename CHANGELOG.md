@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Description: UNITREE Z1 (thanks to @lvjonok)
+- Description: Skydio X2 (thanks to @lvjonok)
 
 ### Fixed
 
