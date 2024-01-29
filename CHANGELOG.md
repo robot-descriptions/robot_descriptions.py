@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.8.1] - 2024-01-29
+
+### Changed
+
+- Update example-robot-data to version 4.0.9 (thanks to @htadashi)
+
 ## [1.8.0] - 2024-01-24
 
 ### Added
@@ -14,10 +20,6 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Bump yourdfpy minimum version to 0.0.56
-
-### Changed
-
-- Update example-robot-data to version 4.0.9 (thanks to @htadashi)
 
 ### Fixed
 
@@ -302,7 +304,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.0...HEAD
+[unreleased]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.1...HEAD
+[1.8.1]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.0...v1.8.1
 [1.8.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.6.0...v1.7.0
 [1.6.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.5.0...v1.6.0
