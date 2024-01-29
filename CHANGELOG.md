@@ -15,6 +15,10 @@ All notable changes to this project will be documented in this file.
 
 - Bump yourdfpy minimum version to 0.0.56
 
+### Changed
+
+- Update example-robot-data to version 4.0.9 (thanks to @htadashi)
+
 ### Fixed
 
 - Path to UNITREE H1 (thanks to @lvjonok)
