@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Go1: Switch repository to MuJoCo Menagerie
 - Go2: Switch repository to MuJoCo Menagerie
 - H1: Switch repository to MuJoCo Menagerie
+- JVRC-1: Update repository to maintained one at jrl-umi3218
 - Upkie: Update repository to v1.5.0
 
 ### Fixed
