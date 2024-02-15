@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Citation file and BibTeX section in the readme
+
 ## [1.8.1] - 2024-01-29
 
 ### Changed
