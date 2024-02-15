@@ -253,6 +253,22 @@ New robot descriptions are welcome! Check out the [guidelines](https://github.co
 
 Thanks to the maintainers of all the git repositories that made these robot descriptions available.
 
+## Citation
+
+If you use `robot_descriptions.py` in your scientific works, please cite it *e.g.* as follows:
+
+```bibtex
+@software{robot_descriptions_py2024,
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordonez, Daniel and Tadashi Kussaba, Hugo and Bang, Seung Hyeon},
+  license = {Apache-2.0},
+  month = feb,
+  title = {{robot_descriptions.py: Robot descriptions in Python}},
+  url = {https://github.com/robot-descriptions/robot_descriptions.py},
+  version = {1.8.1},
+  year = {2024}
+}
+```
+
 ## See also
 
 Robot descriptions in other languages:
