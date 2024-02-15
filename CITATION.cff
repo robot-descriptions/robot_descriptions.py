@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you find this code helpful, please cite it as below."
+title: "robot_descriptions.py: Robot descriptions in Python"
+version: 1.8.1
+date-released: 2024-01-29
+url: "https://github.com/robot-descriptions/robot_descriptions.py"
+license: "Apache-2.0"
+authors:
+- family-names: "Caron"
+  given-names: "Stéphane"
+  orcid: "https://orcid.org/0000-0003-2906-692X"
+- family-names: "Romualdi"
+  given-names: "Giulio"
+  orcid: "https://orcid.org/0000-0002-6461-3231"
+- family-names: "Kozlov"
+  given-names: "Lev"
+- family-names: "Ordonez"
+  given-names: "Daniel"
+- family-names: "Tadashi Kussaba"
+  given-names: "Hugo"
+  orcid: "https://orcid.org/0000-0002-7336-1443"
+- family-names: "Bang"
+  given-names: "Seung Hyeon"
