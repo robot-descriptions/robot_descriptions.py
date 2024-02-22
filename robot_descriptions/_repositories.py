@@ -244,7 +244,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "upkie_description": Repository(
         url="https://github.com/upkie/upkie_description.git",
-        commit="3bc5251b7255641d275de8c6b949e13bf1a608ea",
+        commit="44445f66b3a40af06a8d2e277436f53377bb8ebd",
         cache_path="upkie_description",
     ),
     "skydio_x2_description": Repository(
