@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Citation file and BibTeX section in the readme
 
+### Changed
+
+- Update Upkie description to v1.5.0
+
 ## [1.8.1] - 2024-01-29
 
 ### Changed
