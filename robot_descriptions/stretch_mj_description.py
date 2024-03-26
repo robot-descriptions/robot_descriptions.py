@@ -17,4 +17,4 @@ REPOSITORY_PATH: str = _clone_to_cache(
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "hello_robot_stretch")
 
-MJCF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "stretch.xml")
+MJCF_PATH: str = _path.join(PACKAGE_PATH, "stretch.xml")
