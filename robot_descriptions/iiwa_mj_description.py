@@ -15,6 +15,6 @@ REPOSITORY_PATH: str = _clone_to_cache(
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "kuka_iwwa_14")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "kuka_iiwa_14")
 
 MJCF_PATH: str = _path.join(PACKAGE_PATH, "iiwa14.xml")
