@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Allegro Hand V3 (MJCF)
+- Description: ALOHA 2 (MJCF)
+- Description: Bitcraze Crazyflie 2.0 (MJCF)
+- Description: KUKA iiwa 14 (MJCF)
+- Description: Robotics OP3 (MJCF)
+- Description: Saywer (MJCF)
+- Description: Stretch 2 (MJCF)
+- Description: ViperX 300 6DOF (MJCF)
 - Citation file and BibTeX section in the readme
 
 ### Changed
