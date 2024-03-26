@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Switch MuJoCo models of the Unitree Go1, Go2 and H1 to MuJoCo Menagerie.
 - Description: Allegro Hand V3 (MJCF)
 - Description: ALOHA 2 (MJCF)
 - Description: Bitcraze Crazyflie 2.0 (MJCF)
