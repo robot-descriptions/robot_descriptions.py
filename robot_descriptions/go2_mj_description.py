@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2022 Stéphane Caron
 
-"""Go1 MJCF description."""
+"""Go2 MJCF description."""
 
 from os import getenv as _getenv
 from os import path as _path
