@@ -138,3 +138,14 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
         commit=repository.commit if commit is None else commit,
     )
     return str(clone.working_dir)
+
+
+def clear_cache() -> None:
+    """Clears the local cache where robot descriptions are stored."""
+    cache_dir = os.path.expanduser(
+        os.environ.get(
+            "ROBOT_DESCRIPTIONS_CACHE",
+            "~/.cache/robot_descriptions",
+        )
+    )
+    shutil.rmtree(cache_dir, ignore_errors=True)
