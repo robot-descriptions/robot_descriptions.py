@@ -65,7 +65,7 @@ class TestCloneToCache(unittest.TestCase):
         repository_path = clone_to_cache(description_name, commit)
         self.assertTrue(repository_path.endswith(f"-{commit}"))
 
-    def test_clone_twice_with_commit(self):
+    def test_clone_with_commit_then_without(self):
         clear_cache()
         clone_to_cache(
             "upkie_description",
