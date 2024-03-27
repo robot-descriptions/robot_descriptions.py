@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Switch MuJoCo models of the Unitree Go1, Go2 and H1 to MuJoCo Menagerie.
+- Citation file and BibTeX section in the readme
 - Description: Allegro Hand V3 (MJCF)
 - Description: ALOHA 2 (MJCF)
 - Description: Bitcraze Crazyflie 2.0 (MJCF)
@@ -15,11 +15,13 @@ All notable changes to this project will be documented in this file.
 - Description: Saywer (MJCF)
 - Description: Stretch 2 (MJCF)
 - Description: ViperX 300 6DOF (MJCF)
-- Citation file and BibTeX section in the readme
 
 ### Changed
 
-- Update Upkie description to v1.5.0
+- Go1: Switch repository to MuJoCo Menagerie
+- Go2: Switch repository to MuJoCo Menagerie
+- H1: Switch repository to MuJoCo Menagerie
+- Upkie: Update repository to v1.5.0
 
 ## [1.8.1] - 2024-01-29
 
