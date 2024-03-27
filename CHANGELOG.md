@@ -4,17 +4,19 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.9.0] - 2024-03-27
+
 ### Added
 
 - Citation file and BibTeX section in the readme
-- Description: Allegro Hand V3 (MJCF)
-- Description: ALOHA 2 (MJCF)
-- Description: Bitcraze Crazyflie 2.0 (MJCF)
-- Description: KUKA iiwa 14 (MJCF)
-- Description: Robotics OP3 (MJCF)
-- Description: Saywer (MJCF)
-- Description: Stretch 2 (MJCF)
-- Description: ViperX 300 6DOF (MJCF)
+- Description: Allegro Hand V3 (MJCF) (thanks to @kevinzakka)
+- Description: ALOHA 2 (MJCF) (thanks to @kevinzakka)
+- Description: Bitcraze Crazyflie 2.0 (MJCF) (thanks to @kevinzakka)
+- Description: KUKA iiwa 14 (MJCF) (thanks to @kevinzakka)
+- Description: Robotics OP3 (MJCF) (thanks to @kevinzakka)
+- Description: Saywer (MJCF) (thanks to @kevinzakka)
+- Description: Stretch 2 (MJCF) (thanks to @kevinzakka)
+- Description: ViperX 300 6DOF (MJCF) (thanks to @kevinzakka)
 
 ### Changed
 
@@ -329,7 +331,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.1...HEAD
+[unreleased]: https://github.com/qpsolvers/qpsolvers/compare/v1.9.0...HEAD
+[1.9.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.1...v1.9.0
 [1.8.1]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.0...v1.8.1
 [1.8.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.6.0...v1.7.0

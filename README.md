@@ -12,13 +12,17 @@ Importing a description for the first time automatically downloads and caches fi
 
 ## Installation
 
-### Install from pip
+### PyPI
+
+[![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 
 ```console
 pip install robot_descriptions
 ```
 
-### Install from conda
+### Conda
+
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions)
 
 ```console
 conda install -c conda-forge robot_descriptions
@@ -267,12 +271,12 @@ If you use `robot_descriptions.py` in your scientific works, please cite it *e.g
 
 ```bibtex
 @software{robot_descriptions_py2024,
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordonez, Daniel and Tadashi Kussaba, Hugo and Bang, Seung Hyeon},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordonez, Daniel and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin},
   license = {Apache-2.0},
-  month = feb,
+  month = mar,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.8.1},
+  version = {1.9.0},
   year = {2024}
 }
 ```
