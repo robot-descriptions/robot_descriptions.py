@@ -23,6 +23,10 @@ All notable changes to this project will be documented in this file.
 - H1: Switch repository to MuJoCo Menagerie
 - Upkie: Update repository to v1.5.0
 
+### Fixed
+
+- Package name resolution when pinning a description to a specific commit
+
 ## [1.8.1] - 2024-01-29
 
 ### Changed
