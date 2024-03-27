@@ -48,9 +48,11 @@ def load_robot_description(
     Returns:
         Robot model for Pinocchio.
     """
-    if commit is not None:
+    if commit is not None:  # technical debt, see #31
         os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
     module = import_module(f"robot_descriptions.{description_name}")
+    if commit is not None:
+        os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
     robot = pin.RobotWrapper.BuildFromURDF(
         filename=module.URDF_PATH,
         package_dirs=get_package_dirs(module),
