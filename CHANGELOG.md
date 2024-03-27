@@ -25,6 +25,7 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
+- Bug when cloning a non-pinned description after a commit-pinned one
 - Package name resolution when pinning a description to a specific commit
 
 ## [1.8.1] - 2024-01-29
