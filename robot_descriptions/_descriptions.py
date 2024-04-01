@@ -128,6 +128,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "ur5e_mj_description": Description(Format.MJCF),
     "valkyrie_description": Description(Format.URDF),
     "viper_mj_description": Description(Format.MJCF),
+    "xarm7_mj_description": Description(Format.MJCF),
     "yumi_description": Description(Format.URDF),
     "z1_description": Description(Format.URDF),
     "z1_mj_description": Description(Format.MJCF),
