@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Description: UFACTORY xArm7 (MJCF) (thanks to @kevinzakka)
+- Description: Realsense D435i (MJCF) (thanks to @kevinzakka)
 
 ## [1.9.0] - 2024-03-27
 

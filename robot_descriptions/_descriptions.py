@@ -104,6 +104,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "pr2_description": Description(Format.URDF),
     "r2_description": Description(Format.URDF),
     "reachy_description": Description(Format.URDF),
+    "realsense_d435i_mj_description": Description(Format.MJCF),
     "rhea_description": Description(Format.URDF),
     "robotiq_2f85_description": Description(Format.URDF),
     "robotiq_2f85_mj_description": Description(Format.MJCF),
