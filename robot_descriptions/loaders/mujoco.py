@@ -25,6 +25,7 @@ def load_robot_description(
         description_name: Name of the robot description.
         commit: If specified, check out that commit from the cloned robot
             description repository.
+        variant: If specified, load a specific variant of the robot model.
 
     Returns:
         Robot model for MuJoCo.
