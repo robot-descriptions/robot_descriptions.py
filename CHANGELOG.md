@@ -8,6 +8,11 @@ All notable changes to this project will be documented in this file.
 
 - Description: UFACTORY xArm7 (MJCF) (thanks to @kevinzakka)
 
+### Changed
+
+- Split Aliengo into MJCF and URDF descriptions
+- Update Aliengo URDF description to a more active repository
+
 ## [1.9.0] - 2024-03-27
 
 ### Added
