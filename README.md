@@ -240,14 +240,15 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 | Name                          | Robot                 | Maker                    | DOF | Format     |
 |-------------------------------|-----------------------|--------------------------|-----|------------|
-| `a1_mj_description`           | A1                    | UNITREE Robotics         | 12  | MJCF       |
 | `a1_description`              | A1                    | UNITREE Robotics         | 12  | URDF       |
-| `b1_description`              | B1                    | UNITREE Robotics         | 12  | URDF       |
-| `aliengo_description`         | Aliengo               | UNITREE Robotics         | 12  | MJCF, URDF |
-| `anymal_b_mj_description`     | ANYmal B              | ANYbotics                | 12  | MJCF       |
+| `a1_mj_description`           | A1                    | UNITREE Robotics         | 12  | MJCF       |
+| `aliengo_description`         | Aliengo               | UNITREE Robotics         | 12  | URDF       |
+| `aliengo_mj_description`      | Aliengo               | UNITREE Robotics         | 12  | MJCF       |
 | `anymal_b_description`        | ANYmal B              | ANYbotics                | 12  | URDF       |
+| `anymal_b_mj_description`     | ANYmal B              | ANYbotics                | 12  | MJCF       |
 | `anymal_c_description`        | ANYmal C              | ANYbotics                | 12  | URDF       |
 | `anymal_c_mj_description`     | ANYmal C              | ANYbotics                | 12  | MJCF       |
+| `b1_description`              | B1                    | UNITREE Robotics         | 12  | URDF       |
 | `go1_description`             | Go1                   | UNITREE Robotics         | 12  | URDF       |
 | `go1_mj_description`          | Go1                   | UNITREE Robotics         | 12  | MJCF       |
 | `go2_description`             | Go2                   | UNITREE Robotics         | 12  | URDF       |
