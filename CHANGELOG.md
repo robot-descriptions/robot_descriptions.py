@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Description: UFACTORY xArm7 (MJCF) (thanks to @kevinzakka)
+- Description: accept variant keyword for mujoco loader (thanks to @fabinsch)
 
 ### Changed
 
