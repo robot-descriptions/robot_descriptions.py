@@ -29,7 +29,6 @@ from robot_descriptions.loaders.yourdfpy import (
 
 
 class TestLoaders(unittest.TestCase):
-
     """
     Test loaders.
     """
@@ -80,3 +79,18 @@ class TestLoaders(unittest.TestCase):
                 commit=self.upkie_description_commit,
             )
         )
+
+    def test_cache_path_package_name(self):
+        """Check a description with package:// URIs and a custom commit ID."""
+        load_pinocchio(
+            "draco3_description",
+            commit="5afd19733d7b3e9f1135ba93e0aad90ed1a24cc7",
+        )
+
+    def test_load_with_commit_then_without(self):
+        # https://github.com/robot-descriptions/robot_descriptions.py/issues/67
+        load_pinocchio(
+            "draco3_description",
+            commit="5afd19733d7b3e9f1135ba93e0aad90ed1a24cc7",
+        )
+        load_pinocchio("baxter_description")

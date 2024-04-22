@@ -123,8 +123,8 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="jaxon_description",
     ),
     "jvrc_description": Repository(
-        url="https://github.com/robot-descriptions/jvrc_description.git",
-        commit="b788e1a7c874b3447fc027e175f216c6192e9e96",
+        url="https://github.com/jrl-umi3218/jvrc_description.git",
+        commit="9ff8efbc7043459a8f0892662bd030d8020fb682",
         cache_path="jvrc_description",
     ),
     "jvrc_mj_description": Repository(
@@ -144,7 +144,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "mujoco_menagerie": Repository(
         url="https://github.com/deepmind/mujoco_menagerie.git",
-        commit="a099b54b539416bff0db4d35fc2271c35c10f37a",
+        commit="915d92c60858c3649e04af2ae93ac2c51fe18c24",
         cache_path="mujoco_menagerie",
     ),
     "nao_robot": Repository(

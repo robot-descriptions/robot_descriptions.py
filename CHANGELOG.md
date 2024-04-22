@@ -6,11 +6,39 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Citation file and BibTeX section in the readme
+- Description: UFACTORY xArm7 (MJCF) (thanks to @kevinzakka)
 
 ### Changed
 
-- Update Upkie description to v1.5.0
+- Split Aliengo into MJCF and URDF descriptions (thanks to @Danfoa)
+- Update Aliengo URDF to a more active repository (thanks to @Danfoa)
+
+## [1.9.0] - 2024-03-27
+
+### Added
+
+- Citation file and BibTeX section in the readme
+- Description: Allegro Hand V3 (MJCF) (thanks to @kevinzakka)
+- Description: ALOHA 2 (MJCF) (thanks to @kevinzakka)
+- Description: Bitcraze Crazyflie 2.0 (MJCF) (thanks to @kevinzakka)
+- Description: KUKA iiwa 14 (MJCF) (thanks to @kevinzakka)
+- Description: Robotics OP3 (MJCF) (thanks to @kevinzakka)
+- Description: Saywer (MJCF) (thanks to @kevinzakka)
+- Description: Stretch 2 (MJCF) (thanks to @kevinzakka)
+- Description: ViperX 300 6DOF (MJCF) (thanks to @kevinzakka)
+
+### Changed
+
+- Go1: Switch repository to MuJoCo Menagerie
+- Go2: Switch repository to MuJoCo Menagerie
+- H1: Switch repository to MuJoCo Menagerie
+- JVRC-1: Update repository to maintained one at jrl-umi3218
+- Upkie: Update repository to v1.5.0
+
+### Fixed
+
+- Bug when cloning a non-pinned description after a commit-pinned one
+- Package name resolution when pinning a description to a specific commit
 
 ## [1.8.1] - 2024-01-29
 
@@ -312,7 +340,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.1...HEAD
+[unreleased]: https://github.com/qpsolvers/qpsolvers/compare/v1.9.0...HEAD
+[1.9.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.1...v1.9.0
 [1.8.1]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.0...v1.8.1
 [1.8.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.6.0...v1.7.0

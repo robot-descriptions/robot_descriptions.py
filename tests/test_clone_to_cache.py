@@ -10,7 +10,7 @@ import unittest
 
 import git
 
-from robot_descriptions._cache import clone_to_cache
+from robot_descriptions._cache import clone_to_cache, clear_cache
 from robot_descriptions._repositories import REPOSITORIES
 
 
@@ -63,4 +63,12 @@ class TestCloneToCache(unittest.TestCase):
         description_name = "simple_humanoid_description"
         commit = "0e488ee4708155a71b2a92d05305a9186b543593"
         repository_path = clone_to_cache(description_name, commit)
-        self.assertTrue(repository_path.endswith(f"-{commit}"))
+        self.assertTrue(commit in repository_path)
+
+    def test_clone_with_commit_then_without(self):
+        clear_cache()
+        clone_to_cache(
+            "upkie_description",
+            commit="a2c820054a7572603875def478f21376165c125e",
+        )
+        clone_to_cache("draco3_description")

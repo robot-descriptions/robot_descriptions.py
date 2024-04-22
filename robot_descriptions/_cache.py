@@ -130,7 +130,10 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
 
     cache_path = repository.cache_path
     if commit is not None:
-        cache_path += f"-{commit}"
+        # Requirement: the last directory in the cache path is named after the
+        # cache path (more precisely the package name) so that package:// URIs
+        # work in frameworks that resolve them via directories
+        cache_path = f"{cache_path}-{commit}/{cache_path}"
     target_dir = os.path.join(cache_dir, cache_path)
     clone = clone_to_directory(
         repository.url,
@@ -138,3 +141,14 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
         commit=repository.commit if commit is None else commit,
     )
     return str(clone.working_dir)
+
+
+def clear_cache() -> None:
+    """Clears the local cache where robot descriptions are stored."""
+    cache_dir = os.path.expanduser(
+        os.environ.get(
+            "ROBOT_DESCRIPTIONS_CACHE",
+            "~/.cache/robot_descriptions",
+        )
+    )
+    shutil.rmtree(cache_dir, ignore_errors=True)

@@ -28,9 +28,11 @@ def load_robot_description(
     Returns:
         Robot model for MuJoCo.
     """
-    if commit is not None:
+    if commit is not None:  # technical debt, see #31
         os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
     module = import_module(f"robot_descriptions.{description_name}")
+    if commit is not None:
+        os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
     if not hasattr(module, "MJCF_PATH"):
         raise ValueError(f"{description_name} is not an MJCF description")
 

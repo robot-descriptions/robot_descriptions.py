@@ -12,13 +12,17 @@ Importing a description for the first time automatically downloads and caches fi
 
 ## Installation
 
-### Install from pip
+### PyPI
+
+[![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 
 ```console
 pip install robot_descriptions
 ```
 
-### Install from conda
+### Conda
+
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions)
 
 ```console
 conda install -c conda-forge robot_descriptions
@@ -111,15 +115,15 @@ robot_descriptions show solo_description
 
 Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) are listed in the following categories:
 
-* [Arms](#arms)
-* [Bipeds](#bipeds)
-* [Dual arms](#dual-arms)
-* [Drones](#drones)
-* [Educational](#educational)
-* [End effectors](#end-effectors)
-* [Mobile manipulators](#mobile-manipulators)
-* [Humanoids](#humanoids)
-* [Quadrupeds](#quadrupeds)
+- [Arms](#arms)
+- [Bipeds](#bipeds)
+- [Dual arms](#dual-arms)
+- [Drones](#drones)
+- [Educational](#educational)
+- [End effectors](#end-effectors)
+- [Humanoids](#humanoids)
+- [Mobile manipulators](#mobile-manipulators)
+- [Quadrupeds](#quadrupeds)
 
 The DOF column denotes the number of actuated degrees of freedom.
 
@@ -133,14 +137,18 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `gen3_description`            | Gen3 (Jaco)           | Kinova                   | 6   | URDF       |
 | `gen3_mj_description`         | Gen3 (Jaco)           | Kinova                   | 7   | MJCF       |
 | `iiwa_description`            | iiwa                  | KUKA                     | 7   | URDF       |
+| `iiwa_mj_description`         | iiwa14                | KUKA                     | 7   | MJCF       |
 | `panda_description`           | Panda                 | Franka Emika             | 8   | URDF       |
 | `panda_mj_description`        | Panda                 | Franka Emika             | 8   | MJCF       |
 | `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | 6   | URDF       |
+| `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | 7   | MJCF       |
 | `ur10_description`            | UR10                  | Universal Robots         | 6   | URDF       |
 | `ur10e_mj_description`        | UR10e                 | Universal Robots         | 6   | MJCF       |
 | `ur3_description`             | UR3                   | Universal Robots         | 6   | URDF       |
 | `ur5_description`             | UR5                   | Universal Robots         | 6   | URDF       |
 | `ur5e_mj_description`         | UR5e                  | Universal Robots         | 6   | MJCF       |
+| `viper_mj_description`        | Viper                 | Trossen Robotics         | 7   | MJCF       |
+| `xarm7_mj_description`        | xArm7                 | UFACTORY                 | 7   | MJCF       |
 | `z1_description`              | Z1                    | UNITREE Robotics         | 6   | URDF       |
 
 ### Bipeds
@@ -158,6 +166,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 | Name                          | Robot                 | Maker                    | DOF | Format     |
 |-------------------------------|-----------------------|--------------------------|-----|------------|
+| `aloha_mj_description`        | Aloha 2               | Trossen Robotics         | 14  | MJCF       |
 | `baxter_description`          | Baxter                | Rethink Robotics         | 15  | URDF       |
 | `nextage_description`         | NEXTAGE               | Kawada Robotics          | 15  | URDF       |
 | `poppy_torso_description`     | Poppy Torso           | Poppy Project            | 13  | URDF       |
@@ -168,6 +177,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | Maker                    | DOF | Format     |
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `cf2_description`             | Crazyflie 2.0         | Bitcraze                 | 0   | URDF       |
+| `cf2_mj_description`          | Crazyflie 2.0         | Bitcraze                 | 6   | MJCF       |
 | `skydio_x2_description`       | Skydio X2             | Skydio                   | 6   | URDF       |
 | `skydio_x2_mj_description`    | Skydio X2             | Skydio                   | 6   | MJCF       |
 
@@ -185,6 +195,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | Maker                    | DOF | Format     |
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `allegro_hand_description`    | Allegro Hand          | Wonik Robotics           | 16  | URDF       |
+| `allegro_hand_mj_description` | Allegro Hand          | Wonik Robotics           | 16  | MJCF       |
 | `barrett_hand_description`    | BarrettHand           | Barrett Technology       | 8   | URDF       |
 | `robotiq_2f85_description`    | Robotiq 2F-85         | Robotiq                  | 1   | URDF       |
 | `robotiq_2f85_mj_description` | Robotiq 2F-85         | Robotiq                  | 1   | MJCF       |
@@ -204,6 +215,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `jaxon_description`           | JAXON                 | JSK                      | 38  | URDF       |
 | `jvrc_description`            | JVRC-1                | AIST                     | 34  | URDF       |
 | `jvrc_mj_description`         | JVRC-1                | AIST                     | 34  | MJCF       |
+| `op3_mj_description`          | OP3                   | ROBOTIS                  | 20  | MJCF       |
 | `r2_description`              | Robonaut 2            | NASA JSC Robotics        | 56  | URDF       |
 | `romeo_description`           | Romeo                 | Aldebaran Robotics       | 37  | URDF       |
 | `sigmaban_description`        | SigmaBan              | Rhoban                   | 20  | URDF       |
@@ -221,20 +233,22 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `pr2_description`             | PR2                   | Willow Garage            | 32  | URDF       |
 | `reachy_description`          | Reachy                | Pollen Robotics          | 21  | URDF       |
 | `stretch_description`         | Stretch RE1           | Hello Robot              | 14  | URDF       |
+| `sretch_mj_description`       | Stretch 2             | Hello Robot              | 14  | MJCF       |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | 48  | URDF       |
 
 ### Quadrupeds
 
 | Name                          | Robot                 | Maker                    | DOF | Format     |
 |-------------------------------|-----------------------|--------------------------|-----|------------|
-| `a1_mj_description`           | A1                    | UNITREE Robotics         | 12  | MJCF       |
 | `a1_description`              | A1                    | UNITREE Robotics         | 12  | URDF       |
-| `b1_description`              | B1                    | UNITREE Robotics         | 12  | URDF       |
-| `aliengo_description`         | Aliengo               | UNITREE Robotics         | 12  | MJCF, URDF |
-| `anymal_b_mj_description`     | ANYmal B              | ANYbotics                | 12  | MJCF       |
+| `a1_mj_description`           | A1                    | UNITREE Robotics         | 12  | MJCF       |
+| `aliengo_description`         | Aliengo               | UNITREE Robotics         | 12  | URDF       |
+| `aliengo_mj_description`      | Aliengo               | UNITREE Robotics         | 12  | MJCF       |
 | `anymal_b_description`        | ANYmal B              | ANYbotics                | 12  | URDF       |
+| `anymal_b_mj_description`     | ANYmal B              | ANYbotics                | 12  | MJCF       |
 | `anymal_c_description`        | ANYmal C              | ANYbotics                | 12  | URDF       |
 | `anymal_c_mj_description`     | ANYmal C              | ANYbotics                | 12  | MJCF       |
+| `b1_description`              | B1                    | UNITREE Robotics         | 12  | URDF       |
 | `go1_description`             | Go1                   | UNITREE Robotics         | 12  | URDF       |
 | `go1_mj_description`          | Go1                   | UNITREE Robotics         | 12  | MJCF       |
 | `go2_description`             | Go2                   | UNITREE Robotics         | 12  | URDF       |
@@ -259,12 +273,12 @@ If you use `robot_descriptions.py` in your scientific works, please cite it *e.g
 
 ```bibtex
 @software{robot_descriptions_py2024,
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordonez, Daniel and Tadashi Kussaba, Hugo and Bang, Seung Hyeon},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordonez, Daniel and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin},
   license = {Apache-2.0},
-  month = feb,
+  month = mar,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.8.1},
+  version = {1.9.0},
   year = {2024}
 }
 ```

@@ -33,9 +33,11 @@ def load_robot_description(
     Returns:
         Robot model for RoboMeshCat.
     """
-    if commit is not None:
+    if commit is not None:  # technical debt, see #31
         os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
     module = import_module(f"robot_descriptions.{description_name}")
+    if commit is not None:
+        os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
     robot = robomeshcat.Robot(
         urdf_path=module.URDF_PATH,
         mesh_folder_path=get_package_dirs(module),
