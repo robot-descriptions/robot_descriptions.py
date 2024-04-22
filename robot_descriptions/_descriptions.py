@@ -50,7 +50,8 @@ class Description:
 DESCRIPTIONS: Dict[str, Description] = {
     "a1_description": Description(Format.URDF),
     "a1_mj_description": Description(Format.MJCF),
-    "aliengo_description": Description(Format.MJCF),
+    "aliengo_description": Description(Format.URDF),
+    "aliengo_mj_description": Description(Format.MJCF),
     "aloha_mj_description": Description(Format.MJCF),
     "allegro_hand_description": Description(Format.URDF),
     "allegro_hand_mj_description": Description(Format.MJCF),
