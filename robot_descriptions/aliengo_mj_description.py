@@ -19,5 +19,3 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "data", "aliengo")
 
 MJCF_PATH: str = _path.join(PACKAGE_PATH, "xml", "aliengo.xml")
-
-URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "aliengo.urdf")

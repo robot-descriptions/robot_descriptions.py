@@ -10,8 +10,8 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Split Aliengo into MJCF and URDF descriptions
-- Update Aliengo URDF description to a more active repository
+- Split Aliengo into MJCF and URDF descriptions (thanks to @Danfoa)
+- Update Aliengo URDF to a more active repository (thanks to @Danfoa)
 
 ## [1.9.0] - 2024-03-27
 
