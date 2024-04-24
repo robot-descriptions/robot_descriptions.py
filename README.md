@@ -275,10 +275,9 @@ If you use this project in your works, please cite as follows:
 @software{robot_descriptions_py2024,
   author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian},
   license = {Apache-2.0},
-  month = mar,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.9.0},
+  version = {1.10.0},
   year = {2024}
 }
 ```
