@@ -269,11 +269,11 @@ Thanks to the maintainers of all the git repositories that made these robot desc
 
 ## Citation
 
-If you use `robot_descriptions.py` in your scientific works, please cite it *e.g.* as follows:
+If you use this project in your works, please cite as follows:
 
 ```bibtex
 @software{robot_descriptions_py2024,
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordonez, Daniel and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian},
   license = {Apache-2.0},
   month = mar,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
