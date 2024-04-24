@@ -4,10 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.10.0] - 2024-04-24
+
 ### Added
 
 - Description: UFACTORY xArm7 (MJCF) (thanks to @kevinzakka)
-- Description: accept variant keyword for mujoco loader (thanks to @fabinsch)
+- Variant keyword in the MuJoCo loader (thanks to @fabinsch)
 
 ### Changed
 
@@ -341,24 +343,25 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/qpsolvers/qpsolvers/compare/v1.9.0...HEAD
-[1.9.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.1...v1.9.0
-[1.8.1]: https://github.com/qpsolvers/qpsolvers/compare/v1.8.0...v1.8.1
-[1.8.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.7.0...v1.8.0
-[1.7.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.6.0...v1.7.0
-[1.6.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.5.0...v1.6.0
-[1.5.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.4.1...v1.5.0
-[1.4.1]: https://github.com/qpsolvers/qpsolvers/compare/v1.4.0...v1.4.1
-[1.4.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.3.1...v1.4.0
-[1.3.1]: https://github.com/qpsolvers/qpsolvers/compare/v1.3.0...v1.3.1
-[1.3.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.2.0...v1.3.0
-[1.2.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/qpsolvers/qpsolvers/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.6.0...v1.0.0
-[0.6.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.5.0...v0.6.0
-[0.5.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.4.0...v0.5.0
-[0.4.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.3.0...v0.4.0
-[0.3.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/qpsolvers/qpsolvers/compare/v0.1.1...v0.2.0
-[0.1.1]: https://github.com/qpsolvers/qpsolvers/compare/v0.1.0...v0.1.1
-[0.1.0]: https://github.com/qpsolvers/qpsolvers/releases/tag/v0.1.0
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.10.0...HEAD
+[1.10.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.9.0...v1.10.0
+[1.9.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.8.1...v1.9.0
+[1.8.1]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.8.0...v1.8.1
+[1.8.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.7.0...v1.8.0
+[1.7.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.6.0...v1.7.0
+[1.6.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.5.0...v1.6.0
+[1.5.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.4.1...v1.5.0
+[1.4.1]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.4.0...v1.4.1
+[1.4.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.3.1...v1.4.0
+[1.3.1]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.6.0...v1.0.0
+[0.6.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.5.0...v0.6.0
+[0.5.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.4.0...v0.5.0
+[0.4.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.3.0...v0.4.0
+[0.3.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.1.1...v0.2.0
+[0.1.1]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v0.1.0
