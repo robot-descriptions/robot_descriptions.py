@@ -284,7 +284,6 @@ If you use this project in your works, please cite as follows:
 
 ## See also
 
-Robot descriptions in other languages:
-
-| ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=c%2B%2B&logoColor=white) | [robot\_descriptions.cpp](https://github.com/mayataka/robot_descriptions.cpp) |
-|--|--|
+- [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions): curated list of robot descriptions in URDF, Xacro or MJCF formats.
+- [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie/): collection of MJCF robot descriptions curated for the MuJoCo physics engine.
+- [robot\_descriptions.cpp](https://github.com/mayataka/robot_descriptions.cpp): package to use ``robot_descriptions.py`` in C++.
