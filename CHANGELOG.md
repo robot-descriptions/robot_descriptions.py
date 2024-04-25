@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 
 - Rename ``iiwa_description`` to ``iiwa14_description``
 - Rename ``iiwa_mj_description`` to ``iiwa14_mj_description``
+- Update repository for ``iiwa14_description`` to ``drake_models``
 
 ## [1.10.0] - 2024-04-24
 
