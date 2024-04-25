@@ -17,7 +17,7 @@ REPOSITORY_PATH: str = _clone_to_cache(
 )
 
 PACKAGE_PATH: str = _path.join(
-    REPOSITORY_PATH, "manipulation", "models", "iiwa_description"
+    REPOSITORY_PATH, "manipulation", "models", "iiwa14_description"
 )
 
 URDF_PATH: str = _path.join(
