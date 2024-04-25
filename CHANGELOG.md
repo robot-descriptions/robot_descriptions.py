@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: KUKA iiwa 7 (URDF)
+
 ## [1.10.0] - 2024-04-24
 
 ### Added

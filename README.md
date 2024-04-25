@@ -136,8 +136,9 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `gen2_description`            | Gen2 (Jaco)           | Kinova                   | 6   | URDF       |
 | `gen3_description`            | Gen3 (Jaco)           | Kinova                   | 6   | URDF       |
 | `gen3_mj_description`         | Gen3 (Jaco)           | Kinova                   | 7   | MJCF       |
-| `iiwa_description`            | iiwa                  | KUKA                     | 7   | URDF       |
-| `iiwa_mj_description`         | iiwa14                | KUKA                     | 7   | MJCF       |
+| `iiwa7_description`           | iiwa 7                | KUKA                     | 7   | URDF       |
+| `iiwa_description`            | iiwa 14               | KUKA                     | 7   | URDF       |
+| `iiwa_mj_description`         | iiwa 14               | KUKA                     | 7   | MJCF       |
 | `panda_description`           | Panda                 | Franka Emika             | 8   | URDF       |
 | `panda_mj_description`        | Panda                 | Franka Emika             | 8   | MJCF       |
 | `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | 6   | URDF       |
