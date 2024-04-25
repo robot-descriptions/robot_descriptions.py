@@ -73,14 +73,14 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "drake": Repository(
         url="https://github.com/RobotLocomotion/drake.git",
-        commit="v1.7.0",
+        commit="7abea0556ede980a5077fe1a8cfbae59b57c7c27",
         cache_path="drake",
     ),
     "drake_models": Repository(
         url="https://github.com/RobotLocomotion/models.git",
-        # From 9b274a2570ddefc4140e4b98bcf248003289b870 onward, obj mesh files
-        # converted to glTF in drake_models don't work with PyBullet ("invalid
-        # mesh filename extension 'gltf'")
+        # NB: from 9b274a2570ddefc4140e4b98bcf248003289b870 onward, obj meshes
+        # for the iiwa14_description are converted to glTF in this repo, which
+        # PyBullet does not load ("invalid mesh filename extension 'gltf'")
         commit="d0fe1a427a6bd39040ff3a77aaf6ddcc4d62a8fe",
         cache_path="drake_models",
     ),
