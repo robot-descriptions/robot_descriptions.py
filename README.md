@@ -285,5 +285,6 @@ If you use this project in your works, please cite as follows:
 ## See also
 
 - [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions): curated list of robot descriptions in URDF, Xacro or MJCF formats.
+- [drake\_models](https://github.com/RobotLocomotion/models): collection of URDF and SDF descriptions curated for the Drake framework.
 - [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie/): collection of MJCF robot descriptions curated for the MuJoCo physics engine.
 - [robot\_descriptions.cpp](https://github.com/mayataka/robot_descriptions.cpp): package to use ``robot_descriptions.py`` in C++.
