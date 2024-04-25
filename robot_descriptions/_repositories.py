@@ -78,7 +78,10 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "drake_models": Repository(
         url="https://github.com/RobotLocomotion/models.git",
-        commit="c81f2458cf6d19a20a27e1495e7f07202536e845",
+        # From 9b274a2570ddefc4140e4b98bcf248003289b870 onward, obj mesh files
+        # converted to glTF in drake_models don't work with PyBullet ("invalid
+        # mesh filename extension 'gltf'")
+        commit="d0fe1a427a6bd39040ff3a77aaf6ddcc4d62a8fe",
         cache_path="drake_models",
     ),
     "eDO_description": Repository(
