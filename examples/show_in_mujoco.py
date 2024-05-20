@@ -34,9 +34,7 @@ if __name__ == "__main__":
     except ModuleNotFoundError:
         model = load_robot_description(f"{args.name}_mj_description")
 
-
     data = mujoco.MjData(model)
-    print(model.nq, model.nv)
     viewer = mujoco_viewer.MujocoViewer(model, data)
     mujoco.mj_step(model, data)  # step at least once to load model in viewer
     while viewer.is_alive:
