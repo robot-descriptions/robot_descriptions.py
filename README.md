@@ -115,15 +115,27 @@ robot_descriptions show solo_description
 
 Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) are listed in the following categories:
 
-- [Arms](#arms)
-- [Bipeds](#bipeds)
-- [Dual arms](#dual-arms)
-- [Drones](#drones)
-- [Educational](#educational)
-- [End effectors](#end-effectors)
-- [Humanoids](#humanoids)
-- [Mobile manipulators](#mobile-manipulators)
-- [Quadrupeds](#quadrupeds)
+- [Installation](#installation)
+  - [PyPI](#pypi)
+  - [Conda](#conda)
+- [Usage](#usage)
+  - [Import as submodule](#import-as-submodule)
+- [Examples](#examples)
+- [Command line tool](#command-line-tool)
+- [Descriptions](#descriptions)
+  - [Arms](#arms)
+  - [Bipeds](#bipeds)
+  - [Dual arms](#dual-arms)
+  - [Drones](#drones)
+  - [Educational](#educational)
+  - [End effectors](#end-effectors)
+  - [Humanoids](#humanoids)
+  - [Mobile manipulators](#mobile-manipulators)
+  - [Quadrupeds](#quadrupeds)
+- [Contributing](#contributing)
+- [Thanks](#thanks)
+- [Citation](#citation)
+- [See also](#see-also)
 
 The DOF column denotes the number of actuated degrees of freedom.
 
@@ -210,6 +222,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `atlas_v4_description`        | Atlas v4              | Boston Dynamics          | 30  | URDF       |
 | `draco3_description`          | Draco3                | Apptronik                | 25  | URDF       |
 | `ergocub_description`         | ergoCub               | IIT                      | 57  | URDF       |
+| `g1_mj_description`           | G1                    | UNITREE Robotics         | 37  | MJCF       |
 | `h1_description`              | H1                    | UNITREE Robotics         | 25  | URDF       |
 | `h1_mj_description`           | H1                    | UNITREE Robotics         | 25  | MJCF       |
 | `icub_description`            | iCub                  | IIT                      | 32  | URDF       |
