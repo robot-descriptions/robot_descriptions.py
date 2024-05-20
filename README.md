@@ -115,27 +115,15 @@ robot_descriptions show solo_description
 
 Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) are listed in the following categories:
 
-- [Installation](#installation)
-  - [PyPI](#pypi)
-  - [Conda](#conda)
-- [Usage](#usage)
-  - [Import as submodule](#import-as-submodule)
-- [Examples](#examples)
-- [Command line tool](#command-line-tool)
-- [Descriptions](#descriptions)
-  - [Arms](#arms)
-  - [Bipeds](#bipeds)
-  - [Dual arms](#dual-arms)
-  - [Drones](#drones)
-  - [Educational](#educational)
-  - [End effectors](#end-effectors)
-  - [Humanoids](#humanoids)
-  - [Mobile manipulators](#mobile-manipulators)
-  - [Quadrupeds](#quadrupeds)
-- [Contributing](#contributing)
-- [Thanks](#thanks)
-- [Citation](#citation)
-- [See also](#see-also)
+- [Arms](#arms)
+- [Bipeds](#bipeds)
+- [Dual arms](#dual-arms)
+- [Drones](#drones)
+- [Educational](#educational)
+- [End effectors](#end-effectors)
+- [Humanoids](#humanoids)
+- [Mobile manipulators](#mobile-manipulators)
+- [Quadrupeds](#quadrupeds)
 
 The DOF column denotes the number of actuated degrees of freedom.
 
