@@ -152,7 +152,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "mujoco_menagerie": Repository(
         url="https://github.com/deepmind/mujoco_menagerie.git",
-        commit="0a809cfd52f615ea4bb82ccf858787768f08699a",
+        commit="95659f93be58e9e5600bcd1bc9c2379b4aa07fc6",
         cache_path="mujoco_menagerie",
     ),
     "nao_robot": Repository(
