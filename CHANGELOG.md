@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Description: KUKA iiwa 7 (URDF)
+- Description: Unitree G1 (URDF) (thanks to @lvjonok)
 
 ### Changed
 
