@@ -247,7 +247,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "unitree_ros": Repository(
         url="https://github.com/unitreerobotics/unitree_ros.git",
-        commit="e197ae10d301c41f17f61fe3a741925a033db1e8",
+        commit="6a7a9609cebd853062f2182f97dcfbdb711cd61a",
         cache_path="unitree_ros",
     ),
     "upkie_description": Repository(
