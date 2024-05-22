@@ -77,6 +77,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "fanuc_m710ic_description": Description(Format.URDF),
     "fetch_description": Description(Format.URDF),
     "finger_edu_description": Description(Format.URDF),
+    "g1_mj_description": Description(Format.MJCF),
     "gen2_description": Description(Format.URDF),
     "gen3_description": Description(Format.URDF),
     "gen3_mj_description": Description(Format.MJCF),
