@@ -133,14 +133,15 @@ The DOF column denotes the number of actuated degrees of freedom.
 |-------------------------------|-----------------------|--------------------------|-----|------------|
 | `edo_description`             | e.DO                  | Comau                    | 6   | URDF       |
 | `fanuc_m710ic_description`    | M-710iC               | Fanuc                    | 6   | URDF       |
+| `fr3_mj_description`          | FR3                   | Franka Robotics          | 7   | MJCF       |
 | `gen2_description`            | Gen2 (Jaco)           | Kinova                   | 6   | URDF       |
 | `gen3_description`            | Gen3 (Jaco)           | Kinova                   | 6   | URDF       |
 | `gen3_mj_description`         | Gen3 (Jaco)           | Kinova                   | 7   | MJCF       |
 | `iiwa14_description`          | iiwa 14               | KUKA                     | 7   | URDF       |
 | `iiwa14_mj_description`       | iiwa 14               | KUKA                     | 7   | MJCF       |
 | `iiwa7_description`           | iiwa 7                | KUKA                     | 7   | URDF       |
-| `panda_description`           | Panda                 | Franka Emika             | 8   | URDF       |
-| `panda_mj_description`        | Panda                 | Franka Emika             | 8   | MJCF       |
+| `panda_description`           | Panda                 | Franka Robotics          | 8   | URDF       |
+| `panda_mj_description`        | Panda                 | Franka Robotics          | 8   | MJCF       |
 | `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | 6   | URDF       |
 | `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | 7   | MJCF       |
 | `ur10_description`            | UR10                  | Universal Robots         | 6   | URDF       |
@@ -252,6 +253,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `anymal_c_description`        | ANYmal C              | ANYbotics                | 12  | URDF       |
 | `anymal_c_mj_description`     | ANYmal C              | ANYbotics                | 12  | MJCF       |
 | `b1_description`              | B1                    | UNITREE Robotics         | 12  | URDF       |
+| `spot_mj_description`         | Spot                  | Boston Dynamics          | 12  | MJCF       |
 | `go1_description`             | Go1                   | UNITREE Robotics         | 12  | URDF       |
 | `go1_mj_description`          | Go1                   | UNITREE Robotics         | 12  | MJCF       |
 | `go2_description`             | Go2                   | UNITREE Robotics         | 12  | URDF       |
