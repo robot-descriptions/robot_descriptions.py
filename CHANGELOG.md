@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Description: Unitree G1 (URDF) (thanks to @lvjonok)
 - Description: Boston Dynamics Spot (MJCF) (thanks to @kevinzakka)
 - Description: Franka Robotics FR3 (MJCF) (thanks to @kevinzakka)
+- Description: WidowX 250 6-DOF (MJCF) (thanks to @kevinzakka)
 
 ### Changed
 
