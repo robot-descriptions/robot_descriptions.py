@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- CICD: Update ruff to 0.2.2
 - Rename ``iiwa_description`` to ``iiwa14_description``
 - Rename ``iiwa_mj_description`` to ``iiwa14_mj_description``
 - Update repository for ``iiwa14_description`` to ``drake_models``
