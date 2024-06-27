@@ -17,6 +17,8 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Bump minimum Python version to 3.9
+- CICD: Pin NumPy version to <2 for PyBullet and yourdfpy
 - CICD: Update ruff to 0.2.2
 - Rename ``iiwa_description`` to ``iiwa14_description``
 - Rename ``iiwa_mj_description`` to ``iiwa14_mj_description``
