@@ -19,7 +19,7 @@ jobs:
             - name: "Set up Python"
               uses: actions/setup-python@v4
               with:
-                  python-version: "3.8"
+                  python-version: "3.9"
 
             - name: "Install dependencies"
               run: |
@@ -47,7 +47,7 @@ jobs:
             - name: "Set up Python"
               uses: actions/setup-python@v4
               with:
-                  python-version: "3.8"
+                  python-version: "3.9"
 
             - name: "Install dependencies"
               run: |
@@ -59,12 +59,12 @@ jobs:
                   tox -e lint
 
     loader:
-        name: "Loader: ${{ matrix.loader }}"
+        name: "Loader: ${{ matrix.loader }} with Python ${{ matrix.python-version }}"
         runs-on: ubuntu-latest
 
         strategy:
             matrix:
-                python-version: ["3.8"]
+                python-version: ["3.9"]
                 loader: ["idyntree", "mujoco", "pinocchio", "pybullet", "robomeshcat", "yourdfpy"]
 
         steps:
