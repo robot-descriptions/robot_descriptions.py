@@ -12,20 +12,20 @@ Importing a description for the first time automatically downloads and caches fi
 
 ## Installation
 
-### PyPI
-
-[![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
-
-```console
-pip install robot_descriptions
-```
-
-### Conda
+### From conda-forge
 
 [![Conda Version](https://img.shields.io/conda/vn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions)
 
 ```console
 conda install -c conda-forge robot_descriptions
+```
+
+### From PyPI
+
+[![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
+
+```console
+pip install robot_descriptions
 ```
 
 ## Usage
