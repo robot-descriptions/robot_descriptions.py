@@ -283,7 +283,7 @@ If you use this project in your works, please cite as follows:
   license = {Apache-2.0},
   title = {{robot_descriptions.py: Robot descriptions in Python}},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.10.0},
+  version = {1.11.0},
   year = {2024}
 }
 ```
