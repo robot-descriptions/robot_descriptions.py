@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Shadow DEX-EE (MJCF) (thanks to @kevinzakka)
 - Description: KUKA iiwa 7 (URDF)
 - Description: Unitree G1 (MJCF) (thanks to @kevinzakka)
 - Description: Unitree G1 (URDF) (thanks to @lvjonok)
