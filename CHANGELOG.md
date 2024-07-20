@@ -6,7 +6,9 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: Kinova Gen3 (MJCF) (thanks to @kevinzakka)
+### Changed
+
+- Update repository for ``gen3_mj_description`` to ``mujoco_menagerie``
 
 ## [1.11.0] - 2024-06-27
 
