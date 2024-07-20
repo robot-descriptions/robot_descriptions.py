@@ -140,7 +140,6 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `iiwa14_description`          | iiwa 14               | KUKA                     | 7   | URDF       |
 | `iiwa14_mj_description`       | iiwa 14               | KUKA                     | 7   | MJCF       |
 | `iiwa7_description`           | iiwa 7                | KUKA                     | 7   | URDF       |
-| `kinova_gen3_mj_description`  | Kinova Gen3           | Kinova Robotics          | 7   | MJCF       |
 | `panda_description`           | Panda                 | Franka Robotics          | 8   | URDF       |
 | `panda_mj_description`        | Panda                 | Franka Robotics          | 8   | MJCF       |
 | `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | 6   | URDF       |
