@@ -240,6 +240,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `reachy_description`          | Reachy                | Pollen Robotics          | 21  | URDF       |
 | `stretch_description`         | Stretch RE1           | Hello Robot              | 14  | URDF       |
 | `sretch_mj_description`       | Stretch 2             | Hello Robot              | 14  | MJCF       |
+| `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | 14  | MJCF       |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | 48  | URDF       |
 
 ### Quadrupeds
