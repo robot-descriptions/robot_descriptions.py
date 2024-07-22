@@ -134,8 +134,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `edo_description`             | e.DO                  | Comau                    | 6   | URDF       |
 | `fanuc_m710ic_description`    | M-710iC               | Fanuc                    | 6   | URDF       |
 | `fr3_mj_description`          | FR3                   | Franka Robotics          | 7   | MJCF       |
-| `gen2_description`            | Gen2 (Jaco)           | Kinova                   | 6   | URDF       |
-| `gen3_description`            | Gen3 (Jaco)           | Kinova                   | 6   | URDF       |
+| `gen2_description`            | Gen2                  | Kinova                   | 6   | URDF       |
+| `gen3_description`            | Gen3                  | Kinova                   | 6   | URDF       |
 | `gen3_mj_description`         | Gen3                  | Kinova                   | 7   | MJCF       |
 | `iiwa14_description`          | iiwa 14               | KUKA                     | 7   | URDF       |
 | `iiwa14_mj_description`       | iiwa 14               | KUKA                     | 7   | MJCF       |
