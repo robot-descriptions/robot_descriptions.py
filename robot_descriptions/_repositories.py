@@ -140,6 +140,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="0f0ce7daefdd66c54e0909a6bf2c22154844f5f3",
         cache_path="jvrc_mj_description",
     ),
+    "LEAP_Hand_Sim": Repository(
+        url="https://github.com/leap-hand/LEAP_Hand_Sim.git",
+        commit="150bc3d4b61fd6619193ba5a8ef209f3609ced89",
+        cache_path="LEAP_Hand_Sim",
+    ),
     "kinova_mj_description": Repository(
         url="https://github.com/mathieu-celerier/kinova_mj_description.git",
         commit="cee556b0a438e6904634a90826d4e8d2e005cd1f",

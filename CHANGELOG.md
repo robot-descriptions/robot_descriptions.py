@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: LEAP Hand v1
+- Description: Shadow DEX-EE (MJCF) (thanks to @kevinzakka)
+- Description: Stretch 3 (MJCF) (thanks to @kevinzakka)
+
 ### Changed
 
 - Update repository for ``gen3_mj_description`` to ``mujoco_menagerie``
@@ -14,8 +18,6 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: Stretch 3 (MJCF) (thanks to @kevinzakka)
-- Description: Shadow DEX-EE (MJCF) (thanks to @kevinzakka)
 - Description: KUKA iiwa 7 (URDF)
 - Description: Unitree G1 (MJCF) (thanks to @kevinzakka)
 - Description: Unitree G1 (URDF) (thanks to @lvjonok)
