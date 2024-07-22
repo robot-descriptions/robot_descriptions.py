@@ -202,6 +202,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `barrett_hand_description`    | BarrettHand           | Barrett Technology       | 8   | URDF       |
 | `robotiq_2f85_description`    | Robotiq 2F-85         | Robotiq                  | 1   | URDF       |
 | `robotiq_2f85_mj_description` | Robotiq 2F-85         | Robotiq                  | 1   | MJCF       |
+| `shadow_dexee_mj_description` | Shadow DEX-EE         | The Shadow Robot Company | 12  | MJCF       |
 | `shadow_hand_mj_description`  | Shadow Hand           | The Shadow Robot Company | 24  | MJCF       |
 
 ### Humanoids
