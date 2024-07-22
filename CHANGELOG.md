@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+### Changed
+
+- Update repository for ``gen3_mj_description`` to ``mujoco_menagerie``
+
 ## [1.11.0] - 2024-06-27
 
 ### Added
