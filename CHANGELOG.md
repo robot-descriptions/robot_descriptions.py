@@ -6,7 +6,6 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: ANYmal D
 - Description: LEAP Hand v1
 - Description: Shadow DEX-EE (MJCF) (thanks to @kevinzakka)
 - Description: Stretch 3 (MJCF) (thanks to @kevinzakka)
