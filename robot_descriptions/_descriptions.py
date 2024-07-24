@@ -59,6 +59,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "anymal_b_mj_description": Description(Format.MJCF),
     "anymal_c_description": Description(Format.URDF),
     "anymal_c_mj_description": Description(Format.MJCF),
+    "anymal_d_description": Description(Format.URDF),
     "atlas_drc_description": Description(Format.URDF),
     "atlas_v4_description": Description(Format.URDF),
     "b1_description": Description(Format.URDF),
