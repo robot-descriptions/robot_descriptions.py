@@ -256,6 +256,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `anymal_b_mj_description`     | ANYmal B              | ANYbotics                | 12  | MJCF       |
 | `anymal_c_description`        | ANYmal C              | ANYbotics                | 12  | URDF       |
 | `anymal_c_mj_description`     | ANYmal C              | ANYbotics                | 12  | MJCF       |
+| `anymal_d_description`        | ANYmal D              | ANYbotics                | 12  | URDF       |
 | `b1_description`              | B1                    | UNITREE Robotics         | 12  | URDF       |
 | `spot_mj_description`         | Spot                  | Boston Dynamics          | 12  | MJCF       |
 | `go1_description`             | Go1                   | UNITREE Robotics         | 12  | URDF       |

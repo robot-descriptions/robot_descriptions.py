@@ -36,6 +36,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="f160b8f7fed840c47a6febe8e2bc78b32bf43a68",
         cache_path="anymal_c_simple_description",
     ),
+    "anymal_d_simple_description": Repository(
+        url="https://github.com/ANYbotics/anymal_d_simple_description.git",
+        commit="6adc14720aab583613975e5a9d6d4fa3cfcdd081",
+        cache_path="anymal_d_simple_description",
+    ),
     "baxter_common": Repository(
         url="https://github.com/RethinkRobotics/baxter_common.git",
         commit="v1.2.0",
