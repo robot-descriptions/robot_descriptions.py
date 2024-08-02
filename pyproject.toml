@@ -45,9 +45,10 @@ opts = [
 robot_descriptions = "robot_descriptions._command_line:main"
 
 [project.urls]
-Source = "https://github.com/stephane-caron/robot_descriptions.py"
-Tracker = "https://github.com/stephane-caron/robot_descriptions.py/issues"
-Changelog = "https://github.com/stephane-caron/robot_descriptions.py/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/robot-descriptions"
+Source = "https://github.com/robot-descriptions/robot_descriptions.py"
+Tracker = "https://github.com/robot-descriptions/robot_descriptions.py/issues"
+Changelog = "https://github.com/robot-descriptions/robot_descriptions.py/blob/main/CHANGELOG.md"
 
 [tool.black]
 line-length = 79
