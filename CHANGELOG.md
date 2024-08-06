@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Description: LEAP Hand v1
 - Description: Shadow DEX-EE (MJCF) (thanks to @kevinzakka)
 - Description: Stretch 3 (MJCF) (thanks to @kevinzakka)
+- Pinocchio: load MJCF robot descriptions (thanks to @lvjonok)
 
 ### Changed
 
