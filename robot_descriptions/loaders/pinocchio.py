@@ -53,9 +53,15 @@ def load_robot_description(
     module = import_module(f"robot_descriptions.{description_name}")
     if commit is not None:
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
-    robot = pin.RobotWrapper.BuildFromURDF(
-        filename=module.URDF_PATH,
-        package_dirs=get_package_dirs(module),
-        root_joint=root_joint,
-    )
+    if hasattr(module, "URDF_PATH"):
+        robot = pin.RobotWrapper.BuildFromURDF(
+            filename=module.URDF_PATH,
+            package_dirs=get_package_dirs(module),
+            root_joint=root_joint,
+        )
+    elif hasattr(module, "MJCF_PATH"):
+        robot = pin.RobotWrapper.BuildFromMJCF(
+            filename=module.MJCF_PATH,
+            root_joint=root_joint,
+        )
     return robot
