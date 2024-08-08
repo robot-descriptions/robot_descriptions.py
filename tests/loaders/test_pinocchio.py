@@ -11,7 +11,6 @@ from robot_descriptions.loaders.pinocchio import load_robot_description
 
 
 class TestPinocchio(unittest.TestCase):
-
     """
     Check that all descriptions are loaded properly in Pinocchio.
     """
@@ -34,11 +33,10 @@ class TestPinocchio(unittest.TestCase):
         return test
 
 
-# Add a test function for each URDF description
+# Add a test function for each description
 for name, description in DESCRIPTIONS.items():
-    if description.has_urdf:
-        setattr(
-            TestPinocchio,
-            f"test_{name}",
-            TestPinocchio.get_test_for_description(name),
-        )
+    setattr(
+        TestPinocchio,
+        f"test_{name}",
+        TestPinocchio.get_test_for_description(name),
+    )
