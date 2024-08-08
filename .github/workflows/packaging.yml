@@ -1,0 +1,63 @@
+name: Packaging
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+        branches: [ main ]
+
+jobs:
+    conda:
+        name: "Install from conda-forge"
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                # See https://github.com/mamba-org/setup-micromamba?tab=readme-ov-file#about-login-shells
+                shell: bash -leo pipefail {0}
+        steps:
+            - name: "Install Conda environment with Micromamba"
+              uses: mamba-org/setup-micromamba@v1
+              with:
+                  cache-downloads: true
+                  environment-name: pypi
+                  create-args: >-
+                      python=3.11
+                      robot_descriptions
+
+            - name: "Test module import"
+              run: python -c "import robot_descriptions"
+
+    pypi:
+        name: "Install from PyPI"
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Install dependencies"
+              run: |
+                  python -m pip install --upgrade pip
+
+            - name: "Install package"
+              run: python -m pip install robot_descriptions
+
+            - name: "Test module import"
+              run: python -c "import robot_descriptions"
+
+    testpypi:
+        name: "Install from TestPyPI"
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Install dependencies"
+              run: |
+                  python -m pip install --upgrade pip
+
+            - name: "Install package"
+              run: python -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ robot_descriptions
+
+            - name: "Test module import"
+              run: python -c "import robot_descriptions"
+
+    packaging_success:
+        name: "Packaging success"
+        runs-on: ubuntu-latest
+        needs: [conda, pypi, testpypi]
+        steps:
+            - run: echo "Packaging workflow completed successfully"
