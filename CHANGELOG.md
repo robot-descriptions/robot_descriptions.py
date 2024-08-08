@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.12.0] - 2024-08-08
+
 ### Added
 
 - Description: LEAP Hand v1
@@ -374,7 +376,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.11.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.12.0...HEAD
+[1.12.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.11.0...v1.12.0
 [1.11.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.10.0...v1.11.0
 [1.10.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.9.0...v1.10.0
 [1.9.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.8.1...v1.9.0
