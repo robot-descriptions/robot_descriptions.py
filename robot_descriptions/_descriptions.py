@@ -62,6 +62,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "atlas_drc_description": Description(Format.URDF),
     "atlas_v4_description": Description(Format.URDF),
     "b1_description": Description(Format.URDF),
+    "b2_description": Description(Format.URDF),
     "barrett_hand_description": Description(Format.URDF),
     "baxter_description": Description(Format.URDF),
     "bolt_description": Description(Format.URDF),

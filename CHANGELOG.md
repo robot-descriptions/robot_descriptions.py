@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Unitree B2
+
 ## [1.12.0] - 2024-08-08
 
 ### Added
