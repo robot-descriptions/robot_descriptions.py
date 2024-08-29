@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Description: Unitree B2
 
+### Changed
+
+- Upkie: Update repository to v2.1.0
+
 ## [1.12.0] - 2024-08-08
 
 ### Added
@@ -19,7 +23,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Update repository for ``gen3_mj_description`` to ``mujoco_menagerie``
+- Update repository for `gen3_mj_description` to `mujoco_menagerie`
 
 ## [1.11.0] - 2024-06-27
 
@@ -37,9 +41,9 @@ All notable changes to this project will be documented in this file.
 - Bump minimum Python version to 3.9
 - CICD: Pin NumPy version to <2 for PyBullet and yourdfpy
 - CICD: Update ruff to 0.2.2
-- Rename ``iiwa_description`` to ``iiwa14_description``
-- Rename ``iiwa_mj_description`` to ``iiwa14_mj_description``
-- Update repository for ``iiwa14_description`` to ``drake_models``
+- Rename `iiwa_description` to `iiwa14_description`
+- Rename `iiwa_mj_description` to `iiwa14_mj_description`
+- Update repository for `iiwa14_description` to `drake_models`
 
 ## [1.10.0] - 2024-04-24
 
@@ -169,7 +173,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - A1: use original URDF from Unitree
-- Updated ``unitree_ros`` repository
+- Updated `unitree_ros` repository
 
 ## [1.3.0] - 2022-12-16
 
@@ -218,7 +222,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- MuJoCo examples: try ``mj_description`` suffix rather than ``description``
+- MuJoCo examples: try `mj_description` suffix rather than `description`
 - Update Cassie URDF description to an MIT-licensed repository
 
 ### Fixed
@@ -260,7 +264,7 @@ All notable changes to this project will be documented in this file.
 - Description: Poppy Ergo Jr
 - Description: Poppy Torso
 - Loader: PyBullet
-- Show description formats in ``robot_descriptions list``
+- Show description formats in `robot_descriptions list`
 - Unit tests to check that Pinocchio loads all descriptions successfully
 - Unit tests to check that PyBullet loads all descriptions successfully
 
@@ -273,7 +277,7 @@ All notable changes to this project will be documented in this file.
 - Ginger: update cache path to match package name
 - Go1: Split description again into URDF and MJCF again
 - Match cache path with package name when it helps PyBullet
-- Remove ``MESHES_PATH`` attribute
+- Remove `MESHES_PATH` attribute
 
 ## [0.3.0] - 2022-09-12
 
@@ -317,12 +321,12 @@ All notable changes to this project will be documented in this file.
 - Example: show in MuJoCo
 - Example: show in PyBullet
 - Example: show in yourdfpy
-- New ``REPOSITORY_PATH`` member for each description
+- New `REPOSITORY_PATH` member for each description
 - Support MJCF descriptions
 
 ### Changed
 
-- ``PATH`` becomes ``PACKAGE_PATH``
+- `PATH` becomes `PACKAGE_PATH`
 
 ### Fixed
 
@@ -333,7 +337,7 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - Command line usage instructions
-- Upload coverage results based on ``USING_COVERAGE`` setting
+- Upload coverage results based on `USING_COVERAGE` setting
 
 ## [0.1.0] - 2022-09-05
 
