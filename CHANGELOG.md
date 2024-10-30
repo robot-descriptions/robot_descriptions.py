@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.13.0] - 2024-10-30
+
 ### Added
 
 - Description: Left and right LEAP hand (MJCF) (thanks to @kevinzakka)
@@ -387,7 +389,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.12.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.13.0...HEAD
+[1.13.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.12.0...v1.13.0
 [1.12.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.11.0...v1.12.0
 [1.11.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.10.0...v1.11.0
 [1.10.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.9.0...v1.10.0
