@@ -120,6 +120,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "simple_humanoid_description": Description(Format.URDF),
     "skydio_x2_description": Description(Format.URDF),
     "skydio_x2_mj_description": Description(Format.MJCF),
+    "so_arm100": Description(Format.URDF),
     "solo_description": Description(Format.URDF),
     "spryped_description": Description(Format.URDF),
     "stretch_description": Description(Format.URDF),

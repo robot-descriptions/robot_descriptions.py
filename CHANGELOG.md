@@ -6,9 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: Unitree B2
 - Description: Left and right LEAP hand (MJCF) (thanks to @kevinzakka)
 - Description: PAL Talos (MJCF) (thanks to @kevinzakka)
+- Description: SO-ARM100
+- Description: Unitree B2
 
 ### Changed
 
