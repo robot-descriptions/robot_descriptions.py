@@ -65,7 +65,7 @@ jobs:
         strategy:
             matrix:
                 python-version: ["3.9"]
-                loader: ["idyntree", "mujoco", "pinocchio", "pybullet", "robomeshcat", "yourdfpy"]
+                loader: ["idyntree", "mujoco", "pybullet", "robomeshcat", "yourdfpy"]
 
         steps:
             - name: "Checkout sources"
@@ -84,6 +84,38 @@ jobs:
             - name: "Run loader tests"
               run: |
                   tox -e loader-${{ matrix.loader }}
+
+    loader-pinocchio:
+        name: "Loader: pinocchio with Python ${{ matrix.python-version }}"
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                python-version: ["3.9"]
+
+        defaults:
+            run:
+                # See https://github.com/mamba-org/setup-micromamba?tab=readme-ov-file#about-login-shells
+                shell: bash -leo pipefail {0}
+
+        steps:
+            - name: "Checkout sources"
+              uses: actions/checkout@v4
+
+            - name: "Install Conda environment with Micromamba"
+              uses: mamba-org/setup-micromamba@v1
+              with:
+                  micromamba-version: '1.5.8-0'
+                  environment-name: pinocchio_test_env
+                  create-args: >-
+                      python=${{ matrix.python-version }}
+                      pinocchio>=3.1.0
+                  cache-environment: true
+                  post-cleanup: 'all'
+
+            - name: "Run loader tests"
+              run: |
+                  python -m unittest tests/loaders/test_pinocchio.py --failfast
 
     ci_success:
         name: "CI success"
