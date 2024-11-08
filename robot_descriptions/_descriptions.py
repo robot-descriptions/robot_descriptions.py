@@ -65,6 +65,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "b2_description": Description(Format.URDF),
     "barrett_hand_description": Description(Format.URDF),
     "baxter_description": Description(Format.URDF),
+    "berkeley_humanoid": Description(Format.URDF),
     "bolt_description": Description(Format.URDF),
     "cassie_description": Description(Format.URDF),
     "cassie_mj_description": Description(Format.MJCF),

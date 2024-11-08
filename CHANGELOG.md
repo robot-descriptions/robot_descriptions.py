@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Berkeley Humanoid
+
 ## [1.13.0] - 2024-10-30
 
 ### Added
