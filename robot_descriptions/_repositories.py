@@ -42,7 +42,7 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="baxter_common",
     ),
     "berkeley_humanoid_description": Repository(
-        url="https://github.com/jhu-lcsr-attic/bhand_model.git",
+        url="https://github.com/HybridRobotics/berkeley_humanoid_description",
         commit="d0d13d3f81d795480e25ed1910eaf83d5f0a1d0b",
         cache_path="berkeley_humanoid_description",
     ),
