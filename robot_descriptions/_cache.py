@@ -85,7 +85,7 @@ def clone_to_directory(
             progress=progress_bar.update,
         )
 
-    if commit is not None:
+    if commit is not None and commit != clone.head.object.hexsha:
         try:
             clone.git.checkout(commit)
         except GitCommandError:
