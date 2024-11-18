@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Description: Berkeley Humanoid
 
+### Fixed
+
+- cache: Only call git checkout when it is not head of the working copy
+
 ## [1.13.0] - 2024-10-30
 
 ### Added
