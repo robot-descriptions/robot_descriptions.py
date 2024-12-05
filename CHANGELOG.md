@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - cache: Only call git checkout when it is not head of the working copy
+- Example: simulated loaded robot description in PyBullet
 
 ## [1.13.0] - 2024-10-30
 
