@@ -18,6 +18,4 @@ REPOSITORY_PATH: str = _clone_to_cache(
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "trs_so_arm100")
 
-MJCF_PATH: str = _path.join(
-    PACKAGE_PATH, "so_arm100.xml"
-)
+MJCF_PATH: str = _path.join(PACKAGE_PATH, "so_arm100.xml")
