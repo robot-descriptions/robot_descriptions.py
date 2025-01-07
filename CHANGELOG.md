@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: SO-ARM100 (MJCF)
+- Description: SO-ARM100 (MJCF) (thanks to @JafarAbdi)
 - Description: Berkeley Humanoid
 
 ### Fixed
