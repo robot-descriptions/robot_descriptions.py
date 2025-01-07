@@ -294,7 +294,7 @@ If you use this project in your works, please cite as follows:
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
   version = {1.14.0},
-  year = {2024}
+  year = {2025}
 }
 ```
 
