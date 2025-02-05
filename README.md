@@ -198,17 +198,18 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ### End effectors
 
-| Name                          | Robot                 | Maker                      | DOF | Format     |
-|-------------------------------|-----------------------|----------------------------|-----|------------|
-| `allegro_hand_description`    | Allegro Hand          | Wonik Robotics             | 16  | URDF       |
-| `allegro_hand_mj_description` | Allegro Hand          | Wonik Robotics             | 16  | MJCF       |
-| `barrett_hand_description`    | BarrettHand           | Barrett Technology         | 8   | URDF       |
-| `leap_hand_v1`                | LEAP Hand v1          | Carnegie Mellon University | 16  | URDF       |
-| `leap_hand_mj_description`    | LEAP Hand             | Carnegie Mellon University | 16  | MJCF       |
-| `robotiq_2f85_description`    | Robotiq 2F-85         | Robotiq                    | 1   | URDF       |
-| `robotiq_2f85_mj_description` | Robotiq 2F-85         | Robotiq                    | 1   | MJCF       |
-| `shadow_dexee_mj_description` | Shadow DEX-EE         | The Shadow Robot Company   | 12  | MJCF       |
-| `shadow_hand_mj_description`  | Shadow Hand           | The Shadow Robot Company   | 24  | MJCF       |
+| Name                             | Robot                 | Maker                      | DOF | Format     |
+|----------------------------------|-----------------------|----------------------------|-----|------------|
+| `allegro_hand_description`       | Allegro Hand          | Wonik Robotics             | 16  | URDF       |
+| `allegro_hand_mj_description`    | Allegro Hand          | Wonik Robotics             | 16  | MJCF       |
+| `barrett_hand_description`       | BarrettHand           | Barrett Technology         | 8   | URDF       |
+| `leap_hand_v1`                   | LEAP Hand v1          | Carnegie Mellon University | 16  | URDF       |
+| `leap_hand_mj_description`       | LEAP Hand             | Carnegie Mellon University | 16  | MJCF       |
+| `robotiq_2f85_description`       | Robotiq 2F-85         | Robotiq                    | 1   | URDF       |
+| `robotiq_2f85_mj_description`    | Robotiq 2F-85         | Robotiq                    | 1   | MJCF       |
+| `robotiq_2f85_v4_mj_description` | Robotiq 2F-85         | Robotiq                    | 1   | MJCF       |
+| `shadow_dexee_mj_description`    | Shadow DEX-EE         | The Shadow Robot Company   | 12  | MJCF       |
+| `shadow_hand_mj_description`     | Shadow Hand           | The Shadow Robot Company   | 24  | MJCF       |
 
 ### Humanoids
 

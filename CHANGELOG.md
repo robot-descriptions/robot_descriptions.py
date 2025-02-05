@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added 
+
+- Description: Robotiq 2F-85 (MJCF V4)
+
 ## [1.14.0] - 2025-01-07
 
 ### Added
