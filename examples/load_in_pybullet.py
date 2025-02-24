@@ -7,7 +7,7 @@
 """
 Load a robot description, specified from the command line, in PyBullet.
 
-This example requires PyBullet, which is installed by ``pip install pybullet``.
+This example requires PyBullet, which is installed by `pip install pybullet`.
 """
 
 import argparse

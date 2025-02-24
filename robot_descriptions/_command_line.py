@@ -115,7 +115,7 @@ def show(
     if not hasattr(module, "URDF_PATH"):
         raise ValueError(
             "show command only applies to URDF, check out the "
-            "``show_in_mujoco.py`` example for MJCF descriptions"
+            "`show_in_mujoco.py` example for MJCF descriptions"
         )
 
     try:
@@ -123,7 +123,7 @@ def show(
     except ModuleNotFoundError as exc:
         raise ValueError(
             "This command requires yourdfpy. You can installed it by: "
-            "``pip install yourdfpy``"
+            "`pip install yourdfpy`"
         ) from exc
 
     if collision:

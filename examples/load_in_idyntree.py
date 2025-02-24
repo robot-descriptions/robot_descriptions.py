@@ -8,7 +8,7 @@
 Load a robot description, specified from the command line, in iDynTree.
 
 This example requires iDynTree, which can be installed by
-``conda install -c conda-forge idyntree``.
+`conda install -c conda-forge idyntree`.
 """
 
 import argparse

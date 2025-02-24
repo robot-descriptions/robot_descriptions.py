@@ -7,7 +7,7 @@
 """
 Load a robot description, specified from the command line, in Pinocchio.
 
-This example requires Pinocchio, which is installed by ``pip install pin``.
+This example requires Pinocchio, installed by e.g. `conda install pinocchio`.
 """
 
 import argparse

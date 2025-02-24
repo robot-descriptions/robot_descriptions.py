@@ -7,8 +7,8 @@
 """
 Show a robot description, specified from the command line, using MuJoCo.
 
-This example requires MuJoCo, which is installed by ``pip install mujoco``, and
-the MuJoCo viewer installed by ``pip install mujoco-python-viewer``.
+This example requires MuJoCo, which is installed by `pip install mujoco`, and
+the MuJoCo viewer installed by `pip install mujoco-python-viewer`.
 """
 
 import argparse
@@ -19,7 +19,7 @@ try:
     import mujoco_viewer
 except ImportError as e:
     raise ImportError(
-        "MuJoCo viewer not found, " "try ``pip install mujoco-python-viewer``"
+        "MuJoCo viewer not found, " "try `pip install mujoco-python-viewer`"
     ) from e
 
 from robot_descriptions.loaders.mujoco import load_robot_description

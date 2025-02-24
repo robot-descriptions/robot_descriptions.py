@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 - Description: AgileX PiPER
 - Description: Robotiq 2F-85 (MJCF V4) (thanks to @peterdavidfagan)
 
+### Fixed
+
+- minor: Use single backticks for inline command-line instructions
+
 ## [1.14.0] - 2025-01-07
 
 ### Added

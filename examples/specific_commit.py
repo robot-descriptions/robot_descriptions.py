@@ -6,9 +6,9 @@
 
 """
 We can load specific commit to pin the version of any robot description using
-the ``commit`` keyword argument. In this example, we load a Universal Robots
-UR5e from a specific commit of the MuJoCo Menagerie repository that distributes
-it. This example requires MuJoCo, which is installed by ``pip install mujoco``.
+the `commit` keyword argument. In this example, we load a Universal Robots UR5e
+from a specific commit of the MuJoCo Menagerie repository that distributes it.
+This example requires MuJoCo, which is installed by `pip install mujoco`.
 
 See also:
     https://github.com/robot-descriptions/robot_descriptions.py/discussions/86

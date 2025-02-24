@@ -7,7 +7,7 @@
 """
 Load a robot description, specified from the command line, using yourdfpy.
 
-This example requires yourdfpy, which is installed by ``pip install yourdfpy``.
+This example requires yourdfpy, which is installed by `pip install yourdfpy`.
 """
 
 import argparse

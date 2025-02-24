@@ -16,7 +16,7 @@ try:
 except ModuleNotFoundError as e:
     raise ModuleNotFoundError(
         "This feature requires 'yourdfpy', "
-        "which can be installed by ``pip install yourdfpy``"
+        "which can be installed by `pip install yourdfpy`"
     ) from e
 
 
