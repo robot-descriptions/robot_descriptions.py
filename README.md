@@ -130,32 +130,32 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ### Arms
 
-| Name                          | Robot                 | Maker                    | DOF | Format     |
-|-------------------------------|-----------------------|--------------------------|-----|------------|
-| `edo_description`             | e.DO                  | Comau                    | 6   | URDF       |
-| `fanuc_m710ic_description`    | M-710iC               | Fanuc                    | 6   | URDF       |
-| `fr3_mj_description`          | FR3                   | Franka Robotics          | 7   | MJCF       |
-| `gen2_description`            | Gen2                  | Kinova                   | 6   | URDF       |
-| `gen3_description`            | Gen3                  | Kinova                   | 6   | URDF       |
-| `gen3_mj_description`         | Gen3                  | Kinova                   | 7   | MJCF       |
-| `iiwa14_description`          | iiwa 14               | KUKA                     | 7   | URDF       |
-| `iiwa14_mj_description`       | iiwa 14               | KUKA                     | 7   | MJCF       |
-| `iiwa7_description`           | iiwa 7                | KUKA                     | 7   | URDF       |
-| `panda_description`           | Panda                 | Franka Robotics          | 8   | URDF       |
-| `panda_mj_description`        | Panda                 | Franka Robotics          | 8   | MJCF       |
-| `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | 6   | URDF       |
-| `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | 7   | MJCF       |
-| `so_arm100`                   | SO-ARM100             | The Robot Studio         | 6   | URDF       |
-| `so_arm100_mj_description`    | SO-ARM100             | The Robot Studio         | 6   | MJCF       |
-| `ur10_description`            | UR10                  | Universal Robots         | 6   | URDF       |
-| `ur10e_mj_description`        | UR10e                 | Universal Robots         | 6   | MJCF       |
-| `ur3_description`             | UR3                   | Universal Robots         | 6   | URDF       |
-| `ur5_description`             | UR5                   | Universal Robots         | 6   | URDF       |
-| `ur5e_mj_description`         | UR5e                  | Universal Robots         | 6   | MJCF       |
-| `viper_mj_description`        | ViperX                | Trossen Robotics         | 8   | MJCF       |
-| `widow_mj_description`        | WidowX                | Trossen Robotics         | 8   | MJCF       |
-| `xarm7_mj_description`        | xArm7                 | UFACTORY                 | 7   | MJCF       |
-| `z1_description`              | Z1                    | UNITREE Robotics         | 6   | URDF       |
+| Name                          | Robot                 | Maker                    | Format     | License      |
+|-------------------------------|-----------------------|--------------------------|------------|--------------|
+| `edo_description`             | e.DO                  | Comau                    | URDF       | BSD-3-Clause |
+| `fanuc_m710ic_description`    | M-710iC               | Fanuc                    | URDF       | BSD-3-Clause |
+| `fr3_mj_description`          | FR3                   | Franka Robotics          | MJCF       | Apache-2.0   |
+| `gen2_description`            | Gen2                  | Kinova                   | URDF       | BSD-3-Clause |
+| `gen3_description`            | Gen3                  | Kinova                   | URDF       | MIT          |
+| `gen3_mj_description`         | Gen3                  | Kinova                   | MJCF       | BSD-2-Clause |
+| `iiwa14_description`          | iiwa 14               | KUKA                     | URDF       | BSD-3-Clause |
+| `iiwa14_mj_description`       | iiwa 14               | KUKA                     | MJCF       | BSD-3-Clause |
+| `iiwa7_description`           | iiwa 7                | KUKA                     | URDF       | MIT          |
+| `panda_description`           | Panda                 | Franka Robotics          | URDF       | Apache-2.0   |
+| `panda_mj_description`        | Panda                 | Franka Robotics          | MJCF       | Apache-2.0   |
+| `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | URDF       | GPL-3.0      |
+| `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | MJCF       | Apache-2.0   |
+| `so_arm100`                   | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
+| `so_arm100_mj_description`    | SO-ARM100             | The Robot Studio         | MJCF       | Apache-2.0   |
+| `ur10_description`            | UR10                  | Universal Robots         | URDF       | Apache-2.0   |
+| `ur10e_mj_description`        | UR10e                 | Universal Robots         | MJCF       | BSD-3-Clause |
+| `ur3_description`             | UR3                   | Universal Robots         | URDF       | Apache-2.0   |
+| `ur5_description`             | UR5                   | Universal Robots         | URDF       | Apache-2.0   |
+| `ur5e_mj_description`         | UR5e                  | Universal Robots         | MJCF       | BSD-3-Clause |
+| `viper_mj_description`        | ViperX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
+| `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
+| `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
+| `z1_description`              | Z1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 
 ### Bipeds
 
