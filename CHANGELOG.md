@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: AgileX PiPER
 - Description: Robotiq 2F-85 (MJCF V4) (thanks to @peterdavidfagan)
 
 ## [1.14.0] - 2025-01-07

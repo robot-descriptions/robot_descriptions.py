@@ -143,6 +143,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `iiwa7_description`           | iiwa 7                | KUKA                     | URDF       | MIT          |
 | `panda_description`           | Panda                 | Franka Robotics          | URDF       | Apache-2.0   |
 | `panda_mj_description`        | Panda                 | Franka Robotics          | MJCF       | Apache-2.0   |
+| `piper_description`           | PiPER                 | AgileX                   | URDF       | MIT          |
 | `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | URDF       | GPL-3.0      |
 | `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | MJCF       | Apache-2.0   |
 | `so_arm100`                   | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
