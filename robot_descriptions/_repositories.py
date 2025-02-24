@@ -180,6 +180,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="cd9715bb5df7ad57445d953db7b1924255305944",
         cache_path="pepper_description",
     ),
+    "Piper_ros": Repository(
+        url="https://github.com/agilexrobotics/Piper_ros.git",
+        commit="f2ec6a67e1f404bcb478529e89861ccdf43fa298",
+        cache_path="Piper_ros",
+    ),
     "poppy_ergo_jr_description": Repository(
         url="https://github.com/poppy-project/poppy_ergo_jr_description.git",
         commit="7eb32bd385afa11dea5e6a6b6a4a86a0243aaa2b",
