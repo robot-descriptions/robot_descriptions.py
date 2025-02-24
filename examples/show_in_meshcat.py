@@ -7,8 +7,8 @@
 """
 Show a robot descriptions, specified from the command line, using MeshCat.
 
-This example requires Pinocchio, which is installed by ``pip install pin``, and
-MeshCat, which is installed by ``pip install meshcat``.
+This example requires Pinocchio, installed by e.g. `conda install pinocchio`,
+and MeshCat, which is installed by `pip install meshcat`.
 """
 
 import argparse
