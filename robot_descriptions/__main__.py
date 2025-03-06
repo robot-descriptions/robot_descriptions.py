@@ -48,9 +48,9 @@ def get_argument_parser() -> argparse.ArgumentParser:
         help="list all available robot descriptions",
     )
 
-    # show --------------------------------------------------------------------
+    # show_in_yourdfpy --------------------------------------------------------
     parser_show = subparsers.add_parser(
-        "show",
+        "show_in_yourdfpy",
         help="load and display a given robot description",
     )
     parser_show.add_argument(
@@ -96,7 +96,7 @@ def list_descriptions():
         print(f"- {name} [{formats}]")
 
 
-def show(
+def show_in_yourdfpy(
     name: str,
     configuration: List[float],
     collision: bool,
@@ -114,8 +114,8 @@ def show(
         module = import_module(f"robot_descriptions.{name}_description")
     if not hasattr(module, "URDF_PATH"):
         raise ValueError(
-            "show command only applies to URDF, check out the "
-            "`show_in_mujoco.py` example for MJCF descriptions"
+            "This command only works with URDF descriptions, use "
+            "`show_in_mujoco` for MJCF descriptions"
         )
 
     try:
@@ -156,7 +156,7 @@ def animate(name: str) -> None:
     if not hasattr(module, "URDF_PATH"):
         raise ValueError(
             "animation is only available for URDF descriptions, "
-            "check out the ``show_in_mujoco.py`` example for MJCF"
+            "check out the `show_in_mujoco.py` example for MJCF"
         )
 
     print(
@@ -172,9 +172,13 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.subcmd == "list":
         list_descriptions()
-    elif args.subcmd == "show":
-        show(args.name, args.configuration, args.collision)
+    elif args.subcmd == "show_in_yourdfpy":
+        show_in_yourdfpy(args.name, args.configuration, args.collision)
     elif args.subcmd == "animate":
         animate(args.name)
     else:  # no subcommand
         parser.print_help()
+
+
+if __name__ == "__main__":
+    main()

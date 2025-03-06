@@ -52,6 +52,16 @@ Loaders are implemented for the following robotics software:
 
 Loading will automatically download the robot description if needed, and cache it to a local directory.
 
+### Show a description
+
+You can display a robot description directly from the command line:
+
+```console
+python -m robot_descriptions show_in_meshcat go2_description
+```
+
+A `robot_descriptions` alias for `python -m robot_descriptions` is also available.
+
 ### Import as submodule
 
 You can also import a robot description directly as a submodule of `robot_descriptions`:
@@ -103,14 +113,6 @@ Visualizing a robot description:
 - [PyBullet](https://github.com/robot-descriptions/robot_descriptions.py/tree/main/examples/show_in_pybullet.py)
 - [RoboMeshCat](https://github.com/robot-descriptions/robot_descriptions.py/tree/main/examples/show_in_robomeshcat.py)
 - [yourdfpy](https://github.com/robot-descriptions/robot_descriptions.py/tree/main/examples/show_in_yourdfpy.py)
-
-## Command line tool
-
-The command line tool can be used to visualize any of the robot descriptions below. For example:
-
-```console
-robot_descriptions show solo_description
-```
 
 ## Descriptions
 
