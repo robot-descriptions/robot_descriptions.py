@@ -58,6 +58,26 @@ def get_argument_parser() -> argparse.ArgumentParser:
         help="name of the robot description",
     )
 
+    # show_in_mujoco --------------------------------------------------------
+    parser_mujoco = subparsers.add_parser(
+        "show_in_mujoco",
+        help="load and display a given robot description in mujoco",
+    )
+    parser_mujoco.add_argument(
+        "name",
+        help="name of the robot description",
+    )
+
+    # show_in_pybullet --------------------------------------------------------
+    parser_pybullet = subparsers.add_parser(
+        "show_in_pybullet",
+        help="load and display a given robot description in pybullet",
+    )
+    parser_pybullet.add_argument(
+        "name",
+        help="name of the robot description",
+    )
+
     # show_in_yourdfpy --------------------------------------------------------
     parser_yourdfpy = subparsers.add_parser(
         "show_in_yourdfpy",
@@ -132,6 +152,60 @@ def show_in_meshcat(name: str) -> None:
     robot.display(robot.q0)
 
     input("Press Enter to close MeshCat and terminate... ")
+
+
+def show_in_mujoco(name: str) -> None:
+    """Show a robot description in MuJoCo.
+
+    Args:
+        name: Name of the robot description.
+    """
+    import mujoco
+
+    try:
+        import mujoco_viewer
+    except ImportError as e:
+        raise ImportError(
+            "MuJoCo viewer not found, "
+            "try `pip install mujoco-python-viewer`"
+        ) from e
+
+    from robot_descriptions.loaders.mujoco import load_robot_description
+
+    try:
+        model = load_robot_description(name)
+    except ModuleNotFoundError:
+        model = load_robot_description(f"{name}_mj_description")
+
+    data = mujoco.MjData(model)
+    viewer = mujoco_viewer.MujocoViewer(model, data)
+    mujoco.mj_step(model, data)  # step at least once to load model in viewer
+    while viewer.is_alive:
+        viewer.render()
+    viewer.close()
+
+
+def show_in_pybullet(name: str) -> None:
+    """Show a robot description in PyBullet.
+
+    Args:
+        name: Name of the robot description.
+    """
+    import pybullet
+
+    from robot_descriptions.loaders.pybullet import load_robot_description
+
+    pybullet.connect(pybullet.GUI)
+    pybullet.configureDebugVisualizer(pybullet.COV_ENABLE_SHADOWS, 0)
+    pybullet.configureDebugVisualizer(pybullet.COV_ENABLE_GUI, 0)
+
+    try:
+        load_robot_description(name)
+    except ModuleNotFoundError:
+        load_robot_description(f"{name}_description")
+
+    input("Press Enter to close PyBullet and terminate... ")
+    pybullet.disconnect()
 
 
 def show_in_yourdfpy(
@@ -212,6 +286,10 @@ def main(argv=None):
         list_descriptions()
     elif args.subcmd == "show_in_meshcat":
         show_in_meshcat(args.name)
+    elif args.subcmd == "show_in_mujoco":
+        show_in_mujoco(args.name)
+    elif args.subcmd == "show_in_pybullet":
+        show_in_pybullet(args.name)
     elif args.subcmd == "show_in_yourdfpy":
         show_in_yourdfpy(args.name, args.configuration, args.collision)
     elif args.subcmd == "animate":
