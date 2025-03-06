@@ -119,6 +119,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "robotiq_2f85_mj_description": Description(Format.MJCF),
     "robotiq_2f85_v4_mj_description": Description(Format.MJCF),
     "romeo_description": Description(Format.URDF),
+    "rsk_description": Description(Format.URDF),
     "sawyer_mj_description": Description(Format.MJCF),
     "shadow_hand_mj_description": Description(Format.MJCF),
     "simple_humanoid_description": Description(Format.URDF),

@@ -125,6 +125,7 @@ Available robot descriptions ([gallery](https://github.com/robot-descriptions/aw
 - [Humanoids](#humanoids)
 - [Mobile manipulators](#mobile-manipulators)
 - [Quadrupeds](#quadrupeds)
+- [Wheeled](#wheeled)
 
 The DOF column denotes the number of actuated degrees of freedom.
 
@@ -277,6 +278,12 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `mini_cheetah_description`    | Mini Cheetah          | MIT                      | 12  | URDF       |
 | `minitaur_description`        | Minitaur              | Ghost Robotics           | 16  | URDF       |
 | `solo_description`            | Solo                  | ODRI                     | 12  | URDF       |
+
+### Wheeled
+
+| Name                          | Robot                 | Maker                    | Format     | License |
+|-------------------------------|-----------------------|--------------------------|------------|---------|
+| `rsk_description`             | RSK Omnidirectional   | Robot Soccer Kit         | URDF       | MIT     |
 
 ## Contributing
 

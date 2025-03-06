@@ -175,6 +175,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="54cdeb1dbfb529b79ae3185a53e24fce26e1b74b",
         cache_path="nasa-urdf-robots",
     ),
+    "onshape-to-robot-examples": Repository(
+        url="https://github.com/Rhoban/onshape-to-robot-examples.git",
+        commit="911abb069c781e4c717c10643b975f55f7a64fe8",
+        cache_path="onshape-to-robot-examples",
+    ),
     "pepper_description": Repository(
         url="https://github.com/jrl-umi3218/pepper_description.git",
         commit="cd9715bb5df7ad57445d953db7b1924255305944",
