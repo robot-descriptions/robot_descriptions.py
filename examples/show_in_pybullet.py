@@ -7,7 +7,8 @@
 """
 Show a robot description, specified from the command line, using PyBullet.
 
-This example requires PyBullet, which is installed by `pip install pybullet`.
+This example is equivalent to `python -m robot_descriptions show_in_pybullet`.
+It requires PyBullet, which can be installed by `pip install pybullet`.
 """
 
 import argparse

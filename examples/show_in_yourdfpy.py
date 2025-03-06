@@ -7,13 +7,9 @@
 """
 Show a robot description, specified from the command line, using yourdfpy.
 
-Note:
-    You can also use `python -m robot_descriptions show_in_yourdfpy` from the
-    command line.
-
-This example requires `yourdfpy` which is an optional dependency. It can be
-installed separately (``pip install yourdfpy``), or when robot descriptions are
-installed with optional dependencies `pip install robot_descriptions[opts]`.
+This example is equivalent to `python -m robot_descriptions show_in_yourdfpy`.
+It requires `yourdfpy`, an optional dependency that can be installed by `pip
+install yourdfpy`.
 """
 
 import argparse
