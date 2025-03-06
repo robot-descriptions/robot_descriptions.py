@@ -10,6 +10,11 @@ All notable changes to this project will be documented in this file.
 - Description: AgileX PiPER (URDF)
 - Description: Robot Soccer Kit
 - Description: Robotiq 2F-85 (MJCF V4) (thanks to @peterdavidfagan)
+- CLI: Add `show_in_meshcat` command
+
+### Changed
+
+- Enable command-line to run from `python -m robot_descriptions`
 
 ### Fixed
 

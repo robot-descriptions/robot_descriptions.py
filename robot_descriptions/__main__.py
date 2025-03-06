@@ -48,23 +48,33 @@ def get_argument_parser() -> argparse.ArgumentParser:
         help="list all available robot descriptions",
     )
 
-    # show_in_yourdfpy --------------------------------------------------------
-    parser_show = subparsers.add_parser(
-        "show_in_yourdfpy",
-        help="load and display a given robot description",
+    # show_in_meshcat --------------------------------------------------------
+    parser_meshcat = subparsers.add_parser(
+        "show_in_meshcat",
+        help="load and display a given robot description in Meshcat",
     )
-    parser_show.add_argument(
+    parser_meshcat.add_argument(
         "name",
         help="name of the robot description",
     )
-    parser_show.add_argument(
+
+    # show_in_yourdfpy --------------------------------------------------------
+    parser_yourdfpy = subparsers.add_parser(
+        "show_in_yourdfpy",
+        help="load and display a given robot description with yourdfpy",
+    )
+    parser_yourdfpy.add_argument(
+        "name",
+        help="name of the robot description",
+    )
+    parser_yourdfpy.add_argument(
         "-c",
         "--configuration",
         nargs="+",
         type=float,
         help="configuration of the visualized robot description",
     )
-    parser_show.add_argument(
+    parser_yourdfpy.add_argument(
         "--collision",
         action="store_true",
         help="use collision geometry for the visualized robot description",
@@ -94,6 +104,34 @@ def list_descriptions():
             "MJCF" if desc.has_mjcf else ""
         )
         print(f"- {name} [{formats}]")
+
+
+def show_in_meshcat(name: str) -> None:
+    """Show a robot description in MeshCat.
+
+    Args:
+        name: Name of the robot description.
+    """
+    try:
+        from pinocchio.visualize import MeshcatVisualizer
+    except ImportError as e:
+        raise ImportError(
+            "Pinocchio not found, try for instance `conda install pinocchio`"
+        ) from e
+
+    from robot_descriptions.loaders.pinocchio import load_robot_description
+
+    try:
+        robot = load_robot_description(name)
+    except ModuleNotFoundError:
+        robot = load_robot_description(f"{name}_description")
+
+    robot.setVisualizer(MeshcatVisualizer())
+    robot.initViewer(open=True)
+    robot.loadViewerModel()
+    robot.display(robot.q0)
+
+    input("Press Enter to close MeshCat and terminate... ")
 
 
 def show_in_yourdfpy(
@@ -172,6 +210,8 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.subcmd == "list":
         list_descriptions()
+    elif args.subcmd == "show_in_meshcat":
+        show_in_meshcat(args.name)
     elif args.subcmd == "show_in_yourdfpy":
         show_in_yourdfpy(args.name, args.configuration, args.collision)
     elif args.subcmd == "animate":
