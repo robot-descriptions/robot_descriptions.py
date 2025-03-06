@@ -16,7 +16,7 @@ import argparse
 try:
     from pinocchio.visualize import MeshcatVisualizer
 except ImportError as e:
-    raise ImportError("Pinocchio not found, try ``pip install pin``") from e
+    raise ImportError("Pinocchio not found, try `pip install pin`") from e
 
 from robot_descriptions.loaders.pinocchio import load_robot_description
 

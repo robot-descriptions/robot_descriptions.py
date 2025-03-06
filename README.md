@@ -54,7 +54,7 @@ Loading will automatically download the robot description if needed, and cache i
 
 ### Import as submodule
 
-You can also import a robot description directly as a submodule of ``robot_descriptions``:
+You can also import a robot description directly as a submodule of `robot_descriptions`:
 
 ```python
 from robot_descriptions import my_robot_description
@@ -83,7 +83,7 @@ The import will automatically download the robot description if you don't have i
     </dd>
 </dl>
 
-Some robot descriptions include additional fields. For instance, the ``iiwa14_description`` exports ``URDF_PATH_POLYTOPE_COLLISION`` with more detailed collision meshes.
+Some robot descriptions include additional fields. For instance, the `iiwa14_description` exports `URDF_PATH_POLYTOPE_COLLISION` with more detailed collision meshes.
 
 ## Examples
 

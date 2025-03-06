@@ -8,13 +8,12 @@
 Show a robot description, specified from the command line, using yourdfpy.
 
 Note:
-    See ``robot_descriptions/_command_line.py`` for a more advanced
-    implementation, including the ability to set the robot configuration or
-    show collision meshes.
+    You can also use `python -m robot_descriptions show_in_yourdfpy` from the
+    command line.
 
 This example requires `yourdfpy` which is an optional dependency. It can be
 installed separately (``pip install yourdfpy``), or when robot descriptions are
-installed with optional dependencies ``pip install robot_descriptions[opts]``.
+installed with optional dependencies `pip install robot_descriptions[opts]`.
 """
 
 import argparse
