@@ -11,10 +11,13 @@ All notable changes to this project will be documented in this file.
 - Description: Robot Soccer Kit
 - Description: Robotiq 2F-85 (MJCF V4) (thanks to @peterdavidfagan)
 - CLI: Add `show_in_meshcat` command
+- CLI: Add `show_in_mujoco` command
+- CLI: Add `show_in_pybullet` command
 
 ### Changed
 
 - Enable command-line to run from `python -m robot_descriptions`
+- CLI: Rename `show` command to `show_in_yourdfpy`
 
 ### Fixed
 
