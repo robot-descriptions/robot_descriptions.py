@@ -166,8 +166,7 @@ def show_in_mujoco(name: str) -> None:
         import mujoco_viewer
     except ImportError as e:
         raise ImportError(
-            "MuJoCo viewer not found, "
-            "try `pip install mujoco-python-viewer`"
+            "MuJoCo viewer not found, try `pip install mujoco-python-viewer`"
         ) from e
 
     from robot_descriptions.loaders.mujoco import load_robot_description
