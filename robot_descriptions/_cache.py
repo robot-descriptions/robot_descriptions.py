@@ -43,7 +43,7 @@ class CloneProgressBar(RemoteProgress):
             op_code: Integer that can be compared against Operation IDs and
                 stage IDs.
             cur_count: Current item count.
-            max_count: Maximum item count, or ``None`` if there is none.
+            max_count: Maximum item count, or `None` if there is none.
             message: Unused here.
         """
         self.progress.total = max_count
@@ -112,8 +112,8 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
 
     Notes:
         By default, robot descriptions are cached to
-        ``~/.cache/robot_descriptions``. This behavior can be overriden by
-        setting the ``ROBOT_DESCRIPTIONS_CACHE`` environment variable to an
+        `~/.cache/robot_descriptions`. This behavior can be overriden by
+        setting the `ROBOT_DESCRIPTIONS_CACHE` environment variable to an
         alternative path.
     """
     try:

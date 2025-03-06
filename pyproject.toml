@@ -42,7 +42,7 @@ opts = [
 ]
 
 [project.scripts]
-robot_descriptions = "robot_descriptions._command_line:main"
+robot_descriptions = "robot_descriptions.__main__:main"
 
 [project.urls]
 Homepage = "https://github.com/robot-descriptions"
