@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- CICD: Switch to conda-forge dependencies in Pinocchio loader test environment
+
+### Changed
+
+- CICD: Isolate loader tests in testing submodules
+- CICD: Remove version pin on NumPy < 2
+
 ## [1.15.0] - 2025-03-06
 
 ### Added

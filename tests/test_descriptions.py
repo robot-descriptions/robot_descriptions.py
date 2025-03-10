@@ -11,6 +11,9 @@ from importlib import import_module  # type: ignore
 import git
 
 from robot_descriptions._descriptions import DESCRIPTIONS
+from robot_descriptions.loaders.pinocchio import (
+    load_robot_description as load_pinocchio,
+)
 
 
 class TestDescriptions(unittest.TestCase):
@@ -45,7 +48,22 @@ class TestDescriptions(unittest.TestCase):
                     f"in {description}",
                 )
 
+    def test_cache_path_package_name(self):
+        """Check a description with package:// URIs and a custom commit ID."""
+        load_pinocchio(
+            "draco3_description",
+            commit="5afd19733d7b3e9f1135ba93e0aad90ed1a24cc7",
+        )
+
     def test_invalid_description_commit(self):
         os.environ["ROBOT_DESCRIPTION_COMMIT"] = "foobar"
         with self.assertRaises(git.exc.GitCommandError):
             import_module("robot_descriptions.sigmaban_description")
+
+    def test_load_with_commit_then_without(self):
+        # https://github.com/robot-descriptions/robot_descriptions.py/issues/67
+        load_pinocchio(
+            "draco3_description",
+            commit="5afd19733d7b3e9f1135ba93e0aad90ed1a24cc7",
+        )
+        load_pinocchio("baxter_description")

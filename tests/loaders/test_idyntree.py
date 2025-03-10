@@ -7,14 +7,23 @@
 import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
+from robot_descriptions.loaders.idyntree import (
+    load_robot_description as load_idyntree,
+)
 
-from robot_descriptions.loaders.idyntree import load_robot_description
 
 class TestiDynTree(unittest.TestCase):
-
     """
     Check that all descriptions are loaded properly in iDynTree.
     """
+
+    def test_idyntree(self):
+        self.assertIsNotNone(
+            load_idyntree(
+                "upkie_description",
+                commit="98502d5b175c3d6b60b3cf475b7eeef9fd290c43",
+            )
+        )
 
     @staticmethod
     def get_test_for_description(description: str):
@@ -29,9 +38,10 @@ class TestiDynTree(unittest.TestCase):
         """
 
         def test(self):
-            load_robot_description(description)
+            load_idyntree(description)
 
         return test
+
 
 # Add a test function for each URDF description
 for name, description in DESCRIPTIONS.items():
