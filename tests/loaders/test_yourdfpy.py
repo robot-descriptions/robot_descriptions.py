@@ -7,14 +7,23 @@
 import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
-from robot_descriptions.loaders.yourdfpy import load_robot_description
+from robot_descriptions.loaders.yourdfpy import (
+    load_robot_description as load_yourdfpy,
+)
 
 
 class TestYourdfpy(unittest.TestCase):
-
     """
     Check that all URDF descriptions are loaded properly in yourdfpy.
     """
+
+    def test_yourdfpy(self):
+        self.assertIsNotNone(
+            load_yourdfpy(
+                "upkie_description",
+                commit="98502d5b175c3d6b60b3cf475b7eeef9fd290c43",
+            )
+        )
 
     @staticmethod
     def get_test_for_description(description: str):
@@ -29,7 +38,7 @@ class TestYourdfpy(unittest.TestCase):
         """
 
         def test(self):
-            load_robot_description(description)
+            load_yourdfpy(description)
 
         return test
 

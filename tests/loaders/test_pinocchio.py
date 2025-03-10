@@ -7,13 +7,23 @@
 import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
-from robot_descriptions.loaders.pinocchio import load_robot_description
+from robot_descriptions.loaders.pinocchio import (
+    load_robot_description as load_pinocchio,
+)
 
 
 class TestPinocchio(unittest.TestCase):
     """
     Check that all descriptions are loaded properly in Pinocchio.
     """
+
+    def test_pinocchio(self):
+        self.assertIsNotNone(
+            load_pinocchio(
+                "upkie_description",
+                commit="98502d5b175c3d6b60b3cf475b7eeef9fd290c43",
+            )
+        )
 
     @staticmethod
     def get_test_for_description(description: str):
@@ -28,7 +38,7 @@ class TestPinocchio(unittest.TestCase):
         """
 
         def test(self):
-            load_robot_description(description)
+            load_pinocchio(description)
 
         return test
 

@@ -114,6 +114,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- CICD: Isolate loader tests in testing submodules
 - CICD: Update checkout actions to v4
 - Update MuJoCo Menagerie repository commit
 - Update eDO description repository

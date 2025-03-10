@@ -9,12 +9,12 @@ import unittest
 import pybullet
 
 from robot_descriptions._descriptions import DESCRIPTIONS
-
-from robot_descriptions.loaders.pybullet import load_robot_description
+from robot_descriptions.loaders.pybullet import (
+    load_robot_description as load_pybullet,
+)
 
 
 class TestPyBullet(unittest.TestCase):
-
     """
     Check that all descriptions are loaded properly in PyBullet.
     """
@@ -31,12 +31,22 @@ class TestPyBullet(unittest.TestCase):
         """
         pybullet.disconnect()
 
+    def test_pybullet(self):
+        pybullet.connect(pybullet.DIRECT)
+        self.assertIsNotNone(
+            load_pybullet(
+                "upkie_description",
+                commit="98502d5b175c3d6b60b3cf475b7eeef9fd290c43",
+            )
+        )
+        pybullet.disconnect()
+
     def test_value_error_when_no_urdf(self):
         """
         Test exception raised when a description has no URDF_PATH.
         """
         with self.assertRaises(ValueError):
-            load_robot_description("_empty_description")
+            load_pybullet("_empty_description")
 
     @staticmethod
     def get_test_for_description(description: str):
@@ -51,7 +61,7 @@ class TestPyBullet(unittest.TestCase):
         """
 
         def test(self):
-            load_robot_description(description)
+            load_pybullet(description)
 
         return test
 
