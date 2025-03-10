@@ -32,14 +32,12 @@ class TestPyBullet(unittest.TestCase):
         pybullet.disconnect()
 
     def test_pybullet(self):
-        pybullet.connect(pybullet.DIRECT)
         self.assertIsNotNone(
             load_pybullet(
                 "upkie_description",
                 commit="98502d5b175c3d6b60b3cf475b7eeef9fd290c43",
             )
         )
-        pybullet.disconnect()
 
     def test_value_error_when_no_urdf(self):
         """
