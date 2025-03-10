@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - CICD: Switch to conda-forge dependencies in Pinocchio loader test environment
 
+### Changed
+
+- CICD: Isolate loader tests in testing submodules
+
 ## [1.15.0] - 2025-03-06
 
 ### Added
