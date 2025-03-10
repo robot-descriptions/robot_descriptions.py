@@ -95,7 +95,7 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
-- CICD: Correct conda-forge dependencies in Pinocchio loader test environment
+- CICD: Switch to conda-forge dependencies in Pinocchio loader test environment
 
 ## [1.16.0] - 2025-04-09
 
