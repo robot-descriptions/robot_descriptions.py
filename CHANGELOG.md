@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Fixed
+
+- CICD: Correct conda-forge dependencies in Pinocchio loader test environment
+
 ## [1.15.0] - 2025-03-06
 
 ### Added

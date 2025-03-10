@@ -109,7 +109,9 @@ jobs:
                   environment-name: pinocchio_test_env
                   create-args: >-
                       python=${{ matrix.python-version }}
+                      gitpython
                       pinocchio>=3.1.0
+                      tqdm
                   cache-environment: true
                   post-cleanup: 'all'
 
