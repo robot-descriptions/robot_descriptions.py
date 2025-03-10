@@ -48,6 +48,9 @@ for name, description in DESCRIPTIONS.items():
     if name == "a1_mj_description":
         # See https://github.com/stack-of-tasks/pinocchio/issues/2613
         continue
+    if name == "talos_mj_description":
+        # See https://github.com/stack-of-tasks/pinocchio/issues/2612
+        continue
     setattr(
         TestPinocchio,
         f"test_{name}",
