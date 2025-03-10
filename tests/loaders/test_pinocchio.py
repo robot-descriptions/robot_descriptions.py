@@ -45,6 +45,9 @@ class TestPinocchio(unittest.TestCase):
 
 # Add a test function for each description
 for name, description in DESCRIPTIONS.items():
+    if name == "a1_mj_description":
+        # See https://github.com/stack-of-tasks/pinocchio/issues/2613
+        continue
     setattr(
         TestPinocchio,
         f"test_{name}",
