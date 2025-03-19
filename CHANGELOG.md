@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Apptronik Apollo (MJCF)
+
+### Changed
+
+- Update MuJoCo Menagerie repository commit
+
 ## [1.15.0] - 2025-03-06
 
 ### Added
