@@ -218,28 +218,29 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ### Humanoids
 
-| Name                            | Robot                 | Maker                    | DOF | Format     |
-|---------------------------------|-----------------------|--------------------------|-----|------------|
-| `atlas_drc_description`         | Atlas DRC (v3)        | Boston Dynamics          | 30  | URDF       |
-| `atlas_v4_description`          | Atlas v4              | Boston Dynamics          | 30  | URDF       |
-| `berkeley_humanoid_description` | Berkeley Humanoid     | Hybrid Robotics          | 12  | URDF       |
-| `draco3_description`            | Draco3                | Apptronik                | 25  | URDF       |
-| `ergocub_description`           | ergoCub               | IIT                      | 57  | URDF       |
-| `g1_description`                | G1                    | UNITREE Robotics         | 37  | URDF       |
-| `g1_mj_description`             | G1                    | UNITREE Robotics         | 37  | MJCF       |
-| `h1_description`                | H1                    | UNITREE Robotics         | 25  | URDF       |
-| `h1_mj_description`             | H1                    | UNITREE Robotics         | 25  | MJCF       |
-| `icub_description`              | iCub                  | IIT                      | 32  | URDF       |
-| `jaxon_description`             | JAXON                 | JSK                      | 38  | URDF       |
-| `jvrc_description`              | JVRC-1                | AIST                     | 34  | URDF       |
-| `jvrc_mj_description`           | JVRC-1                | AIST                     | 34  | MJCF       |
-| `op3_mj_description`            | OP3                   | ROBOTIS                  | 20  | MJCF       |
-| `r2_description`                | Robonaut 2            | NASA JSC Robotics        | 56  | URDF       |
-| `romeo_description`             | Romeo                 | Aldebaran Robotics       | 37  | URDF       |
-| `sigmaban_description`          | SigmaBan              | Rhoban                   | 20  | URDF       |
-| `talos_description`             | TALOS                 | PAL Robotics             | 32  | URDF       |
-| `talos_mj_description`          | TALOS                 | PAL Robotics             | 32  | MJCF       |
-| `valkyrie_description`          | Valkyrie              | NASA JSC Robotics        | 59  | URDF       |
+| Name                            | Robot                 | Maker                    | Format     | License |
+|---------------------------------|-----------------------|--------------------------|------------|---------|
+| `apollo_mj_description`         | Apollo                | Apptronik                | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/bf04290ac7911fa7a39339c7e507792fd464c438/apptronik_apollo/LICENSE) |
+| `atlas_drc_description`         | Atlas DRC (v3)        | Boston Dynamics          | URDF       | BSD-3-Clause |
+| `atlas_v4_description`          | Atlas v4              | Boston Dynamics          | URDF       | MIT |
+| `berkeley_humanoid_description` | Berkeley Humanoid     | Hybrid Robotics          | URDF       | BSD-3-Clause |
+| `draco3_description`            | Draco3                | Apptronik                | URDF       | BSD-2-Clause |
+| `ergocub_description`           | ergoCub               | IIT                      | URDF       | BSD-3-Clause |
+| `g1_description`                | G1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
+| `g1_mj_description`             | G1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
+| `h1_description`                | H1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
+| `h1_mj_description`             | H1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
+| `icub_description`              | iCub                  | IIT                      | URDF       | CC-BY-SA-4.0 ✖️  |
+| `jaxon_description`             | JAXON                 | JSK                      | URDF       | CC-BY-SA-4.0 ✖️  |
+| `jvrc_description`              | JVRC-1                | AIST                     | URDF       | BSD-2-Clause |
+| `jvrc_mj_description`           | JVRC-1                | AIST                     | MJCF       | BSD-2-Clause |
+| `op3_mj_description`            | OP3                   | ROBOTIS                  | MJCF       | Apache-2.0 |
+| `r2_description`                | Robonaut 2            | NASA JSC Robotics        | URDF       | NASA-1.3 |
+| `romeo_description`             | Romeo                 | Aldebaran Robotics       | URDF       | BSD-3-Clause |
+| `sigmaban_description`          | SigmaBan              | Rhoban                   | URDF       | MIT |
+| `talos_description`             | TALOS                 | PAL Robotics             | URDF       | Apache-2.0 |
+| `talos_mj_description`          | TALOS                 | PAL Robotics             | MJCF       | Apache-2.0 |
+| `valkyrie_description`          | Valkyrie              | NASA JSC Robotics        | URDF       | NASA-1.3 |
 
 ### Mobile manipulators
 
