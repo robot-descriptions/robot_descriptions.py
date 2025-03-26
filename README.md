@@ -205,7 +205,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 | Name                             | Robot                 | Maker                      | Format     | License |
 |----------------------------------|-----------------------|----------------------------|------------|---------|
-| `ability_hand_description`       | Ability Hand          | PSYONIC, Inc.              | URDF       | MIT     |
+| `ability_hand_description`       | Ability Hand          | PSYONIC, Inc.              | URDF       | [MIT](https://github.com/psyonicinc/ability-hand-api/blob/89407424edfc22faceaedcd7c3ea2b7947cbbb2c/LICENSE)     |
+| `ability_hand_mj_description`    | Ability Hand          | PSYONIC, Inc.              | MJCF       | [MIT](https://github.com/psyonicinc/ability-hand-api/blob/89407424edfc22faceaedcd7c3ea2b7947cbbb2c/LICENSE)     |
 | `allegro_hand_description`       | Allegro Hand          | Wonik Robotics             | URDF       | [BSD](https://github.com/RobotLocomotion/models/blob/5c027ea961473cb558da30e1a749272a8a9fa3eb/allegro_hand_description/LICENSE.TXT)     |
 | `allegro_hand_mj_description`    | Allegro Hand          | Wonik Robotics             | MJCF       | [BSD-2-Clause](https://github.com/google-deepmind/mujoco_menagerie/blob/main/wonik_allegro/LICENSE) |
 | `barrett_hand_description`       | BarrettHand           | Barrett Technology         | URDF       | [BSD](https://github.com/jhu-lcsr-attic/bhand_model/blob/937f4186d6458bd682a7dae825fb6f4efe56ec69/manifest.xml) |
