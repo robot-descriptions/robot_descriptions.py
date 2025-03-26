@@ -23,10 +23,18 @@ MJCF_PATH: str = _path.join(PACKAGE_PATH, "scene.xml")
 
 # Description-specific paths
 
-MJCF_PATH_LEFT_LARGE: str = _path.join(PACKAGE_PATH, "hands", "abh_left_large.xml")
+MJCF_PATH_LEFT_LARGE: str = _path.join(
+    PACKAGE_PATH, "hands", "abh_left_large.xml"
+)
 
-MJCF_PATH_LEFT_SMALL: str = _path.join(PACKAGE_PATH, "hands", "abh_left_small.xml")
+MJCF_PATH_LEFT_SMALL: str = _path.join(
+    PACKAGE_PATH, "hands", "abh_left_small.xml"
+)
 
-MJCF_PATH_RIGHT_LARGE: str = _path.join(PACKAGE_PATH, "hands", "abh_right_large.xml")
+MJCF_PATH_RIGHT_LARGE: str = _path.join(
+    PACKAGE_PATH, "hands", "abh_right_large.xml"
+)
 
-MJCF_PATH_RIGHT_SMALL: str = _path.join(PACKAGE_PATH, "hands", "abh_right_small.xml")
+MJCF_PATH_RIGHT_SMALL: str = _path.join(
+    PACKAGE_PATH, "hands", "abh_right_small.xml"
+)
