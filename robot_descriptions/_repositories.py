@@ -26,6 +26,11 @@ class Repository:
 
 
 REPOSITORIES: Dict[str, Repository] = {
+    "ability-hand-api": Repository(
+        url="https://github.com/psyonicinc/ability-hand-api.git",
+        commit="89407424edfc22faceaedcd7c3ea2b7947cbbb2c",
+        cache_patch="ability_hand_api",
+    ),
     "anymal_b_simple_description": Repository(
         url="https://github.com/ANYbotics/anymal_b_simple_description.git",
         commit="988b5df22b84761bdf08111b1c2ccc883793f456",
