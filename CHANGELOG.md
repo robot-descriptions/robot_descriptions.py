@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Ability Hand (URDF)
 - Description: Apptronik Apollo (MJCF)
 
 ### Changed
