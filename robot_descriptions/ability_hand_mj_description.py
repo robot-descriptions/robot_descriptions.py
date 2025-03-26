@@ -16,17 +16,17 @@ REPOSITORY_PATH: str = _clone_to_cache(
 )
 
 PACKAGE_PATH: str = _path.join(
-    REPOSITORY_PATH, "python", "ah_simulators", "mujoco_xml", "hands"
+    REPOSITORY_PATH, "python", "ah_simulators", "mujoco_xml"
 )
 
-MJCF_PATH: str = _path.join(PACKAGE_PATH, "abh_left_large.xml")
+MJCF_PATH: str = _path.join(PACKAGE_PATH, "scene.xml")
 
 # Description-specific paths
 
-MJCF_PATH_LEFT_LARGE: str = _path.join(PACKAGE_PATH, "abh_left_large.xml")
+MJCF_PATH_LEFT_LARGE: str = _path.join(PACKAGE_PATH, "hands", "abh_left_large.xml")
 
-MJCF_PATH_LEFT_SMALL: str = _path.join(PACKAGE_PATH, "abh_left_small.xml")
+MJCF_PATH_LEFT_SMALL: str = _path.join(PACKAGE_PATH, "hands", "abh_left_small.xml")
 
-MJCF_PATH_RIGHT_LARGE: str = _path.join(PACKAGE_PATH, "abh_right_large.xml")
+MJCF_PATH_RIGHT_LARGE: str = _path.join(PACKAGE_PATH, "hands", "abh_right_large.xml")
 
-MJCF_PATH_RIGHT_SMALL: str = _path.join(PACKAGE_PATH, "abh_right_small.xml")
+MJCF_PATH_RIGHT_SMALL: str = _path.join(PACKAGE_PATH, "hands", "abh_right_small.xml")
