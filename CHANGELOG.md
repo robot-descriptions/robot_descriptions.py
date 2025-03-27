@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Update MuJoCo Menagerie repository commit
+- Update simple-humanoid-description repository commit (thanks to @drfenixion)
 
 ## [1.15.0] - 2025-03-06
 
