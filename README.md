@@ -203,18 +203,20 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ### End effectors
 
-| Name                             | Robot                 | Maker                      | DOF | Format     |
-|----------------------------------|-----------------------|----------------------------|-----|------------|
-| `allegro_hand_description`       | Allegro Hand          | Wonik Robotics             | 16  | URDF       |
-| `allegro_hand_mj_description`    | Allegro Hand          | Wonik Robotics             | 16  | MJCF       |
-| `barrett_hand_description`       | BarrettHand           | Barrett Technology         | 8   | URDF       |
-| `leap_hand_v1`                   | LEAP Hand v1          | Carnegie Mellon University | 16  | URDF       |
-| `leap_hand_mj_description`       | LEAP Hand             | Carnegie Mellon University | 16  | MJCF       |
-| `robotiq_2f85_description`       | Robotiq 2F-85         | Robotiq                    | 1   | URDF       |
-| `robotiq_2f85_mj_description`    | Robotiq 2F-85         | Robotiq                    | 1   | MJCF       |
-| `robotiq_2f85_v4_mj_description` | Robotiq 2F-85         | Robotiq                    | 1   | MJCF       |
-| `shadow_dexee_mj_description`    | Shadow DEX-EE         | The Shadow Robot Company   | 12  | MJCF       |
-| `shadow_hand_mj_description`     | Shadow Hand           | The Shadow Robot Company   | 24  | MJCF       |
+| Name                             | Robot                 | Maker                      | Format     | License |
+|----------------------------------|-----------------------|----------------------------|------------|---------|
+| `ability_hand_description`       | Ability Hand          | PSYONIC, Inc.              | URDF       | [MIT](https://github.com/psyonicinc/ability-hand-api/blob/89407424edfc22faceaedcd7c3ea2b7947cbbb2c/LICENSE)     |
+| `ability_hand_mj_description`    | Ability Hand          | PSYONIC, Inc.              | MJCF       | [MIT](https://github.com/psyonicinc/ability-hand-api/blob/89407424edfc22faceaedcd7c3ea2b7947cbbb2c/LICENSE)     |
+| `allegro_hand_description`       | Allegro Hand          | Wonik Robotics             | URDF       | [BSD](https://github.com/RobotLocomotion/models/blob/5c027ea961473cb558da30e1a749272a8a9fa3eb/allegro_hand_description/LICENSE.TXT)     |
+| `allegro_hand_mj_description`    | Allegro Hand          | Wonik Robotics             | MJCF       | [BSD-2-Clause](https://github.com/google-deepmind/mujoco_menagerie/blob/main/wonik_allegro/LICENSE) |
+| `barrett_hand_description`       | BarrettHand           | Barrett Technology         | URDF       | [BSD](https://github.com/jhu-lcsr-attic/bhand_model/blob/937f4186d6458bd682a7dae825fb6f4efe56ec69/manifest.xml) |
+| `leap_hand_v1`                   | LEAP Hand v1          | Carnegie Mellon University | URDF       | MIT |
+| `leap_hand_mj_description`       | LEAP Hand             | Carnegie Mellon University | MJCF       | MIT |
+| `robotiq_2f85_description`       | Robotiq 2F-85         | Robotiq                    | URDF       | BSD-2-Clause |
+| `robotiq_2f85_mj_description`    | Robotiq 2F-85         | Robotiq                    | MJCF       | BSD-2-Clause |
+| `robotiq_2f85_v4_mj_description` | Robotiq 2F-85         | Robotiq                    | MJCF       | BSD-2-Clause |
+| `shadow_dexee_mj_description`    | Shadow DEX-EE         | The Shadow Robot Company   | MJCF       | Apache-2.0 |
+| `shadow_hand_mj_description`     | Shadow Hand           | The Shadow Robot Company   | MJCF       | Apache-2.0 |
 
 ### Humanoids
 

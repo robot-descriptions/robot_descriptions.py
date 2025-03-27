@@ -19,6 +19,8 @@ PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "wonik_allegro")
 
 MJCF_PATH: str = _path.join(PACKAGE_PATH, "right_hand.xml")
 
+# Description-specific paths
+
 MJCF_PATH_LEFT: str = _path.join(PACKAGE_PATH, "left_hand.xml")
 
 MJCF_PATH_RIGHT = MJCF_PATH
