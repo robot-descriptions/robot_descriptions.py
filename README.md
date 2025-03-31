@@ -135,7 +135,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 | Name                          | Robot                 | Maker                    | Format     | License      |
 |-------------------------------|-----------------------|--------------------------|------------|--------------|
-| `edo_description`             | e.DO                  | Comau                    | URDF       | BSD-3-Clause |
+| `edo_description`             | e.DO                  | Comau                    | URDF       | [BSD-3-Clause](https://github.com/ianathompson/eDO_description/blob/17b3f92f834746106d6a4befaab8eeab3ac248e6/LICENSE) |
 | `fanuc_m710ic_description`    | M-710iC               | Fanuc                    | URDF       | BSD-3-Clause |
 | `fr3_mj_description`          | FR3                   | Franka Robotics          | MJCF       | Apache-2.0   |
 | `gen2_description`            | Gen2                  | Kinova                   | URDF       | BSD-3-Clause |

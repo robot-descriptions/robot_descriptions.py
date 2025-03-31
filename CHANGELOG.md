@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Update eDO description repository
 - Update MuJoCo Menagerie repository commit
 - Update simple-humanoid-description repository commit (thanks to @drfenixion)
 
