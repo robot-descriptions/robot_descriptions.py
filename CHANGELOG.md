@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 - Description: Apptronik Apollo (MJCF)
 - Description: BXI Elf2 (MJCF)
 - Description: BXI Elf2 (URDF)
+- Example: Load all humanoid robot descriptions
 - Example: Load all quadruped robot descriptions
 - Export `DESCRIPTIONS` dictionary from top-level module
 
