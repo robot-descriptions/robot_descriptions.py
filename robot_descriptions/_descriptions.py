@@ -27,14 +27,17 @@ class Description:
     """
 
     formats: Set[Format]
+    tags: Set[str]
 
-    def __init__(self, single_format):
+    def __init__(self, single_format: Format, tags: Set[str] = set()):
         """Initialize a description that provides a single format.
 
         Args:
             single_format: Format provided by the description.
+            tags: Set of strings describing properties of the description.
         """
         self.formats = {single_format}
+        self.tags = tags
 
     @property
     def has_mjcf(self) -> bool:

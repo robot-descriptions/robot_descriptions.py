@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Add tags attribute to Description class
 - Description: Ability Hand (MJCF)
 - Description: Ability Hand (URDF)
 - Description: Apptronik Apollo (MJCF)
