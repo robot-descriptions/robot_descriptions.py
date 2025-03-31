@@ -100,7 +100,7 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="drake_models",
     ),
     "eDO_description": Repository(
-        url="https://github.com/Comau/eDO_description.git",
+        url="https://github.com/ianathompson/eDO_description.git",
         commit="17b3f92f834746106d6a4befaab8eeab3ac248e6",
         cache_path="edo_sim",  # match package name
     ),
