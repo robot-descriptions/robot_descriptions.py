@@ -6,4 +6,8 @@
 
 """Import open source robot description as Python modules."""
 
+from ._descriptions import DESCRIPTIONS
+
 __version__ = "1.15.0"
+
+__all__ = ["DESCRIPTIONS"]
