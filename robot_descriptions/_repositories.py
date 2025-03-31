@@ -66,6 +66,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="7dee3436e747958e7088dfdcea0e4ae031ce619e",
         cache_path="bullet3",
     ),
+    "bxi_robot_models": Repository(
+        url="https://github.com/bxirobotics/robot_models.git",
+        commit="eabe24ce937f8e633077a163b883e92e8996c36e",
+        cache_path="bxi_robot_models",
+    ),
     "cassie_description": Repository(
         url="https://github.com/robot-descriptions/cassie_description",
         commit="81a2d8bbd77201cc974afb127adda4e2857a6dbf",
