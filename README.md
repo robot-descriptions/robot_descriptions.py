@@ -276,7 +276,6 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `anymal_d_description`        | ANYmal D              | ANYbotics                | 12  | URDF       |
 | `b1_description`              | B1                    | UNITREE Robotics         | 12  | URDF       |
 | `b2_description`              | B2                    | UNITREE Robotics         | 12  | URDF       |
-| `spot_mj_description`         | Spot                  | Boston Dynamics          | 12  | MJCF       |
 | `go1_description`             | Go1                   | UNITREE Robotics         | 12  | URDF       |
 | `go1_mj_description`          | Go1                   | UNITREE Robotics         | 12  | MJCF       |
 | `go2_description`             | Go2                   | UNITREE Robotics         | 12  | URDF       |
@@ -286,6 +285,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `mini_cheetah_description`    | Mini Cheetah          | MIT                      | 12  | URDF       |
 | `minitaur_description`        | Minitaur              | Ghost Robotics           | 16  | URDF       |
 | `solo_description`            | Solo                  | ODRI                     | 12  | URDF       |
+| `spot_mj_description`         | Spot                  | Boston Dynamics          | 12  | MJCF       |
 
 ### Wheeled
 
