@@ -46,6 +46,8 @@ class TestDescriptions(unittest.TestCase):
                 )
 
     def test_invalid_description_commit(self):
-        os.environ["ROBOT_DESCRIPTION_COMMIT"] = "foobar"
+        invalid_commit = "foobar"
+        os.environ["ROBOT_DESCRIPTION_COMMIT"] = invalid_commit
+        self.assertEqual(os.getenv("ROBOT_DESCRIPTION_COMMIT"), invalid_commit)
         with self.assertRaises(git.exc.GitCommandError):
             import_module("robot_descriptions.sigmaban_description")
