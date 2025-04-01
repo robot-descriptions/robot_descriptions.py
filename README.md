@@ -161,6 +161,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
 | `z1_description`              | Z1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
+| `z1_mj_description`           | Z1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 
 ### Bipeds
 
@@ -292,6 +293,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | Maker                    | Format     | License |
 |-------------------------------|-----------------------|--------------------------|------------|---------|
 | `rsk_description`             | RSK Omnidirectional   | Robot Soccer Kit         | URDF       | MIT     |
+| `upkie_description`           | Upkie                 | Stéphane Caron           | URDF       | Apache-2.0 |
 
 ## Contributing
 
