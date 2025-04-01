@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Description: Ability Hand (MJCF)
 - Description: Ability Hand (URDF)
 - Description: Apptronik Apollo (MJCF)
+- Description: BXI Elf2 (MJCF)
 - Description: BXI Elf2 (URDF)
 
 ### Changed
