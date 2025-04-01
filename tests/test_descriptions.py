@@ -5,6 +5,7 @@
 # Copyright 2022 Stéphane Caron
 
 import os
+import sys
 import unittest
 from importlib import import_module  # type: ignore
 
@@ -49,5 +50,8 @@ class TestDescriptions(unittest.TestCase):
         invalid_commit = "foobar"
         os.environ["ROBOT_DESCRIPTION_COMMIT"] = invalid_commit
         self.assertEqual(os.getenv("ROBOT_DESCRIPTION_COMMIT"), invalid_commit)
+        description_name = "robot_descriptions.sigmaban_description"
         with self.assertRaises(git.exc.GitCommandError):
-            import_module("robot_descriptions.sigmaban_description")
+            if description_name in sys.modules:
+                del sys.modules[description_name]
+            import_module(description_name)
