@@ -53,13 +53,21 @@ class Description:
 DESCRIPTIONS: Dict[str, Description] = {
     "a1_description": Description(Format.URDF, tags={"quadruped"}),
     "a1_mj_description": Description(Format.MJCF, tags={"quadruped"}),
-    "ability_hand_description": Description(Format.URDF),
-    "ability_hand_mj_description": Description(Format.MJCF),
+    "ability_hand_description": Description(
+        Format.URDF, tags={"end_effector"}
+    ),
+    "ability_hand_mj_description": Description(
+        Format.MJCF, tags={"end_effector"}
+    ),
     "aliengo_description": Description(Format.URDF, tags={"quadruped"}),
     "aliengo_mj_description": Description(Format.MJCF, tags={"quadruped"}),
-    "allegro_hand_description": Description(Format.URDF),
-    "allegro_hand_mj_description": Description(Format.MJCF),
-    "aloha_mj_description": Description(Format.MJCF),
+    "allegro_hand_description": Description(
+        Format.URDF, tags={"end_effector"}
+    ),
+    "allegro_hand_mj_description": Description(
+        Format.MJCF, tags={"end_effector"}
+    ),
+    "aloha_mj_description": Description(Format.MJCF, tags={"dual_arm"}),
     "anymal_b_description": Description(Format.URDF, tags={"quadruped"}),
     "anymal_b_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "anymal_c_description": Description(Format.URDF, tags={"quadruped"}),
@@ -71,7 +79,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "b1_description": Description(Format.URDF, tags={"quadruped"}),
     "b2_description": Description(Format.URDF, tags={"quadruped"}),
     "barrett_hand_description": Description(Format.URDF),
-    "baxter_description": Description(Format.URDF),
+    "baxter_description": Description(Format.URDF, tags={"dual_arm"}),
     "berkeley_humanoid_description": Description(
         Format.URDF, tags={"humanoid"}
     ),
@@ -82,12 +90,12 @@ DESCRIPTIONS: Dict[str, Description] = {
     "cf2_mj_description": Description(Format.MJCF),
     "double_pendulum_description": Description(Format.URDF),
     "draco3_description": Description(Format.URDF, tags={"humanoid"}),
-    "edo_description": Description(Format.URDF),
+    "edo_description": Description(Format.URDF, tags={"arm"}),
     "elf2_description": Description(Format.URDF, tags={"humanoid"}),
     "elf2_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "ergocub_description": Description(Format.URDF, tags={"humanoid"}),
     "eve_r3_description": Description(Format.URDF),
-    "fanuc_m710ic_description": Description(Format.URDF),
+    "fanuc_m710ic_description": Description(Format.URDF, tags={"arm"}),
     "fetch_description": Description(Format.URDF),
     "finger_edu_description": Description(Format.URDF),
     "g1_description": Description(Format.URDF, tags={"humanoid"}),
@@ -115,7 +123,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "leap_hand_mj_description": Description(Format.MJCF),
     "mini_cheetah_description": Description(Format.URDF, tags={"quadruped"}),
     "minitaur_description": Description(Format.URDF, tags={"quadruped"}),
-    "nextage_description": Description(Format.URDF),
+    "nextage_description": Description(Format.URDF, tags={"dual_arm"}),
     "op3_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "panda_description": Description(Format.URDF),
     "panda_mj_description": Description(Format.MJCF),
@@ -123,7 +131,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "piper_description": Description(Format.URDF),
     "piper_mj_description": Description(Format.MJCF),
     "poppy_ergo_jr_description": Description(Format.URDF),
-    "poppy_torso_description": Description(Format.URDF),
+    "poppy_torso_description": Description(Format.URDF, tags={"dual_arm"}),
     "pr2_description": Description(Format.URDF),
     "r2_description": Description(Format.URDF, tags={"humanoid"}),
     "reachy_description": Description(Format.URDF),
@@ -160,7 +168,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "viper_mj_description": Description(Format.MJCF),
     "widow_mj_description": Description(Format.MJCF),
     "xarm7_mj_description": Description(Format.MJCF),
-    "yumi_description": Description(Format.URDF),
+    "yumi_description": Description(Format.URDF, tags={"dual_arm"}),
     "z1_description": Description(Format.URDF),
     "z1_mj_description": Description(Format.MJCF),
 }
