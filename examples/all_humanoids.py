@@ -50,8 +50,6 @@ if __name__ == "__main__":
         q[0] = row * GRID_SPACING  # [m]
         q[1] = column * GRID_SPACING  # [m]
         robot.display(q)
-        print(f"Displaying {name=}")
-        input("Press Enter to close MeshCat and terminate... ")
 
     print(f"Displaying {nb_humanoids} humanoid robot descriptions")
     input("Press Enter to close MeshCat and terminate... ")
