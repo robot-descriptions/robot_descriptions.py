@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- CICD: Update checkout actions to v4
 - Update eDO description repository
 - Update MuJoCo Menagerie repository commit
 - Update simple-humanoid-description repository commit (thanks to @drfenixion)
