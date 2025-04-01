@@ -228,6 +228,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `berkeley_humanoid_description` | Berkeley Humanoid     | Hybrid Robotics          | URDF       | BSD-3-Clause |
 | `draco3_description`            | Draco3                | Apptronik                | URDF       | BSD-2-Clause |
 | `elf2_description`              | Elf2                  | BXI Robotics             | URDF       | [Apache-2.0](https://github.com/bxirobotics/robot_models/blob/eabe24ce937f8e633077a163b883e92e8996c36e/LICENSE) |
+| `elf2_mj_description`           | Elf2                  | BXI Robotics             | MJCF       | [Apache-2.0](https://github.com/bxirobotics/robot_models/blob/eabe24ce937f8e633077a163b883e92e8996c36e/LICENSE) |
 | `ergocub_description`           | ergoCub               | IIT                      | URDF       | BSD-3-Clause |
 | `g1_description`                | G1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `g1_mj_description`             | G1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
