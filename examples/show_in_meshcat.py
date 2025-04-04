@@ -5,7 +5,7 @@
 # Copyright 2022 Stéphane Caron
 
 """
-Show a robot descriptions, specified from the command line, using MeshCat.
+Show a robot description selected from the command line using MeshCat.
 
 This example is equivalent to `python -m robot_descriptions show_in_meshcat`.
 It requires Pinocchio, installed by e.g. `conda install pinocchio`, and

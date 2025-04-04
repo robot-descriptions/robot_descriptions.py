@@ -5,7 +5,7 @@
 # Copyright 2022 Stéphane Caron
 
 """
-Load a robot description, specified from the command line, using yourdfpy.
+Load a robot description selected from the command line in yourdfpy.
 
 This example requires yourdfpy, which is installed by `pip install yourdfpy`.
 """
