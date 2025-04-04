@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Description: BXI Elf2 (URDF)
 - Example: Load all humanoid robot descriptions
 - Example: Load all quadruped robot descriptions
+- Example: Show any robot description in the Candlewick viewer
 - Export `DESCRIPTIONS` dictionary from top-level module
 
 ### Changed

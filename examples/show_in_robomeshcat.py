@@ -5,7 +5,7 @@
 # Copyright 2022 Stéphane Caron
 
 """
-Load a robot description, specified from the command line, in RoboMeshCat.
+Load a robot description selected from the command line in RoboMeshCat.
 
 This example uses RoboMeshCat: https://github.com/petrikvladimir/RoboMeshCat
 """

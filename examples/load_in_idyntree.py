@@ -5,7 +5,7 @@
 # Copyright 2022 Giulio Romualdi
 
 """
-Load a robot description, specified from the command line, in iDynTree.
+Load a robot description selected from the command line in iDynTree.
 
 This example requires iDynTree, which can be installed by
 `conda install -c conda-forge idyntree`.

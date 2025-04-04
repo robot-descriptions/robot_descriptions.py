@@ -5,7 +5,7 @@
 # Copyright 2022 Stéphane Caron
 
 """
-Show a robot description, specified from the command line, using MuJoCo.
+Show a robot description selected from the command line using MuJoCo.
 
 This example is equivalent to `python -m robot_descriptions show_in_mujoco`. It
 requires MuJoCo, which is installed by `pip install mujoco`, and the MuJoCo
