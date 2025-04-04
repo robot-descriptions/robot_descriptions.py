@@ -5,7 +5,7 @@
 # Copyright 2022 Stéphane Caron
 
 """
-Load a robot description, specified from the command line, in PyBullet.
+Load a robot description selected from the command line in PyBullet.
 
 This example requires PyBullet, which is installed by `pip install pybullet`.
 """
