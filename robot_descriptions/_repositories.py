@@ -111,7 +111,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "ergocub-software": Repository(
         url="https://github.com/icub-tech-iit/ergocub-software.git",
-        commit="ac3f223dc2f183dea3f819369da0d58b59f1b2d3",
+        commit="v0.7.7",
         cache_path="ergocub-software",
     ),
     "example-robot-data": Repository(

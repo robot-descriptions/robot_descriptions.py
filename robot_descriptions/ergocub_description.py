@@ -19,5 +19,5 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "urdf", "ergoCub")
 
 URDF_PATH: str = _path.join(
-    PACKAGE_PATH, "robots", "ergoCubSN000", "model.urdf"
+    PACKAGE_PATH, "robots", "ergoCubSN002", "model.urdf"
 )
