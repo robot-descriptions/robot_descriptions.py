@@ -48,7 +48,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "baxter_common": Repository(
         url="https://github.com/RethinkRobotics/baxter_common.git",
-        commit="v1.2.0",
+        commit="6c4b0f375fe4e356a3b12df26ef7c0d5e58df86e",  # v1.2.0
         cache_path="baxter_common",
     ),
     "berkeley_humanoid_description": Repository(
@@ -277,7 +277,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "talos-data": Repository(
         url="https://github.com/stack-of-tasks/talos-data.git",
-        commit="v2.0.0",
+        commit="77169405d6a48a5d3f3f75eb014209f375ff23b6",  # v2.0.0
         cache_path="talos_data",  # match package name
     ),
     "unitree_mujoco": Repository(

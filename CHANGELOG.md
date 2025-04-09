@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Update `baxter_common` repository with a commit ID rather than a tag
+- Update `talos-data` repository with a commit ID rather than a tag
+
 ## [1.16.0] - 2025-04-09
 
 ### Added
