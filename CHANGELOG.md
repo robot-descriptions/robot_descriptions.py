@@ -20,8 +20,10 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - CICD: Update checkout actions to v4
-- Update eDO description repository
 - Update MuJoCo Menagerie repository commit
+- Update eDO description repository
+- Update ergoCub description model to SN002 (thanks to @traversaro)
+- Update ergocub-software repository to v0.7.7 (thanks to @traversaro)
 - Update simple-humanoid-description repository commit (thanks to @drfenixion)
 
 ## [1.15.0] - 2025-03-06
