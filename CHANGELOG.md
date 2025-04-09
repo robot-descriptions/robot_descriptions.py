@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.16.0] - 2025-04-09
+
 ### Added
 
 - Add tags attribute to Description class
@@ -445,7 +447,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.15.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.16.0...HEAD
+[1.16.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.15.0...v1.16.0
 [1.15.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.14.0...v1.15.0
 [1.14.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.13.0...v1.14.0
 [1.13.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.12.0...v1.13.0
