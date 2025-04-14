@@ -109,6 +109,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "g1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "gen2_description": Description(Format.URDF, tags={"arm"}),
     "gen3_description": Description(Format.URDF, tags={"arm"}),
+    "gen3_lite_description": Description(Format.URDF, tags={"arm"}),
     "gen3_mj_description": Description(Format.MJCF, tags={"arm"}),
     "ginger_description": Description(
         Format.URDF, tags={"mobile_manipulator"}

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Kinova Gen3 Lite (URDF)
+
 ### Changed
 
 - Update `baxter_common` repository with a commit ID rather than a tag

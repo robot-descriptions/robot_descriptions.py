@@ -140,6 +140,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `fr3_mj_description`          | FR3                   | Franka Robotics          | MJCF       | Apache-2.0   |
 | `gen2_description`            | Gen2                  | Kinova                   | URDF       | BSD-3-Clause |
 | `gen3_description`            | Gen3                  | Kinova                   | URDF       | MIT          |
+| `gen3_lite_description`       | Gen3 Lite             | Kinova                   | URDF       | BSD-3-Clause |
 | `gen3_mj_description`         | Gen3                  | Kinova                   | MJCF       | BSD-2-Clause |
 | `iiwa14_description`          | iiwa 14               | KUKA                     | URDF       | BSD-3-Clause |
 | `iiwa14_mj_description`       | iiwa 14               | KUKA                     | MJCF       | BSD-3-Clause |

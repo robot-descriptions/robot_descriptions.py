@@ -245,6 +245,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="0.1.5",
         cache_path="romeo_robot",
     ),
+    "ros2_kortex": Repository(
+        url="https://github.com/Kinovarobotics/ros2_kortex.git",
+        commit="fb633aacf9c1c85d61a96c1099b5afa3d533e5a3",
+        cache_path="ros2_kortex",
+    ),
     "rtmros_nextage": Repository(
         url="https://github.com/tork-a/rtmros_nextage.git",
         commit="ac270fb969fa54abeb6863f9b388a9e20c1f14e0",
