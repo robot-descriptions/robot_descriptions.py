@@ -74,6 +74,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "anymal_c_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "anymal_d_description": Description(Format.URDF, tags={"quadruped"}),
     "apollo_mj_description": Description(Format.MJCF, tags={"humanoid"}),
+    "arx_l5_mj_description": Description(Format.MJCF, tags={"arm"}),
     "atlas_drc_description": Description(Format.URDF, tags={"humanoid"}),
     "atlas_v4_description": Description(Format.URDF, tags={"humanoid"}),
     "b1_description": Description(Format.URDF, tags={"quadruped"}),
