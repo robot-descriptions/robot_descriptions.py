@@ -321,6 +321,8 @@ If you use this project in your works, please cite as follows:
 }
 ```
 
+Don't forget to add yourself to the BibTeX above and to `CITATION.cff` if you contribute to this repository.
+
 ## See also
 
 - [Awesome Robot Descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions): curated list of robot descriptions in URDF, Xacro or MJCF formats.
