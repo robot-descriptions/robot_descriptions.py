@@ -134,6 +134,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "leap_hand_mj_description": Description(
         Format.MJCF, tags={"end_effector"}
     ),
+    "low_cost_robot_arm_mj_description": Description(
+        Format.MJCF, tags={"arm"}
+    ),
     "mini_cheetah_description": Description(Format.URDF, tags={"quadruped"}),
     "minitaur_description": Description(Format.URDF, tags={"quadruped"}),
     "nextage_description": Description(Format.URDF, tags={"dual_arm"}),
