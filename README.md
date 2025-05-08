@@ -227,6 +227,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                            | Robot                 | Maker                    | Format     | License |
 |---------------------------------|-----------------------|--------------------------|------------|---------|
 | `apollo_mj_description`         | Apollo                | Apptronik                | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/bf04290ac7911fa7a39339c7e507792fd464c438/apptronik_apollo/LICENSE) |
+| `adam_lite_mj_description`      | Adam Lite             | PNDBotics                | MJCF       | [MIT](https://github.com/google-deepmind/mujoco_menagerie/blob/4035f8e628b7e613d03ba7fdfc6fae3da2f30296/pndbotics_adam_lite/LICENSE) |
 | `atlas_drc_description`         | Atlas DRC (v3)        | Boston Dynamics          | URDF       | BSD-3-Clause |
 | `atlas_v4_description`          | Atlas v4              | Boston Dynamics          | URDF       | MIT |
 | `berkeley_humanoid_description` | Berkeley Humanoid     | Hybrid Robotics          | URDF       | BSD-3-Clause |
