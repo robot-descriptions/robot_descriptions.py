@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you find this code helpful, please cite it as below."
 title: "robot_descriptions.py: Robot descriptions in Python"
-version: 1.16.0
-date-released: 2025-03-06
+version: 1.17.0
+date-released: 2025-05-08
 url: "https://github.com/robot-descriptions/robot_descriptions.py"
 license: "Apache-2.0"
 authors:
