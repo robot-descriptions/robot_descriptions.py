@@ -201,6 +201,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | DOF | Format     |
 |-------------------------------|-----------------------|-----|------------|
 | `double_pendulum_description` | Double Pendulum       | 2   | URDF       |
+| `dynamixel_2r`                | Dynamixel 2R          | 1   | MJCF       |
 | `finger_edu_description`      | FingerEdu             | 3   | URDF       |
 | `simple_humanoid_description` | Simple Humanoid       | 29  | URDF       |
 | `trifinger_edu_description`   | TriFingerEdu          | 9   | URDF       |
