@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Dynamixel 2R (MJCF)
+
 ## [1.17.0] - 2025-05-08
 
 ### Added
