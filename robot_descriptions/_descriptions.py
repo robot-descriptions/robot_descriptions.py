@@ -95,7 +95,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "double_pendulum_description": Description(
         Format.URDF, tags={"educational"}
     ),
-    "dynamixel_2r": Description(Format.MJCF, tags={"educational"}),
+    "dynamixel_2r_mj_description": Description(
+        Format.MJCF, tags={"educational"}
+    ),
     "draco3_description": Description(Format.URDF, tags={"humanoid"}),
     "edo_description": Description(Format.URDF, tags={"arm"}),
     "elf2_description": Description(Format.URDF, tags={"humanoid"}),
