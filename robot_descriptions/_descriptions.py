@@ -216,6 +216,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "viper_mj_description": Description(Format.MJCF, tags={"arm"}),
     "widow_mj_description": Description(Format.MJCF, tags={"arm"}),
     "xarm7_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "yam_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yumi_description": Description(Format.URDF, tags={"dual_arm"}),
     "z1_description": Description(Format.URDF, tags={"arm"}),
     "z1_mj_description": Description(Format.MJCF, tags={"arm"}),

@@ -118,16 +118,28 @@ Visualizing a robot description:
 
 Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) are listed in the following categories:
 
-- [Arms](#arms)
-- [Bipeds](#bipeds)
-- [Dual arms](#dual-arms)
-- [Drones](#drones)
-- [Educational](#educational)
-- [End effectors](#end-effectors)
-- [Humanoids](#humanoids)
-- [Mobile manipulators](#mobile-manipulators)
-- [Quadrupeds](#quadrupeds)
-- [Wheeled](#wheeled)
+- [Installation](#installation)
+  - [From conda-forge](#from-conda-forge)
+  - [From PyPI](#from-pypi)
+- [Usage](#usage)
+  - [Show a description](#show-a-description)
+  - [Import as submodule](#import-as-submodule)
+- [Examples](#examples)
+- [Descriptions](#descriptions)
+  - [Arms](#arms)
+  - [Bipeds](#bipeds)
+  - [Dual arms](#dual-arms)
+  - [Drones](#drones)
+  - [Educational](#educational)
+  - [End effectors](#end-effectors)
+  - [Humanoids](#humanoids)
+  - [Mobile manipulators](#mobile-manipulators)
+  - [Quadrupeds](#quadrupeds)
+  - [Wheeled](#wheeled)
+- [Contributing](#contributing)
+- [Thanks](#thanks)
+- [Citation](#citation)
+- [See also](#see-also)
 
 The DOF column denotes the number of actuated degrees of freedom.
 
@@ -163,6 +175,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `viper_mj_description`        | ViperX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
+| `yam_mj_description`          | YAM                   | I2RT Robotics            | MJCF       | MIT          |
 | `z1_description`              | Z1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `z1_mj_description`           | Z1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 
