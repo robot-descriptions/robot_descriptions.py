@@ -40,8 +40,6 @@ def load_robot_description(
 
     def load_model_from_path(path):
         try:
-            import pdb; pdb.set_trace()
-
             return mujoco.MjModel.from_xml_path(path)
         except ValueError:
             print(f"{path} not found. Loading default robot model.")
