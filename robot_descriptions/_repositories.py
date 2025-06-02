@@ -305,4 +305,14 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="9a6a057a055babaf47119fac42c361fffc189128",
         cache_path="skydio_x2_description",
     ),
+    "i2rt": Repository(
+        url="https://github.com/i2rt-robotics/i2rt.git",
+        commit="8a8f804d72b41a04a5c69520031aec9a5d328104",
+        cache_path="i2rt",
+    ),
+    "rby1_description": Repository(
+        url="https://github.com/uynitsuj/rby1_description.git",
+        commit="d8e8fe5f92604ef56e11db7f9798973cf94767cb",
+        cache_path="rby1_description",
+    ),
 }
