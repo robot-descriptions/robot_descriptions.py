@@ -18,4 +18,4 @@ REPOSITORY_PATH: str = _clone_to_cache(
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "models/rby1a/mujoco/assets")
 
-URDF_PATH: str = _path.join(REPOSITORY_PATH, "models/rby1a/mujoco/rby1.xml")
+MJCF_PATH: str = _path.join(REPOSITORY_PATH, "models/rby1a/mujoco/rby1.xml")
