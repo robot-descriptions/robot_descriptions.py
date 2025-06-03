@@ -245,7 +245,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `jaxon_description`             | JAXON                 | JSK                      | URDF       | CC-BY-SA-4.0 ✖️  |
 | `jvrc_description`              | JVRC-1                | AIST                     | URDF       | BSD-2-Clause |
 | `jvrc_mj_description`           | JVRC-1                | AIST                     | MJCF       | BSD-2-Clause |
-| `n1_description`                | N1                    | Fourier                  | URDF       | [GPL-3.0](https://github.com/FFTAI/Wiki-GRx-Models/blob/f8e683f00d1d99deb882deb9dfce6030095b466a/LICENSE) |
+| `n1_description`                | N1                    | Fourier                  | URDF       | [Apache-2.0](https://github.com/FFTAI/Wiki-GRx-Models/blob/f8e683f00d1d99deb882deb9dfce6030095b466a/LICENSE) |
 | `op3_mj_description`            | OP3                   | ROBOTIS                  | MJCF       | Apache-2.0 |
 | `r2_description`                | Robonaut 2            | NASA JSC Robotics        | URDF       | NASA-1.3 |
 | `romeo_description`             | Romeo                 | Aldebaran Robotics       | URDF       | BSD-3-Clause |
