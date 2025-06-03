@@ -305,4 +305,9 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="9a6a057a055babaf47119fac42c361fffc189128",
         cache_path="skydio_x2_description",
     ),
+    "Wiki-GRx-Models": Repository(
+        url="https://github.com/FFTAI/Wiki-GRx-Models.git",
+        commit="f8e683f00d1d99deb882deb9dfce6030095b466a",
+        cache_path="Wiki-GRx-Models",
+    ),
 }
