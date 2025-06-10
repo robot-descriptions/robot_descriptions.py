@@ -13,6 +13,6 @@ REPOSITORY_PATH: str = _clone_to_cache(
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "N1")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "N1")
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "N1_raw.urdf")
