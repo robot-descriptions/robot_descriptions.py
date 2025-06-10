@@ -9,7 +9,7 @@ from os import path as _path
 from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache(
-    "unitree_ros",
+    "Wiki-GRx-Models",
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
