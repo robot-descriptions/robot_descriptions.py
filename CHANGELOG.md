@@ -10,6 +10,10 @@ All notable changes to this project will be documented in this file.
 - Description: Fourier N1 (URDF)
 - Description: YAM (MJCF) (thanks to @kevinzakka)
 
+### Changed
+
+- Update `piper_mj_description` to load `piper.xml` instead of `scene.xml`
+
 ## [1.17.0] - 2025-05-08
 
 ### Added
