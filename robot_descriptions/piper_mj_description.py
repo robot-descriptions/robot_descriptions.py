@@ -18,4 +18,4 @@ REPOSITORY_PATH: str = _clone_to_cache(
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "agilex_piper")
 
-MJCF_PATH: str = _path.join(PACKAGE_PATH, "scene.xml")
+MJCF_PATH: str = _path.join(PACKAGE_PATH, "piper.xml")
