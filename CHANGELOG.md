@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Description: Dynamixel 2R (MJCF)
+- Description: Fourier N1 (MJCF)
 - Description: Fourier N1 (URDF)
 - Description: YAM (MJCF) (thanks to @kevinzakka)
 
