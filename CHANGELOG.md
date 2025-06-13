@@ -13,7 +13,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Update `piper_mj_description` to load `piper.xml` instead of `scene.xml`
+- Update `piper_mj_description` to load `piper.xml` instead of `scene.xml` (thanks to @jonzamora)
 
 ## [1.17.0] - 2025-05-08
 
