@@ -8,6 +8,8 @@ All notable changes to this project will be documented in this file.
 
 - Description: Dynamixel 2R (MJCF)
 - Description: YAM (MJCF) (thanks to @kevinzakka)
+- Description YAM (URDF)
+- Description RBY1 Mobile Manipulatior (URDF)
 
 ## [1.17.0] - 2025-05-08
 
