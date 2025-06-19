@@ -4,13 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.18.0] - 2025-06-19
+
 ### Added
 
 - Description: Dynamixel 2R (MJCF)
 - Description: Fourier N1 (MJCF)
 - Description: Fourier N1 (URDF)
-- Description: YAM (MJCF) (thanks to @kevinzakka)
 - Description: RSK omnidirectional robot (MJCF)
+- Description: YAM (MJCF) (thanks to @kevinzakka)
 
 ### Changed
 
@@ -474,7 +476,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.17.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.18.0...HEAD
+[1.18.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.17.0...v1.18.0
 [1.17.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.16.0...v1.17.0
 [1.16.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.15.0...v1.16.0
 [1.15.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.14.0...v1.15.0

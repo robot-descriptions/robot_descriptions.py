@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you find this code helpful, please cite it as below."
 title: "robot_descriptions.py: Robot descriptions in Python"
-version: 1.17.0
+version: 1.18.0
 date-released: 2025-05-08
 url: "https://github.com/robot-descriptions/robot_descriptions.py"
 license: "Apache-2.0"
@@ -32,3 +32,6 @@ authors:
 - family-names: "Traversaro"
   given-names: "Silvio"
   orcid: "https://orcid.org/0000-0002-9283-6133"
+- family-names: "Castro"
+  given-names: "Sebastian"
+  orcid: "https://orcid.org/0000-0001-5754-9959"
