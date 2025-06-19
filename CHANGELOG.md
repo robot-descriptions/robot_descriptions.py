@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Update `piper_mj_description` to load `piper.xml` instead of `scene.xml` (thanks to @jonzamora)
+- Allow passing `kwargs` to `yourdfpy.load_robot_description` (thanks to @sea-bass)
 
 ## [1.17.0] - 2025-05-08
 
