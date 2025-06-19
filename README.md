@@ -301,6 +301,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | Maker                    | Format     | License |
 |-------------------------------|-----------------------|--------------------------|------------|---------|
 | `rsk_description`             | RSK Omnidirectional   | Robot Soccer Kit         | URDF       | MIT     |
+| `rsk_mj_description`          | RSK Omnidirectional   | Robot Soccer Kit         | MJCF       | MIT     |
 | `upkie_description`           | Upkie                 | Stéphane Caron           | URDF       | Apache-2.0 |
 
 ## Contributing
