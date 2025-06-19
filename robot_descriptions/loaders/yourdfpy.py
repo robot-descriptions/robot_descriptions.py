@@ -23,8 +23,7 @@ except ModuleNotFoundError as e:
 def load_robot_description(
     description_name: str,
     commit: Optional[str] = None,
-    load_visuals: bool = True,
-    load_collisions: bool = True,
+    **kwargs,
 ) -> yourdfpy.URDF:
     """Load a robot description in yourdfpy.
 
@@ -32,8 +31,11 @@ def load_robot_description(
         description_name: Name of the robot description.
         commit: If specified, check out that commit from the cloned robot
             description repository.
-        load_visuals: If true, loads the visual meshes and scene.
-        load_collisions: If true, loads the collision meshes and scene.
+        kwargs: arguments passed to yourdfpy.URDF.load function, including:
+            build_scene_graph: Whether to build a scene graph from visual elements.
+            build_collision_scene_graph: Whether to build a scene graph from collision elements.
+            load_meshes: Whether to load the meshes for the visual elements.
+            load_collision_meshes: Whether to load the meshes for the collision elements.
 
     Returns:
         Robot model for yourdfpy.
@@ -49,8 +51,5 @@ def load_robot_description(
     return yourdfpy.URDF.load(
         module.URDF_PATH,
         mesh_dir=module.PACKAGE_PATH,
-        build_scene_graph=load_visuals,
-        build_collision_scene_graph=load_collisions,
-        load_meshes=load_visuals,
-        load_collision_meshes=load_collisions,
+        **kwargs,
     )
