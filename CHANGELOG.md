@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Description: Fourier N1 (MJCF)
 - Description: Fourier N1 (URDF)
 - Description: YAM (MJCF) (thanks to @kevinzakka)
+- Description: RSK omnidirectional robot (MJCF)
 
 ### Changed
 

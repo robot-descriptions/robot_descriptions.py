@@ -175,6 +175,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "romeo_description": Description(Format.URDF, tags={"humanoid"}),
     "rsk_description": Description(Format.URDF, tags={"wheeled"}),
+    "rsk_mj_description": Description(Format.MJCF, tags={"wheeled"}),
     "sawyer_mj_description": Description(Format.MJCF, tags={"arm"}),
     "shadow_dexee_mj_description": Description(
         Format.MJCF, tags={"end_effector"}
