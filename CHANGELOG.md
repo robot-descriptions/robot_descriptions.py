@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Add `pull` in the CLI to pull `robot_description` and cache it. (thanks to @haixuantao)
+
 ## [1.18.0] - 2025-06-19
 
 ### Added
