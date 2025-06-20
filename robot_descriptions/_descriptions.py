@@ -80,6 +80,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "atlas_v4_description": Description(Format.URDF, tags={"humanoid"}),
     "b1_description": Description(Format.URDF, tags={"quadruped"}),
     "b2_description": Description(Format.URDF, tags={"quadruped"}),
+    "bambot_description": Description(
+        Format.URDF, tags={"mobile_manipulator"}
+    ),
     "barrett_hand_description": Description(
         Format.URDF, tags={"end_effector"}
     ),

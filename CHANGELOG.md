@@ -6,7 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Add `pull` in the CLI to pull `robot_description` and cache it. (thanks to @haixuantao)
+- CLI: Add `pull` command to `robot_description` and cache it (thanks to @haixuantao)
+- Description: BamBot (URDF)
 
 ## [1.18.0] - 2025-06-19
 
