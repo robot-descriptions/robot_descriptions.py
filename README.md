@@ -255,18 +255,19 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ### Mobile manipulators
 
-| Name                          | Robot                 | Maker                    | DOF | Format     |
-|-------------------------------|-----------------------|--------------------------|-----|------------|
-| `eve_r3_description`          | Eve R3                | Halodi                   | 23  | URDF       |
-| `fetch_description`           | Fetch                 | Fetch Robotics           | 14  | URDF       |
-| `ginger_description`          | Ginger                | Paaila Technology        | 49  | URDF       |
-| `pepper_description`          | Pepper                | SoftBank Robotics        | 17  | URDF       |
-| `pr2_description`             | PR2                   | Willow Garage            | 32  | URDF       |
-| `reachy_description`          | Reachy                | Pollen Robotics          | 21  | URDF       |
-| `stretch_description`         | Stretch RE1           | Hello Robot              | 14  | URDF       |
-| `sretch_mj_description`       | Stretch 2             | Hello Robot              | 14  | MJCF       |
-| `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | 14  | MJCF       |
-| `tiago_description`           | TIAGo                 | PAL Robotics             | 48  | URDF       |
+| Name                          | Robot                 | Maker                    | Format     | License |
+|-------------------------------|-----------------------|--------------------------|------------|---------|
+| `bambot_description`          | BamBot                | Tim Qian                 | URDF       | [Apache-2.0](https://github.com/timqian/bambot/blob/04d902653794f9f72eeabb09ec90a9af8e397c5b/LICENSE) |
+| `eve_r3_description`          | Eve R3                | Halodi                   | URDF       | Apache-2.0 |
+| `fetch_description`           | Fetch                 | Fetch Robotics           | URDF       | MIT |
+| `ginger_description`          | Ginger                | Paaila Technology        | URDF       | BSD |
+| `pepper_description`          | Pepper                | SoftBank Robotics        | URDF       | BSD-2-Clause |
+| `pr2_description`             | PR2                   | Willow Garage            | URDF       | BSD |
+| `reachy_description`          | Reachy                | Pollen Robotics          | URDF       | Apache-2.0 |
+| `stretch_description`         | Stretch RE1           | Hello Robot              | URDF       | CC-BY-SA-4.0 ✖️  |
+| `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
+| `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
+| `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
 
 ### Quadrupeds
 

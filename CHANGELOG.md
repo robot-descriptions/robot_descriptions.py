@@ -6,8 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: SO ARM 101 (URDF/MJCF) (thanks to @haixuantao)
-- Add `pull` in the CLI to pull `robot_description` and cache it. (thanks to @haixuantao)
+- CLI: Add `pull` command to `robot_description` and cache it (thanks to @haixuantao)
+- Description: BamBot (URDF)
+- Description: SO ARM 101 (MJCF) (thanks to @haixuantao)
+- Description: SO ARM 101 (URDF) (thanks to @haixuantao)
 
 ## [1.18.0] - 2025-06-19
 
