@@ -151,6 +151,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | MJCF       | Apache-2.0   |
 | `so_arm100`                   | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
 | `so_arm100_mj_description`    | SO-ARM100             | The Robot Studio         | MJCF       | Apache-2.0   |
+| `so_arm101_description`       | SO-ARM101             | The Robot Studio         | URDF       | Apache-2.0   |
+| `so_arm101_mj_description`    | SO-ARM101             | The Robot Studio         | MJCF       | Apache-2.0   |
 | `ur10_description`            | UR10                  | Universal Robots         | URDF       | Apache-2.0   |
 | `ur10e_mj_description`        | UR10e                 | Universal Robots         | MJCF       | BSD-3-Clause |
 | `ur3_description`             | UR3                   | Universal Robots         | URDF       | Apache-2.0   |

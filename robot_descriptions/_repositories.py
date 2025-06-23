@@ -267,7 +267,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "SO-ARM100": Repository(
         url="https://github.com/TheRobotStudio/SO-ARM100.git",
-        commit="8967344301571dfa22660c73a901ad00acd6ee91",
+        commit="63eede5a636e548eb8f2854e558bd343c21db9f7",
         cache_path="SO-ARM100",
     ),
     "spryped": Repository(
