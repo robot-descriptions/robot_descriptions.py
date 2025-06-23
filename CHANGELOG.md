@@ -6,8 +6,15 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: SO ARM 101 (URDF/MJCF) (thanks to @haixuantao)
-- Add `pull` in the CLI to pull `robot_description` and cache it. (thanks to @haixuantao)
+- CLI: Add `pull` command to `robot_description` and cache it (thanks to @haixuantao)
+- Description: BamBot (URDF)
+- Description: SO ARM 101 (MJCF) (thanks to @haixuantao)
+- Description: SO ARM 101 (URDF) (thanks to @haixuantao)
+
+### Changed
+
+- Rename `leap_hand_v1` to `leap_hand_v1_description`
+- Rename `so_arm100` to `so_arm100_description`
 
 ## [1.18.0] - 2025-06-19
 

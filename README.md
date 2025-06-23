@@ -149,7 +149,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `piper_mj_description`        | PiPER                 | AgileX                   | MJCF       | MIT          |
 | `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | URDF       | GPL-3.0      |
 | `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | MJCF       | Apache-2.0   |
-| `so_arm100`                   | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
+| `so_arm100_description`       | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
 | `so_arm100_mj_description`    | SO-ARM100             | The Robot Studio         | MJCF       | Apache-2.0   |
 | `so_arm101_description`       | SO-ARM101             | The Robot Studio         | URDF       | Apache-2.0   |
 | `so_arm101_mj_description`    | SO-ARM101             | The Robot Studio         | MJCF       | Apache-2.0   |
@@ -214,7 +214,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `allegro_hand_description`       | Allegro Hand          | Wonik Robotics             | URDF       | [BSD](https://github.com/RobotLocomotion/models/blob/5c027ea961473cb558da30e1a749272a8a9fa3eb/allegro_hand_description/LICENSE.TXT)     |
 | `allegro_hand_mj_description`    | Allegro Hand          | Wonik Robotics             | MJCF       | [BSD-2-Clause](https://github.com/google-deepmind/mujoco_menagerie/blob/main/wonik_allegro/LICENSE) |
 | `barrett_hand_description`       | BarrettHand           | Barrett Technology         | URDF       | [BSD](https://github.com/jhu-lcsr-attic/bhand_model/blob/937f4186d6458bd682a7dae825fb6f4efe56ec69/manifest.xml) |
-| `leap_hand_v1`                   | LEAP Hand v1          | Carnegie Mellon University | URDF       | MIT |
+| `leap_hand_v1_description`       | LEAP Hand v1          | Carnegie Mellon University | URDF       | MIT |
 | `leap_hand_mj_description`       | LEAP Hand             | Carnegie Mellon University | MJCF       | MIT |
 | `robotiq_2f85_description`       | Robotiq 2F-85         | Robotiq                    | URDF       | BSD-2-Clause |
 | `robotiq_2f85_mj_description`    | Robotiq 2F-85         | Robotiq                    | MJCF       | BSD-2-Clause |
@@ -255,18 +255,19 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ### Mobile manipulators
 
-| Name                          | Robot                 | Maker                    | DOF | Format     |
-|-------------------------------|-----------------------|--------------------------|-----|------------|
-| `eve_r3_description`          | Eve R3                | Halodi                   | 23  | URDF       |
-| `fetch_description`           | Fetch                 | Fetch Robotics           | 14  | URDF       |
-| `ginger_description`          | Ginger                | Paaila Technology        | 49  | URDF       |
-| `pepper_description`          | Pepper                | SoftBank Robotics        | 17  | URDF       |
-| `pr2_description`             | PR2                   | Willow Garage            | 32  | URDF       |
-| `reachy_description`          | Reachy                | Pollen Robotics          | 21  | URDF       |
-| `stretch_description`         | Stretch RE1           | Hello Robot              | 14  | URDF       |
-| `sretch_mj_description`       | Stretch 2             | Hello Robot              | 14  | MJCF       |
-| `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | 14  | MJCF       |
-| `tiago_description`           | TIAGo                 | PAL Robotics             | 48  | URDF       |
+| Name                          | Robot                 | Maker                    | Format     | License |
+|-------------------------------|-----------------------|--------------------------|------------|---------|
+| `bambot_description`          | BamBot                | Tim Qian                 | URDF       | [Apache-2.0](https://github.com/timqian/bambot/blob/04d902653794f9f72eeabb09ec90a9af8e397c5b/LICENSE) |
+| `eve_r3_description`          | Eve R3                | Halodi                   | URDF       | Apache-2.0 |
+| `fetch_description`           | Fetch                 | Fetch Robotics           | URDF       | MIT |
+| `ginger_description`          | Ginger                | Paaila Technology        | URDF       | BSD |
+| `pepper_description`          | Pepper                | SoftBank Robotics        | URDF       | BSD-2-Clause |
+| `pr2_description`             | PR2                   | Willow Garage            | URDF       | BSD |
+| `reachy_description`          | Reachy                | Pollen Robotics          | URDF       | Apache-2.0 |
+| `stretch_description`         | Stretch RE1           | Hello Robot              | URDF       | CC-BY-SA-4.0 ✖️  |
+| `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
+| `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
+| `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
 
 ### Quadrupeds
 

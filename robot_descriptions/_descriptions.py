@@ -80,6 +80,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "atlas_v4_description": Description(Format.URDF, tags={"humanoid"}),
     "b1_description": Description(Format.URDF, tags={"quadruped"}),
     "b2_description": Description(Format.URDF, tags={"quadruped"}),
+    "bambot_description": Description(
+        Format.URDF, tags={"mobile_manipulator"}
+    ),
     "barrett_hand_description": Description(
         Format.URDF, tags={"end_effector"}
     ),
@@ -134,7 +137,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "jvrc_description": Description(Format.URDF, tags={"humanoid"}),
     "jvrc_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "laikago_description": Description(Format.URDF, tags={"quadruped"}),
-    "leap_hand_v1": Description(Format.URDF, tags={"end_effector"}),
+    "leap_hand_v1_description": Description(
+        Format.URDF, tags={"end_effector"}
+    ),
     "leap_hand_mj_description": Description(
         Format.MJCF, tags={"end_effector"}
     ),
@@ -189,8 +194,10 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "skydio_x2_description": Description(Format.URDF, tags={"drone"}),
     "skydio_x2_mj_description": Description(Format.MJCF, tags={"drone"}),
-    "so_arm100": Description(Format.URDF, tags={"arm"}),
+    "so_arm100_description": Description(Format.URDF, tags={"arm"}),
     "so_arm100_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "so_arm101_description": Description(Format.URDF, tags={"arm"}),
+    "so_arm101_mj_description": Description(Format.MJCF, tags={"arm"}),
     "solo_description": Description(Format.URDF, tags={"quadruped"}),
     "spot_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "spryped_description": Description(Format.URDF, tags={"biped"}),
