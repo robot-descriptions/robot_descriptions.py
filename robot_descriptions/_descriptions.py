@@ -192,7 +192,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "skydio_x2_description": Description(Format.URDF, tags={"drone"}),
     "skydio_x2_mj_description": Description(Format.MJCF, tags={"drone"}),
-    "so_arm100": Description(Format.URDF, tags={"arm"}),
+    "so_arm100_description": Description(Format.URDF, tags={"arm"}),
     "so_arm100_mj_description": Description(Format.MJCF, tags={"arm"}),
     "so_arm101_description": Description(Format.URDF, tags={"arm"}),
     "so_arm101_mj_description": Description(Format.MJCF, tags={"arm"}),

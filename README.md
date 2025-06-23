@@ -149,7 +149,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `piper_mj_description`        | PiPER                 | AgileX                   | MJCF       | MIT          |
 | `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | URDF       | GPL-3.0      |
 | `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | MJCF       | Apache-2.0   |
-| `so_arm100`                   | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
+| `so_arm100_description`       | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
 | `so_arm100_mj_description`    | SO-ARM100             | The Robot Studio         | MJCF       | Apache-2.0   |
 | `so_arm101_description`       | SO-ARM101             | The Robot Studio         | URDF       | Apache-2.0   |
 | `so_arm101_mj_description`    | SO-ARM101             | The Robot Studio         | MJCF       | Apache-2.0   |
