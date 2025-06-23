@@ -11,6 +11,11 @@ All notable changes to this project will be documented in this file.
 - Description: SO ARM 101 (MJCF) (thanks to @haixuantao)
 - Description: SO ARM 101 (URDF) (thanks to @haixuantao)
 
+### Changed
+
+- Rename `leap_hand_v1` to `leap_hand_v1_description`
+- Rename `so_arm100` to `so_arm100_description`
+
 ## [1.18.0] - 2025-06-19
 
 ### Added
