@@ -66,6 +66,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="937f4186d6458bd682a7dae825fb6f4efe56ec69",
         cache_path="bhand_model",
     ),
+    "booster_gym": Repository(
+        url="https://github.com/BoosterRobotics/booster_gym.git",
+        commit="687a33d08b08875fe45dc8d91b54db83766df8b9",
+        cache_path="booster_gym",
+    ),
     "bullet3": Repository(
         url="https://github.com/bulletphysics/bullet3.git",
         commit="7dee3436e747958e7088dfdcea0e4ae031ce619e",

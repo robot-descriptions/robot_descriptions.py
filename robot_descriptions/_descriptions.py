@@ -91,6 +91,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         Format.URDF, tags={"humanoid"}
     ),
     "bolt_description": Description(Format.URDF, tags={"biped"}),
+    "booster_t1_description": Description(Format.URDF, tags={"humanoid"}),
     "cassie_description": Description(Format.URDF, tags={"biped"}),
     "cassie_mj_description": Description(Format.MJCF, tags={"biped"}),
     "cf2_description": Description(Format.URDF, tags={"drone"}),
