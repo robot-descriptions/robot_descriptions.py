@@ -232,6 +232,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `atlas_v4_description`          | Atlas v4              | Boston Dynamics          | URDF       | MIT |
 | `berkeley_humanoid_description` | Berkeley Humanoid     | Hybrid Robotics          | URDF       | BSD-3-Clause |
 | `booster_t1_description`        | Booster T1            | Booster Robotics         | URDF       | [Apache-2.0](https://github.com/BoosterRobotics/booster_gym/blob/687a33d08b08875fe45dc8d91b54db83766df8b9/LICENSE) |
+| `booster_t1_mj_description`     | Booster T1            | Booster Robotics         | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/66384c6b8581c811a7b1eb63bcf4fa944fa43602/booster_t1/LICENSE) |
 | `draco3_description`            | Draco3                | Apptronik                | URDF       | BSD-2-Clause |
 | `elf2_description`              | Elf2                  | BXI Robotics             | URDF       | [Apache-2.0](https://github.com/bxirobotics/robot_models/blob/eabe24ce937f8e633077a163b883e92e8996c36e/LICENSE) |
 | `elf2_mj_description`           | Elf2                  | BXI Robotics             | MJCF       | [Apache-2.0](https://github.com/bxirobotics/robot_models/blob/eabe24ce937f8e633077a163b883e92e8996c36e/LICENSE) |
