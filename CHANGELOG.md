@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - CLI: Add `pull` command to `robot_description` and cache it (thanks to @haixuantao)
+- Description: Booster T1 (MJCF)
 - Description: Booster T1 (URDF)
 - Description: BamBot (URDF)
 - Description: SO ARM 101 (MJCF) (thanks to @haixuantao)
