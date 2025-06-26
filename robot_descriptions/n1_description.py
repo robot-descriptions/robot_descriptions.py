@@ -9,7 +9,7 @@ from os import path as _path
 from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache(
-    "Wiki-GRx-Models",
+    "Wiki-GRx-Models-FourierN1",
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 

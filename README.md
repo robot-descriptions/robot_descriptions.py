@@ -239,6 +239,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `ergocub_description`           | ergoCub               | IIT                      | URDF       | BSD-3-Clause |
 | `g1_description`                | G1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `g1_mj_description`             | G1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
+| `gr1_description`               | GR-1                  | Fourier                  | URDF       | [GPL-3.0](https://github.com/FFTAI/Wiki-GRx-Models/blob/351245ac8fa4bf6f4b0c41556e1e6976a438bcef/LICENSE) |
 | `h1_description`                | H1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `h1_mj_description`             | H1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 | `icub_description`              | iCub                  | IIT                      | URDF       | CC-BY-SA-4.0 ✖️  |

@@ -317,7 +317,12 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "Wiki-GRx-Models": Repository(
         url="https://github.com/FFTAI/Wiki-GRx-Models.git",
-        commit="f8e683f00d1d99deb882deb9dfce6030095b466a",
+        commit="351245ac8fa4bf6f4b0c41556e1e6976a438bcef",
         cache_path="Wiki-GRx-Models",
+    ),
+    "Wiki-GRx-Models-FourierN1": Repository(
+        url="https://github.com/FFTAI/Wiki-GRx-Models.git",
+        commit="f8e683f00d1d99deb882deb9dfce6030095b466a",  # FourierN1 branch
+        cache_path="Wiki-GRx-Models-FourierN1",
     ),
 }
