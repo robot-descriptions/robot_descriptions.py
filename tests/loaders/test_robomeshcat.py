@@ -7,14 +7,23 @@
 import unittest
 
 from robot_descriptions._descriptions import DESCRIPTIONS
-from robot_descriptions.loaders.robomeshcat import load_robot_description
+from robot_descriptions.loaders.robomeshcat import (
+    load_robot_description as load_robomeshcat,
+)
 
 
 class TestRoboMeshCat(unittest.TestCase):
-
     """
     Check that all descriptions are loaded properly in RoboMeshCat.
     """
+
+    def test_robomeshcat(self):
+        self.assertIsNotNone(
+            load_robomeshcat(
+                "upkie_description",
+                commit="98502d5b175c3d6b60b3cf475b7eeef9fd290c43",
+            )
+        )
 
     @staticmethod
     def get_test_for_description(description: str):
@@ -29,7 +38,7 @@ class TestRoboMeshCat(unittest.TestCase):
         """
 
         def test(self):
-            load_robot_description(description)
+            load_robomeshcat(description)
 
         return test
 
