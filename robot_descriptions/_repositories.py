@@ -183,7 +183,10 @@ REPOSITORIES: Dict[str, Repository] = {
     "limxdynamics_robot-description": Repository(
         url="https://github.com/limxdynamics/robot-description.git",
         commit="a097533372a08298d45af391cbdfc2fd2dc3da6f",
-        cache_path="limxdynamics_robot-description",
+        # TODO: allow cache path with sub-directories; here we want the
+        # "robot_description" as last directory name, to match the package path
+        # in URDF descriptions so that Bullet loads them successfully
+        cache_path="robot_description",
     ),
     "mini_cheetah_urdf": Repository(
         url="https://github.com/Derek-TH-Wang/mini_cheetah_urdf.git",
