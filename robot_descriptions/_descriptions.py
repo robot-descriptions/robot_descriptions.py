@@ -228,6 +228,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "valkyrie_description": Description(Format.URDF, tags={"humanoid"}),
     "viper_mj_description": Description(Format.MJCF, tags={"arm"}),
     "widow_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "wl_p311d_description": Description(Format.URDF, tags={"quadruped"}),
     "xarm7_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yam_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yumi_description": Description(Format.URDF, tags={"dual_arm"}),
