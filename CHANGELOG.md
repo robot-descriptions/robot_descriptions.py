@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Description: SO ARM 101 (MJCF) (thanks to @haixuantao)
 - Description: SO ARM 101 (URDF) (thanks to @haixuantao)
 - Description: WL P311D (URDF)
+- Description: WL P311E (URDF)
 
 ### Changed
 
