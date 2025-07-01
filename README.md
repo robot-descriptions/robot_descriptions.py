@@ -306,6 +306,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `rsk_mj_description`          | RSK Omnidirectional   | Robot Soccer Kit         | MJCF       | MIT     |
 | `upkie_description`           | Upkie                 | Stéphane Caron           | URDF       | Apache-2.0 |
 | `wl_p311d_description`        | WL P311D              | LimX Dynamics            | URDF       | [Apache-2.0](https://github.com/limxdynamics/robot-description/blob/a097533372a08298d45af391cbdfc2fd2dc3da6f/LICENSE) |
+| `wl_p311e_description`        | WL P311E              | LimX Dynamics            | URDF       | [Apache-2.0](https://github.com/limxdynamics/robot-description/blob/a097533372a08298d45af391cbdfc2fd2dc3da6f/LICENSE) |
 
 ## Contributing
 
