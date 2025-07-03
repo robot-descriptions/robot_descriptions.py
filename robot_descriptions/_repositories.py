@@ -340,7 +340,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "rby1_description": Repository(
         url="https://github.com/uynitsuj/rby1_description.git",
-        commit="d8e8fe5f92604ef56e11db7f9798973cf94767cb",
+        commit="e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72",
         cache_path="rby1_description",
     ),
 }
