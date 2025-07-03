@@ -3,6 +3,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+- Description YAM (URDF)
+- Description RBY1 Mobile Manipulatior (URDF)
 
 ## [1.19.0] - 2025-07-03
 
@@ -18,6 +20,7 @@ All notable changes to this project will be documented in this file.
 - Description: WL P311D (URDF)
 - Description: WL P311E (URDF)
 
+
 ### Changed
 
 - Rename `leap_hand_v1` to `leap_hand_v1_description`
@@ -32,8 +35,6 @@ All notable changes to this project will be documented in this file.
 - Description: Fourier N1 (URDF)
 - Description: RSK omnidirectional robot (MJCF)
 - Description: YAM (MJCF) (thanks to @kevinzakka)
-- Description YAM (URDF)
-- Description RBY1 Mobile Manipulatior (URDF)
 
 ### Changed
 
