@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.19.0] - 2025-07-03
+
 ### Added
 
 - CLI: Add `pull` command to `robot_description` and cache it (thanks to @haixuantao)
@@ -493,7 +495,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.18.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.19.0...HEAD
+[1.19.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.18.0...v1.19.0
 [1.18.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.17.0...v1.18.0
 [1.17.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.16.0...v1.17.0
 [1.16.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.15.0...v1.16.0
