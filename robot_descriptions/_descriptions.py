@@ -80,6 +80,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "atlas_v4_description": Description(Format.URDF, tags={"humanoid"}),
     "b1_description": Description(Format.URDF, tags={"quadruped"}),
     "b2_description": Description(Format.URDF, tags={"quadruped"}),
+    "bambot_description": Description(
+        Format.URDF, tags={"mobile_manipulator"}
+    ),
     "barrett_hand_description": Description(
         Format.URDF, tags={"end_effector"}
     ),
@@ -88,6 +91,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         Format.URDF, tags={"humanoid"}
     ),
     "bolt_description": Description(Format.URDF, tags={"biped"}),
+    "booster_t1_description": Description(Format.URDF, tags={"humanoid"}),
+    "booster_t1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "cassie_description": Description(Format.URDF, tags={"biped"}),
     "cassie_mj_description": Description(Format.MJCF, tags={"biped"}),
     "cf2_description": Description(Format.URDF, tags={"drone"}),
@@ -123,6 +128,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "go1_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "go2_description": Description(Format.URDF, tags={"quadruped"}),
     "go2_mj_description": Description(Format.MJCF, tags={"quadruped"}),
+    "gr1_description": Description(Format.URDF, tags={"humanoid"}),
     "h1_description": Description(Format.URDF, tags={"humanoid"}),
     "h1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "hyq_description": Description(Format.URDF, tags={"quadruped"}),
@@ -134,7 +140,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "jvrc_description": Description(Format.URDF, tags={"humanoid"}),
     "jvrc_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "laikago_description": Description(Format.URDF, tags={"quadruped"}),
-    "leap_hand_v1": Description(Format.URDF, tags={"end_effector"}),
+    "leap_hand_v1_description": Description(
+        Format.URDF, tags={"end_effector"}
+    ),
     "leap_hand_mj_description": Description(
         Format.MJCF, tags={"end_effector"}
     ),
@@ -143,6 +151,8 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "mini_cheetah_description": Description(Format.URDF, tags={"quadruped"}),
     "minitaur_description": Description(Format.URDF, tags={"quadruped"}),
+    "n1_description": Description(Format.URDF, tags={"humanoid"}),
+    "n1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "nextage_description": Description(Format.URDF, tags={"dual_arm"}),
     "op3_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "panda_description": Description(Format.URDF, tags={"arm"}),
@@ -173,6 +183,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "romeo_description": Description(Format.URDF, tags={"humanoid"}),
     "rsk_description": Description(Format.URDF, tags={"wheeled"}),
+    "rsk_mj_description": Description(Format.MJCF, tags={"wheeled"}),
     "sawyer_mj_description": Description(Format.MJCF, tags={"arm"}),
     "shadow_dexee_mj_description": Description(
         Format.MJCF, tags={"end_effector"}
@@ -186,8 +197,10 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "skydio_x2_description": Description(Format.URDF, tags={"drone"}),
     "skydio_x2_mj_description": Description(Format.MJCF, tags={"drone"}),
-    "so_arm100": Description(Format.URDF, tags={"arm"}),
+    "so_arm100_description": Description(Format.URDF, tags={"arm"}),
     "so_arm100_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "so_arm101_description": Description(Format.URDF, tags={"arm"}),
+    "so_arm101_mj_description": Description(Format.MJCF, tags={"arm"}),
     "solo_description": Description(Format.URDF, tags={"quadruped"}),
     "spot_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "spryped_description": Description(Format.URDF, tags={"biped"}),
@@ -215,6 +228,8 @@ DESCRIPTIONS: Dict[str, Description] = {
     "valkyrie_description": Description(Format.URDF, tags={"humanoid"}),
     "viper_mj_description": Description(Format.MJCF, tags={"arm"}),
     "widow_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "wl_p311d_description": Description(Format.URDF, tags={"quadruped"}),
+    "wl_p311e_description": Description(Format.URDF, tags={"quadruped"}),
     "xarm7_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yam_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yam_description": Description(Format.URDF, tags={"arm"}),

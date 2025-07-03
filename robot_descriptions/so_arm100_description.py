@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2025 Inria
+# Copyright 2022 Stéphane Caron
 
-"""PiPER MJCF description."""
+"""SO-ARM100 description."""
 
 from os import getenv as _getenv
 from os import path as _path
@@ -12,10 +12,10 @@ from os import path as _path
 from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache(
-    "mujoco_menagerie",
+    "SO-ARM100",
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "agilex_piper")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "Simulation", "SO100")
 
-MJCF_PATH: str = _path.join(PACKAGE_PATH, "piper.xml")
+URDF_PATH: str = _path.join(PACKAGE_PATH, "so100.urdf")

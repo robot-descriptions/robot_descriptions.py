@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Stéphane Caron
 
-"""SO-ARM100 description."""
+"""SO-ARM101 description."""
 
 from os import getenv as _getenv
 from os import path as _path
@@ -16,10 +15,6 @@ REPOSITORY_PATH: str = _clone_to_cache(
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(
-    REPOSITORY_PATH, "URDF", "SO_5DOF_ARM100_8j_URDF.SLDASM"
-)
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "Simulation", "SO101")
 
-URDF_PATH: str = _path.join(
-    PACKAGE_PATH, "urdf", "SO_5DOF_ARM100_8j_URDF.SLDASM.urdf"
-)
+MJCF_PATH: str = _path.join(PACKAGE_PATH, "so101_new_calib.xml")

@@ -2,16 +2,21 @@
 name: 💡 Feature request
 about: Suggest an idea to improve Upkie
 title: ''
-labels: ''
+labels: 'enhancement'
 assignees: ''
 
 ---
 
-⚠️ **Please open a discussion in the [Ideas](https://github.com/robot-descriptions/robot_descriptions.py/discussions/categories/ideas) forum rather than an issue.**
+# Current limitation
 
-Make sure your proposal checks out the following questions:
+Please describe the problem that the proposed feature would address. For instance: "I'm always frustrated when..."
 
-- [ ] Is your feature request related to a problem? Please describe, *e.g.* "I'm always frustrated when..."
-- [ ] Describe (concisely) the solution you'd like.
-- [ ] Describe alternatives you've considered.
-- [ ] Do you have screenshots or sketches to illustrate your proposal?
+# Proposed solution
+
+Describe (as concisely as possible) the solution you'd like.
+
+Do you have screenshots or sketches to illustrate it?
+
+# Additional context
+
+Describe any additional context, alternatives you can think of, ...

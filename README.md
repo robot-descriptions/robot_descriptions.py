@@ -15,15 +15,11 @@ Importing a description for the first time automatically downloads and caches fi
 
 ### From conda-forge
 
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions)
-
 ```console
 conda install -c conda-forge robot_descriptions
 ```
 
 ### From PyPI
-
-[![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 
 ```console
 pip install robot_descriptions
@@ -153,8 +149,10 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `piper_mj_description`        | PiPER                 | AgileX                   | MJCF       | MIT          |
 | `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | URDF       | GPL-3.0      |
 | `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | MJCF       | Apache-2.0   |
-| `so_arm100`                   | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
+| `so_arm100_description`       | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
 | `so_arm100_mj_description`    | SO-ARM100             | The Robot Studio         | MJCF       | Apache-2.0   |
+| `so_arm101_description`       | SO-ARM101             | The Robot Studio         | URDF       | Apache-2.0   |
+| `so_arm101_mj_description`    | SO-ARM101             | The Robot Studio         | MJCF       | Apache-2.0   |
 | `ur10_description`            | UR10                  | Universal Robots         | URDF       | Apache-2.0   |
 | `ur10e_mj_description`        | UR10e                 | Universal Robots         | MJCF       | BSD-3-Clause |
 | `ur3_description`             | UR3                   | Universal Robots         | URDF       | Apache-2.0   |
@@ -217,7 +215,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `allegro_hand_description`       | Allegro Hand          | Wonik Robotics             | URDF       | [BSD](https://github.com/RobotLocomotion/models/blob/5c027ea961473cb558da30e1a749272a8a9fa3eb/allegro_hand_description/LICENSE.TXT)     |
 | `allegro_hand_mj_description`    | Allegro Hand          | Wonik Robotics             | MJCF       | [BSD-2-Clause](https://github.com/google-deepmind/mujoco_menagerie/blob/main/wonik_allegro/LICENSE) |
 | `barrett_hand_description`       | BarrettHand           | Barrett Technology         | URDF       | [BSD](https://github.com/jhu-lcsr-attic/bhand_model/blob/937f4186d6458bd682a7dae825fb6f4efe56ec69/manifest.xml) |
-| `leap_hand_v1`                   | LEAP Hand v1          | Carnegie Mellon University | URDF       | MIT |
+| `leap_hand_v1_description`       | LEAP Hand v1          | Carnegie Mellon University | URDF       | MIT |
 | `leap_hand_mj_description`       | LEAP Hand             | Carnegie Mellon University | MJCF       | MIT |
 | `robotiq_2f85_description`       | Robotiq 2F-85         | Robotiq                    | URDF       | BSD-2-Clause |
 | `robotiq_2f85_mj_description`    | Robotiq 2F-85         | Robotiq                    | MJCF       | BSD-2-Clause |
@@ -234,18 +232,23 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `atlas_drc_description`         | Atlas DRC (v3)        | Boston Dynamics          | URDF       | BSD-3-Clause |
 | `atlas_v4_description`          | Atlas v4              | Boston Dynamics          | URDF       | MIT |
 | `berkeley_humanoid_description` | Berkeley Humanoid     | Hybrid Robotics          | URDF       | BSD-3-Clause |
+| `booster_t1_description`        | Booster T1            | Booster Robotics         | URDF       | [Apache-2.0](https://github.com/BoosterRobotics/booster_gym/blob/687a33d08b08875fe45dc8d91b54db83766df8b9/LICENSE) |
+| `booster_t1_mj_description`     | Booster T1            | Booster Robotics         | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/66384c6b8581c811a7b1eb63bcf4fa944fa43602/booster_t1/LICENSE) |
 | `draco3_description`            | Draco3                | Apptronik                | URDF       | BSD-2-Clause |
 | `elf2_description`              | Elf2                  | BXI Robotics             | URDF       | [Apache-2.0](https://github.com/bxirobotics/robot_models/blob/eabe24ce937f8e633077a163b883e92e8996c36e/LICENSE) |
 | `elf2_mj_description`           | Elf2                  | BXI Robotics             | MJCF       | [Apache-2.0](https://github.com/bxirobotics/robot_models/blob/eabe24ce937f8e633077a163b883e92e8996c36e/LICENSE) |
 | `ergocub_description`           | ergoCub               | IIT                      | URDF       | BSD-3-Clause |
 | `g1_description`                | G1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `g1_mj_description`             | G1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
+| `gr1_description`               | GR-1                  | Fourier                  | URDF       | [GPL-3.0](https://github.com/FFTAI/Wiki-GRx-Models/blob/351245ac8fa4bf6f4b0c41556e1e6976a438bcef/LICENSE) |
 | `h1_description`                | H1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `h1_mj_description`             | H1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 | `icub_description`              | iCub                  | IIT                      | URDF       | CC-BY-SA-4.0 ✖️  |
 | `jaxon_description`             | JAXON                 | JSK                      | URDF       | CC-BY-SA-4.0 ✖️  |
 | `jvrc_description`              | JVRC-1                | AIST                     | URDF       | BSD-2-Clause |
 | `jvrc_mj_description`           | JVRC-1                | AIST                     | MJCF       | BSD-2-Clause |
+| `n1_description`                | N1                    | Fourier                  | URDF       | [Apache-2.0](https://github.com/FFTAI/Wiki-GRx-Models/blob/f8e683f00d1d99deb882deb9dfce6030095b466a/LICENSE) |
+| `n1_mj_description`             | N1                    | Fourier                  | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/f3475402a11acf5ba767a8bec03cc9bea9819d8d/fourier_n1/LICENSE) |
 | `op3_mj_description`            | OP3                   | ROBOTIS                  | MJCF       | Apache-2.0 |
 | `r2_description`                | Robonaut 2            | NASA JSC Robotics        | URDF       | NASA-1.3 |
 | `romeo_description`             | Romeo                 | Aldebaran Robotics       | URDF       | BSD-3-Clause |
@@ -256,18 +259,19 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ### Mobile manipulators
 
-| Name                          | Robot                 | Maker                    | DOF | Format     |
-|-------------------------------|-----------------------|--------------------------|-----|------------|
-| `eve_r3_description`          | Eve R3                | Halodi                   | 23  | URDF       |
-| `fetch_description`           | Fetch                 | Fetch Robotics           | 14  | URDF       |
-| `ginger_description`          | Ginger                | Paaila Technology        | 49  | URDF       |
-| `pepper_description`          | Pepper                | SoftBank Robotics        | 17  | URDF       |
-| `pr2_description`             | PR2                   | Willow Garage            | 32  | URDF       |
-| `reachy_description`          | Reachy                | Pollen Robotics          | 21  | URDF       |
-| `stretch_description`         | Stretch RE1           | Hello Robot              | 14  | URDF       |
-| `sretch_mj_description`       | Stretch 2             | Hello Robot              | 14  | MJCF       |
-| `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | 14  | MJCF       |
-| `tiago_description`           | TIAGo                 | PAL Robotics             | 48  | URDF       |
+| Name                          | Robot                 | Maker                    | Format     | License |
+|-------------------------------|-----------------------|--------------------------|------------|---------|
+| `bambot_description`          | BamBot                | Tim Qian                 | URDF       | [Apache-2.0](https://github.com/timqian/bambot/blob/04d902653794f9f72eeabb09ec90a9af8e397c5b/LICENSE) |
+| `eve_r3_description`          | Eve R3                | Halodi                   | URDF       | Apache-2.0 |
+| `fetch_description`           | Fetch                 | Fetch Robotics           | URDF       | MIT |
+| `ginger_description`          | Ginger                | Paaila Technology        | URDF       | BSD |
+| `pepper_description`          | Pepper                | SoftBank Robotics        | URDF       | BSD-2-Clause |
+| `pr2_description`             | PR2                   | Willow Garage            | URDF       | BSD |
+| `reachy_description`          | Reachy                | Pollen Robotics          | URDF       | Apache-2.0 |
+| `stretch_description`         | Stretch RE1           | Hello Robot              | URDF       | CC-BY-SA-4.0 ✖️  |
+| `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
+| `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
+| `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
 | `rby1_description`            | RBY1                  | Rainbow Robotics         | 24  | URDF       |
 
 
@@ -302,7 +306,10 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | Maker                    | Format     | License |
 |-------------------------------|-----------------------|--------------------------|------------|---------|
 | `rsk_description`             | RSK Omnidirectional   | Robot Soccer Kit         | URDF       | MIT     |
+| `rsk_mj_description`          | RSK Omnidirectional   | Robot Soccer Kit         | MJCF       | MIT     |
 | `upkie_description`           | Upkie                 | Stéphane Caron           | URDF       | Apache-2.0 |
+| `wl_p311d_description`        | WL P311D              | LimX Dynamics            | URDF       | [Apache-2.0](https://github.com/limxdynamics/robot-description/blob/a097533372a08298d45af391cbdfc2fd2dc3da6f/LICENSE) |
+| `wl_p311e_description`        | WL P311E              | LimX Dynamics            | URDF       | [Apache-2.0](https://github.com/limxdynamics/robot-description/blob/a097533372a08298d45af391cbdfc2fd2dc3da6f/LICENSE) |
 
 ## Contributing
 
@@ -319,10 +326,10 @@ If you use this project in your works, please cite as follows:
 ```bibtex
 @software{robot_descriptions_py,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Castro, Sebastian and Tao, Haixuan Xavier},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.17.0},
+  version = {1.19.0},
   year = {2025}
 }
 ```

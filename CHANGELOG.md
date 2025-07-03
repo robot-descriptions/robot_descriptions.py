@@ -4,12 +4,41 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.19.0] - 2025-07-03
+
+### Added
+
+- CLI: Add `pull` command to `robot_description` and cache it (thanks to @haixuantao)
+- Description: BamBot (URDF)
+- Description: Booster T1 (MJCF)
+- Description: Booster T1 (URDF)
+- Description: Fourier GR-1 (URDF)
+- Description: SO ARM 101 (MJCF) (thanks to @haixuantao)
+- Description: SO ARM 101 (URDF) (thanks to @haixuantao)
+- Description: WL P311D (URDF)
+- Description: WL P311E (URDF)
+
+### Changed
+
+- Rename `leap_hand_v1` to `leap_hand_v1_description`
+- Rename `so_arm100` to `so_arm100_description`
+
+## [1.18.0] - 2025-06-19
+
 ### Added
 
 - Description: Dynamixel 2R (MJCF)
+- Description: Fourier N1 (MJCF)
+- Description: Fourier N1 (URDF)
+- Description: RSK omnidirectional robot (MJCF)
 - Description: YAM (MJCF) (thanks to @kevinzakka)
 - Description YAM (URDF)
 - Description RBY1 Mobile Manipulatior (URDF)
+
+### Changed
+
+- Update `piper_mj_description` to load `piper.xml` instead of `scene.xml` (thanks to @jonzamora)
+- Allow passing `kwargs` to `yourdfpy.load_robot_description` (thanks to @sea-bass)
 
 ## [1.17.0] - 2025-05-08
 
@@ -468,7 +497,9 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.17.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.19.0...HEAD
+[1.19.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.18.0...v1.19.0
+[1.18.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.17.0...v1.18.0
 [1.17.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.16.0...v1.17.0
 [1.16.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.15.0...v1.16.0
 [1.15.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.14.0...v1.15.0

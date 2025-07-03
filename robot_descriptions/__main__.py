@@ -48,6 +48,16 @@ def get_argument_parser() -> argparse.ArgumentParser:
         help="list all available robot descriptions",
     )
 
+    # pull ----------------------------------------------------------------
+    parser_pull = subparsers.add_parser(
+        "pull",
+        help="load given robot description from the web and save it in cache",
+    )
+    parser_pull.add_argument(
+        "name",
+        help="name of the robot description",
+    )
+
     # show_in_meshcat --------------------------------------------------------
     parser_meshcat = subparsers.add_parser(
         "show_in_meshcat",
@@ -124,6 +134,22 @@ def list_descriptions():
             "MJCF" if desc.has_mjcf else ""
         )
         print(f"- {name} [{formats}]")
+
+
+def pull(name: str) -> None:
+    """Pull a robot description from the web and save it in cache.
+
+    Args:
+        name: Name of the robot description.
+    """
+    try:
+        module = import_module(f"robot_descriptions.{name}")
+    except ModuleNotFoundError:
+        module = import_module(f"robot_descriptions.{name}_description")
+    if hasattr(module, "URDF_PATH"):
+        print(module.URDF_PATH)
+    elif hasattr(module, "MJCF_PATH"):
+        print(module.MJCF_PATH)
 
 
 def show_in_meshcat(name: str) -> None:
@@ -283,6 +309,8 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.subcmd == "list":
         list_descriptions()
+    elif args.subcmd == "pull":
+        pull(args.name)
     elif args.subcmd == "show_in_meshcat":
         show_in_meshcat(args.name)
     elif args.subcmd == "show_in_mujoco":

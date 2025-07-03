@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2025 Inria
 
-"""PiPER MJCF description."""
+"""RSK omnidirection robot MJCF description."""
 
 from os import getenv as _getenv
 from os import path as _path
@@ -16,6 +16,6 @@ REPOSITORY_PATH: str = _clone_to_cache(
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "agilex_piper")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robot_soccer_kit")
 
-MJCF_PATH: str = _path.join(PACKAGE_PATH, "piper.xml")
+MJCF_PATH: str = _path.join(PACKAGE_PATH, "robot_soccer_kit.xml")

@@ -46,6 +46,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="6adc14720aab583613975e5a9d6d4fa3cfcdd081",
         cache_path="anymal_d_simple_description",
     ),
+    "bambot": Repository(
+        url="https://github.com/timqian/bambot.git",
+        commit="04d902653794f9f72eeabb09ec90a9af8e397c5b",
+        cache_path="bambot",
+    ),
     "baxter_common": Repository(
         url="https://github.com/RethinkRobotics/baxter_common.git",
         commit="6c4b0f375fe4e356a3b12df26ef7c0d5e58df86e",  # v1.2.0
@@ -60,6 +65,11 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/jhu-lcsr-attic/bhand_model.git",
         commit="937f4186d6458bd682a7dae825fb6f4efe56ec69",
         cache_path="bhand_model",
+    ),
+    "booster_gym": Repository(
+        url="https://github.com/BoosterRobotics/booster_gym.git",
+        commit="687a33d08b08875fe45dc8d91b54db83766df8b9",
+        cache_path="booster_gym",
     ),
     "bullet3": Repository(
         url="https://github.com/bulletphysics/bullet3.git",
@@ -170,6 +180,14 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="cee556b0a438e6904634a90826d4e8d2e005cd1f",
         cache_path="kinova_mj_description",
     ),
+    "limxdynamics_robot-description": Repository(
+        url="https://github.com/limxdynamics/robot-description.git",
+        commit="a097533372a08298d45af391cbdfc2fd2dc3da6f",
+        # TODO: allow cache path with sub-directories; here we want the
+        # "robot_description" as last directory name, to match the package path
+        # in URDF descriptions so that Bullet loads them successfully
+        cache_path="robot_description",
+    ),
     "mini_cheetah_urdf": Repository(
         url="https://github.com/Derek-TH-Wang/mini_cheetah_urdf.git",
         commit="1988bceb26e81f28594a16e7d5e6abe5cbb27ace",
@@ -177,7 +195,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "mujoco_menagerie": Repository(
         url="https://github.com/deepmind/mujoco_menagerie.git",
-        commit="4a7015530bd7a4161103ae8f0905a96481e4cc1a",
+        commit="66384c6b8581c811a7b1eb63bcf4fa944fa43602",
         cache_path="mujoco_menagerie",
     ),
     "nao_robot": Repository(
@@ -267,7 +285,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "SO-ARM100": Repository(
         url="https://github.com/TheRobotStudio/SO-ARM100.git",
-        commit="8967344301571dfa22660c73a901ad00acd6ee91",
+        commit="63eede5a636e548eb8f2854e558bd343c21db9f7",
         cache_path="SO-ARM100",
     ),
     "spryped": Repository(
@@ -304,6 +322,16 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/lvjonok/skydio_x2_description.git",
         commit="9a6a057a055babaf47119fac42c361fffc189128",
         cache_path="skydio_x2_description",
+    ),
+    "Wiki-GRx-Models": Repository(
+        url="https://github.com/FFTAI/Wiki-GRx-Models.git",
+        commit="351245ac8fa4bf6f4b0c41556e1e6976a438bcef",
+        cache_path="Wiki-GRx-Models",
+    ),
+    "Wiki-GRx-Models-FourierN1": Repository(
+        url="https://github.com/FFTAI/Wiki-GRx-Models.git",
+        commit="f8e683f00d1d99deb882deb9dfce6030095b466a",  # FourierN1 branch
+        cache_path="Wiki-GRx-Models-FourierN1",
     ),
     "i2rt": Repository(
         url="https://github.com/i2rt-robotics/i2rt.git",
