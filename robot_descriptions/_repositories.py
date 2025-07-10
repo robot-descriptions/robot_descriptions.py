@@ -180,6 +180,12 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="cee556b0a438e6904634a90826d4e8d2e005cd1f",
         cache_path="kinova_mj_description",
     ),
+    "koch-v1-1": Repository(
+        url="https://github.com/s1lent4gnt/koch-v1-1.git",
+        commit="cc1a4eb9b27978b6bc3bb34f12fa5a7d229f1fde",
+        cache_path="koch_description"
+
+    ),
     "limxdynamics_robot-description": Repository(
         url="https://github.com/limxdynamics/robot-description.git",
         commit="a097533372a08298d45af391cbdfc2fd2dc3da6f",
