@@ -3,6 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+- Description: Low Cost Robot Arm (Koch v1.1) (URDF)
 
 - Description RBY1 Mobile Manipulatior (URDF) (thanks to @uynitsuj)
 - Description YAM (MJCF) (thanks to @uynitsuj)
