@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 - Description: Low Cost Robot Arm (Koch v1.1) (URDF)
 
+- Description RBY1 Mobile Manipulatior (URDF) (thanks to @uynitsuj)
+- Description YAM (MJCF) (thanks to @uynitsuj)
+- Description YAM (URDF) (thanks to @uynitsuj)
+
 ## [1.19.0] - 2025-07-03
 
 ### Added
@@ -18,6 +22,7 @@ All notable changes to this project will be documented in this file.
 - Description: SO ARM 101 (URDF) (thanks to @haixuantao)
 - Description: WL P311D (URDF)
 - Description: WL P311E (URDF)
+
 
 ### Changed
 

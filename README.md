@@ -162,7 +162,9 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `viper_mj_description`        | ViperX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
+| `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `yam_mj_description`          | YAM                   | I2RT Robotics            | MJCF       | MIT          |
+| `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `z1_description`              | Z1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `z1_mj_description`           | Z1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 
@@ -267,11 +269,14 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `ginger_description`          | Ginger                | Paaila Technology        | URDF       | BSD |
 | `pepper_description`          | Pepper                | SoftBank Robotics        | URDF       | BSD-2-Clause |
 | `pr2_description`             | PR2                   | Willow Garage            | URDF       | BSD |
+| `rby1_description`            | RBY1                  | Rainbow Robotics         | URDF       | [MIT](https://github.com/uynitsuj/rby1_description/blob/e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72/LICENSE) |
 | `reachy_description`          | Reachy                | Pollen Robotics          | URDF       | Apache-2.0 |
 | `stretch_description`         | Stretch RE1           | Hello Robot              | URDF       | CC-BY-SA-4.0 ✖️  |
 | `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
 | `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
+| `rby1_description`            | RBY1                  | Rainbow Robotics         | 24  | URDF       |
+
 
 ### Quadrupeds
 

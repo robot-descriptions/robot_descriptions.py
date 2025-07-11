@@ -150,6 +150,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="ba9e7c8cdbd63e20fc6526dbbea1b91c102fb820",
         cache_path="halodi-robot-models",
     ),
+    "i2rt": Repository(
+        url="https://github.com/i2rt-robotics/i2rt.git",
+        commit="8a8f804d72b41a04a5c69520031aec9a5d328104",
+        cache_path="i2rt",
+    ),
     "icub-models": Repository(
         url="https://github.com/robotology/icub-models.git",
         commit="v1.25.0",
@@ -238,6 +243,11 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/poppy-project/poppy_torso_description.git",
         commit="6beeec3d76fb72b7548cce7c73aad722f8884522",
         cache_path="poppy_torso_description",
+    ),
+    "rby1_description": Repository(
+        url="https://github.com/uynitsuj/rby1_description.git",
+        commit="e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72",
+        cache_path="rby1_description",
     ),
     "reachy_description": Repository(
         url="https://github.com/aubrune/reachy_description.git",
