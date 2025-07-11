@@ -3,6 +3,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+- Description YAM (URDF)
+- Description RBY1 Mobile Manipulatior (URDF)
 
 ## [1.19.0] - 2025-07-03
 
@@ -17,6 +19,7 @@ All notable changes to this project will be documented in this file.
 - Description: SO ARM 101 (URDF) (thanks to @haixuantao)
 - Description: WL P311D (URDF)
 - Description: WL P311E (URDF)
+
 
 ### Changed
 
