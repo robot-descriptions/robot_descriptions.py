@@ -343,4 +343,14 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="f8e683f00d1d99deb882deb9dfce6030095b466a",  # FourierN1 branch
         cache_path="Wiki-GRx-Models-FourierN1",
     ),
+    "i2rt": Repository(
+        url="https://github.com/i2rt-robotics/i2rt.git",
+        commit="8a8f804d72b41a04a5c69520031aec9a5d328104",
+        cache_path="i2rt",
+    ),
+    "rby1_description": Repository(
+        url="https://github.com/uynitsuj/rby1_description.git",
+        commit="e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72",
+        cache_path="rby1_description",
+    ),
 }

@@ -163,6 +163,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
 | `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `yam_mj_description`          | YAM                   | I2RT Robotics            | MJCF       | MIT          |
+| `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `z1_description`              | Z1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `z1_mj_description`           | Z1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 
@@ -273,6 +274,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
 | `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
+| `rby1_description`            | RBY1                  | Rainbow Robotics         | 24  | URDF       |
+
 
 ### Quadrupeds
 
