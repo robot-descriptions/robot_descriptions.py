@@ -204,9 +204,9 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `double_pendulum_description` | Double Pendulum       | 2   | URDF       |
 | `dynamixel_2r_mj_description` | Dynamixel 2R          | 2   | MJCF       |
 | `finger_edu_description`      | FingerEdu             | 3   | URDF       |
+| `mujoco_humanoid_description` | MuJoCo Humanoid       | 27  | MJCF       |
 | `simple_humanoid_description` | Simple Humanoid       | 29  | URDF       |
 | `trifinger_edu_description`   | TriFingerEdu          | 9   | URDF       |
-| `mujoco_humanoid_description` | MuJoCo Humanoid       | 27   | MJCF       |
 
 ### End effectors
 
