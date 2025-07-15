@@ -151,7 +151,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "mini_cheetah_description": Description(Format.URDF, tags={"quadruped"}),
     "minitaur_description": Description(Format.URDF, tags={"quadruped"}),
-    "mujoco_humanoid_description": Description(
+    "mujoco_humanoid_mj_description": Description(
         Format.MJCF, tags={"educational", "humanoid"}
     ),
     "n1_description": Description(Format.URDF, tags={"humanoid"}),

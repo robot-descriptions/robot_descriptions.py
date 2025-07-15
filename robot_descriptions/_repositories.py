@@ -198,15 +198,15 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="1988bceb26e81f28594a16e7d5e6abe5cbb27ace",
         cache_path="mini_cheetah_urdf",
     ),
-    "mujoco_menagerie": Repository(
-        url="https://github.com/deepmind/mujoco_menagerie.git",
-        commit="66384c6b8581c811a7b1eb63bcf4fa944fa43602",
-        cache_path="mujoco_menagerie",
-    ),
     "mujoco": Repository(
         url="https://github.com/google-deepmind/mujoco.git",
         commit="ad0dc0de5e10a075a2c65be629e9a8d557d383a6",
         cache_path="mujoco",
+    ),
+    "mujoco_menagerie": Repository(
+        url="https://github.com/deepmind/mujoco_menagerie.git",
+        commit="66384c6b8581c811a7b1eb63bcf4fa944fa43602",
+        cache_path="mujoco_menagerie",
     ),
     "nao_robot": Repository(
         url="https://github.com/ros-naoqi/nao_robot.git",
