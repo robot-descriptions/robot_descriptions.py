@@ -199,14 +199,14 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ### Educational
 
-| Name                          | Robot                 | DOF | Format     |
-|-------------------------------|-----------------------|-----|------------|
-| `double_pendulum_description` | Double Pendulum       | 2   | URDF       |
-| `dynamixel_2r_mj_description` | Dynamixel 2R          | 2   | MJCF       |
-| `finger_edu_description`      | FingerEdu             | 3   | URDF       |
-| `mujoco_humanoid_description` | MuJoCo Humanoid       | 27  | MJCF       |
-| `simple_humanoid_description` | Simple Humanoid       | 29  | URDF       |
-| `trifinger_edu_description`   | TriFingerEdu          | 9   | URDF       |
+| Name                             | Robot                 | DOF | Format     | License |
+|----------------------------------|-----------------------|-----|------------|---------
+| `double_pendulum_description`    | Double Pendulum       | 2   | URDF       | BSD-3-Clause |
+| `dynamixel_2r_mj_description`    | Dynamixel 2R          | 2   | MJCF       | MIT |
+| `finger_edu_description`         | FingerEdu             | 3   | URDF       | BSD-3-Clause |
+| `mujoco_humanoid_mj_description` | MuJoCo Humanoid       | 27  | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco/blob/ad0dc0de5e10a075a2c65be629e9a8d557d383a6/LICENSE) |
+| `simple_humanoid_description`    | Simple Humanoid       | 29  | URDF       | BSD-2-Clause |
+| `trifinger_edu_description`      | TriFingerEdu          | 9   | URDF       | MIT |
 
 ### End effectors
 
