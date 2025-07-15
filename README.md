@@ -332,7 +332,7 @@ If you use this project in your works, please cite as follows:
   author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Castro, Sebastian and Tao, Haixuan Xavier and Jallet, Wilson},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.19.0},
+  version = {1.20.0},
   year = {2025}
 }
 ```
