@@ -206,7 +206,7 @@ REPOSITORIES: Dict[str, Repository] = {
     "mujoco": Repository(
         url="https://github.com/google-deepmind/mujoco.git",
         commit="ad0dc0de5e10a075a2c65be629e9a8d557d383a6",
-        cache_path="mujoco"
+        cache_path="mujoco",
     ),
     "nao_robot": Repository(
         url="https://github.com/ros-naoqi/nao_robot.git",
