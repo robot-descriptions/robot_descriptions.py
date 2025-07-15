@@ -142,7 +142,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `iiwa14_description`          | iiwa 14               | KUKA                     | URDF       | BSD-3-Clause |
 | `iiwa14_mj_description`       | iiwa 14               | KUKA                     | MJCF       | BSD-3-Clause |
 | `iiwa7_description`           | iiwa 7                | KUKA                     | URDF       | MIT          |
-| `low_cost_robot_arm_mj_description` | Low-cost robot arm | Alexander Koch | MJCF | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/ef4d04fbb7451d30b39c2aff7e49df737bb46815/low_cost_robot_arm/LICENSE) |
+| `low_cost_robot_arm_description` | Low-cost robot arm (Koch v1.1) | Alexander Koch | URDF | [Apache-2.0](https://github.com/s1lent4gnt/koch-v1-1/blob/cc1a4eb9b27978b6bc3bb34f12fa5a7d229f1fde/LICENSE) |
+| `low_cost_robot_arm_mj_description` | Low-cost robot arm (Koch v1.1) | Alexander Koch | MJCF | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/ef4d04fbb7451d30b39c2aff7e49df737bb46815/low_cost_robot_arm/LICENSE) |
 | `panda_description`           | Panda                 | Franka Robotics          | URDF       | Apache-2.0   |
 | `panda_mj_description`        | Panda                 | Franka Robotics          | MJCF       | Apache-2.0   |
 | `piper_description`           | PiPER                 | AgileX                   | URDF       | MIT          |
