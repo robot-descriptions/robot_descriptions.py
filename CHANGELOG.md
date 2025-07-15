@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 - Description RBY1 Mobile Manipulatior (URDF) (thanks to @uynitsuj)
 - Description YAM (MJCF) (thanks to @uynitsuj)
 - Description YAM (URDF) (thanks to @uynitsuj)
+- Description MuJoCo Humanoid (MJCF) (thanks to @ManifoldFR)
 
 ## [1.19.0] - 2025-07-03
 
