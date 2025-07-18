@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 - Description: Unitree H1\_2 (URDF) (thanks to @TonyZYT2000)
 - Description: Unitree H1\_2 (MJCF) (thanks to @TonyZYT2000)
 
+### Changed
+
+- CICD: Disable fail-fast when testing loaders
+
 ## [1.20.0] - 2025-07-15
 
 ### Added
