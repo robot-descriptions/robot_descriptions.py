@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Unitree H1\_2 (URDF) (thanks to @TonyZYT2000)
+- Description: Unitree H1\_2 (MJCF) (thanks to @TonyZYT2000)
+
 ## [1.20.0] - 2025-07-15
 
 ### Added
@@ -12,8 +17,6 @@ All notable changes to this project will be documented in this file.
 - Description: RBY1 Mobile Manipulatior (URDF) (thanks to @uynitsuj)
 - Description: YAM (MJCF) (thanks to @uynitsuj)
 - Description: YAM (URDF) (thanks to @uynitsuj)
-- Description: Unitree H1_2 (URDF) (thanks to @TonyZYT2000)
-- Description: Unitree H1_2 (MJCF) (thanks to @TonyZYT2000)
 
 ## [1.19.0] - 2025-07-03
 
