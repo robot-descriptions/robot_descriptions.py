@@ -173,6 +173,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         Format.URDF, tags={"dual_arm", "mobile_manipulator"}
     ),
     "r2_description": Description(Format.URDF, tags={"humanoid"}),
+    "rby1_description": Description(Format.URDF, tags={"mobile_manipulator"}),
     "reachy_description": Description(
         Format.URDF, tags={"mobile_manipulator"}
     ),
@@ -236,9 +237,8 @@ DESCRIPTIONS: Dict[str, Description] = {
     "wl_p311d_description": Description(Format.URDF, tags={"quadruped"}),
     "wl_p311e_description": Description(Format.URDF, tags={"quadruped"}),
     "xarm7_mj_description": Description(Format.MJCF, tags={"arm"}),
-    "yam_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yam_description": Description(Format.URDF, tags={"arm"}),
-    "rby1_description": Description(Format.URDF, tags={"mobile_manipulator"}),
+    "yam_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yumi_description": Description(Format.URDF, tags={"dual_arm"}),
     "z1_description": Description(Format.URDF, tags={"arm"}),
     "z1_mj_description": Description(Format.MJCF, tags={"arm"}),
