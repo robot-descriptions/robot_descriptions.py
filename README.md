@@ -114,16 +114,29 @@ Visualizing a robot description:
 
 Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) are listed in the following categories:
 
-- [Arms](#arms)
-- [Bipeds](#bipeds)
-- [Dual arms](#dual-arms)
-- [Drones](#drones)
-- [Educational](#educational)
-- [End effectors](#end-effectors)
-- [Humanoids](#humanoids)
-- [Mobile manipulators](#mobile-manipulators)
-- [Quadrupeds](#quadrupeds)
-- [Wheeled](#wheeled)
+- [Robot descriptions in Python](#robot-descriptions-in-python)
+  - [Installation](#installation)
+    - [From conda-forge](#from-conda-forge)
+    - [From PyPI](#from-pypi)
+  - [Usage](#usage)
+    - [Show a description](#show-a-description)
+    - [Import as submodule](#import-as-submodule)
+  - [Examples](#examples)
+  - [Descriptions](#descriptions)
+    - [Arms](#arms)
+    - [Bipeds](#bipeds)
+    - [Dual arms](#dual-arms)
+    - [Drones](#drones)
+    - [Educational](#educational)
+    - [End effectors](#end-effectors)
+    - [Humanoids](#humanoids)
+    - [Mobile manipulators](#mobile-manipulators)
+    - [Quadrupeds](#quadrupeds)
+    - [Wheeled](#wheeled)
+  - [Contributing](#contributing)
+  - [Thanks](#thanks)
+  - [Citation](#citation)
+  - [See also](#see-also)
 
 The DOF column denotes the number of actuated degrees of freedom.
 
@@ -277,6 +290,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
 | `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
+| `tiago_pro_mj_description`           | TIAGo++ / TIAGo Pro                 | PAL Robotics             | MJCF       | Apache-2.0 |
 | `rby1_description`            | RBY1                  | Rainbow Robotics         | 24  | URDF       |
 
 
