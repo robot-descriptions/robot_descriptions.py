@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - CICD: Disable fail-fast when testing loaders
+- Update `g1_mj_description` to load `g1_with_hands.xml` instead of `g1.xml`
 
 ## [1.20.0] - 2025-07-15
 
