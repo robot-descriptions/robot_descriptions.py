@@ -113,30 +113,16 @@ Visualizing a robot description:
 ## Descriptions
 
 Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) are listed in the following categories:
-
-- [Robot descriptions in Python](#robot-descriptions-in-python)
-  - [Installation](#installation)
-    - [From conda-forge](#from-conda-forge)
-    - [From PyPI](#from-pypi)
-  - [Usage](#usage)
-    - [Show a description](#show-a-description)
-    - [Import as submodule](#import-as-submodule)
-  - [Examples](#examples)
-  - [Descriptions](#descriptions)
-    - [Arms](#arms)
-    - [Bipeds](#bipeds)
-    - [Dual arms](#dual-arms)
-    - [Drones](#drones)
-    - [Educational](#educational)
-    - [End effectors](#end-effectors)
-    - [Humanoids](#humanoids)
-    - [Mobile manipulators](#mobile-manipulators)
-    - [Quadrupeds](#quadrupeds)
-    - [Wheeled](#wheeled)
-  - [Contributing](#contributing)
-  - [Thanks](#thanks)
-  - [Citation](#citation)
-  - [See also](#see-also)
+- [Arms](#arms)
+- [Bipeds](#bipeds)
+- [Dual arms](#dual-arms)
+- [Drones](#drones)
+- [Educational](#educational)
+- [End effectors](#end-effectors)
+- [Humanoids](#humanoids)
+- [Mobile manipulators](#mobile-manipulators)
+- [Quadrupeds](#quadrupeds)
+- [Wheeled](#wheeled)
 
 The DOF column denotes the number of actuated degrees of freedom.
 
