@@ -318,6 +318,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="77169405d6a48a5d3f3f75eb014209f375ff23b6",  # v2.0.0
         cache_path="talos_data",  # match package name
     ),
+    "toddlerbot": Repository(
+        url="https://github.com/hshi74/toddlerbot.git",
+        commit="067f9dc4f50143e36334877b9395b9c5c29ee30c",
+        cache_path="toddlerbot",
+    ),
     "unitree_mujoco": Repository(
         url="https://github.com/unitreerobotics/unitree_mujoco.git",
         commit="f3300ff1bf0ab9efbea0162717353480d9b05d73",
