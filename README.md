@@ -257,6 +257,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sigmaban_description`          | SigmaBan              | Rhoban                   | URDF       | MIT |
 | `talos_description`             | TALOS                 | PAL Robotics             | URDF       | Apache-2.0 |
 | `talos_mj_description`          | TALOS                 | PAL Robotics             | MJCF       | Apache-2.0 |
+| `toddlerbot_description`        | ToddlerBot            | Stanford University      | URDF       | MIT |
 | `valkyrie_description`          | Valkyrie              | NASA JSC Robotics        | URDF       | NASA-1.3 |
 
 ### Mobile manipulators
