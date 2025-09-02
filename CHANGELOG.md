@@ -20,6 +20,10 @@ All notable changes to this project will be documented in this file.
 
 - Update commit and URDF path of YAM description
 
+### Fixed
+
+- Update commit and URDF path of YAM description
+
 ## [1.20.0] - 2025-07-15
 
 ### Added
