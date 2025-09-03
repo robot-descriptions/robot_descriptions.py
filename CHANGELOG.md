@@ -4,8 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.21.0] - 2025-09-03
+
 ### Added
 
+- Add "with hands" variant to the G1 MJCF description (thanks to @jonzamora)
 - Description: TIAGo++ (MJCF) (thanks to @Danfoa)
 - Description: ToddlerBot (URDF)
 - Description: Unitree H1\_2 (MJCF) (thanks to @TonyZYT2000)
@@ -14,11 +17,6 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - CICD: Disable fail-fast when testing loaders
-- Update `g1_mj_description` to load `g1_with_hands.xml` instead of `g1.xml`
-
-### Fixed
-
-- Update commit and URDF path of YAM description
 
 ### Fixed
 
