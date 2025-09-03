@@ -3,6 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+- Description: Low Cost Robot Arm (Koch v1.1) (URDF)
 
 ## [1.21.0] - 2025-09-03
 
