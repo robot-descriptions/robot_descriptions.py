@@ -113,6 +113,7 @@ Visualizing a robot description:
 ## Descriptions
 
 Available robot descriptions ([gallery](https://github.com/robot-descriptions/awesome-robot-descriptions#gallery)) are listed in the following categories:
+
 - [Arms](#arms)
 - [Bipeds](#bipeds)
 - [Dual arms](#dual-arms)
