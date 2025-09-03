@@ -14,6 +14,11 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - CICD: Disable fail-fast when testing loaders
+- Update `g1_mj_description` to load `g1_with_hands.xml` instead of `g1.xml`
+
+### Fixed
+
+- Update commit and URDF path of YAM description
 
 ### Fixed
 

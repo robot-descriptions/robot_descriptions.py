@@ -19,3 +19,5 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "unitree_g1")
 
 MJCF_PATH: str = _path.join(PACKAGE_PATH, "g1.xml")
+
+MJCF_PATH_WITH_HANDS: str = _path.join(PACKAGE_PATH, "g1_with_hands.xml")
