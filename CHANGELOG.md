@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: TIAGo++ (MJCF) (thanks to @Danfoa)
 - Description: ToddlerBot (URDF)
 - Description: Unitree H1\_2 (MJCF) (thanks to @TonyZYT2000)
 - Description: Unitree H1\_2 (URDF) (thanks to @TonyZYT2000)
