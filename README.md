@@ -277,8 +277,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
 | `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
-| `tiago++_mj_description`           | TIAGo++                 | PAL Robotics             | MJCF       | Apache-2.0 |
-| `rby1_description`            | RBY1                  | Rainbow Robotics         | 24  | URDF       |
+| `tiago++_mj_description`      | TIAGo++               | PAL Robotics             | MJCF       | Apache-2.0 |
+| `rby1_description`            | RBY1                  | Rainbow Robotics         | URDF       | MIT |
 
 
 ### Quadrupeds
