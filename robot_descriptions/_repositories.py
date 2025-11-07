@@ -136,7 +136,7 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="fanuc_m710ic_description",
     ),
     "galaxea": Repository(
-        url="git@github.com:userguide-galaxea/URDF.git",
+        url="https://github.com/userguide-galaxea/URDF.git",
         commit="40f728d49ef3799721d5d566a07efbb70cae6b53",
         cache_path="galaxea",
     ),
