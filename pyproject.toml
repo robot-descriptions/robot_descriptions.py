@@ -12,7 +12,7 @@ maintainers = [
     {name = "Stéphane Caron", email = "stephane.caron@normalesup.org"},
 ]
 dynamic = ['version', 'description']
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Framework :: Robot Framework :: Library",
