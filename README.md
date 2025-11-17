@@ -48,15 +48,16 @@ Loaders are implemented for the following robotics software:
 
 Loading will automatically download the robot description if needed, and cache it to a local directory.
 
-### Show a description
+### Command line
 
-You can display a robot description directly from the command line:
+You can use [uv](https://docs.astral.sh/uv/) to manipulate robot descriptions directly from the command line:
 
 ```console
-python -m robot_descriptions show_in_meshcat go2_description
+uvx robot_descriptions pull iiwa14_description          # download the robot description to cache
+uvx robot_descriptions show_in_meshcat go2_description  # display the robot description
 ```
 
-A `robot_descriptions` alias for `python -m robot_descriptions` is also available.
+Try `uvx robot_descriptions -h` to see the list of available commands. Alternatively, once the package is installed from PyPI or conda-forge, you can call the `robot_descriptions` alias directly from the command line, or replace `uvx` by `uv run`, or `python -m robot_descriptions` (old school).
 
 ### Import as submodule
 
