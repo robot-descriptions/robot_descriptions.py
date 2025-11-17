@@ -172,7 +172,6 @@ DESCRIPTIONS: Dict[str, Description] = {
     "pr2_description": Description(
         Format.URDF, tags={"dual_arm", "mobile_manipulator"}
     ),
-    "r1_description": Description(Format.URDF, tags={"mobile_manipulator"}),
     "r2_description": Description(Format.URDF, tags={"humanoid"}),
     "rby1_description": Description(Format.URDF, tags={"mobile_manipulator"}),
     "reachy_description": Description(
