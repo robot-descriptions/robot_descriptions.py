@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Bump minimum Python version to 3.8
 - CICD: Disable fail-fast when testing loaders
 
 ### Fixed
