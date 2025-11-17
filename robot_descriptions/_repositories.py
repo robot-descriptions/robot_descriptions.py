@@ -135,6 +135,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="d12af44559cd7e46f7afd513237f159f82f8402e",
         cache_path="fanuc_m710ic_description",
     ),
+    "galaxea": Repository(
+        url="https://github.com/userguide-galaxea/URDF.git",
+        commit="40f728d49ef3799721d5d566a07efbb70cae6b53",
+        cache_path="galaxea",
+    ),
     "GingerURDF": Repository(
         url="https://github.com/Rayckey/GingerURDF.git",
         commit="6a1307cd0ee2b77c82f8839cdce3a2e2eed2bd8f",
