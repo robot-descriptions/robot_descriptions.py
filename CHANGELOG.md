@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Fixed
+
+- Update repository of YAM description
+
 ## [1.21.0] - 2025-09-03
 
 ### Added
