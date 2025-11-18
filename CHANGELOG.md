@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Aero Hand Open (URDF)
+
 ### Fixed
 
 - Update repository of YAM description

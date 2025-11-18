@@ -31,6 +31,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="89407424edfc22faceaedcd7c3ea2b7947cbbb2c",
         cache_path="ability_hand_api",
     ),
+    "aero-hand-open": Repository(
+        url="https://github.com/TetherIA/aero-hand-open.git",
+        commit="ad7d4fc4078ceedfeefbf27aa5f058b622e18521",
+        cache_path="aero_hand_open",
+    ),
     "anymal_b_simple_description": Repository(
         url="https://github.com/ANYbotics/anymal_b_simple_description.git",
         commit="988b5df22b84761bdf08111b1c2ccc883793f456",
