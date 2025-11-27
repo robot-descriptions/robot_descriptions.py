@@ -63,6 +63,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "aero_hand_open_description": Description(
         Format.URDF, tags={"end_effector"}
     ),
+    "aero_hand_open_mj_description": Description(
+        Format.MJCF, tags={"end_effector"}
+    ),
     "aliengo_description": Description(Format.URDF, tags={"quadruped"}),
     "aliengo_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "allegro_hand_description": Description(

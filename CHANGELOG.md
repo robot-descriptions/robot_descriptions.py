@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Aero Hand Open (MJCF)
 - Description: Aero Hand Open (URDF)
 
 ### Changed
