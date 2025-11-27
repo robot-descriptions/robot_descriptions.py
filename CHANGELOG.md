@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Description: Aero Hand Open (URDF)
 
+### Changed
+
+- Update repository commit of MuJoCo Menagerie
+
 ### Fixed
 
 - Update repository of YAM description
