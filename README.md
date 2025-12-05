@@ -262,6 +262,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `talos_description`             | TALOS                 | PAL Robotics             | URDF       | Apache-2.0 |
 | `talos_mj_description`          | TALOS                 | PAL Robotics             | MJCF       | Apache-2.0 |
 | `toddlerbot_description`        | ToddlerBot            | Stanford University      | URDF       | MIT |
+| `toddlerbot_2xc_mj_description` | ToddlerBot 2XC        | Stanford University      | URDF       | [MIT](https://github.com/google-deepmind/mujoco_menagerie/blob/bf756430b615819654b640f321c71ba5c3ebeef8/toddlerbot_2xc/LICENSE) |
+| `toddlerbot_2xm_mj_description` | ToddlerBot 2XM        | Stanford University      | URDF       | [MIT](https://github.com/google-deepmind/mujoco_menagerie/blob/bf756430b615819654b640f321c71ba5c3ebeef8/toddlerbot_2xm/LICENSE) |
 | `valkyrie_description`          | Valkyrie              | NASA JSC Robotics        | URDF       | NASA-1.3 |
 
 ### Mobile manipulators
