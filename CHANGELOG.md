@@ -8,8 +8,9 @@ All notable changes to this project will be documented in this file.
 
 - Description: Aero Hand Open (MJCF)
 - Description: Aero Hand Open (URDF)
-- Description: ToddlerBot 2XC (MJDF)
-- Description: ToddlerBot 2XM (MJDF)
+- Description: Franka FR3 v2 (MJCF)
+- Description: ToddlerBot 2XC (MJCF)
+- Description: ToddlerBot 2XM (MJCF)
 
 ### Changed
 
