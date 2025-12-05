@@ -232,6 +232,12 @@ DESCRIPTIONS: Dict[str, Description] = {
         Format.MJCF, tags={"mobile_manipulator"}
     ),
     "toddlerbot_description": Description(Format.URDF, tags={"humanoid"}),
+    "toddlerbot_2xc_mj_description": Description(
+        Format.MJCF, tags={"humanoid"}
+    ),
+    "toddlerbot_2xm_mj_description": Description(
+        Format.MJCF, tags={"humanoid"}
+    ),
     "trifinger_edu_description": Description(
         Format.URDF, tags={"educational"}
     ),
