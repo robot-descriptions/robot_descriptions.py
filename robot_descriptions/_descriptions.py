@@ -261,5 +261,8 @@ DESCRIPTIONS: Dict[str, Description] = {
     "z1_mj_description": Description(Format.MJCF, tags={"arm"}),
     "omy_3m_description": Description(Format.URDF, tags={"arm"}),
     "omy_f3m_description": Description(Format.URDF, tags={"arm"}),
+    "omy_l100_description": Description(Format.URDF, tags={"arm"}),
     "omx_f_description": Description(Format.URDF, tags={"arm"}),
+    "omx_l_description": Description(Format.URDF, tags={"arm"}),
+    "open_manipulator_x_description": Description(Format.URDF, tags={"arm"}),
 }

@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2026 Woojin Wie
 
-"""OMY-3M description."""
+"""OpenMANIPULATOR-X description."""
 
 from os import getenv as _getenv
 from os import path as _path
@@ -21,5 +21,5 @@ PACKAGE_PATH: str = _path.join(
 )
 
 URDF_PATH: str = _path.join(
-    PACKAGE_PATH, "urdf", "omy_3m", "omy_3m.urdf"
+    PACKAGE_PATH, "urdf", "open_manipulator_x", "open_manipulator_x.urdf"
 )

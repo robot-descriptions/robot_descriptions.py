@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2026 Woojin Wie
 
-"""OMY F3M description."""
+"""OMY-F3M description."""
 
 from os import getenv as _getenv
 from os import path as _path

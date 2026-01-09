@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2026 Woojin Wie
 
-"""OMX F description."""
+"""OMX-F description."""
 
 from os import getenv as _getenv
 from os import path as _path
