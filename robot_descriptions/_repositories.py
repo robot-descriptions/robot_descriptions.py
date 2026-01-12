@@ -360,7 +360,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "open_manipulator": Repository(
         url="https://github.com/ROBOTIS-GIT/open_manipulator.git",
-        commit="f2c484590cb2b863f37387a1d48299e03663f354",
+        commit="bc555a9c41ebd7493dc945ddabc43fc649681b62",
         cache_path="open_manipulator",
     ),
 }
