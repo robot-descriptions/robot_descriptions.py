@@ -228,6 +228,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="911abb069c781e4c717c10643b975f55f7a64fe8",
         cache_path="onshape-to-robot-examples",
     ),
+    "openarm_mujoco": Repository(
+        url="https://github.com/enactic/openarm_mujoco.git",
+        commit="cd30dd4c0a97832d1c063bf759514ed18fbe04a5",
+        cache_path="openarm_mujoco",
+    ),
     "pepper_description": Repository(
         url="https://github.com/jrl-umi3218/pepper_description.git",
         commit="cd9715bb5df7ad57445d953db7b1924255305944",

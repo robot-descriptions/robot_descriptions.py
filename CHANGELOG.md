@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: OpenArm v1 (MJCF)
+
 ### Fixed
 
 - CICD: Update Python version to 3.10 (thanks to @daipom)

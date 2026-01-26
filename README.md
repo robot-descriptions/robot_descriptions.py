@@ -186,6 +186,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `aloha_mj_description`        | Aloha 2               | Trossen Robotics         | 14  | MJCF       |
 | `baxter_description`          | Baxter                | Rethink Robotics         | 15  | URDF       |
 | `nextage_description`         | NEXTAGE               | Kawada Robotics          | 15  | URDF       |
+| `openarm_v1_mj_description`   | OpenArm               | Enactic                  | 16  | MJCF       |
 | `poppy_torso_description`     | Poppy Torso           | Poppy Project            | 13  | URDF       |
 | `yumi_description`            | YuMi                  | ABB                      | 16  | URDF       |
 
