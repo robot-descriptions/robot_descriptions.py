@@ -167,6 +167,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "n1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "nextage_description": Description(Format.URDF, tags={"dual_arm"}),
     "op3_mj_description": Description(Format.MJCF, tags={"humanoid"}),
+    "openarm_v1_mj_description": Description(Format.MJCF, tags={"dual_arm"}),
     "panda_description": Description(Format.URDF, tags={"arm"}),
     "panda_mj_description": Description(Format.MJCF, tags={"arm"}),
     "pepper_description": Description(
