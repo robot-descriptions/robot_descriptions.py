@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Fixed
+
+- CICD: Update Python version to 3.10 (thanks to @daipom)
+
 ## [1.22.0] - 2025-12-05
 
 ### Added
