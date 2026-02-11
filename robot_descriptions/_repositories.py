@@ -363,4 +363,9 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="f8e683f00d1d99deb882deb9dfce6030095b466a",  # FourierN1 branch
         cache_path="Wiki-GRx-Models-FourierN1",
     ),
+    "open_manipulator": Repository(
+        url="https://github.com/ROBOTIS-GIT/open_manipulator.git",
+        commit="bc555a9c41ebd7493dc945ddabc43fc649681b62",
+        cache_path="open_manipulator",
+    ),
 }
