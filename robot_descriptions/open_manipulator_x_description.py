@@ -16,9 +16,7 @@ REPOSITORY_PATH: str = _clone_to_cache(
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(
-    REPOSITORY_PATH, "open_manipulator_description"
-)
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "open_manipulator_description")
 
 URDF_PATH: str = _path.join(
     PACKAGE_PATH, "urdf", "open_manipulator_x", "open_manipulator_x.urdf"
