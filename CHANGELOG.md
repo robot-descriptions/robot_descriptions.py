@@ -6,7 +6,13 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: OpenArm v1 (MJCF)
+- Description: OMX-F (URDF) (thanks to @Woojin-Crive)
+- Description: OMX-L (URDF) (thanks to @Woojin-Crive)
+- Description: OMY-3M (URDF) (thanks to @Woojin-Crive)
+- Description: OMY-F3M (URDF) (thanks to @Woojin-Crive)
+- Description: OMY-L100 (URDF) (thanks to @Woojin-Crive)
+- Description: OpenArm v1 (MJCF) (thanks to @daipom)
+- Description: OpenMANIPULATOR-X (URDF) (thanks to @Woojin-Crive)
 
 ### Fixed
 
