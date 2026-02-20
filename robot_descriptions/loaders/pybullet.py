@@ -13,6 +13,8 @@ from typing import Optional
 
 import pybullet
 
+from .._xacro import get_urdf_path
+
 
 def load_robot_description(
     description_name: str,
@@ -43,9 +45,12 @@ def load_robot_description(
     module = import_module(f"robot_descriptions.{description_name}")
     if commit is not None:
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
-    if not hasattr(module, "URDF_PATH"):
-        raise ValueError(f"{description_name} is not a URDF description")
+    if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
+        raise ValueError(
+            f"{description_name} is not a URDF/Xacro description"
+        )
+    urdf_path = get_urdf_path(module)
 
     pybullet.setAdditionalSearchPath(module.PACKAGE_PATH)
-    robot = pybullet.loadURDF(module.URDF_PATH, **kwargs)
+    robot = pybullet.loadURDF(urdf_path, **kwargs)
     return robot

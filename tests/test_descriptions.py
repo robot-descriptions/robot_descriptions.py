@@ -12,6 +12,7 @@ from importlib import import_module  # type: ignore
 import git
 
 from robot_descriptions._descriptions import DESCRIPTIONS
+from robot_descriptions._xacro import get_urdf_path
 
 
 class TestDescriptions(unittest.TestCase):
@@ -39,10 +40,14 @@ class TestDescriptions(unittest.TestCase):
                     f"in {description}",
                 )
             if desc.has_urdf:
-                self.assertTrue(hasattr(description, "URDF_PATH"))
                 self.assertTrue(
-                    os.path.exists(description.URDF_PATH),
-                    f"URDF path {description.URDF_PATH} does not exist "
+                    hasattr(description, "URDF_PATH")
+                    or hasattr(description, "XACRO_PATH")
+                )
+                urdf_path = get_urdf_path(description)
+                self.assertTrue(
+                    os.path.exists(urdf_path),
+                    f"URDF path {urdf_path} does not exist "
                     f"in {description}",
                 )
 

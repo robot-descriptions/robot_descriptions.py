@@ -120,7 +120,10 @@ DESCRIPTIONS: Dict[str, Description] = {
     "fanuc_m710ic_description": Description(Format.URDF, tags={"arm"}),
     "fetch_description": Description(Format.URDF, tags={"mobile_manipulator"}),
     "finger_edu_description": Description(Format.URDF, tags={"educational"}),
+    "fr3_description": Description(Format.URDF, tags={"arm"}),
+    "fr3v2_1_description": Description(Format.URDF, tags={"arm"}),
     "fr3_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "fr3_v2_description": Description(Format.URDF, tags={"arm"}),
     "fr3_v2_mj_description": Description(Format.MJCF, tags={"arm"}),
     "g1_description": Description(Format.URDF, tags={"humanoid"}),
     "g1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
@@ -221,6 +224,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "stretch_description": Description(
         Format.URDF, tags={"mobile_manipulator"}
     ),
+    "stretch_se3_description": Description(
+        Format.URDF, tags={"mobile_manipulator"}
+    ),
     "stretch_mj_description": Description(
         Format.MJCF, tags={"mobile_manipulator"}
     ),
@@ -254,6 +260,8 @@ DESCRIPTIONS: Dict[str, Description] = {
     "widow_mj_description": Description(Format.MJCF, tags={"arm"}),
     "wl_p311d_description": Description(Format.URDF, tags={"quadruped"}),
     "wl_p311e_description": Description(Format.URDF, tags={"quadruped"}),
+    "xarm6_description": Description(Format.URDF, tags={"arm"}),
+    "xarm7_description": Description(Format.URDF, tags={"arm"}),
     "xarm7_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yam_description": Description(Format.URDF, tags={"arm"}),
     "yam_mj_description": Description(Format.MJCF, tags={"arm"}),

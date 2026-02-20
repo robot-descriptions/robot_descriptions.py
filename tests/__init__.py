@@ -9,6 +9,7 @@ from .test_clone_to_directory import TestCloneToDirectory
 from .test_descriptions import TestDescriptions
 from .test_loaders import TestLoaders
 from .test_progress_bar import TestProgressBar
+from .test_xacro import TestXacro
 
 __all__ = [
     "TestCloneToCache",
@@ -16,4 +17,5 @@ __all__ = [
     "TestDescriptions",
     "TestLoaders",
     "TestProgressBar",
+    "TestXacro",
 ]

@@ -140,6 +140,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="d12af44559cd7e46f7afd513237f159f82f8402e",
         cache_path="fanuc_m710ic_description",
     ),
+    "franka_description": Repository(
+        url="https://github.com/frankarobotics/franka_description.git",
+        commit="1aa4fd30e6e274cbf5e986a5af8004df32bad284",
+        cache_path="franka_description",
+    ),
     "GingerURDF": Repository(
         url="https://github.com/Rayckey/GingerURDF.git",
         commit="6a1307cd0ee2b77c82f8839cdce3a2e2eed2bd8f",
@@ -323,6 +328,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="4b838429fe4c5d9f2937efe698444bd68968f376",
         cache_path="stretch_description",
     ),
+    "stretch_urdf": Repository(
+        url="https://github.com/hello-robot/stretch_urdf.git",
+        commit="1b7cbbce808c25465017ce0a53a4173fcf97b11c",
+        cache_path="stretch_urdf",
+    ),
     "talos-data": Repository(
         url="https://github.com/stack-of-tasks/talos-data.git",
         commit="77169405d6a48a5d3f3f75eb014209f375ff23b6",  # v2.0.0
@@ -367,5 +377,10 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/ROBOTIS-GIT/open_manipulator.git",
         commit="bc555a9c41ebd7493dc945ddabc43fc649681b62",
         cache_path="open_manipulator",
+    ),
+    "xarm_ros2": Repository(
+        url="https://github.com/xArm-Developer/xarm_ros2.git",
+        commit="5bb832f72ca665f1236a9d8ed1c3a82f308db489",
+        cache_path="xarm_ros2",
     ),
 }
