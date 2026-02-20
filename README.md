@@ -294,6 +294,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `rby1_description`            | RBY1                  | Rainbow Robotics         | URDF       | [MIT](https://github.com/uynitsuj/rby1_description/blob/e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72/LICENSE) |
 | `reachy_description`          | Reachy                | Pollen Robotics          | URDF       | Apache-2.0 |
 | `stretch_description`         | Stretch RE1           | Hello Robot              | URDF       | CC-BY-SA-4.0 ✖️  |
+| `stretch_se3_description`     | Stretch SE3           | Hello Robot              | URDF       | Clear BSD |
 | `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
 | `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |

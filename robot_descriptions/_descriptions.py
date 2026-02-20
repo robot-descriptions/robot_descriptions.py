@@ -224,6 +224,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "stretch_description": Description(
         Format.URDF, tags={"mobile_manipulator"}
     ),
+    "stretch_se3_description": Description(
+        Format.URDF, tags={"mobile_manipulator"}
+    ),
     "stretch_mj_description": Description(
         Format.MJCF, tags={"mobile_manipulator"}
     ),

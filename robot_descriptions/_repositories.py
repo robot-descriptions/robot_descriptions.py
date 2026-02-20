@@ -328,6 +328,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="4b838429fe4c5d9f2937efe698444bd68968f376",
         cache_path="stretch_description",
     ),
+    "stretch_urdf": Repository(
+        url="https://github.com/hello-robot/stretch_urdf.git",
+        commit="1b7cbbce808c25465017ce0a53a4173fcf97b11c",
+        cache_path="stretch_urdf",
+    ),
     "talos-data": Repository(
         url="https://github.com/stack-of-tasks/talos-data.git",
         commit="77169405d6a48a5d3f3f75eb014209f375ff23b6",  # v2.0.0
