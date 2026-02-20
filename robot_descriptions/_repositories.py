@@ -378,4 +378,9 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="bc555a9c41ebd7493dc945ddabc43fc649681b62",
         cache_path="open_manipulator",
     ),
+    "xarm_ros2": Repository(
+        url="https://github.com/xArm-Developer/xarm_ros2.git",
+        commit="5bb832f72ca665f1236a9d8ed1c3a82f308db489",
+        cache_path="xarm_ros2",
+    ),
 }

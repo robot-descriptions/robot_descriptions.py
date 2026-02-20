@@ -175,6 +175,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `ur5e_mj_description`         | UR5e                  | Universal Robots         | MJCF       | BSD-3-Clause |
 | `viper_mj_description`        | ViperX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
+| `xarm6_description`           | xArm6                 | UFACTORY                 | URDF       | BSD-3-Clause |
+| `xarm7_description`           | xArm7                 | UFACTORY                 | URDF       | BSD-3-Clause |
 | `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
 | `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `yam_mj_description`          | YAM                   | I2RT Robotics            | MJCF       | MIT          |
