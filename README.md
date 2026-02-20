@@ -139,8 +139,11 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `arx_l5_mj_description`       | L5                    | ARX                      | MJCF       | BSD-3-Clause |
 | `edo_description`             | e.DO                  | Comau                    | URDF       | [BSD-3-Clause](https://github.com/ianathompson/eDO_description/blob/17b3f92f834746106d6a4befaab8eeab3ac248e6/LICENSE) |
 | `fanuc_m710ic_description`    | M-710iC               | Fanuc                    | URDF       | BSD-3-Clause |
+| `fr3_description`             | FR3                   | Franka Robotics          | URDF       | Apache-2.0   |
 | `fr3_mj_description`          | FR3                   | Franka Robotics          | MJCF       | Apache-2.0   |
+| `fr3_v2_description`          | FR3 v2                | Franka Robotics          | URDF       | Apache-2.0   |
 | `fr3_v2_mj_description`       | FR3 v2                | Franka Robotics          | MJCF       | Apache-2.0   |
+| `fr3v2_1_description`         | FR3 v2.1              | Franka Robotics          | URDF       | Apache-2.0   |
 | `gen2_description`            | Gen2                  | Kinova                   | URDF       | BSD-3-Clause |
 | `gen3_description`            | Gen3                  | Kinova                   | URDF       | MIT          |
 | `gen3_lite_description`       | Gen3 Lite             | Kinova                   | URDF       | BSD-3-Clause |

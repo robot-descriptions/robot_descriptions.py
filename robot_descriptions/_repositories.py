@@ -140,6 +140,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="d12af44559cd7e46f7afd513237f159f82f8402e",
         cache_path="fanuc_m710ic_description",
     ),
+    "franka_description": Repository(
+        url="https://github.com/frankarobotics/franka_description.git",
+        commit="1aa4fd30e6e274cbf5e986a5af8004df32bad284",
+        cache_path="franka_description",
+    ),
     "GingerURDF": Repository(
         url="https://github.com/Rayckey/GingerURDF.git",
         commit="6a1307cd0ee2b77c82f8839cdce3a2e2eed2bd8f",
