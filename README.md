@@ -92,6 +92,10 @@ The import will automatically download the robot description if you don't have i
 
 Some robot descriptions include additional fields. For instance, the `iiwa14_description` exports `URDF_PATH_POLYTOPE_COLLISION` with more detailed collision meshes.
 
+Descriptions can also define `XACRO_PATH` (and optional `XACRO_ARGS`) instead
+of a static `URDF_PATH`. In that case, `robot_descriptions` renders the Xacro
+to a cached URDF transparently when loading the description.
+
 ## Examples
 
 Loading a robot description:

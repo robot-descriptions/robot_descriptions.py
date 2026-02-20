@@ -16,6 +16,7 @@ from typing import Optional
 
 import robomeshcat
 
+from .._xacro import get_urdf_path
 from .pinocchio import get_package_dirs
 
 
@@ -38,8 +39,13 @@ def load_robot_description(
     module = import_module(f"robot_descriptions.{description_name}")
     if commit is not None:
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
+    if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
+        raise ValueError(
+            f"{description_name} is not a URDF/Xacro description"
+        )
+    urdf_path = get_urdf_path(module)
     robot = robomeshcat.Robot(
-        urdf_path=module.URDF_PATH,
+        urdf_path=urdf_path,
         mesh_folder_path=get_package_dirs(module),
     )
     return robot
