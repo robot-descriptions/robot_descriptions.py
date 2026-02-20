@@ -10,6 +10,7 @@ import hashlib
 import json
 import os
 import tempfile
+from contextlib import contextmanager
 from importlib import import_module
 from typing import Any
 
@@ -35,6 +36,16 @@ def _cache_key(module: Any, xacrodoc_module: Any) -> str:
     return hashlib.sha256(payload_json.encode("utf-8")).hexdigest()[:16]
 
 
+@contextmanager
+def _pushd(path: str):
+    cwd = os.getcwd()
+    os.chdir(path)
+    try:
+        yield
+    finally:
+        os.chdir(cwd)
+
+
 def _generate_urdf_path(module: Any, xacrodoc_module: Any) -> str:
     if not os.path.exists(module.XACRO_PATH):
         raise FileNotFoundError(
@@ -53,10 +64,33 @@ def _generate_urdf_path(module: Any, xacrodoc_module: Any) -> str:
     if not isinstance(xacro_args, dict):
         raise TypeError("XACRO_ARGS should be a dictionary")
 
-    doc = xacrodoc_module.XacroDoc.from_file(
-        module.XACRO_PATH,
-        subargs=xacro_args,
-    )
+    xacro_dir = os.path.dirname(module.XACRO_PATH)
+    # xacro might be using relative paths to refer to other macros. We'll run from the file
+    # dir so we can build, then rewrite any relative paths that are in the output in the next step.
+    with _pushd(xacro_dir):
+        doc = xacrodoc_module.XacroDoc.from_file(
+            module.XACRO_PATH,
+            subargs=xacro_args,
+        )
+    # We're resolving relative paths manually here, as xacrodoc only handles package resolution.
+    # xacrodoc has a private helper which would atleast make this cleaner, _urdf_elements_with_filenames,
+    # but we'll wait for a public interface.
+
+    for tag_name in ("mesh", "material"):
+        for elem in doc.dom.getElementsByTagName(tag_name):
+            if not elem.hasAttribute("filename"):
+                continue
+            filename = elem.getAttribute("filename")
+            rel_path = None
+            if filename.startswith("file://./"):
+                rel_path = filename[len("file://./") :]
+            elif filename.startswith("./"):
+                rel_path = filename[2:]
+            if rel_path is not None:
+                abs_path = os.path.abspath(
+                    os.path.join(module.PACKAGE_PATH, rel_path)
+                )
+                elem.setAttribute("filename", abs_path)
 
     tmp_file = tempfile.NamedTemporaryFile(
         prefix=f"{description_name}-",

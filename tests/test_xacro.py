@@ -55,6 +55,13 @@ class TestXacro(unittest.TestCase):
         calls = {"from_file": 0}
 
         class FakeDoc:
+            class _Dom:
+                @staticmethod
+                def getElementsByTagName(_name: str):
+                    return []
+
+            dom = _Dom()
+
             def to_urdf_file(self, path: str) -> None:
                 with open(path, "w", encoding="utf-8") as urdf_file:
                     urdf_file.write("<robot name='generated'/>")
@@ -90,4 +97,3 @@ class TestXacro(unittest.TestCase):
         self.assertEqual(first_path, second_path)
         self.assertTrue(os.path.exists(first_path))
         self.assertEqual(calls["from_file"], 1)
-
