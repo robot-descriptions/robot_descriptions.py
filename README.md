@@ -169,11 +169,22 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `so_arm100_mj_description`    | SO-ARM100             | The Robot Studio         | MJCF       | Apache-2.0   |
 | `so_arm101_description`       | SO-ARM101             | The Robot Studio         | URDF       | Apache-2.0   |
 | `so_arm101_mj_description`    | SO-ARM101             | The Robot Studio         | MJCF       | Apache-2.0   |
-| `ur10_description`            | UR10                  | Universal Robots         | URDF       | Apache-2.0   |
+| `ur10_description`            | UR10                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur10e_description`           | UR10e                 | Universal Robots         | URDF       | BSD-3-Clause |
 | `ur10e_mj_description`        | UR10e                 | Universal Robots         | MJCF       | BSD-3-Clause |
-| `ur3_description`             | UR3                   | Universal Robots         | URDF       | Apache-2.0   |
-| `ur5_description`             | UR5                   | Universal Robots         | URDF       | Apache-2.0   |
+| `ur12e_description`           | UR12e                 | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur15_description`            | UR15                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur16e_description`           | UR16e                 | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur18_description`            | UR18                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur20_description`            | UR20                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur30_description`            | UR30                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur3_description`             | UR3                   | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur3e_description`            | UR3e                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur5_description`             | UR5                   | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur5e_description`            | UR5e                  | Universal Robots         | URDF       | BSD-3-Clause |
 | `ur5e_mj_description`         | UR5e                  | Universal Robots         | MJCF       | BSD-3-Clause |
+| `ur7e_description`            | UR7e                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur8long_description`         | UR8 Long              | Universal Robots         | URDF       | BSD-3-Clause |
 | `viper_mj_description`        | ViperX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `xarm6_description`           | xArm6                 | UFACTORY                 | URDF       | BSD-3-Clause |

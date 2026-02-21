@@ -353,6 +353,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="267182b8521c8d6a631bab1fe63836873237a525",
         cache_path="unitree_ros",
     ),
+    "Universal_Robots_ROS2_Description": Repository(
+        url="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git",
+        commit="22f055da2fa7e2158254426107d1f257fd56aebb",
+        cache_path="ur_description",
+    ),
     "upkie_description": Repository(
         url="https://github.com/upkie/upkie_description.git",
         commit="19a91ce69cab6742c613cab104986e3f8a18d6a5",
