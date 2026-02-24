@@ -118,6 +118,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         Format.URDF, tags={"mobile_manipulator"}
     ),
     "fanuc_m710ic_description": Description(Format.URDF, tags={"arm"}),
+    "fer_description": Description(Format.URDF, tags={"arm"}),
     "fetch_description": Description(Format.URDF, tags={"mobile_manipulator"}),
     "finger_edu_description": Description(Format.URDF, tags={"educational"}),
     "fr3_description": Description(Format.URDF, tags={"arm"}),

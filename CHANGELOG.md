@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Description: OMY-L100 (URDF) (thanks to @Woojin-Crive)
 - Description: OpenArm v1 (MJCF) (thanks to @daipom)
 - Description: OpenMANIPULATOR-X (URDF) (thanks to @Woojin-Crive)
+- Description: FER (URDF) (thanks to @nickswalker)
 - Description: Franka FR3 (URDF) (thanks to @nickswalker)
 - Description: Franka FR3 v2 (URDF) (thanks to @nickswalker)
 - Description: Franka FR3 v2.1 (URDF) (thanks to @nickswalker)
