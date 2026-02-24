@@ -49,7 +49,8 @@ def _pushd(path: str):
 def _generate_urdf_path(module: Any, xacrodoc_module: Any) -> str:
     if not os.path.exists(module.XACRO_PATH):
         raise FileNotFoundError(
-            f"Xacro path {module.XACRO_PATH} does not exist in {module.__name__}"
+            f"Xacro path {module.XACRO_PATH} does not exist "
+            f"in {module.__name__}"
         )
 
     description_name = module.__name__.split(".")[-1]
@@ -65,16 +66,19 @@ def _generate_urdf_path(module: Any, xacrodoc_module: Any) -> str:
         raise TypeError("XACRO_ARGS should be a dictionary")
 
     xacro_dir = os.path.dirname(module.XACRO_PATH)
-    # xacro might be using relative paths to refer to other macros. We'll run from the file
-    # dir so we can build, then rewrite any relative paths that are in the output in the next step.
+    # xacro might be using relative paths to refer to other macros.
+    # We'll run from the file dir so we can build, then rewrite any
+    # relative paths that are in the output in the next step.
     with _pushd(xacro_dir):
         doc = xacrodoc_module.XacroDoc.from_file(
             module.XACRO_PATH,
             subargs=xacro_args,
         )
-    # We're resolving relative paths manually here, as xacrodoc only handles package resolution.
-    # xacrodoc has a private helper which would atleast make this cleaner, _urdf_elements_with_filenames,
-    # but we'll wait for a public interface.
+    # We're resolving relative paths manually here, as xacrodoc
+    # only handles package resolution. xacrodoc has a private
+    # helper which would atleast make this cleaner,
+    # _urdf_elements_with_filenames, but we'll wait for a
+    # public interface.
 
     for tag_name in ("mesh", "material"):
         for elem in doc.dom.getElementsByTagName(tag_name):
@@ -112,9 +116,10 @@ def _generate_urdf_path(module: Any, xacrodoc_module: Any) -> str:
 def get_urdf_path(module: Any) -> str:
     """Get the URDF path from a description module.
 
-    If the module exposes `URDF_PATH`, this path is returned directly. If the
-    module instead exposes `XACRO_PATH`, the Xacro source is rendered to a
-    cached URDF file and the path to the generated file is returned.
+    If the module exposes `URDF_PATH`, this path is returned
+    directly. If the module instead exposes `XACRO_PATH`,
+    the Xacro source is rendered to a cached URDF file and the
+    path to the generated file is returned.
     """
     if hasattr(module, "URDF_PATH"):
         return module.URDF_PATH
