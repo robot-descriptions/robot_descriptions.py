@@ -51,9 +51,7 @@ def load_robot_description(
     if commit is not None:
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
     if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
-        raise ValueError(
-            f"{description_name} is not a URDF/Xacro description"
-        )
+        raise ValueError(f"{description_name} is not a URDF/Xacro description")
     urdf_path = get_urdf_path(module)
 
     return yourdfpy.URDF.load(
