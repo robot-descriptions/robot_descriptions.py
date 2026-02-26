@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Add support for xacro-based descriptions
 - Description: OMX-F (URDF) (thanks to @Woojin-Crive)
 - Description: OMX-L (URDF) (thanks to @Woojin-Crive)
 - Description: OMY-3M (URDF) (thanks to @Woojin-Crive)
@@ -13,6 +14,13 @@ All notable changes to this project will be documented in this file.
 - Description: OMY-L100 (URDF) (thanks to @Woojin-Crive)
 - Description: OpenArm v1 (MJCF) (thanks to @daipom)
 - Description: OpenMANIPULATOR-X (URDF) (thanks to @Woojin-Crive)
+- Description: FER (URDF) (thanks to @nickswalker)
+- Description: Franka FR3 (URDF) (thanks to @nickswalker)
+- Description: Franka FR3 v2 (URDF) (thanks to @nickswalker)
+- Description: Franka FR3 v2.1 (URDF) (thanks to @nickswalker)
+- Description: Stretch SE3 (URDF) (thanks to @nickswalker)
+- Description: xArm6 (URDF) (thanks to @nickswalker)
+- Description: xArm7 (URDF) (thanks to @nickswalker)
 
 ### Fixed
 

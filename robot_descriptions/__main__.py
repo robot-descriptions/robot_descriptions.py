@@ -11,6 +11,7 @@ from importlib import import_module  # type: ignore
 from typing import List
 
 from robot_descriptions._descriptions import DESCRIPTIONS
+from robot_descriptions._xacro import get_urdf_path
 
 
 def positive_float(value) -> float:
@@ -148,6 +149,8 @@ def pull(name: str) -> None:
         module = import_module(f"robot_descriptions.{name}_description")
     if hasattr(module, "URDF_PATH"):
         print(module.URDF_PATH)
+    elif hasattr(module, "XACRO_PATH"):
+        print(get_urdf_path(module))
     elif hasattr(module, "MJCF_PATH"):
         print(module.MJCF_PATH)
 
@@ -249,11 +252,12 @@ def show_in_yourdfpy(
         module = import_module(f"robot_descriptions.{name}")
     except ModuleNotFoundError:
         module = import_module(f"robot_descriptions.{name}_description")
-    if not hasattr(module, "URDF_PATH"):
+    if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
         raise ValueError(
             "This command only works with URDF descriptions, use "
             "`show_in_mujoco` for MJCF descriptions"
         )
+    urdf_path = get_urdf_path(module)
 
     try:
         yourdfpy = import_module("yourdfpy")
@@ -265,12 +269,12 @@ def show_in_yourdfpy(
 
     if collision:
         robot = yourdfpy.URDF.load(
-            module.URDF_PATH,
+            urdf_path,
             build_collision_scene_graph=True,
             load_collision_meshes=True,
         )
     else:
-        robot = yourdfpy.URDF.load(module.URDF_PATH)
+        robot = yourdfpy.URDF.load(urdf_path)
 
     if configuration:
         robot.update_cfg(configuration)
@@ -290,16 +294,17 @@ def animate(name: str) -> None:
     except ModuleNotFoundError:
         module = import_module(f"robot_descriptions.{name}_description")
 
-    if not hasattr(module, "URDF_PATH"):
+    if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
         raise ValueError(
             "animation is only available for URDF descriptions, "
             "check out the `show_in_mujoco.py` example for MJCF"
         )
+    urdf_path = get_urdf_path(module)
 
     print(
         "Check out yourdfpy more URDF features like animation or checking "
         "collision meshes. In this instance, the yourdfpy command is:\n\n"
-        f"\tyourdfpy {module.URDF_PATH} --animate\n"
+        f"\tyourdfpy {urdf_path} --animate\n"
     )
 
 

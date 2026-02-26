@@ -14,6 +14,7 @@ from typing import Optional, Union
 import pinocchio as pin
 
 from .._package_dirs import get_package_dirs
+from .._xacro import get_urdf_path
 
 PinocchioJoint = Union[
     pin.JointModelRX,
@@ -53,9 +54,10 @@ def load_robot_description(
     module = import_module(f"robot_descriptions.{description_name}")
     if commit is not None:
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
-    if hasattr(module, "URDF_PATH"):
+    if hasattr(module, "URDF_PATH") or hasattr(module, "XACRO_PATH"):
+        urdf_path = get_urdf_path(module)
         robot = pin.RobotWrapper.BuildFromURDF(
-            filename=module.URDF_PATH,
+            filename=urdf_path,
             package_dirs=get_package_dirs(module),
             root_joint=root_joint,
         )
@@ -63,5 +65,9 @@ def load_robot_description(
         robot = pin.RobotWrapper.BuildFromMJCF(
             filename=module.MJCF_PATH,
             root_joint=root_joint,
+        )
+    else:
+        raise ValueError(
+            f"{description_name} has neither URDF/MJCF nor Xacro path"
         )
     return robot

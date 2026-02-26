@@ -38,6 +38,7 @@ opts = [
     "pin >=2.6.10",
     "pybullet >=3.2.6",
     "robomeshcat >=1.0.4",
+    "xacrodoc >=1.1.1",
     "yourdfpy >=0.0.56",
 ]
 

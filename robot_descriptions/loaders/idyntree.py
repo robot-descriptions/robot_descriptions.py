@@ -14,6 +14,7 @@ from typing import List, Optional
 import idyntree.swig as idyn
 
 from .._package_dirs import get_package_dirs
+from .._xacro import get_urdf_path
 
 
 def load_robot_description(
@@ -44,21 +45,22 @@ def load_robot_description(
     module = import_module(f"robot_descriptions.{description_name}")
     if commit is not None:
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
-    if not hasattr(module, "URDF_PATH"):
-        raise ValueError(f"{description_name} is not a URDF description")
+    if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
+        raise ValueError(f"{description_name} is not a URDF/Xacro description")
+    urdf_path = get_urdf_path(module)
 
     model_loader = idyn.ModelLoader()
 
     if joints_list is None:
         if not model_loader.loadModelFromFile(
-            module.URDF_PATH, "urdf", get_package_dirs(module)
+            urdf_path, "urdf", get_package_dirs(module)
         ):
             raise ValueError(
                 f"Unable to load {description_name} with iDynTree"
             )
     else:
         if not model_loader.loadReducedModelFromFile(
-            module.URDF_PATH, joints_list, "urdf", get_package_dirs(module)
+            urdf_path, joints_list, "urdf", get_package_dirs(module)
         ):
             raise ValueError(
                 f"Unable to load {description_name} with iDynTree"
