@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-"""UR10 description."""
+"""UR15 description."""
 
 from os import getenv as _getenv
 from os import path as _path
@@ -20,6 +20,6 @@ PACKAGE_PATH: str = REPOSITORY_PATH
 XACRO_PATH: str = _path.join(PACKAGE_PATH, "urdf", "ur.urdf.xacro")
 
 XACRO_ARGS = {
-    "ur_type": "ur10",
-    "name": "ur10",
+    "ur_type": "ur15",
+    "name": "ur15",
 }
