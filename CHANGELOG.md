@@ -21,6 +21,13 @@ All notable changes to this project will be documented in this file.
 - Description: Stretch SE3 (URDF) (thanks to @nickswalker)
 - Description: xArm6 (URDF) (thanks to @nickswalker)
 - Description: xArm7 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n4s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n6s200 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n6s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n7s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2s6s200 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2s6s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2s7s300 (URDF) (thanks to @nickswalker)
 
 ### Fixed
 

@@ -152,6 +152,13 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `iiwa14_description`          | iiwa 14               | KUKA                     | URDF       | BSD-3-Clause |
 | `iiwa14_mj_description`       | iiwa 14               | KUKA                     | MJCF       | BSD-3-Clause |
 | `iiwa7_description`           | iiwa 7                | KUKA                     | URDF       | MIT          |
+| `j2n4s300_description`        | Jaco2 j2n4s300        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2n6s200_description`        | Jaco2 j2n6s200        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2n6s300_description`        | Jaco2 j2n6s300        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2n7s300_description`        | Jaco2 j2n7s300        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2s6s200_description`        | Jaco2 j2s6s200        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2s6s300_description`        | Jaco2 j2s6s300        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2s7s300_description`        | Jaco2 j2s7s300        | Kinova                   | URDF       | BSD-3-Clause |
 | `low_cost_robot_arm_mj_description` | Low-cost robot arm | Alexander Koch | MJCF | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/ef4d04fbb7451d30b39c2aff7e49df737bb46815/low_cost_robot_arm/LICENSE) |
 | `omx_f_description`           | OMX-F                 | ROBOTIS                  | URDF       | Apache-2.0   |
 | `omx_l_description`           | OMX-L                 | ROBOTIS                  | URDF       | Apache-2.0   |
