@@ -51,6 +51,54 @@ class CloneProgressBar(RemoteProgress):
         self.progress.refresh()
 
 
+def _refspec_for_revision(revision: str) -> str:
+    """Return a fetch refspec that materializes a local ref for string revision.
+
+    For 40-char hex SHA commits, returns the SHA directly. For tag names,
+    returns a refspec that also creates the local tag so checkout by name works.
+    """
+    if len(revision) == 40:
+        try:
+            int(revision, 16)
+            return revision
+        except ValueError:
+            pass
+    return f"refs/tags/{revision}:refs/tags/{revision}"
+
+
+def _is_missing_remote_ref(error: GitCommandError) -> bool:
+    """Return whether git fetch failed because a remote ref does not exist."""
+    return "couldn't find remote ref" in str(error)
+
+
+def _fetch_revision_shallow(
+    remote,
+    revision: str,
+    progress: Optional[RemoteProgress] = None,
+) -> None:
+    """Fetch a revision with depth 1.
+
+    For non-SHA revisions, first try a tag refspec so the tag name is
+    materialized locally for checkout. If that tag does not exist, fall back
+    to fetching the revision directly (e.g., branch names).
+    """
+    fetch_kwargs = {"depth": 1}
+    if progress is not None:
+        fetch_kwargs["progress"] = progress
+
+    if _refspec_for_revision(revision) == revision:
+        remote.fetch(revision, **fetch_kwargs)
+        return
+
+    tag_refspec = _refspec_for_revision(revision)
+    try:
+        remote.fetch(tag_refspec, **fetch_kwargs)
+    except GitCommandError as error:
+        if not _is_missing_remote_ref(error):
+            raise
+        remote.fetch(revision, **fetch_kwargs)
+
+
 def clone_to_directory(
     repo_url: str,
     target_dir: str,
@@ -77,15 +125,20 @@ def clone_to_directory(
 
     if clone is None:
         print(f"Cloning {repo_url}...")
-        os.makedirs(target_dir)
         progress_bar = CloneProgressBar()
-        clone = Repo.clone_from(
-            repo_url,
-            target_dir,
-            progress=progress_bar.update,
-        )
+        if commit is not None:
+            os.makedirs(target_dir, exist_ok=True)
+            clone = Repo.init(target_dir)
+            origin = clone.create_remote("origin", repo_url)
+            _fetch_revision_shallow(origin, commit, progress=progress_bar)
+        else:
+            clone = Repo.clone_from(
+                repo_url,
+                target_dir,
+                progress=progress_bar.update,
+            )
 
-    if commit is not None and commit != clone.head.object.hexsha:
+    if commit is not None:
         try:
             clone.git.checkout(commit)
         except GitCommandError:
@@ -93,7 +146,7 @@ def clone_to_directory(
                 f"Commit {commit} not found, "
                 "let's fetch origin and try again..."
             )
-            clone.git.fetch("origin")
+            _fetch_revision_shallow(clone.remote("origin"), commit)
             clone.git.checkout(commit)
             print(f"Found commit {commit} successfully!")
 
