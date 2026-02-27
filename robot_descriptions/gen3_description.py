@@ -12,12 +12,16 @@ from os import path as _path
 from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache(
-    "differentiable-robot-model",
+    "ros2_kortex",
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
 PACKAGE_PATH: str = _path.join(
-    REPOSITORY_PATH, "diff_robot_data", "kinova_description"
+    REPOSITORY_PATH, "kortex_description"
 )
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "jaco.urdf")
+XACRO_PATH: str = _path.join(PACKAGE_PATH, "robots", "gen3.xacro")
+
+XACRO_ARGS = {
+    "dof": "7",
+}

@@ -32,6 +32,8 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - CICD: Update Python version to 3.10 (thanks to @daipom)
+- Description: Kinova Gen3 (URDF) now resolves from ros2_kortex xacro,
+  instead of incorrect Jaco2 URDF (thanks to @nickswalker)
 
 ## [1.22.0] - 2025-12-05
 
