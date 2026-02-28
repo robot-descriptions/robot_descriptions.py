@@ -99,6 +99,16 @@ def _fetch_revision_shallow(
         remote.fetch(revision, **fetch_kwargs)
 
 
+def _is_head_at_revision(repo: Repo, revision: str) -> bool:
+    """Return whether HEAD already resolves to the requested revision."""
+    try:
+        requested = repo.git.rev_parse(revision).strip()
+        head = repo.git.rev_parse("HEAD").strip()
+    except GitCommandError:
+        return False
+    return requested == head
+
+
 def clone_to_directory(
     repo_url: str,
     target_dir: str,
@@ -138,7 +148,7 @@ def clone_to_directory(
                 progress=progress_bar.update,
             )
 
-    if commit is not None:
+    if commit is not None and not _is_head_at_revision(clone, commit):
         try:
             clone.git.checkout(commit)
         except GitCommandError:

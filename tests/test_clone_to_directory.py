@@ -118,6 +118,23 @@ class TestCloneToDirectory(unittest.TestCase):
             self.assertEqual(mock_repo.git.checkout.call_count, 2)
             self.assertIs(result, mock_repo)
 
+    def test_existing_repo_at_requested_revision_skips_checkout(self):
+        """When HEAD already matches the revision, checkout and fetch are skipped."""
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            repo_url = "https://example.com/repo.git"
+            clone_dir = os.path.join(tmp_dir, "clone")
+            os.makedirs(clone_dir)
+            target_commit = "deadbeef" * 5
+            mock_repo = MagicMock()
+            mock_repo.git.rev_parse.side_effect = [target_commit, target_commit]
+
+            with patch("robot_descriptions._cache.Repo", return_value=mock_repo):
+                result = clone_to_directory(repo_url, clone_dir, commit=target_commit)
+
+            mock_repo.git.checkout.assert_not_called()
+            mock_repo.remote.assert_not_called()
+            self.assertIs(result, mock_repo)
+
     def test_clone_to_directory(self):
         """Check cloning on a dummy repository."""
         with tempfile.TemporaryDirectory() as tmp_dir:
