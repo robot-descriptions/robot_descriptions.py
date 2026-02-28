@@ -52,10 +52,11 @@ class CloneProgressBar(RemoteProgress):
 
 
 def _refspec_for_revision(revision: str) -> str:
-    """Return a fetch refspec that materializes a local ref for string revision.
+    """Return a fetch refspec that materializes local ref for string revision.
 
     For 40-char hex SHA commits, returns the SHA directly. For tag names,
-    returns a refspec that also creates the local tag so checkout by name works.
+    returns a refspec that also creates the local tag so checkout by name
+    works.
     """
     if len(revision) == 40:
         try:
@@ -82,7 +83,7 @@ def _fetch_revision_shallow(
     materialized locally for checkout. If that tag does not exist, fall back
     to fetching the revision directly (e.g., branch names).
     """
-    fetch_kwargs = {"depth": 1}
+    fetch_kwargs: dict[str, Union[int, RemoteProgress]] = {"depth": 1}
     if progress is not None:
         fetch_kwargs["progress"] = progress
 
