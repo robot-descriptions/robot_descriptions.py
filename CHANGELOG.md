@@ -26,6 +26,10 @@ All notable changes to this project will be documented in this file.
 
 - CICD: Update Python version to 3.10 (thanks to @daipom)
 
+### Changed
+
+- cache: Optimize pinned-revision cloning by initializing the repository locally, shallow-fetching the requested revision (`depth=1`), and checking it out (thanks to @nickswalker)
+
 ## [1.22.0] - 2025-12-05
 
 ### Added
