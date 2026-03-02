@@ -50,6 +50,10 @@ All notable changes to this project will be documented in this file.
 - Description: UR5 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
 - Description: UR10 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
 
+### Changed
+
+- Bump minimum Python version to 3.10
+
 ### Fixed
 
 - CICD: Update Python version to 3.10 (thanks to @daipom)
