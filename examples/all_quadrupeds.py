@@ -5,7 +5,7 @@
 # Copyright 2025 Inria
 #
 # /// script
-# dependencies = ["pin", "robot_descriptions"]
+# dependencies = ["meshcat", "pin", "robot_descriptions"]
 # ///
 
 """
