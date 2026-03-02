@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2024 Inria
+#
+# /// script
+# dependencies = ["mujoco", "robot_descriptions"]
+# ///
 
 """
 We can load specific commit to pin the version of any robot description using
