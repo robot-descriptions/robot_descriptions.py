@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Description: Stretch SE3 (URDF) (thanks to @nickswalker)
 - Description: xArm6 (URDF) (thanks to @nickswalker)
 - Description: xArm7 (URDF) (thanks to @nickswalker)
+- examples: Add uv script dependencies to all examples
 
 ### Fixed
 
