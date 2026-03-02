@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2023 Inria
+#
+# /// script
+# dependencies = ["meshcat", "meshcat-shapes", "numpy", "pin", "robot_descriptions"]
+# ///
 
 """
 Display frames from a robot description.

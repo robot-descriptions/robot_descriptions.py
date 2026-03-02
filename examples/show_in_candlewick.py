@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2025 Inria
+#
+# /// script
+# dependencies = ["candlewick", "pin", "robot_descriptions"]
+# ///
 
 """
 Show a robot description selected from the command line in Candlewick.
