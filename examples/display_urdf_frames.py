@@ -79,4 +79,4 @@ if __name__ == "__main__":
         )
         handle["text"].set_transform(trans @ Rz @ Rx)
 
-    time.sleep(1.0)  # avoid terminating too fast
+    input("Press Enter to close MeshCat and terminate... ")

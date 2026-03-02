@@ -5,7 +5,7 @@
 # Copyright 2025 Inria
 #
 # /// script
-# dependencies = ["candlewick", "pin", "robot_descriptions"]
+# dependencies = ["pin", "robot_descriptions"]
 # ///
 
 """
