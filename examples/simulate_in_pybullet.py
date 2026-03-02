@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2024 Inria
+#
+# /// script
+# dependencies = ["pybullet", "robot_descriptions"]
+# ///
 
 """
 Load a robot description in a PyBullet physics simulation.
