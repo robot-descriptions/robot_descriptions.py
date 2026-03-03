@@ -28,7 +28,6 @@ All notable changes to this project will be documented in this file.
 - Description: Kinova Jaco2 j2s6s200 (URDF) (thanks to @nickswalker)
 - Description: Kinova Jaco2 j2s6s300 (URDF) (thanks to @nickswalker)
 - Description: Kinova Jaco2 j2s7s300 (URDF) (thanks to @nickswalker)
-=======
 - examples: Add uv script dependencies to all examples
 - Description: UR3e (URDF) (thanks to @nickswalker)
 - Description: UR5e (URDF) (thanks to @nickswalker)
