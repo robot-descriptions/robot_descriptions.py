@@ -22,6 +22,26 @@ All notable changes to this project will be documented in this file.
 - Description: xArm6 (URDF) (thanks to @nickswalker)
 - Description: xArm7 (URDF) (thanks to @nickswalker)
 - examples: Add uv script dependencies to all examples
+- Description: UR3e (URDF) (thanks to @nickswalker)
+- Description: UR5e (URDF) (thanks to @nickswalker)
+- Description: UR7e (URDF) (thanks to @nickswalker)
+- Description: UR8 Long (URDF) (thanks to @nickswalker)
+- Description: UR10e (URDF) (thanks to @nickswalker)
+- Description: UR12e (URDF) (thanks to @nickswalker)
+- Description: UR15 (URDF) (thanks to @nickswalker)
+- Description: UR16e (URDF) (thanks to @nickswalker)
+- Description: UR18 (URDF) (thanks to @nickswalker)
+- Description: UR20 (URDF) (thanks to @nickswalker)
+- Description: UR30 (URDF) (thanks to @nickswalker)
+- Description: UR3 official (URDF) (thanks to @nickswalker)
+- Description: UR5 official (URDF) (thanks to @nickswalker)
+- Description: UR10 official (URDF) (thanks to @nickswalker)
+
+### Changed
+
+- Description: UR3 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
+- Description: UR5 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
+- Description: UR10 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
 
 ### Fixed
 

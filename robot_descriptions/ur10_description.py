@@ -6,10 +6,19 @@
 
 """UR10 description."""
 
+import warnings as _warnings
 from os import getenv as _getenv
 from os import path as _path
 
 from ._cache import clone_to_cache as _clone_to_cache
+
+_warnings.warn(
+    "robot_descriptions.ur10_description is deprecated and will switch to the "
+    "official UR10 model in robot_descriptions.py v2. Use "
+    "robot_descriptions.ur10_official_description now to migrate early.",
+    FutureWarning,
+    stacklevel=2,
+)
 
 REPOSITORY_PATH: str = _clone_to_cache(
     "example-robot-data",
