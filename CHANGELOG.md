@@ -50,7 +50,6 @@ All notable changes to this project will be documented in this file.
 - Description: UR3 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
 - Description: UR5 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
 - Description: UR10 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
->>>>>>> main
 
 ### Fixed
 
