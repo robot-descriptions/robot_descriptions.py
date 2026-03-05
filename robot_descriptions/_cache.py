@@ -106,14 +106,14 @@ def _fetch_revision_shallow(
     try:
         remote.fetch(tag_refspec, **fetch_kwargs)
     except GitCommandError as error:
-        if not _is_missing_remote_ref(error):
-            # Could've been a network failure or other problem.
-            # Re-raise all other fetch failures unchanged.
-            raise
-        # If that specific tag ref is missing remotely, it probably wasn't a tag!
-        # Or maybe the tag got deleted. Try fetching the revision directly
-        # (e.g., branch or other rev).
-        remote.fetch(revision, **fetch_kwargs)
+        if _is_missing_remote_ref(error):
+            # If that specific tag ref is missing remotely, it probably wasn't a tag!
+            # Or maybe the tag got deleted. Try fetching the revision directly
+            # (e.g., branch or other rev).
+            remote.fetch(revision, **fetch_kwargs)
+            return
+        # Could've been a network failure or other problem. Reraise
+        raise
 
 
 def _is_head_at_revision(repo: Repo, revision: str) -> bool:
