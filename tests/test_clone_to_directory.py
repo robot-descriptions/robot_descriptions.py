@@ -11,11 +11,28 @@ from unittest.mock import ANY, MagicMock, patch
 
 import git
 
-from robot_descriptions._cache import clone_to_directory
+from robot_descriptions._cache import (
+    _tag_refspec_for_revision,
+    clone_to_directory,
+    _is_hexsha,
+)
 from robot_descriptions._repositories import REPOSITORIES
 
 
 class TestCloneToDirectory(unittest.TestCase):
+    def test_is_hexsha(self):
+        """Hex SHA detection only accepts full 40-char hex commit IDs."""
+        self.assertTrue(_is_hexsha("deadbeef" * 5))
+        self.assertFalse(_is_hexsha("deadbeef"))
+        self.assertFalse(_is_hexsha("g" * 40))
+
+    def test_tag_refspec_for_revision_formats_tag_refspec(self):
+        revision = "v1.2.3"
+        assert (
+                _tag_refspec_for_revision(revision)
+                == f"refs/tags/{revision}:refs/tags/{revision}"
+        )
+
     def test_fresh_clone_with_tag_uses_tag_refspec(self):
         """Fresh clones of a tag use a tag refspec and checkout by tag name."""
         with tempfile.TemporaryDirectory() as tmp_dir:
