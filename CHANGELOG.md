@@ -21,6 +21,13 @@ All notable changes to this project will be documented in this file.
 - Description: Stretch SE3 (URDF) (thanks to @nickswalker)
 - Description: xArm6 (URDF) (thanks to @nickswalker)
 - Description: xArm7 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n4s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n6s200 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n6s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n7s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2s6s200 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2s6s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2s7s300 (URDF) (thanks to @nickswalker)
 - examples: Add uv script dependencies to all examples
 - Description: UR3e (URDF) (thanks to @nickswalker)
 - Description: UR5e (URDF) (thanks to @nickswalker)
@@ -46,6 +53,8 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - CICD: Update Python version to 3.10 (thanks to @daipom)
+- Description: Kinova Gen3 (URDF) now resolves from ros2_kortex xacro,
+  instead of incorrect Jaco2 URDF (thanks to @nickswalker)
 
 ## [1.22.0] - 2025-12-05
 
