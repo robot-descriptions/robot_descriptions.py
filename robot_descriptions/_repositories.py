@@ -195,6 +195,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="cee556b0a438e6904634a90826d4e8d2e005cd1f",
         cache_path="kinova_mj_description",
     ),
+    "kinova-ros": Repository(
+        url="https://github.com/Kinovarobotics/kinova-ros.git",
+        commit="924781d3dfe241b2b94b3c72a804b80d3658cf02",
+        cache_path="kinova-ros",
+    ),
     "limxdynamics_robot-description": Repository(
         url="https://github.com/limxdynamics/robot-description.git",
         commit="a097533372a08298d45af391cbdfc2fd2dc3da6f",
@@ -295,7 +300,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "ros2_kortex": Repository(
         url="https://github.com/Kinovarobotics/ros2_kortex.git",
-        commit="fb633aacf9c1c85d61a96c1099b5afa3d533e5a3",
+        commit="8bf203423911446de28a2248ec87380b7eea2f90",
         cache_path="ros2_kortex",
     ),
     "rtmros_nextage": Repository(
@@ -352,6 +357,11 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/unitreerobotics/unitree_ros.git",
         commit="267182b8521c8d6a631bab1fe63836873237a525",
         cache_path="unitree_ros",
+    ),
+    "Universal_Robots_ROS2_Description": Repository(
+        url="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git",
+        commit="22f055da2fa7e2158254426107d1f257fd56aebb",
+        cache_path="ur_description",
     ),
     "upkie_description": Repository(
         url="https://github.com/upkie/upkie_description.git",

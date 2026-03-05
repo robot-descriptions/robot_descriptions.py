@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2022 Stéphane Caron
+#
+# /// script
+# dependencies = ["pin", "robot_descriptions"]
+# ///
 
 """
 Load a robot description selected from the command line in Pinocchio.

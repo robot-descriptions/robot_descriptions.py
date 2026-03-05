@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2022 Stéphane Caron
+#
+# /// script
+# dependencies = ["mujoco", "mujoco-python-viewer", "robot_descriptions"]
+# ///
 
 """
 Show a robot description selected from the command line using MuJoCo.

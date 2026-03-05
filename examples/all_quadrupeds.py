@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2025 Inria
+#
+# /// script
+# dependencies = ["meshcat", "pin", "robot_descriptions"]
+# ///
 
 """
 Show all quadruped robot descriptions using Pinocchio and MeshCat.

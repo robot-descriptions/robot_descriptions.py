@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Stéphane Caron
 
-"""Kinova Gen3 description."""
+"""Official UR5 description."""
 
 from os import getenv as _getenv
 from os import path as _path
@@ -12,14 +11,15 @@ from os import path as _path
 from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache(
-    "ros2_kortex",
+    "Universal_Robots_ROS2_Description",
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "kortex_description")
+PACKAGE_PATH: str = REPOSITORY_PATH
 
-XACRO_PATH: str = _path.join(PACKAGE_PATH, "robots", "gen3.xacro")
+XACRO_PATH: str = _path.join(PACKAGE_PATH, "urdf", "ur.urdf.xacro")
 
 XACRO_ARGS = {
-    "dof": "7",
+    "ur_type": "ur5",
+    "name": "ur5",
 }
