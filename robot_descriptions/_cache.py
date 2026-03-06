@@ -55,8 +55,8 @@ def _is_hexsha(revision: str) -> bool:
     """Return whether a revision is a full 40-character hex SHA.
 
     Args:
-        revision: String representing a git object (commit, tag object, tree,
-            blob).
+        revision: String representing a git object (commit, tag object,
+         tree, blob).
     """
     if len(revision) == 40:
         try:
@@ -90,7 +90,8 @@ def _fetch_revision_shallow(
 
     Args:
         remote: Handle to a remote git repository.
-        revision: String representing a git object (commit, tag name, tree, blob).
+        revision: String representing a git object (commit, tag name,
+        tree, blob).
         progress: Optional callback for fetch progress updates.
     """
     fetch_kwargs: dict[str, Union[int, RemoteProgress]] = {"depth": 1}
@@ -108,9 +109,9 @@ def _fetch_revision_shallow(
         remote.fetch(tag_refspec, **fetch_kwargs)
     except GitCommandError as error:
         if _is_missing_remote_ref(error):
-            # If that specific tag ref is missing remotely, it probably wasn't a tag!
-            # Or maybe the tag got deleted. Try fetching the revision directly
-            # (e.g., branch or other rev).
+            # If that specific tag ref is missing remotely, it probably wasn't
+            # a tag! Or maybe the tag got deleted. Try fetching the revision
+            # directly (e.g., branch or other rev).
             remote.fetch(revision, **fetch_kwargs)
             return
         # Could've been a network failure or other problem. Reraise
@@ -122,7 +123,8 @@ def _is_head_at_revision(repo: Repo, revision: str) -> bool:
 
     Args:
         repo: Handle to a working copy of the git repository.
-        revision: String representing a git object (commit, tag name, tree, blob)
+        revision: String representing a git object (commit, tag name,
+        tree, blob)
     """
     try:
         requested = repo.git.rev_parse(revision).strip()
