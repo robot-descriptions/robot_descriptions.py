@@ -201,12 +201,17 @@ class TestCloneToDirectory(unittest.TestCase):
             source_repo.index.commit("Commit c2")
             c2 = source_repo.head.commit.hexsha
 
-            repo = clone_to_directory(source_repo_dir, clone_dir, commit=c1)
-            self.assertFalse(repo.bare)
-            self.assertEqual(get_commit(repo), c1)
+            repo_1 = clone_to_directory(source_repo_dir, clone_dir, commit=c1)
+            self.assertFalse(repo_1.bare)
+            self.assertEqual(get_commit(repo_1), c1)
 
-            repo_bis = clone_to_directory(source_repo_dir, clone_dir, commit=c2)
-            self.assertEqual(get_commit(repo_bis), c2)
+            repo_2 = clone_to_directory(source_repo_dir, clone_dir, commit=c2)
+            self.assertEqual(get_commit(repo_2), c2)
+
+            repo_3 = clone_to_directory(source_repo_dir, clone_dir, commit=c1)
+            self.assertFalse(repo_3.bare)
+            self.assertEqual(get_commit(repo_3), c1)
+
 
     def test_clone_to_invalid_directory(self):
         """Cloning to an empty (invalid) git repo recreates it."""
