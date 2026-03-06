@@ -43,7 +43,11 @@ class TestCloneToDirectory(unittest.TestCase):
             mock_origin = MagicMock()
             mock_repo.create_remote.return_value = mock_origin
 
-            with patch("robot_descriptions._cache.Repo") as MockRepo:
+            # Bypass the "already at requested revision" short-circuit.
+            with patch("robot_descriptions._cache.Repo") as MockRepo, patch(
+                "robot_descriptions._cache._is_head_at_revision",
+                return_value=False,
+            ):
                 MockRepo.init.return_value = mock_repo
                 result = clone_to_directory(repo_url, clone_dir, commit=target_tag)
 
@@ -77,7 +81,10 @@ class TestCloneToDirectory(unittest.TestCase):
                 None,
             ]
 
-            with patch("robot_descriptions._cache.Repo") as MockRepo:
+            with patch("robot_descriptions._cache.Repo") as MockRepo, patch(
+                "robot_descriptions._cache._is_head_at_revision",
+                return_value=False,
+            ):
                 MockRepo.init.return_value = mock_repo
                 result = clone_to_directory(repo_url, clone_dir, commit=revision)
 
@@ -101,7 +108,10 @@ class TestCloneToDirectory(unittest.TestCase):
             mock_origin = MagicMock()
             mock_repo.create_remote.return_value = mock_origin
 
-            with patch("robot_descriptions._cache.Repo") as MockRepo:
+            with patch("robot_descriptions._cache.Repo") as MockRepo, patch(
+                "robot_descriptions._cache._is_head_at_revision",
+                return_value=False,
+            ):
                 MockRepo.init.return_value = mock_repo
                 result = clone_to_directory(repo_url, clone_dir, commit=target_commit)
 
@@ -127,7 +137,12 @@ class TestCloneToDirectory(unittest.TestCase):
                 None,
             ]
 
-            with patch("robot_descriptions._cache.Repo", return_value=mock_repo):
+            with patch(
+                "robot_descriptions._cache.Repo", return_value=mock_repo
+            ), patch(
+                "robot_descriptions._cache._is_head_at_revision",
+                return_value=False,
+            ):
                 result = clone_to_directory(repo_url, clone_dir, commit=target_commit)
 
             mock_repo.remote.assert_called_with("origin")
