@@ -88,9 +88,10 @@ def _fetch_revision_shallow(
 ) -> None:
     """Fetch a revision with depth 1.
 
-    For non-SHA revisions, first try a tag refspec so the tag name is
-    materialized locally for checkout. If that tag does not exist, fall back
-    to fetching the revision directly (e.g., branch names).
+    Args:
+        remote: Handle to a remote git repository.
+        revision: String representing a git object (commit, tag name, tree, blob).
+        progress: Optional callback for fetch progress updates.
     """
     fetch_kwargs: dict[str, Union[int, RemoteProgress]] = {"depth": 1}
     if progress is not None:
