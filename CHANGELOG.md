@@ -56,6 +56,10 @@ All notable changes to this project will be documented in this file.
 - Description: Kinova Gen3 (URDF) now resolves from ros2_kortex xacro,
   instead of incorrect Jaco2 URDF (thanks to @nickswalker)
 
+### Changed
+
+- cache: Optimize pinned-revision cloning by initializing the repository locally, shallow-fetching the requested revision (`depth=1`), and checking it out (thanks to @nickswalker)
+
 ## [1.22.0] - 2025-12-05
 
 ### Added
