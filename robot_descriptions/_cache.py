@@ -51,6 +51,89 @@ class CloneProgressBar(RemoteProgress):
         self.progress.refresh()
 
 
+def _is_hexsha(revision: str) -> bool:
+    """Return whether a revision is a full 40-character hex SHA.
+
+    Args:
+        revision: String representing a git object (commit, tag object,
+         tree, blob).
+    """
+    if len(revision) == 40:
+        try:
+            int(revision, 16)
+            return True
+        except ValueError:
+            pass
+    return False
+
+
+def _tag_refspec_for_revision(revision: str) -> str:
+    """Return a tag fetch refspec that materializes a local tag name.
+
+    Args:
+        revision: String revision which is presumed to be a tag name.
+    """
+    return f"refs/tags/{revision}:refs/tags/{revision}"
+
+
+def _is_missing_remote_ref(error: GitCommandError) -> bool:
+    """Return whether git fetch failed because a remote ref does not exist."""
+    return "couldn't find remote ref" in str(error)
+
+
+def _fetch_revision_shallow(
+    remote,
+    revision: str,
+    progress: Optional[RemoteProgress] = None,
+) -> None:
+    """Fetch a revision with depth 1.
+
+    Args:
+        remote: Handle to a remote git repository.
+        revision: String representing a git object (commit, tag name,
+        tree, blob).
+        progress: Optional callback for fetch progress updates.
+    """
+    fetch_kwargs: dict[str, Union[int, RemoteProgress]] = {"depth": 1}
+    if progress is not None:
+        fetch_kwargs["progress"] = progress
+
+    if _is_hexsha(revision):
+        remote.fetch(revision, **fetch_kwargs)
+        return
+
+    tag_refspec = _tag_refspec_for_revision(revision)
+    # Try fetching as a tag refspec first so a tag name is materialized
+    # locally and can be checked out by name.
+    try:
+        remote.fetch(tag_refspec, **fetch_kwargs)
+    except GitCommandError as error:
+        if _is_missing_remote_ref(error):
+            # If that specific tag ref is missing remotely, it probably wasn't
+            # a tag! Or maybe the tag got deleted. Try fetching the revision
+            # directly (e.g., branch or other rev).
+            remote.fetch(revision, **fetch_kwargs)
+            return
+        # Could've been a network failure or other problem. Reraise
+        raise
+
+
+def _is_head_at_revision(repo: Repo, revision: str) -> bool:
+    """Return whether HEAD already resolves to the requested revision.
+
+    Args:
+        repo: Handle to a working copy of the git repository.
+        revision: String representing a git object (commit, tag name,
+        tree, blob)
+    """
+    try:
+        requested = repo.git.rev_parse(revision).strip()
+        head = repo.git.rev_parse("HEAD").strip()
+    except GitCommandError:
+        return False
+    return requested == head
+
+
 def clone_to_directory(
     repo_url: str,
     target_dir: str,
@@ -77,15 +160,20 @@ def clone_to_directory(
 
     if clone is None:
         print(f"Cloning {repo_url}...")
-        os.makedirs(target_dir)
         progress_bar = CloneProgressBar()
-        clone = Repo.clone_from(
-            repo_url,
-            target_dir,
-            progress=progress_bar.update,
-        )
+        if commit is not None:
+            os.makedirs(target_dir, exist_ok=True)
+            clone = Repo.init(target_dir)
+            origin = clone.create_remote("origin", repo_url)
+            _fetch_revision_shallow(origin, commit, progress=progress_bar)
+        else:
+            clone = Repo.clone_from(
+                repo_url,
+                target_dir,
+                progress=progress_bar.update,
+            )
 
-    if commit is not None and commit != clone.head.object.hexsha:
+    if commit is not None and not _is_head_at_revision(clone, commit):
         try:
             clone.git.checkout(commit)
         except GitCommandError:
@@ -93,7 +181,7 @@ def clone_to_directory(
                 f"Commit {commit} not found, "
                 "let's fetch origin and try again..."
             )
-            clone.git.fetch("origin")
+            _fetch_revision_shallow(clone.remote("origin"), commit)
             clone.git.checkout(commit)
             print(f"Found commit {commit} successfully!")
 
