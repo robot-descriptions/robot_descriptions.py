@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Add support for xacro-based descriptions
+- Add support for xacro-based descriptions (thanks to @nickswalker)
 - Description: OMX-F (URDF) (thanks to @Woojin-Crive)
 - Description: OMX-L (URDF) (thanks to @Woojin-Crive)
 - Description: OMY-3M (URDF) (thanks to @Woojin-Crive)
@@ -46,23 +46,16 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Bump minimum Python version to 3.10
+- Description: UR10 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
 - Description: UR3 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
 - Description: UR5 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
-- Description: UR10 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
-
-### Changed
-
-- Bump minimum Python version to 3.10
+- cache: Optimize pinned-revision cloning by initializing the repository locally, shallow-fetching the requested revision (`depth=1`), and checking it out (thanks to @nickswalker)
 
 ### Fixed
 
 - CICD: Update Python version to 3.10 (thanks to @daipom)
-- Description: Kinova Gen3 (URDF) now resolves from ros2_kortex xacro,
-  instead of incorrect Jaco2 URDF (thanks to @nickswalker)
-
-### Changed
-
-- cache: Optimize pinned-revision cloning by initializing the repository locally, shallow-fetching the requested revision (`depth=1`), and checking it out (thanks to @nickswalker)
+- Description: Kinova Gen3 (URDF) now resolves from ros2_kortex xacro, instead of incorrect Jaco2 URDF (thanks to @nickswalker)
 
 ## [1.22.0] - 2025-12-05
 
