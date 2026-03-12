@@ -293,6 +293,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="a65190bdbb0666609fe7e8c3bb17341e09e81625",
         cache_path="robotiq_arg85_description",
     ),
+    "robotiq_2f_85": Repository(
+        url="https://github.com/nickswalker/robotiq-2f-85.git",
+        commit="319f7b94587c97f09e732a7b2ed7babbe0250b9e",
+        cache_path="robotiq-2f-85",
+    ),
     "romeo_robot": Repository(
         url="https://github.com/ros-aldebaran/romeo_robot.git",
         commit="0.1.5",
