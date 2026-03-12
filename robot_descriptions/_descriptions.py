@@ -200,6 +200,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "robotiq_2f85_description": Description(
         Format.URDF, tags={"end_effector"}
     ),
+    "robotiq_2f85_v4_description": Description(
+        Format.URDF, tags={"end_effector"}
+    ),
     "robotiq_2f85_mj_description": Description(
         Format.MJCF, tags={"end_effector"}
     ),
