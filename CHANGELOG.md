@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- xacro: Allow overriding `XACRO_ARGS` via `get_urdf_path()` (thanks to @nickswalker)
+
 ## [1.23.0] - 2026-03-09
 
 ### Added
