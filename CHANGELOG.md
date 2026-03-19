@@ -9,6 +9,11 @@ All notable changes to this project will be documented in this file.
 - Description: Flexiv Rizon4 (Xacro)
 - Description: Robotiq 2F-85 v4 (URDF) (thanks to @nickswalker)
 
+### Changed
+
+- README: Alphabetize description tables (thanks to @nickswalker)
+- Description: Alphabetize description tables (thanks to @nickswalker)
+
 ## [1.23.0] - 2026-03-09
 
 ### Added
