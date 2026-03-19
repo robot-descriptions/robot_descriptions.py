@@ -4,7 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2022 Stéphane Caron
 
+import types
 import unittest
+from unittest.mock import patch
 
 import pybullet
 
@@ -37,6 +39,30 @@ class TestPyBullet(unittest.TestCase):
         """
         with self.assertRaises(ValueError):
             load_robot_description("_empty_description")
+
+    @patch("robot_descriptions.loaders.pybullet.pybullet.loadURDF")
+    @patch("robot_descriptions.loaders.pybullet.pybullet.setAdditionalSearchPath")
+    @patch("robot_descriptions.loaders.pybullet.get_urdf_path")
+    @patch("robot_descriptions.loaders.pybullet.import_module")
+    def test_forwards_xacro_args(
+        self,
+        import_module_mock,
+        get_urdf_path_mock,
+        _set_search_path_mock,
+        _load_urdf_mock,
+    ):
+        module = types.SimpleNamespace(
+            URDF_PATH="/tmp/test.urdf",
+            PACKAGE_PATH="/tmp/pkg",
+        )
+        import_module_mock.return_value = module
+        get_urdf_path_mock.return_value = module.URDF_PATH
+
+        load_robot_description("test_description", xacro_args={"hand": "false"})
+
+        get_urdf_path_mock.assert_called_once_with(
+            module, xacro_args={"hand": "false"}
+        )
 
     @staticmethod
     def get_test_for_description(description: str):
