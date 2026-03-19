@@ -18,6 +18,9 @@ from robot_descriptions._xacro import get_urdf_path
 class TestDescriptions(unittest.TestCase):
     """Test fixture for all robot descriptions."""
 
+    def test_descriptions_are_sorted(self):
+        self.assertEqual(list(DESCRIPTIONS), sorted(DESCRIPTIONS))
+
     def test_all_descriptions(self):
         """Check all robot-description submodules."""
         for name, desc in DESCRIPTIONS.items():
