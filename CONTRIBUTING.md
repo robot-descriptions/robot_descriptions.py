@@ -23,6 +23,7 @@ The goal of this project is to facilitate loading and sharing of robot descripti
 
 ```
 uv run --with yourdfpy --with "pyglet<2" python -m robot_descriptions show_in_yourdfpy <new_description>
+uv run --with mujoco-python-viewer python -m robot_descriptions show_in_mujoco <new_mj_description>
 ```
 
 6. **README:** Document the description's submodule name in the Descriptions section of the [README](README.md).
