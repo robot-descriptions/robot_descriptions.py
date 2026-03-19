@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.10"
 resolution-markers = [
     "python_full_version >= '3.12'",
@@ -1884,7 +1884,7 @@ requires-dist = [
     { name = "pybullet", marker = "extra == 'opts'", specifier = ">=3.2.6" },
     { name = "robomeshcat", marker = "extra == 'opts'", specifier = ">=1.0.4" },
     { name = "tqdm", specifier = ">=4.64.0" },
-    { name = "xacrodoc", marker = "extra == 'opts'", specifier = ">=1.1.1" },
+    { name = "xacrodoc", marker = "extra == 'opts'", specifier = ">=2.0.0" },
     { name = "yourdfpy", marker = "extra == 'opts'", specifier = ">=0.0.56" },
 ]
 provides-extras = ["opts"]
