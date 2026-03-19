@@ -197,6 +197,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         Format.URDF, tags={"mobile_manipulator"}
     ),
     "rhea_description": Description(Format.URDF, tags={"biped"}),
+    "rizon4_description": Description(Format.URDF, tags={"arm"}),
     "robotiq_2f85_description": Description(
         Format.URDF, tags={"end_effector"}
     ),
