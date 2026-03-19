@@ -171,7 +171,8 @@ def _generate_urdf_path(module: Any, xacrodoc_module: Any) -> str:
     )
     tmp_file.close()
     try:
-        # First DOM rewrite: make all plain filenames into filename:// absolute paths.
+        # First DOM rewrite: make all plain filenames
+        # into filename:// absolute paths.
         urdf_string = doc.to_urdf_string(
             use_protocols=True,
             pretty=True,
