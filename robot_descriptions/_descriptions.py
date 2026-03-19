@@ -55,6 +55,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="unitree_ros",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "a1_mj_description": Description(
         formats={Format.MJCF},
@@ -63,6 +65,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="unitree_mujoco",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ability_hand_description": Description(
         formats={Format.URDF},
@@ -89,6 +93,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="PNDBotics",
         repository="mujoco_menagerie",
         license_spdx="MIT",
+        license_file="pndbotics_adam_lite/LICENSE",
     ),
     "aero_hand_open_description": Description(
         formats={Format.URDF},
@@ -96,7 +101,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="Aero Hand Open",
         maker="TetherIA",
         repository="aero-hand-open",
-        license_spdx="Apache-2.0",
+        license_spdx="CC-BY-SA-4.0",
+        license_file="ros2/src/aero_hand_open_description/package.xml",
     ),
     "aero_hand_open_mj_description": Description(
         formats={Format.MJCF},
@@ -105,6 +111,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="TetherIA",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="tetheria_aero_hand_open/LICENSE",
     ),
     "aliengo_description": Description(
         formats={Format.URDF},
@@ -113,6 +120,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="unitree_ros",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "aliengo_mj_description": Description(
         formats={Format.MJCF},
@@ -121,6 +130,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="unitree_mujoco",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "allegro_hand_description": Description(
         formats={Format.URDF},
@@ -129,6 +140,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Wonik Robotics",
         repository="drake",
         license_spdx="BSD",
+        license_file="manipulation/models/allegro_hand_description/LICENSE.TXT",
     ),
     "allegro_hand_mj_description": Description(
         formats={Format.MJCF},
@@ -137,6 +149,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Wonik Robotics",
         repository="mujoco_menagerie",
         license_spdx="BSD-2-Clause",
+        license_file="wonik_allegro/LICENSE",
     ),
     "aloha_mj_description": Description(
         formats={Format.MJCF},
@@ -145,6 +158,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Trossen Robotics",
         dof=14,
         repository="mujoco_menagerie",
+        license_spdx="BSD-3-Clause",
+        license_file="aloha/LICENSE",
     ),
     "anymal_b_description": Description(
         formats={Format.URDF},
@@ -153,6 +168,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ANYbotics",
         dof=12,
         repository="anymal_b_simple_description",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "anymal_b_mj_description": Description(
         formats={Format.MJCF},
@@ -161,6 +178,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ANYbotics",
         dof=12,
         repository="mujoco_menagerie",
+        license_spdx="BSD-3-Clause",
+        license_file="anybotics_anymal_b/LICENSE",
     ),
     "anymal_c_description": Description(
         formats={Format.URDF},
@@ -169,6 +188,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ANYbotics",
         dof=12,
         repository="anymal_c_simple_description",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "anymal_c_mj_description": Description(
         formats={Format.MJCF},
@@ -177,6 +198,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ANYbotics",
         dof=12,
         repository="mujoco_menagerie",
+        license_spdx="BSD-3-Clause",
+        license_file="anybotics_anymal_c/LICENSE",
     ),
     "anymal_d_description": Description(
         formats={Format.URDF},
@@ -185,6 +208,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ANYbotics",
         dof=12,
         repository="anymal_d_simple_description",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "apollo_mj_description": Description(
         formats={Format.MJCF},
@@ -193,6 +218,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Apptronik",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="apptronik_apollo/LICENSE",
     ),
     "arx_l5_mj_description": Description(
         formats={Format.MJCF},
@@ -201,6 +227,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ARX",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="arx_l5/LICENSE",
     ),
     "atlas_drc_description": Description(
         formats={Format.URDF},
@@ -209,6 +236,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Boston Dynamics",
         repository="drake",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE.TXT",
     ),
     "atlas_v4_description": Description(
         formats={Format.URDF},
@@ -217,6 +245,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Boston Dynamics",
         repository="roboschool",
         license_spdx="MIT",
+        license_file="LICENSE.md",
     ),
     "b1_description": Description(
         formats={Format.URDF},
@@ -225,6 +254,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="unitree_ros",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "b2_description": Description(
         formats={Format.URDF},
@@ -233,6 +264,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="unitree_ros",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "bambot_description": Description(
         formats={Format.URDF},
@@ -259,6 +292,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Rethink Robotics",
         dof=15,
         repository="baxter_common",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "berkeley_humanoid_description": Description(
         formats={Format.URDF},
@@ -267,6 +302,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Hybrid Robotics",
         repository="berkeley_humanoid_description",
         license_spdx="BSD-3-Clause",
+        license_file="package.xml",
     ),
     "bolt_description": Description(
         formats={Format.URDF},
@@ -275,6 +311,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ODRI",
         dof=6,
         repository="example-robot-data",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "booster_t1_description": Description(
         formats={Format.URDF},
@@ -292,6 +330,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Booster Robotics",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="booster_t1/LICENSE",
     ),
     "cassie_description": Description(
         formats={Format.URDF},
@@ -300,6 +339,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Agility Robotics",
         dof=16,
         repository="cassie_description",
+        license_spdx="MIT",
+        license_file="LICENSE",
     ),
     "cassie_mj_description": Description(
         formats={Format.MJCF},
@@ -308,6 +349,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Agility Robotics",
         dof=16,
         repository="mujoco_menagerie",
+        license_spdx="MIT",
+        license_file="agility_cassie/LICENSE",
     ),
     "cf2_description": Description(
         formats={Format.URDF},
@@ -316,6 +359,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Bitcraze",
         dof=0,
         repository="gym-pybullet-drones",
+        license_spdx="MIT",
+        license_file="LICENSE",
     ),
     "cf2_mj_description": Description(
         formats={Format.MJCF},
@@ -324,6 +369,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Bitcraze",
         dof=6,
         repository="mujoco_menagerie",
+        license_spdx="MIT",
+        license_file="bitcraze_crazyflie_2/LICENSE",
     ),
     "double_pendulum_description": Description(
         formats={Format.URDF},
@@ -332,6 +379,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         dof=2,
         repository="example-robot-data",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "draco3_description": Description(
         formats={Format.URDF},
@@ -340,6 +388,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Apptronik",
         repository="draco3_description",
         license_spdx="BSD-2-Clause",
+        license_file="LICENSE",
     ),
     "dynamixel_2r_mj_description": Description(
         formats={Format.MJCF},
@@ -348,6 +397,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         dof=2,
         repository="mujoco_menagerie",
         license_spdx="MIT",
+        license_file="dynamixel_2r/LICENSE",
     ),
     "edo_description": Description(
         formats={Format.URDF},
@@ -383,6 +433,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="IIT",
         repository="ergocub-software",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "eve_r3_description": Description(
         formats={Format.URDF},
@@ -391,6 +442,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Halodi",
         repository="halodi-robot-models",
         license_spdx="Apache-2.0",
+        license_file="eve_r3_description/package.xml",
     ),
     "fanuc_m710ic_description": Description(
         formats={Format.URDF},
@@ -399,6 +451,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Fanuc",
         repository="fanuc_m710ic_description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "fer_description": Description(
         formats={Format.URDF},
@@ -407,6 +460,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Franka Robotics",
         repository="franka_description",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "fetch_description": Description(
         formats={Format.URDF},
@@ -415,6 +469,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Fetch Robotics",
         repository="roboschool",
         license_spdx="MIT",
+        license_file="LICENSE.md",
     ),
     "finger_edu_description": Description(
         formats={Format.URDF},
@@ -423,6 +478,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         dof=3,
         repository="example-robot-data",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "fr3_description": Description(
         formats={Format.URDF},
@@ -431,6 +487,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Franka Robotics",
         repository="franka_description",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "fr3_mj_description": Description(
         formats={Format.MJCF},
@@ -439,6 +496,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Franka Robotics",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="franka_fr3/LICENSE",
     ),
     "fr3_v2_1_description": Description(
         formats={Format.URDF},
@@ -447,6 +505,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Franka Robotics",
         repository="franka_description",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "fr3_v2_description": Description(
         formats={Format.URDF},
@@ -455,6 +514,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Franka Robotics",
         repository="franka_description",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "fr3_v2_mj_description": Description(
         formats={Format.MJCF},
@@ -463,6 +523,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Franka Robotics",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="franka_fr3_v2/LICENSE",
     ),
     "g1_description": Description(
         formats={Format.URDF},
@@ -471,6 +532,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         repository="unitree_ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "g1_mj_description": Description(
         formats={Format.MJCF},
@@ -479,6 +541,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="unitree_g1/LICENSE",
     ),
     "gen2_description": Description(
         formats={Format.URDF},
@@ -487,6 +550,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="example-robot-data",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "gen3_description": Description(
         formats={Format.URDF},
@@ -495,6 +559,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="ros2_kortex",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "gen3_lite_description": Description(
         formats={Format.URDF},
@@ -503,6 +568,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="ros2_kortex",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "gen3_mj_description": Description(
         formats={Format.MJCF},
@@ -510,7 +576,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="Gen3",
         maker="Kinova",
         repository="mujoco_menagerie",
-        license_spdx="BSD-2-Clause",
+        license_spdx="BSD-3-Clause",
+        license_file="kinova_gen3/LICENSE",
     ),
     "ginger_description": Description(
         formats={Format.URDF},
@@ -519,6 +586,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Paaila Technology",
         repository="GingerURDF",
         license_spdx="BSD",
+        license_file="package.xml",
     ),
     "go1_description": Description(
         formats={Format.URDF},
@@ -527,6 +595,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="unitree_ros",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "go1_mj_description": Description(
         formats={Format.MJCF},
@@ -535,6 +605,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="mujoco_menagerie",
+        license_spdx="BSD-3-Clause",
+        license_file="unitree_go1/LICENSE",
     ),
     "go2_description": Description(
         formats={Format.URDF},
@@ -543,6 +615,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="unitree_ros",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "go2_mj_description": Description(
         formats={Format.MJCF},
@@ -551,6 +625,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="mujoco_menagerie",
+        license_spdx="BSD-3-Clause",
+        license_file="unitree_go2/LICENSE",
     ),
     "gr1_description": Description(
         formats={Format.URDF},
@@ -568,6 +644,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         repository="unitree_ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "h1_2_mj_description": Description(
         formats={Format.MJCF},
@@ -576,6 +653,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         repository="unitree_ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "h1_description": Description(
         formats={Format.URDF},
@@ -584,6 +662,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         repository="unitree_ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "h1_mj_description": Description(
         formats={Format.MJCF},
@@ -592,6 +671,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="unitree_h1/LICENSE",
     ),
     "hyq_description": Description(
         formats={Format.URDF},
@@ -600,6 +680,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="IIT",
         dof=12,
         repository="example-robot-data",
+        license_spdx="Apache-2.0",
+        license_file="robots/hyq_description/README.md",
     ),
     "icub_description": Description(
         formats={Format.URDF},
@@ -607,7 +689,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="iCub",
         maker="IIT",
         repository="icub-models",
-        license_spdx="CC-BY-SA-4.0 ✖️",
+        license_spdx="CC-BY-SA-4.0",
+        license_file="iCub/package.xml",
     ),
     "iiwa14_description": Description(
         formats={Format.URDF},
@@ -616,6 +699,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="KUKA",
         repository="drake",
         license_spdx="BSD-3-Clause",
+        license_file="manipulation/models/iiwa_description/LICENSE.TXT",
     ),
     "iiwa14_mj_description": Description(
         formats={Format.MJCF},
@@ -624,6 +708,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="KUKA",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="kuka_iiwa_14/LICENSE",
     ),
     "iiwa7_description": Description(
         formats={Format.URDF},
@@ -632,6 +717,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="KUKA",
         repository="differentiable-robot-model",
         license_spdx="MIT",
+        license_file="LICENSE",
     ),
     "j2n4s300_description": Description(
         formats={Format.URDF},
@@ -640,6 +726,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="kinova-ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "j2n6s200_description": Description(
         formats={Format.URDF},
@@ -648,6 +735,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="kinova-ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "j2n6s300_description": Description(
         formats={Format.URDF},
@@ -656,6 +744,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="kinova-ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "j2n7s300_description": Description(
         formats={Format.URDF},
@@ -664,6 +753,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="kinova-ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "j2s6s200_description": Description(
         formats={Format.URDF},
@@ -672,6 +762,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="kinova-ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "j2s6s300_description": Description(
         formats={Format.URDF},
@@ -680,6 +771,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="kinova-ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "j2s7s300_description": Description(
         formats={Format.URDF},
@@ -688,6 +780,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kinova",
         repository="kinova-ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "jaxon_description": Description(
         formats={Format.URDF},
@@ -695,7 +788,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="JAXON",
         maker="JSK",
         repository="jaxon_description",
-        license_spdx="CC-BY-SA-4.0 ✖️",
+        license_spdx="CC-BY-SA-4.0",
+        license_file="LICENSE",
     ),
     "jvrc_description": Description(
         formats={Format.URDF},
@@ -704,6 +798,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="AIST",
         repository="jvrc_description",
         license_spdx="BSD-2-Clause",
+        license_file="LICENSE",
     ),
     "jvrc_mj_description": Description(
         formats={Format.MJCF},
@@ -712,6 +807,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="AIST",
         repository="jvrc_mj_description",
         license_spdx="BSD-2-Clause",
+        license_file="LICENSE",
     ),
     "laikago_description": Description(
         formats={Format.URDF},
@@ -720,6 +816,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         dof=12,
         repository="unitree_mujoco",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "leap_hand_mj_description": Description(
         formats={Format.MJCF},
@@ -728,6 +826,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Carnegie Mellon University",
         repository="mujoco_menagerie",
         license_spdx="MIT",
+        license_file="leap_hand/LICENSE",
     ),
     "leap_hand_v1_description": Description(
         formats={Format.URDF},
@@ -736,6 +835,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Carnegie Mellon University",
         repository="LEAP_Hand_Sim",
         license_spdx="MIT",
+        license_file="LICENSE.txt",
     ),
     "low_cost_robot_arm_mj_description": Description(
         formats={Format.MJCF},
@@ -744,6 +844,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Alexander Koch",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="low_cost_robot_arm/LICENSE",
     ),
     "mini_cheetah_description": Description(
         formats={Format.URDF},
@@ -752,6 +853,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="MIT",
         dof=12,
         repository="mini_cheetah_urdf",
+        license_spdx="BSD",
+        license_file="package.xml",
     ),
     "minitaur_description": Description(
         formats={Format.URDF},
@@ -760,6 +863,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Ghost Robotics",
         dof=16,
         repository="bullet3",
+        license_spdx="BSD-2-Clause",
+        license_file="data/quadruped/license.txt",
     ),
     "mujoco_humanoid_mj_description": Description(
         formats={Format.MJCF},
@@ -786,6 +891,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Fourier",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="fourier_n1/LICENSE",
     ),
     "nextage_description": Description(
         formats={Format.URDF},
@@ -794,6 +900,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Kawada Robotics",
         dof=15,
         repository="rtmros_nextage",
+        license_spdx="BSD",
+        license_file="nextage_description/package.xml",
     ),
     "omx_f_description": Description(
         formats={Format.URDF},
@@ -802,6 +910,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ROBOTIS",
         repository="open_manipulator",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "omx_l_description": Description(
         formats={Format.URDF},
@@ -810,6 +919,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ROBOTIS",
         repository="open_manipulator",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "omy_3m_description": Description(
         formats={Format.URDF},
@@ -818,6 +928,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ROBOTIS",
         repository="open_manipulator",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "omy_f3m_description": Description(
         formats={Format.URDF},
@@ -826,6 +937,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ROBOTIS",
         repository="open_manipulator",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "omy_l100_description": Description(
         formats={Format.URDF},
@@ -834,6 +946,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ROBOTIS",
         repository="open_manipulator",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "op3_mj_description": Description(
         formats={Format.MJCF},
@@ -842,6 +955,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ROBOTIS",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="robotis_op3/LICENSE",
     ),
     "open_manipulator_x_description": Description(
         formats={Format.URDF},
@@ -850,6 +964,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ROBOTIS",
         repository="open_manipulator",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "openarm_v1_mj_description": Description(
         formats={Format.MJCF},
@@ -858,6 +973,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Enactic",
         dof=16,
         repository="openarm_mujoco",
+        license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "panda_description": Description(
         formats={Format.URDF},
@@ -866,6 +983,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Franka Robotics",
         repository="example-robot-data",
         license_spdx="Apache-2.0",
+        license_file="robots/panda_description/LICENSE",
     ),
     "panda_mj_description": Description(
         formats={Format.MJCF},
@@ -874,6 +992,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Franka Robotics",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="franka_emika_panda/LICENSE",
     ),
     "pepper_description": Description(
         formats={Format.URDF},
@@ -882,6 +1001,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="SoftBank Robotics",
         repository="pepper_description",
         license_spdx="BSD-2-Clause",
+        license_file="LICENSE",
     ),
     "piper_description": Description(
         formats={Format.URDF},
@@ -890,6 +1010,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="AgileX",
         repository="Piper_ros",
         license_spdx="MIT",
+        license_file="LICENSE",
     ),
     "piper_mj_description": Description(
         formats={Format.MJCF},
@@ -898,6 +1019,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="AgileX",
         repository="mujoco_menagerie",
         license_spdx="MIT",
+        license_file="agilex_piper/LICENSE",
     ),
     "poppy_ergo_jr_description": Description(
         formats={Format.URDF},
@@ -906,6 +1028,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Poppy Project",
         repository="poppy_ergo_jr_description",
         license_spdx="GPL-3.0",
+        license_file="package.xml",
     ),
     "poppy_torso_description": Description(
         formats={Format.URDF},
@@ -914,6 +1037,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Poppy Project",
         dof=13,
         repository="poppy_torso_description",
+        license_spdx="GPL-3.0",
+        license_file="package.xml",
     ),
     "pr2_description": Description(
         formats={Format.URDF},
@@ -922,6 +1047,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Willow Garage",
         repository="robot-assets",
         license_spdx="BSD",
+        license_file="README.md",
     ),
     "r2_description": Description(
         formats={Format.URDF},
@@ -930,6 +1056,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="NASA JSC Robotics",
         repository="nasa-urdf-robots",
         license_spdx="NASA-1.3",
+        license_file="README.md",
     ),
     "rby1_description": Description(
         formats={Format.URDF},
@@ -947,6 +1074,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Pollen Robotics",
         repository="reachy_description",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "rhea_description": Description(
         formats={Format.URDF},
@@ -955,6 +1083,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Gabrael Levine",
         dof=7,
         repository="rhea_description",
+        license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "rizon4_description": Description(
         formats={Format.URDF},
@@ -963,6 +1093,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Flexiv Robotics",
         repository="flexiv_description",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "rizon4_mj_description": Description(
         formats={Format.MJCF},
@@ -979,7 +1110,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="Robotiq 2F-85",
         maker="Robotiq",
         repository="robotiq_arg85_description",
-        license_spdx="BSD-2-Clause",
+        license_spdx="BSD",
+        license_file="package.xml",
     ),
     "robotiq_2f85_mj_description": Description(
         formats={Format.MJCF},
@@ -988,6 +1120,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Robotiq",
         repository="mujoco_menagerie",
         license_spdx="BSD-2-Clause",
+        license_file="robotiq_2f85/LICENSE",
     ),
     "robotiq_2f85_v4_description": Description(
         formats={Format.URDF},
@@ -996,6 +1129,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Robotiq",
         repository="robotiq_2f_85",
         license_spdx="BSD-2-Clause",
+        license_file="LICENSE",
     ),
     "robotiq_2f85_v4_mj_description": Description(
         formats={Format.MJCF},
@@ -1004,6 +1138,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Robotiq",
         repository="mujoco_menagerie",
         license_spdx="BSD-2-Clause",
+        license_file="robotiq_2f85_v4/LICENSE",
     ),
     "romeo_description": Description(
         formats={Format.URDF},
@@ -1011,7 +1146,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="Romeo",
         maker="Aldebaran Robotics",
         repository="romeo_robot",
-        license_spdx="BSD-3-Clause",
+        license_spdx="BSD",
+        license_file="romeo_description/package.xml",
     ),
     "rsk_description": Description(
         formats={Format.URDF},
@@ -1020,6 +1156,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Robot Soccer Kit",
         repository="onshape-to-robot-examples",
         license_spdx="MIT",
+        license_file="README.md",
     ),
     "rsk_mj_description": Description(
         formats={Format.MJCF},
@@ -1028,6 +1165,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Robot Soccer Kit",
         repository="mujoco_menagerie",
         license_spdx="MIT",
+        license_file="robot_soccer_kit/LICENSE",
     ),
     "sawyer_mj_description": Description(
         formats={Format.MJCF},
@@ -1036,6 +1174,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Rethink Robotics",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="rethink_robotics_sawyer/LICENSE",
     ),
     "shadow_dexee_mj_description": Description(
         formats={Format.MJCF},
@@ -1044,6 +1183,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="The Shadow Robot Company",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="shadow_dexee/LICENSE",
     ),
     "shadow_hand_mj_description": Description(
         formats={Format.MJCF},
@@ -1052,6 +1192,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="The Shadow Robot Company",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="shadow_hand/LICENSE",
     ),
     "sigmaban_description": Description(
         formats={Format.URDF},
@@ -1060,6 +1201,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Rhoban",
         repository="sigmaban_urdf",
         license_spdx="MIT",
+        license_file="LICENSE",
     ),
     "simple_humanoid_description": Description(
         formats={Format.URDF},
@@ -1068,6 +1210,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         dof=29,
         repository="simple_humanoid_description",
         license_spdx="BSD-2-Clause",
+        license_file="LICENSE",
     ),
     "skydio_x2_description": Description(
         formats={Format.URDF},
@@ -1076,6 +1219,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Skydio",
         dof=6,
         repository="skydio_x2_description",
+        license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "skydio_x2_mj_description": Description(
         formats={Format.MJCF},
@@ -1084,6 +1229,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Skydio",
         dof=6,
         repository="mujoco_menagerie",
+        license_spdx="Apache-2.0",
+        license_file="skydio_x2/LICENSE",
     ),
     "so_arm100_description": Description(
         formats={Format.URDF},
@@ -1092,6 +1239,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="The Robot Studio",
         repository="SO-ARM100",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "so_arm100_mj_description": Description(
         formats={Format.MJCF},
@@ -1100,6 +1248,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="The Robot Studio",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="trs_so_arm100/LICENSE",
     ),
     "so_arm101_description": Description(
         formats={Format.URDF},
@@ -1108,6 +1257,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="The Robot Studio",
         repository="SO-ARM100",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "so_arm101_mj_description": Description(
         formats={Format.MJCF},
@@ -1116,6 +1266,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="The Robot Studio",
         repository="SO-ARM100",
         license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "solo_description": Description(
         formats={Format.URDF},
@@ -1124,6 +1275,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ODRI",
         dof=12,
         repository="example-robot-data",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "spot_mj_description": Description(
         formats={Format.MJCF},
@@ -1132,6 +1285,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Boston Dynamics",
         dof=12,
         repository="mujoco_menagerie",
+        license_spdx="BSD-3-Clause",
+        license_file="boston_dynamics_spot/LICENSE",
     ),
     "spryped_description": Description(
         formats={Format.URDF},
@@ -1140,6 +1295,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Benjamin Bokser",
         dof=8,
         repository="spryped",
+        license_spdx="BSD",
+        license_file="spryped_urdf_rev06/package.xml",
     ),
     "stretch_3_mj_description": Description(
         formats={Format.MJCF},
@@ -1148,6 +1305,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Hello Robot",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="hello_robot_stretch_3/LICENSE",
     ),
     "stretch_description": Description(
         formats={Format.URDF},
@@ -1155,7 +1313,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="Stretch RE1",
         maker="Hello Robot",
         repository="stretch_description",
-        license_spdx="CC-BY-SA-4.0 ✖️",
+        license_spdx="CC-BY-NC-SA-4.0",
+        license_file="LICENSE",
     ),
     "stretch_mj_description": Description(
         formats={Format.MJCF},
@@ -1164,6 +1323,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Hello Robot",
         repository="mujoco_menagerie",
         license_spdx="Clear BSD",
+        license_file="hello_robot_stretch/LICENSE",
     ),
     "stretch_se3_description": Description(
         formats={Format.URDF},
@@ -1172,6 +1332,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Hello Robot",
         repository="stretch_urdf",
         license_spdx="Clear BSD",
+        license_file="LICENSE.md",
     ),
     "talos_description": Description(
         formats={Format.URDF},
@@ -1179,7 +1340,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="TALOS",
         maker="PAL Robotics",
         repository="talos-data",
-        license_spdx="Apache-2.0",
+        license_spdx="LGPL-3.0",
+        license_file="LICENSE",
     ),
     "talos_mj_description": Description(
         formats={Format.MJCF},
@@ -1188,6 +1350,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="PAL Robotics",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="pal_talos/LICENSE",
     ),
     "tiago++_mj_description": Description(
         formats={Format.MJCF},
@@ -1196,6 +1359,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="PAL Robotics",
         repository="mujoco_menagerie",
         license_spdx="Apache-2.0",
+        license_file="pal_tiago_dual/LICENSE",
     ),
     "tiago_description": Description(
         formats={Format.URDF},
@@ -1203,7 +1367,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="TIAGo",
         maker="PAL Robotics",
         repository="example-robot-data",
-        license_spdx="Apache-2.0",
+        license_spdx="CC-BY-NC-ND-3.0",
+        license_file="robots/tiago_description/README.md",
     ),
     "toddlerbot_2xc_mj_description": Description(
         formats={Format.MJCF},
@@ -1212,6 +1377,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Stanford University",
         repository="mujoco_menagerie",
         license_spdx="MIT",
+        license_file="toddlerbot_2xc/LICENSE",
     ),
     "toddlerbot_2xm_mj_description": Description(
         formats={Format.MJCF},
@@ -1220,6 +1386,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Stanford University",
         repository="mujoco_menagerie",
         license_spdx="MIT",
+        license_file="toddlerbot_2xm/LICENSE",
     ),
     "toddlerbot_description": Description(
         formats={Format.URDF},
@@ -1228,6 +1395,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Stanford University",
         repository="toddlerbot",
         license_spdx="MIT",
+        license_file="LICENSE",
     ),
     "trifinger_edu_description": Description(
         formats={Format.URDF},
@@ -1236,6 +1404,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         dof=9,
         repository="differentiable-robot-model",
         license_spdx="MIT",
+        license_file="LICENSE",
     ),
     "upkie_description": Description(
         formats={Format.URDF},
@@ -1244,6 +1413,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Tast's Robots",
         dof=6,
         repository="upkie_description",
+        license_spdx="Apache-2.0",
+        license_file="LICENSE",
     ),
     "ur10_description": Description(
         formats={Format.URDF},
@@ -1251,7 +1422,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="UR10",
         maker="Universal Robots",
         repository="example-robot-data",
-        license_spdx="Apache-2.0",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur10_official_description": Description(
         formats={Format.URDF},
@@ -1260,6 +1432,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur10e_description": Description(
         formats={Format.URDF},
@@ -1268,6 +1441,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur10e_mj_description": Description(
         formats={Format.MJCF},
@@ -1276,6 +1450,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="universal_robots_ur10e/LICENSE",
     ),
     "ur12e_description": Description(
         formats={Format.URDF},
@@ -1284,6 +1459,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur15_description": Description(
         formats={Format.URDF},
@@ -1291,7 +1467,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="UR15",
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
-        license_spdx="BSD-3-Clause",
+        license_spdx="Universal Robots Terms for Graphical Documentation",
+        license_file="meshes/ur15/LICENSE.txt",
     ),
     "ur16e_description": Description(
         formats={Format.URDF},
@@ -1300,6 +1477,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur18_description": Description(
         formats={Format.URDF},
@@ -1307,7 +1485,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="UR18",
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
-        license_spdx="BSD-3-Clause",
+        license_spdx="Universal Robots Terms for Graphical Documentation",
+        license_file="meshes/ur18/LICENSE.txt",
     ),
     "ur20_description": Description(
         formats={Format.URDF},
@@ -1315,7 +1494,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="UR20",
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
-        license_spdx="BSD-3-Clause",
+        license_spdx="Universal Robots Terms for Graphical Documentation",
+        license_file="meshes/ur20/LICENSE.txt",
     ),
     "ur30_description": Description(
         formats={Format.URDF},
@@ -1323,7 +1503,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="UR30",
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
-        license_spdx="BSD-3-Clause",
+        license_spdx="Universal Robots Terms for Graphical Documentation",
+        license_file="meshes/ur30/LICENSE.txt",
     ),
     "ur3_description": Description(
         formats={Format.URDF},
@@ -1331,7 +1512,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="UR3",
         maker="Universal Robots",
         repository="example-robot-data",
-        license_spdx="Apache-2.0",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur3_official_description": Description(
         formats={Format.URDF},
@@ -1340,6 +1522,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur3e_description": Description(
         formats={Format.URDF},
@@ -1348,6 +1531,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur5_description": Description(
         formats={Format.URDF},
@@ -1355,7 +1539,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="UR5",
         maker="Universal Robots",
         repository="example-robot-data",
-        license_spdx="Apache-2.0",
+        license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur5_official_description": Description(
         formats={Format.URDF},
@@ -1364,6 +1549,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur5e_description": Description(
         formats={Format.URDF},
@@ -1372,6 +1558,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur5e_mj_description": Description(
         formats={Format.MJCF},
@@ -1380,6 +1567,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="universal_robots_ur5e/LICENSE",
     ),
     "ur7e_description": Description(
         formats={Format.URDF},
@@ -1388,6 +1576,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "ur8long_description": Description(
         formats={Format.URDF},
@@ -1395,7 +1584,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="UR8 Long",
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
-        license_spdx="BSD-3-Clause",
+        license_spdx="Universal Robots Terms for Graphical Documentation",
+        license_file="meshes/ur8long/LICENSE.txt",
     ),
     "valkyrie_description": Description(
         formats={Format.URDF},
@@ -1404,6 +1594,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="NASA JSC Robotics",
         repository="nasa-urdf-robots",
         license_spdx="NASA-1.3",
+        license_file="README.md",
     ),
     "viper_mj_description": Description(
         formats={Format.MJCF},
@@ -1412,6 +1603,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Trossen Robotics",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="trossen_vx300s/LICENSE",
     ),
     "widow_mj_description": Description(
         formats={Format.MJCF},
@@ -1420,6 +1612,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Trossen Robotics",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="trossen_wx250s/LICENSE",
     ),
     "wl_p311d_description": Description(
         formats={Format.URDF},
@@ -1446,6 +1639,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UFACTORY",
         repository="xarm_ros2",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "xarm7_description": Description(
         formats={Format.URDF},
@@ -1454,6 +1648,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UFACTORY",
         repository="xarm_ros2",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "xarm7_mj_description": Description(
         formats={Format.MJCF},
@@ -1462,6 +1657,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UFACTORY",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="ufactory_xarm7/LICENSE",
     ),
     "yam_description": Description(
         formats={Format.URDF},
@@ -1470,6 +1666,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="I2RT Robotics",
         repository="i2rt",
         license_spdx="MIT",
+        license_file="LICENSE",
     ),
     "yam_mj_description": Description(
         formats={Format.MJCF},
@@ -1478,6 +1675,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="I2RT Robotics",
         repository="mujoco_menagerie",
         license_spdx="MIT",
+        license_file="i2rt_yam/LICENSE",
     ),
     "yumi_description": Description(
         formats={Format.URDF},
@@ -1486,6 +1684,8 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="ABB",
         dof=16,
         repository="robot-assets",
+        license_spdx="BSD",
+        license_file="README.md",
     ),
     "z1_description": Description(
         formats={Format.URDF},
@@ -1494,6 +1694,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         repository="unitree_ros",
         license_spdx="BSD-3-Clause",
+        license_file="LICENSE",
     ),
     "z1_mj_description": Description(
         formats={Format.MJCF},
@@ -1502,5 +1703,6 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="UNITREE Robotics",
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
+        license_file="unitree_z1/LICENSE",
     ),
 }
