@@ -17,6 +17,8 @@ REPOSITORY_PATH: str = _clone_to_cache(
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "stretch_urdf", "SE3")
 
+PACKAGE_URI_ROOT: str = REPOSITORY_PATH
+
 XACRO_PATH: str = _path.join(
     PACKAGE_PATH,
     "xacro",
