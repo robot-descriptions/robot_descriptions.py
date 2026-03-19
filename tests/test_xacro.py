@@ -13,6 +13,8 @@ from unittest.mock import patch
 from robot_descriptions._descriptions import DESCRIPTION_FORMATS
 from robot_descriptions._xacro import (
     _DESCRIPTION_FORMAT_ATTRS,
+    _convert_filenames_to_package_uris,
+    _to_package_uri,
     get_description_path,
     get_mjcf_path,
     get_srdf_path,
@@ -21,16 +23,11 @@ from robot_descriptions._xacro import (
 
 
 class _FakeDoc:
-    class _Dom:
-        @staticmethod
-        def getElementsByTagName(_name: str):
-            return []
+    rootdir = None
 
-    dom = _Dom()
-
-    def to_urdf_file(self, path: str) -> None:
-        with open(path, "w", encoding="utf-8") as out_file:
-            out_file.write("<robot name='generated'/>")
+    @staticmethod
+    def to_urdf_string(use_protocols: bool, pretty: bool) -> str:
+        return "<robot name='generated'/>"
 
 
 class TestXacro(unittest.TestCase):
@@ -130,10 +127,11 @@ class TestXacro(unittest.TestCase):
 
         class FakeXacroDoc:
             @staticmethod
-            def from_file(path: str, subargs):
+            def from_file(path: str, subargs, resolve_packages=False):
                 calls["from_file"] += 1
                 self.assertEqual(path, xacro_path)
                 self.assertEqual(subargs, {"prefix": "test_"})
+                self.assertFalse(resolve_packages)
                 return _FakeDoc()
 
         fake_xacrodoc = types.SimpleNamespace(
@@ -171,8 +169,9 @@ class TestXacro(unittest.TestCase):
 
         class FakeXacroDoc:
             @staticmethod
-            def from_file(path: str, subargs):
+            def from_file(path: str, subargs, resolve_packages=False):
                 self.assertEqual(path, xacro_path)
+                self.assertFalse(resolve_packages)
                 calls["subargs"].append(subargs)
                 return _FakeDoc()
 
@@ -215,3 +214,79 @@ class TestXacro(unittest.TestCase):
         )
         self.assertEqual(first_path, second_path)
         self.assertNotEqual(first_path, third_path)
+
+    def test_to_package_uri(self):
+        package_dir = "/tmp/ros2_kortex/kortex_description"
+        mesh = os.path.join(package_dir, "meshes", "base_link.STL")
+        outside = os.path.join("/tmp/ros2_kortex", "other", "thing.stl")
+
+        cases = [
+            (
+                f"file://{mesh}",
+                "package://kortex_description/meshes/base_link.STL",
+            ),
+            # Files outside the package are left untouched.
+            (f"file://{outside}", f"file://{outside}"),
+            (
+                "package://already_ok/meshes/keep.stl",
+                "package://already_ok/meshes/keep.stl",
+            ),
+            ("file:///opt/external/mesh.stl", "file:///opt/external/mesh.stl"),
+        ]
+
+        for filename, expected in cases:
+            with self.subTest(filename=filename):
+                self.assertEqual(
+                    _to_package_uri(
+                        filename,
+                        package_name="kortex_description",
+                        package_path=package_dir,
+                    ),
+                    expected,
+                )
+
+    def test_to_package_uri_names_package_not_repository(self):
+        # The URI names the package directory (e.g. "SE3"), not the
+        # repository clone that happens to contain it.
+        package_dir = "/tmp/stretch_urdf/stretch_urdf/SE3"
+        base_link = os.path.join(package_dir, "meshes", "base_link.STL")
+        self.assertEqual(
+            _to_package_uri(
+                f"file://{base_link}",
+                package_name="SE3",
+                package_path=package_dir,
+            ),
+            "package://SE3/meshes/base_link.STL",
+        )
+
+    def test_generated_urdf_filenames_are_normalized(self):
+        repo_dir = "/tmp/stretch_urdf"
+        package_dir = os.path.join(repo_dir, "stretch_urdf", "SE3")
+        base_link = os.path.join(package_dir, "meshes", "base_link.STL")
+        module = types.SimpleNamespace(
+            __name__="robot_descriptions.stretch_se3_description",
+            REPOSITORY_PATH=repo_dir,
+            PACKAGE_PATH=package_dir,
+        )
+        urdf_text = _convert_filenames_to_package_uris(
+            module,
+            "\n".join(
+                [
+                    "<robot name='generated'>",
+                    f"<mesh filename='file://{base_link}'/>",
+                    "<mesh filename='package://already_ok/meshes/keep.stl'/>",
+                    "<mesh filename='file:///opt/external/mesh.stl'/>",
+                    "</robot>",
+                ]
+            ),
+        )
+
+        self.assertIn(
+            "filename='package://SE3/meshes/base_link.STL'",
+            urdf_text,
+        )
+        self.assertIn(
+            "package://already_ok/meshes/keep.stl",
+            urdf_text,
+        )
+        self.assertIn("file:///opt/external/mesh.stl", urdf_text)
