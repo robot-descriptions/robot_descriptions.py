@@ -19,7 +19,13 @@ The goal of this project is to facilitate loading and sharing of robot descripti
     - For example, the file name for the Kinova (maker) Gen2 (robot name) is `gen2_description.py`.
     - Use the `mj_description` suffix for an MJCF description.
 4. **Listing:** Add the description metadata to the `DESCRIPTIONS` dictionary in `_descriptions.py`.
-5. **README:** Document the description's submodule name in the Descriptions section of the [README](README.md).
+5. **Visualize:** At this point you can check that the new description loads and renders properly using a visualizer, for example:
+
+```
+uv run --with yourdfpy --with "pyglet<2" python -m robot_descriptions show_in_yourdfpy <new_description>
+```
+
+6. **README:** Document the description's submodule name in the Descriptions section of the [README](README.md).
     - Use an [SPDX License Identifier](https://spdx.org/licenses/) in the License column.
-6. **CHANGELOG:** Write down the new model at the top of the [changelog](CHANGELOG.md).
-7. **Testing:** Check that all unit tests are successful by `tox`.
+7. **CHANGELOG:** Write down the new model at the top of the [changelog](CHANGELOG.md).
+8. **Testing:** Check that all unit tests are successful by `tox`.
