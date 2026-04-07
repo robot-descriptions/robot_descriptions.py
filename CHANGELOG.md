@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Flexiv Rizon4 (MJCF)
 - Description: Flexiv Rizon4 (Xacro)
 - Description: Robotiq 2F-85 v4 (URDF) (thanks to @nickswalker)
 - Description: Franka descriptions added XACRO_ARGS_NO_HAND property (thanks to @nickswalker)
