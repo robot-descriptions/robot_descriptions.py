@@ -18,3 +18,5 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "fr3v2_1")
 
 XACRO_PATH: str = _path.join(PACKAGE_PATH, "fr3v2_1.urdf.xacro")
+
+XACRO_ARGS_NO_HAND = {"hand": "false"}
