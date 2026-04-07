@@ -106,10 +106,10 @@ DESCRIPTIONS: Dict[str, Description] = {
     "double_pendulum_description": Description(
         Format.URDF, tags={"educational"}
     ),
+    "draco3_description": Description(Format.URDF, tags={"humanoid"}),
     "dynamixel_2r_mj_description": Description(
         Format.MJCF, tags={"educational"}
     ),
-    "draco3_description": Description(Format.URDF, tags={"humanoid"}),
     "edo_description": Description(Format.URDF, tags={"arm"}),
     "elf2_description": Description(Format.URDF, tags={"humanoid"}),
     "elf2_mj_description": Description(Format.MJCF, tags={"humanoid"}),
@@ -123,9 +123,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "finger_edu_description": Description(Format.URDF, tags={"educational"}),
     "fr3_description": Description(Format.URDF, tags={"arm"}),
     "fr3_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "fr3_v2_1_description": Description(Format.URDF, tags={"arm"}),
     "fr3_v2_description": Description(Format.URDF, tags={"arm"}),
     "fr3_v2_mj_description": Description(Format.MJCF, tags={"arm"}),
-    "fr3_v2_1_description": Description(Format.URDF, tags={"arm"}),
     "g1_description": Description(Format.URDF, tags={"humanoid"}),
     "g1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "gen2_description": Description(Format.URDF, tags={"arm"}),
@@ -140,15 +140,15 @@ DESCRIPTIONS: Dict[str, Description] = {
     "go2_description": Description(Format.URDF, tags={"quadruped"}),
     "go2_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "gr1_description": Description(Format.URDF, tags={"humanoid"}),
-    "h1_description": Description(Format.URDF, tags={"humanoid"}),
-    "h1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "h1_2_description": Description(Format.URDF, tags={"humanoid"}),
     "h1_2_mj_description": Description(Format.MJCF, tags={"humanoid"}),
+    "h1_description": Description(Format.URDF, tags={"humanoid"}),
+    "h1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "hyq_description": Description(Format.URDF, tags={"quadruped"}),
     "icub_description": Description(Format.URDF, tags={"humanoid"}),
-    "iiwa7_description": Description(Format.URDF, tags={"arm"}),
     "iiwa14_description": Description(Format.URDF, tags={"arm"}),
     "iiwa14_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "iiwa7_description": Description(Format.URDF, tags={"arm"}),
     "j2n4s300_description": Description(Format.URDF, tags={"arm"}),
     "j2n6s200_description": Description(Format.URDF, tags={"arm"}),
     "j2n6s300_description": Description(Format.URDF, tags={"arm"}),
@@ -160,11 +160,11 @@ DESCRIPTIONS: Dict[str, Description] = {
     "jvrc_description": Description(Format.URDF, tags={"humanoid"}),
     "jvrc_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "laikago_description": Description(Format.URDF, tags={"quadruped"}),
-    "leap_hand_v1_description": Description(
-        Format.URDF, tags={"end_effector"}
-    ),
     "leap_hand_mj_description": Description(
         Format.MJCF, tags={"end_effector"}
+    ),
+    "leap_hand_v1_description": Description(
+        Format.URDF, tags={"end_effector"}
     ),
     "low_cost_robot_arm_mj_description": Description(
         Format.MJCF, tags={"arm"}
@@ -177,7 +177,13 @@ DESCRIPTIONS: Dict[str, Description] = {
     "n1_description": Description(Format.URDF, tags={"humanoid"}),
     "n1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "nextage_description": Description(Format.URDF, tags={"dual_arm"}),
+    "omx_f_description": Description(Format.URDF, tags={"arm"}),
+    "omx_l_description": Description(Format.URDF, tags={"arm"}),
+    "omy_3m_description": Description(Format.URDF, tags={"arm"}),
+    "omy_f3m_description": Description(Format.URDF, tags={"arm"}),
+    "omy_l100_description": Description(Format.URDF, tags={"arm"}),
     "op3_mj_description": Description(Format.MJCF, tags={"humanoid"}),
+    "open_manipulator_x_description": Description(Format.URDF, tags={"arm"}),
     "openarm_v1_mj_description": Description(Format.MJCF, tags={"dual_arm"}),
     "panda_description": Description(Format.URDF, tags={"arm"}),
     "panda_mj_description": Description(Format.MJCF, tags={"arm"}),
@@ -201,11 +207,11 @@ DESCRIPTIONS: Dict[str, Description] = {
     "robotiq_2f85_description": Description(
         Format.URDF, tags={"end_effector"}
     ),
-    "robotiq_2f85_v4_description": Description(
-        Format.URDF, tags={"end_effector"}
-    ),
     "robotiq_2f85_mj_description": Description(
         Format.MJCF, tags={"end_effector"}
+    ),
+    "robotiq_2f85_v4_description": Description(
+        Format.URDF, tags={"end_effector"}
     ),
     "robotiq_2f85_v4_mj_description": Description(
         Format.MJCF, tags={"end_effector"}
@@ -233,31 +239,31 @@ DESCRIPTIONS: Dict[str, Description] = {
     "solo_description": Description(Format.URDF, tags={"quadruped"}),
     "spot_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "spryped_description": Description(Format.URDF, tags={"biped"}),
-    "stretch_description": Description(
-        Format.URDF, tags={"mobile_manipulator"}
+    "stretch_3_mj_description": Description(
+        Format.MJCF, tags={"mobile_manipulator"}
     ),
-    "stretch_se3_description": Description(
+    "stretch_description": Description(
         Format.URDF, tags={"mobile_manipulator"}
     ),
     "stretch_mj_description": Description(
         Format.MJCF, tags={"mobile_manipulator"}
     ),
-    "stretch_3_mj_description": Description(
-        Format.MJCF, tags={"mobile_manipulator"}
+    "stretch_se3_description": Description(
+        Format.URDF, tags={"mobile_manipulator"}
     ),
     "talos_description": Description(Format.URDF, tags={"humanoid"}),
     "talos_mj_description": Description(Format.MJCF, tags={"humanoid"}),
-    "tiago_description": Description(Format.URDF, tags={"mobile_manipulator"}),
     "tiago++_mj_description": Description(
         Format.MJCF, tags={"mobile_manipulator"}
     ),
-    "toddlerbot_description": Description(Format.URDF, tags={"humanoid"}),
+    "tiago_description": Description(Format.URDF, tags={"mobile_manipulator"}),
     "toddlerbot_2xc_mj_description": Description(
         Format.MJCF, tags={"humanoid"}
     ),
     "toddlerbot_2xm_mj_description": Description(
         Format.MJCF, tags={"humanoid"}
     ),
+    "toddlerbot_description": Description(Format.URDF, tags={"humanoid"}),
     "trifinger_edu_description": Description(
         Format.URDF, tags={"educational"}
     ),
@@ -294,10 +300,4 @@ DESCRIPTIONS: Dict[str, Description] = {
     "yumi_description": Description(Format.URDF, tags={"dual_arm"}),
     "z1_description": Description(Format.URDF, tags={"arm"}),
     "z1_mj_description": Description(Format.MJCF, tags={"arm"}),
-    "omy_3m_description": Description(Format.URDF, tags={"arm"}),
-    "omy_f3m_description": Description(Format.URDF, tags={"arm"}),
-    "omy_l100_description": Description(Format.URDF, tags={"arm"}),
-    "omx_f_description": Description(Format.URDF, tags={"arm"}),
-    "omx_l_description": Description(Format.URDF, tags={"arm"}),
-    "open_manipulator_x_description": Description(Format.URDF, tags={"arm"}),
 }

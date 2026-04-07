@@ -25,11 +25,16 @@ def _xacro_cache_dir() -> str:
     return os.path.join(cache_root, "xacrodoc")
 
 
-def _cache_key(module: Any, xacrodoc_module: Any) -> str:
+def _cache_key(
+    module: Any,
+    xacrodoc_module: Any,
+    *,
+    xacro_args: dict[str, str],
+) -> str:
     payload = {
         "description_name": module.__name__.split(".")[-1],
         "xacro_path": module.XACRO_PATH,
-        "xacro_args": getattr(module, "XACRO_ARGS", {}),
+        "xacro_args": xacro_args,
         "xacrodoc_version": getattr(xacrodoc_module, "__version__", ""),
     }
     payload_json = json.dumps(payload, sort_keys=True)
@@ -46,7 +51,12 @@ def _pushd(path: str):
         os.chdir(cwd)
 
 
-def _generate_urdf_path(module: Any, xacrodoc_module: Any) -> str:
+def _generate_urdf_path(
+    module: Any,
+    xacrodoc_module: Any,
+    *,
+    xacro_args: dict[str, str],
+) -> str:
     if not os.path.exists(module.XACRO_PATH):
         raise FileNotFoundError(
             f"Xacro path {module.XACRO_PATH} does not exist "
@@ -56,14 +66,14 @@ def _generate_urdf_path(module: Any, xacrodoc_module: Any) -> str:
     description_name = module.__name__.split(".")[-1]
     output_dir = os.path.join(_xacro_cache_dir(), description_name)
     os.makedirs(output_dir, exist_ok=True)
-    key = _cache_key(module, xacrodoc_module)
+    key = _cache_key(
+        module,
+        xacrodoc_module,
+        xacro_args=xacro_args,
+    )
     output_path = os.path.join(output_dir, f"{description_name}-{key}.urdf")
     if os.path.exists(output_path):
         return output_path
-
-    xacro_args = getattr(module, "XACRO_ARGS", {})
-    if not isinstance(xacro_args, dict):
-        raise TypeError("XACRO_ARGS should be a dictionary")
 
     xacro_dir = os.path.dirname(module.XACRO_PATH)
     # xacro might be using relative paths to refer to other macros.
@@ -113,7 +123,10 @@ def _generate_urdf_path(module: Any, xacrodoc_module: Any) -> str:
     return output_path
 
 
-def get_urdf_path(module: Any) -> str:
+def get_urdf_path(
+    module: Any,
+    xacro_args: dict[str, str] | None = None,
+) -> str:
     """Get the URDF path from a description module.
 
     If the module exposes `URDF_PATH`, this path is returned
@@ -121,6 +134,12 @@ def get_urdf_path(module: Any) -> str:
     the Xacro source is rendered to a cached URDF file and the
     path to the generated file is returned.
     """
+    if xacro_args is not None and not hasattr(module, "XACRO_PATH"):
+        raise ValueError(
+            f"{module.__name__} is not a Xacro description, "
+            "so xacro_args cannot be provided"
+        )
+
     if hasattr(module, "URDF_PATH"):
         return module.URDF_PATH
 
@@ -135,4 +154,17 @@ def get_urdf_path(module: Any) -> str:
             "Install it with `pip install xacrodoc`."
         ) from exc
 
-    return _generate_urdf_path(module, xacrodoc_module)
+    module_xacro_args = getattr(module, "XACRO_ARGS", {})
+    if not isinstance(module_xacro_args, dict):
+        raise TypeError("XACRO_ARGS should be a dictionary")
+    effective_xacro_args = (
+        module_xacro_args
+        if xacro_args is None
+        else {**module_xacro_args, **xacro_args}
+    )
+
+    return _generate_urdf_path(
+        module,
+        xacrodoc_module,
+        xacro_args=effective_xacro_args,
+    )
