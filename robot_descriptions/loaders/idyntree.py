@@ -21,6 +21,7 @@ def load_robot_description(
     description_name: str,
     joints_list: Optional[List[str]] = None,
     commit: Optional[str] = None,
+    xacro_args: Optional[dict[str, str]] = None,
 ) -> idyn.Model:
     """Load a robot description in iDynTree.
 
@@ -32,6 +33,8 @@ def load_robot_description(
             only the specified joints is created.
         commit: If specified, check out that commit from the cloned robot
             description repository.
+        xacro_args: Optional Xacro arguments overriding the module defaults
+            when loading a Xacro-backed description.
 
     Returns:
         Identifier of the robot in iDynTree.
@@ -47,7 +50,7 @@ def load_robot_description(
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
     if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
         raise ValueError(f"{description_name} is not a URDF/Xacro description")
-    urdf_path = get_urdf_path(module)
+    urdf_path = get_urdf_path(module, xacro_args=xacro_args)
 
     model_loader = idyn.ModelLoader()
 

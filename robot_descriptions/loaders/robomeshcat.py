@@ -23,6 +23,7 @@ from .pinocchio import get_package_dirs
 def load_robot_description(
     description_name: str,
     commit: Optional[str] = None,
+    xacro_args: Optional[dict[str, str]] = None,
 ) -> robomeshcat.Robot:
     """Load a robot description in RoboMeshCat.
 
@@ -30,6 +31,8 @@ def load_robot_description(
         description_name: Name of the robot description.
         commit: If specified, check out that commit from the cloned robot
             description repository.
+        xacro_args: Optional Xacro arguments overriding the module defaults
+            when loading a Xacro-backed description.
 
     Returns:
         Robot model for RoboMeshCat.
@@ -41,7 +44,7 @@ def load_robot_description(
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
     if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
         raise ValueError(f"{description_name} is not a URDF/Xacro description")
-    urdf_path = get_urdf_path(module)
+    urdf_path = get_urdf_path(module, xacro_args=xacro_args)
     robot = robomeshcat.Robot(
         urdf_path=urdf_path,
         mesh_folder_path=get_package_dirs(module),
