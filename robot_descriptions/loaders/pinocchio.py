@@ -35,6 +35,7 @@ def load_robot_description(
     description_name: str,
     root_joint: Optional[PinocchioJoint] = None,
     commit: Optional[str] = None,
+    xacro_args: Optional[dict[str, str]] = None,
 ) -> pin.RobotWrapper:
     """Load a robot description in Pinocchio.
 
@@ -45,6 +46,8 @@ def load_robot_description(
             inertial frame. Defaults to no joint, i.e., a fixed base.
         commit: If specified, check out that commit from the cloned robot
             description repository.
+        xacro_args: Optional Xacro arguments overriding the module defaults
+            when loading a Xacro-backed description.
 
     Returns:
         Robot model for Pinocchio.
@@ -55,7 +58,7 @@ def load_robot_description(
     if commit is not None:
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
     if hasattr(module, "URDF_PATH") or hasattr(module, "XACRO_PATH"):
-        urdf_path = get_urdf_path(module)
+        urdf_path = get_urdf_path(module, xacro_args=xacro_args)
         robot = pin.RobotWrapper.BuildFromURDF(
             filename=urdf_path,
             package_dirs=get_package_dirs(module),

@@ -25,6 +25,7 @@ from .._xacro import get_urdf_path
 def load_robot_description(
     description_name: str,
     commit: Optional[str] = None,
+    xacro_args: Optional[dict[str, str]] = None,
     **kwargs,
 ) -> yourdfpy.URDF:
     """Load a robot description in yourdfpy.
@@ -33,6 +34,8 @@ def load_robot_description(
         description_name: Name of the robot description.
         commit: If specified, check out that commit from the cloned robot
             description repository.
+        xacro_args: Optional Xacro arguments overriding the module defaults
+            when loading a Xacro-backed description.
         kwargs: arguments passed to yourdfpy.URDF.load function, including:
             build_scene_graph: Whether to build a scene graph from visual
                 elements.
@@ -52,7 +55,7 @@ def load_robot_description(
         os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
     if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
         raise ValueError(f"{description_name} is not a URDF/Xacro description")
-    urdf_path = get_urdf_path(module)
+    urdf_path = get_urdf_path(module, xacro_args=xacro_args)
 
     return yourdfpy.URDF.load(
         urdf_path,
