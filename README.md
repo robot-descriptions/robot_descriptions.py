@@ -268,6 +268,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `robotiq_2f85_v4_mj_description` | Robotiq 2F-85         | Robotiq                    | MJCF       | BSD-2-Clause |
 | `shadow_dexee_mj_description`    | Shadow DEX-EE         | The Shadow Robot Company   | MJCF       | Apache-2.0 |
 | `shadow_hand_mj_description`     | Shadow Hand           | The Shadow Robot Company   | MJCF       | Apache-2.0 |
+| `so_arm101_parallel_gripper_description` | SO-ARM101 Parallel Gripper | Robonine | URDF | GPL-3.0 |
 
 ### Humanoids
 
