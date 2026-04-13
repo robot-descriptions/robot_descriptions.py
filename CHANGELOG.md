@@ -16,6 +16,12 @@ All notable changes to this project will be documented in this file.
 
 - README: Alphabetize description tables (thanks to @nickswalker)
 - Description: Alphabetize description tables (thanks to @nickswalker)
+- README: Generate description tables from registry metadata and keep them alphabetized (thanks to @nickswalker)
+- Description metadata: Add robot name, maker, DOF, repository, and license fields to the registry (thanks to @nickswalker)
+
+### Fixed
+
+- README: Correct and backfill license metadata (thanks to @nickswalker)
 
 ## [1.23.0] - 2026-03-09
 

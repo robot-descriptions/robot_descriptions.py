@@ -54,6 +54,16 @@ class TestDescriptions(unittest.TestCase):
                     f"in {description}",
                 )
 
+            if desc.license_file is not None:
+                license_path = os.path.join(
+                    description.REPOSITORY_PATH, desc.license_file
+                )
+                self.assertTrue(
+                    os.path.exists(license_path),
+                    f"License path {license_path} does not exist "
+                    f"in {description}",
+                )
+
     def test_invalid_description_commit(self):
         invalid_commit = "foobar"
         os.environ["ROBOT_DESCRIPTION_COMMIT"] = invalid_commit
