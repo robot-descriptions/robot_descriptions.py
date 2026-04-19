@@ -333,6 +333,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="63eede5a636e548eb8f2854e558bd343c21db9f7",
         cache_path="SO-ARM100",
     ),
+    "SO-ARM100-101-Parallel-Gripper": Repository(
+        url="https://github.com/roboninecom/SO-ARM100-101-Parallel-Gripper.git",
+        commit="ed44013818de822369d0f0c9461ae0c20a3e6bb8",
+        cache_path="SO-ARM100-101-Parallel-Gripper",
+    ),
     "spryped": Repository(
         url="https://github.com/bbokser/spryped.git",
         commit="f360a6b78667a4d97c86cad465ef8f4c9512462b",

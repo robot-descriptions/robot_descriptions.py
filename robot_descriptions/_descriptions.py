@@ -237,6 +237,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "so_arm100_mj_description": Description(Format.MJCF, tags={"arm"}),
     "so_arm101_description": Description(Format.URDF, tags={"arm"}),
     "so_arm101_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "so_arm101_parallel_gripper_description": Description(
+        Format.URDF, tags={"end_effector"}
+    ),
     "solo_description": Description(Format.URDF, tags={"quadruped"}),
     "spot_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "spryped_description": Description(Format.URDF, tags={"biped"}),
