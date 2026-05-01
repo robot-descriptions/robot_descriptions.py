@@ -11,7 +11,25 @@ import types
 import unittest
 from unittest.mock import patch
 
-from robot_descriptions._xacro import get_urdf_path
+from robot_descriptions._xacro import (
+    get_description_path,
+    get_mjcf_path,
+    get_srdf_path,
+    get_urdf_path,
+)
+
+
+class _FakeDoc:
+    class _Dom:
+        @staticmethod
+        def getElementsByTagName(_name: str):
+            return []
+
+    dom = _Dom()
+
+    def to_urdf_file(self, path: str) -> None:
+        with open(path, "w", encoding="utf-8") as out_file:
+            out_file.write("<robot name='generated'/>")
 
 
 class TestXacro(unittest.TestCase):
@@ -32,6 +50,39 @@ class TestXacro(unittest.TestCase):
         )
         self.assertEqual(get_urdf_path(module), "/tmp/test.urdf")
 
+    def test_srdf_passthrough(self):
+        module = types.SimpleNamespace(
+            __name__="robot_descriptions.test_description",
+            SRDF_PATH="/tmp/test.srdf",
+        )
+        self.assertEqual(get_srdf_path(module), "/tmp/test.srdf")
+
+    def test_mjcf_passthrough(self):
+        module = types.SimpleNamespace(
+            __name__="robot_descriptions.test_description",
+            MJCF_PATH="/tmp/test.xml",
+        )
+        self.assertEqual(get_mjcf_path(module), "/tmp/test.xml")
+
+    def test_description_path_uses_requested_format(self):
+        module = types.SimpleNamespace(
+            __name__="robot_descriptions.test_description",
+            URDF_PATH="/tmp/test.urdf",
+            MJCF_PATH="/tmp/test.xml",
+            SRDF_PATH="/tmp/test.srdf",
+        )
+        self.assertEqual(
+            get_description_path(module, "mjcf"),
+            "/tmp/test.xml",
+        )
+
+    def test_description_path_rejects_unknown_format(self):
+        module = types.SimpleNamespace(
+            __name__="robot_descriptions.test_description",
+        )
+        with self.assertRaises(ValueError):
+            get_description_path(module, "unknown")
+
     def test_rejects_xacro_args_for_plain_urdf(self):
         module = types.SimpleNamespace(
             __name__="robot_descriptions.test_description",
@@ -39,6 +90,14 @@ class TestXacro(unittest.TestCase):
         )
         with self.assertRaises(ValueError):
             get_urdf_path(module, xacro_args={})
+
+    def test_rejects_xacro_args_for_plain_srdf(self):
+        module = types.SimpleNamespace(
+            __name__="robot_descriptions.test_description",
+            SRDF_PATH="/tmp/test.srdf",
+        )
+        with self.assertRaises(ValueError):
+            get_srdf_path(module, xacro_args={})
 
     def test_requires_xacrodoc(self):
         module = types.SimpleNamespace(
@@ -62,25 +121,13 @@ class TestXacro(unittest.TestCase):
 
         calls = {"from_file": 0}
 
-        class FakeDoc:
-            class _Dom:
-                @staticmethod
-                def getElementsByTagName(_name: str):
-                    return []
-
-            dom = _Dom()
-
-            def to_urdf_file(self, path: str) -> None:
-                with open(path, "w", encoding="utf-8") as urdf_file:
-                    urdf_file.write("<robot name='generated'/>")
-
         class FakeXacroDoc:
             @staticmethod
             def from_file(path: str, subargs):
                 calls["from_file"] += 1
                 self.assertEqual(path, xacro_path)
                 self.assertEqual(subargs, {"prefix": "test_"})
-                return FakeDoc()
+                return _FakeDoc()
 
         fake_xacrodoc = types.SimpleNamespace(
             __version__="0.0.0-test",
@@ -115,24 +162,12 @@ class TestXacro(unittest.TestCase):
 
         calls = {"subargs": []}
 
-        class FakeDoc:
-            class _Dom:
-                @staticmethod
-                def getElementsByTagName(_name: str):
-                    return []
-
-            dom = _Dom()
-
-            def to_urdf_file(self, path: str) -> None:
-                with open(path, "w", encoding="utf-8") as urdf_file:
-                    urdf_file.write("<robot name='generated'/>")
-
         class FakeXacroDoc:
             @staticmethod
             def from_file(path: str, subargs):
                 self.assertEqual(path, xacro_path)
                 calls["subargs"].append(subargs)
-                return FakeDoc()
+                return _FakeDoc()
 
         fake_xacrodoc = types.SimpleNamespace(
             __version__="0.0.0-test",
