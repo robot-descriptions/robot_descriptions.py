@@ -16,6 +16,7 @@ class Format(IntEnum):
 
     URDF = 0
     MJCF = 1
+    SRDF = 2
 
 
 @dataclass(frozen=True)
@@ -45,6 +46,11 @@ class Description:
     def has_urdf(self) -> bool:
         """Check if description provides URDF."""
         return Format.URDF in self.formats
+
+    @property
+    def has_srdf(self) -> bool:
+        """Check if description provides SRDF."""
+        return Format.SRDF in self.formats
 
 
 DESCRIPTIONS: Dict[str, Description] = {
@@ -454,7 +460,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="LICENSE",
     ),
     "fer_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="FER",
         maker="Franka Robotics",
@@ -481,7 +487,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="LICENSE",
     ),
     "fr3_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="FR3",
         maker="Franka Robotics",
@@ -499,7 +505,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="franka_fr3/LICENSE",
     ),
     "fr3_v2_1_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="FR3 v2.1",
         maker="Franka Robotics",
@@ -508,7 +514,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="LICENSE",
     ),
     "fr3_v2_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="FR3 v2",
         maker="Franka Robotics",

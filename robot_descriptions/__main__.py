@@ -11,7 +11,7 @@ from importlib import import_module  # type: ignore
 from typing import List
 
 from robot_descriptions._descriptions import DESCRIPTIONS
-from robot_descriptions._xacro import get_urdf_path
+from robot_descriptions._xacro import get_srdf_path, get_urdf_path
 
 
 def positive_float(value) -> float:
@@ -57,6 +57,12 @@ def get_argument_parser() -> argparse.ArgumentParser:
     parser_pull.add_argument(
         "name",
         help="name of the robot description",
+    )
+    parser_pull.add_argument(
+        "--format",
+        choices=["urdf", "mjcf", "srdf"],
+        dest="description_format",
+        help="description format to pull",
     )
 
     # show_in_meshcat --------------------------------------------------------
@@ -131,28 +137,44 @@ def list_descriptions():
     """List descriptions to the standard output."""
     for name in sorted(list(DESCRIPTIONS)):
         desc = DESCRIPTIONS[name]
-        formats = ("URDF" if desc.has_urdf else "") + (
-            "MJCF" if desc.has_mjcf else ""
-        )
-        print(f"- {name} [{formats}]")
+        formats = []
+        if desc.has_urdf:
+            formats.append("URDF")
+        if desc.has_mjcf:
+            formats.append("MJCF")
+        if desc.has_srdf:
+            formats.append("SRDF")
+        print(f"- {name} [{', '.join(formats)}]")
 
 
-def pull(name: str) -> None:
+def pull(name: str, description_format: str | None = None) -> None:
     """Pull a robot description from the web and save it in cache.
 
     Args:
         name: Name of the robot description.
+        description_format: Optional format to pull.
     """
     try:
         module = import_module(f"robot_descriptions.{name}")
     except ModuleNotFoundError:
         module = import_module(f"robot_descriptions.{name}_description")
-    if hasattr(module, "URDF_PATH"):
-        print(module.URDF_PATH)
-    elif hasattr(module, "XACRO_PATH"):
+
+    if description_format == "urdf":
+        print(get_urdf_path(module))
+    elif description_format == "mjcf":
+        if not hasattr(module, "MJCF_PATH"):
+            raise ValueError(f"{name} has no MJCF_PATH")
+        print(module.MJCF_PATH)
+    elif description_format == "srdf":
+        print(get_srdf_path(module))
+    elif hasattr(module, "URDF_PATH") or hasattr(module, "XACRO_PATH"):
         print(get_urdf_path(module))
     elif hasattr(module, "MJCF_PATH"):
         print(module.MJCF_PATH)
+    elif hasattr(module, "SRDF_PATH") or hasattr(module, "SRDF_XACRO_PATH"):
+        print(get_srdf_path(module))
+    else:
+        raise ValueError(f"{name} has no supported description path")
 
 
 def show_in_meshcat(name: str) -> None:
@@ -315,7 +337,7 @@ def main(argv=None):
     if args.subcmd == "list":
         list_descriptions()
     elif args.subcmd == "pull":
-        pull(args.name)
+        pull(args.name, args.description_format)
     elif args.subcmd == "show_in_meshcat":
         show_in_meshcat(args.name)
     elif args.subcmd == "show_in_mujoco":
