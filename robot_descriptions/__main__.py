@@ -10,7 +10,7 @@ import argparse
 from importlib import import_module  # type: ignore
 from typing import List
 
-from robot_descriptions._descriptions import DESCRIPTIONS, DESCRIPTION_FORMATS
+from robot_descriptions._descriptions import DESCRIPTION_FORMATS, DESCRIPTIONS
 from robot_descriptions._xacro import (
     get_description_path,
     get_urdf_path,

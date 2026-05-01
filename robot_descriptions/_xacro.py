@@ -149,12 +149,8 @@ def _get_description_path(
     xacro_args_attr: str | None,
     xacro_args: dict[str, str] | None,
 ) -> str:
-    if (
-        xacro_args is not None
-        and (
-            xacro_path_attr is None
-            or not hasattr(module, xacro_path_attr)
-        )
+    if xacro_args is not None and (
+        xacro_path_attr is None or not hasattr(module, xacro_path_attr)
     ):
         raise ValueError(
             f"{module.__name__} is not a Xacro description, "
@@ -199,9 +195,9 @@ def has_description_path(module: Any, description_format: str) -> bool:
     """Check whether a module can resolve a description format."""
     if description_format not in _DESCRIPTION_FORMAT_ATTRS:
         return False
-    output_path_attr, xacro_path_attr, _ = (
-        _DESCRIPTION_FORMAT_ATTRS[description_format]
-    )
+    output_path_attr, xacro_path_attr, _ = _DESCRIPTION_FORMAT_ATTRS[
+        description_format
+    ]
     return hasattr(module, output_path_attr) or (
         xacro_path_attr is not None and hasattr(module, xacro_path_attr)
     )
