@@ -10,8 +10,12 @@ import argparse
 from importlib import import_module  # type: ignore
 from typing import List
 
-from robot_descriptions._descriptions import DESCRIPTIONS
-from robot_descriptions._xacro import get_srdf_path, get_urdf_path
+from robot_descriptions._descriptions import DESCRIPTIONS, DESCRIPTION_FORMATS
+from robot_descriptions._xacro import (
+    get_description_path,
+    get_urdf_path,
+    has_description_path,
+)
 
 
 def positive_float(value) -> float:
@@ -60,7 +64,7 @@ def get_argument_parser() -> argparse.ArgumentParser:
     )
     parser_pull.add_argument(
         "--format",
-        choices=["urdf", "mjcf", "srdf"],
+        choices=DESCRIPTION_FORMATS,
         dest="description_format",
         help="description format to pull",
     )
@@ -159,22 +163,16 @@ def pull(name: str, description_format: str | None = None) -> None:
     except ModuleNotFoundError:
         module = import_module(f"robot_descriptions.{name}_description")
 
-    if description_format == "urdf":
-        print(get_urdf_path(module))
-    elif description_format == "mjcf":
-        if not hasattr(module, "MJCF_PATH"):
-            raise ValueError(f"{name} has no MJCF_PATH")
-        print(module.MJCF_PATH)
-    elif description_format == "srdf":
-        print(get_srdf_path(module))
-    elif hasattr(module, "URDF_PATH") or hasattr(module, "XACRO_PATH"):
-        print(get_urdf_path(module))
-    elif hasattr(module, "MJCF_PATH"):
-        print(module.MJCF_PATH)
-    elif hasattr(module, "SRDF_PATH") or hasattr(module, "SRDF_XACRO_PATH"):
-        print(get_srdf_path(module))
-    else:
-        raise ValueError(f"{name} has no supported description path")
+    if description_format is not None:
+        print(get_description_path(module, description_format))
+        return
+
+    for available_format in DESCRIPTION_FORMATS:
+        if has_description_path(module, available_format):
+            print(get_description_path(module, available_format))
+            return
+
+    raise ValueError(f"{name} has no supported description path")
 
 
 def show_in_meshcat(name: str) -> None:

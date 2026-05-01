@@ -19,6 +19,11 @@ class Format(IntEnum):
     SRDF = 2
 
 
+DESCRIPTION_FORMATS = tuple(
+    description_format.name.lower() for description_format in Format
+)
+
+
 @dataclass(frozen=True)
 class Description:
     """Metadata for a robot description."""

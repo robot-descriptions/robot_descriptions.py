@@ -14,6 +14,14 @@ from contextlib import contextmanager
 from importlib import import_module
 from typing import Any
 
+from ._descriptions import DESCRIPTION_FORMATS
+
+_DESCRIPTION_FORMAT_ATTRS = {
+    "urdf": ("URDF_PATH", "XACRO_PATH", "XACRO_ARGS"),
+    "mjcf": ("MJCF_PATH", None, None),
+    "srdf": ("SRDF_PATH", "SRDF_XACRO_PATH", "SRDF_XACRO_ARGS"),
+}
+
 
 def _xacro_cache_dir() -> str:
     cache_root = os.path.expanduser(
@@ -137,11 +145,17 @@ def _get_description_path(
     *,
     output_format: str,
     output_path_attr: str,
-    xacro_path_attr: str,
-    xacro_args_attr: str,
+    xacro_path_attr: str | None,
+    xacro_args_attr: str | None,
     xacro_args: dict[str, str] | None,
 ) -> str:
-    if xacro_args is not None and not hasattr(module, xacro_path_attr):
+    if (
+        xacro_args is not None
+        and (
+            xacro_path_attr is None
+            or not hasattr(module, xacro_path_attr)
+        )
+    ):
         raise ValueError(
             f"{module.__name__} is not a Xacro description, "
             "so xacro_args cannot be provided"
@@ -150,10 +164,9 @@ def _get_description_path(
     if hasattr(module, output_path_attr):
         return getattr(module, output_path_attr)
 
-    if not hasattr(module, xacro_path_attr):
+    if xacro_path_attr is None or not hasattr(module, xacro_path_attr):
         raise ValueError(
-            f"{module.__name__} has no {output_path_attr} or "
-            f"{xacro_path_attr}"
+            f"{module.__name__} has no supported {output_format.upper()} path"
         )
 
     try:
@@ -164,7 +177,7 @@ def _get_description_path(
             "Install it with `pip install xacrodoc`."
         ) from exc
 
-    module_xacro_args = getattr(module, xacro_args_attr, {})
+    module_xacro_args = getattr(module, xacro_args_attr or "", {})
     if not isinstance(module_xacro_args, dict):
         raise TypeError(f"{xacro_args_attr} should be a dictionary")
     effective_xacro_args = (
@@ -182,6 +195,51 @@ def _get_description_path(
     )
 
 
+def has_description_path(module: Any, description_format: str) -> bool:
+    """Check whether a module can resolve a description format."""
+    if description_format not in _DESCRIPTION_FORMAT_ATTRS:
+        return False
+    output_path_attr, xacro_path_attr, _ = (
+        _DESCRIPTION_FORMAT_ATTRS[description_format]
+    )
+    return hasattr(module, output_path_attr) or (
+        xacro_path_attr is not None and hasattr(module, xacro_path_attr)
+    )
+
+
+def get_description_path(
+    module: Any,
+    description_format: str,
+    xacro_args: dict[str, str] | None = None,
+) -> str:
+    """Get a description path from a description module.
+
+    Args:
+        module: Description module.
+        description_format: Format to resolve.
+        xacro_args: Optional xacro arguments.
+    """
+    if description_format not in DESCRIPTION_FORMATS:
+        raise ValueError(
+            f"Unsupported description format: {description_format}"
+        )
+    if description_format not in _DESCRIPTION_FORMAT_ATTRS:
+        raise ValueError(
+            f"Unsupported description format: {description_format}"
+        )
+    output_path_attr, xacro_path_attr, xacro_args_attr = (
+        _DESCRIPTION_FORMAT_ATTRS[description_format]
+    )
+    return _get_description_path(
+        module,
+        output_format=description_format,
+        output_path_attr=output_path_attr,
+        xacro_path_attr=xacro_path_attr,
+        xacro_args_attr=xacro_args_attr,
+        xacro_args=xacro_args,
+    )
+
+
 def get_urdf_path(
     module: Any,
     xacro_args: dict[str, str] | None = None,
@@ -193,14 +251,17 @@ def get_urdf_path(
     the Xacro source is rendered to a cached URDF file and the
     path to the generated file is returned.
     """
-    return _get_description_path(
-        module,
-        output_format="urdf",
-        output_path_attr="URDF_PATH",
-        xacro_path_attr="XACRO_PATH",
-        xacro_args_attr="XACRO_ARGS",
-        xacro_args=xacro_args,
-    )
+    return get_description_path(module, "urdf", xacro_args=xacro_args)
+
+
+def get_mjcf_path(
+    module: Any,
+) -> str:
+    """Get the MJCF path from a description module.
+
+    If the module exposes `MJCF_PATH`, this path is returned directly.
+    """
+    return get_description_path(module, "mjcf")
 
 
 def get_srdf_path(
@@ -214,11 +275,4 @@ def get_srdf_path(
     the Xacro source is rendered to a cached SRDF file and the
     path to the generated file is returned.
     """
-    return _get_description_path(
-        module,
-        output_format="srdf",
-        output_path_attr="SRDF_PATH",
-        xacro_path_attr="SRDF_XACRO_PATH",
-        xacro_args_attr="SRDF_XACRO_ARGS",
-        xacro_args=xacro_args,
-    )
+    return get_description_path(module, "srdf", xacro_args=xacro_args)
