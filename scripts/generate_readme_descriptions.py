@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from robot_descriptions._descriptions import DESCRIPTIONS, Description
+from robot_descriptions._descriptions import DESCRIPTIONS, Description, Format
 from robot_descriptions._repositories import REPOSITORIES
 
 PRIMARY_CATEGORY_TAGS = [
@@ -54,7 +54,11 @@ def _format_cell(description: Description, column: str, name: str) -> str:
     if column == "DOF":
         return "" if description.dof is None else str(description.dof)
     if column == "Format":
-        return "MJCF" if description.has_mjcf else "URDF"
+        return ", ".join(
+            description_format.name
+            for description_format in Format
+            if description_format in description.formats
+        )
     if column == "License":
         if not description.license_spdx:
             return ""

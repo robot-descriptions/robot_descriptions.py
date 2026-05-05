@@ -20,3 +20,5 @@ PACKAGE_PATH: str = _path.join(
 )
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "finger_edu.urdf")
+
+SRDF_PATH: str = _path.join(PACKAGE_PATH, "srdf", "finger_edu.srdf")
