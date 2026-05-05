@@ -63,6 +63,14 @@ def _generate_urdf_path(
             f"in {module.__name__}"
         )
 
+    # The Xacro may use `$(find pkg)` to reference
+    # files from other ROS packages. Register explicit package paths so
+    # xacrodoc can resolve those references without a ROS workspace.
+    package_paths = getattr(module, "XACRO_PACKAGE_PATHS", {})
+    if package_paths:
+        packages_module = import_module("xacrodoc.packages")
+        packages_module.update_package_cache(package_paths)
+
     description_name = module.__name__.split(".")[-1]
     output_dir = os.path.join(_xacro_cache_dir(), description_name)
     os.makedirs(output_dir, exist_ok=True)
