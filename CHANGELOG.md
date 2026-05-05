@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Description: Flexiv Rizon4 (Xacro)
 - Description: Franka descriptions added XACRO_ARGS_NO_HAND property (thanks to @nickswalker)
 - Description: Robotiq 2F-85 v4 (URDF) (thanks to @nickswalker)
+- Description: SO-ARM101 Parallel Gripper (URDF)
 - Loaders: Allow overriding `XACRO_ARGS` via `load_robot_description` (thanks to @nickswalker)
 
 ### Changed
