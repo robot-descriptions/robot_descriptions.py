@@ -1379,6 +1379,15 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="CC-BY-NC-ND-3.0",
         license_file="robots/tiago_description/README.md",
     ),
+    "tiago_official_description": Description(
+        formats={Format.URDF},
+        tags={"mobile_manipulator"},
+        robot="TIAGo (official)",
+        maker="PAL Robotics",
+        repository="tiago_robot",
+        license_spdx="Apache-2.0",
+        license_file="LICENSE",
+    ),
     "toddlerbot_2xc_mj_description": Description(
         formats={Format.MJCF},
         tags={"humanoid"},
