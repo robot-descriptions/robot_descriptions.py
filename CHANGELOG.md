@@ -8,23 +8,20 @@ All notable changes to this project will be documented in this file.
 
 - Description: Flexiv Rizon4 (MJCF)
 - Description: Flexiv Rizon4 (Xacro)
-- Description: Robotiq 2F-85 v4 (URDF) (thanks to @nickswalker)
 - Description: Franka descriptions added XACRO_ARGS_NO_HAND property (thanks to @nickswalker)
+- Description: Robotiq 2F-85 v4 (URDF) (thanks to @nickswalker)
 - Loaders: Allow overriding `XACRO_ARGS` via `load_robot_description` (thanks to @nickswalker)
 
 ### Changed
 
-- README: Alphabetize description tables (thanks to @nickswalker)
-- Description: Alphabetize description tables (thanks to @nickswalker)
-- README: Generate description tables from registry metadata and keep them alphabetized (thanks to @nickswalker)
 - Description metadata: Add robot name, maker, DOF, repository, and license fields to the registry (thanks to @nickswalker)
+- Description: Alphabetize description tables (thanks to @nickswalker)
+- README: Alphabetize description tables (thanks to @nickswalker)
+- README: Generate description tables from registry metadata and keep them alphabetized (thanks to @nickswalker)
 
 ### Fixed
 
 - README: Correct and backfill license metadata (thanks to @nickswalker)
-
-### Fixed
-
 - security: Bump gitpython to 3.1.49
 
 ## [1.23.0] - 2026-03-09
