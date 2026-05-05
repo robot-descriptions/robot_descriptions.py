@@ -8,6 +8,6 @@
 
 from ._descriptions import DESCRIPTIONS
 
-__version__ = "1.23.0"
+__version__ = "2.0.0"
 
 __all__ = ["DESCRIPTIONS"]

@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-05-05
+
 ### Added
 
 - Description: Flexiv Rizon4 (MJCF)
@@ -15,8 +17,12 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- **Breaking:** `Description` constructor no longer takes a single `Format` as its first argument; pass `formats` as a set instead
+- **Breaking:** `Description` instances are now frozen
+- **Breaking:** `Description` now requires a `robot` field
 - Description metadata: Add robot name, maker, DOF, repository, and license fields to the registry (thanks to @nickswalker)
 - Description: Alphabetize description tables (thanks to @nickswalker)
+- Migrate `Description(Format.URDF, tags={...})` to `Description(formats={Format.URDF}, ...)`
 - README: Alphabetize description tables (thanks to @nickswalker)
 - README: Generate description tables from registry metadata and keep them alphabetized (thanks to @nickswalker)
 
@@ -618,7 +624,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.23.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.23.0...v2.0.0
 [1.23.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.22.0...v1.23.0
 [1.22.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.21.0...v1.22.0
 [1.21.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.20.0...v1.21.0
