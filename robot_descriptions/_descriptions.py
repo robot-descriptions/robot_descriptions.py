@@ -1268,6 +1268,15 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="Apache-2.0",
         license_file="LICENSE",
     ),
+    "so_arm101_parallel_gripper_description": Description(
+        formats={Format.URDF},
+        tags={"end_effector"},
+        robot="SO-ARM101 Parallel Gripper",
+        maker="Robonine",
+        repository="SO-ARM100-101-Parallel-Gripper",
+        license_spdx="GPL-3.0",
+        license_file="LICENSE",
+    ),
     "solo_description": Description(
         formats={Format.URDF},
         tags={"quadruped"},
