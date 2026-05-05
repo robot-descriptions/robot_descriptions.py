@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Removed
+
+- Description: remove deprecated UR3, UR5, and UR10 modules in favor of their official variants
+
 ## [2.0.0] - 2026-05-05
 
 ### Added
