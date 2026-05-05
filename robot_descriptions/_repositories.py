@@ -165,6 +165,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="ba9e7c8cdbd63e20fc6526dbbea1b91c102fb820",
         cache_path="halodi-robot-models",
     ),
+    "hsrb_common": Repository(
+        url="https://github.com/hsr-project/hsrb_common.git",
+        commit="5ad6946064b6031a2dd90be926e4d9b77f84d785",
+        cache_path="hsrb_common",
+    ),
     "i2rt": Repository(
         url="https://github.com/robot-descriptions/i2rt.git",
         commit="7809b5b17227162d265f922e2e10598c0e214322",
