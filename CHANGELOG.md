@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: TIAGo official (URDF) (thanks to @nickswalker)
+
+### Changed
+
+- Description: TIAGo (URDF) now warns that it is deprecated and will switch to the official model in a later release
+- Xacro: Support descriptions that resolve resources from multiple ROS packages (thanks to @nickswalker)
+
 ## [2.0.0] - 2026-05-05
 
 ### Added

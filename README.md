@@ -317,22 +317,23 @@ Descriptions may appear in more than one category when tags overlap.
 
 ### Mobile manipulators
 
-| Name                       | Robot       | Maker             | Format | License                                                                                                                                              |
-|----------------------------|-------------|-------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bambot_description`       | BamBot      | Tim Qian          | URDF   | [Apache-2.0](https://github.com/timqian/bambot/blob/04d902653794f9f72eeabb09ec90a9af8e397c5b/LICENSE)                                                |
-| `eve_r3_description`       | Eve R3      | Halodi            | URDF   | [Apache-2.0](https://github.com/Halodi/halodi-robot-models/blob/ba9e7c8cdbd63e20fc6526dbbea1b91c102fb820/eve_r3_description/package.xml)             |
-| `fetch_description`        | Fetch       | Fetch Robotics    | URDF   | [MIT](https://github.com/openai/roboschool/blob/1.0.49/LICENSE.md)                                                                                   |
-| `ginger_description`       | Ginger      | Paaila Technology | URDF   | [BSD](https://github.com/Rayckey/GingerURDF/blob/6a1307cd0ee2b77c82f8839cdce3a2e2eed2bd8f/package.xml)                                               |
-| `pepper_description`       | Pepper      | SoftBank Robotics | URDF   | [BSD-2-Clause](https://github.com/jrl-umi3218/pepper_description/blob/cd9715bb5df7ad57445d953db7b1924255305944/LICENSE)                              |
-| `pr2_description`          | PR2         | Willow Garage     | URDF   | [BSD](https://github.com/ankurhanda/robot-assets/blob/12f1a3c89c9975194551afaed0dfae1e09fdb27c/README.md)                                            |
-| `rby1_description`         | RBY1        | Rainbow Robotics  | URDF   | [MIT](https://github.com/uynitsuj/rby1_description/blob/e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72/LICENSE)                                            |
-| `reachy_description`       | Reachy      | Pollen Robotics   | URDF   | [Apache-2.0](https://github.com/aubrune/reachy_description/blob/release-1.0.0/LICENSE)                                                               |
-| `stretch_3_mj_description` | Stretch 3   | Hello Robot       | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/hello_robot_stretch_3/LICENSE)               |
-| `stretch_description`      | Stretch RE1 | Hello Robot       | URDF   | [CC-BY-NC-SA-4.0 ✖️](https://github.com/robot-descriptions/stretch_description/blob/4b838429fe4c5d9f2937efe698444bd68968f376/LICENSE)                |
-| `stretch_mj_description`   | Stretch 2   | Hello Robot       | MJCF   | [Clear BSD](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/hello_robot_stretch/LICENSE)                  |
-| `stretch_se3_description`  | Stretch SE3 | Hello Robot       | URDF   | [Clear BSD](https://github.com/hello-robot/stretch_urdf/blob/1b7cbbce808c25465017ce0a53a4173fcf97b11c/LICENSE.md)                                    |
-| `tiago++_mj_description`   | TIAGo++     | PAL Robotics      | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/pal_tiago_dual/LICENSE)                      |
-| `tiago_description`        | TIAGo       | PAL Robotics      | URDF   | [CC-BY-NC-ND-3.0 ✖️](https://github.com/Gepetto/example-robot-data/blob/d0d9098d752014aec3725b07766962acf06c5418/robots/tiago_description/README.md) |
+| Name                         | Robot            | Maker             | Format | License                                                                                                                                              |
+|------------------------------|------------------|-------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `bambot_description`         | BamBot           | Tim Qian          | URDF   | [Apache-2.0](https://github.com/timqian/bambot/blob/04d902653794f9f72eeabb09ec90a9af8e397c5b/LICENSE)                                                |
+| `eve_r3_description`         | Eve R3           | Halodi            | URDF   | [Apache-2.0](https://github.com/Halodi/halodi-robot-models/blob/ba9e7c8cdbd63e20fc6526dbbea1b91c102fb820/eve_r3_description/package.xml)             |
+| `fetch_description`          | Fetch            | Fetch Robotics    | URDF   | [MIT](https://github.com/openai/roboschool/blob/1.0.49/LICENSE.md)                                                                                   |
+| `ginger_description`         | Ginger           | Paaila Technology | URDF   | [BSD](https://github.com/Rayckey/GingerURDF/blob/6a1307cd0ee2b77c82f8839cdce3a2e2eed2bd8f/package.xml)                                               |
+| `pepper_description`         | Pepper           | SoftBank Robotics | URDF   | [BSD-2-Clause](https://github.com/jrl-umi3218/pepper_description/blob/cd9715bb5df7ad57445d953db7b1924255305944/LICENSE)                              |
+| `pr2_description`            | PR2              | Willow Garage     | URDF   | [BSD](https://github.com/ankurhanda/robot-assets/blob/12f1a3c89c9975194551afaed0dfae1e09fdb27c/README.md)                                            |
+| `rby1_description`           | RBY1             | Rainbow Robotics  | URDF   | [MIT](https://github.com/uynitsuj/rby1_description/blob/e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72/LICENSE)                                            |
+| `reachy_description`         | Reachy           | Pollen Robotics   | URDF   | [Apache-2.0](https://github.com/aubrune/reachy_description/blob/release-1.0.0/LICENSE)                                                               |
+| `stretch_3_mj_description`   | Stretch 3        | Hello Robot       | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/hello_robot_stretch_3/LICENSE)               |
+| `stretch_description`        | Stretch RE1      | Hello Robot       | URDF   | [CC-BY-NC-SA-4.0 ✖️](https://github.com/robot-descriptions/stretch_description/blob/4b838429fe4c5d9f2937efe698444bd68968f376/LICENSE)                |
+| `stretch_mj_description`     | Stretch 2        | Hello Robot       | MJCF   | [Clear BSD](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/hello_robot_stretch/LICENSE)                  |
+| `stretch_se3_description`    | Stretch SE3      | Hello Robot       | URDF   | [Clear BSD](https://github.com/hello-robot/stretch_urdf/blob/1b7cbbce808c25465017ce0a53a4173fcf97b11c/LICENSE.md)                                    |
+| `tiago++_mj_description`     | TIAGo++          | PAL Robotics      | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/pal_tiago_dual/LICENSE)                      |
+| `tiago_description`          | TIAGo            | PAL Robotics      | URDF   | [CC-BY-NC-ND-3.0 ✖️](https://github.com/Gepetto/example-robot-data/blob/d0d9098d752014aec3725b07766962acf06c5418/robots/tiago_description/README.md) |
+| `tiago_official_description` | TIAGo (official) | PAL Robotics      | URDF   | [Apache-2.0](https://github.com/pal-robotics/tiago_robot/blob/f1c33c92bdde7c1dd79f0c3e739e98a233dbd30b/LICENSE)                                      |
 
 ### Quadrupeds
 
