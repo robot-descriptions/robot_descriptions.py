@@ -15,6 +15,7 @@ import tqdm
 from git import (
     GitCommandError,
     InvalidGitRepositoryError,
+    NoSuchPathError,
     RemoteProgress,
     Repo,
 )
@@ -229,6 +230,17 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
         commit=repository.commit if commit is None else commit,
     )
     return str(clone.working_dir)
+
+
+def get_head_sha(path: str) -> Optional[str]:
+    """Return the HEAD commit SHA of the git repo at ``path``, or ``None``.
+
+    Returns ``None`` when ``path`` is not inside a git repo or has no commits.
+    """
+    try:
+        return Repo(path, search_parent_directories=True).head.commit.hexsha
+    except (InvalidGitRepositoryError, NoSuchPathError, ValueError):
+        return None
 
 
 def clear_cache() -> None:

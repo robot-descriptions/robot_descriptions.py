@@ -14,6 +14,8 @@ from contextlib import contextmanager
 from importlib import import_module
 from typing import Any
 
+from ._cache import get_head_sha
+
 
 def _xacro_cache_dir() -> str:
     cache_root = os.path.expanduser(
@@ -30,15 +32,31 @@ def _cache_key(
     xacrodoc_module: Any,
     *,
     xacro_args: dict[str, str],
+    package_commits: dict[str, str],
 ) -> str:
     payload = {
         "description_name": module.__name__.split(".")[-1],
         "xacro_path": module.XACRO_PATH,
         "xacro_args": xacro_args,
         "xacrodoc_version": getattr(xacrodoc_module, "__version__", ""),
+        "package_commits": package_commits,
     }
     payload_json = json.dumps(payload, sort_keys=True)
     return hashlib.sha256(payload_json.encode("utf-8")).hexdigest()[:16]
+
+
+def _resolve_package_commits(
+    module: Any,
+    package_paths: dict[str, str],
+) -> dict[str, str]:
+    description_name = module.__name__.split(".")[-1]
+    paths_to_hash = {description_name: module.PACKAGE_PATH, **package_paths}
+    commits = {}
+    for name, path in paths_to_hash.items():
+        sha = get_head_sha(path)
+        if sha is not None:
+            commits[name] = sha
+    return commits
 
 
 @contextmanager
@@ -74,10 +92,12 @@ def _generate_urdf_path(
     description_name = module.__name__.split(".")[-1]
     output_dir = os.path.join(_xacro_cache_dir(), description_name)
     os.makedirs(output_dir, exist_ok=True)
+    package_commits = _resolve_package_commits(module, package_paths)
     key = _cache_key(
         module,
         xacrodoc_module,
         xacro_args=xacro_args,
+        package_commits=package_commits,
     )
     output_path = os.path.join(output_dir, f"{description_name}-{key}.urdf")
     if os.path.exists(output_path):
