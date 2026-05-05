@@ -19,6 +19,4 @@ PACKAGE_PATH: str = _path.join(
     REPOSITORY_PATH, "simulation", "so_arm_101_description"
 )
 
-XACRO_PATH: str = _path.join(
-    PACKAGE_PATH, "urdf", "so_101.urdf.xacro"
-)
+XACRO_PATH: str = _path.join(PACKAGE_PATH, "urdf", "so_101.urdf.xacro")
