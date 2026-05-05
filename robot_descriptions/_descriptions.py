@@ -988,7 +988,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="LICENSE",
     ),
     "panda_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="Panda",
         maker="Franka Robotics",
