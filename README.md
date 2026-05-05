@@ -388,7 +388,7 @@ If you use this project in your works, please cite as follows:
 ```bibtex
 @software{robot_descriptions_py,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Zamora, Jonathan and Castro, Sebastian and Tao, Haixuan Xavier and Yu, Justin and Jallet, Wilson and Zhang, Yutong and Walker, Nick},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Zamora, Jonathan and Castro, Sebastian and Tao, Haixuan Xavier and Yu, Justin and Jallet, Wilson and Zhang, Yutong and Walker, Nick and Bragin, Nikita},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
   version = {1.23.0},
