@@ -17,6 +17,10 @@ All notable changes to this project will be documented in this file.
 - README: Alphabetize description tables (thanks to @nickswalker)
 - Description: Alphabetize description tables (thanks to @nickswalker)
 
+### Fixed
+
+- security: Bump gitpython to 3.1.49
+
 ## [1.23.0] - 2026-03-09
 
 ### Added
