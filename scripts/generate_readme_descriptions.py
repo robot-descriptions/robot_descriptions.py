@@ -28,6 +28,7 @@ FREE_LICENSES = {
     "BSD",
     "BSD-2-Clause",
     "BSD-3-Clause",
+    "BSD-3-Clause-Clear",
     "Clear BSD",
     "GPL-3.0",
     "LGPL-3.0",
