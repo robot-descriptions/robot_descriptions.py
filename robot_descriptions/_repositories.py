@@ -147,7 +147,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "franka_description": Repository(
         url="https://github.com/frankarobotics/franka_description.git",
-        commit="1aa4fd30e6e274cbf5e986a5af8004df32bad284",
+        commit="72baf5bf4e88eaec27f0eb61be1b20a001abf2ab",
         cache_path="franka_description",
     ),
     "GingerURDF": Repository(
