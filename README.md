@@ -137,78 +137,78 @@ Descriptions may appear in more than one category when tags overlap.
 
 ### Arms
 
-| Name                          | Robot                 | Maker                    | Format     | License      |
-|-------------------------------|-----------------------|--------------------------|------------|--------------|
-| `arx_l5_mj_description`       | L5                    | ARX                      | MJCF       | BSD-3-Clause |
-| `edo_description`             | e.DO                  | Comau                    | URDF       | [BSD-3-Clause](https://github.com/ianathompson/eDO_description/blob/17b3f92f834746106d6a4befaab8eeab3ac248e6/LICENSE) |
-| `fanuc_m710ic_description`    | M-710iC               | Fanuc                    | URDF       | BSD-3-Clause |
-| `fer_description`             | FER                   | Franka Robotics          | URDF       | Apache-2.0   |
-| `fr3_description`             | FR3                   | Franka Robotics          | URDF       | Apache-2.0   |
-| `fr3_mj_description`          | FR3                   | Franka Robotics          | MJCF       | Apache-2.0   |
-| `fr3_v2_description`          | FR3 v2                | Franka Robotics          | URDF       | Apache-2.0   |
-| `fr3_v2_mj_description`       | FR3 v2                | Franka Robotics          | MJCF       | Apache-2.0   |
-| `fr3v2_1_description`         | FR3 v2.1              | Franka Robotics          | URDF       | Apache-2.0   |
-| `gen2_description`            | Gen2                  | Kinova                   | URDF       | BSD-3-Clause |
-| `gen3_description`            | Gen3                  | Kinova                   | URDF       | BSD-3-Clause |
-| `gen3_lite_description`       | Gen3 Lite             | Kinova                   | URDF       | BSD-3-Clause |
-| `gen3_mj_description`         | Gen3                  | Kinova                   | MJCF       | BSD-2-Clause |
-| `iiwa14_description`          | iiwa 14               | KUKA                     | URDF       | BSD-3-Clause |
-| `iiwa14_mj_description`       | iiwa 14               | KUKA                     | MJCF       | BSD-3-Clause |
-| `iiwa7_description`           | iiwa 7                | KUKA                     | URDF       | MIT          |
-| `j2n4s300_description`        | Jaco2 j2n4s300        | Kinova                   | URDF       | BSD-3-Clause |
-| `j2n6s200_description`        | Jaco2 j2n6s200        | Kinova                   | URDF       | BSD-3-Clause |
-| `j2n6s300_description`        | Jaco2 j2n6s300        | Kinova                   | URDF       | BSD-3-Clause |
-| `j2n7s300_description`        | Jaco2 j2n7s300        | Kinova                   | URDF       | BSD-3-Clause |
-| `j2s6s200_description`        | Jaco2 j2s6s200        | Kinova                   | URDF       | BSD-3-Clause |
-| `j2s6s300_description`        | Jaco2 j2s6s300        | Kinova                   | URDF       | BSD-3-Clause |
-| `j2s7s300_description`        | Jaco2 j2s7s300        | Kinova                   | URDF       | BSD-3-Clause |
-| `low_cost_robot_arm_mj_description` | Low-cost robot arm | Alexander Koch | MJCF | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/ef4d04fbb7451d30b39c2aff7e49df737bb46815/low_cost_robot_arm/LICENSE) |
-| `omx_f_description`           | OMX-F                 | ROBOTIS                  | URDF       | Apache-2.0   |
-| `omx_l_description`           | OMX-L                 | ROBOTIS                  | URDF       | Apache-2.0   |
-| `omy_3m_description`          | OMY-3M                | ROBOTIS                  | URDF       | Apache-2.0   |
-| `omy_f3m_description`         | OMY-F3M               | ROBOTIS                  | URDF       | Apache-2.0   |
-| `omy_l100_description`        | OMY-L100              | ROBOTIS                  | URDF       | Apache-2.0   |
-| `open_manipulator_x_description` | OpenMANIPULATOR-X  | ROBOTIS                  | URDF       | Apache-2.0   |
-| `panda_description`           | Panda                 | Franka Robotics          | URDF       | Apache-2.0   |
-| `panda_mj_description`        | Panda                 | Franka Robotics          | MJCF       | Apache-2.0   |
-| `piper_description`           | PiPER                 | AgileX                   | URDF       | MIT          |
-| `piper_mj_description`        | PiPER                 | AgileX                   | MJCF       | MIT          |
-| `poppy_ergo_jr_description`   | Poppy Ergo Jr         | Poppy Project            | URDF       | GPL-3.0      |
-| `rizon4_description`          | Rizon4                | Flexiv Robotics          | URDF       | Apache-2.0   |
-| `rizon4_mj_description`       | Rizon4                | Flexiv Robotics          | MJCF       | Apache-2.0   |
-| `sawyer_mj_description`       | Sawyer                | Rethink Robotics         | MJCF       | Apache-2.0   |
-| `so_arm100_description`       | SO-ARM100             | The Robot Studio         | URDF       | Apache-2.0   |
-| `so_arm100_mj_description`    | SO-ARM100             | The Robot Studio         | MJCF       | Apache-2.0   |
-| `so_arm101_description`       | SO-ARM101             | The Robot Studio         | URDF       | Apache-2.0   |
-| `so_arm101_mj_description`    | SO-ARM101             | The Robot Studio         | MJCF       | Apache-2.0   |
-| `ur10_description`            | UR10                  | Universal Robots         | URDF       | Apache-2.0   |
-| `ur10_official_description`   | UR10 (official)       | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur10e_description`           | UR10e                 | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur10e_mj_description`        | UR10e                 | Universal Robots         | MJCF       | BSD-3-Clause |
-| `ur12e_description`           | UR12e                 | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur15_description`            | UR15                  | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur16e_description`           | UR16e                 | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur18_description`            | UR18                  | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur20_description`            | UR20                  | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur30_description`            | UR30                  | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur3_description`             | UR3                   | Universal Robots         | URDF       | Apache-2.0   |
-| `ur3_official_description`    | UR3 (official)        | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur3e_description`            | UR3e                  | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur5_description`             | UR5                   | Universal Robots         | URDF       | Apache-2.0   |
-| `ur5_official_description`    | UR5 (official)        | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur5e_description`            | UR5e                  | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur5e_mj_description`         | UR5e                  | Universal Robots         | MJCF       | BSD-3-Clause |
-| `ur7e_description`            | UR7e                  | Universal Robots         | URDF       | BSD-3-Clause |
-| `ur8long_description`         | UR8 Long              | Universal Robots         | URDF       | BSD-3-Clause |
-| `viper_mj_description`        | ViperX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
-| `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
-| `xarm6_description`           | xArm6                 | UFACTORY                 | URDF       | BSD-3-Clause |
-| `xarm7_description`           | xArm7                 | UFACTORY                 | URDF       | BSD-3-Clause |
-| `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
-| `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
-| `yam_mj_description`          | YAM                   | I2RT Robotics            | MJCF       | MIT          |
-| `z1_description`              | Z1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
-| `z1_mj_description`           | Z1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
+| Name                                | Robot              | Maker            | Format | License                                                                                                                                                                                                |
+|-------------------------------------|--------------------|------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `arx_l5_mj_description`             | L5                 | ARX              | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/arx_l5/LICENSE)                                                                              |
+| `edo_description`                   | e.DO               | Comau            | URDF   | [BSD-3-Clause](https://github.com/ianathompson/eDO_description/blob/17b3f92f834746106d6a4befaab8eeab3ac248e6/LICENSE)                                                                                  |
+| `fanuc_m710ic_description`          | M-710iC            | Fanuc            | URDF   | [BSD-3-Clause](https://github.com/robot-descriptions/fanuc_m710ic_description/blob/d12af44559cd7e46f7afd513237f159f82f8402e/LICENSE)                                                                   |
+| `fer_description`                   | FER                | Franka Robotics  | URDF   | [Apache-2.0](https://github.com/frankarobotics/franka_description/blob/1aa4fd30e6e274cbf5e986a5af8004df32bad284/LICENSE)                                                                               |
+| `fr3_description`                   | FR3                | Franka Robotics  | URDF   | [Apache-2.0](https://github.com/frankarobotics/franka_description/blob/1aa4fd30e6e274cbf5e986a5af8004df32bad284/LICENSE)                                                                               |
+| `fr3_mj_description`                | FR3                | Franka Robotics  | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/franka_fr3/LICENSE)                                                                            |
+| `fr3_v2_1_description`              | FR3 v2.1           | Franka Robotics  | URDF   | [Apache-2.0](https://github.com/frankarobotics/franka_description/blob/1aa4fd30e6e274cbf5e986a5af8004df32bad284/LICENSE)                                                                               |
+| `fr3_v2_description`                | FR3 v2             | Franka Robotics  | URDF   | [Apache-2.0](https://github.com/frankarobotics/franka_description/blob/1aa4fd30e6e274cbf5e986a5af8004df32bad284/LICENSE)                                                                               |
+| `fr3_v2_mj_description`             | FR3 v2             | Franka Robotics  | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/franka_fr3_v2/LICENSE)                                                                         |
+| `gen2_description`                  | Gen2               | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Gepetto/example-robot-data/blob/d0d9098d752014aec3725b07766962acf06c5418/LICENSE)                                                                                    |
+| `gen3_description`                  | Gen3               | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/ros2_kortex/blob/8bf203423911446de28a2248ec87380b7eea2f90/LICENSE)                                                                                    |
+| `gen3_lite_description`             | Gen3 Lite          | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/ros2_kortex/blob/8bf203423911446de28a2248ec87380b7eea2f90/LICENSE)                                                                                    |
+| `gen3_mj_description`               | Gen3               | Kinova           | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/kinova_gen3/LICENSE)                                                                         |
+| `iiwa14_description`                | iiwa 14            | KUKA             | URDF   | [BSD-3-Clause](https://github.com/RobotLocomotion/drake/blob/7abea0556ede980a5077fe1a8cfbae59b57c7c27/manipulation/models/iiwa_description/LICENSE.TXT)                                                |
+| `iiwa14_mj_description`             | iiwa 14            | KUKA             | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/kuka_iiwa_14/LICENSE)                                                                        |
+| `iiwa7_description`                 | iiwa 7             | KUKA             | URDF   | [MIT](https://github.com/facebookresearch/differentiable-robot-model/blob/d7bd1b3b8ef1d6dabe9b68474a622185c510e112/LICENSE)                                                                            |
+| `j2n4s300_description`              | Jaco2 j2n4s300     | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/kinova-ros/blob/924781d3dfe241b2b94b3c72a804b80d3658cf02/LICENSE)                                                                                     |
+| `j2n6s200_description`              | Jaco2 j2n6s200     | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/kinova-ros/blob/924781d3dfe241b2b94b3c72a804b80d3658cf02/LICENSE)                                                                                     |
+| `j2n6s300_description`              | Jaco2 j2n6s300     | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/kinova-ros/blob/924781d3dfe241b2b94b3c72a804b80d3658cf02/LICENSE)                                                                                     |
+| `j2n7s300_description`              | Jaco2 j2n7s300     | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/kinova-ros/blob/924781d3dfe241b2b94b3c72a804b80d3658cf02/LICENSE)                                                                                     |
+| `j2s6s200_description`              | Jaco2 j2s6s200     | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/kinova-ros/blob/924781d3dfe241b2b94b3c72a804b80d3658cf02/LICENSE)                                                                                     |
+| `j2s6s300_description`              | Jaco2 j2s6s300     | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/kinova-ros/blob/924781d3dfe241b2b94b3c72a804b80d3658cf02/LICENSE)                                                                                     |
+| `j2s7s300_description`              | Jaco2 j2s7s300     | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/kinova-ros/blob/924781d3dfe241b2b94b3c72a804b80d3658cf02/LICENSE)                                                                                     |
+| `low_cost_robot_arm_mj_description` | Low-cost robot arm | Alexander Koch   | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/low_cost_robot_arm/LICENSE)                                                                    |
+| `omx_f_description`                 | OMX-F              | ROBOTIS          | URDF   | [Apache-2.0](https://github.com/ROBOTIS-GIT/open_manipulator/blob/bc555a9c41ebd7493dc945ddabc43fc649681b62/LICENSE)                                                                                    |
+| `omx_l_description`                 | OMX-L              | ROBOTIS          | URDF   | [Apache-2.0](https://github.com/ROBOTIS-GIT/open_manipulator/blob/bc555a9c41ebd7493dc945ddabc43fc649681b62/LICENSE)                                                                                    |
+| `omy_3m_description`                | OMY-3M             | ROBOTIS          | URDF   | [Apache-2.0](https://github.com/ROBOTIS-GIT/open_manipulator/blob/bc555a9c41ebd7493dc945ddabc43fc649681b62/LICENSE)                                                                                    |
+| `omy_f3m_description`               | OMY-F3M            | ROBOTIS          | URDF   | [Apache-2.0](https://github.com/ROBOTIS-GIT/open_manipulator/blob/bc555a9c41ebd7493dc945ddabc43fc649681b62/LICENSE)                                                                                    |
+| `omy_l100_description`              | OMY-L100           | ROBOTIS          | URDF   | [Apache-2.0](https://github.com/ROBOTIS-GIT/open_manipulator/blob/bc555a9c41ebd7493dc945ddabc43fc649681b62/LICENSE)                                                                                    |
+| `open_manipulator_x_description`    | OpenMANIPULATOR-X  | ROBOTIS          | URDF   | [Apache-2.0](https://github.com/ROBOTIS-GIT/open_manipulator/blob/bc555a9c41ebd7493dc945ddabc43fc649681b62/LICENSE)                                                                                    |
+| `panda_description`                 | Panda              | Franka Robotics  | URDF   | [Apache-2.0](https://github.com/Gepetto/example-robot-data/blob/d0d9098d752014aec3725b07766962acf06c5418/robots/panda_description/LICENSE)                                                             |
+| `panda_mj_description`              | Panda              | Franka Robotics  | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/franka_emika_panda/LICENSE)                                                                    |
+| `piper_description`                 | PiPER              | AgileX           | URDF   | [MIT](https://github.com/agilexrobotics/Piper_ros/blob/f2ec6a67e1f404bcb478529e89861ccdf43fa298/LICENSE)                                                                                               |
+| `piper_mj_description`              | PiPER              | AgileX           | MJCF   | [MIT](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/agilex_piper/LICENSE)                                                                                 |
+| `poppy_ergo_jr_description`         | Poppy Ergo Jr      | Poppy Project    | URDF   | [GPL-3.0](https://github.com/poppy-project/poppy_ergo_jr_description/blob/7eb32bd385afa11dea5e6a6b6a4a86a0243aaa2b/package.xml)                                                                        |
+| `rizon4_description`                | Rizon4             | Flexiv Robotics  | URDF   | [Apache-2.0](https://github.com/flexivrobotics/flexiv_description/blob/edb01274caf7eaf2ba722bbfdf2f23d717fee38e/LICENSE)                                                                               |
+| `rizon4_mj_description`             | Rizon4             | Flexiv Robotics  | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/LICENSE)                                                                                       |
+| `sawyer_mj_description`             | Sawyer             | Rethink Robotics | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/rethink_robotics_sawyer/LICENSE)                                                               |
+| `so_arm100_description`             | SO-ARM100          | The Robot Studio | URDF   | [Apache-2.0](https://github.com/TheRobotStudio/SO-ARM100/blob/63eede5a636e548eb8f2854e558bd343c21db9f7/LICENSE)                                                                                        |
+| `so_arm100_mj_description`          | SO-ARM100          | The Robot Studio | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/trs_so_arm100/LICENSE)                                                                         |
+| `so_arm101_description`             | SO-ARM101          | The Robot Studio | URDF   | [Apache-2.0](https://github.com/TheRobotStudio/SO-ARM100/blob/63eede5a636e548eb8f2854e558bd343c21db9f7/LICENSE)                                                                                        |
+| `so_arm101_mj_description`          | SO-ARM101          | The Robot Studio | MJCF   | [Apache-2.0](https://github.com/TheRobotStudio/SO-ARM100/blob/63eede5a636e548eb8f2854e558bd343c21db9f7/LICENSE)                                                                                        |
+| `ur10_description`                  | UR10               | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/Gepetto/example-robot-data/blob/d0d9098d752014aec3725b07766962acf06c5418/LICENSE)                                                                                    |
+| `ur10_official_description`         | UR10 (official)    | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/LICENSE)                                                             |
+| `ur10e_description`                 | UR10e              | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/LICENSE)                                                             |
+| `ur10e_mj_description`              | UR10e              | Universal Robots | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/universal_robots_ur10e/LICENSE)                                                              |
+| `ur12e_description`                 | UR12e              | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/LICENSE)                                                             |
+| `ur15_description`                  | UR15               | Universal Robots | URDF   | [Universal Robots Terms for Graphical Documentation ✖️](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/meshes/ur15/LICENSE.txt)    |
+| `ur16e_description`                 | UR16e              | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/LICENSE)                                                             |
+| `ur18_description`                  | UR18               | Universal Robots | URDF   | [Universal Robots Terms for Graphical Documentation ✖️](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/meshes/ur18/LICENSE.txt)    |
+| `ur20_description`                  | UR20               | Universal Robots | URDF   | [Universal Robots Terms for Graphical Documentation ✖️](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/meshes/ur20/LICENSE.txt)    |
+| `ur30_description`                  | UR30               | Universal Robots | URDF   | [Universal Robots Terms for Graphical Documentation ✖️](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/meshes/ur30/LICENSE.txt)    |
+| `ur3_description`                   | UR3                | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/Gepetto/example-robot-data/blob/d0d9098d752014aec3725b07766962acf06c5418/LICENSE)                                                                                    |
+| `ur3_official_description`          | UR3 (official)     | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/LICENSE)                                                             |
+| `ur3e_description`                  | UR3e               | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/LICENSE)                                                             |
+| `ur5_description`                   | UR5                | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/Gepetto/example-robot-data/blob/d0d9098d752014aec3725b07766962acf06c5418/LICENSE)                                                                                    |
+| `ur5_official_description`          | UR5 (official)     | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/LICENSE)                                                             |
+| `ur5e_description`                  | UR5e               | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/LICENSE)                                                             |
+| `ur5e_mj_description`               | UR5e               | Universal Robots | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/universal_robots_ur5e/LICENSE)                                                               |
+| `ur7e_description`                  | UR7e               | Universal Robots | URDF   | [BSD-3-Clause](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/LICENSE)                                                             |
+| `ur8long_description`               | UR8 Long           | Universal Robots | URDF   | [Universal Robots Terms for Graphical Documentation ✖️](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/blob/22f055da2fa7e2158254426107d1f257fd56aebb/meshes/ur8long/LICENSE.txt) |
+| `viper_mj_description`              | ViperX             | Trossen Robotics | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/trossen_vx300s/LICENSE)                                                                      |
+| `widow_mj_description`              | WidowX             | Trossen Robotics | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/trossen_wx250s/LICENSE)                                                                      |
+| `xarm6_description`                 | xArm6              | UFACTORY         | URDF   | [BSD-3-Clause](https://github.com/xArm-Developer/xarm_ros2/blob/5bb832f72ca665f1236a9d8ed1c3a82f308db489/LICENSE)                                                                                      |
+| `xarm7_description`                 | xArm7              | UFACTORY         | URDF   | [BSD-3-Clause](https://github.com/xArm-Developer/xarm_ros2/blob/5bb832f72ca665f1236a9d8ed1c3a82f308db489/LICENSE)                                                                                      |
+| `xarm7_mj_description`              | xArm7              | UFACTORY         | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/ufactory_xarm7/LICENSE)                                                                      |
+| `yam_description`                   | YAM                | I2RT Robotics    | URDF   | [MIT](https://github.com/robot-descriptions/i2rt/blob/7809b5b17227162d265f922e2e10598c0e214322/LICENSE)                                                                                                |
+| `yam_mj_description`                | YAM                | I2RT Robotics    | MJCF   | [MIT](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/i2rt_yam/LICENSE)                                                                                     |
+| `z1_description`                    | Z1                 | UNITREE Robotics | URDF   | [BSD-3-Clause](https://github.com/unitreerobotics/unitree_ros/blob/267182b8521c8d6a631bab1fe63836873237a525/LICENSE)                                                                                   |
+| `z1_mj_description`                 | Z1                 | UNITREE Robotics | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/unitree_z1/LICENSE)                                                                          |
 
 ### Bipeds
 
