@@ -124,6 +124,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="17b3f92f834746106d6a4befaab8eeab3ac248e6",
         cache_path="edo_sim",  # match package name
     ),
+    "epfl-lasa": Repository(
+        url="https://github.com/epfl-lasa/iiwa_ros.git",
+        commit="9d2b99f1c62e1dd57c9c351958206a7ee5066785",
+        cache_path="iiwa_description",  # match package name
+    ),
     "ergocub-software": Repository(
         url="https://github.com/icub-tech-iit/ergocub-software.git",
         commit="v0.7.7",
