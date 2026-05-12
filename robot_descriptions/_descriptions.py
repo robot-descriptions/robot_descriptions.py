@@ -151,7 +151,9 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Wonik Robotics",
         repository="drake",
         license_spdx="BSD",
-        license_file="manipulation/models/allegro_hand_description/LICENSE.TXT",
+        license_file=(
+            "manipulation/models/allegro_hand_description/LICENSE.TXT"
+        ),
     ),
     "allegro_hand_mj_description": Description(
         formats={Format.MJCF},
@@ -1089,6 +1091,15 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "rby1_description": Description(
         formats={Format.URDF},
+        tags={"mobile_manipulator"},
+        robot="RBY1",
+        maker="Rainbow Robotics",
+        repository="rby1_description",
+        license_spdx="MIT",
+        license_file="LICENSE",
+    ),
+    "rby1_mj_description": Description(
+        formats={Format.MJCF},
         tags={"mobile_manipulator"},
         robot="RBY1",
         maker="Rainbow Robotics",

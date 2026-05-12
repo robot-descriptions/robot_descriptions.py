@@ -8,14 +8,15 @@ All notable changes to this project will be documented in this file.
 
 - Add support for SRDF descriptions (thanks to @nickswalker)
 - Description: Add SRDFs for Franka Emika robots: Panda, FER, FR3, FR3v2, FR3v2_1 (thanks to @nickswalker)
-- Description: TIAGo official (URDF) (thanks to @nickswalker)
-- Description: `franka_description` repository updated for SRDF Xacro updates
 - Description: Add Toyota HSR-B and HSR-C models
+- Description: RBY1 Mobile Manipulatior (MJCF)
+- Description: TIAGo official (URDF) (thanks to @nickswalker)
 
 ### Changed
 
 - Description: Patch Eve R3 URDF negative effort and velocity limit sentinels for loader compatibility (thanks to @nickswalker)
 - Description: TIAGo (URDF) now warns that it is deprecated and will switch to the official model in a later release
+- Description: Updated `franka_description` repository for SRDF Xacro updates
 - Xacro: Support descriptions that resolve resources from multiple ROS packages (thanks to @nickswalker)
 
 ### Removed
