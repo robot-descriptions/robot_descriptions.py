@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Fixed
+
+- security: Bump gitpython to 3.1.50
+
 ## [2.0.0] - 2026-05-05
 
 ### Added
