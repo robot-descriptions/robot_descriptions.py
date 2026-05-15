@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Stretch 4 (URDF) (thanks to @nickswalker)
+
 ### Changed
 
 - Description: Patch Eve R3 URDF negative effort and velocity limit sentinels for loader compatibility (thanks to @nickswalker)
