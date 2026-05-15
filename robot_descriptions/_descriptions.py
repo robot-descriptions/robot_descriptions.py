@@ -1322,7 +1322,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="Stretch 4",
         maker="Hello Robot",
         repository="stretch4_urdf",
-        license_spdx="Clear BSD",
+        license_spdx="BSD-3-Clause-Clear",
         license_file="LICENSE.md",
     ),
     "stretch_description": Description(
