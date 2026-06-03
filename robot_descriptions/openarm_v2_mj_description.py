@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2025 Enactic, Inc.
+# Copyright 2026 Enactic, Inc.
 
-"""OpenArm 1.0 MJCF description."""
+"""OpenArm 2.0 MJCF description."""
 
 from os import getenv as _getenv
 from os import path as _path
@@ -16,12 +16,12 @@ REPOSITORY_PATH: str = _clone_to_cache(
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "v1")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "v2")
 
 MJCF_PATH: str = _path.join(PACKAGE_PATH, "openarm_bimanual.xml")
 
 # Description-specific paths
 
-MJCF_PATH_SINGLE: str = _path.join(PACKAGE_PATH, "openarm.xml")
+MJCF_PATH_CELL: str = _path.join(PACKAGE_PATH, "cell.xml")
 
-MESH_PATH: str = _path.join(PACKAGE_PATH, "meshes")
+MJCF_PATH_PEDESTAL: str = _path.join(PACKAGE_PATH, "pedestal.xml")

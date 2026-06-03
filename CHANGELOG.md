@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: OpenArm v2 (MJCF) (thanks to @kou)
+
 ### Fixed
 
 - security: Bump gitpython to 3.1.50
