@@ -7,7 +7,6 @@
 """Eve R3 description."""
 
 import hashlib as _hashlib
-import os as _os
 from os import getenv as _getenv
 from os import path as _path
 from xml.etree import ElementTree as _ElementTree
@@ -28,13 +27,9 @@ def _patch_urdf_limits(urdf_path: str) -> str:
     """Patch invalid negative limits in the upstream URDF."""
     with open(urdf_path, "rb") as urdf_file:
         urdf_hash = _hashlib.sha256(urdf_file.read()).hexdigest()[:16]
-    output_dir = _path.join(
-        _path.dirname(REPOSITORY_PATH),
-        ".robot_descriptions_patches",
-        "eve_r3_description",
+    output_path = _path.join(
+        _path.dirname(urdf_path), f"eve_r3-{urdf_hash}-v2.urdf"
     )
-    _os.makedirs(output_dir, exist_ok=True)
-    output_path = _path.join(output_dir, f"eve_r3-{urdf_hash}-v2.urdf")
     if _path.exists(output_path):
         return output_path
 
