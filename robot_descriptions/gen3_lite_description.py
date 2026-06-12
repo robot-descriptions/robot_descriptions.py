@@ -18,4 +18,6 @@ REPOSITORY_PATH: str = _clone_to_cache(
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "kortex_description")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "gen3_lite.urdf")
+XACRO_PATH: str = _path.join(
+    PACKAGE_PATH, "robots", "gen3_lite_gen3_lite_2f.xacro"
+)

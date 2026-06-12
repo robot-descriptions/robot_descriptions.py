@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Description: Patch Eve R3 URDF negative effort and velocity limit sentinels for loader compatibility (thanks to @nickswalker)
+- Description: Kinova Gen3 lite changed to use xacro (thanks to @nickswalker)
 
 ### Fixed
 

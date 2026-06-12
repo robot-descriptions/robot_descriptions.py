@@ -310,7 +310,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "ros2_kortex": Repository(
         url="https://github.com/Kinovarobotics/ros2_kortex.git",
-        commit="8bf203423911446de28a2248ec87380b7eea2f90",
+        commit="ca433b079d672100cb1d42ee27049da548c08e2c",
         cache_path="ros2_kortex",
     ),
     "rtmros_nextage": Repository(
