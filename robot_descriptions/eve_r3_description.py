@@ -6,8 +6,11 @@
 
 """Eve R3 description."""
 
+import hashlib as _hashlib
+import os as _os
 from os import getenv as _getenv
 from os import path as _path
+from xml.etree import ElementTree as _ElementTree
 
 from ._cache import clone_to_cache as _clone_to_cache
 
@@ -18,4 +21,34 @@ REPOSITORY_PATH: str = _clone_to_cache(
 
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "eve_r3_description")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "eve_r3.urdf")
+_ORIGINAL_URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "eve_r3.urdf")
+
+
+def _patch_urdf_limits(urdf_path: str) -> str:
+    """Patch invalid negative effort limits in the upstream URDF."""
+    with open(urdf_path, "rb") as urdf_file:
+        urdf_hash = _hashlib.sha256(urdf_file.read()).hexdigest()[:16]
+    output_dir = _path.join(
+        _path.dirname(REPOSITORY_PATH),
+        ".robot_descriptions_patches",
+        "eve_r3_description",
+    )
+    _os.makedirs(output_dir, exist_ok=True)
+    output_path = _path.join(output_dir, f"eve_r3-{urdf_hash}.urdf")
+    if _path.exists(output_path):
+        return output_path
+
+    tree = _ElementTree.parse(urdf_path)
+    root = tree.getroot()
+    for limit in root.findall(".//joint/limit"):
+        effort = limit.get("effort")
+        if effort is not None and float(effort) < 0.0:
+            # Upstream uses -1 as an unknown/unlimited sentinel, but URDF
+            # effort limits are nonnegative and Pinocchio rejects negatives.
+            limit.set("effort", "1e30")
+
+    tree.write(output_path, encoding="utf-8", xml_declaration=True)
+    return output_path
+
+
+URDF_PATH: str = _patch_urdf_limits(_ORIGINAL_URDF_PATH)
