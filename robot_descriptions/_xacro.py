@@ -275,10 +275,15 @@ def get_urdf_path(
 ) -> str:
     """Get the URDF path from a description module.
 
-    If the module exposes `URDF_PATH`, this path is returned
-    directly. If the module instead exposes `XACRO_PATH`,
-    the Xacro source is rendered to a cached URDF file and the
-    path to the generated file is returned.
+    Args:
+        module: Description module.
+        xacro_args: Optional xacro arguments.
+
+    Returns:
+        If the module exposes `URDF_PATH`, this path is returned
+        directly. If the module instead exposes `XACRO_PATH`, the
+        Xacro source is rendered to a cached URDF file and the path
+        to the generated file is returned.
     """
     return get_description_path(module, "urdf", xacro_args=xacro_args)
 
@@ -303,9 +308,14 @@ def get_srdf_path(
 ) -> str:
     """Get the SRDF path from a description module.
 
-    If the module exposes `SRDF_PATH`, this path is returned
-    directly. If the module instead exposes `SRDF_XACRO_PATH`,
-    the Xacro source is rendered to a cached SRDF file and the
-    path to the generated file is returned.
+    Args:
+        module: Description module.
+        xacro_args: Optional xacro arguments.
+
+    Returns:
+        If the module exposes `SRDF_PATH`, this path is returned
+        directly. If the module instead exposes `SRDF_XACRO_PATH`, the
+        Xacro source is rendered to a cached SRDF file and the path to
+        the generated file is returned.
     """
     return get_description_path(module, "srdf", xacro_args=xacro_args)
