@@ -6,11 +6,13 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Description: Patch Eve R3 URDF negative effort and velocity limit sentinels for loader compatibility
+- Description: Patch Eve R3 URDF negative effort and velocity limit sentinels for loader compatibility (thanks to @nickswalker)
 
 ### Fixed
 
 - security: Bump gitpython to 3.1.50
+- security: Bump idna from 3.14 to 3.15
+- security: Bump tornado from 6.5.5 to 6.5.7
 
 ## [2.0.0] - 2026-05-05
 
