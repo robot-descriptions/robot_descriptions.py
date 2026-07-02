@@ -214,6 +214,9 @@ def get_description_path(
         module: Description module.
         description_format: Format to resolve.
         xacro_args: Optional xacro arguments.
+
+    Returns:
+        Path to the description file in the requested format.
     """
     if description_format not in DESCRIPTION_FORMATS:
         raise ValueError(
