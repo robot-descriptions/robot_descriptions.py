@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Description: Patch Eve R3 URDF negative effort and velocity limit sentinels for loader compatibility
+
 ### Fixed
 
 - security: Bump gitpython to 3.1.50
