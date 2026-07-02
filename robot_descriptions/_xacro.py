@@ -258,7 +258,11 @@ def get_mjcf_path(
 ) -> str:
     """Get the MJCF path from a description module.
 
-    If the module exposes `MJCF_PATH`, this path is returned directly.
+    Args:
+        module: Description module.
+
+    Returns:
+        If the module exposes `MJCF_PATH`, this path is returned directly.
     """
     return get_description_path(module, "mjcf")
 
