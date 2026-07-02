@@ -11,7 +11,9 @@ import types
 import unittest
 from unittest.mock import patch
 
+from robot_descriptions._descriptions import DESCRIPTION_FORMATS
 from robot_descriptions._xacro import (
+    _DESCRIPTION_FORMAT_ATTRS,
     get_description_path,
     get_mjcf_path,
     get_srdf_path,
@@ -34,6 +36,12 @@ class _FakeDoc:
 
 class TestXacro(unittest.TestCase):
     """Unit tests for xacro path resolution."""
+
+    def test_description_format_attrs_match_description_formats(self):
+        self.assertEqual(
+            set(_DESCRIPTION_FORMAT_ATTRS.keys()),
+            set(DESCRIPTION_FORMATS),
+        )
 
     def setUp(self):
         self.cache_dir = tempfile.mkdtemp(prefix="robot_descriptions_cache_")

@@ -11,15 +11,43 @@ import json
 import os
 import tempfile
 from contextlib import contextmanager
+from dataclasses import dataclass
 from importlib import import_module
 from typing import Any
 
-from ._descriptions import DESCRIPTION_FORMATS
+
+@dataclass(frozen=True)
+class DescriptionFormatAttrs:
+    """Names of the module attributes exposing a description in a format.
+
+    A description module advertises each format it supports through a
+    small set of module-level attributes. This dataclass records which
+    attribute names to look up for a given format.
+
+    Attributes:
+        path_attr: Name of the module attribute holding a ready-to-use
+            path to the description file, e.g. ``"URDF_PATH"`` for URDF.
+        xacro_path_attr: Optional name of the module attribute holding
+            the path to a Xacro template rendered to produce the
+            description, e.g. ``"XACRO_PATH"``, or ``None`` for
+            non-templated formats like MJCF.
+        xacro_args_attr: Optional name of the module attribute holding
+            the default Xacro arguments (a dictionary) passed when
+            rendering a Xacro source, or ``None`` for non-templated
+            formats.
+    """
+
+    path_attr: str
+    xacro_path_attr: str | None = None
+    xacro_args_attr: str | None = None
+
 
 _DESCRIPTION_FORMAT_ATTRS = {
-    "urdf": ("URDF_PATH", "XACRO_PATH", "XACRO_ARGS"),
-    "mjcf": ("MJCF_PATH", None, None),
-    "srdf": ("SRDF_PATH", "SRDF_XACRO_PATH", "SRDF_XACRO_ARGS"),
+    "urdf": DescriptionFormatAttrs("URDF_PATH", "XACRO_PATH", "XACRO_ARGS"),
+    "mjcf": DescriptionFormatAttrs("MJCF_PATH"),
+    "srdf": DescriptionFormatAttrs(
+        "SRDF_PATH", "SRDF_XACRO_PATH", "SRDF_XACRO_ARGS"
+    ),
 }
 
 
@@ -192,14 +220,22 @@ def _get_description_path(
 
 
 def has_description_path(module: Any, description_format: str) -> bool:
-    """Check whether a module can resolve a description format."""
+    """Check whether a module can resolve a description format.
+
+    Args:
+        module: Description module.
+        description_format: Requested description format, e.g. "urdf"
+            or "srdf".
+
+    Returns:
+        True if the description module provides the requested format.
+    """
     if description_format not in _DESCRIPTION_FORMAT_ATTRS:
         return False
-    output_path_attr, xacro_path_attr, _ = _DESCRIPTION_FORMAT_ATTRS[
-        description_format
-    ]
-    return hasattr(module, output_path_attr) or (
-        xacro_path_attr is not None and hasattr(module, xacro_path_attr)
+    attrs = _DESCRIPTION_FORMAT_ATTRS[description_format]
+    return hasattr(module, attrs.path_attr) or (
+        attrs.xacro_path_attr is not None
+        and hasattr(module, attrs.xacro_path_attr)
     )
 
 
@@ -218,23 +254,17 @@ def get_description_path(
     Returns:
         Path to the description file in the requested format.
     """
-    if description_format not in DESCRIPTION_FORMATS:
-        raise ValueError(
-            f"Unsupported description format: {description_format}"
-        )
     if description_format not in _DESCRIPTION_FORMAT_ATTRS:
         raise ValueError(
             f"Unsupported description format: {description_format}"
         )
-    output_path_attr, xacro_path_attr, xacro_args_attr = (
-        _DESCRIPTION_FORMAT_ATTRS[description_format]
-    )
+    attrs = _DESCRIPTION_FORMAT_ATTRS[description_format]
     return _get_description_path(
         module,
         output_format=description_format,
-        output_path_attr=output_path_attr,
-        xacro_path_attr=xacro_path_attr,
-        xacro_args_attr=xacro_args_attr,
+        output_path_attr=attrs.path_attr,
+        xacro_path_attr=attrs.xacro_path_attr,
+        xacro_args_attr=attrs.xacro_args_attr,
         xacro_args=xacro_args,
     )
 
