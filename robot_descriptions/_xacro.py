@@ -109,25 +109,46 @@ def _pushd(path: str):
         os.chdir(cwd)
 
 
-def _to_package_uri(
-    filename: str,
-    *,
-    package_name: str,
-    repo_path: str,
-    package_path: str,
-    package_uri_root: str,
-) -> str:
-    """Convert a repo-local file URI to a package URI.
+_FILENAME_ATTR_RE = re.compile(r"(\bfilename\s*=\s*)(['\"])(.*?)\2")
+
+
+def _map_filename_attrs(urdf_string: str, transform) -> str:
+    """Rewrite each ``filename="..."`` attribute value via a transform.
 
     Args:
-        filename: Filename from a generated URDF.
-        package_name: Name to use in the rewritten package URI.
-        repo_path: Root path of the cloned description repository.
-        package_path: Package path exported by the description module.
-        package_uri_root: Root path to strip when forming the package URI.
+        urdf_string: Serialized URDF XML.
+        transform: Callable mapping a filename value to its replacement.
 
     Returns:
-        Original filename if no rewrite applies, otherwise a package URI.
+        URDF XML with each filename attribute rewritten.
+    """
+
+    def rewrite(match: re.Match[str]) -> str:
+        prefix, quote, filename = match.groups()
+        return f"{prefix}{quote}{transform(filename)}{quote}"
+
+    return _FILENAME_ATTR_RE.sub(rewrite, urdf_string)
+
+
+def _to_package_uri(
+    filename: str, *, package_name: str, package_path: str
+) -> str:
+    """Rewrite a ``file://`` URI pointing inside the package to a package URI.
+
+    A ``file://`` reference to a file under ``package_path`` becomes
+    ``package://<package_name>/<path relative to package_path>``. Anything
+    else -- a non-``file`` URI, a remote host, or a path outside the package
+    -- is returned unchanged.
+
+    Args:
+        filename: Filename attribute value from a generated URDF.
+        package_name: Package name to use in the URI, i.e. the basename of
+            ``package_path``.
+        package_path: Absolute path to the package root.
+
+    Returns:
+        The rewritten ``package://`` URI, or ``filename`` unchanged when no
+        rewrite applies.
     """
     if not filename.startswith("file://"):
         return filename
@@ -137,14 +158,6 @@ def _to_package_uri(
         return filename
 
     abs_path = os.path.normpath(unquote(parsed.path))
-    if abs_path == package_uri_root or abs_path.startswith(
-        package_uri_root + os.sep
-    ):
-        rel_path = os.path.relpath(abs_path, package_uri_root)
-        return f"package://{package_name}/{rel_path}"
-    if abs_path == repo_path or abs_path.startswith(repo_path + os.sep):
-        rel_path = os.path.relpath(abs_path, repo_path)
-        return f"package://{package_name}/{rel_path}"
     if abs_path == package_path or abs_path.startswith(package_path + os.sep):
         rel_path = os.path.relpath(abs_path, package_path)
         return f"package://{package_name}/{rel_path}"
@@ -152,38 +165,26 @@ def _to_package_uri(
 
 
 def _convert_filenames_to_package_uris(module: Any, urdf_string: str) -> str:
-    """Rewrite repo-local file URIs in a URDF string to package URIs.
+    """Rewrite package-local file URIs in a URDF string to package URIs.
 
     Args:
         module: Robot description module providing path metadata.
         urdf_string: Serialized URDF XML.
 
     Returns:
-        URDF XML with repo-local file URIs rewritten to package URIs.
+        URDF XML with package-local file URIs rewritten to package URIs.
     """
-    package_name = os.path.basename(os.path.normpath(module.REPOSITORY_PATH))
-    repo_path = os.path.normpath(module.REPOSITORY_PATH)
     package_path = os.path.normpath(module.PACKAGE_PATH)
-    # By default, asset paths are made relative to PACKAGE_PATH. Nested
-    # package layouts can override this with PACKAGE_URI_ROOT.
-    package_uri_root = os.path.normpath(
-        getattr(module, "PACKAGE_URI_ROOT", package_path)
-    )
+    package_name = os.path.basename(package_path)
 
-    def rewrite(match: re.Match[str]) -> str:
-        prefix = match.group(1)
-        quote = match.group(2)
-        filename = match.group(3)
-        new_filename = _to_package_uri(
+    return _map_filename_attrs(
+        urdf_string,
+        lambda filename: _to_package_uri(
             filename,
             package_name=package_name,
-            repo_path=repo_path,
             package_path=package_path,
-            package_uri_root=package_uri_root,
-        )
-        return f"{prefix}{quote}{new_filename}{quote}"
-
-    return re.sub(r"(\bfilename\s*=\s*)(['\"])(.*?)\2", rewrite, urdf_string)
+        ),
+    )
 
 
 def _generate_xacro_output_path(
@@ -247,14 +248,14 @@ def _generate_xacro_output_path(
     )
     tmp_file.close()
     try:
-        # First DOM rewrite: make all plain filenames
-        # into filename:// absolute paths.
+        # Serialize with protocol prefixes so local asset paths become
+        # absolute file:// URIs (package:// references are kept as-is).
         urdf_string = doc.to_urdf_string(
             use_protocols=True,
             pretty=True,
         )
-        # Second DOM rewrite: convert filename:///absolute/paths to
-        # be package:// paths from the base of the cache.
+        # Rewrite those file:// URIs to package:// URIs relative to the
+        # package, so the cached URDF is relocatable.
         urdf_string = _convert_filenames_to_package_uris(module, urdf_string)
         with open(tmp_file.name, "w", encoding="utf-8") as urdf_file:
             urdf_file.write(urdf_string)

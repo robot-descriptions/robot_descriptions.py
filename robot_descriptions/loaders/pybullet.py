@@ -6,11 +6,13 @@
 """Load a robot description in PyBullet."""
 
 import os
+import tempfile
 from importlib import import_module  # type: ignore
 from typing import Optional
 
 import pybullet
 
+from .._package_dirs import get_package_dirs, resolve_package_uris
 from .._xacro import get_urdf_path
 
 
@@ -51,5 +53,30 @@ def load_robot_description(
     urdf_path = get_urdf_path(module, xacro_args=xacro_args)
 
     pybullet.setAdditionalSearchPath(module.PACKAGE_PATH)
-    robot = pybullet.loadURDF(urdf_path, **kwargs)
+
+    # PyBullet resolves package:// URIs by walking up from the URDF file
+    # location rather than from a set of package directories. This fails for
+    # relocatable URDFs cached away from their assets, so we resolve those URIs
+    # to absolute paths first. The resolved copy is written next to the source
+    # URDF to keep any remaining relative paths valid.
+    with open(urdf_path, encoding="utf-8") as urdf_file:
+        urdf_string = urdf_file.read()
+    resolved_string = resolve_package_uris(
+        urdf_string, get_package_dirs(module)
+    )
+    if resolved_string == urdf_string:
+        return pybullet.loadURDF(urdf_path, **kwargs)
+
+    resolved_file = tempfile.NamedTemporaryFile(
+        prefix=f"{description_name}-",
+        suffix=".urdf",
+        dir=os.path.dirname(urdf_path),
+        delete=False,
+    )
+    try:
+        resolved_file.write(resolved_string.encode("utf-8"))
+        resolved_file.close()
+        robot = pybullet.loadURDF(resolved_file.name, **kwargs)
+    finally:
+        os.unlink(resolved_file.name)
     return robot
