@@ -235,7 +235,6 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
 def get_head_sha(path: str) -> Optional[str]:
     """Return the HEAD commit SHA of the git repo at ``path``, or ``None``.
 
-
     Args:
         path: Path to a git working directory.
 
