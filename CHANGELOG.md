@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Description: Add SRDFs for Franka Emika robots: Panda, FER, FR3, FR3v2, FR3v2_1 (thanks to @nickswalker)
 - Description: TIAGo official (URDF) (thanks to @nickswalker)
 - Description: `franka_description` repository updated for SRDF Xacro updates
+- Description: Add Toyota HSR-B and HSR-C models
 
 ### Changed
 
