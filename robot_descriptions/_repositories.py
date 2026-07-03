@@ -248,6 +248,16 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="cd30dd4c0a97832d1c063bf759514ed18fbe04a5",
         cache_path="openarm_mujoco",
     ),
+    "pal_hey5": Repository(
+        url="https://github.com/pal-robotics/pal_hey5.git",
+        commit="344de441fa3c378573dd7f6e04dc7ec4f8cb0cab",
+        cache_path="pal_hey5",
+    ),
+    "pal_urdf_utils": Repository(
+        url="https://github.com/pal-robotics/pal_urdf_utils.git",
+        commit="0c732ac5699f777754740bfec46cc618873766fe",
+        cache_path="pal_urdf_utils",
+    ),
     "pepper_description": Repository(
         url="https://github.com/jrl-umi3218/pepper_description.git",
         commit="cd9715bb5df7ad57445d953db7b1924255305944",
@@ -257,6 +267,11 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/agilexrobotics/Piper_ros.git",
         commit="f2ec6a67e1f404bcb478529e89861ccdf43fa298",
         cache_path="Piper_ros",
+    ),
+    "pmb2_robot": Repository(
+        url="https://github.com/pal-robotics/pmb2_robot.git",
+        commit="e2c85c8a4564a16511fec4aa27f7362740bae170",
+        cache_path="pmb2_robot",
     ),
     "poppy_ergo_jr_description": Repository(
         url="https://github.com/poppy-project/poppy_ergo_jr_description.git",
@@ -357,6 +372,11 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/stack-of-tasks/talos-data.git",
         commit="77169405d6a48a5d3f3f75eb014209f375ff23b6",  # v2.0.0
         cache_path="talos_data",  # match package name
+    ),
+    "tiago_robot": Repository(
+        url="https://github.com/pal-robotics/tiago_robot.git",
+        commit="f1c33c92bdde7c1dd79f0c3e739e98a233dbd30b",
+        cache_path="tiago_robot",
     ),
     "toddlerbot": Repository(
         url="https://github.com/hshi74/toddlerbot.git",
