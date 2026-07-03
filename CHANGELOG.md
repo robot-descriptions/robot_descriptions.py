@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Add support for SRDF descriptions (thanks to @nickswalker)
+- Description: add SRDFs for Franka Emika robots: Panda, FER, FR3, FR3v2, FR3v2_1 (thanks to @nickswalker)
+- Description: franka_description repository updated for SRDF Xacro updates
+
 ### Changed
 
 - Description: Patch Eve R3 URDF negative effort and velocity limit sentinels for loader compatibility (thanks to @nickswalker)
