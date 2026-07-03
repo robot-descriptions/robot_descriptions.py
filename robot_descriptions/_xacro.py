@@ -159,7 +159,7 @@ def _generate_xacro_output_path(
         )
     # We're resolving relative paths manually here, as xacrodoc
     # only handles package resolution. xacrodoc has a private
-    # helper which would atleast make this cleaner,
+    # helper which would at least make this cleaner,
     # _urdf_elements_with_filenames, but we'll wait for a
     # public interface.
 
