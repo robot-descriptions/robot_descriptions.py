@@ -19,4 +19,6 @@ PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "fr3v2")
 
 XACRO_PATH: str = _path.join(PACKAGE_PATH, "fr3v2.urdf.xacro")
 
+SRDF_XACRO_PATH: str = _path.join(PACKAGE_PATH, "fr3v2.srdf.xacro")
+
 XACRO_ARGS_NO_HAND = {"hand": "false"}
