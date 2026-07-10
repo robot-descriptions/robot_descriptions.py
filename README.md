@@ -52,9 +52,16 @@ Loading will automatically download the robot description if needed, and cache i
 
 You can use [uv](https://docs.astral.sh/uv/) to manipulate robot descriptions directly from the command line:
 
-```console
-uvx robot_descriptions pull iiwa14_description          # download the robot description to cache
-uvx robot_descriptions show_in_meshcat go2_description  # display the robot description
+```bash
+# Download a robot description to cache
+uvx robot_descriptions pull iiwa14_description
+
+# Display a robot description
+uvx --with mujoco-python-viewer robot_descriptions show_in_mujoco go2_mj_description
+uvx --with meshcat --with pin robot_descriptions show_in_meshcat go2_description
+uvx --with robomeshcat robot_descriptions show_in_meshcat go2_description
+uvx --with pybullet robot_descriptions show_in_pybullet go2_description
+uvx --with yourdfpy robot_descriptions show_in_yourdfpy go2_description
 ```
 
 Try `uvx robot_descriptions -h` to see the list of available commands. Alternatively, once the package is installed from PyPI or conda-forge, you can call the `robot_descriptions` alias directly from the command line, or replace `uvx` by `uv run`, or `python -m robot_descriptions` (old school).
