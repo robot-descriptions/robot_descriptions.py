@@ -16,6 +16,12 @@ class Format(IntEnum):
 
     URDF = 0
     MJCF = 1
+    SRDF = 2
+
+
+DESCRIPTION_FORMATS = tuple(
+    description_format.name.lower() for description_format in Format
+)
 
 
 @dataclass(frozen=True)
@@ -45,6 +51,11 @@ class Description:
     def has_urdf(self) -> bool:
         """Check if description provides URDF."""
         return Format.URDF in self.formats
+
+    @property
+    def has_srdf(self) -> bool:
+        """Check if description provides SRDF."""
+        return Format.SRDF in self.formats
 
 
 DESCRIPTIONS: Dict[str, Description] = {
@@ -140,7 +151,9 @@ DESCRIPTIONS: Dict[str, Description] = {
         maker="Wonik Robotics",
         repository="drake",
         license_spdx="BSD",
-        license_file="manipulation/models/allegro_hand_description/LICENSE.TXT",
+        license_file=(
+            "manipulation/models/allegro_hand_description/LICENSE.TXT"
+        ),
     ),
     "allegro_hand_mj_description": Description(
         formats={Format.MJCF},
@@ -454,7 +467,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="LICENSE",
     ),
     "fer_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="FER",
         maker="Franka Robotics",
@@ -481,7 +494,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="LICENSE",
     ),
     "fr3_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="FR3",
         maker="Franka Robotics",
@@ -499,7 +512,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="franka_fr3/LICENSE",
     ),
     "fr3_v2_1_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="FR3 v2.1",
         maker="Franka Robotics",
@@ -508,7 +521,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="LICENSE",
     ),
     "fr3_v2_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="FR3 v2",
         maker="Franka Robotics",
@@ -672,6 +685,24 @@ DESCRIPTIONS: Dict[str, Description] = {
         repository="mujoco_menagerie",
         license_spdx="BSD-3-Clause",
         license_file="unitree_h1/LICENSE",
+    ),
+    "hsrb_description": Description(
+        formats={Format.URDF},
+        tags={"mobile_manipulator"},
+        robot="HSR-B",
+        maker="Toyota Motor Corporation",
+        repository="hsrb_common",
+        license_spdx="BSD-3-Clause-Clear",
+        license_file="LICENSE.txt",
+    ),
+    "hsrc_description": Description(
+        formats={Format.URDF},
+        tags={"mobile_manipulator"},
+        robot="HSR-C",
+        maker="Toyota Motor Corporation",
+        repository="hsrb_common",
+        license_spdx="BSD-3-Clause-Clear",
+        license_file="LICENSE.txt",
     ),
     "hyq_description": Description(
         formats={Format.URDF},
@@ -977,7 +1008,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_file="LICENSE",
     ),
     "panda_description": Description(
-        formats={Format.URDF},
+        formats={Format.URDF, Format.SRDF},
         tags={"arm"},
         robot="Panda",
         maker="Franka Robotics",
@@ -1060,6 +1091,15 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "rby1_description": Description(
         formats={Format.URDF},
+        tags={"mobile_manipulator"},
+        robot="RBY1",
+        maker="Rainbow Robotics",
+        repository="rby1_description",
+        license_spdx="MIT",
+        license_file="LICENSE",
+    ),
+    "rby1_mj_description": Description(
+        formats={Format.MJCF},
         tags={"mobile_manipulator"},
         robot="RBY1",
         maker="Rainbow Robotics",
@@ -1388,6 +1428,15 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="CC-BY-NC-ND-3.0",
         license_file="robots/tiago_description/README.md",
     ),
+    "tiago_official_description": Description(
+        formats={Format.URDF},
+        tags={"mobile_manipulator"},
+        robot="TIAGo (official)",
+        maker="PAL Robotics",
+        repository="tiago_robot",
+        license_spdx="Apache-2.0",
+        license_file="LICENSE",
+    ),
     "toddlerbot_2xc_mj_description": Description(
         formats={Format.MJCF},
         tags={"humanoid"},
@@ -1432,15 +1481,6 @@ DESCRIPTIONS: Dict[str, Description] = {
         dof=6,
         repository="upkie_description",
         license_spdx="Apache-2.0",
-        license_file="LICENSE",
-    ),
-    "ur10_description": Description(
-        formats={Format.URDF},
-        tags={"arm"},
-        robot="UR10",
-        maker="Universal Robots",
-        repository="example-robot-data",
-        license_spdx="BSD-3-Clause",
         license_file="LICENSE",
     ),
     "ur10_official_description": Description(
@@ -1524,15 +1564,6 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="Universal Robots Terms for Graphical Documentation",
         license_file="meshes/ur30/LICENSE.txt",
     ),
-    "ur3_description": Description(
-        formats={Format.URDF},
-        tags={"arm"},
-        robot="UR3",
-        maker="Universal Robots",
-        repository="example-robot-data",
-        license_spdx="BSD-3-Clause",
-        license_file="LICENSE",
-    ),
     "ur3_official_description": Description(
         formats={Format.URDF},
         tags={"arm"},
@@ -1548,15 +1579,6 @@ DESCRIPTIONS: Dict[str, Description] = {
         robot="UR3e",
         maker="Universal Robots",
         repository="Universal_Robots_ROS2_Description",
-        license_spdx="BSD-3-Clause",
-        license_file="LICENSE",
-    ),
-    "ur5_description": Description(
-        formats={Format.URDF},
-        tags={"arm"},
-        robot="UR5",
-        maker="Universal Robots",
-        repository="example-robot-data",
         license_spdx="BSD-3-Clause",
         license_file="LICENSE",
     ),
