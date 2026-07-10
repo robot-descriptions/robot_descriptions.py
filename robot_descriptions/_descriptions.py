@@ -1356,6 +1356,15 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="Apache-2.0",
         license_file="hello_robot_stretch_3/LICENSE",
     ),
+    "stretch_4_description": Description(
+        formats={Format.URDF},
+        tags={"mobile_manipulator"},
+        robot="Stretch 4",
+        maker="Hello Robot",
+        repository="stretch4_urdf",
+        license_spdx="BSD-3-Clause-Clear",
+        license_file="LICENSE.md",
+    ),
     "stretch_description": Description(
         formats={Format.URDF},
         tags={"mobile_manipulator"},
