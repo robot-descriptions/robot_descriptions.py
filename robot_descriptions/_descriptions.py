@@ -1007,6 +1007,16 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="Apache-2.0",
         license_file="LICENSE",
     ),
+    "openarm_v2_mj_description": Description(
+        formats={Format.MJCF},
+        tags={"dual_arm"},
+        robot="OpenArm",
+        maker="Enactic",
+        dof=16,
+        repository="openarm_mujoco",
+        license_spdx="Apache-2.0",
+        license_file="LICENSE",
+    ),
     "panda_description": Description(
         formats={Format.URDF, Format.SRDF},
         tags={"arm"},

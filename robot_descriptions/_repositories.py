@@ -250,7 +250,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "openarm_mujoco": Repository(
         url="https://github.com/enactic/openarm_mujoco.git",
-        commit="cd30dd4c0a97832d1c063bf759514ed18fbe04a5",
+        commit="5c6e1b4c71cbe27c6a4b58c7f198f080449e1b9c",
         cache_path="openarm_mujoco",
     ),
     "pal_hey5": Repository(

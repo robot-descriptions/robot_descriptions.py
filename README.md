@@ -225,7 +225,8 @@ Descriptions may appear in more than one category when tags overlap.
 | `aloha_mj_description`      | Aloha 2     | Trossen Robotics | 14  | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/aloha/LICENSE)      |
 | `baxter_description`        | Baxter      | Rethink Robotics | 15  | URDF   | [BSD-3-Clause](https://github.com/RethinkRobotics/baxter_common/blob/6c4b0f375fe4e356a3b12df26ef7c0d5e58df86e/LICENSE)        |
 | `nextage_description`       | NEXTAGE     | Kawada Robotics  | 15  | URDF   | [BSD](https://github.com/tork-a/rtmros_nextage/blob/ac270fb969fa54abeb6863f9b388a9e20c1f14e0/nextage_description/package.xml) |
-| `openarm_v1_mj_description` | OpenArm     | Enactic          | 16  | MJCF   | [Apache-2.0](https://github.com/enactic/openarm_mujoco/blob/cd30dd4c0a97832d1c063bf759514ed18fbe04a5/LICENSE)                 |
+| `openarm_v1_mj_description` | OpenArm     | Enactic          | 16  | MJCF   | [Apache-2.0](https://github.com/enactic/openarm_mujoco/blob/5c6e1b4c71cbe27c6a4b58c7f198f080449e1b9c/LICENSE)                 |
+| `openarm_v2_mj_description` | OpenArm     | Enactic          | 16  | MJCF   | [Apache-2.0](https://github.com/enactic/openarm_mujoco/blob/5c6e1b4c71cbe27c6a4b58c7f198f080449e1b9c/LICENSE)                 |
 | `poppy_torso_description`   | Poppy Torso | Poppy Project    | 13  | URDF   | [GPL-3.0](https://github.com/poppy-project/poppy_torso_description/blob/6beeec3d76fb72b7548cce7c73aad722f8884522/package.xml) |
 | `pr2_description`           | PR2         | Willow Garage    |     | URDF   | [BSD](https://github.com/ankurhanda/robot-assets/blob/12f1a3c89c9975194551afaed0dfae1e09fdb27c/README.md)                     |
 | `yumi_description`          | YuMi        | ABB              | 16  | URDF   | [BSD](https://github.com/ankurhanda/robot-assets/blob/12f1a3c89c9975194551afaed0dfae1e09fdb27c/README.md)                     |
