@@ -50,9 +50,6 @@ Source = "https://github.com/robot-descriptions/robot_descriptions.py"
 Tracker = "https://github.com/robot-descriptions/robot_descriptions.py/issues"
 Changelog = "https://github.com/robot-descriptions/robot_descriptions.py/blob/main/CHANGELOG.md"
 
-[tool.black]
-line-length = 79
-
 [tool.ruff]
 line-length = 79
 
@@ -75,3 +72,175 @@ ignore = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.pylint.typecheck]
+generated-members = [
+    "mujoco.MjModel",
+    "pin.JointModelFreeFlyer",
+    "pin.JointModelPX",
+    "pin.JointModelPY",
+    "pin.JointModelPZ",
+    "pin.JointModelPlanar",
+    "pin.JointModelRX",
+    "pin.JointModelRY",
+    "pin.JointModelRZ",
+    "pin.JointModelSpherical",
+    "pin.JointModelSphericalZYX",
+    "pin.JointModelTranslation",
+    "pin.Model",
+    "pybullet.loadURDF",
+    "pybullet.setAdditionalSearchPath",
+]
+
+# Pixi
+# ====
+#
+# Usage:
+#   pixi run lint                    # ruff, mypy, pylint
+#   pixi run test                    # run unit tests
+#   pixi run -e coverage coverage    # run tests with coverage report
+#   pixi run -e loader-mujoco test-loader-mujoco
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.dependencies]
+python = "3.10.*"
+gitpython = ">=3.1.18"
+tqdm = ">=4.64.0"
+
+[tool.pixi.pypi-dependencies]
+robot_descriptions = { path = ".", editable = true }
+
+# Linting -------------------------------------------------------------------
+
+[tool.pixi.feature.lint.dependencies]
+idyntree = ">=8.0.0"
+mccabe = "*"
+mujoco = ">=2.3.5"
+mypy = "*"
+numpy = ">=1.23.4,<2"
+pinocchio = ">=2.6.14"
+pybullet = ">=3.2.5"
+pylint = "*"
+robomeshcat = ">=1.0.4"
+ruff = ">=0.2.2"
+yourdfpy = ">=0.0.56"
+
+[tool.pixi.feature.lint.tasks]
+_lint-mypy = "mypy robot_descriptions --ignore-missing-imports"
+_lint-pylint = "pylint robot_descriptions --exit-zero"
+_lint-ruff-check = "ruff check robot_descriptions"
+_lint-ruff-format = "ruff format --check robot_descriptions"
+lint = { depends-on = [
+    "_lint-mypy",
+    "_lint-pylint",
+    "_lint-ruff-check",
+    "_lint-ruff-format",
+] }
+
+# Testing -------------------------------------------------------------------
+#
+# The framework libraries needed to run the full test suite are grouped in a
+# dependency-only "framework" feature shared by both the "test" and "coverage"
+# environments. Each task-bearing feature belongs to a single environment so
+# that `pixi run test` and `pixi run coverage` are unambiguous.
+
+[tool.pixi.feature.framework.dependencies]
+idyntree = ">=8.0.0"
+mujoco = ">=2.3.5"
+numpy = ">=1.23.4,<2"
+pinocchio = ">=2.6.14"
+pybullet = ">=3.2.5"
+robomeshcat = ">=1.0.4"
+yourdfpy = ">=0.0.56"
+
+[tool.pixi.feature.framework.pypi-dependencies]
+xacrodoc = ">=1.1.1"
+
+[tool.pixi.feature.test.tasks]
+test = "python -m unittest tests"
+
+# Coverage (adds the coverage report and the CI-only coveralls upload) -------
+
+[tool.pixi.feature.coverage.dependencies]
+coverage = ">=5.5"
+coveralls = "*"
+
+[tool.pixi.feature.coverage.tasks]
+_coverage-erase = "coverage erase"
+_coverage-run = "coverage run -m unittest tests"
+_coverage-report = "coverage report --include=\"robot_descriptions/**\""
+coverage = { depends-on = ["_coverage-erase", "_coverage-run", "_coverage-report"] }
+
+# Loaders -------------------------------------------------------------------
+
+[tool.pixi.feature.loader-idyntree.dependencies]
+idyntree = ">=8.0.0"
+
+[tool.pixi.feature.loader-idyntree.pypi-dependencies]
+xacrodoc = ">=1.1.1"
+
+[tool.pixi.feature.loader-idyntree.tasks]
+test-loader-idyntree = { cmd = "python -m unittest test_idyntree.py", cwd = "tests/loaders" }
+
+[tool.pixi.feature.loader-mujoco.dependencies]
+mujoco = ">=2.3.5"
+
+[tool.pixi.feature.loader-mujoco.tasks]
+test-loader-mujoco = { cmd = "python -m unittest test_mujoco.py", cwd = "tests/loaders" }
+
+[tool.pixi.feature.loader-pinocchio.dependencies]
+pinocchio = ">=2.6.14"
+
+[tool.pixi.feature.loader-pinocchio.pypi-dependencies]
+xacrodoc = ">=1.1.1"
+
+[tool.pixi.feature.loader-pinocchio.tasks]
+test-loader-pinocchio = { cmd = "python -m unittest test_pinocchio.py", cwd = "tests/loaders" }
+
+[tool.pixi.feature.loader-pybullet.dependencies]
+numpy = ">=1.23.4,<2"
+pybullet = ">=3.2.5"
+
+[tool.pixi.feature.loader-pybullet.pypi-dependencies]
+xacrodoc = ">=1.1.1"
+
+[tool.pixi.feature.loader-pybullet.tasks]
+test-loader-pybullet = { cmd = "python -m unittest test_pybullet.py", cwd = "tests/loaders" }
+
+[tool.pixi.feature.loader-robomeshcat.dependencies]
+pycollada = ">=0.6"
+robomeshcat = ">=1.0.4"
+
+[tool.pixi.feature.loader-robomeshcat.pypi-dependencies]
+xacrodoc = ">=1.1.1"
+
+[tool.pixi.feature.loader-robomeshcat.tasks]
+test-loader-robomeshcat = { cmd = "python -m unittest test_robomeshcat.py", cwd = "tests/loaders" }
+
+[tool.pixi.feature.loader-yourdfpy.dependencies]
+lxml = "<=4.9.4"
+numpy = ">=1.23.4,<2"
+pycollada = ">=0.6"
+yourdfpy = ">=0.0.56"
+
+[tool.pixi.feature.loader-yourdfpy.pypi-dependencies]
+xacrodoc = ">=1.1.1"
+
+[tool.pixi.feature.loader-yourdfpy.tasks]
+test-loader-yourdfpy = { cmd = "python -m unittest test_yourdfpy.py", cwd = "tests/loaders" }
+
+# Environments --------------------------------------------------------------
+
+[tool.pixi.environments]
+lint = ["lint"]
+test = ["framework", "test"]
+coverage = ["framework", "coverage"]
+loader-idyntree = ["loader-idyntree"]
+loader-mujoco = ["loader-mujoco"]
+loader-pinocchio = ["loader-pinocchio"]
+loader-pybullet = ["loader-pybullet"]
+loader-robomeshcat = ["loader-robomeshcat"]
+loader-yourdfpy = ["loader-yourdfpy"]
