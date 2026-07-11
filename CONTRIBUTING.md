@@ -20,17 +20,20 @@ The goal of this project is to facilitate loading and sharing of robot descripti
     - Use the `mj_description` suffix for an MJCF description.
 4. **Listing:** Add the description metadata to the `DESCRIPTIONS` dictionary in `_descriptions.py`.
     - Include the metadata fields there as well: robot name, maker, DOF (when applicable), SPDX license identifier, and optionally the path to the license file in the source repository.
-5. **Visualize:** At this point you can check that the new description loads and renders properly using a visualizer, for example:
+5. **Visualize:** At this point you can check that the new description loads and renders properly using a visualizer, by running for instance one of the following commands in the repository:
 
 ```
+# For a URDF description
 uv run --with yourdfpy --with "pyglet<2" python -m robot_descriptions show_in_yourdfpy <new_description>
+
+# For an MJCF description
 uv run --with mujoco-python-viewer python -m robot_descriptions show_in_mujoco <new_mj_description>
 ```
 
 6. **README:** Regenerate the Descriptions section of the [README](README.md):
 
 ```
-python scripts/generate_readme_descriptions.py
+uv run scripts/generate_readme_descriptions.py
 ```
 
    - Use an [SPDX License Identifier](https://spdx.org/licenses/) in `license_spdx`.

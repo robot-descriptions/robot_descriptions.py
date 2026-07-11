@@ -95,6 +95,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="fcc3775453e4da6797cd4eacd3d8321d9906755a",
         cache_path="cassie_mj_description",
     ),
+    "cookie_description": Repository(
+        url="https://codeberg.org/upkie/cookie_description.git",
+        commit="564352e35a0aba0d5e239d4341b851231175dbdc",
+        cache_path="cookie_description",
+    ),
     "differentiable-robot-model": Repository(
         url="https://github.com/facebookresearch/differentiable-robot-model",
         commit="d7bd1b3b8ef1d6dabe9b68474a622185c510e112",

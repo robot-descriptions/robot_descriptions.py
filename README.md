@@ -156,8 +156,8 @@ Descriptions may appear in more than one category when tags overlap.
 | `fr3_v2_description`                | FR3 v2             | Franka Robotics  | URDF   | [Apache-2.0](https://github.com/frankarobotics/franka_description/blob/72baf5bf4e88eaec27f0eb61be1b20a001abf2ab/LICENSE)                                                                               |
 | `fr3_v2_mj_description`             | FR3 v2             | Franka Robotics  | MJCF   | [Apache-2.0](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/franka_fr3_v2/LICENSE)                                                                         |
 | `gen2_description`                  | Gen2               | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Gepetto/example-robot-data/blob/d0d9098d752014aec3725b07766962acf06c5418/LICENSE)                                                                                    |
-| `gen3_description`                  | Gen3               | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/ros2_kortex/blob/8bf203423911446de28a2248ec87380b7eea2f90/LICENSE)                                                                                    |
-| `gen3_lite_description`             | Gen3 Lite          | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/ros2_kortex/blob/8bf203423911446de28a2248ec87380b7eea2f90/LICENSE)                                                                                    |
+| `gen3_description`                  | Gen3               | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/ros2_kortex/blob/ca433b079d672100cb1d42ee27049da548c08e2c/LICENSE)                                                                                    |
+| `gen3_lite_description`             | Gen3 Lite          | Kinova           | URDF   | [BSD-3-Clause](https://github.com/Kinovarobotics/ros2_kortex/blob/ca433b079d672100cb1d42ee27049da548c08e2c/LICENSE)                                                                                    |
 | `gen3_mj_description`               | Gen3               | Kinova           | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/kinova_gen3/LICENSE)                                                                         |
 | `iiwa14_description`                | iiwa 14            | KUKA             | URDF   | [BSD-3-Clause](https://github.com/RobotLocomotion/drake/blob/7abea0556ede980a5077fe1a8cfbae59b57c7c27/manipulation/models/iiwa_description/LICENSE.TXT)                                                |
 | `iiwa14_mj_description`             | iiwa 14            | KUKA             | MJCF   | [BSD-3-Clause](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/kuka_iiwa_14/LICENSE)                                                                        |
@@ -221,9 +221,10 @@ Descriptions may appear in more than one category when tags overlap.
 | `bolt_description`      | Bolt    | ODRI             | 6   | URDF   | [BSD-3-Clause](https://github.com/Gepetto/example-robot-data/blob/d0d9098d752014aec3725b07766962acf06c5418/LICENSE)      |
 | `cassie_description`    | Cassie  | Agility Robotics | 16  | URDF   | [MIT](https://github.com/robot-descriptions/cassie_description/blob/81a2d8bbd77201cc974afb127adda4e2857a6dbf/LICENSE)    |
 | `cassie_mj_description` | Cassie  | Agility Robotics | 16  | MJCF   | [MIT](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/agility_cassie/LICENSE) |
+| `cookie_description`    | Cookie  | Upkie Project    | 6   | URDF   | [Apache-2.0](https://codeberg.org/upkie/cookie_description/blob/564352e35a0aba0d5e239d4341b851231175dbdc/LICENSE)        |
 | `rhea_description`      | Rhea    | Gabrael Levine   | 7   | URDF   | [Apache-2.0](https://github.com/G-Levine/rhea_description/blob/1dc0f1abcf51b5d8a8f7ff8a548399ff0df1414f/LICENSE)         |
 | `spryped_description`   | Spryped | Benjamin Bokser  | 8   | URDF   | [BSD](https://github.com/bbokser/spryped/blob/f360a6b78667a4d97c86cad465ef8f4c9512462b/spryped_urdf_rev06/package.xml)   |
-| `upkie_description`     | Upkie   | Tast's Robots    | 6   | URDF   | [Apache-2.0](https://github.com/upkie/upkie_description/blob/19a91ce69cab6742c613cab104986e3f8a18d6a5/LICENSE)           |
+| `upkie_description`     | Upkie   | Upkie Project    | 6   | URDF   | [Apache-2.0](https://github.com/upkie/upkie_description/blob/19a91ce69cab6742c613cab104986e3f8a18d6a5/LICENSE)           |
 
 ### Dual arms
 
@@ -376,9 +377,10 @@ Descriptions may appear in more than one category when tags overlap.
 
 | Name                   | Robot               | Maker            | DOF | Format | License                                                                                                                    |
 |------------------------|---------------------|------------------|-----|--------|----------------------------------------------------------------------------------------------------------------------------|
+| `cookie_description`   | Cookie              | Upkie Project    | 6   | URDF   | [Apache-2.0](https://codeberg.org/upkie/cookie_description/blob/564352e35a0aba0d5e239d4341b851231175dbdc/LICENSE)          |
 | `rsk_description`      | RSK Omnidirectional | Robot Soccer Kit |     | URDF   | [MIT](https://github.com/Rhoban/onshape-to-robot-examples/blob/911abb069c781e4c717c10643b975f55f7a64fe8/README.md)         |
 | `rsk_mj_description`   | RSK Omnidirectional | Robot Soccer Kit |     | MJCF   | [MIT](https://github.com/deepmind/mujoco_menagerie/blob/feadf76d42f8a2162426f7d226a3b539556b3bf5/robot_soccer_kit/LICENSE) |
-| `upkie_description`    | Upkie               | Tast's Robots    | 6   | URDF   | [Apache-2.0](https://github.com/upkie/upkie_description/blob/19a91ce69cab6742c613cab104986e3f8a18d6a5/LICENSE)             |
+| `upkie_description`    | Upkie               | Upkie Project    | 6   | URDF   | [Apache-2.0](https://github.com/upkie/upkie_description/blob/19a91ce69cab6742c613cab104986e3f8a18d6a5/LICENSE)             |
 | `wl_p311d_description` | WL P311D            | LimX Dynamics    |     | URDF   | [Apache-2.0](https://github.com/limxdynamics/robot-description/blob/a097533372a08298d45af391cbdfc2fd2dc3da6f/LICENSE)      |
 | `wl_p311e_description` | WL P311E            | LimX Dynamics    |     | URDF   | [Apache-2.0](https://github.com/limxdynamics/robot-description/blob/a097533372a08298d45af391cbdfc2fd2dc3da6f/LICENSE)      |
 <!-- END GENERATED DESCRIPTION TABLES -->
