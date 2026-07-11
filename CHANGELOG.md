@@ -18,6 +18,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- CICD: Switch development and CI tooling from tox to pixi
 - Description: Kinova Gen3 lite changed to use xacro (thanks to @nickswalker)
 - Description: Patch Eve R3 URDF negative effort and velocity limit sentinels for loader compatibility (thanks to @nickswalker)
 - Description: TIAGo (URDF) now warns that it is deprecated and will switch to the official model in a later release
@@ -28,6 +29,7 @@ All notable changes to this project will be documented in this file.
 ### Removed
 
 - Description: remove deprecated UR3, UR5, and UR10 modules in favor of their official variants
+- Drop the Black formatter in favor of `ruff format`
 
 ### Fixed
 

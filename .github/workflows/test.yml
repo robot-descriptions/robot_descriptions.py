@@ -16,25 +16,21 @@ jobs:
             - name: "Checkout sources"
               uses: actions/checkout@v4
 
-            - name: "Set up Python"
-              uses: actions/setup-python@v4
+            - name: "Set up pixi"
+              uses: prefix-dev/setup-pixi@v0.8.10
               with:
-                  python-version: "3.10"
-
-            - name: "Install dependencies"
-              run: |
-                  python -m pip install --upgrade pip
-                  python -m pip install coveralls tox tox-gh-actions
+                  pixi-version: v0.72.2
+                  environments: coverage
+                  locked: true
+                  cache: true
 
             - name: "Check coverage"
-              run: |
-                  tox -e coverage
+              run: pixi run -e coverage coverage
 
             - name: "Coveralls"
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: |
-                  coveralls --service=github
+              run: pixi run -e coverage coveralls --service=github
 
     lint:
         name: "Code style"
@@ -44,47 +40,40 @@ jobs:
             - name: "Checkout sources"
               uses: actions/checkout@v4
 
-            - name: "Set up Python"
-              uses: actions/setup-python@v4
+            - name: "Set up pixi"
+              uses: prefix-dev/setup-pixi@v0.8.10
               with:
-                  python-version: "3.10"
-
-            - name: "Install dependencies"
-              run: |
-                  python -m pip install --upgrade pip
-                  python -m pip install tox tox-gh-actions
+                  pixi-version: v0.72.2
+                  environments: lint
+                  locked: true
+                  cache: true
 
             - name: "Check code format"
-              run: |
-                  tox -e lint
+              run: pixi run -e lint lint
 
     loader:
-        name: "Loader: ${{ matrix.loader }} with Python ${{ matrix.python-version }}"
+        name: "Loader: ${{ matrix.loader }}"
         runs-on: ubuntu-latest
 
         strategy:
             fail-fast: false
             matrix:
-                python-version: ["3.10"]
                 loader: ["idyntree", "mujoco", "pinocchio", "pybullet", "robomeshcat", "yourdfpy"]
 
         steps:
             - name: "Checkout sources"
               uses: actions/checkout@v4
 
-            - name: "Set up Python"
-              uses: actions/setup-python@v4
+            - name: "Set up pixi"
+              uses: prefix-dev/setup-pixi@v0.8.10
               with:
-                  python-version: "${{ matrix.python-version }}"
-
-            - name: "Install dependencies"
-              run: |
-                  python -m pip install --upgrade pip
-                  python -m pip install tox tox-gh-actions
+                  pixi-version: v0.72.2
+                  environments: loader-${{ matrix.loader }}
+                  locked: true
+                  cache: true
 
             - name: "Run loader tests"
-              run: |
-                  tox -e loader-${{ matrix.loader }}
+              run: pixi run -e loader-${{ matrix.loader }} test-loader-${{ matrix.loader }}
 
     ci_success:
         name: "CI success"

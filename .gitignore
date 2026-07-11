@@ -1,5 +1,5 @@
 .coverage
-.tox
+.pixi/
 __pycache__
 dist/
 htmlcov/
