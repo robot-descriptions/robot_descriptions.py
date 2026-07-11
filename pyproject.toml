@@ -223,6 +223,7 @@ test-loader-robomeshcat = { cmd = "python -m unittest test_robomeshcat.py", cwd 
 [tool.pixi.feature.loader-yourdfpy.dependencies]
 lxml = "<=4.9.4"
 numpy = ">=1.23.4,<2"
+pycollada = ">=0.6"
 yourdfpy = ">=0.0.56"
 
 [tool.pixi.feature.loader-yourdfpy.pypi-dependencies]
