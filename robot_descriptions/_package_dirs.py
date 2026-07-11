@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Giulio Romualdi
 
 import os.path
 from typing import List

@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2026 Enactic, Inc.
 
 """OpenArm 2.0 MJCF description."""
 

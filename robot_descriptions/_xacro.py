@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2026 Inria
 
 """Utilities to resolve XML description files from Xacro sources."""
 
