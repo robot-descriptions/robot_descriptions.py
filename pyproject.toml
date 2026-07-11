@@ -95,15 +95,10 @@ generated-members = [
 # Pixi
 # ====
 #
-# Pixi replaces the previous tox setup. Each former tox environment maps to a
-# pixi feature (dependencies + tasks) plus a matching pixi environment. The
-# loader environments are kept isolated so that each loader is tested with only
-# its own dependencies installed, as tox used to do.
-#
 # Usage:
 #   pixi run lint                    # ruff, mypy, pylint
 #   pixi run test                    # run unit tests
-#   pixi run -e test coverage        # unit tests with coverage report
+#   pixi run -e coverage coverage    # run tests with coverage report
 #   pixi run -e loader-mujoco test-loader-mujoco
 
 [tool.pixi.workspace]
