@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Stéphane Caron
 
 from .test_clone_to_cache import TestCloneToCache
 from .test_clone_to_directory import TestCloneToDirectory

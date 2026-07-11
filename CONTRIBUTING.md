@@ -35,5 +35,6 @@ python scripts/generate_readme_descriptions.py
 
    - Use an [SPDX License Identifier](https://spdx.org/licenses/) in `license_spdx`.
    - When you know the license file location, store its repository-relative path in `license_file` so the README link can be derived automatically.
-7. **CHANGELOG:** Write down the new model at the top of the [changelog](CHANGELOG.md).
-8. **Testing:** Check that all unit tests are successful by `tox`.
+7. **Testing:** Check that all unit tests are successful by `tox`.
+8. **CHANGELOG:** Write down the new model at the top of the [changelog](CHANGELOG.md).
+9. **NOTICE:** If this is your first contribution, add a line `Copyright <YEAR> Your Name` to the [notice](NOTICE) file.
