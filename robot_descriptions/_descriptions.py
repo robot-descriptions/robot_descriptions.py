@@ -601,6 +601,15 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="BSD-3-Clause",
         license_file="kinova_gen3/LICENSE",
     ),
+    "gene01_description": Description(
+        formats={Format.URDF},
+        tags={"humanoid"},
+        robot="GENE.01",
+        maker="Generative Bionics",
+        repository="gb_robot_models",
+        license_spdx="CC-BY-NC-4.0",
+        license_file="LICENSE",
+    ),
     "ginger_description": Description(
         formats={Format.URDF},
         tags={"mobile_manipulator"},
