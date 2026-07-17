@@ -154,6 +154,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="72baf5bf4e88eaec27f0eb61be1b20a001abf2ab",
         cache_path="franka_description",
     ),
+    "gb_robot_models": Repository(
+        url="https://github.com/gbionics/gb-robot-models.git",
+        commit="ae990f38968c2ae29caee88851f9153168630b8f",  # v0.1.0
+        cache_path="gb_robot_models",
+    ),
     "GingerURDF": Repository(
         url="https://github.com/Rayckey/GingerURDF.git",
         commit="6a1307cd0ee2b77c82f8839cdce3a2e2eed2bd8f",

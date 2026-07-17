@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: GENE.01 (URDF)
+
 ## [3.0.0] - 2026-07-11
 
 ### Added
