@@ -23,7 +23,7 @@ PRIMARY_CATEGORY_TAGS = [
 BEGIN_MARKER = "<!-- BEGIN GENERATED DESCRIPTION TABLES -->"
 END_MARKER = "<!-- END GENERATED DESCRIPTION TABLES -->"
 README_PATH = Path(__file__).resolve().parents[1] / "README.md"
-FREE_LICENSES = {
+OPEN_SOURCE_LICENSES = {
     "Apache-2.0",
     "BSD",
     "BSD-2-Clause",
@@ -39,7 +39,7 @@ FREE_LICENSES = {
 
 
 def _display_license(license_spdx: str) -> str:
-    if license_spdx in FREE_LICENSES:
+    if license_spdx in OPEN_SOURCE_LICENSES:
         return license_spdx
     return f"{license_spdx} ✖️"
 
