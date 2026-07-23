@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Flexiv Enlight-L (URDF) (thanks to @nickswalker)
+- Description: Flexiv MICO-Core (URDF) (thanks to @nickswalker)
+- Description: Flexiv Rizon10 (URDF) (thanks to @nickswalker)
+
 ## [3.1.0] - 2026-07-11
 
 ### Added
