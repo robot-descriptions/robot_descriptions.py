@@ -1108,6 +1108,15 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="BSD",
         license_file="README.md",
     ),
+    "pr2_official_description": Description(
+        formats={Format.URDF},
+        tags={"dual_arm", "mobile_manipulator"},
+        robot="PR2 (official)",
+        maker="Willow Garage",
+        repository="pr2_common",
+        license_spdx="BSD",
+        license_file="pr2_description/package.xml",
+    ),
     "r2_description": Description(
         formats={Format.URDF},
         tags={"humanoid"},
