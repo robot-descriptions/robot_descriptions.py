@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: PR2 official (URDF) (thanks to @nickswalker)
+
+### Changed
+
+- Description: PR2 (URDF) now warns that it is deprecated and will switch to the official model in a later release (thanks to @nickswalker)
+
+
 ## [3.1.0] - 2026-07-11
 
 ### Added

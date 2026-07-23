@@ -297,6 +297,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="6beeec3d76fb72b7548cce7c73aad722f8884522",
         cache_path="poppy_torso_description",
     ),
+    "pr2_common": Repository(
+        url="https://github.com/PR2/pr2_common.git",
+        commit="9a8e4fbcf66523ca14faf651c23513ee1ac29ccb",
+        cache_path="pr2_common",
+    ),
     "rby1_description": Repository(
         url="https://github.com/uynitsuj/rby1_description.git",
         commit="e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72",
