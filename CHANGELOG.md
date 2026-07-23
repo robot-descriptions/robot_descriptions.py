@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Description: GENE.01 (URDF)
 
+### Fixed
+
+- security: Bump gitpython to 3.1.52
+
 ## [3.0.0] - 2026-07-11
 
 ### Added
