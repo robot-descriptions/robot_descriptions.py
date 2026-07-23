@@ -149,6 +149,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="edb01274caf7eaf2ba722bbfdf2f23d717fee38e",
         cache_path="flexiv_description",
     ),
+    "flexiv_description_v2": Repository(
+        url="https://github.com/flexivrobotics/flexiv_description.git",
+        commit="f2e08ae0579fa98d468b410afa734879eb820acd",
+        cache_path="flexiv_description_v2/flexiv_description",
+    ),
     "franka_description": Repository(
         url="https://github.com/frankarobotics/franka_description.git",
         commit="72baf5bf4e88eaec27f0eb61be1b20a001abf2ab",
