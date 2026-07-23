@@ -4,9 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [3.1.0] - 2026-07-11
+
 ### Added
 
-- Description: GENE.01 (URDF)
+- Description: GENE.01 (URDF) (thanks to @traversaro)
 
 ### Fixed
 
@@ -667,7 +669,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v3.0.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v3.1.0...HEAD
+[3.1.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.1.0
 [3.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.0.0
 [2.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v2.0.0
 [1.23.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.23.0
