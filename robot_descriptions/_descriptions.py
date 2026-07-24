@@ -1128,6 +1128,16 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="BSD",
         license_file="README.md",
     ),
+    "r1_pro_description": Description(
+        formats={Format.URDF, Format.SRDF},
+        tags={"dual_arm", "mobile_manipulator"},
+        robot="R1 Pro",
+        maker="Galaxea AI",
+        dof=22,
+        repository="GalaxeaManipSim",
+        license_spdx="Apache-2.0",
+        license_file="LICENSE",
+    ),
     "r2_description": Description(
         formats={Format.URDF},
         tags={"humanoid"},

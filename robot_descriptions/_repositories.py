@@ -154,6 +154,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="72baf5bf4e88eaec27f0eb61be1b20a001abf2ab",
         cache_path="franka_description",
     ),
+    "GalaxeaManipSim": Repository(
+        url="https://github.com/OpenGalaxea/GalaxeaManipSim.git",
+        commit="abe7f5161eeaa150e6eaffdf443af5df7f23f356",
+        cache_path="galaxea_sim",  # match package name
+    ),
     "gb_robot_models": Repository(
         url="https://github.com/gbionics/gb-robot-models.git",
         commit="ae990f38968c2ae29caee88851f9153168630b8f",  # v0.1.0
