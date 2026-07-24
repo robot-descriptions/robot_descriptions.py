@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Xacro: Generated URDFs now emit relocatable `package://` asset URIs instead of absolute paths (thanks to @nickswalker)
+- Bump `xacrodoc` dependency to `>=2.0.0`
+
+
 ## [3.1.0] - 2026-07-11
 
 ### Added
