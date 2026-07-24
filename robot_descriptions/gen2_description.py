@@ -18,3 +18,5 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "kinova_description")
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "kinova.urdf")
+
+SRDF_PATH: str = _path.join(PACKAGE_PATH, "srdf", "kinova.srdf")
