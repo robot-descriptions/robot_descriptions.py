@@ -18,3 +18,5 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "wheellegged", "WL_P311D")
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "robot.urdf")
+
+SRDF_PATH: str = _path.join(PACKAGE_PATH, "srdf", "robot.srdf")

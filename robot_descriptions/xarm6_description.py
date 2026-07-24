@@ -27,3 +27,12 @@ XACRO_ARGS = {
     "dof": "6",
     "robot_type": "xarm",
 }
+
+SRDF_XACRO_PATH: str = _path.join(
+    REPOSITORY_PATH,
+    "xarm_moveit_config",
+    "srdf",
+    "xarm.srdf.xacro",
+)
+
+SRDF_XACRO_ARGS = XACRO_ARGS.copy()
