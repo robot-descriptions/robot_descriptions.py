@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: OpenArm v1 (URDF) (thanks to @nickswalker)
+- Description: OpenArm v2 (URDF) (thanks to @nickswalker)
+
 ## [3.1.0] - 2026-07-11
 
 ### Added
