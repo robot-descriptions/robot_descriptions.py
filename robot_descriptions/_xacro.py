@@ -8,11 +8,13 @@
 import hashlib
 import json
 import os
+import re
 import tempfile
 from contextlib import contextmanager
 from dataclasses import dataclass
 from importlib import import_module
 from typing import Any
+from urllib.parse import unquote, urlparse
 
 from ._cache import get_head_sha
 
@@ -107,6 +109,84 @@ def _pushd(path: str):
         os.chdir(cwd)
 
 
+_FILENAME_ATTR_RE = re.compile(r"(\bfilename\s*=\s*)(['\"])(.*?)\2")
+
+
+def _map_filename_attrs(urdf_string: str, transform) -> str:
+    """Rewrite each ``filename="..."`` attribute value via a transform.
+
+    Args:
+        urdf_string: Serialized URDF XML.
+        transform: Callable mapping a filename value to its replacement.
+
+    Returns:
+        URDF XML with each filename attribute rewritten.
+    """
+
+    def rewrite(match: re.Match[str]) -> str:
+        prefix, quote, filename = match.groups()
+        return f"{prefix}{quote}{transform(filename)}{quote}"
+
+    return _FILENAME_ATTR_RE.sub(rewrite, urdf_string)
+
+
+def _to_package_uri(
+    filename: str, *, package_name: str, package_path: str
+) -> str:
+    """Rewrite a ``file://`` URI pointing inside the package to a package URI.
+
+    A ``file://`` reference to a file under ``package_path`` becomes
+    ``package://<package_name>/<path relative to package_path>``. Anything
+    else -- a non-``file`` URI, a remote host, or a path outside the package
+    -- is returned unchanged.
+
+    Args:
+        filename: Filename attribute value from a generated URDF.
+        package_name: Package name to use in the URI, i.e. the basename of
+            ``package_path``.
+        package_path: Absolute path to the package root.
+
+    Returns:
+        The rewritten ``package://`` URI, or ``filename`` unchanged when no
+        rewrite applies.
+    """
+    if not filename.startswith("file://"):
+        return filename
+
+    parsed = urlparse(filename)
+    if parsed.netloc not in ("", "localhost"):
+        return filename
+
+    abs_path = os.path.normpath(unquote(parsed.path))
+    if abs_path == package_path or abs_path.startswith(package_path + os.sep):
+        rel_path = os.path.relpath(abs_path, package_path)
+        return f"package://{package_name}/{rel_path}"
+    return filename
+
+
+def _convert_filenames_to_package_uris(module: Any, urdf_string: str) -> str:
+    """Rewrite package-local file URIs in a URDF string to package URIs.
+
+    Args:
+        module: Robot description module providing path metadata.
+        urdf_string: Serialized URDF XML.
+
+    Returns:
+        URDF XML with package-local file URIs rewritten to package URIs.
+    """
+    package_path = os.path.normpath(module.PACKAGE_PATH)
+    package_name = os.path.basename(package_path)
+
+    return _map_filename_attrs(
+        urdf_string,
+        lambda filename: _to_package_uri(
+            filename,
+            package_name=package_name,
+            package_path=package_path,
+        ),
+    )
+
+
 def _generate_xacro_output_path(
     module: Any,
     xacrodoc_module: Any,
@@ -155,29 +235,11 @@ def _generate_xacro_output_path(
         doc = xacrodoc_module.XacroDoc.from_file(
             xacro_path,
             subargs=xacro_args,
+            # Preserve file/relative paths from the generated URDF so we can
+            # normalize them to a relocatable package URI later.
+            resolve_packages=False,
         )
-    # We're resolving relative paths manually here, as xacrodoc
-    # only handles package resolution. xacrodoc has a private
-    # helper which would at least make this cleaner,
-    # _urdf_elements_with_filenames, but we'll wait for a
-    # public interface.
-
-    for tag_name in ("mesh", "material"):
-        for elem in doc.dom.getElementsByTagName(tag_name):
-            if not elem.hasAttribute("filename"):
-                continue
-            filename = elem.getAttribute("filename")
-            rel_path = None
-            if filename.startswith("file://./"):
-                rel_path = filename[len("file://./") :]
-            elif filename.startswith("./"):
-                rel_path = filename[2:]
-            if rel_path is not None:
-                abs_path = os.path.abspath(
-                    os.path.join(module.PACKAGE_PATH, rel_path)
-                )
-                elem.setAttribute("filename", abs_path)
-
+    doc.rootdir = module.PACKAGE_PATH
     tmp_file = tempfile.NamedTemporaryFile(
         prefix=f"{description_name}-",
         suffix=f".{output_format}",
@@ -186,7 +248,17 @@ def _generate_xacro_output_path(
     )
     tmp_file.close()
     try:
-        doc.to_urdf_file(tmp_file.name)
+        # Serialize with protocol prefixes so local asset paths become
+        # absolute file:// URIs (package:// references are kept as-is).
+        urdf_string = doc.to_urdf_string(
+            use_protocols=True,
+            pretty=True,
+        )
+        # Rewrite those file:// URIs to package:// URIs relative to the
+        # package, so the cached URDF is relocatable.
+        urdf_string = _convert_filenames_to_package_uris(module, urdf_string)
+        with open(tmp_file.name, "w", encoding="utf-8") as urdf_file:
+            urdf_file.write(urdf_string)
         os.replace(tmp_file.name, output_path)
     finally:
         if os.path.exists(tmp_file.name):

@@ -3,6 +3,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
+import os
+import tempfile
 import types
 import unittest
 from unittest.mock import patch
@@ -50,9 +52,16 @@ class TestPyBullet(unittest.TestCase):
         _set_search_path_mock,
         _load_urdf_mock,
     ):
+        urdf_file = tempfile.NamedTemporaryFile(
+            mode="w", suffix=".urdf", delete=False
+        )
+        urdf_file.write("<robot name='test'/>")  # no package:// to resolve
+        urdf_file.close()
+        self.addCleanup(os.unlink, urdf_file.name)
         module = types.SimpleNamespace(
-            URDF_PATH="/tmp/test.urdf",
+            URDF_PATH=urdf_file.name,
             PACKAGE_PATH="/tmp/pkg",
+            REPOSITORY_PATH="/tmp/repo",
         )
         import_module_mock.return_value = module
         get_urdf_path_mock.return_value = module.URDF_PATH

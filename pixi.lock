@@ -7324,7 +7324,7 @@ packages:
   - pin>=2.6.10 ; extra == 'opts'
   - pybullet>=3.2.6 ; extra == 'opts'
   - robomeshcat>=1.0.4 ; extra == 'opts'
-  - xacrodoc>=1.1.1 ; extra == 'opts'
+  - xacrodoc>=2.0.0 ; extra == 'opts'
   - yourdfpy>=0.0.56 ; extra == 'opts'
   requires_python: '>=3.10'
 - pypi: https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl
