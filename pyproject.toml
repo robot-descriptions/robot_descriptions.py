@@ -100,6 +100,10 @@ generated-members = [
 #   pixi run test                    # run unit tests
 #   pixi run -e coverage coverage    # run tests with coverage report
 #   pixi run -e loader-mujoco test-loader-mujoco
+#
+# Maintenance scripts:
+#   pixi run archive-repositories            # full-clone repos to archive/
+#   pixi run generate-readme-descriptions    # regenerate README tables
 
 [tool.pixi.workspace]
 channels = ["conda-forge"]
@@ -112,6 +116,7 @@ python = "3.10.*"
 robot_descriptions = { path = ".", editable = true }
 
 [tool.pixi.tasks]
+archive-repositories = "python scripts/archive_repositories.py"
 generate-readme-descriptions = "python scripts/generate_readme_descriptions.py"
 
 # Linting -------------------------------------------------------------------

@@ -13,6 +13,9 @@ All notable changes to this project will be documented in this file.
 - Description: Galaxea R1 Pro (URDF) (thanks to @nickswalker)
 - Description: OpenArm v1 (URDF) (thanks to @nickswalker)
 - Description: OpenArm v2 (URDF) (thanks to @nickswalker)
+- Script: `archive_repositories.py` to clone all repositories to a local `archive/` directory
+- Task: `pixi run archive-repositories`
+- Task: `pixi run generate-readme-descriptions`
 
 ### Fixed
 
