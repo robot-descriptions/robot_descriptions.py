@@ -11,14 +11,10 @@ from os import path as _path
 from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache(
-    "differentiable-robot-model",
+    "epfl-lasa",
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "diff_robot_data", "kuka_iiwa")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "iiwa_description")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "iiwa7.urdf")
-
-# Description-specific paths
-
-URDF_PATH_ALLEGRO: str = _path.join(PACKAGE_PATH, "urdf", "iiwa7_allegro.urdf")
+XACRO_PATH: str = _path.join(PACKAGE_PATH, "urdf", "iiwa7.urdf.xacro")
