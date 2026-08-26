@@ -5,12 +5,12 @@
 
 """Load a robot description in Pinocchio."""
 
-import os
 from importlib import import_module  # type: ignore
 from typing import Optional, Union
 
 import pinocchio as pin
 
+from .._cache import description_commit
 from .._package_dirs import get_package_dirs
 from .._xacro import get_urdf_path
 
@@ -50,11 +50,8 @@ def load_robot_description(
     Returns:
         Robot model for Pinocchio.
     """
-    if commit is not None:  # technical debt, see #31
-        os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
-    module = import_module(f"robot_descriptions.{description_name}")
-    if commit is not None:
-        os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
+    with description_commit(commit):
+        module = import_module(f"robot_descriptions.{description_name}")
     if hasattr(module, "URDF_PATH") or hasattr(module, "XACRO_PATH"):
         urdf_path = get_urdf_path(module, xacro_args=xacro_args)
         robot = pin.RobotWrapper.BuildFromURDF(

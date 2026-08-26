@@ -5,12 +5,12 @@
 
 """Load a robot description in PyBullet."""
 
-import os
 from importlib import import_module  # type: ignore
 from typing import Optional
 
 import pybullet
 
+from .._cache import description_commit
 from .._xacro import get_urdf_path
 
 
@@ -41,11 +41,8 @@ def load_robot_description(
     Returns:
         Integer identifier of the robot in PyBullet.
     """
-    if commit is not None:  # technical debt, see #31
-        os.environ["ROBOT_DESCRIPTION_COMMIT"] = commit
-    module = import_module(f"robot_descriptions.{description_name}")
-    if commit is not None:
-        os.environ.pop("ROBOT_DESCRIPTION_COMMIT", None)
+    with description_commit(commit):
+        module = import_module(f"robot_descriptions.{description_name}")
     if not hasattr(module, "URDF_PATH") and not hasattr(module, "XACRO_PATH"):
         raise ValueError(f"{description_name} is not a URDF/Xacro description")
     urdf_path = get_urdf_path(module, xacro_args=xacro_args)
