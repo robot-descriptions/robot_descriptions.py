@@ -13,6 +13,8 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
+- Loaders: Scope the `commit` argument to the calling thread rather than to the process environment (#31)
+- Loaders: Stop leaking `commit` into the environment when a description fails to import
 - Update repository for the Eve R3 description after the original one vanished
 - security: Bump gitpython to 3.1.57
 

@@ -5,9 +5,11 @@
 
 """Git utility functions to clone model repositories."""
 
+import contextvars
 import os
 import shutil
-from typing import Optional, Union
+from contextlib import contextmanager
+from typing import Iterator, Optional, Union
 
 import tqdm
 from git import (
@@ -19,6 +21,55 @@ from git import (
 )
 
 from ._repositories import REPOSITORIES
+
+_description_commit: contextvars.ContextVar[Optional[str]] = (
+    contextvars.ContextVar("robot_descriptions_commit", default=None)
+)
+
+
+@contextmanager
+def description_commit(commit: Optional[str]) -> Iterator[None]:
+    """Check out descriptions imported in this block at a given commit.
+
+    The commit is carried by a context variable rather than by the process
+    environment, so two threads (or two asyncio tasks) importing different
+    descriptions at different commits do not overwrite each other. Leaving
+    the block always restores the previous value, including when the code
+    inside it raises.
+
+    Args:
+        commit: Commit to check out descriptions at. ``None`` leaves the
+            surrounding scope untouched.
+
+    Yields:
+        Nothing. Use as a context manager.
+    """
+    if commit is None:
+        yield
+        return
+    token = _description_commit.set(commit)
+    try:
+        yield
+    finally:
+        _description_commit.reset(token)
+
+
+def _resolve_commit(commit: Optional[str]) -> Optional[str]:
+    """Pick the commit a description should be checked out at.
+
+    A commit scoped by :func:`description_commit` wins over the one the
+    description module read from the ``ROBOT_DESCRIPTION_COMMIT``
+    environment variable, so an explicit argument to a loader beats an
+    environment variable set process-wide.
+
+    Args:
+        commit: Commit requested by the caller, if any.
+
+    Returns:
+        Commit to check out, or ``None`` to use the pinned one.
+    """
+    scoped_commit = _description_commit.get()
+    return scoped_commit if scoped_commit is not None else commit
 
 
 class CloneProgressBar(RemoteProgress):
@@ -207,6 +258,8 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
         repository = REPOSITORIES[description_name]
     except KeyError as exn:
         raise ImportError(f"Unknown description: {description_name}") from exn
+
+    commit = _resolve_commit(commit)
 
     cache_dir = os.path.expanduser(
         os.environ.get(

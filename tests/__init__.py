@@ -5,6 +5,7 @@
 
 from .test_clone_to_cache import TestCloneToCache
 from .test_clone_to_directory import TestCloneToDirectory
+from .test_description_commit import TestDescriptionCommit
 from .test_descriptions import TestDescriptions
 from .test_loaders import TestLoaders
 from .test_progress_bar import TestProgressBar
@@ -13,6 +14,7 @@ from .test_xacro import TestXacro
 __all__ = [
     "TestCloneToCache",
     "TestCloneToDirectory",
+    "TestDescriptionCommit",
     "TestDescriptions",
     "TestLoaders",
     "TestProgressBar",
