@@ -1,5 +1,6 @@
 .coverage
 .pixi/
 __pycache__
+archive/
 dist/
 htmlcov/
