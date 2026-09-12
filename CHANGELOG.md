@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [3.2.0] - 2026-09-12
+
 ### Added
 
 - Description: Add SRDFs for existing descriptions that already ship one in the same source repository (Bolt, FingerEdu, Gen2, Gen3, Gen3 Lite, HyQ, Jaco2 j2n6s300, Jaco2 j2s6s300, Jaco2 j2s7s300, NEXTAGE, OMX-F, OMY-3M, OMY-F3M, OpenMANIPULATOR-X, Simple Humanoid, Solo, TALOS, WL P311D, WL P311E, xArm6, xArm7) (thanks to @nickswalker)
@@ -691,7 +693,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v3.1.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v3.2.0...HEAD
+[3.2.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.2.0
 [3.1.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.1.0
 [3.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.0.0
 [2.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v2.0.0
