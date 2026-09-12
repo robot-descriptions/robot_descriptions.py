@@ -4,11 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Add SRDFs for existing descriptions that already ship one in the same source repository (Bolt, FingerEdu, Gen2, Gen3, Gen3 Lite, HyQ, Jaco2 j2n6s300, Jaco2 j2s6s300, Jaco2 j2s7s300, NEXTAGE, OMX-F, OMY-3M, OMY-F3M, OpenMANIPULATOR-X, Simple Humanoid, Solo, TALOS, WL P311D, WL P311E, xArm6, xArm7) (thanks to @nickswalker)
+- Description: Galaxea R1 Pro (URDF) (thanks to @nickswalker)
+- Description: OpenArm v1 (URDF) (thanks to @nickswalker)
+- Description: OpenArm v2 (URDF) (thanks to @nickswalker)
+
 ### Changed
 
 - Xacro: Generated URDFs now emit relocatable `package://` asset URIs instead of absolute paths (thanks to @nickswalker)
 - Bump `xacrodoc` dependency to `>=2.0.0`
 
+### Fixed
+
+- Update repository for the Eve R3 description after the original one vanished
+- security: Bump gitpython to 3.1.58
 
 ## [3.1.0] - 2026-07-11
 

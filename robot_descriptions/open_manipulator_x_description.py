@@ -20,3 +20,11 @@ PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "open_manipulator_description")
 URDF_PATH: str = _path.join(
     PACKAGE_PATH, "urdf", "open_manipulator_x", "open_manipulator_x.urdf"
 )
+
+SRDF_PATH: str = _path.join(
+    REPOSITORY_PATH,
+    "open_manipulator_moveit_config",
+    "config",
+    "open_manipulator_x",
+    "open_manipulator_x.srdf",
+)

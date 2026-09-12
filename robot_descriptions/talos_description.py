@@ -19,7 +19,11 @@ PACKAGE_PATH: str = _path.join(REPOSITORY_PATH)
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "talos_full.urdf")
 
+SRDF_PATH: str = _path.join(PACKAGE_PATH, "srdf", "talos.srdf")
+
 # Description-specific paths
+
+SRDF_PATH_PYRENE: str = _path.join(PACKAGE_PATH, "srdf", "pyrene.srdf")
 
 URDF_PATH_V2: str = _path.join(PACKAGE_PATH, "urdf", "talos_full_v2.urdf")
 

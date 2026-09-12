@@ -25,7 +25,7 @@ classifiers = [
     "Topic :: Scientific/Engineering",
 ]
 dependencies = [
-    "GitPython >=3.1.52",
+    "GitPython >=3.1.58",
     "tqdm >=4.64.0",
 ]
 keywords = ["robot", "description", "urdf", "mjcf"]
@@ -107,11 +107,12 @@ platforms = ["linux-64"]
 
 [tool.pixi.dependencies]
 python = "3.10.*"
-gitpython = ">=3.1.52"
-tqdm = ">=4.64.0"
 
 [tool.pixi.pypi-dependencies]
 robot_descriptions = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+generate-readme-descriptions = "python scripts/generate_readme_descriptions.py"
 
 # Linting -------------------------------------------------------------------
 

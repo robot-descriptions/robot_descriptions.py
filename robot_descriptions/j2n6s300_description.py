@@ -18,3 +18,12 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "kinova_description")
 
 XACRO_PATH: str = _path.join(PACKAGE_PATH, "urdf", "j2n6s300_standalone.xacro")
+
+SRDF_PATH: str = _path.join(
+    REPOSITORY_PATH,
+    "kinova_moveit",
+    "robot_configs",
+    "j2n6s300_moveit_config",
+    "config",
+    "j2n6s300.srdf",
+)

@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-"""xArm6 description."""
+"""OpenArm v1 URDF description."""
 
 from os import getenv as _getenv
 from os import path as _path
@@ -11,28 +11,23 @@ from os import path as _path
 from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache(
-    "xarm_ros2",
+    "openarm_description",
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "xarm_description")
+PACKAGE_PATH: str = REPOSITORY_PATH
 
 XACRO_PATH: str = _path.join(
     PACKAGE_PATH,
+    "assets",
+    "robot",
+    "openarm_v1.0",
     "urdf",
-    "xarm_device.urdf.xacro",
+    "openarm_v10.urdf.xacro",
 )
 
-XACRO_ARGS = {
-    "dof": "6",
-    "robot_type": "xarm",
+XACRO_PACKAGE_PATHS: dict[str, str] = {
+    "openarm_description": PACKAGE_PATH,
 }
 
-SRDF_XACRO_PATH: str = _path.join(
-    REPOSITORY_PATH,
-    "xarm_moveit_config",
-    "srdf",
-    "xarm.srdf.xacro",
-)
-
-SRDF_XACRO_ARGS = XACRO_ARGS.copy()
+MESH_PATH: str = _path.join(PACKAGE_PATH, "assets")
