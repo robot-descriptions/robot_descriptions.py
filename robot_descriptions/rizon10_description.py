@@ -3,12 +3,11 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-"""Flexiv Rizon4 description.
+"""Flexiv Rizon10 description.
 
-The default variant is Rizon4. Upstream also supports the Rizon4s,
-Rizon4M, and reflected Rizon4R variants through
-``xacro_args={"robot_type": "Rizon4s"}``, ``xacro_args={"robot_type":
-"Rizon4M"}``, or ``xacro_args={"robot_type": "Rizon4R"}``.
+The default variant is Rizon10. Upstream also supports the Rizon10s and
+reflected Rizon10R variants through ``xacro_args={"robot_type":
+"Rizon10s"}`` or ``xacro_args={"robot_type": "Rizon10R"}``.
 """
 
 from os import getenv as _getenv
@@ -30,5 +29,5 @@ XACRO_PACKAGE_PATHS = {
 }
 
 XACRO_ARGS = {
-    "robot_type": "Rizon4",
+    "robot_type": "Rizon10",
 }
