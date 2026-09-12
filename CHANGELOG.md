@@ -22,6 +22,10 @@ All notable changes to this project will be documented in this file.
 - Update repository for the Eve R3 description after the original one vanished
 - security: Bump gitpython to 3.1.58
 
+### Removed
+
+- Remove source-code encoding lines in source file headers
+
 ## [3.1.0] - 2026-07-11
 
 ### Added
