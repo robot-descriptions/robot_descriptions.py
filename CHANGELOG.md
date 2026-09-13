@@ -19,6 +19,11 @@ All notable changes to this project will be documented in this file.
 - Task: `pixi run archive-repositories`
 - Task: `pixi run generate-readme-descriptions`
 
+### Changed
+
+- Xacro: Generated URDFs now emit relocatable `package://` asset URIs instead of absolute paths (thanks to @nickswalker)
+- Bump `xacrodoc` dependency to `>=2.0.0`
+
 ### Fixed
 
 - Update repository for the Eve R3 description after the original one vanished
