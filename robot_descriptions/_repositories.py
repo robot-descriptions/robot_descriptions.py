@@ -466,4 +466,14 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="97b2174054103f9f7085ec1e3533972e4d0f2a50",
         cache_path="humanoid_description",
     ),
+    "tron1_robot_description": Repository(
+        url="https://github.com/limxdynamics/tron1-robot-description.git",
+        commit="5b97add1f3b461c9ed26ff2ff2f5025cc6ee4316",
+        cache_path="tron1_robot_description",
+    ),
+    "tron2_robot_description": Repository(
+        url="https://github.com/limxdynamics/tron2-robot-description.git",
+        commit="9939c22e69d27653ec0ba8a505859a2903dd1a71",
+        cache_path="tron2_robot_description",
+    ),
 }
