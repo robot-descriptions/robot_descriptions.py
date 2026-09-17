@@ -456,4 +456,14 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="5bb832f72ca665f1236a9d8ed1c3a82f308db489",
         cache_path="xarm_ros2",
     ),
+    "luna_description": Repository(
+        url="https://github.com/limxdynamics/luna-description.git",
+        commit="21608d34151fdedfd3c2b6fc03d1e2ba22e503a1",
+        cache_path="luna_description",
+    ),
+    "humanoid_description": Repository(
+        url="https://github.com/limxdynamics/humanoid-description.git",
+        commit="97b2174054103f9f7085ec1e3533972e4d0f2a50",
+        cache_path="humanoid_description",
+    ),
 }

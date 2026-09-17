@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: LimX Dynamics Luna (URDF, SRDF, MJCF)
+- Description: LimX Dynamics Oli (URDF, SRDF, MJCF)
+
 ## [3.2.0] - 2026-09-12
 
 ### Added
