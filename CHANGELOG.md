@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: LimX Dynamics Luna (URDF, SRDF, MJCF)
+- Description: LimX Dynamics Oli (URDF, SRDF, MJCF)
+- Description: LimX Dynamics TRON1 point-foot and wheeled variants (MJCF)
+- Description: LimX Dynamics TRON2 humanoid variants (MJCF)
+
 ## [3.2.0] - 2026-09-12
 
 ### Added
