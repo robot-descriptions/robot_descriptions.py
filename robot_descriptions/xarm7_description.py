@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
 
@@ -27,3 +26,12 @@ XACRO_ARGS = {
     "dof": "7",
     "robot_type": "xarm",
 }
+
+SRDF_XACRO_PATH: str = _path.join(
+    REPOSITORY_PATH,
+    "xarm_moveit_config",
+    "srdf",
+    "xarm.srdf.xacro",
+)
+
+SRDF_XACRO_ARGS = XACRO_ARGS.copy()

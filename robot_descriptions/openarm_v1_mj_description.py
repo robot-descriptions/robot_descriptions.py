@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2025 Enactic, Inc.
 
-"""OpenArm MJCF description."""
+"""OpenArm 1.0 MJCF description."""
 
 from os import getenv as _getenv
 from os import path as _path

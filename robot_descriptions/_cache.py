@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Stéphane Caron
-# Copyright 2023 Inria
 
 """Git utility functions to clone model repositories."""
 
@@ -15,6 +12,7 @@ import tqdm
 from git import (
     GitCommandError,
     InvalidGitRepositoryError,
+    NoSuchPathError,
     RemoteProgress,
     Repo,
 )
@@ -229,6 +227,22 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
         commit=repository.commit if commit is None else commit,
     )
     return str(clone.working_dir)
+
+
+def get_head_sha(path: str) -> Optional[str]:
+    """Return the HEAD commit SHA of the git repo at ``path``, or ``None``.
+
+    Args:
+        path: Path to a git working directory.
+
+    Returns:
+         HEAD commit SHA of the git repository, or ``None`` when ``path`` is
+         not inside a git repo or has no commits.
+    """
+    try:
+        return Repo(path, search_parent_directories=True).head.commit.hexsha
+    except (InvalidGitRepositoryError, NoSuchPathError, ValueError):
+        return None
 
 
 def clear_cache() -> None:

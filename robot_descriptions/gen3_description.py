@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Stéphane Caron
 
 """Kinova Gen3 description."""
 
@@ -23,3 +21,19 @@ XACRO_PATH: str = _path.join(PACKAGE_PATH, "robots", "gen3.xacro")
 XACRO_ARGS = {
     "dof": "7",
 }
+
+SRDF_PATH_7DOF_ROBOTIQ_2F_85: str = _path.join(
+    REPOSITORY_PATH,
+    "kortex_moveit_config",
+    "kinova_gen3_7dof_robotiq_2f_85_moveit_config",
+    "config",
+    "gen3.srdf",
+)
+
+SRDF_PATH_6DOF_ROBOTIQ_2F_85: str = _path.join(
+    REPOSITORY_PATH,
+    "kortex_moveit_config",
+    "kinova_gen3_6dof_robotiq_2f_85_moveit_config",
+    "config",
+    "gen3.srdf",
+)

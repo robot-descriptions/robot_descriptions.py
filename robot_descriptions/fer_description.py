@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
 
@@ -18,5 +17,7 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "robots", "fer")
 
 XACRO_PATH: str = _path.join(PACKAGE_PATH, "fer.urdf.xacro")
+
+SRDF_XACRO_PATH: str = _path.join(PACKAGE_PATH, "fer.srdf.xacro")
 
 XACRO_ARGS_NO_HAND = {"hand": "false"}

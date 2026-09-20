@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
 
@@ -18,3 +17,12 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "kinova_description")
 
 XACRO_PATH: str = _path.join(PACKAGE_PATH, "urdf", "j2s7s300_standalone.xacro")
+
+SRDF_PATH: str = _path.join(
+    REPOSITORY_PATH,
+    "kinova_moveit",
+    "robot_configs",
+    "j2s7s300_moveit_config",
+    "config",
+    "j2s7s300.srdf",
+)

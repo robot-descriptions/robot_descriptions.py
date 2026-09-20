@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from robot_descriptions._descriptions import DESCRIPTIONS, Description
+from robot_descriptions._descriptions import DESCRIPTIONS, Description, Format
 from robot_descriptions._repositories import REPOSITORIES
 
 PRIMARY_CATEGORY_TAGS = [
@@ -23,11 +23,12 @@ PRIMARY_CATEGORY_TAGS = [
 BEGIN_MARKER = "<!-- BEGIN GENERATED DESCRIPTION TABLES -->"
 END_MARKER = "<!-- END GENERATED DESCRIPTION TABLES -->"
 README_PATH = Path(__file__).resolve().parents[1] / "README.md"
-FREE_LICENSES = {
+OPEN_SOURCE_LICENSES = {
     "Apache-2.0",
     "BSD",
     "BSD-2-Clause",
     "BSD-3-Clause",
+    "BSD-3-Clause-Clear",
     "Clear BSD",
     "GPL-3.0",
     "LGPL-3.0",
@@ -38,7 +39,7 @@ FREE_LICENSES = {
 
 
 def _display_license(license_spdx: str) -> str:
-    if license_spdx in FREE_LICENSES:
+    if license_spdx in OPEN_SOURCE_LICENSES:
         return license_spdx
     return f"{license_spdx} ✖️"
 
@@ -53,7 +54,11 @@ def _format_cell(description: Description, column: str, name: str) -> str:
     if column == "DOF":
         return "" if description.dof is None else str(description.dof)
     if column == "Format":
-        return "MJCF" if description.has_mjcf else "URDF"
+        return ", ".join(
+            description_format.name
+            for description_format in Format
+            if description_format in description.formats
+        )
     if column == "License":
         if not description.license_spdx:
             return ""
