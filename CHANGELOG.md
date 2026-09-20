@@ -4,6 +4,83 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: LimX Dynamics Luna (URDF, SRDF, MJCF)
+- Description: LimX Dynamics Oli (URDF, SRDF, MJCF)
+- Description: LimX Dynamics TRON1 point-foot and wheeled variants (MJCF)
+- Description: LimX Dynamics TRON2 humanoid variants (MJCF)
+- Added EPFL-LASA iiwa7 model with correct joint limits: iiwa7_epfl_description (URDF)
+
+## [3.2.0] - 2026-09-12
+
+### Added
+
+- Description: Add SRDFs for existing descriptions that already ship one in the same source repository (Bolt, FingerEdu, Gen2, Gen3, Gen3 Lite, HyQ, Jaco2 j2n6s300, Jaco2 j2s6s300, Jaco2 j2s7s300, NEXTAGE, OMX-F, OMY-3M, OMY-F3M, OpenMANIPULATOR-X, Simple Humanoid, Solo, TALOS, WL P311D, WL P311E, xArm6, xArm7) (thanks to @nickswalker)
+- Description: Flexiv Enlight-L (URDF) (thanks to @nickswalker)
+- Description: Flexiv MICO-Core (URDF) (thanks to @nickswalker)
+- Description: Flexiv Rizon10 (URDF) (thanks to @nickswalker)
+- Description: Galaxea R1 Pro (URDF) (thanks to @nickswalker)
+- Description: OpenArm v1 (URDF) (thanks to @nickswalker)
+- Description: OpenArm v2 (URDF) (thanks to @nickswalker)
+- Script: `archive_repositories.py` to clone all repositories to a local `archive/` directory
+- Task: `pixi run archive-repositories`
+- Task: `pixi run generate-readme-descriptions`
+
+### Fixed
+
+- Update repository for the Eve R3 description after the original one vanished
+- security: Bump gitpython to 3.1.58
+
+### Removed
+
+- Remove source-code encoding lines in source file headers
+
+## [3.1.0] - 2026-07-11
+
+### Added
+
+- Description: GENE.01 (URDF) (thanks to @traversaro)
+
+### Fixed
+
+- security: Bump gitpython to 3.1.52
+
+## [3.0.0] - 2026-07-11
+
+### Added
+
+- Add support for SRDF descriptions (thanks to @nickswalker)
+- Description: Add SRDFs for Franka Emika robots: Panda, FER, FR3, FR3v2, FR3v2_1 (thanks to @nickswalker)
+- Description: Cookie wheeled biped (URDF)
+- Description: OpenArm v2 (MJCF) (thanks to @kou)
+- Description: RBY1 Mobile Manipulator (MJCF)
+- Description: Stretch 4 (URDF) (thanks to @nickswalker)
+- Description: TIAGo official (URDF) (thanks to @nickswalker)
+- Description: Toyota HSR-B (URDF) (thanks to @nickswalker)
+- Description: Toyota HSR-C (URDF) (thanks to @nickswalker)
+
+### Changed
+
+- CICD: Switch development and CI tooling from tox to pixi
+- Description: Kinova Gen3 lite changed to use xacro (thanks to @nickswalker)
+- Description: Patch Eve R3 URDF negative effort and velocity limit sentinels for loader compatibility (thanks to @nickswalker)
+- Description: TIAGo (URDF) now warns that it is deprecated and will switch to the official model in a later release
+- Description: Updated `franka_description` repository for SRDF Xacro updates
+- Transfer copyright notices to `NOTICE` file
+- Xacro: Support descriptions that resolve resources from multiple ROS packages (thanks to @nickswalker)
+
+### Fixed
+
+- security: Bump gitpython to 3.1.50
+- security: Bump idna from 3.14 to 3.15
+- security: Bump tornado from 6.5.5 to 6.5.7
+
+### Removed
+
+- **Breaking:** Remove deprecated UR3, UR5, and UR10 modules in favor of their official variants
+- Drop the Black formatter in favor of `ruff format`
+
 ## [2.0.0] - 2026-05-05
 
 ### Added
@@ -250,7 +327,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Upkie: Update repository to v2.1.0
+- Upkie: Update repository to v3.0.0
 
 ## [1.12.0] - 2024-08-08
 
@@ -624,39 +701,42 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v2.0.0...HEAD
-[2.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.23.0...v2.0.0
-[1.23.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.22.0...v1.23.0
-[1.22.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.21.0...v1.22.0
-[1.21.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.20.0...v1.21.0
-[1.20.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.19.0...v1.20.0
-[1.19.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.18.0...v1.19.0
-[1.18.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.17.0...v1.18.0
-[1.17.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.16.0...v1.17.0
-[1.16.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.15.0...v1.16.0
-[1.15.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.14.0...v1.15.0
-[1.14.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.13.0...v1.14.0
-[1.13.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.12.0...v1.13.0
-[1.12.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.11.0...v1.12.0
-[1.11.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.10.0...v1.11.0
-[1.10.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.9.0...v1.10.0
-[1.9.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.8.1...v1.9.0
-[1.8.1]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.8.0...v1.8.1
-[1.8.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.7.0...v1.8.0
-[1.7.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.6.0...v1.7.0
-[1.6.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.5.0...v1.6.0
-[1.5.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.4.1...v1.5.0
-[1.4.1]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.4.0...v1.4.1
-[1.4.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.3.1...v1.4.0
-[1.3.1]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.3.0...v1.3.1
-[1.3.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.2.0...v1.3.0
-[1.2.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.6.0...v1.0.0
-[0.6.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.5.0...v0.6.0
-[0.5.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.4.0...v0.5.0
-[0.4.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.3.0...v0.4.0
-[0.3.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.1.1...v0.2.0
-[0.1.1]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v0.1.0...v0.1.1
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v3.2.0...HEAD
+[3.2.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.2.0
+[3.1.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.1.0
+[3.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.0.0
+[2.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v2.0.0
+[1.23.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.23.0
+[1.22.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.22.0
+[1.21.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.21.0
+[1.20.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.20.0
+[1.19.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.19.0
+[1.18.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.18.0
+[1.17.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.17.0
+[1.16.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.16.0
+[1.15.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.15.0
+[1.14.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.14.0
+[1.13.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.13.0
+[1.12.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.12.0
+[1.11.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.11.0
+[1.10.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/1.10.0
+[1.9.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.9.0
+[1.8.1]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.8.1
+[1.8.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.8.0
+[1.7.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.7.0
+[1.6.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.6.0
+[1.5.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.5.0
+[1.4.1]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.4.1
+[1.4.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.4.0
+[1.3.1]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.3.1
+[1.3.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.3.0
+[1.2.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.2.0
+[1.1.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.1.0
+[1.0.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v1.0.0
+[0.6.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v0.6.0
+[0.5.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v0.5.0
+[0.4.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v0.4.0
+[0.3.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v0.3.0
+[0.2.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v0.2.0
+[0.1.1]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v0.1.1
 [0.1.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v0.1.0

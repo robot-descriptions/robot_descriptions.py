@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2026 Woojin Wie
 
 """OMX-F description."""
 
@@ -19,3 +17,11 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "open_manipulator_description")
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "omx_f", "omx_f.urdf")
+
+SRDF_PATH: str = _path.join(
+    REPOSITORY_PATH,
+    "open_manipulator_moveit_config",
+    "config",
+    "omx_f",
+    "omx_f.srdf",
+)

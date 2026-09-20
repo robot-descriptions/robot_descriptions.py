@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Stéphane Caron
 
 """FingerEdu v1 description."""
 
@@ -21,3 +19,5 @@ PACKAGE_PATH: str = _path.join(
 )
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "robots", "finger_edu.urdf")
+
+SRDF_PATH: str = _path.join(PACKAGE_PATH, "srdf", "finger_edu.srdf")

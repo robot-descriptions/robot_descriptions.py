@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2025 Inria
 
 """WL P311D description."""
 
@@ -19,3 +17,5 @@ REPOSITORY_PATH: str = _clone_to_cache(
 PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "wheellegged", "WL_P311D")
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "urdf", "robot.urdf")
+
+SRDF_PATH: str = _path.join(PACKAGE_PATH, "srdf", "robot.srdf")
