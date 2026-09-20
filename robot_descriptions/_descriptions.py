@@ -863,7 +863,7 @@ DESCRIPTIONS: Dict[str, Description] = {
         tags={"arm"},
         robot="iiwa 7",
         maker="KUKA",
-        repository="epfl-lasa",
+        repository="differentiable-robot-model",
         license_spdx="MIT",
         license_file="LICENSE",
     ),
