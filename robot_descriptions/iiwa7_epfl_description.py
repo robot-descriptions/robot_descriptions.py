@@ -14,6 +14,6 @@ REPOSITORY_PATH: str = _clone_to_cache(
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "iiwa7_description")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "iiwa_description")
 
 XACRO_PATH: str = _path.join(PACKAGE_PATH, "urdf", "iiwa7.urdf.xacro")
