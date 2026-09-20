@@ -127,6 +127,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="17b3f92f834746106d6a4befaab8eeab3ac248e6",
         cache_path="edo_sim",  # match package name
     ),
+    "epfl-lasa": Repository(
+        url="https://github.com/epfl-lasa/iiwa_ros.git",
+        commit="9d2b99f1c62e1dd57c9c351958206a7ee5066785",
+        cache_path="iiwa_description",  # match package name
+    ),
     "ergocub-software": Repository(
         url="https://github.com/icub-tech-iit/ergocub-software.git",
         commit="v0.7.7",
@@ -142,6 +147,11 @@ REPOSITORIES: Dict[str, Repository] = {
         "robot-descriptions/fanuc_m710ic_description.git",
         commit="d12af44559cd7e46f7afd513237f159f82f8402e",
         cache_path="fanuc_m710ic_description",
+    ),
+    "fanuc_description": Repository(
+        url="https://github.com/askuric/fanuc_description.git",
+        commit="16ae432ea4601f413a5fab15932f0ec9481863b2",
+        cache_path="fanuc_description",
     ),
     "flexiv_description": Repository(
         url="https://github.com/flexivrobotics/flexiv_description.git",
