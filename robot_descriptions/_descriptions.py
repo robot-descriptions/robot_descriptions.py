@@ -777,6 +777,15 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="MIT",
         license_file="LICENSE",
     ),
+    "iiwa7_epfl_description": Description(
+        formats={Format.URDF},
+        tags={"arm"},
+        robot="iiwa 7",
+        maker="KUKA",
+        repository="epfl-lasa",
+        license_spdx="GPL-3.0",
+        license_file="LICENSE",
+    ),
     "j2n4s300_description": Description(
         formats={Format.URDF},
         tags={"arm"},
