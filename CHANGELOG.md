@@ -33,11 +33,14 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - Update repository for the Eve R3 description after the original one vanished
-- security: Bump gitpython to 3.1.58
 
 ### Removed
 
 - Remove source-code encoding lines in source file headers
+
+### Security
+
+- Bump gitpython to 3.1.58
 
 ## [3.1.0] - 2026-07-11
 
@@ -45,9 +48,9 @@ All notable changes to this project will be documented in this file.
 
 - Description: GENE.01 (URDF) (thanks to @traversaro)
 
-### Fixed
+### Security
 
-- security: Bump gitpython to 3.1.52
+- Bump gitpython to 3.1.52
 
 ## [3.0.0] - 2026-07-11
 
@@ -73,16 +76,16 @@ All notable changes to this project will be documented in this file.
 - Transfer copyright notices to `NOTICE` file
 - Xacro: Support descriptions that resolve resources from multiple ROS packages (thanks to @nickswalker)
 
-### Fixed
-
-- security: Bump gitpython to 3.1.50
-- security: Bump idna from 3.14 to 3.15
-- security: Bump tornado from 6.5.5 to 6.5.7
-
 ### Removed
 
 - **Breaking:** Remove deprecated UR3, UR5, and UR10 modules in favor of their official variants
 - Drop the Black formatter in favor of `ruff format`
+
+### Security
+
+- Bump gitpython to 3.1.50
+- Bump idna from 3.14 to 3.15
+- Bump tornado from 6.5.5 to 6.5.7
 
 ## [2.0.0] - 2026-05-05
 
@@ -109,7 +112,10 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - README: Correct and backfill license metadata (thanks to @nickswalker)
-- security: Bump gitpython to 3.1.49
+
+### Security
+
+- Bump gitpython to 3.1.49
 
 ## [1.23.0] - 2026-03-09
 
