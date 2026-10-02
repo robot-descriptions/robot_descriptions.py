@@ -2115,7 +2115,7 @@ opts = [
 
 [package.metadata]
 requires-dist = [
-    { name = "gitpython", specifier = ">=3.1.58" },
+    { name = "gitpython", specifier = ">=3.1.62" },
     { name = "idyntree", marker = "extra == 'opts'", specifier = ">=8.0.0" },
     { name = "mujoco", marker = "extra == 'opts'", specifier = ">=3.2.0" },
     { name = "pin", marker = "extra == 'opts'", specifier = ">=2.6.10" },
