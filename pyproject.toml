@@ -37,7 +37,7 @@ opts = [
     "pin >=2.6.10",
     "pybullet >=3.2.6",
     "robomeshcat >=1.0.4",
-    "xacrodoc >=1.1.1",
+    "xacrodoc >=2.0.0",
     "yourdfpy >=0.0.56",
 ]
 
@@ -163,7 +163,7 @@ robomeshcat = ">=1.0.4"
 yourdfpy = ">=0.0.56"
 
 [tool.pixi.feature.framework.pypi-dependencies]
-xacrodoc = ">=1.1.1"
+xacrodoc = ">=2.0.0"
 
 [tool.pixi.feature.test.tasks]
 test = "python -m unittest tests"
@@ -186,7 +186,7 @@ coverage = { depends-on = ["_coverage-erase", "_coverage-run", "_coverage-report
 idyntree = ">=8.0.0"
 
 [tool.pixi.feature.loader-idyntree.pypi-dependencies]
-xacrodoc = ">=1.1.1"
+xacrodoc = ">=2.0.0"
 
 [tool.pixi.feature.loader-idyntree.tasks]
 test-loader-idyntree = { cmd = "python -m unittest test_idyntree.py", cwd = "tests/loaders" }
@@ -201,7 +201,7 @@ test-loader-mujoco = { cmd = "python -m unittest test_mujoco.py", cwd = "tests/l
 pinocchio = ">=2.6.14"
 
 [tool.pixi.feature.loader-pinocchio.pypi-dependencies]
-xacrodoc = ">=1.1.1"
+xacrodoc = ">=2.0.0"
 
 [tool.pixi.feature.loader-pinocchio.tasks]
 test-loader-pinocchio = { cmd = "python -m unittest test_pinocchio.py", cwd = "tests/loaders" }
@@ -211,7 +211,7 @@ numpy = ">=1.23.4,<2"
 pybullet = ">=3.2.5"
 
 [tool.pixi.feature.loader-pybullet.pypi-dependencies]
-xacrodoc = ">=1.1.1"
+xacrodoc = ">=2.0.0"
 
 [tool.pixi.feature.loader-pybullet.tasks]
 test-loader-pybullet = { cmd = "python -m unittest test_pybullet.py", cwd = "tests/loaders" }
@@ -221,7 +221,7 @@ pycollada = ">=0.6"
 robomeshcat = ">=1.0.4"
 
 [tool.pixi.feature.loader-robomeshcat.pypi-dependencies]
-xacrodoc = ">=1.1.1"
+xacrodoc = ">=2.0.0"
 
 [tool.pixi.feature.loader-robomeshcat.tasks]
 test-loader-robomeshcat = { cmd = "python -m unittest test_robomeshcat.py", cwd = "tests/loaders" }
@@ -233,7 +233,7 @@ pycollada = ">=0.6"
 yourdfpy = ">=0.0.56"
 
 [tool.pixi.feature.loader-yourdfpy.pypi-dependencies]
-xacrodoc = ">=1.1.1"
+xacrodoc = ">=2.0.0"
 
 [tool.pixi.feature.loader-yourdfpy.tasks]
 test-loader-yourdfpy = { cmd = "python -m unittest test_yourdfpy.py", cwd = "tests/loaders" }

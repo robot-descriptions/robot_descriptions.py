@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file.
 - Description: LimX Dynamics TRON1 point-foot and wheeled variants (MJCF)
 - Description: LimX Dynamics TRON2 humanoid variants (MJCF)
 
+### Changed
+
+- Dependencies: Require xacrodoc >= 2.0.0 and let it resolve relative asset paths in Xacro-generated URDFs (thanks to @nickswalker)
+
 ## [3.2.0] - 2026-09-12
 
 ### Added

@@ -147,35 +147,16 @@ def _generate_xacro_output_path(
         return output_path
 
     xacro_dir = os.path.dirname(xacro_path)
-    # xacro might be using relative paths to refer to other macros.
-    # We'll run from the file dir so we can build, then rewrite any
-    # relative paths that are in the output in the next step.
+    # xacro might be using relative paths to refer to other macros, so we
+    # build from the file dir.
     with _pushd(xacro_dir):
         doc = xacrodoc_module.XacroDoc.from_file(
             xacro_path,
             subargs=xacro_args,
         )
-    # We're resolving relative paths manually here, as xacrodoc
-    # only handles package resolution. xacrodoc has a private
-    # helper which would at least make this cleaner,
-    # _urdf_elements_with_filenames, but we'll wait for a
-    # public interface.
-
-    for tag_name in ("mesh", "material"):
-        for elem in doc.dom.getElementsByTagName(tag_name):
-            if not elem.hasAttribute("filename"):
-                continue
-            filename = elem.getAttribute("filename")
-            rel_path = None
-            if filename.startswith("file://./"):
-                rel_path = filename[len("file://./") :]
-            elif filename.startswith("./"):
-                rel_path = filename[2:]
-            if rel_path is not None:
-                abs_path = os.path.abspath(
-                    os.path.join(module.PACKAGE_PATH, rel_path)
-                )
-                elem.setAttribute("filename", abs_path)
+    # Relative asset paths are relative to the package root. xacrodoc
+    # resolves them against rootdir when writing the URDF.
+    doc.rootdir = module.PACKAGE_PATH
 
     tmp_file = tempfile.NamedTemporaryFile(
         prefix=f"{description_name}-",
