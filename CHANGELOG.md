@@ -12,6 +12,14 @@ All notable changes to this project will be documented in this file.
 - Description: LimX Dynamics TRON2 humanoid variants (MJCF)
 - Description: EPFL-LASA description of the KUKA iiwa7 with correct joint limits (URDF) (thanks to @askuric)
 
+### Changed
+
+- Dependencies: Require xacrodoc >= 2.0.0 and let it resolve relative asset paths in Xacro-generated URDFs (thanks to @nickswalker)
+
+### Security
+
+- Bump GitPython to 3.1.62
+
 ## [3.2.0] - 2026-09-12
 
 ### Added
@@ -37,7 +45,7 @@ All notable changes to this project will be documented in this file.
 
 ### Security
 
-- Bump gitpython to 3.1.58
+- Bump GitPython to 3.1.58
 
 ## [3.1.0] - 2026-07-11
 
@@ -47,7 +55,7 @@ All notable changes to this project will be documented in this file.
 
 ### Security
 
-- Bump gitpython to 3.1.52
+- Bump GitPython to 3.1.52
 
 ## [3.0.0] - 2026-07-11
 
@@ -80,7 +88,7 @@ All notable changes to this project will be documented in this file.
 
 ### Security
 
-- Bump gitpython to 3.1.50
+- Bump GitPython to 3.1.50
 - Bump idna from 3.14 to 3.15
 - Bump tornado from 6.5.5 to 6.5.7
 
@@ -112,7 +120,7 @@ All notable changes to this project will be documented in this file.
 
 ### Security
 
-- Bump gitpython to 3.1.49
+- Bump GitPython to 3.1.49
 
 ## [1.23.0] - 2026-03-09
 
