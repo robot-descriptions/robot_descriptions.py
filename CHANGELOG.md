@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Description: LimX Dynamics Oli (URDF, SRDF, MJCF)
 - Description: LimX Dynamics TRON1 point-foot and wheeled variants (MJCF)
 - Description: LimX Dynamics TRON2 humanoid variants (MJCF)
+- Description: EPFL-LASA description of the KUKA iiwa7 with correct joint limits (URDF) (thanks to @askuric)
 
 ### Changed
 
