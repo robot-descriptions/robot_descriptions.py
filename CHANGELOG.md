@@ -19,6 +19,7 @@ All notable changes to this project will be documented in this file.
 ### Security
 
 - Bump GitPython to 3.1.62
+- Bump tornado (transitive dependency) to 6.5.9 in `uv.lock`
 
 ## [3.2.0] - 2026-09-12
 
