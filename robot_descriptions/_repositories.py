@@ -148,6 +148,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="d12af44559cd7e46f7afd513237f159f82f8402e",
         cache_path="fanuc_m710ic_description",
     ),
+    "fanuc_description": Repository(
+        url="https://github.com/askuric/fanuc_description.git",
+        commit="16ae432ea4601f413a5fab15932f0ec9481863b2",
+        cache_path="fanuc_description",
+    ),
     "flexiv_description": Repository(
         url="https://github.com/flexivrobotics/flexiv_description.git",
         commit="f33331a7f75b9a25ec903674595ddfebbe1fb998",
