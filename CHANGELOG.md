@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Robonine SO-ARM102 follower (URDF)
 - Description: LimX Dynamics Luna (URDF, SRDF, MJCF)
 - Description: LimX Dynamics Oli (URDF, SRDF, MJCF)
 - Description: LimX Dynamics TRON1 point-foot and wheeled variants (MJCF)
