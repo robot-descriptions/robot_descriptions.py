@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+"""Generate the robot descriptions tables in the readme."""
+
 from __future__ import annotations
 
 import argparse
@@ -36,15 +39,44 @@ OPEN_SOURCE_LICENSES = {
     "NASA-1.3",
     "Zlib",
 }
+COMPATIBLE_LICENSES = {
+    "CC-BY-4.0",
+}
 
 
 def _display_license(license_spdx: str) -> str:
-    if license_spdx in OPEN_SOURCE_LICENSES:
+    """Annotate a license's SPDX identifier for the readme.
+
+    Open-source licenses are returned as-is; others get a cross-mark suffix.
+
+    Args:
+        license_spdx: SPDX identifier of the license.
+
+    Returns:
+        The license string to display in the README.
+    """
+    if (
+        license_spdx in OPEN_SOURCE_LICENSES
+        or license_spdx in COMPATIBLE_LICENSES
+    ):
         return license_spdx
     return f"{license_spdx} ✖️"
 
 
 def _format_cell(description: Description, column: str, name: str) -> str:
+    """Render a single table cell for a given description and column.
+
+    Args:
+        description: Metadata of the robot description.
+        column: Name of the table column.
+        name: Package name of the robot description.
+
+    Returns:
+        The rendered Markdown table cell.
+
+    Raises:
+        ValueError: If the column name is unknown.
+    """
     if column == "Name":
         return f"`{name}`"
     if column == "Robot":
@@ -66,13 +98,35 @@ def _format_cell(description: Description, column: str, name: str) -> str:
         if description.license_file and description.repository:
             repository = REPOSITORIES[description.repository]
             repo_url = repository.url.removesuffix(".git")
-            url = f"{repo_url}/blob/{repository.commit}/{description.license_file}"
+            url = (
+                f"{repo_url}/blob/{repository.commit}/"
+                f"{description.license_file}"
+            )
             return f"[{display_license}]({url})"
         return display_license
     raise ValueError(column)
 
 
-def _has_category(description: Description, category_tag: str, name: str) -> bool:
+def _has_category(
+    description: Description, category_tag: str, name: str
+) -> bool:
+    """Check whether a description belongs to a given category.
+
+    A description matches if it carries the category tag itself. It does not
+    match if it carries a different primary category tag; otherwise, it has no
+    category tag at all and a ValueError is raised.
+
+    Args:
+        description: Metadata of the robot description.
+        category_tag: Tag of the category to check against.
+        name: Package name of the robot description.
+
+    Returns:
+        True if the description belongs to the category.
+
+    Raises:
+        ValueError: If the description has no category tag at all.
+    """
     if category_tag in description.tags:
         return True
     if any(tag in description.tags for tag, _ in PRIMARY_CATEGORY_TAGS):
@@ -81,6 +135,11 @@ def _has_category(description: Description, category_tag: str, name: str) -> boo
 
 
 def render_tables() -> str:
+    """Render the Markdown description tables for all categories.
+
+    Returns:
+        The rendered Markdown tables, one section per category.
+    """
     sections: list[str] = []
     for category_tag, category in PRIMARY_CATEGORY_TAGS:
         rows = sorted(
@@ -136,6 +195,14 @@ def render_tables() -> str:
 
 
 def update_readme(readme_text: str) -> str:
+    """Replace the generated tables between the markers in the README text.
+
+    Args:
+        readme_text: Current content of the README.
+
+    Returns:
+        The updated README text.
+    """
     generated = render_tables()
     replacement = f"{BEGIN_MARKER}\n\n{generated}{END_MARKER}"
     start = readme_text.index(BEGIN_MARKER)
@@ -144,6 +211,11 @@ def update_readme(readme_text: str) -> str:
 
 
 def main() -> int:
+    """Regenerate the README tables, or check they are up to date with --check.
+
+    Returns:
+        Process exit code: 0 on success, 1 if the --check fails.
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()

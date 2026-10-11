@@ -6,12 +6,13 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Description: Robonine SO-ARM102 follower (URDF)
+- Consider CC-BY-4.0 as an open-source compatible license when generating readme tables
+- Description: EPFL-LASA description of the KUKA iiwa7 with correct joint limits (URDF) (thanks to @askuric)
 - Description: LimX Dynamics Luna (URDF, SRDF, MJCF)
 - Description: LimX Dynamics Oli (URDF, SRDF, MJCF)
 - Description: LimX Dynamics TRON1 point-foot and wheeled variants (MJCF)
 - Description: LimX Dynamics TRON2 humanoid variants (MJCF)
-- Description: EPFL-LASA description of the KUKA iiwa7 with correct joint limits (URDF) (thanks to @askuric)
+- Description: Robonine SO-ARM102 follower (URDF) (thanks to @brnikita)
 
 ### Changed
 
