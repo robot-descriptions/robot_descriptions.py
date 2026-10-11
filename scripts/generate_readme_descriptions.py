@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+"""Generate the robot descriptions tables in the readme."""
+
 from __future__ import annotations
 
 import argparse
@@ -36,10 +39,16 @@ OPEN_SOURCE_LICENSES = {
     "NASA-1.3",
     "Zlib",
 }
+COMPATIBLE_LICENSES = {
+    "CC-BY-4.0",
+}
 
 
 def _display_license(license_spdx: str) -> str:
-    if license_spdx in OPEN_SOURCE_LICENSES:
+    if (
+        license_spdx in OPEN_SOURCE_LICENSES
+        or license_spdx in COMPATIBLE_LICENSES
+    ):
         return license_spdx
     return f"{license_spdx} ✖️"
 
@@ -66,13 +75,18 @@ def _format_cell(description: Description, column: str, name: str) -> str:
         if description.license_file and description.repository:
             repository = REPOSITORIES[description.repository]
             repo_url = repository.url.removesuffix(".git")
-            url = f"{repo_url}/blob/{repository.commit}/{description.license_file}"
+            url = (
+                f"{repo_url}/blob/{repository.commit}/"
+                f"{description.license_file}"
+            )
             return f"[{display_license}]({url})"
         return display_license
     raise ValueError(column)
 
 
-def _has_category(description: Description, category_tag: str, name: str) -> bool:
+def _has_category(
+    description: Description, category_tag: str, name: str
+) -> bool:
     if category_tag in description.tags:
         return True
     if any(tag in description.tags for tag, _ in PRIMARY_CATEGORY_TAGS):
