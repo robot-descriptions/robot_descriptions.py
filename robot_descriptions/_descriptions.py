@@ -1449,6 +1449,16 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="GPL-3.0",
         license_file="LICENSE",
     ),
+    "so_arm102_description": Description(
+        formats={Format.URDF},
+        tags={"arm"},
+        robot="SO-ARM102",
+        maker="Robonine",
+        dof=6,
+        repository="SO-ARM-102",
+        license_spdx="CC-BY-4.0",
+        license_file="DOCS-LICENSE.txt",
+    ),
     "solo_description": Description(
         formats={Format.URDF, Format.SRDF},
         tags={"quadruped"},

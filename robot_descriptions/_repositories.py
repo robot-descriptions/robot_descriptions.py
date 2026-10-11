@@ -371,6 +371,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="4e859aed7df3c29954c9cca2a1ecb94069f7cfce",
         cache_path="simple_humanoid_description",
     ),
+    "SO-ARM-102": Repository(
+        url="https://github.com/roboninecom/SO-ARM-102.git",
+        commit="a62866a6d65efa4be7fd421e318ce8e649ac806a",
+        cache_path="so_arm_102",
+    ),
     "SO-ARM100": Repository(
         url="https://github.com/TheRobotStudio/SO-ARM100.git",
         commit="63eede5a636e548eb8f2854e558bd343c21db9f7",
