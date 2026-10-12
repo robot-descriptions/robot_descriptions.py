@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 
 import unittest
@@ -9,15 +7,11 @@ from robot_descriptions.loaders.mujoco import load_robot_description
 
 
 class TestMuJoCo(unittest.TestCase):
-
-    """
-    Check that all MJCF descriptions are loaded properly in MuJoCo.
-    """
+    """Check that all MJCF descriptions load properly in MuJoCo."""
 
     @staticmethod
     def get_test_for_description(description: str):
-        """
-        Get test function for a given description.
+        """Get test function for a given description.
 
         Args:
             description: Name of the description.

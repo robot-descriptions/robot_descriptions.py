@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
+
+"""Test fixture to check all robot descriptions."""
 
 import os
 import sys
@@ -17,6 +17,7 @@ class TestDescriptions(unittest.TestCase):
     """Test fixture for all robot descriptions."""
 
     def test_descriptions_are_sorted(self):
+        """Check that the DESCRIPTIONS dictionary keys are sorted."""
         self.assertEqual(list(DESCRIPTIONS), sorted(DESCRIPTIONS))
 
     def test_all_descriptions(self):
@@ -48,8 +49,7 @@ class TestDescriptions(unittest.TestCase):
                 urdf_path = get_urdf_path(description)
                 self.assertTrue(
                     os.path.exists(urdf_path),
-                    f"URDF path {urdf_path} does not exist "
-                    f"in {description}",
+                    f"URDF path {urdf_path} does not exist in {description}",
                 )
             if desc.has_srdf:
                 self.assertTrue(
@@ -59,8 +59,7 @@ class TestDescriptions(unittest.TestCase):
                 srdf_path = get_srdf_path(description)
                 self.assertTrue(
                     os.path.exists(srdf_path),
-                    f"SRDF path {srdf_path} does not exist "
-                    f"in {description}",
+                    f"SRDF path {srdf_path} does not exist in {description}",
                 )
 
             if desc.license_file is not None:
@@ -74,6 +73,7 @@ class TestDescriptions(unittest.TestCase):
                 )
 
     def test_invalid_description_commit(self):
+        """Check raised exception on non-existent git repository commit."""
         invalid_commit = "foobar"
         os.environ["ROBOT_DESCRIPTION_COMMIT"] = invalid_commit
         self.assertEqual(os.getenv("ROBOT_DESCRIPTION_COMMIT"), invalid_commit)

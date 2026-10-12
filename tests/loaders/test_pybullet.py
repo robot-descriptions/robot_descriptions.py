@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 
 import types
@@ -9,37 +7,33 @@ from unittest.mock import patch
 import pybullet
 
 from robot_descriptions._descriptions import DESCRIPTIONS
-
 from robot_descriptions.loaders.pybullet import load_robot_description
 
 
 class TestPyBullet(unittest.TestCase):
-
-    """
-    Check that all descriptions are loaded properly in PyBullet.
+    """Check that all descriptions are loaded properly in PyBullet.
     """
 
     def setUp(self):
-        """
-        Start PyBullet simulation.
+        """Start PyBullet simulation.
         """
         pybullet.connect(pybullet.DIRECT)
 
     def tearDown(self):
-        """
-        Stop PyBullet simulation.
+        """Stop PyBullet simulation.
         """
         pybullet.disconnect()
 
     def test_value_error_when_no_urdf(self):
-        """
-        Test exception raised when a description has no URDF_PATH.
+        """Test exception raised when a description has no URDF_PATH.
         """
         with self.assertRaises(ValueError):
             load_robot_description("_empty_description")
 
     @patch("robot_descriptions.loaders.pybullet.pybullet.loadURDF")
-    @patch("robot_descriptions.loaders.pybullet.pybullet.setAdditionalSearchPath")
+    @patch(
+        "robot_descriptions.loaders.pybullet.pybullet.setAdditionalSearchPath"
+    )
     @patch("robot_descriptions.loaders.pybullet.get_urdf_path")
     @patch("robot_descriptions.loaders.pybullet.import_module")
     def test_forwards_xacro_args(
@@ -56,7 +50,9 @@ class TestPyBullet(unittest.TestCase):
         import_module_mock.return_value = module
         get_urdf_path_mock.return_value = module.URDF_PATH
 
-        load_robot_description("test_description", xacro_args={"hand": "false"})
+        load_robot_description(
+            "test_description", xacro_args={"hand": "false"}
+        )
 
         get_urdf_path_mock.assert_called_once_with(
             module, xacro_args={"hand": "false"}
@@ -64,8 +60,7 @@ class TestPyBullet(unittest.TestCase):
 
     @staticmethod
     def get_test_for_description(description: str):
-        """
-        Get test function for a given description.
+        """Get test function for a given description.
 
         Args:
             description: Name of the description.

@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
+
+"""Test fixtures for the robot_descriptions library."""
 
 from .test_clone_to_cache import TestCloneToCache
 from .test_clone_to_directory import TestCloneToDirectory
