@@ -429,10 +429,10 @@ If you use this project in your work, please cite as follows:
 ```bibtex
 @software{robot_descriptions_py,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Zamora, Jonathan and Castro, Sebastian and Tao, Haixuan Xavier and Yu, Justin and Jallet, Wilson and Zhang, Yutong and Walker, Nick and Bragin, Nikita and Wie, Woojin},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Zamora, Jonathan and Castro, Sebastian and Tao, Haixuan Xavier and Yu, Justin and Jallet, Wilson and Zhang, Yutong and Walker, Nick and Bragin, Nikita and Wie, Woojin and Skuric, Antun},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {3.2.0},
+  version = {3.3.0},
   year = {2026}
 }
 ```
