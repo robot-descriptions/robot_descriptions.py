@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
 # dependencies = ["pin", "robot_descriptions"]
 # ///
 
-"""
-Show a robot description selected from the command line in Candlewick.
+"""Show a robot description selected from the command line in Candlewick.
 
 This example requires Pinocchio, installed by e.g. `conda install pinocchio`,
 and Candlewick: https://github.com/Simple-Robotics/candlewick.

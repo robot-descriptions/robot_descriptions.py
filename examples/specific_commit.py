@@ -1,12 +1,11 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
 # dependencies = ["mujoco", "robot_descriptions"]
 # ///
 
-"""
+"""Load a specific commit of a robot description.
+
 We can load specific commit to pin the version of any robot description using
 the `commit` keyword argument. In this example, we load a Universal Robots UR5e
 from a specific commit of the MuJoCo Menagerie repository that distributes it.

@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
 # dependencies = ["yourdfpy", "robot_descriptions"]
 # ///
 
-"""
-Load a robot description selected from the command line in yourdfpy.
+"""Load a robot description selected from the command line in yourdfpy.
 
 This example requires yourdfpy, which is installed by `pip install yourdfpy`.
 """

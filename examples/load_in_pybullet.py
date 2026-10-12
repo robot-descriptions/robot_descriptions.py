@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
 # dependencies = ["pybullet", "robot_descriptions"]
 # ///
 
-"""
-Load a robot description selected from the command line in PyBullet.
+"""Load a robot description selected from the command line in PyBullet.
 
 This example requires PyBullet, which is installed by `pip install pybullet`.
 """

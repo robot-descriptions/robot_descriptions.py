@@ -1,14 +1,10 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
 # dependencies = ["meshcat", "pin", "robot_descriptions"]
 # ///
 
-"""
-Show all humanoid robot descriptions using Pinocchio and MeshCat.
-"""
+"""Show all humanoid descriptions using Pinocchio and MeshCat."""
 
 try:
     import pinocchio as pin
