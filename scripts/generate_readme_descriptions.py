@@ -226,6 +226,9 @@ def main() -> int:
         return 0 if updated == readme_text else 1
 
     README_PATH.write_text(updated)
+    print(
+        f"Updated README tables with {len(DESCRIPTIONS)} robot descriptions."
+    )
     return 0
 
 
