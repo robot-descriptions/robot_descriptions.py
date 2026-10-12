@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
 # dependencies = ["mujoco", "robot_descriptions"]
 # ///
 
-"""
-Load a robot description selected from the command line in MuJoCo.
+"""Load a robot description selected from the command line in MuJoCo.
 
 This example requires MuJoCo, which is installed by `pip install mujoco`.
 """

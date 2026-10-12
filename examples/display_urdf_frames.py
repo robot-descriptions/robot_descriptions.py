@@ -1,13 +1,11 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
-# dependencies = ["meshcat", "meshcat-shapes", "numpy", "pin", "robot_descriptions"]
+# dependencies = ["meshcat", "meshcat-shapes", "numpy", "pin",
+# "robot_descriptions"]
 # ///
 
-"""
-Display frames from a robot description.
+"""Display frames from a robot description.
 
 This example relies on the following dependencies:
 
@@ -17,7 +15,6 @@ This example relies on the following dependencies:
 """
 
 import argparse
-import time
 
 import meshcat_shapes
 import numpy as np

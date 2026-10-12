@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
 # dependencies = ["idyntree", "robot_descriptions"]
 # ///
 
-"""
-Load a robot description selected from the command line in iDynTree.
+"""Load a robot description selected from the command line in iDynTree.
 
 This example requires iDynTree, which can be installed by
 `conda install -c conda-forge idyntree`.

@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
 # dependencies = ["pin", "robot_descriptions"]
 # ///
 
-"""
-Load a robot description selected from the command line in Pinocchio.
+"""Load a robot description selected from the command line in Pinocchio.
 
 This example requires Pinocchio, installed by e.g. `conda install pinocchio`.
 """

@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 # /// script
 # dependencies = ["pybullet", "robot_descriptions"]
 # ///
 
-"""
-Load a robot description in a PyBullet physics simulation.
+"""Load a robot description in a PyBullet physics simulation.
 
 This example requires PyBullet, which can be installed with conda or pip.
 """
@@ -17,6 +14,7 @@ import time
 
 import pybullet
 import pybullet_data
+
 from robot_descriptions.loaders.pybullet import load_robot_description
 
 if __name__ == "__main__":
