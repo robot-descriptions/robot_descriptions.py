@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 
 import types
@@ -11,9 +9,7 @@ from robot_descriptions.loaders.robomeshcat import load_robot_description
 
 
 class TestRoboMeshCat(unittest.TestCase):
-
-    """
-    Check that all descriptions are loaded properly in RoboMeshCat.
+    """Check that all descriptions are loaded properly in RoboMeshCat.
     """
 
     @patch("robot_descriptions.loaders.robomeshcat.robomeshcat.Robot")
@@ -35,7 +31,9 @@ class TestRoboMeshCat(unittest.TestCase):
         get_urdf_path_mock.return_value = module.URDF_PATH
         get_package_dirs_mock.return_value = [module.PACKAGE_PATH]
 
-        load_robot_description("test_description", xacro_args={"hand": "false"})
+        load_robot_description(
+            "test_description", xacro_args={"hand": "false"}
+        )
 
         get_urdf_path_mock.assert_called_once_with(
             module, xacro_args={"hand": "false"}
@@ -43,8 +41,7 @@ class TestRoboMeshCat(unittest.TestCase):
 
     @staticmethod
     def get_test_for_description(description: str):
-        """
-        Get test function for a given description.
+        """Get test function for a given description.
 
         Args:
             description: Name of the description.

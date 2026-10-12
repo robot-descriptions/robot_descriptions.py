@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 
 import os
@@ -10,9 +8,9 @@ from unittest.mock import ANY, MagicMock, patch
 import git
 
 from robot_descriptions._cache import (
+    _is_hexsha,
     _tag_refspec_for_revision,
     clone_to_directory,
-    _is_hexsha,
 )
 from robot_descriptions._repositories import REPOSITORIES
 
@@ -27,8 +25,8 @@ class TestCloneToDirectory(unittest.TestCase):
     def test_tag_refspec_for_revision_formats_tag_refspec(self):
         revision = "v1.2.3"
         assert (
-                _tag_refspec_for_revision(revision)
-                == f"refs/tags/{revision}:refs/tags/{revision}"
+            _tag_refspec_for_revision(revision)
+            == f"refs/tags/{revision}:refs/tags/{revision}"
         )
 
     def test_fresh_clone_with_tag_uses_tag_refspec(self):
@@ -42,12 +40,17 @@ class TestCloneToDirectory(unittest.TestCase):
             mock_repo.create_remote.return_value = mock_origin
 
             # Bypass the "already at requested revision" short-circuit.
-            with patch("robot_descriptions._cache.Repo") as MockRepo, patch(
-                "robot_descriptions._cache._is_head_at_revision",
-                return_value=False,
+            with (
+                patch("robot_descriptions._cache.Repo") as MockRepo,
+                patch(
+                    "robot_descriptions._cache._is_head_at_revision",
+                    return_value=False,
+                ),
             ):
                 MockRepo.init.return_value = mock_repo
-                result = clone_to_directory(repo_url, clone_dir, commit=target_tag)
+                result = clone_to_directory(
+                    repo_url, clone_dir, commit=target_tag
+                )
 
             mock_repo.create_remote.assert_called_once_with("origin", repo_url)
             mock_origin.fetch.assert_called_once_with(
@@ -59,7 +62,7 @@ class TestCloneToDirectory(unittest.TestCase):
             self.assertIs(result, mock_repo)
 
     def test_non_tag_revision_falls_back_to_direct_fetch(self):
-        """If tag refspec is missing remotely, fallback fetches the revision directly."""
+        """Fetch revision directly if tag refspec is missing remotely."""
         with tempfile.TemporaryDirectory() as tmp_dir:
             repo_url = "https://example.com/repo.git"
             clone_dir = os.path.join(tmp_dir, "clone")
@@ -72,19 +75,23 @@ class TestCloneToDirectory(unittest.TestCase):
                     "git fetch",
                     128,
                     stderr=(
-                        "fatal: couldn't find remote ref "
-                        f"refs/tags/{revision}"
+                        f"fatal: couldn't find remote ref refs/tags/{revision}"
                     ),
                 ),
                 None,
             ]
 
-            with patch("robot_descriptions._cache.Repo") as MockRepo, patch(
-                "robot_descriptions._cache._is_head_at_revision",
-                return_value=False,
+            with (
+                patch("robot_descriptions._cache.Repo") as MockRepo,
+                patch(
+                    "robot_descriptions._cache._is_head_at_revision",
+                    return_value=False,
+                ),
             ):
                 MockRepo.init.return_value = mock_repo
-                result = clone_to_directory(repo_url, clone_dir, commit=revision)
+                result = clone_to_directory(
+                    repo_url, clone_dir, commit=revision
+                )
 
             self.assertEqual(mock_origin.fetch.call_count, 2)
             mock_origin.fetch.assert_any_call(
@@ -106,22 +113,29 @@ class TestCloneToDirectory(unittest.TestCase):
             mock_origin = MagicMock()
             mock_repo.create_remote.return_value = mock_origin
 
-            with patch("robot_descriptions._cache.Repo") as MockRepo, patch(
-                "robot_descriptions._cache._is_head_at_revision",
-                return_value=False,
+            with (
+                patch("robot_descriptions._cache.Repo") as MockRepo,
+                patch(
+                    "robot_descriptions._cache._is_head_at_revision",
+                    return_value=False,
+                ),
             ):
                 MockRepo.init.return_value = mock_repo
-                result = clone_to_directory(repo_url, clone_dir, commit=target_commit)
+                result = clone_to_directory(
+                    repo_url, clone_dir, commit=target_commit
+                )
 
             mock_repo.create_remote.assert_called_once_with("origin", repo_url)
             mock_origin.fetch.assert_called_once_with(
-                target_commit, depth=1, progress=ANY  # SHA passed directly
+                target_commit,
+                depth=1,
+                progress=ANY,  # SHA passed directly
             )
             mock_repo.git.checkout.assert_called_once_with(target_commit)
             self.assertIs(result, mock_repo)
 
     def test_existing_repo_fetches_missing_commit(self):
-        """If checkout fails, the commit is fetched shallowly before retrying."""
+        """If checkout fails, commit is fetched shallowly before retrying."""
         with tempfile.TemporaryDirectory() as tmp_dir:
             repo_url = "https://example.com/repo.git"
             clone_dir = os.path.join(tmp_dir, "clone")
@@ -135,31 +149,45 @@ class TestCloneToDirectory(unittest.TestCase):
                 None,
             ]
 
-            with patch(
-                "robot_descriptions._cache.Repo", return_value=mock_repo
-            ), patch(
-                "robot_descriptions._cache._is_head_at_revision",
-                return_value=False,
+            with (
+                patch(
+                    "robot_descriptions._cache.Repo", return_value=mock_repo
+                ),
+                patch(
+                    "robot_descriptions._cache._is_head_at_revision",
+                    return_value=False,
+                ),
             ):
-                result = clone_to_directory(repo_url, clone_dir, commit=target_commit)
+                result = clone_to_directory(
+                    repo_url, clone_dir, commit=target_commit
+                )
 
             mock_repo.remote.assert_called_with("origin")
-            mock_origin.fetch.assert_called_once_with(target_commit, depth=1)  # SHA passed directly
+            mock_origin.fetch.assert_called_once_with(
+                target_commit, depth=1
+            )  # SHA passed directly
             self.assertEqual(mock_repo.git.checkout.call_count, 2)
             self.assertIs(result, mock_repo)
 
     def test_existing_repo_at_requested_revision_skips_checkout(self):
-        """When HEAD already matches the revision, checkout and fetch are skipped."""
+        """Skip checkout and fetch when HEAD already matches the revision."""
         with tempfile.TemporaryDirectory() as tmp_dir:
             repo_url = "https://example.com/repo.git"
             clone_dir = os.path.join(tmp_dir, "clone")
             os.makedirs(clone_dir)
             target_commit = "deadbeef" * 5
             mock_repo = MagicMock()
-            mock_repo.git.rev_parse.side_effect = [target_commit, target_commit]
+            mock_repo.git.rev_parse.side_effect = [
+                target_commit,
+                target_commit,
+            ]
 
-            with patch("robot_descriptions._cache.Repo", return_value=mock_repo):
-                result = clone_to_directory(repo_url, clone_dir, commit=target_commit)
+            with patch(
+                "robot_descriptions._cache.Repo", return_value=mock_repo
+            ):
+                result = clone_to_directory(
+                    repo_url, clone_dir, commit=target_commit
+                )
 
             mock_repo.git.checkout.assert_not_called()
             mock_repo.remote.assert_not_called()
@@ -191,7 +219,7 @@ class TestCloneToDirectory(unittest.TestCase):
             self.assertTrue(clone_1.working_dir, clone_2.working_dir)
 
     def test_clone_to_directory_with_different_commit(self):
-        """Cloning with pinned commits can move an existing clone to a new commit."""
+        """Cloning with pinned commit can move local clone to a new commit."""
 
         def get_commit(repo):
             return repo.git.rev_parse("HEAD")
@@ -224,7 +252,6 @@ class TestCloneToDirectory(unittest.TestCase):
             repo_3 = clone_to_directory(source_repo_dir, clone_dir, commit=c1)
             self.assertFalse(repo_3.bare)
             self.assertEqual(get_commit(repo_3), c1)
-
 
     def test_clone_to_invalid_directory(self):
         """Cloning to an empty (invalid) git repo recreates it."""

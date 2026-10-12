@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
+
+"""Unit tests for the Yourdfpy loader."""
 
 import types
 import unittest
@@ -11,10 +11,7 @@ from robot_descriptions.loaders.yourdfpy import load_robot_description
 
 
 class TestYourdfpy(unittest.TestCase):
-
-    """
-    Check that all URDF descriptions are loaded properly in yourdfpy.
-    """
+    """Check that all URDF descriptions are loaded properly in yourdfpy."""
 
     @patch("robot_descriptions.loaders.yourdfpy.yourdfpy.URDF.load")
     @patch("robot_descriptions.loaders.yourdfpy.get_urdf_path")
@@ -25,6 +22,7 @@ class TestYourdfpy(unittest.TestCase):
         get_urdf_path_mock,
         _urdf_load_mock,
     ):
+        """Check that Xacro arguments are forwarded."""
         module = types.SimpleNamespace(
             URDF_PATH="/tmp/test.urdf",
             PACKAGE_PATH="/tmp/pkg",
@@ -32,7 +30,9 @@ class TestYourdfpy(unittest.TestCase):
         import_module_mock.return_value = module
         get_urdf_path_mock.return_value = module.URDF_PATH
 
-        load_robot_description("test_description", xacro_args={"hand": "false"})
+        load_robot_description(
+            "test_description", xacro_args={"hand": "false"}
+        )
 
         get_urdf_path_mock.assert_called_once_with(
             module, xacro_args={"hand": "false"}
@@ -40,8 +40,7 @@ class TestYourdfpy(unittest.TestCase):
 
     @staticmethod
     def get_test_for_description(description: str):
-        """
-        Get test function for a given description.
+        """Get test function for a given description.
 
         Args:
             description: Name of the description.

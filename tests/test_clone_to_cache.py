@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 
 import os
@@ -8,29 +6,26 @@ import unittest
 
 import git
 
-from robot_descriptions._cache import clone_to_cache, clear_cache
+from robot_descriptions._cache import clear_cache, clone_to_cache
 from robot_descriptions._repositories import REPOSITORIES
 
 
 class TestCloneToCache(unittest.TestCase):
     def test_clone_to_cache_found(self):
-        """
-        Test clone_to_cache on a valid repository.
+        """Test clone_to_cache on a valid repository.
         """
         working_dir_1 = clone_to_cache("upkie_description")
         working_dir_2 = clone_to_cache("upkie_description")
         self.assertEqual(working_dir_1, working_dir_2)
 
     def test_clone_to_cache_not_found(self):
-        """
-        Test clone_to_cache on an invalid repository.
+        """Test clone_to_cache on an invalid repository.
         """
         with self.assertRaises(ImportError):
             clone_to_cache("foo")
 
     def test_clone_to_cache_right_commit(self):
-        """
-        Check that clone_to_cache clones the repository at the right commit.
+        """Check that clone_to_cache clones the repository at the right commit.
         """
         description_name = "simple_humanoid_description"
         repo = git.Repo(clone_to_cache(description_name))
@@ -38,8 +33,7 @@ class TestCloneToCache(unittest.TestCase):
         self.assertEqual(commit, REPOSITORIES[description_name].commit)
 
     def test_cache_creation(self):
-        """
-        Check that clone_to_cache creates directory if needed.
+        """Check that clone_to_cache creates directory if needed.
         """
         description_name = "simple_humanoid_description"
         repo = REPOSITORIES[description_name]

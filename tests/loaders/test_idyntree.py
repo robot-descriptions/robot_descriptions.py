@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 
 import types
@@ -7,14 +5,11 @@ import unittest
 from unittest.mock import patch
 
 from robot_descriptions._descriptions import DESCRIPTIONS
-
 from robot_descriptions.loaders.idyntree import load_robot_description
 
-class TestiDynTree(unittest.TestCase):
 
-    """
-    Check that all descriptions are loaded properly in iDynTree.
-    """
+class TestiDynTree(unittest.TestCase):
+    """Check that all descriptions load properly in iDynTree."""
 
     @patch("robot_descriptions.loaders.idyntree.idyn.ModelLoader")
     @patch("robot_descriptions.loaders.idyntree.get_urdf_path")
@@ -36,7 +31,9 @@ class TestiDynTree(unittest.TestCase):
         model_loader.loadModelFromFile.return_value = True
         model_loader.model.return_value.copy.return_value = object()
 
-        load_robot_description("test_description", xacro_args={"hand": "false"})
+        load_robot_description(
+            "test_description", xacro_args={"hand": "false"}
+        )
 
         get_urdf_path_mock.assert_called_once_with(
             module, xacro_args={"hand": "false"}
@@ -44,8 +41,7 @@ class TestiDynTree(unittest.TestCase):
 
     @staticmethod
     def get_test_for_description(description: str):
-        """
-        Get test function for a given description.
+        """Get test function for a given description.
 
         Args:
             description: Name of the description.

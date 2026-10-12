@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#
 # SPDX-License-Identifier: Apache-2.0
 
 import unittest
@@ -27,9 +25,7 @@ from robot_descriptions.loaders.yourdfpy import (
 
 
 class TestLoaders(unittest.TestCase):
-    """
-    Test loaders.
-    """
+    """Test loaders."""
 
     upkie_description_commit = "98502d5b175c3d6b60b3cf475b7eeef9fd290c43"
 
