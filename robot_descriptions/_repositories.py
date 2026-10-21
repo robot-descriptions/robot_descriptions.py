@@ -188,7 +188,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "i2rt": Repository(
         url="https://github.com/robot-descriptions/i2rt.git",
-        commit="7809b5b17227162d265f922e2e10598c0e214322",
+        commit="120c3c81400171174604e503943f8d1ebc891058",
         cache_path="i2rt",
     ),
     "icub-models": Repository(

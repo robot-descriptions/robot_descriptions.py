@@ -12,6 +12,8 @@ REPOSITORY_PATH: str = _clone_to_cache(
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "i2rt", "robot_models", "yam")
+PACKAGE_PATH: str = _path.join(
+    REPOSITORY_PATH, "i2rt", "robot_models", "arm", "yam", "v1"
+)
 
 URDF_PATH: str = _path.join(PACKAGE_PATH, "yam.urdf")
