@@ -4,10 +4,18 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Big YAM (URDF, MJCF) (thanks to @nickswalker)
+- Description: YAM Pro (URDF, MJCF) (thanks to @nickswalker)
+- Description: YAM Ultra v1 (URDF, MJCF) (thanks to @nickswalker)
+- Description: YAM Ultra v2 (URDF, MJCF) (thanks to @nickswalker)
+
 ### Changed
 
 - Update repository commit of Flexiv descriptions
 - Update repository commit of Franka descriptions
+- Update repository commit of I2RT description to v1.3.6 and URDF path of YAM description
 - Update repository commit of OpenArm descriptions (URDF and MJCF)
 - Update repository commit of PiPER description
 - Update repository commit of Robotiq 2F-85 v4 description
