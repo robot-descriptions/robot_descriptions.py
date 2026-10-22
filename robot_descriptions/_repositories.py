@@ -187,7 +187,7 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="hsrb_common",
     ),
     "i2rt": Repository(
-        url="https://github.com/robot-descriptions/i2rt.git",
+        url="https://github.com/i2rt-robotics/i2rt",
         commit="120c3c81400171174604e503943f8d1ebc891058",
         cache_path="i2rt",
     ),
