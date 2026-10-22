@@ -13,7 +13,13 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Update repository commit of Flexiv descriptions
+- Update repository commit of Franka descriptions
 - Update repository commit of I2RT description to v1.3.6 and URDF path of YAM description
+- Update repository commit of OpenArm descriptions (URDF and MJCF)
+- Update repository commit of PiPER description
+- Update repository commit of Robotiq 2F-85 v4 description
+- Update repository commit of xArm descriptions
 
 ## [3.3.0] - 2026-10-12
 

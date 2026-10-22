@@ -148,12 +148,12 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "flexiv_description": Repository(
         url="https://github.com/flexivrobotics/flexiv_description.git",
-        commit="f33331a7f75b9a25ec903674595ddfebbe1fb998",
+        commit="d0ece5a5d2c5e434b57e21506d4c0e8659438991",
         cache_path="flexiv_description",
     ),
     "franka_description": Repository(
         url="https://github.com/frankarobotics/franka_description.git",
-        commit="72baf5bf4e88eaec27f0eb61be1b20a001abf2ab",
+        commit="7aeeddc449edf8d62b594f9e36a81da53e7796f9",
         cache_path="franka_description",
     ),
     "GalaxeaManipSim": Repository(
@@ -266,12 +266,12 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "openarm_description": Repository(
         url="https://github.com/enactic/openarm_description.git",
-        commit="1daa95b71565a6696242013a42c4d3af689cbdb3",
+        commit="206eb8a4cf2e5e564536b4f5366ef369843a4aa7",
         cache_path="openarm_description",
     ),
     "openarm_mujoco": Repository(
         url="https://github.com/enactic/openarm_mujoco.git",
-        commit="5c6e1b4c71cbe27c6a4b58c7f198f080449e1b9c",
+        commit="a3c8a57ec15d385e3c1dbd3fd090ee486b7f258c",
         cache_path="openarm_mujoco",
     ),
     "pal_hey5": Repository(
@@ -291,7 +291,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "Piper_ros": Repository(
         url="https://github.com/agilexrobotics/Piper_ros.git",
-        commit="f2ec6a67e1f404bcb478529e89861ccdf43fa298",
+        commit="ac41fcbcdda598f01b51cf6175ed9a24d0dacadc",
         cache_path="Piper_ros",
     ),
     "pmb2_robot": Repository(
@@ -341,7 +341,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "robotiq_2f_85": Repository(
         url="https://github.com/nickswalker/robotiq-2f-85.git",
-        commit="319f7b94587c97f09e732a7b2ed7babbe0250b9e",
+        commit="5f5178e69c130f1e7115c0eaccedb8e683f6de51",
         cache_path="robotiq-2f-85",
     ),
     "romeo_robot": Repository(
@@ -461,7 +461,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "xarm_ros2": Repository(
         url="https://github.com/xArm-Developer/xarm_ros2.git",
-        commit="5bb832f72ca665f1236a9d8ed1c3a82f308db489",
+        commit="ac736c92b02de7ca7e0be6f737d77d46707464d8",
         cache_path="xarm_ros2",
     ),
     "luna_description": Repository(
