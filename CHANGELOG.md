@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Big YAM (URDF, MJCF) (thanks to @nickswalker)
+- Description: YAM Pro (URDF, MJCF) (thanks to @nickswalker)
+- Description: YAM Ultra v1 (URDF, MJCF) (thanks to @nickswalker)
+- Description: YAM Ultra v2 (URDF, MJCF) (thanks to @nickswalker)
+
+### Changed
+
+- Update repository commit of I2RT description to v1.3.6 and URDF path of YAM description
+
 ## [3.3.0] - 2026-10-12
 
 ### Added
