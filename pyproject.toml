@@ -25,7 +25,7 @@ classifiers = [
     "Topic :: Scientific/Engineering",
 ]
 dependencies = [
-    "GitPython >=3.1.62",
+    "GitPython >=3.2.1",
     "tqdm >=4.64.0",
 ]
 keywords = ["robot", "description", "urdf", "mjcf"]

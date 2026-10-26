@@ -21,6 +21,10 @@ All notable changes to this project will be documented in this file.
 - Update repository commit of Robotiq 2F-85 v4 description
 - Update repository commit of xArm descriptions
 
+### Security
+
+- Bump GitPython to 3.2.1
+
 ## [3.3.0] - 2026-10-12
 
 ### Added
