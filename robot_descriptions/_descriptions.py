@@ -957,6 +957,16 @@ DESCRIPTIONS: Dict[str, Description] = {
         license_spdx="Apache-2.0",
         license_file="LICENSE",
     ),
+    "microban_mj_description": Description(
+        formats={Format.MJCF},
+        tags={"humanoid"},
+        robot="Microban",
+        maker="Rhoban",
+        dof=19,
+        repository="microban",
+        license_spdx="GPL-3.0",
+        license_file="LICENSE",
+    ),
     "mini_cheetah_description": Description(
         formats={Format.URDF},
         tags={"quadruped"},

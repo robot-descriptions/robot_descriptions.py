@@ -234,6 +234,11 @@ REPOSITORIES: Dict[str, Repository] = {
         # in URDF descriptions so that Bullet loads them successfully
         cache_path="robot_description",
     ),
+    "microban": Repository(
+        url="https://github.com/Rhoban/microban.git",
+        commit="d0a128d180ecfce69eaaf31b295a0fce31280bfd",
+        cache_path="microban",
+    ),
     "mini_cheetah_urdf": Repository(
         url="https://github.com/Derek-TH-Wang/mini_cheetah_urdf.git",
         commit="1988bceb26e81f28594a16e7d5e6abe5cbb27ace",

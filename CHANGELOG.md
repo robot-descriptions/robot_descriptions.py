@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Description: Big YAM (URDF, MJCF) (thanks to @nickswalker)
+- Description: Microban (MJCF)
 - Description: YAM Pro (URDF, MJCF) (thanks to @nickswalker)
 - Description: YAM Ultra v1 (URDF, MJCF) (thanks to @nickswalker)
 - Description: YAM Ultra v2 (URDF, MJCF) (thanks to @nickswalker)
