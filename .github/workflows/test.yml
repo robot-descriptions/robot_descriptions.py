@@ -32,6 +32,30 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: pixi run -e coverage coveralls --service=github
 
+    core:
+        name: "Core: ${{ matrix.environment }}"
+        runs-on: ubuntu-latest
+
+        strategy:
+            fail-fast: false
+            matrix:
+                environment: ["core-py311", "core-py312", "core-py313", "core-py314", "core-py315"]
+
+        steps:
+            - name: "Checkout sources"
+              uses: actions/checkout@v4
+
+            - name: "Set up pixi"
+              uses: prefix-dev/setup-pixi@v0.8.10
+              with:
+                  pixi-version: v0.72.2
+                  environments: ${{ matrix.environment }}
+                  locked: true
+                  cache: true
+
+            - name: "Run core tests"
+              run: pixi run -e ${{ matrix.environment }} test-core
+
     lint:
         name: "Code style"
         runs-on: ubuntu-latest
@@ -78,6 +102,6 @@ jobs:
     ci_success:
         name: "CI success"
         runs-on: ubuntu-latest
-        needs: [coverage, lint, loader]
+        needs: [core, coverage, lint, loader]
         steps:
             - run: echo "CI workflow completed successfully"
