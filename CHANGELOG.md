@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Update repository commit of PiPER description
 - Update repository commit of Robotiq 2F-85 v4 description
 - Update repository commit of xArm descriptions
+- Bump minimum Python version to 3.11
 
 ### Security
 
