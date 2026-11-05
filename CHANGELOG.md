@@ -26,6 +26,7 @@ All notable changes to this project will be documented in this file.
 ### Security
 
 - Bump GitPython to 3.2.1
+- Bump Pillow to 13.0.0 in lock files
 
 ## [3.3.0] - 2026-10-12
 
