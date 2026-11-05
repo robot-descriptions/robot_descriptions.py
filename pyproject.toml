@@ -21,6 +21,9 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
     "Topic :: Scientific/Engineering",
 ]
 dependencies = [
@@ -167,6 +170,31 @@ xacrodoc = ">=2.0.0"
 [tool.pixi.feature.test.tasks]
 test = "python -m unittest tests"
 
+# Core (library without frameworks, tested on all supported Python versions).
+# Core environments skip the default feature so that each one can pin its own
+# Python version.
+
+[tool.pixi.feature.core.pypi-dependencies]
+robot_descriptions = { path = ".", editable = true }
+
+[tool.pixi.feature.core.tasks]
+test-core = { cmd = "python -m unittest test_clone_to_cache test_clone_to_directory test_progress_bar test_xacro test_descriptions.TestDescriptions.test_descriptions_are_sorted", cwd = "tests" }
+
+[tool.pixi.feature.py311.dependencies]
+python = "3.11.*"
+
+[tool.pixi.feature.py312.dependencies]
+python = "3.12.*"
+
+[tool.pixi.feature.py313.dependencies]
+python = "3.13.*"
+
+[tool.pixi.feature.py314.dependencies]
+python = "3.14.*"
+
+[tool.pixi.feature.py315.dependencies]
+python = "3.15.*"
+
 # Coverage (adds the coverage report and the CI-only coveralls upload) -------
 
 [tool.pixi.feature.coverage.dependencies]
@@ -243,6 +271,11 @@ test-loader-yourdfpy = { cmd = "python -m unittest test_yourdfpy.py", cwd = "tes
 lint = ["lint"]
 test = ["framework", "test"]
 coverage = ["framework", "coverage"]
+core-py311 = { features = ["core", "py311"], no-default-feature = true }
+core-py312 = { features = ["core", "py312"], no-default-feature = true }
+core-py313 = { features = ["core", "py313"], no-default-feature = true }
+core-py314 = { features = ["core", "py314"], no-default-feature = true }
+core-py315 = { features = ["core", "py315"], no-default-feature = true }
 loader-idyntree = ["loader-idyntree"]
 loader-mujoco = ["loader-mujoco"]
 loader-pinocchio = ["loader-pinocchio"]
