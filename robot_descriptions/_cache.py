@@ -215,9 +215,12 @@ def clone_to_cache(description_name: str, commit: Optional[str] = None) -> str:
     cache_path = repository.cache_path
     if commit is not None:
         # Requirement: the last directory in the cache path is named after the
-        # cache path (more precisely the package name) so that package:// URIs
-        # work in frameworks that resolve them via directories
-        cache_path = f"{cache_path}-{commit}/{cache_path}"
+        # package, so that package:// URIs work in frameworks that resolve
+        # them via directories. A cache path may have sub-directories, e.g.
+        # "tron1_robot_description/robot_description", in which case the last
+        # one is the package name.
+        package_dir = os.path.basename(cache_path)
+        cache_path = f"{cache_path}-{commit}/{package_dir}"
     target_dir = os.path.join(cache_dir, cache_path)
     clone = clone_to_directory(
         repository.url,
