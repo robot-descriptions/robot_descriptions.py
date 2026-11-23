@@ -491,7 +491,8 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "tron2_robot_description": Repository(
         url="https://github.com/limxdynamics/tron2-robot-description.git",
-        commit="9939c22e69d27653ec0ba8a505859a2903dd1a71",
-        cache_path="tron2_robot_description",
+        commit="d81d2a83a3c718bc68deca4e8804fdc984dc34f7",
+        # The URDFs reference meshes as package://robot_description/...
+        cache_path="tron2_robot_description/robot_description",
     ),
 }
