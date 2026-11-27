@@ -8,14 +8,16 @@ All notable changes to this project will be documented in this file.
 
 - Description: Big YAM (URDF, MJCF) (thanks to @nickswalker)
 - Description: Microban (MJCF)
-- Description: TRON1 PF, SF and WF, TRON1A and TRON1B (URDF)
-- Description: TRON2 DACH, SF, SFYG, WF and WFYG TRON2A (URDF)
+- Description: TRON1 PF, SF and WF, TRON1A and TRON1B (URDF) (thanks to @limxdynamics)
+- Description: TRON2 DACH, SF, SFYG, WF and WFYG TRON2A (URDF) (thanks to @limxdynamics)
 - Description: YAM Pro (URDF, MJCF) (thanks to @nickswalker)
 - Description: YAM Ultra v1 (URDF, MJCF) (thanks to @nickswalker)
 - Description: YAM Ultra v2 (URDF, MJCF) (thanks to @nickswalker)
 
 ### Changed
 
+- Bump minimum Python version to 3.11
+- CI: Test core library on Python 3.11 to 3.15
 - Cache paths can have sub-directories, the last of which names the package so that `package://` URIs resolve
 - Update TRON2 descriptions to tron2-robot-description d81d2a8
 - Update repository commit of Flexiv descriptions
@@ -25,8 +27,6 @@ All notable changes to this project will be documented in this file.
 - Update repository commit of PiPER description
 - Update repository commit of Robotiq 2F-85 v4 description
 - Update repository commit of xArm descriptions
-- Bump minimum Python version to 3.11
-- CI: Test core library on Python 3.11 to 3.15
 
 ### Security
 
@@ -749,7 +749,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v3.3.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v3.4.0...HEAD
+[3.4.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.4.0
 [3.3.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.3.0
 [3.2.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.2.0
 [3.1.0]: https://github.com/robot-descriptions/robot_descriptions.py/releases/tag/v3.1.0
