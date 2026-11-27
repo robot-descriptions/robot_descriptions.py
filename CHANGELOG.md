@@ -8,12 +8,16 @@ All notable changes to this project will be documented in this file.
 
 - Description: Big YAM (URDF, MJCF) (thanks to @nickswalker)
 - Description: Microban (MJCF)
+- Description: TRON1 PF, SF and WF, TRON1A and TRON1B (URDF)
+- Description: TRON2 DACH, SF, SFYG, WF and WFYG TRON2A (URDF)
 - Description: YAM Pro (URDF, MJCF) (thanks to @nickswalker)
 - Description: YAM Ultra v1 (URDF, MJCF) (thanks to @nickswalker)
 - Description: YAM Ultra v2 (URDF, MJCF) (thanks to @nickswalker)
 
 ### Changed
 
+- Cache paths can have sub-directories, the last of which names the package so that `package://` URIs resolve
+- Update TRON2 descriptions to tron2-robot-description d81d2a8
 - Update repository commit of Flexiv descriptions
 - Update repository commit of Franka descriptions
 - Update repository commit of I2RT description to v1.3.6 and URDF path of YAM description

@@ -11,7 +11,9 @@ class Repository:
     """Remote git repository.
 
     Attributes:
-        cache_path: Path to clone the repository to in the local cache.
+        cache_path: Path to clone the repository to in the local cache. It
+            can have sub-directories, in which case the last one should be
+            the package name that URDF ``package://`` URIs refer to.
         commit: Commit ID or tag to checkout after cloning.
         url: URL to the remote git repository.
     """
@@ -482,11 +484,15 @@ REPOSITORIES: Dict[str, Repository] = {
     "tron1_robot_description": Repository(
         url="https://github.com/limxdynamics/tron1-robot-description.git",
         commit="5b97add1f3b461c9ed26ff2ff2f5025cc6ee4316",
-        cache_path="tron1_robot_description",
+        # The last directory matches the package name in URDF mesh URIs
+        # (package://robot_description/...), so that Bullet and Pinocchio can
+        # resolve them
+        cache_path="tron1_robot_description/robot_description",
     ),
     "tron2_robot_description": Repository(
         url="https://github.com/limxdynamics/tron2-robot-description.git",
-        commit="9939c22e69d27653ec0ba8a505859a2903dd1a71",
-        cache_path="tron2_robot_description",
+        commit="d81d2a83a3c718bc68deca4e8804fdc984dc34f7",
+        # The URDFs reference meshes as package://robot_description/...
+        cache_path="tron2_robot_description/robot_description",
     ),
 }
